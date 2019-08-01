@@ -1,0 +1,121 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php
+/**
+ * Top menu for store
+ *
+ * @var $block \Magento\Theme\Block\Html\Topmenu
+ */
+?>
+<?php $columnsLimit = $block->getColumnsLimit() ?: 0; ?>
+<?php $_menu = $block->getHtml('level-top', 'submenu', $columnsLimit) ?>
+
+<nav class="navigation" data-action="navigation">
+    <!--<ul data-mage-init='{"menu":{"responsive":true, "expanded":true, "position":{"my":"left top","at":"left bottom"}}}'>
+        <?= /* @escapeNotVerified */ $_menu ?>
+        <?= /* @escapeNotVerified */ $block->getChildHtml() ?>
+    </ul>-->
+<?php echo $this->getCostommenu();?>
+
+
+<div class="menu-body">
+        <button class="menuBtn menubar-close">
+            <span class="menubar menubar1"></span>
+            <span class="menubar menubar2"></span>
+        </button>
+
+
+           <div class="menu-col-image">		
+			<?php   $categreisdata = $this->getCategrieslogo();
+			if(!empty($categreisdata['entity_id'])){ ?>
+			<?php if($categreisdata['parent_id']=='2'){?>
+			<img src="<?php echo $this->getMedia().'catalog/category/'.$categreisdata->getHomelogo(); ?>" class="img-fluid">
+			<?php } else { ?>
+			<img src="<?php echo $this->getMedia().'catalog/category/'.$this->getInnerlogo($categreisdata['parent_id']); ?>" class="img-fluid" >
+			<?php }?>
+
+			<?php } else {?>
+
+			<?php }?>
+			</div>
+            <div class="menu-col-main">
+                <ul class="menu-parent">
+                    <li class="">
+                        <a href="javascript:void(0);" class="">Home</a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);" class="">About</a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);" class="">News</a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);" class="">Careers</a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);" class="">Contact</a>
+                    </li>
+                    <li class="menu-item labs-menu">
+                        <i class="fa fa-angle-left"></i>
+                            <a href="javascript:void(0);" class="">Labs</a>
+                    </li>
+                    <li class="menu-item worx-menu">
+                        <i class="fa fa-angle-left"></i>
+                            <a href="javascript:void(0);" class="">Worx</a>
+                    </li>
+                    <li class="menu-item cdbx-menu">
+                        <i class="fa fa-angle-left"></i>
+                            <a href="javascript:void(0);" class="">CDBX</a>
+                    </li>
+                    
+                </ul>   
+            </div>
+            <div class="menu-col-sub">
+                <div class="menu-inner">
+                    <div class="logo-brand">
+           <a href="javascript:void(0);">
+            <?php   $categreisdata = $this->getCategrieslogo();
+			if(!empty($categreisdata['entity_id'])){ ?>
+			<?php if($categreisdata['parent_id']=='2'){?>
+			<img src="<?php echo $this->getMedia().'catalog/category/'.$categreisdata->getHomelogo(); ?>" class="img-fluid">
+			<?php } else { ?>
+			<img src="<?php echo $this->getMedia().'catalog/category/'.$this->getInnerlogo($categreisdata['parent_id']); ?>" class="img-fluid" >
+			<?php }?>
+
+			<?php } else {?>
+
+			<?php }?>
+				</a>	
+					
+					</div>
+                    <div class="adrs-col">
+                        <h4>Miami</h4>
+                        <p>LV8 Offices <br>
+                            123 Main Street <br>
+                            Miami, Florida <br>
+                            305.123.4567
+                        </p>
+                        <p>hello@lv8.com</p>
+                    </div>
+                    <div class="social-col">
+                        <h5>Follow Us</h5>
+                        <ul>
+                            <li class="fb"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+                            <li class="insta"><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
+                            <li class="twit"><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                            <li class="linkedin"><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>    
+                </div>    
+            </div>
+            
+
+    </div>	
+</nav>

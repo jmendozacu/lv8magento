@@ -1,0 +1,103 @@
+<?php
+/**
+ * Copyright © 2015 Saffron.com. All rights reserved.
+
+ * @author Saffron Team <contact@Saffron.com>
+ */
+ 
+if($this->getEnable()):
+$banners = $block->getBannerSlider();
+?>
+
+ <div class="front-banner">
+        <div class="owl-carousel owl-theme">
+		<?php $i = 1; ?>
+    <?php foreach ($banners as $banner): ?>
+	<?php $url_image = $this->getMediaFolder().$banner['image']; ?>
+            <div class="item"  style="background: url(<?php echo $url_image; ?>)">
+                <div class="owl-item-caption">
+                 <a href="<?php echo $banner['click_url'] ?>" >   
+				 <h1><?php echo $banner['name']; ?></h1>
+				 </a>
+                </div>    
+            </div>
+        
+	<?php $i++; ?>            
+    <?php endforeach; ?>     
+            
+        </div>
+    </div>
+
+
+<!--<div class="pt-banner-container">
+   <ul class="ptowl"> 
+	<?php $i = 1; ?>
+    <?php foreach ($banners as $banner): ?>
+		
+		<?php $url_image = $this->getMediaFolder().$banner['image']; ?>
+            <li>
+				<?php if($banner['click_url']): ?>
+					<a href="<?php echo $banner['click_url'] ?>" class="pt-url">
+				<?php endif; ?>
+					<img alt="<?php echo $banner['image_alt'] ?>" src="<?php echo $url_image; ?>"/>
+				<?php if($banner['click_url']): ?>
+					</a>
+				<?php endif; ?>
+				
+				<div id="pt-banner-caption<?php echo $i; ?>" class="pt-caption pt-banner-caption">
+					
+					<div class="pt-banner-content ptslider-<?php echo $i?>">
+						<?php if($banner['name']): ?><h1 class="pt-title1"><?php echo __($banner['name']) ?></h1><?php endif; ?>
+						<?php if($banner['title1']): ?><h2 class="pt-title2" ><?php echo __($banner['title1']) ?></h2><?php endif; ?>
+						<?php if($banner['description']): ?><div class="pt-banner-des">
+							<p><?php echo __($banner['description']) ?></p>
+						</div><?php endif; ?>
+						<?php if($banner['title2']): ?><h3 class="pt-title3"><?php echo __($banner['title2']) ?></h3><?php endif; ?>
+						<?php if($banner['click_url']):?><a href="<?php echo $banner['click_url'] ?>" class="shopnow"><?php echo __('+ shop now')?></a><?php endif;?>
+					</div>	
+				</div>				
+            </li>
+		<?php $i++; ?>            
+    <?php //endif; ?>            
+    <?php endforeach; ?>            
+    </ul>
+</div>-->
+<script type="text/javascript">
+	
+	require([
+	  "jquery",
+	  "owlcarousel/minjs"
+	 ], function($,owlCarousel){
+		$(document).ready(function(){
+			$('.front-banner .owl-carousel').owlCarousel({
+        loop:true,
+        items:1,
+        margin:0,
+        nav:true,
+        dots:false,
+        smartSpeed: 900,
+       
+    }) ;
+			
+		});
+	});
+</script>
+<?php endif; ?>
+
+
+<style>
+main#maincontent {
+    display: none;
+}
+
+footer.page-footer {
+    display: none;
+}
+
+small.copyright {
+    display: none;
+}
+.breadcrumbs {
+    display: none;
+}
+</style>

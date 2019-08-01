@@ -1,0 +1,8 @@
+.custom-menu {
+   z-index:5;
+	margin-bottom: 0px;
+}
+.nav-sections{margin-bottom: 0px !important}
+.page-front .category-cms,.page-front .category-image,.page-front .category-description {
+    margin-bottom: 0px;
+}

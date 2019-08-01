@@ -1,0 +1,52 @@
+<?php
+/**
+ * Copyright © 2015 Saffron.com. All rights reserved.
+
+ * @author Saffron Team <contact@Saffron.com>
+ */
+ 
+if($this->getEnable()):
+$banners = $block->getBannerSlider();
+?>
+
+ <div class="front-banner">
+        <div class="owl-carousel owl-theme">
+		<?php $i = 1; ?>
+    <?php foreach ($banners as $banner): ?>
+	<?php $url_image = $this->getMediaFolder().$banner['image']; ?>
+            <div class="item">
+                <img alt="<?php echo $banner['image_alt'] ?>" src="<?php echo $url_image; ?>"/>
+			
+				<div class="owl-item-caption">
+                 <a href="<?php echo $banner['click_url'] ?>" >   
+				 <h1>Be Amazing</h1>
+				 </a>
+                </div>    
+            </div>
+        
+	<?php $i++; ?>            
+    <?php endforeach; ?>     
+            
+        </div>
+    </div>
+
+
+
+<script type="text/javascript">
+require(["jquery", "owlcarousel/js"], function($){
+    $(document).ready(function(){
+	$('.front-banner .owl-carousel').owlCarousel({
+        loop:true,
+        items:1,
+        margin:0,
+        nav:true,
+        dots:false,
+        smartSpeed: 900,
+       
+    }) ;
+		
+	});
+   
+});
+</script>
+<?php endif; ?>

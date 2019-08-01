@@ -1,0 +1,63 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/**
+ * @var \Magento\Theme\Block\Html\Header\Logo $block
+ */
+?>
+<?php   $categreisdata = $this->getCategrieslogo();
+if(!empty($categreisdata['entity_id'])){ ?>
+<a  href="<?php echo $this->getUrl('') ;?>" title="">
+<?php if($categreisdata['parent_id']=='2'){?>
+<img src="<?php echo $this->getMedia().'catalog/category/'.$categreisdata->getHomelogo(); ?>" title="" alt="" width="275" height="28">
+<?php } else { ?>
+
+<img src="<?php echo $this->getMedia().'catalog/category/'.$this->getInnerlogo($categreisdata['parent_id']); ?>" title="" alt="" width="275" height="28">
+<?php }?>
+</a>
+
+ 
+ 
+<?php } else {?>
+
+<?php $storeName = $block->getThemeName() ? $block->getThemeName() : $block->getLogoAlt();?>
+<span data-action="toggle-nav" class="action nav-toggle"><span><?= /* @escapeNotVerified */ __('Toggle Nav') ?></span></span>
+
+
+<?php if ($block->isHomePage()):?>
+
+ <a  href="<?= $block->getUrl('') ?>">
+ <img src="<?php echo $this->getMedia().'logo/stores/1/lv8-logo.png' ?>"
+             title="<?= /* @escapeNotVerified */ $block->getLogoAlt() ?>"
+             alt="<?= /* @escapeNotVerified */ $block->getLogoAlt() ?>"
+             <?= $block->getLogoWidth() ? 'width="' . $block->getLogoWidth() . '"' : '' ?>
+             <?= $block->getLogoHeight() ? 'height="' . $block->getLogoHeight() . '"' : '' ?>
+        />
+<?php else: ?>
+  <a  href="<?= $block->getUrl('') ?>" title="<?= /* @escapeNotVerified */ $storeName ?>">
+
+  <img src="<?= /* @escapeNotVerified */ $block->getLogoSrc() ?>"
+             title="<?= /* @escapeNotVerified */ $block->getLogoAlt() ?>"
+             alt="<?= /* @escapeNotVerified */ $block->getLogoAlt() ?>"
+             <?= $block->getLogoWidth() ? 'width="' . $block->getLogoWidth() . '"' : '' ?>
+             <?= $block->getLogoHeight() ? 'height="' . $block->getLogoHeight() . '"' : '' ?>
+        />
+  
+  
+  <?php endif ?>
+        
+<?php if ($block->isHomePage()):?>
+    </a>
+<?php else:?>
+    </a>
+<?php endif?>
+
+<?php }?>
+ 
+ 
+

@@ -1,0 +1,58 @@
+
+/*==========---min-width-1200---==========*/
+@media (min-width: 1200px) {
+.container {  max-width: 100%; width:90%;  }
+.family-brand {  max-width:630px; }
+}
+
+/*==========---min-width-768---==========*/
+@media (min-width: 768px) {
+/* .col-md-5.legal-col{ -ms-flex: 0 0 37.666667%;  flex: 0 0 37.666667%; max-width: 37.666667%; }    
+.col-md-2.social-media-col { -ms-flex: 0 0 20.666667%;  flex: 0 0 20.666667%;  max-width: 20.666667%; } */
+.banner-title-notfront h1 {  font-size: 75px; }
+.lv8-about-info .abtInfo p{ font-size:18px; }
+h2 {  font-size: 46px; }
+.footer-links ul {  column-count:2;   -webkit-column-count:2;  }
+.lv8-page .owl-item-caption h1{ font-size:80px; }
+.owl-item-caption h1{ font-size:75px; }
+
+}
+
+/*==========---min-width-768-max-1199---==========*/
+@media (min-width: 768px)  and ( max-width:1199px ){
+.family-brand a{ padding:12% 30px;  }
+.family-brand img {  max-width: 200px;  }
+.cbdx-brand img { max-width:140px; }
+.footer-logo img {  width: 120px; }
+
+
+
+}
+
+@media (min-width: 768px)  and ( max-width:991px ){
+.footer-logo {  border-bottom: 1px dashed #444;  padding-bottom: 20px;  margin-bottom: 20px; }    
+
+}
+
+@media (max-width:767px) {
+.logo-col img { width:110px; }
+.header { padding:20px 0; }
+.navbar-col .bar-button {  margin-top: 6px; }
+.lv8-about-info .abtInfo h3{ font-size:20px; }
+.h2, h2 { font-size:28px; }
+.family-brand a{ padding:8% 10px; }
+.family-brand img { max-width:120px;}
+.cbdx-brand img{ max-width:90px;}
+.family-brand figure{ margin-bottom:15px; }
+.family-brand h3{ font-size:18px; }
+.ourFamily-row h2{ margin-bottom:25px; }
+.lv8-about-info { margin-bottom: 20px; }
+.footer-logo {  border-bottom: 1px dashed #444;  padding-bottom: 20px;  margin-bottom: 20px; }
+.footer-logo img {  width: 100px; }
+footer.page-footer{ padding:30px 0 10px; }
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev { width:30px; height:30px; font-size:36px; }
+.owl-carousel .owl-nav button span{line-height:22px; }
+.front-banner .owl-carousel .owl-nav button.owl-next,
+.front-banner .owl-carousel .owl-nav button.owl-prev { top:initial; bottom:40px; margin:0;   }
+
+}
