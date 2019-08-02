@@ -22,7 +22,7 @@
         <?= /* @escapeNotVerified */ $_menu ?>
         <?= /* @escapeNotVerified */ $block->getChildHtml() ?>
     </ul>-->
-<?php echo $this->getCostommenu();?>
+<?php //echo $this->getCostommenu();?>
 
 
 <div class="menu-body">
@@ -35,12 +35,7 @@
            <div class="menu-col-image">		
 			<?php   $categreisdata = $this->getCategrieslogo();
 			if(!empty($categreisdata['entity_id'])){ ?>
-			<?php if($categreisdata['parent_id']=='2'){?>
-			<img src="<?php echo $this->getMedia().'catalog/category/'.$categreisdata->getHomelogo(); ?>" class="img-fluid">
-			<?php } else { ?>
 			<img src="<?php echo $this->getMedia().'catalog/category/'.$this->getInnerlogo($categreisdata['parent_id']); ?>" class="img-fluid" >
-			<?php }?>
-
 			<?php } else {?>
 
 			<?php }?>
