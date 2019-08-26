@@ -6,3 +6,21 @@
 .page-front .category-cms,.page-front .category-image,.page-front .category-description {
     margin-bottom: 0px;
 }
+.page-main {
+    max-width: 100%;
+    padding: 0px;
+}
+
+.category-cms, .category-image, .category-description {
+    margin-bottom: 0px;
+}
+button:not(.primary) {
+    box-shadow: none;
+}
+.open .nav-sections {
+    opacity: 1;
+    visibility: visible;
+}
+.catalog-category-view .page-wrapper .page-main {
+    display: none;
+}

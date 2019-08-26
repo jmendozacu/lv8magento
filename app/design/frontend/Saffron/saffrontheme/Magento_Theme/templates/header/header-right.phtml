@@ -7,50 +7,130 @@
   </div>
 	
 	
-<div id="myModal" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Subscribe our Newsletter</h4>
-            </div>
-            <div class="modal-body">
-				<p>Subscribe to our mailing list to get the latest updates straight in your inbox.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email Address">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Subscribe</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
 
-<script type="text/javascript">
- /*requirejs(['jquery', 'jquery.bootstrap'], function (jQuery, jQueryBootstrap) {
-  jQuery(document).ready(function(){
-        jQuery("#myModal").modal('show');
-    });
-    });*/
-</script>
    
 <script type="text/javascript">
 	require([ 'jquery'], function($){
 
 $(document).ready(function(){	
 
- $(".navbar-col .bar-button").on("click", function(){
-        $(".custom-menu").toggleClass('open');
+ //menu 
+    $(".navbar-col .bar-button").on("click", function(){
+        $(".nav-sections").addClass('open');
     })
-    $(".menubar-close").on("click", function(){
-        $(".custom-menu").removeClass('open');
+    $(".nav-sections-items .bar-button").on("click", function(){
+        $(".nav-sections").removeClass('open');
+    })
+    $(".navbar-col .menuBtn").on("click", function(){
+        $("body").addClass('menu-open');
+    })
+    $(".nav-sections-items .menuBtn").on("click", function(){
+        $("body").removeClass('menu-open');
+    })
+
+    if (window.screen.width >=  768) {
+        $(".menu-parent li.labs-menu .fa").on("click", function(){
+            $(".navbar-body").removeClass('active');
+            $(".menu-item-labs").addClass('active');
+        })
+        $(".menu-parent li.worx-menu .fa").on("click", function(){
+            $(".navbar-body").removeClass('active');
+            $(".menu-item-worx").addClass('active');
+        })
+        $(".menu-parent li.cbdx-menu .fa").on("click", function(){
+            $(".navbar-body").removeClass('active');
+            $(".menu-item-cbdx").addClass('active');
+        })
+        $(".menu-parent li a").on("click", function(){
+            $(this).parent().addClass("active");
+            $(this).parent().siblings().removeClass("active");
+        })
+    }
+    
+    if (window.screen.width <=  767) {
+        $(".navbar-body").removeClass('active');
+        
+        $(".menu-parent li.labs-menu .fa").on("click", function(){
+            $(".menu-item-labs").addClass('mobile-active');
+        })
+        $(".menu-parent li.worx-menu .fa").on("click", function(){
+            $(".menu-item-worx").addClass('mobile-active');
+        })
+        $(".menu-parent li.cbdx-menu .fa").on("click", function(){
+            $(".menu-item-cbdx").addClass('mobile-active');
+        })
+        $(".mobile-back-btn a").on("click", function(){
+            $(".navbar-body").removeClass('mobile-active' );
+        })
+    }
+    $(window).resize(function(){
+        if (window.screen.width <=  767) {
+            $(".navbar-body").removeClass('active');
+            
+            $(".menu-parent li.labs-menu .fa").on("click", function(){
+                $(".menu-item-labs").addClass('mobile-active');
+            })
+            $(".menu-parent li.worx-menu .fa").on("click", function(){
+                $(".menu-item-worx").addClass('mobile-active');
+            })
+            $(".menu-parent li.cbdx-menu .fa").on("click", function(){
+                $(".menu-item-cbdx").addClass('mobile-active');
+            })
+            $(".mobile-back-btn a").on("click", function(){
+                $(".navbar-body").removeClass('mobile-active' );
+            })
+        } 
+    });
+    
+    
+    //end-menu 
+    
+ var $item = $('.front-banner .item'); 
+    var $wHeight = $(window).height();
+    $item.eq(0).addClass('active');
+    $item.height($wHeight); 
+    
+    $(window).on('resize', function (){
+      $wHeight = $(window).height();
+      $item.height($wHeight);
+    });
+    // End- LV8-Labs-Worx-Cbdx home page banner script
+
+
+    //cbdx product tab title script
+   
+
+    //cbdx product filter script
+    $(".filter-col .filter-link").on("click", function(){
+        $(this).next('ul').slideToggle();
+        $(this).parent().siblings().children().next().slideUp();
+    });
+    $(".filter-dropdown li a").on("click", function(){
+        $(".filter-dropdown li a").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    
+    //banefit page circle js
+    $(".point .point-circle").on("click", function(){
+        $(this).addClass("active");
+        $(this).parent().siblings().children().removeClass("active");
+        $(this).next().slideToggle();
+        $(this).parent().siblings().children().next().slideUp();
     })
     
+    // scroll menu click respectively #div 
+    $(".scrollMenu a, .cbdx-brands-col .brand-link").on("click", function(){
+        //event.preventDefault();
+        $(".nav-sections").removeClass('open');
+        $("body").removeClass('menu-open');
+       $("html, body").animate( { scrollTop: $($(this).attr("href") ).offset().top-40 }, 1000 );
+      
+    })
+ 
+ 
 
+ 
  
   /*  require([ "jquery","aos/js"], function($,aos){ 
      AOS.init();	
@@ -73,8 +153,50 @@ require([ "jquery","bootstrap"], function(jquery,bootstrap){
 
 	});
 </script>
-
+<script type="text/javascript">
 	
+	require([
+	  "jquery",
+	  "owlcarousel/minjs"
+	 ], function($,owlCarousel){
+		$(document).ready(function(){
+		$('.theBrands-carousel .owl-carousel').owlCarousel({
+    loop:true,
+    items:1,
+    margin:0,
+    nav:true,
+    dots:false,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    smartSpeed: 500,
+   
+}) ;
+$('.stories-carousel .owl-carousel').owlCarousel({
+    loop:true,
+    items:1,
+    margin:0,
+    nav:true,
+    dots:false,
+    smartSpeed:500,
+  
+});
+		
+		});
+	});
+</script>
+<script type="text/javascript">
+    require(['aos'], function (AOS) {
+		AOS.init({
+                  duration: 1200,
+         });	
+		
+	
+	 });
+		
+
+</script>	
+
 <style>
 .header.content {
     display: none;

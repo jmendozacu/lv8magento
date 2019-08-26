@@ -7,11 +7,14 @@
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-	 
+	
 		<move element="banners" destination="page.wrapper" before="main.content"/>
-		<move element="category.cms" destination="topmain"   before="-"/>
-		<container name="banners" as="banners" label="Page Banner" htmlTag="div" htmlClass="banner_padding">
-			<container	name="topmain" htmlTag="div" htmlClass="banners">
+	    <move element="breadcrumbs" destination="topmain" />
+		<move element="category.image" destination="topmain" />
+		<move element="category.cms" destination="topmain"   />
+		<move element="page.main.title" destination="topmain" before="category.cms"/>
+		<container name="banners" as="banners" label="Page Banner" htmlTag="div" htmlClass="banner-breadcrumbs labs-bread">
+			<container	name="topmain"  >
 			</container>
         </container>
 

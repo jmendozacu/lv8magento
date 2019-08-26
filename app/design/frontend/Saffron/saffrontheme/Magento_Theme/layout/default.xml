@@ -140,7 +140,7 @@
 		
 		
         <referenceContainer name="footer-container">
-            <container name="footer" as="footer" label="Page Footer" htmlTag="div" htmlClass="footer content">
+            <container name="footer" as="footer" label="Page Footer" htmlTag="div" htmlClass="container">
                 <block class="Magento\Store\Block\Switcher" name="store_switcher" as="store_switcher" template="Magento_Store::switch/stores.phtml"/>
                 <block class="Magento\Framework\View\Element\Html\Links" name="footer_links">
                     <arguments>
@@ -153,10 +153,10 @@
         </referenceContainer>
 		
 		<referenceContainer name="footer">
-            <container name="footer.content.top" htmlTag="div" htmlClass="footer-top">
+            <container name="footer.content.top" >
                 <block class="Magento\Framework\View\Element\Template" name="footer.top" before="-" template="Magento_Theme::html/footer-top.phtml" />
             </container>
-            <container name="footer.left" htmlTag="div" htmlClass="footer-cms footer-left">
+            <!--<container name="footer.left" htmlTag="div" htmlClass="footer-cms footer-left">
                 <block class="Magento\Cms\Block\Block" name="footer_left">
                     <arguments>
                         <argument name="block_id" xsi:type="string">footer_left</argument>
@@ -176,7 +176,7 @@
                         <argument name="block_id" xsi:type="string">footer_right</argument>
                     </arguments>
                 </block>
-            </container>
+            </container>-->
         </referenceContainer>
         <referenceContainer name="before.body.end">
             <block class="Magento\Theme\Block\Html\Footer" name="absolute_footer" template="Magento_Theme::html/absolute_footer.phtml" />

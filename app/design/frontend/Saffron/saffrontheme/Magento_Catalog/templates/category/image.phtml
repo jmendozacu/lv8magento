@@ -19,7 +19,8 @@
     $_category  = $block->getCurrentCategory();
     $_imgHtml   = '';
     if ($_imgUrl = $_category->getImageUrl()) {
-        $_imgHtml = '<div class="category-image"><img src="' . $_imgUrl . '" alt="' . $block->escapeHtml($_category->getName()) . '" title="' . $block->escapeHtml($_category->getName()) . '" class="image" /></div>';
+        $_imgHtml = '<div class="category-image image-notfront">
+		<div class="banner-notfront"><img src="' . $_imgUrl . '" alt="' . $block->escapeHtml($_category->getName()) . '" title="' . $block->escapeHtml($_category->getName()) . '" class="image img-fluid" /></div></div>';
         $_imgHtml = $_helper->categoryAttribute($_category, $_imgHtml, 'image');
         /* @escapeNotVerified */ echo $_imgHtml;
     }

@@ -1,116 +1,232 @@
-<?php
-/**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
- */
-
-// @codingStandardsIgnoreFile
-
-?>
-<?php
-/**
- * Top menu for store
- *
- * @var $block \Magento\Theme\Block\Html\Topmenu
- */
-?>
-<?php $columnsLimit = $block->getColumnsLimit() ?: 0; ?>
-<?php $_menu = $block->getHtml('level-top', 'submenu', $columnsLimit) ?>
-
-<nav class="navigation" data-action="navigation">
-    <!--<ul data-mage-init='{"menu":{"responsive":true, "expanded":true, "position":{"my":"left top","at":"left bottom"}}}'>
-        <?= /* @escapeNotVerified */ $_menu ?>
-        <?= /* @escapeNotVerified */ $block->getChildHtml() ?>
-    </ul>-->
-<?php //echo $this->getCostommenu();?>
-
-
-<div class="menu-body">
-        <button class="menuBtn menubar-close">
-            <span class="menubar menubar1"></span>
-            <span class="menubar menubar2"></span>
-        </button>
-
-
-           <div class="menu-col-image">		
-			<?php   $categreisdata = $this->getCategrieslogo();
-			if(!empty($categreisdata['entity_id'])){ ?>
-			<img src="<?php echo $this->getMedia().'catalog/category/'.$this->getInnerlogo($categreisdata['parent_id']); ?>" class="img-fluid" >
-			<?php } else {?>
-
-			<?php }?>
-			</div>
+<div class="nav-sections">
+    <div class="nav-sections-items">
+             
+                <button class="menuBtn bar-button">
+                    <span class="menubar menubar1"></span>
+                    <span class="menubar menubar2"></span>
+                    <span class="menubar menubar3"></span>
+                </button>
+     
+            
             <div class="menu-col-main">
                 <ul class="menu-parent">
-                    <li class="">
-                        <a href="javascript:void(0);" class="">Home</a>
+                    <li class="menu-level">
+                        <a href="index.php" class="">Home</a>
                     </li>
-                    <li class="">
-                        <a href="javascript:void(0);" class="">About</a>
+                    <li class="menu-level">
+                        <a href="about-us.php" class="">About</a>
                     </li>
-                    <li class="">
+                    <li class="menu-level">
                         <a href="javascript:void(0);" class="">News</a>
                     </li>
-                    <li class="">
+                    <li class="menu-level">
                         <a href="javascript:void(0);" class="">Careers</a>
                     </li>
-                    <li class="">
+                    <li class="menu-level">
                         <a href="javascript:void(0);" class="">Contact</a>
                     </li>
                     <li class="menu-item labs-menu">
                         <i class="fa fa-angle-left"></i>
-                            <a href="javascript:void(0);" class="">Labs</a>
+						<?php $catgries = $this->getallcategries(3)?>
+						<a href="<?php echo $catgries->getUrl();?>" class="">Labs</a>
                     </li>
                     <li class="menu-item worx-menu">
                         <i class="fa fa-angle-left"></i>
-                            <a href="javascript:void(0);" class="">Worx</a>
+						<?php $catgries = $this->getallcategries(4)?>
+                            <a href="<?php echo $catgries->getUrl();?>" class="">Worx</a>
                     </li>
-                    <li class="menu-item cdbx-menu">
+                    <li class="menu-item cbdx-menu">
                         <i class="fa fa-angle-left"></i>
-                            <a href="javascript:void(0);" class="">CDBX</a>
+						<?php $catgries = $this->getallcategries(5)?>
+                            <a href="<?php echo $catgries->getUrl();?>" class="">CBDX</a>
                     </li>
                     
                 </ul>   
             </div>
-            <div class="menu-col-sub">
-                <div class="menu-inner">
-                    <div class="logo-brand">
-           <a href="javascript:void(0);">
-            <?php   $categreisdata = $this->getCategrieslogo();
-			if(!empty($categreisdata['entity_id'])){ ?>
-			<?php if($categreisdata['parent_id']=='2'){?>
-			<img src="<?php echo $this->getMedia().'catalog/category/'.$categreisdata->getHomelogo(); ?>" class="img-fluid">
-			<?php } else { ?>
-			<img src="<?php echo $this->getMedia().'catalog/category/'.$this->getInnerlogo($categreisdata['parent_id']); ?>" class="img-fluid" >
-			<?php }?>
 
-			<?php } else {?>
-
-			<?php }?>
-				</a>	
-					
-					</div>
-                    <div class="adrs-col">
-                        <h4>Miami</h4>
-                        <p>LV8 Offices <br>
-                            123 Main Street <br>
-                            Miami, Florida <br>
-                            305.123.4567
-                        </p>
-                        <p>hello@lv8.com</p>
+            <!--menu-items-->
+            <div class="menu-items">
+                <!--menu-front-->
+                <div class="navbar-body menu-item-front active">
+                    <div class="menu-item-description">
+                        <div class="mobile-back-btn">
+                            <a href="javascript:void(0);" class=""><i class="fa fa-angle-left"></i></a>
+                        </div>
+                        <div class="menu-inner">
+                            <div class="logo-brand">
+                                <a href="index.php"><img src="<?php echo $this->getMedia().'catalog/category/'.$this->getInnerlogo(3); ?>" alt="" class="img-fluid"></a>
+                            </div>
+                            <div class="adrs-col">
+                                <h4>Miami</h4>
+                                <p>LV8 Offices <br>
+                                    123 Main Street <br>
+                                    Miami, Florida <br>
+                                    305.123.4567
+                                </p>
+                                <p>hello@lv8.com</p>
+                            </div>
+                            <div class="social-col">
+                                <h5>Follow Us</h5>
+                                <ul>
+                                    <li class="fb"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="insta"><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
+                                    <li class="twit"><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="linkedin"><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>    
+                        </div>    
                     </div>
-                    <div class="social-col">
-                        <h5>Follow Us</h5>
-                        <ul>
-                            <li class="fb"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
-                            <li class="insta"><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
-                            <li class="twit"><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
-                            <li class="linkedin"><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>    
-                </div>    
-            </div>
-            
+                    <div class="menu-image-item">
+                        <img src="<?php echo $this->getMedia().'wysiwyg/images/'?>/lv8-menu-img.jpg" alt="" class="img-fluid">
+                    </div> 
+                </div>
+                <!--/menu-front-->
 
-    </div>	
-</nav>
+                <!--menu-1-labs-->
+ <div class="navbar-body menu-item-labs">
+     <div class="menu-item-description">
+        <div class="mobile-back-btn">
+          <a href="javascript:void(0);" class=""><i class="fa fa-angle-left"></i></a>
+        </div>
+    <div class="menu-inner">
+     <div class="logo-brand">
+	 <?php $catgries = $this->getallcategries(3);?>
+      <a href="<?php echo $catgries->getUrl();?>"><img src="<?php echo $this->getMedia().'catalog/category/'.$this->getInnerlogo(3); ?>" alt="" class="img-fluid"></a>
+    </div>
+    <div class="adrs-col">
+	<?php $catgrieslab = $this->getallcategries(3)?>	
+	<?php  $subcats = $catgrieslab->getChildrenCategories();?>	
+	<ul>
+	<?php foreach ($subcats as $subcat) { ?>
+	
+	<li><a href="<?php echo $subcat->getUrl();?>#scroll-our-craft"><?php echo $subcat->getName()?></a></li>
+	<?php }?>
+	<li class="scrollMenu-home"><a href="<?php echo $subcat->getUrl();?>#scroll-our-craft">OUR CRAFT</a></li>
+	<li class="scrollMenu-home"><a href="<?php echo $subcat->getUrl();?>#scroll-brands">BRANDS</a></li>
+	<li class="scrollMenu"><a href="<?php echo $subcat->getUrl();?>#scroll-our-craft">OUR CRAFT</a></li>
+	<li class="scrollMenu"><a href="<?php echo $subcat->getUrl();?>#scroll-brands">BRANDS</a></li>
+	</ul>
+<?php //echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('cdbx-brands')->toHtml(); ?>				
+<?php //echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('menu-us-labs')->toHtml(); ?>				
+	</div>
+     
+	 <div class="social-col">
+      <h5>Follow Us</h5>
+       <ul>
+       <li class="fb"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+       <li class="insta"><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
+       <li class="twit"><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+       <li class="linkedin"><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+       </ul>
+      </div>    
+     </div>    
+    </div>
+                    
+	<div class="menu-image-item">
+       <img src="<?php echo $this->getMedia().'catalog/category/'.$this->getNavimage(3); ?>" alt="" class="img-fluid">
+    </div> 
+    </div>
+                <!--/menu-1-labs-->
+
+ <!--menu-2-worx-->
+ <div class="navbar-body menu-item-worx">
+    <div class="menu-item-description">
+     <div class="mobile-back-btn">
+     <a href="javascript:void(0);" class=""><i class="fa fa-angle-left"></i></a>
+     </div>
+     <div class="menu-inner">
+     <?php $catgrieslab = $this->getallcategries(4)?>   
+		<div class="logo-brand">
+        <a href="<?php echo $catgrieslab->getUrl();?>"><img src="<?php echo $this->getMedia().'catalog/category/'.$this->getInnerlogo(4); ?>" alt="" class="img-fluid"></a>
+        </div>
+     <div class="adrs-col">
+		
+	<?php  $subcats = $catgrieslab->getChildrenCategories();?>	
+	<ul>
+	<?php foreach ($subcats as $subcat) { ?>
+     <li><a href="<?php echo $subcat->getUrl();?>"><?php echo $subcat->getName()?></a></li>
+    <?php }?>	
+	<li class="scrollMenu-home"><a href="<?php echo $subcat->getUrl();?>#scroll-worx-grid-images">WORK</a></li>
+	<li class="scrollMenu-home"><a href="<?php echo $subcat->getUrl();?>#scroll-success-stories">STORIES</a></li>
+	<li class="scrollMenu-home"><a href="<?php echo $subcat->getUrl();?>#scroll-the-players">PLAYERS</a></li>
+	<li class="scrollMenu-home"><a href="<?php echo $subcat->getUrl();?>#scroll-our-expertise">SKILLS</a></li>
+	<!--end-->
+	<li class="scrollMenu"><a href="<?php echo $subcat->getUrl();?>#scroll-worx-grid-images">WORK</a></li>
+	<li class="scrollMenu"><a href="<?php echo $subcat->getUrl();?>#scroll-success-stories">STORIES</a></li>
+	<li class="scrollMenu"><a href="<?php echo $subcat->getUrl();?>#scroll-the-players">PLAYERS</a></li>
+	<li class="scrollMenu"><a href="<?php echo $subcat->getUrl();?>#scroll-our-expertise">SKILLS</a></li>
+	<ul>
+<?php //echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('menu-worx')->toHtml(); ?>				
+</div>
+    
+	<div class="social-col">
+      <h5>Follow Us</h5>
+       <ul>
+        <li class="fb"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+         <li class="insta"><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
+         <li class="twit"><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+         <li class="linkedin"><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+         </ul>
+      </div>    
+    </div>    
+    </div>
+    <div class="menu-image-item">
+      <img src="<?php echo $this->getMedia().'catalog/category/'.$this->getNavimage(4); ?>" alt="" class="img-fluid">
+     </div> 
+   </div>
+  
+  <!--/menu-2-worx-->
+
+ <!--menu-3-cbdx-->
+  <div class="navbar-body menu-item-cbdx">
+      <div class="menu-item-description">
+       <div class="mobile-back-btn">
+         <a href="javascript:void(0);" class=""><i class="fa fa-angle-left"></i></a>
+      </div>
+ <div class="menu-inner">
+    <div class="logo-brand">
+	<?php $catgrieslab = $this->getallcategries(5)?>
+     <a href="<?php echo $catgrieslab->getUrl();?>"><img src="<?php echo $this->getMedia().'catalog/category/'.$this->getInnerlogo(5); ?>" alt="" class="img-fluid"></a>
+     </div>
+     <div class="cbdx-brands-col">
+<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('cdbx-brands')->toHtml(); ?>				
+     </div>
+    <div class="adrs-col">
+    <?php //echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('menu-cbdx')->toHtml(); ?>				
+		
+	<?php  $subcats = $catgrieslab->getChildrenCategories();?>	
+	<ul>
+	<?php foreach ($subcats as $subcat) { ?>
+     <li class="scrollMenu-home"><a href="<?php echo $subcat->getUrl();?>"><?php echo $subcat->getName()?></a></li>
+    <?php }?>	
+	<?php foreach ($subcats as $subcat) { ?>
+	<li class="scrollMenu"><a href="<?php echo $subcat->getUrl();?>"><?php echo $subcat->getName()?></a></li>
+   <?php }?>
+	</ul>			
+	</div>
+       
+	   <div class="social-col">
+         <h5>Follow Us</h5>
+           <ul>
+            <li class="fb"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+            <li class="insta"><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
+            <li class="twit"><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+            <li class="linkedin"><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+       </div>    
+    </div>    
+    
+	</div>
+      <div class="menu-image-item">
+        <img src="<?php echo $this->getMedia().'catalog/category/'.$this->getNavimage(5); ?>" alt="" class="img-fluid">
+      </div> 
+   </div>
+                <!--/menu-3-cbdx-->
+
+
+</div>
+            <!--/menu-items-->
+
+ </div>
+    
+</div>

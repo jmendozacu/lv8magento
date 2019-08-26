@@ -24,12 +24,36 @@ class Topmenu extends \Magento\Theme\Block\Html\Topmenu
 		return $category;
 	}
 	public function getInnerlogo($id){
-	    $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+	   
+		$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
         $subcategory = $objectManager->create('Magento\Catalog\Model\Category')->load($id);           
         $alldate = $subcategory->getData();
+		
+		
 		return $alldate['innerlogo'];
 	}
-		
+	
+	
+	public function getNavimage($id){
+	
+		$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+        $subcategory = $objectManager->create('Magento\Catalog\Model\Category')->load($id);           
+        $alldate = $subcategory->getData();
+		return $alldate['navimage'];
+	}
+	
+   
+   public function getallcategries($id){
+	
+		$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+        $subcategory = $objectManager->create('Magento\Catalog\Model\Category')->load($id);           
+        //$alldate = $subcategory->getData();
+		return $subcategory ;
+	}
+	
+	
+ 	
+	
  public function getMedia(){
 	$_objectManager = \Magento\Framework\App\ObjectManager::getInstance();
 	$storeManager = $_objectManager->get('Magento\Store\Model\StoreManagerInterface'); 
