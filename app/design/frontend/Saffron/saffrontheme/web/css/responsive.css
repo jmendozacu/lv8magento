@@ -163,10 +163,12 @@
 
 @media (min-width: 768px)  and ( max-width:991px ){
       .footer-logo {  border-bottom: 1px dashed #444;  padding-bottom: 20px;  margin-bottom: 20px; }    
-      .craft-graybx p { line-height:24px; }
+      .craft-graybx p { line-height:24px; font-size:16px; }
       .cbd-info-title .container { padding: 0 5px;  }
       .info-title-list li a { font-size:13px; }
       .cbd-info-bx { height: 310px; overflow-y: auto;  }
+      .contact-form-inner .form-group {   margin-bottom: 35px;   }
+      .craft-graybx { padding:5%; }
       
 
 }
@@ -207,7 +209,7 @@
       p { font-size:16px; line-height:24px;  }
       .labs-about-brand h4, .expertise-info h5{ font-size:20px; }
       .craft-graybx h3, .worx-about-page .craft-graybx h3 { font-size: 24px;  margin: 0 0 10px; }
-      .learn-btn{ padding:15px; }
+      .learn-btn{ padding:15px; font-size:16px; }
       .theBrands-carousel {  margin: 40px 0 0; }
       .theBrands-carousel .boxBrands img {  margin: 0 0 10px;  width: 60px;  }
       .theBrands-carousel .boxBrands p { line-height: 22px; }
@@ -269,8 +271,43 @@
       .menu-inner .adrs-col { margin-bottom:15px; }
 	  .filter-col .filter-link{ margin:0 6px 6px 0; padding:12px; }
 	  .prize-filter { float:left;}
-	  .product-tab-title li { width: auto; }
-	  
+        .product-tab-title li { width: auto; }
+        .container-inner {
+            position: relative;
+        }
+        .cont-img-col img {
+            width: auto;
+            height: 100%;
+            object-fit: cover;
+        }
+        .cont-img-col {
+            width: 15%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            top: 0;
+        }
+        .cont-form-col {
+            padding-left: 15%;
+            padding-right: 0;
+        }
+        .contact-form-inner {
+            padding: 20px 15px;
+        }
+        .contact-form-inner h4 {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .contact-form-inner .form-group {
+            margin-bottom: 30px;
+        }
+        .contact-form-inner .form-control { font-size:13px; }
+        .banner-title-notfront h1, h1 { font-size:28px; }
+        .news-featured h1 { margin-bottom: 20px; }
+        .open-positions h2 {  margin-bottom: 10px;         }
+        .news-featured .owl-theme .owl-nav.disabled+.owl-dots {    margin-top: 10px;      }
+        .latest-post {margin-top: 30px;   }
+        .post-item { margin-bottom: 40px;   }
         
       
 }
