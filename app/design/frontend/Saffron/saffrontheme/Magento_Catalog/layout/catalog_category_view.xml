@@ -9,18 +9,15 @@
     <body>
 	
 		<move element="banners" destination="page.wrapper" before="main.content"/>
-	    
-		<move element="breadcrumbs" destination="topmain" />
+	    <move element="breadcrumbs" destination="topmain" />
 		<move element="category.image" destination="topmain" />
+		<move element="category.cms" destination="topmain"   />
 		<move element="page.main.title" destination="topmain" before="category.cms"/>
-		<move element="category.cms" destination="topmain" />
-		
 		<container name="banners" as="banners" label="Page Banner" htmlTag="div" htmlClass="banner-breadcrumbs labs-bread">
 			<container	name="topmain"  >
 			</container>
         </container>
-     
-		
+
 
    </body>
 </page>

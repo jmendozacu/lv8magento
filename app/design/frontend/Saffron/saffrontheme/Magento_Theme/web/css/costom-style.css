@@ -24,3 +24,6 @@ button:not(.primary) {
 .catalog-category-view .page-wrapper .page-main {
     display: none;
 }
+.categorypath-cdbx-products .page-wrapper .page-main {
+    display: block;
+}

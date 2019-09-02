@@ -5,7 +5,6 @@
       .banner-title-notfront h1 {  font-size: 75px; }
       .lv8-about-info .abtInfo p{ font-size:20px; }
       h2, .worx-about-page h3 {  font-size: 46px; }
-      .footer-links ul,
       .process-bx ul, .cbd-info-bx ul  {  column-count:2;   -webkit-column-count:2;  }
       .lv8-page .owl-item-caption h1{ font-size:80px; }
       .owl-item-caption h1{ font-size:75px; }
@@ -22,41 +21,23 @@
       .info-row-2 .cbd-info-bx { margin-right: 12%; width: calc(100% - 12%); box-sizing: border-box; padding: 0 0 0 12%; }
       .info-title-list, .info-title-list li {display: flex;  display: -webkit-flex; }
       .compounds-box.row1:after{   width:96%;    }
-      .compounds-box:after {
-            content: "";
-            width: 56%;
-            height: 15px;
-            background: #f3793b;
-            position: absolute;
-            right: 0;
-            bottom: -15px;
-      }
+      .compounds-box:after { content: ""; width: 56%; height: 15px; background: #f3793b; position: absolute; right: 0; bottom: -15px;  }
       .summar-bx:before, .summar-bx:after { content: ""; background: #F57B3B; position: absolute;   }
       .summar-bx:before {  right: -15px;  height: 90%;  width: 15px; bottom: -15px;   }
       .summar-bx:after { width: 70%; height: 15px; bottom: -15px; right: 0;   }
 
       /*--menu-animatin-css-start-768--*/
       .menu-col-main, .menu-item-description { order:2;  -webkit-order:2 }
-      .navbar-body {
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom:0; 
-            opacity:0;
-      }
+      .navbar-body { position: absolute; left: 0; top: 0; bottom:0;  opacity:0;   }
       .navbar-body { z-index:-1;  }
       .navbar-body.active{ z-index:1 ;  opacity:1;  }
-      .navbar-body .menu-image-item img{
-            opacity:0;
-            position: absolute;
-            left: 0;
-            top: 0;
-      }
+      .navbar-body .menu-image-item img{ opacity:0; position: absolute; left: 0; top: 0; height: 100vh;  object-fit: cover;  }
       .active.navbar-body .menu-image-item img { opacity:1;  transition:  opacity 1.9s;   }
       .menu-inner { opacity:0; }
       .active .menu-inner { transition: opacity 1.5s;  opacity:1;   }
       .menu-inner .social-col { position: absolute;  bottom: -100px; left: 0;   }
       .active .menu-inner .social-col {  bottom:0;  transition: bottom 1s;    } 
+      .menu-parent li { padding-right:30%; }
       
  
 }
@@ -68,6 +49,7 @@
       .craft-research .craft-info-col{ width: calc(100% - 11.5%); margin-right: 11.5%; }
       .craft-graybx p { font-size: 18px; }
       .brand-info { position: absolute; left: 0; top: 50%; transform: translate(0, -50%); -webkit-transform: translate(0, -50%); }
+      .footer-links ul  {  column-count:2;   -webkit-column-count:2;  }
 
 }
 
@@ -76,20 +58,9 @@
       .point-1 { top: 7%; }
       .point-2 { top: 37%; }
       .point-3 { top: 53%; }
-      .point-circle {
-            position: absolute;
-            top: 13px;
-            right:0; 
-        }
-      .point-circle:after  {
-          content: "";
-          height: 3px;
-          background: #fff;
-          position: absolute;
-          top: 12px;
-          right: 27px;
-          width:0;
-          opacity:0; 
+      .point-circle { position: absolute; top: 13px; right:0;  }
+      .point-circle:after  { content: ""; height: 3px; background: #fff; position: absolute; top: 12px;
+            right: 27px; width:0; opacity:0; 
       }
       .point-body { opacity:0; }
       .point-circle:hover + .point-body,
@@ -139,6 +110,11 @@
       .owl-item-caption { max-width: 1340px;  }
 }
 
+@media (min-width:1025px) and (max-width:1300px) {
+      .menu-parent li { padding-top:8px; padding-bottom:8px; }
+      .menu-parent li.labs-menu { margin-top:12px; padding-top:18px; }
+}
+
 /*==========---min-width-768-max-1199---==========*/
 @media (min-width: 768px)  and ( max-width:1199px ){
       .container { max-width: 96%;   }
@@ -162,13 +138,13 @@
 
 
 @media (min-width: 768px)  and ( max-width:991px ){
-      .footer-logo {  border-bottom: 1px dashed #444;  padding-bottom: 20px;  margin-bottom: 20px; }    
       .craft-graybx p { line-height:24px; font-size:16px; }
       .cbd-info-title .container { padding: 0 5px;  }
       .info-title-list li a { font-size:13px; }
       .cbd-info-bx { height: 310px; overflow-y: auto;  }
       .contact-form-inner .form-group {   margin-bottom: 35px;   }
       .craft-graybx { padding:5%; }
+      .navbar-body .menu-image-item img{ height: 100vh; object-fit: cover; }
       
 
 }
@@ -184,24 +160,35 @@
 
 }
 
+
+@media (max-width:991px) {
+      .ftr-logo {  order: 2;  }
+      .general-col { order: 1; }
+      .legal-col {  order: 3; }
+      .social-media-col { order: 4; margin-top: auto; }
+      .legal-col .footer-links {  margin-top: 20px;  }
+      footer.page-footer{ padding:50px 0; }     
+
+}
+
 @media (max-width:767px) {
-      .logo-col img { width:110px; }
-      .header { padding:20px 0; }
-      .navbar-col .bar-button {  margin-top: 6px; }
+      .container{ max-width:100%;}
+      .logo-col img { width:90px; }
+      .header, .cbdx-page.page-not-front .header { padding:15px 0; }
+      .navbar-col .bar-button {  margin-top:0px; }
       .lv8-about-info .abtInfo h3{ font-size:20px; }
-      .h2, h2 { font-size:28px; }
+      .h2, h2 { font-size:32px; }
       .cbd-info-bx h3 { font-size:26px; }
       .title-col h2{ margin-bottom:20px; }
-      .family-brand a{ padding:8% 10px; }
+      .family-brand a{ background: rgba(255,255,255,0.8);  }
+      .family-brand { width:80%; }
       .family-brand img { max-width:120px;}
-      .cbdx-brand img{ max-width:90px;}
-      .family-brand figure{ margin-bottom:15px; }
-      .family-brand h3{ font-size:18px; }
-      .ourFamily-row h2{ margin-bottom:25px; }
+      .cbdx-brand img{ max-width:110px;}
+      .family-brand figure{ margin-bottom:25px; }
+      .family-brand h3{ font-size: 18px;  font-weight: 400; margin-bottom:15px;  }
+      .ourFamily-row h2{ margin-bottom:30px; }
       .lv8-about-info { margin-bottom: 20px; }
-      .footer-logo {  border-bottom: 1px dashed #444;  padding-bottom: 20px;  margin-bottom: 20px; }
       .footer-logo img {  width: 100px; }
-      footer.page-footer{ padding:30px 0 10px; }
       .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev { width:30px; height:30px; font-size:36px; }
       .owl-carousel .owl-nav button span{line-height:22px; }
       .front-banner .owl-carousel .owl-nav button.owl-next,
@@ -211,17 +198,18 @@
       .craft-graybx h3, .worx-about-page .craft-graybx h3 { font-size: 24px;  margin: 0 0 10px; }
       .learn-btn{ padding:15px; font-size:16px; }
       .theBrands-carousel {  margin: 40px 0 0; }
-      .theBrands-carousel .boxBrands img {  margin: 0 0 10px;  width: 60px;  }
+      .theBrands-carousel .boxBrands img {  margin: 0 0 30px;  width: 120px;  }
       .theBrands-carousel .boxBrands p { line-height: 22px; }
-      .theBrands-carousel .boxBrands{ padding:15px 10px;  }
-      .theBrands-carousel .owl-item .item >img { min-height: 220px; }
+      .theBrands-carousel .boxBrands{ padding: 30px 30px 60px;  background: rgba(255,255,255,0.8);  }
+      .theBrands-carousel .caption { width:80%; }
+      .theBrands-carousel .owl-item .item >img { min-height: 400px; object-fit: cover; }
       .brand-info figure img { max-width: 140px; }
       .point-body { left: 0; right: 0; max-width: 100%;  }
       .info-title-list li{ padding:5px 10px; width:100%; }
       .info-title-list li a { font-size: 13px; }
       .info-title-list li a br,
       .cms-content h3 br { display: none;}
-      .cbdx-page.page-not-front .logo-col img { height:55px;}
+      .cbdx-page.page-not-front .logo-col img { height:42px;}
       .banefints-image-points {  margin: 20px auto;  }
       .cbd-info-bx { margin-bottom: 30px;  }
       .faqs-panel h4 { font-size:18px; }
@@ -233,7 +221,7 @@
       .cms-content h3 { font-size:20px; }
       .summar-bx { margin-bottom:20px; }
       .worx-about-page .lv8-about-info .abtInfo p { margin: 0; }
-      .success-stories { margin-top:12%; }
+      .success-stories { margin:12% 0; }
       .stories-carousel {  padding: 0 15px;  }
       .our-expertise h3 { margin:20px 0 30px; }
       .freeapp-col figure{ max-width:100%; padding:0;  }
@@ -241,73 +229,80 @@
       .appstore-col img { max-width:130px;}
       .front-banner .owl-carousel .owl-nav button span:before { font-size: 28px; line-height: 28px;  }
       /*--menu-css-for-mobile--*/
-      .menu-items { float: right;  width:30%; }
+      .menu-items { float: right;  width:100%; }
       .nav-sections-items .menuBtn { top:15px; z-index:4;}
-      .menu-col-main { width:70%;  padding: 40px 20px 20px; position: relative;  float: left; }
-      .menu-col-main ul { position: absolute; left:20px; right:20px; width:auto; height: 90%; overflow-y: auto;   }
-      .menu-parent li a { font-size: 20px;}
-      .menu-parent li .fa { float: right; padding:0 5px; font-size:24px;  }
-      .menu-parent .fa-angle-left:before { content: "\f105";   }
-      .menu-parent li { text-align: left; }
+      .menu-col-main { width: 50%; padding: 16px 0 30px; float: left; z-index: 5; right: 0; position: absolute;
+            top: 35%; height: calc(100% - 35%); overflow-y: auto; border-left: 1px solid #ccc; z-index: 10;  }
+      .menu-col-main ul { padding: 0 15px;  }
+      .menu-parent li a { font-size: 21px; }
+      .menu-parent li { padding:6px 15px 6px 0;   }
+      .menu-parent li .fa { font-size:22px; }
+      .menu-inner .logo-brand { margin-bottom:22px; }
+      .menu-inner p { font-size:15px; line-height:24px; margin-bottom:15px;  }
+      .menu-parent li.labs-menu{ padding-top: 18px; margin-top: 12px;  }
+      .social-col li { margin-right:8px; }
       .navbar-body { float: left; width: auto;   }
       .menu-image-item { height:100vh; width:30%; float: left;  }
-      .menu-image-item img { width: 100%; float: left; height: 100vh; object-fit: cover; }
-      .menu-item-description { float: left; width: 70%; height: 100vh; padding: 10px 0; position: relative; }
-      .navbar-body { position: fixed; top: 0; right: -100%; width: 100%; background: #fff; z-index: 3; transition: all 0.4s ease; padding:0; }
+      .menu-image-item img { width: 100%; float: left; object-fit: cover;   }
+      .menu-item-front .menu-image-item img { height: 60vh;  }
+      .menu-item-labs .menu-image-item img {  height: 50vh;   }
+      .menu-item-worx .menu-image-item img { height: 100vh;  }
+      .menu-item-cbdx .menu-image-item img { height: 80vh;  }
+      .menu-item-description { float: left; width: 50%; height: 100vh; padding: 10px 0; position: relative; }
+      .navbar-body { position: fixed; top: 0; right:0; width: 100%; background: #fff; z-index: 3; 
+            transition: all 0.4s ease; padding:0; opacity:0;
+      }
+      .navbar-body.active{ opacity:1; z-index:9;}
       .navbar-body.mobile-active { right:0; z-index:5; }
-      .navbar-body.menu-item-front { right: 0; width: 30%; }
-      .navbar-body.menu-item-front .menu-item-description { display: none; }
-      .navbar-body.menu-item-front .menu-image-item { width: 100%; }
-      .mobile-back-btn { margin:0 0 10px; display: block; }
-      .mobile-back-btn a { font-size: 28px; color: #9b9b9b; padding: 0px 20px; display: inline-block; line-height: normal; cursor: pointer; }
-      .menu-inner { position: absolute; left: 12px; right: 6px; width: auto; height: 80%; overflow-y: auto; }
-      .cbdx-brands-col .brand-link img { width:60px; }
-      .cbdx-brands-col .brand-link:nth-of-type(2) img { width:50px; }
+      .navbar-body .menu-image-item { width: 100%; position: fixed; top: 0; height: 35%; overflow: hidden;   }
+      .mobile-back-btn { margin:0 0 10px; display: block; position: relative; z-index:1; }
+      .mobile-back-btn a { font-size: 28px; color: #9b9b9b; padding: 0px 15px; display: inline-block; line-height: normal; cursor: pointer; }
+      .menu-inner { position: absolute; left: 0; right: 0; width: auto; overflow-y: auto; top: 35%;
+            padding: 20px 15px 50px; height: calc(100% - 35%); opacity:0;
+       }
+       .menu-items    .active .menu-inner { opacity:1;}
+      .cbdx-brands-col .brand-link img { width:55px; }
+      .cbdx-brands-col .brand-link:nth-of-type(2) img { width:42px; }
       .menu-inner .adrs-col li a  { font-size:14px; }
-      .cbdx-brands-col .brand-link { margin-right:10px;  }
-      .social-col h5, .cbdx-brands-col h5 { font-size:15px;  }
+      .cbdx-brands-col .brand-link { margin:0 7px 15px 0;  }
+      .social-col h5, .cbdx-brands-col h5 { font-size:13px;  }
       .menu-inner .logo-brand img { height:22px; }
+      .menu-item-front .menu-inner .logo-brand img { height: 26px;   }
       .menu-item-cbdx .menu-inner .logo-brand img { height:45px; }
-      .menu-inner .adrs-col { margin-bottom:15px; }
-	  .filter-col .filter-link{ margin:0 6px 6px 0; padding:12px; }
-	  .prize-filter { float:left;}
-        .product-tab-title li { width: auto; }
-        .container-inner {
-            position: relative;
-        }
-        .cont-img-col img {
-            width: auto;
-            height: 100%;
-            object-fit: cover;
-        }
-        .cont-img-col {
-            width: 15%;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            top: 0;
-        }
-        .cont-form-col {
-            padding-left: 15%;
-            padding-right: 0;
-        }
-        .contact-form-inner {
-            padding: 20px 15px;
-        }
-        .contact-form-inner h4 {
-            font-size: 18px;
-            margin-bottom: 30px;
-        }
-        .contact-form-inner .form-group {
-            margin-bottom: 30px;
-        }
-        .contact-form-inner .form-control { font-size:13px; }
-        .banner-title-notfront h1, h1 { font-size:28px; }
-        .news-featured h1 { margin-bottom: 20px; }
-        .open-positions h2 {  margin-bottom: 10px;         }
-        .news-featured .owl-theme .owl-nav.disabled+.owl-dots {    margin-top: 10px;      }
-        .latest-post {margin-top: 30px;   }
-        .post-item { margin-bottom: 40px;   }
-        
+      .menu-inner .adrs-col { margin-bottom:10px; }
+      .filter-col .filter-link{ margin:0 6px 6px 0; padding:12px; }
+      .social-col li a { font-size:18px; }
+      .prize-filter { float:left;}
+      .product-tab-title li { width: auto; }
+      .container-inner { position: relative;  }
+      .cont-img-col img { width: auto; height: 100%; object-fit: cover;   }
+      .cont-img-col { width: 15%; position: absolute; left: 0; bottom: 0; top: 0;  }
+      .cont-form-col { padding-left: 15%; padding-right: 0;  }
+      .contact-form-inner { padding: 20px 15px;  }
+      .contact-form-inner h4 { font-size: 18px; margin-bottom: 30px;  }
+      .contact-form-inner .form-group {  margin-bottom: 30px;  }
+      .contact-form-inner .form-control { font-size:13px; }
+      .banner-title-notfront h1, h1 { font-size:40px; }
+      .owl-item-caption h1 br { display: none;   }
+      .owl-item-caption p { font-size: 28px; line-height: normal;  }
+      .news-featured h1 { margin-bottom: 20px; }
+      .open-positions h2 {  margin-bottom: 10px;         }
+      .news-featured .owl-theme .owl-nav.disabled+.owl-dots {    margin-top: 10px;      }
+      .latest-post {margin-top: 30px;   }
+      .post-item { margin-bottom: 40px;   }
+      .image-notfront img {  min-height: 500px;  object-fit: cover;  }
+      .banner-breadcrumbs .breadcrumbs { display: none; }
+      .banner-notfront { margin-top:0; }
+      .banner-breadcrumbs { margin-bottom:15px; }
+      .ourFamily-row {  padding: 0 15px;   }
+      .family-image img { min-height: 400px; object-fit: cover;  }
+      .mobile-arrow { display:block; }
+      .labs-about-brand { margin-bottom:10%; }
+      .header .container { display: flex; align-items: center;  }
+      .header-right-col { margin-left: auto; }
+      .promoting-carousel .owl-carousel .owl-item img { width: auto; float: none; display: inline-block; }
+      .promoting-carousel { text-align: center; }
+      .cbdx-brands-col { margin-bottom:12px; }
+      .menu-inner .adrs-col li { margin-bottom:10px; }
       
 }

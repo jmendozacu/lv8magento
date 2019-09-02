@@ -14,6 +14,8 @@ a, a:hover{ text-decoration:none; }
 ul{ padding:0; }
 .header .container {
     max-width: 100%;
+    display: flex;
+    align-items: center;
 }
 .page-front .header {
     position: absolute;
@@ -29,7 +31,6 @@ ul{ padding:0; }
 }
 .cbdx-page.page-not-front .header { padding: 20px 0; }
 .cbdx-page.page-not-front .logo-col img { height: 70px;  width: auto; }
-.cbdx-page.page-not-front .navbar-col .bar-button { margin-top: 20px; }
 .logo-col {
     float: left;
     width: auto;
@@ -37,6 +38,7 @@ ul{ padding:0; }
 .header-right-col {
     float: right;
     width: auto;
+    margin-left: auto;
 }
 .menuBtn  {
     background: none;
@@ -60,13 +62,9 @@ ul{ padding:0; }
     -webkit-transition:all 0.3s ease; 
 }
 .page-not-front .menubar { background:#000; }
-.labs-page.page-not-front .menubar,
-.categorypath-labs-about .menubar { background: #4d75a4; }
-.worx-page.page-not-front .menubar,
-.categorypath-worx-about .menubar { background: #37BFB2; }
-.cbdx-page.page-not-front .menubar,
-.categorypath-cdbx .menubar { background: #F57B3B; }
-.navbar-col .bar-button {  margin-top: 5px; }
+.labs-page.page-not-front .menubar { background: #4d75a4; }
+.worx-page.page-not-front .menubar { background: #37BFB2; }
+.cbdx-page.page-not-front .menubar { background: #F57B3B; }
 .bar-button:hover .menubar2 {  width: 100%; }
 .bar-button:hover .menubar3 {  width: 100%; }
 
@@ -235,7 +233,7 @@ button:focus{ outline:none; }
 .menu-col-main {
     float: right;
     width: 30%;
-    padding:60px 50px 50px;
+    padding:50px 50px 40px;
     box-sizing: border-box;
 }
 .menu-items {
@@ -263,7 +261,7 @@ button:focus{ outline:none; }
     width: 40%;
     padding:50px 40px;
     box-sizing: border-box;
-    border-right: 1px solid #ddd;
+    border-right: 1px solid #ccc;
 }
 .menu-col-sub .menu-inner{
     padding:0 10px; 
@@ -273,14 +271,16 @@ button:focus{ outline:none; }
     width: 30%;
 }
 .menu-parent li.labs-menu{
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #ccc;
     padding-top: 24px;
     margin-top: 18px;
 }
 
 .menu-parent li{
-    padding:12px 0px;
-    display: block; margin:0;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 .menu-parent li a {
     color: #000;
@@ -289,9 +289,6 @@ button:focus{ outline:none; }
     font-weight: 500;
     margin: 0;
     transition: all 0.5s ease; -webkit-transition: all 0.5s ease; 
-}
-.menu-parent li a:hover {
-    margin: 0 0 0 -30px;
 }
 .menu-parent li.menu-item a{
     color:#4e5054;
@@ -358,8 +355,9 @@ button:focus{ outline:none; }
     float: left;
     color: #9b9b9b;
     font-size: 26px;
-    padding: 6px 10px;
+    padding: 0 10px;
     cursor: pointer;
+    margin-right: auto;
 }
 .navbar-body {
     float: left;
@@ -380,7 +378,6 @@ button:focus{ outline:none; }
     color: #4E5054;
     font-size: 16px;
     display: inline-block;
-	text-transform: uppercase;
 }
 
 .menu-inner .adrs-col {
@@ -506,6 +503,7 @@ button:focus{ outline:none; }
     float: left;
     width: 100%;
     margin-top: -58px;
+    position: relative;
 }
 .banner-notfront img {
     width: 100%;
@@ -597,7 +595,7 @@ button:focus{ outline:none; }
     color: #4E4F53;
     font-size: 22px;
     font-weight: 500;
-    margin: 0;
+    margin: 0 0 20px;
 }
 footer.page-footer {
     background: #4f5054;
@@ -1435,6 +1433,7 @@ tbody tr td:first-child {
     float: left;
     width: calc(100% - 70px);
     margin:0 0 20px; 
+    padding-left: 20px;
 }
 .expertise-info h5 {
     font-family: 'Montserrat', sans-serif;
@@ -1475,7 +1474,7 @@ div.scroll-page {
 }
 
 .banner-breadcrumbs .breadcrumbs {
-    padding: 20px 0; margin:0;
+    padding: 20px 0;
 }
 .breadcrumbs li {
     display: inline-block;
@@ -1663,9 +1662,19 @@ ul.filter-cat-list li:last-child a {
     position: relative;
     z-index: 1;
 }
-.menuBtn:hover, .menuBtn:focus {
-    background: none;
-    border: none;
-    box-shadow: none;
-    outline: none;
+.mobile-arrow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 0;
+    display: none;
 }
+.mobile-arrow .scroll-down {
+    font-size: 70px;
+    color: #fff;
+    font-weight: normal;
+    cursor: pointer;
+}
+
