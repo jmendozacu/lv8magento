@@ -114,6 +114,32 @@
       .menu-parent li { padding-top:8px; padding-bottom:8px; }
       .menu-parent li.labs-menu { margin-top:12px; padding-top:18px; }
 }
+@media (max-width:1024px) {
+	.point-body{ display: none; }
+	.point-body .closeBtn{ display:block; }
+	/* .point { display: inline-block; width: 16.666%; text-align: center; margin:1% 0;  } */
+	.point-body{ position: absolute; top:50px;  }
+	.point-circle.active .dot { background:#F57B3B; }
+	.point-circle .dot { width:10px; height:10px;}	  
+	.point-circle { width: 20px; height: 20px; }
+	.point .point-circle { position: absolute; }
+	.point .point-body{  margin:0 auto; z-index:1; }
+	.cbd-info-section {  position: relative; z-index: 1; }
+	
+	
+	
+
+}
+
+@media (max-width:991px) {
+	.ftr-logo {  order: 2;  }
+	.general-col { order: 1; }
+	.legal-col {  order: 3; }
+	.social-media-col { order: 4; margin-top: auto; }
+	.legal-col .footer-links {  margin-top: 20px;  }
+	footer.page-footer{ padding:50px 0; }     
+
+}
 
 /*==========---min-width-768-max-1199---==========*/
 @media (min-width: 768px)  and ( max-width:1199px ){
@@ -136,173 +162,203 @@
 
 }
 
+@media (min-width: 992px) and ( max-width:1024px ){
+	.point-body{ max-width:270px; }
+	.point-1 .point-circle { top: 8%; left: 38%; transform: translate(-38%, -8%); }
+	.point-1 .point-body { top:5%; }
+	.point-2 .point-circle { top: 13%; left: 47%; transform: translate(-47%, -13%);	}
+	.point-2 .point-body { top:10%; right:80px; }
+	.point-3 .point-circle { top: 22%; left: 49%; transform: translate(-49%, -22%);	}
+	.point-3 .point-body { top:18%; right:80px; }
+	.point-4 .point-circle { top: 39%; left: 38%; transform: translate(-38%, -39%);	}
+	.point-4 .point-body { top:34%; }
+	.point-5 .point-circle { top: 55%; left: 38%; transform: translate(-38%, -55%);	}
+	.point-5 .point-body { top:48%;  }
+	.point-6 .point-circle { top: 78%; left: 66%; transform: translate(-66%, -78%);	}
+	.point-6 .point-body { top:70%; right:0; }
+	
+}
 
-@media (min-width: 768px)  and ( max-width:991px ){
-      .craft-graybx p { line-height:24px; font-size:16px; }
-      .cbd-info-title .container { padding: 0 5px;  }
-      .info-title-list li a { font-size:13px; }
-      .cbd-info-bx { height: 310px; overflow-y: auto;  }
-      .contact-form-inner .form-group {   margin-bottom: 35px;   }
-      .craft-graybx { padding:5%; }
-      .navbar-body .menu-image-item img{ height: 100vh; object-fit: cover; }
+@media (min-width: 768px) and ( max-width:991px ){
+	.craft-graybx p { line-height:24px; font-size:16px; }
+	.cbd-info-title .container { padding: 0 5px;  }
+	.info-title-list li a { font-size:13px; }
+	.cbd-info-bx { height: 310px; overflow-y: auto;  }
+	.contact-form-inner .form-group {   margin-bottom: 35px;   }
+	.craft-graybx { padding:5%; }
+	.navbar-body .menu-image-item img{ height: 100vh; object-fit: cover; }
+	.point-body{ max-width:230px;}
+	.point-1 .point-circle { top: 8%; left: 38%; transform: translate(-38%, -8%); }
+	.point-1 .point-body { top:5%; }
+	.point-2 .point-circle { top: 13%; left: 47%; transform: translate(-47%, -13%);	}
+	.point-2 .point-body { top:11%; right:60px; }
+	.point-3 .point-circle { top: 22%; left: 48%; transform: translate(-48%, -22%);	}
+	.point-3 .point-body { top:19%; right:60px; }
+	.point-4 .point-circle { top: 39%; left: 38%; transform: translate(-38%, -39%);	}
+	.point-4 .point-body { top:35%; }
+	.point-5 .point-circle { top: 55%; left: 38%; transform: translate(-38%, -55%);	}
+	.point-5 .point-body { top:48%; }
+	.point-6 .point-circle { top: 78%; left: 66%; transform: translate(-66%, -78%);	}
+	.point-6 .point-body { top:80%; right:0; }
       
 
 }
 
-@media (max-width:1024px) {
-      .point-body{ display: none; }
-      .point { display: inline-block; width: 16.666%; text-align: center; margin:1% 0;  }
-        .point-circle { display: inline-block; line-height: 34px;   }
-        .point-body{ position: absolute; top:50px;  }
-        .point-circle.active .dot { background:#F57B3B; }
-        .point-5 .point-body,
-        .point-6 .point-body { right: 0;  }
 
-}
-
-
-@media (max-width:991px) {
-      .ftr-logo {  order: 2;  }
-      .general-col { order: 1; }
-      .legal-col {  order: 3; }
-      .social-media-col { order: 4; margin-top: auto; }
-      .legal-col .footer-links {  margin-top: 20px;  }
-      footer.page-footer{ padding:50px 0; }     
-
-}
 
 @media (max-width:767px) {
-      .container{ max-width:100%;}
-      .logo-col img { width:90px; }
-      .header, .cbdx-page.page-not-front .header { padding:15px 0; }
-      .navbar-col .bar-button {  margin-top:0px; }
-      .lv8-about-info .abtInfo h3{ font-size:20px; }
-      .h2, h2 { font-size:32px; }
-      .cbd-info-bx h3 { font-size:26px; }
-      .title-col h2{ margin-bottom:20px; }
-      .family-brand a{ background: rgba(255,255,255,0.8);  }
-      .family-brand { width:80%; }
-      .family-brand img { max-width:120px;}
-      .cbdx-brand img{ max-width:110px;}
-      .family-brand figure{ margin-bottom:25px; }
-      .family-brand h3{ font-size: 18px;  font-weight: 400; margin-bottom:15px;  }
-      .ourFamily-row h2{ margin-bottom:30px; }
-      .lv8-about-info { margin-bottom: 20px; }
-      .footer-logo img {  width: 100px; }
-      .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev { width:30px; height:30px; font-size:36px; }
-      .owl-carousel .owl-nav button span{line-height:22px; }
-      .front-banner .owl-carousel .owl-nav button.owl-next,
-      .front-banner .owl-carousel .owl-nav button.owl-prev { top:initial; bottom:40px; margin:0;   }
-      p { font-size:16px; line-height:24px;  }
-      .labs-about-brand h4, .expertise-info h5{ font-size:20px; }
-      .craft-graybx h3, .worx-about-page .craft-graybx h3 { font-size: 24px;  margin: 0 0 10px; }
-      .learn-btn{ padding:15px; font-size:16px; }
-      .theBrands-carousel {  margin: 40px 0 0; }
-      .theBrands-carousel .boxBrands img {  margin: 0 0 30px;  width: 120px;  }
-      .theBrands-carousel .boxBrands p { line-height: 22px; }
-      .theBrands-carousel .boxBrands{ padding: 30px 30px 60px;  background: rgba(255,255,255,0.8);  }
-      .theBrands-carousel .caption { width:80%; }
-      .theBrands-carousel .owl-item .item >img { min-height: 400px; object-fit: cover; }
-      .brand-info figure img { max-width: 140px; }
-      .point-body { left: 0; right: 0; max-width: 100%;  }
-      .info-title-list li{ padding:5px 10px; width:100%; }
-      .info-title-list li a { font-size: 13px; }
-      .info-title-list li a br,
-      .cms-content h3 br { display: none;}
-      .cbdx-page.page-not-front .logo-col img { height:42px;}
-      .banefints-image-points {  margin: 20px auto;  }
-      .cbd-info-bx { margin-bottom: 30px;  }
-      .faqs-panel h4 { font-size:18px; }
-      .cms-title .title-left, .cms-title .logo-right { width:100%; }
-      .cms-title h1 {  font-size: 30px;   }
-      .cms-title .title-left span { font-size:20px; }
-      .cms-title .logo-right img { width: 100px; margin: 20px 0 0;  }
-      .compounds-box h2 { font-size:22px; margin:0;  }
-      .cms-content h3 { font-size:20px; }
-      .summar-bx { margin-bottom:20px; }
-      .worx-about-page .lv8-about-info .abtInfo p { margin: 0; }
-      .success-stories { margin:12% 0; }
-      .stories-carousel {  padding: 0 15px;  }
-      .our-expertise h3 { margin:20px 0 30px; }
-      .freeapp-col figure{ max-width:100%; padding:0;  }
-      .app-info { width:100%; }
-      .appstore-col img { max-width:130px;}
-      .front-banner .owl-carousel .owl-nav button span:before { font-size: 28px; line-height: 28px;  }
-      /*--menu-css-for-mobile--*/
-      .menu-items { float: right;  width:100%; }
-      .nav-sections-items .menuBtn { top:15px; z-index:4;}
-      .menu-col-main { width: 50%; padding: 16px 0 30px; float: left; z-index: 5; right: 0; position: absolute;
-            top: 35%; height: calc(100% - 35%); overflow-y: auto; border-left: 1px solid #ccc; z-index: 10;  }
-      .menu-col-main ul { padding: 0 15px;  }
-      .menu-parent li a { font-size: 21px; }
-      .menu-parent li { padding:6px 15px 6px 0;   }
-      .menu-parent li .fa { font-size:22px; }
-      .menu-inner .logo-brand { margin-bottom:22px; }
-      .menu-inner p { font-size:15px; line-height:24px; margin-bottom:15px;  }
-      .menu-parent li.labs-menu{ padding-top: 18px; margin-top: 12px;  }
-      .social-col li { margin-right:8px; }
-      .navbar-body { float: left; width: auto;   }
-      .menu-image-item { height:100vh; width:30%; float: left;  }
-      .menu-image-item img { width: 100%; float: left; object-fit: cover;   }
-      .menu-item-front .menu-image-item img { height: 60vh;  }
-      .menu-item-labs .menu-image-item img {  height: 50vh;   }
-      .menu-item-worx .menu-image-item img { height: 100vh;  }
-      .menu-item-cbdx .menu-image-item img { height: 80vh;  }
-      .menu-item-description { float: left; width: 50%; height: 100vh; padding: 10px 0; position: relative; }
-      .navbar-body { position: fixed; top: 0; right:0; width: 100%; background: #fff; z-index: 3; 
-            transition: all 0.4s ease; padding:0; opacity:0;
-      }
-      .navbar-body.active{ opacity:1; z-index:9;}
-      .navbar-body.mobile-active { right:0; z-index:5; }
-      .navbar-body .menu-image-item { width: 100%; position: fixed; top: 0; height: 35%; overflow: hidden;   }
-      .mobile-back-btn { margin:0 0 10px; display: block; position: relative; z-index:1; }
-      .mobile-back-btn a { font-size: 28px; color: #9b9b9b; padding: 0px 15px; display: inline-block; line-height: normal; cursor: pointer; }
-      .menu-inner { position: absolute; left: 0; right: 0; width: auto; overflow-y: auto; top: 35%;
-            padding: 20px 15px 50px; height: calc(100% - 35%); opacity:0;
-       }
-       .menu-items    .active .menu-inner { opacity:1;}
-      .cbdx-brands-col .brand-link img { width:55px; }
-      .cbdx-brands-col .brand-link:nth-of-type(2) img { width:42px; }
-      .menu-inner .adrs-col li a  { font-size:14px; }
-      .cbdx-brands-col .brand-link { margin:0 7px 15px 0;  }
-      .social-col h5, .cbdx-brands-col h5 { font-size:13px;  }
-      .menu-inner .logo-brand img { height:22px; }
-      .menu-item-front .menu-inner .logo-brand img { height: 26px;   }
-      .menu-item-cbdx .menu-inner .logo-brand img { height:45px; }
-      .menu-inner .adrs-col { margin-bottom:10px; }
-      .filter-col .filter-link{ margin:0 6px 6px 0; padding:12px; }
-      .social-col li a { font-size:18px; }
-      .prize-filter { float:left;}
-      .product-tab-title li { width: auto; }
-      .container-inner { position: relative;  }
-      .cont-img-col img { width: auto; height: 100%; object-fit: cover;   }
-      .cont-img-col { width: 15%; position: absolute; left: 0; bottom: 0; top: 0;  }
-      .cont-form-col { padding-left: 15%; padding-right: 0;  }
-      .contact-form-inner { padding: 20px 15px;  }
-      .contact-form-inner h4 { font-size: 18px; margin-bottom: 30px;  }
-      .contact-form-inner .form-group {  margin-bottom: 30px;  }
-      .contact-form-inner .form-control { font-size:13px; }
-      .banner-title-notfront h1, h1 { font-size:40px; }
-      .owl-item-caption h1 br { display: none;   }
-      .owl-item-caption p { font-size: 28px; line-height: normal;  }
-      .news-featured h1 { margin-bottom: 20px; }
-      .open-positions h2 {  margin-bottom: 10px;         }
-      .news-featured .owl-theme .owl-nav.disabled+.owl-dots {    margin-top: 10px;      }
-      .latest-post {margin-top: 30px;   }
-      .post-item { margin-bottom: 40px;   }
-      .image-notfront img {  min-height: 500px;  object-fit: cover;  }
-      .banner-breadcrumbs .breadcrumbs { display: none; }
-      .banner-notfront { margin-top:0; }
-      .banner-breadcrumbs { margin-bottom:15px; }
-      .ourFamily-row {  padding: 0 15px;   }
-      .family-image img { min-height: 400px; object-fit: cover;  }
-      .mobile-arrow { display:block; }
-      .labs-about-brand { margin-bottom:10%; }
-      .header .container { display: flex; align-items: center;  }
-      .header-right-col { margin-left: auto; }
-      .promoting-carousel .owl-carousel .owl-item img { width: auto; float: none; display: inline-block; }
-      .promoting-carousel { text-align: center; }
-      .cbdx-brands-col { margin-bottom:12px; }
-      .menu-inner .adrs-col li { margin-bottom:10px; }
+	.container{ max-width:100%;}
+	.logo-col img { width:90px; }
+	.header, .cbdx-page.page-not-front .header { padding:15px 0; }
+	.navbar-col .bar-button {  margin-top:0px; }
+	.lv8-about-info .abtInfo h3{ font-size:20px; }
+	.h2, h2 { font-size:32px; }
+	.cbd-info-bx h3 { font-size:26px; }
+	.title-col h2{ margin-bottom:20px; }
+	.family-brand a{ background: rgba(255,255,255,0.8);  }
+	.family-brand { width:80%; }
+	.family-brand img { max-width:120px;}
+	.cbdx-brand img{ max-width:110px;}
+	.family-brand figure{ margin-bottom:25px; }
+	.family-brand h3{ font-size: 18px;  font-weight: 400; margin-bottom:15px;  }
+	.ourFamily-row h2{ margin-bottom:30px; }
+	.lv8-about-info { margin-bottom: 20px; padding:10% 0 5%; }
+	.footer-logo img {  width: 100px; }
+	.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev { width:30px; height:30px; font-size:36px; }
+	.owl-carousel .owl-nav button span{line-height:22px; }
+	.front-banner .owl-carousel .owl-nav button.owl-next,
+	.front-banner .owl-carousel .owl-nav button.owl-prev { top:initial; bottom:40px; margin:0;   }
+	p { font-size:16px; line-height:24px;  }
+	.labs-about-brand h4, .expertise-info h5{ font-size:20px; }
+	.craft-graybx h3, .worx-about-page .craft-graybx h3 { font-size: 24px;  margin: 0 0 10px; }
+	.learn-btn{ padding:15px; font-size:16px; }
+	.theBrands-carousel {  margin: 40px 0 0; }
+	.theBrands-carousel .boxBrands img {  margin: 0 0 30px;  width: 120px;  }
+	.theBrands-carousel .boxBrands p { line-height: 22px; }
+	.theBrands-carousel .boxBrands{ padding: 30px 30px 60px;  background: rgba(255,255,255,0.8);  }
+	.theBrands-carousel .caption { width:80%; }
+	.theBrands-carousel .owl-item .item >img { min-height: 400px; object-fit: cover; }
+	.brand-info figure img { max-width: 140px; }
+	.point-body { left: 0; right: 0; max-width: 100%;  }
+	.info-title-list li{ padding:8px 5px; width:100%; }
+	.info-title-list li a{ font-weight:500; }
+	.info-title-list li a br,
+	.cms-content h3 br { display: none;}
+	.cbdx-page.page-not-front .logo-col img { height:42px;}
+	.banefints-image-points {  margin: 40px auto; width:100%;  }
+	.cbd-info-bx { margin-bottom: 30px;  }
+	.faqs-panel h4 { font-size:18px; }
+	.cms-title .title-left, .cms-title .logo-right { width:100%; }
+	.cms-title h1 {  font-size: 30px;   }
+	.cms-title .title-left span { font-size:20px; }
+	.cms-title .logo-right img { width: 100px; margin: 20px 0 0;  }
+	.compounds-box h2 { font-size:22px; margin:0;  }
+	.cms-content h3 { font-size:20px; }
+	.summar-bx { margin-bottom:20px; }
+	.worx-about-page .lv8-about-info .abtInfo p { margin: 0; }
+	.success-stories { margin:12% 0; }
+	.stories-carousel {  padding: 0 15px;  }
+	.our-expertise h3 { margin:20px 0 30px; }
+	.freeapp-col figure{ max-width:100%; padding:0;  }
+	.app-info { width:100%; }
+	.appstore-col img { max-width:130px;}
+	.front-banner .owl-carousel .owl-nav button span:before { font-size: 28px; line-height: 28px;  }
+	/*--menu-css-for-mobile--*/
+	.menu-items { float: right;  width:100%; }
+	.nav-sections-items .menuBtn { top:15px; z-index:11;}
+	.menu-col-main { width: 50%; padding: 16px 0 30px; float: left; z-index: 5; right: 0; position: absolute;
+		top: 35%; height: calc(100% - 35%); overflow-y: auto; border-left: 1px solid #ccc; z-index: 10;  }
+	.menu-col-main ul { padding: 0 15px;  }
+	.menu-parent li a { font-size: 21px; }
+	.menu-parent li { padding:6px 15px 6px 0;   }
+	.menu-parent li .fa { font-size:22px; }
+	.menu-inner .logo-brand { margin-bottom:22px; }
+	.menu-inner p { font-size:15px; line-height:24px; margin-bottom:15px;  }
+	.menu-parent li.labs-menu{ padding-top: 18px; margin-top: 12px;  }
+	.social-col li { margin-right:8px; }
+	.navbar-body { float: left; width: auto;   }
+	.menu-image-item { height:100vh; width:30%; float: left;  }
+	.menu-image-item img { width: 100%; float: left; object-fit: cover;   }
+	.menu-item-front .menu-image-item img { height: 60vh;  }
+	.menu-item-labs .menu-image-item img {  height: 50vh;   }
+	.menu-item-worx .menu-image-item img { height: 100vh;  }
+	.menu-item-cbdx .menu-image-item img { height: 80vh;  }
+	.menu-item-description { float: left; width: 50%; height: 100vh; padding: 10px 0; position: relative; }
+	.navbar-body { position: fixed; top: 0; right:0; width: 100%; background: #fff; z-index: 3; 
+		transition: all 0.4s ease; padding:0; opacity:0;
+	}
+	.navbar-body.active{ opacity:1; z-index:9;}
+	.navbar-body.mobile-active { right:0; z-index:5; }
+	.navbar-body .menu-image-item { width: 100%; position: fixed; top: 0; height: 35%; overflow: hidden;   }
+	.mobile-back-btn { margin:0 0 10px; display: block; position: relative; z-index:1; }
+	.mobile-back-btn a { font-size: 28px; color: #9b9b9b; padding: 0px 15px; display: inline-block; line-height: normal; cursor: pointer; }
+	.menu-inner { position: absolute; left: 0; right: 0; width: auto; overflow-y: auto; top: 35%;
+		padding: 20px 15px 50px; height: calc(100% - 35%); opacity:0;
+	}
+	.menu-items    .active .menu-inner { opacity:1;}
+	.cbdx-brands-col .brand-link img { width:55px; }
+	.cbdx-brands-col .brand-link:nth-of-type(2) img { width:42px; }
+	.menu-inner .adrs-col li a  { font-size:14px; }
+	.cbdx-brands-col .brand-link { margin:0 7px 15px 0;  }
+	.social-col h5, .cbdx-brands-col h5 { font-size:13px;  }
+	.menu-inner .logo-brand img { height:22px; }
+	.menu-item-front .menu-inner .logo-brand img { height: 26px;   }
+	.menu-item-cbdx .menu-inner .logo-brand img { height:45px; }
+	.menu-inner .adrs-col { margin-bottom:10px; }
+	.filter-col .filter-link{ margin:0 6px 6px 0; padding:12px; }
+	.social-col li a { font-size:18px; }
+	.prize-filter { float:left;}
+	.product-tab-title li { width: auto; }
+	.container-inner { position: relative;  }
+	.cont-img-col img { width: auto; height: 100%; object-fit: cover;   }
+	.cont-img-col { width: 15%; position: absolute; left: 0; bottom: 0; top: 0;  }
+	.cont-form-col { padding-left: 15%; padding-right: 0;  }
+	.contact-form-inner { padding: 20px 15px;  }
+	.contact-form-inner h4 { font-size: 18px; margin-bottom: 30px;  }
+	.contact-form-inner .form-group {  margin-bottom: 30px;  }
+	.contact-form-inner .form-control { font-size:13px; }
+	.banner-title-notfront h1, h1 { font-size:40px; }
+	.owl-item-caption h1 br { display: none;   }
+	.owl-item-caption p { font-size: 28px; line-height: normal;  }
+	.news-featured h1 { margin-bottom: 20px; }
+	.open-positions h2 {  margin-bottom: 10px;         }
+	.news-featured .owl-theme .owl-nav.disabled+.owl-dots {    margin-top: 10px;      }
+	.latest-post {margin-top: 30px;   }
+	.post-item { margin-bottom: 40px;   }
+	.image-notfront img {  min-height: 500px;  object-fit: cover;  }
+	.banner-breadcrumbs .breadcrumbs { display: none; }
+	.banner-notfront { margin-top:0; }
+	.ourFamily-row {  padding: 0 15px;   }
+	.family-image img { min-height: 400px; object-fit: cover;  }
+	.mobile-arrow { display:block; }
+	.labs-about-brand { margin-bottom:10%; }
+	.header .container { display: flex; align-items: center;  }
+	.header-right-col { margin-left: auto; }
+	.promoting-carousel .owl-carousel .owl-item img { width: auto; float: none; display: inline-block; }
+	.promoting-carousel { text-align: center; }
+	.cbdx-brands-col { margin-bottom:12px; }
+	.menu-inner .adrs-col li { margin-bottom:10px; }
+	.social-media-col .footer-links li a {font-size:18px; }
+	.social-media-col .footer-links li { margin-right:8px;}
+	.information-mobile { display:block; }
+	.info-title-list { background: #fff; float: left; padding: 10px 0; display: none; }
+	.banefints-image-points img { min-height: 500px; object-fit: cover; width: 300px; }
+	.banefints-image-points figure { text-align: center; }
+	.benefit-points { width: 100%; max-width: 300px; }
+	.point .point-body{ max-width:94%; }
+	.point-1 .point-circle { top: 7%; left: 25%; transform: translate(-25%, -7%); }
+	.point-1 .point-body { top:11.5%; }
+	.point-2 .point-circle { top: 13%; left: 45%; transform: translate(-45%, -13%);	}
+	.point-2 .point-body { top:17%; }
+	.point-3 .point-circle { top: 22%; left: 48%; transform: translate(-48%, -22%);	}
+	.point-3 .point-body { top:27%; }
+	.point-4 .point-circle { top: 39%; left: 27%; transform: translate(-27%, -39%);	}
+	.point-4 .point-body { top:43%; }
+	.point-5 .point-circle { top: 55%; left: 26%; transform: translate(-26%, -55%);	}
+	.point-5 .point-body { top:58%; }
+	.point-6 .point-circle { top: 78%; left: 82%; transform: translate(-82%, -78%);	}
+	.point-6 .point-body { top:81%; }
+	
+		
       
 }

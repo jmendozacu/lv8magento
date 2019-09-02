@@ -89,7 +89,8 @@ button:not(.primary) {
     text-decoration: none;
 }
 
-.cbdx-page .page-wrapper .banner-breadcrumbs .breadcrumbs a {
+.cbdx-page .page-wrapper .banner-breadcrumbs .breadcrumbs a,
+.cbdx-page .page-wrapper .banner-breadcrumbs .breadcrumbs strong {
     color: #000;
 }
 
