@@ -51,3 +51,8 @@ button:not(.primary) {
 .cbdx-page .header.content {
     display: block;
 }
+.banner-breadcrumbs .breadcrumbs {
+    padding: 13px 0;
+    position: relative;
+    z-index: 1;
+}
