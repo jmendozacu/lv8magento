@@ -27,3 +27,27 @@ button:not(.primary) {
 .categorypath-cdbx-products .page-wrapper .page-main {
     display: block;
 }
+
+.block.block-search {
+    display: none;
+}
+
+.cbdx-page.page-not-front header {
+    position: relative;
+}
+
+.cbdx-page.page-not-front .content {
+    position: absolute;
+    margin-right: 10%;
+    width: auto;
+    right: 0;
+    padding: 20px 15px;
+    box-shadow: none;
+}
+.minicart-wrapper .action.showcart:before {
+    color: #F57B3B;
+    font-size: 31px;
+}
+.cbdx-page .header.content {
+    display: block;
+}
