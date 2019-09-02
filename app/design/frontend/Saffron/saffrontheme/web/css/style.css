@@ -1475,6 +1475,8 @@ div.scroll-page {
 
 .banner-breadcrumbs .breadcrumbs {
     padding: 20px 0;
+	position: relative;
+    z-index: 1;
 }
 .breadcrumbs li {
     display: inline-block;
