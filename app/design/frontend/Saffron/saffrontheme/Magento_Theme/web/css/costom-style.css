@@ -56,3 +56,43 @@ button:not(.primary) {
     position: relative;
     z-index: 1;
 }
+
+.worx-page .page-wrapper .banner-breadcrumbs .breadcrumbs a:visited {
+    color: #37BFB2;
+    text-decoration: none;
+}
+
+.worx-page .page-wrapper .banner-breadcrumbs .breadcrumbs a {
+    color: #000;
+}
+
+.worx-page .page-wrapper .labs-bread .breadcrumbs li {
+    color: #37BFB2;
+}
+
+
+.labs-page .page-wrapper .banner-breadcrumbs .breadcrumbs a:visited {
+    color: #5279a6;
+    text-decoration: none;
+}
+
+.labs-page .page-wrapper .banner-breadcrumbs .breadcrumbs a {
+    color: #000;
+}
+
+.labs-page .page-wrapper .labs-bread .breadcrumbs li {
+    color: #5279a6;
+}
+
+.cbdx-page .page-wrapper .banner-breadcrumbs .breadcrumbs a:visited {
+    color: #F57B3B;
+    text-decoration: none;
+}
+
+.cbdx-page .page-wrapper .banner-breadcrumbs .breadcrumbs a {
+    color: #000;
+}
+
+.cbdx-page.page-wrapper .labs-bread .breadcrumbs li {
+    color: #F57B3B;
+}
