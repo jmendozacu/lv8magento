@@ -97,3 +97,8 @@ button:not(.primary) {
 .cbdx-page.page-wrapper .labs-bread .breadcrumbs li {
     color: #F57B3B;
 }
+button.menuBtn.bar-button {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
