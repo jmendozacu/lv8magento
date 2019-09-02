@@ -105,3 +105,17 @@ button.menuBtn.bar-button {
 .cms-home .header.content {
     display: none;
 }
+
+.catalog-product-view .page-wrapper .page-header .header.content {
+display: block;
+    position: absolute;
+    margin-right: 13%;
+    width: auto;
+    right: 0;
+    padding: 16px 14px;
+    box-shadow: none;
+}
+
+.catalog-product-view .page-wrapper .page-header {
+    background: #cccc;
+}
