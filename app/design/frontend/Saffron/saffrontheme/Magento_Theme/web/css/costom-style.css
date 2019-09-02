@@ -102,3 +102,6 @@ button.menuBtn.bar-button {
     border: none;
     box-shadow: none;
 }
+.cms-home .header.content {
+    display: none;
+}
