@@ -106,7 +106,9 @@ button.menuBtn.bar-button {
     display: none;
 }
 
-
+.cms-home .page-main {
+    display: none;
+}
 
 .catalog-product-view .page-wrapper .page-header {
     background: #cccc;
