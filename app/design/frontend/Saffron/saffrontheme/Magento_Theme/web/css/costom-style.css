@@ -21,7 +21,7 @@ button:not(.primary) {
     opacity: 1;
     visibility: visible;
 }
-.catalog-category-view .page-wrapper .page-main {
+.catalog-category-home .page-wrapper .page-main {
     display: none;
 }
 .categorypath-cdbx-products .page-wrapper .page-main {
