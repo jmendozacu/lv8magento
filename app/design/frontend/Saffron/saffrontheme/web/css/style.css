@@ -281,6 +281,7 @@ button:focus{ outline:none; }
     display: flex;
     align-items: center;
     justify-content: flex-end;
+	margin:0;
 }
 .menu-parent li a {
     color: #000;
@@ -378,6 +379,7 @@ button:focus{ outline:none; }
     color: #4E5054;
     font-size: 16px;
     display: inline-block;
+	text-transform:uppercase;
 }
 
 .menu-inner .adrs-col {
@@ -502,7 +504,7 @@ button:focus{ outline:none; }
 .banner-notfront {
     float: left;
     width: 100%;
-    margin-top: -58px;
+    margin-top: -73px;
     position: relative;
 }
 .banner-notfront img {
@@ -517,6 +519,7 @@ button:focus{ outline:none; }
     -webkit-transform: translate(-50%, -50%);
     text-align: center;
     width: 100%;
+	z-index:1;
 }
 .banner-title-notfront h1 {
     margin: 0;
@@ -720,6 +723,32 @@ footer.page-footer {
 .theBrands-carousel {
     margin: 5.5% 0 0; overflow:hidden;
 }
+.action.primary,
+.review-form .action.submit.primary,
+button#product-addtocart-button {
+    background: #F57B3B;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 17px 30px;
+    font-size: 18px;
+    display: inline-block;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    min-width: 140px;
+	box-shadow:none;
+}
+.action.primary:hover,
+.action.primary:focus,
+.review-form .action.submit.primary:hover,
+.review-form .action.submit.primary:focus,
+button#product-addtocart-button:hover,
+button#product-addtocart-button:focus {
+    background: #4E4F53;
+    border: none;
+	color:#fff;
+}
 
 .theBrands-carousel .item {
     position: relative;
@@ -800,12 +829,12 @@ footer.page-footer {
 
 /*--input-css--*/
 input, .form-control {
-    border: 1px solid #ddd;
+    border: 1px solid #d8d8d8;
     box-shadow: none;
     border-radius: 0;
     height: calc(1.7em + .8rem + 2px);
     color: #262626;
-    font-size:18px; 
+    font-size:16px; 
 }
 textarea{
     border: 1px solid #ddd;
@@ -1473,8 +1502,12 @@ div.scroll-page {
     margin: 0 auto;
 }
 
-.banner-breadcrumbs .breadcrumbs {
+.banner-breadcrumbs .breadcrumbs,
+.breadcrumbs {
     padding: 20px 0;
+	position:relative;
+	z-index:1;
+	max-width:100%;
 }
 .breadcrumbs li {
     display: inline-block;
@@ -1482,7 +1515,7 @@ div.scroll-page {
     padding-right: 5px;
 }
 .breadcrumbs a {
-    color: #000;
+    color: #262626;
 }
 .breadcrumbs a:hover{
     text-decoration: underline;
@@ -1707,4 +1740,162 @@ ul.filter-cat-list li:last-child a {
     top: 0;
     padding: 5px 8px;
 	display:none;
+}
+.cbdx-brands-col p {
+    margin: 0;
+}
+
+
+.breadcrumbs li a {
+    font-size: 16px;
+    color: #262626;
+}
+
+.breadcrumbs li {
+    color: #262626;
+    font-size: 16px;
+}
+
+.breadcrumbs li a:visited {
+    color: #F57B3B;
+}
+.breadcrumbs .item:not(:last-child):after{
+    display:none;
+}
+.catalog-product-view .column.main {
+    max-width: 1600px;
+    width: 94%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.product-info-main .product-info-price {
+    border: none;
+}
+
+.product-options-bottom .price-box .price-container .price,
+.product-info-price .price-box .price-container .price {
+    color: #F57B3B;
+    font-size: 30px;
+}
+
+.catalog-product-view a.action.add {
+	color: #262626;
+	font-size: 16px;
+	text-decoration: underline;
+	font-weight: 500;
+}
+.catalog-product-view a.action.add:hover {
+    text-decoration: none;
+}
+.box-tocart .field.qty {
+    display: flex;
+    align-items: center;
+}
+.box-tocart .field.qty label.label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #262626;
+    margin: 0 10px 0 0;
+    line-height: normal;
+}
+.box-tocart .field.qty  .field.qty {
+    display: flex;
+}
+.stock.available span {
+    color: green;
+    font-weight: 500;
+    font-size: 13px;
+}
+.product-info-main .product-info-price {
+    color: #262626;
+}
+.product-info-main .product-add-form {
+    padding-top: 0;
+}
+.box-tocart .field.qty  input#qty {
+    border: 1px solid #d8d8d8;
+    height: 40px;
+    width: 70px;
+    font-size: 16px;
+    box-shadow: none;
+}
+.product-social-links .product-addto-links .action, .product-social-links .action.mailto.friend {
+    font-size: 12px;
+    color: #262626;
+    letter-spacing: 0;
+    text-decoration: underline;
+}
+input[type="text"], input[type="password"],
+input[type="url"], input[type="tel"],
+input[type="search"], input[type="number"],
+input[type="datetime"], input[type="email"] {
+    border: 1px solid #d8d8d8;
+    height: 40px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+._keyfocus *:focus, input:not([disabled]):focus,
+textarea:not([disabled]):focus, select:not([disabled]):focus {
+    box-shadow: none;
+}
+.fieldset > .field > .label, .fieldset > .fields > .field > .label {
+    font-weight: 500;
+    font-size: 15px;
+}
+.fieldset > .field.required > .label:after, .fieldset > .fields > .field.required > .label:after, .fieldset > .field._required > .label:after, .fieldset > .fields > .field._required > .label:after {
+    color:#F57B3B;
+	font-size:16px          
+}
+.fieldset .review-legend.legend strong {
+    margin-top: 10px;
+}
+.product.data.items > .item.content {
+    border: 1px solid #d8d8d8;
+    padding: 50px;
+}
+.field.review-field-text textarea {
+    height: 140px;
+}
+body .product.data.items > .item.title > .switch {
+    font-size: 17px;
+    padding: 0px 40px;
+    height: auto;
+    width: auto;
+    min-width: auto;
+    font-weight: 500;
+    color: #262626 !important;
+    line-height: 41px;
+}
+body .product.data.items > .item.title.active > .switch, .product.data.items > .item.title > .switch:visited {
+    color: #F57B3B !important;
+}
+.product.info.detailed {
+    margin: 60px 0;
+    float: left;
+    width: 100%;
+}
+.product-reviews-summary .reviews-actions {
+    margin-bottom: 15px;
+}
+.catalog-product-view .banner-title-notfront {
+    position: inherit;
+    left: inherit;
+    right: inherit;
+    top: inherit;
+    transform: none;
+    max-width: 100%;
+    text-align: left;
+}
+.catalog-product-view .banner-title-notfront h1.page-title {
+    color: #262626;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.product-info-main .product.attribute.overview p, .product-info-main .product.attribute.overview span {
+    font-size: 15px;
+    line-height: 24px;
+}
+.product-social-links {
+    margin-bottom: 30px;
 }
