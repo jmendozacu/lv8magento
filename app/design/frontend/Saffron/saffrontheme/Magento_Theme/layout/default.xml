@@ -17,20 +17,20 @@
             <block class="Magento\Framework\View\Element\Js\Cookie" name="js_cookies" template="Magento_Theme::js/cookie.phtml"/>
             <block class="Magento\Theme\Block\Html\Notices" name="global_notices" template="Magento_Theme::html/notices.phtml"/>
         </referenceContainer>
-        <!--<referenceBlock name="top.links">
+        <referenceBlock name="top.links">
             <block class="Magento\Theme\Block\Html\Header" name="header" as="header" before="-">
                 <arguments>
                     <argument name="show_part" xsi:type="string">welcome</argument>
                 </arguments>
             </block>
-        </referenceBlock>-->
-        <!--<referenceContainer name="main.content">
+        </referenceBlock>
+       <referenceContainer name="main.content">
             <block class="Magento\Framework\View\Element\Template" name="skip_to_content.target" before="-" template="Magento_Theme::html/skiptarget.phtml">
                 <arguments>
                     <argument name="target_id" xsi:type="string">contentarea</argument>
                 </arguments>
             </block>
-        </referenceContainer>-->
+        </referenceContainer>
 		
 		  <referenceContainer name="header.container" htmlClass="page-header header">
 		   <container name="header.panel.wrapper" htmlClass="container" htmlTag="div" after="-">
@@ -147,9 +147,10 @@
                         <argument name="css_class" xsi:type="string">footer links</argument>
                     </arguments>
                 </block>
-                <block class="Magento\Theme\Block\Html\Footer" name="copyright" template="Magento_Theme::html/copyright.phtml"/>
+                <!--<block class="Magento\Theme\Block\Html\Footer" name="footer-top" template="Magento_Theme::html/footer-top.phtml"/>-->
+               <block class="Magento\Theme\Block\Html\Footer" name="copyright" template="Magento_Theme::html/copyright.phtml"/>
                 <block class="Magento\Framework\View\Element\Template" name="report.bugs" template="Magento_Theme::html/bugreport.phtml" />
-            </container>
+           </container>
         </referenceContainer>
 		
 		<referenceContainer name="footer">
@@ -181,8 +182,15 @@
         <referenceContainer name="before.body.end">
             <block class="Magento\Theme\Block\Html\Footer" name="absolute_footer" template="Magento_Theme::html/absolute_footer.phtml" />
         </referenceContainer>
-        <referenceContainer name="content">
-            <block class="Magento\Framework\View\Element\FormKey" name="formkey"/>
-        </referenceContainer>
+      
+		
+		<referenceContainer name="content">
+         <block class="Magento\Framework\View\Element\FormKey" name="formkey"/>
+         <block name="customer.section.config" class="Magento\Customer\Block\SectionConfig"
+               template="Magento_Customer::js/section-config.phtml"/>
+        <block name="customer.customer.data"
+               class="Magento\Customer\Block\CustomerData"
+               template="Magento_Customer::js/customer-data.phtml"/>
+		</referenceContainer>
     </body>
 </page>

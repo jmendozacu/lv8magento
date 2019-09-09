@@ -35,7 +35,7 @@
 		  <referenceContainer name="header.container" htmlClass="page-header header">
 		   <container name="header.panel.wrapper" htmlClass="container" htmlTag="div" after="-">
  
-           <container name="header.top" htmlClass="logo-col" htmlTag="div">
+           <container          htmlClass="logo-col" htmlTag="div">
                         <block class="Saffron\Theme\Block\Html\Header\Logo" name="logo">
                             <arguments>
                                 <argument name="logo_img_width" xsi:type="number">275</argument>
