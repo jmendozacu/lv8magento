@@ -6,7 +6,7 @@ body{
     color:#262626;
     line-height:normal; 
 }
-
+h1 { font-size:46px;}
 h1, .h1, h2, .h2, h3, .h3, h4 { color:#262626; line-height: normal;  font-weight:600; font-family: 'Montserrat', sans-serif; }
 p{ font-size:17px; line-height:26px; color:#262626; font-family: 'Montserrat', sans-serif;  }
 li { list-style:none;}
@@ -170,7 +170,7 @@ button:focus{ outline:none; }
 .owl-item-caption h1 {
     color: #fff;
     margin: 0;
-    font-weight:500; 
+    font-weight:600; 
     line-height: normal;
 }
 .owl-item-caption p {
@@ -251,6 +251,7 @@ button:focus{ outline:none; }
 .menu-image-item {
     float: left;
     width: 50%;
+	height:100%;
 }
 .menu-image-item img {
     width: 100%;
@@ -351,6 +352,10 @@ button:focus{ outline:none; }
     margin: 0;
     padding: 0;
     text-align: center;
+	height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .menu-parent li .fa {
     float: left;
@@ -504,7 +509,7 @@ button:focus{ outline:none; }
 .banner-notfront {
     float: left;
     width: 100%;
-    margin-top: -73px;
+	margin-top: -74px;
     position: relative;
 }
 .banner-notfront img {
@@ -524,7 +529,7 @@ button:focus{ outline:none; }
 .banner-title-notfront h1 {
     margin: 0;
     color: #fff;
-    font-weight:500;
+    font-weight:600;
 }
 .row-full{
     float: left;
@@ -691,7 +696,10 @@ footer.page-footer {
     float: left;
     width:100%;
 }
-.craft-img-col img{ float: left; width:100%; }
+.craft-img-col img{ 
+	float: left;
+	width:100%;
+}
 .craft-graybx h3 {
     font-size: 30px;
     font-weight: 500;
@@ -870,7 +878,7 @@ textarea{
 .stayUpdate-col .craft-graybx {
     padding: 15% 10%;
 }
-.stay-updated {  margin: 0 0 5%; overflow: hidden; }
+.stay-updated {  margin: 0 0 65px; overflow: hidden; }
 .customer-say h3 {
     color: #fff;
     font-size: 22px;
@@ -923,13 +931,17 @@ textarea{
     font-size: 12px;
 }
 .free-app {
-    padding: 6% 0 0;
+    padding: 30px 0 0;
 }
 .freeapp-col {
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
     float: none;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	align-items: flex-end;
 }
 .freeapp-col figure {
     float: left;
@@ -939,8 +951,8 @@ textarea{
 }
 .app-info {
     float: left;
-    width: calc(100% - 340px);
-    padding: 6% 0 0;
+    width:auto;
+    padding: 6% 0;
 }
 .app-info h4 {
     
@@ -958,7 +970,7 @@ textarea{
     height: auto;
 }
 .appstore-col {
-    margin: 25px 0 ;
+    margin: 25px 0 0;
 }
 .product-tabs {
     float: left; width:100%; 
@@ -979,12 +991,14 @@ textarea{
 .product-tab-title .nav {
     padding: 0;
     margin: 0 !important;  
+	display: flex;
 }
 
 .product-tab-title li {
-    float: left;
-    width: 25%;
-    text-align: center;
+    display: flex;
+    flex: 1;
+	justify-content: center;
+    align-items: center;
 }
 .product-tab-title ul {
     float: left;
@@ -995,6 +1009,7 @@ textarea{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     color: #4E5054;
+	text-align:center;
 }
 /*--hover-color-css--*/
 .product-tab-title li a:hover,
@@ -1018,14 +1033,16 @@ textarea{
 }
 .product-filters {
     margin:5% 0;
+	display: flex;
 }
 .filter-col {
     float: left;
     width: auto;
     position: relative;
+	display: flex;
 }
 .prize-filter {
-    float: right;
+    margin-left:auto;
 }
 .filter-col .filter-link {
     color: #4E5054;
@@ -1036,6 +1053,12 @@ textarea{
     line-height: normal;
     margin: 0 15px 0 0;
     transition: all 0.2s ease;
+	display: flex;
+    height: 100%;
+    align-items: center;
+}
+.product-filters .prize-filter .filter-link {
+    margin-right: 0;
 }
 .filter-col .filter-link:hover {
     background: #F57B3B;
@@ -1099,12 +1122,10 @@ textarea{
     text-align: center;
 }
 .info-title-list li {
-    float: left;
-    width: 14.28%;
-    
     align-items: center;
     justify-content: center;
-    padding:0 10px; 
+    padding: 0 10px;
+    flex: 1;
 }
 .info-title-list li a {
     font-family: 'Montserrat', sans-serif;
@@ -1184,9 +1205,11 @@ textarea{
 .faqs-content {
     margin: 50px 0 20px;
 }
+.row-inner {
+    display: flex;
+    flex-wrap: wrap;
+}    
 .faqs-panel {
-    float: left;
-    width: 100%;
     margin: 0 0 20px;
 }
 .faqs-panel h4 {
@@ -1593,7 +1616,7 @@ textarea { resize: none; }
 .contact-form-inner .form-control:focus { box-shadow: none; }
 .open-positions {
     text-align: center;
-    padding: 5% 0;
+    padding: 65px 0;
 }
 
 .open-positions h2 {
@@ -1955,3 +1978,31 @@ table tbody tr td:first-child {
 .cart-totals .mark {
     background: none;
 }
+.menu-caption {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    bottom: 40px;
+    left:20px;
+	right:20px;
+	display:inline-table;
+    opacity: 0;
+}
+.active .menu-caption {
+    opacity: 1;
+	transition: all 1s ease;
+}
+.menu-caption h2 {
+	color: #fff;
+    margin: 0;
+    font-weight: bold;
+    font-size: 50px;
+	line-height:46px;
+}
+.menu-caption h3 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0;
+}
+

@@ -2,11 +2,11 @@
 
 /*==========---min-width-768---==========*/
 @media (min-width: 768px) {
-      .banner-title-notfront h1 {  font-size: 75px; }
+      .banner-title-notfront h1 {  font-size: 85px; }
       .lv8-about-info .abtInfo p{ font-size:20px; }
       h2, .worx-about-page h3 {  font-size: 46px; }
       .process-bx ul, .cbd-info-bx ul  {  column-count:2;   -webkit-column-count:2;  }
-      .lv8-page .owl-item-caption h1{ font-size:80px; }
+      .lv8-page .owl-item-caption h1{ font-size:85px; }
       .owl-item-caption h1{ font-size:75px; }
       .craft-box-row, .cbd-info-row .left-col, .cbd-info-bx { display: flex; display: -webkit-flex; }
       .craft-higher .left-col, .brand-2 .left-col,
@@ -38,18 +38,25 @@
       .menu-inner .social-col { position: absolute;  bottom: -100px; left: 0;   }
       .active .menu-inner .social-col {  bottom:0;  transition: bottom 1s;    } 
       .menu-parent li { padding-right:30%; }
+	  .craft-graybx{ width: 110%; }
+	  .craft-higher .craft-graybx{ margin-right: -15%; }
+      .craft-research .craft-graybx{ margin-left: -15%; }
+	  .craft-img-col img{ min-height: 579px; object-fit: cover; }
+	  .cbd-info-row figure img {  min-height: 544px; object-fit: cover; }
       
  
 }
+
 @media (min-width:992px) {
-      .craft-higher .craft-graybx{ margin-right: -15%; }
-      .craft-research .craft-graybx{ margin-left: -15%; }
-      .craft-graybx{ width: 120%; }
+	  .craft-graybx{ width: 120%; }
       .craft-higher .craft-info-col { width: calc(100% - 11.5%); margin-left: 11.5%; }
       .craft-research .craft-info-col{ width: calc(100% - 11.5%); margin-right: 11.5%; }
       .craft-graybx p { font-size: 18px; }
       .brand-info { position: absolute; left: 0; top: 50%; transform: translate(0, -50%); -webkit-transform: translate(0, -50%); }
       .footer-links ul  {  column-count:2;   -webkit-column-count:2;  }
+	  .faqs-panel:nth-of-type(2n+1) {  padding-right: 30px; }
+	  .faqs-panel:nth-of-type(2n+2) { padding-left: 30px; }
+	  .faqs-panel {  flex: 1 1 50%; }
 
 }
 
@@ -108,6 +115,7 @@
       .lv8-page .owl-item-caption h1, .owl-item-caption h1 { font-size:100px; }
       .owl-item-caption p { font-size:40px; }
       .owl-item-caption { max-width: 1340px;  }
+	  .menu-parent li{ padding-top:16px; padding-bottom:16px; }
 }
 
 @media (min-width:1025px) and (max-width:1300px) {
@@ -125,7 +133,7 @@
 	.point .point-circle { position: absolute; }
 	.point .point-body{  margin:0 auto; z-index:1; }
 	.cbd-info-section {  position: relative; z-index: 1; }
-	
+	.info-row-1 .cbd-info-bx { margin-left: 4%; width: calc(100% - 4%); padding-right:6%; }
 	
 	
 
@@ -151,13 +159,16 @@
       .learn-btn{ padding:15px 20px;  }
       .craft-graybx .learn-btn {  margin: 0; }
       .craft-graybx h3 {  font-size: 26px; margin: 0 0 10px; }
-      h2, .worx-about-page h3 { font-size: 36px; }
+      .news-featured h1, h1, h2, .worx-about-page h3 { font-size: 36px; }
       .brand-info figure img {  max-width: 150px; }
       .cbd-info-bx h3{ font-size:28px; }
       .faqs-panel h4 { font-size:22px; }
       .menu-item-description, .menu-col-main { padding-left:30px; padding-right:30px;  }
       .menu-parent li a { font-size:26px; }
-
+	  .theBrands-carousel .caption { max-width:500px; }
+	  .banner-notfront img { min-height: 400px; object-fit: cover; }
+	  .menu-caption h2{ font-size:42px; }
+	  
 
 
 }
@@ -176,6 +187,7 @@
 	.point-5 .point-body { top:48%;  }
 	.point-6 .point-circle { top: 78%; left: 66%; transform: translate(-66%, -78%);	}
 	.point-6 .point-body { top:70%; right:0; }
+	.menu-parent li { padding-top:15px; padding-bottom:15px; }
 	
 }
 
@@ -183,9 +195,7 @@
 	.craft-graybx p { line-height:24px; font-size:16px; }
 	.cbd-info-title .container { padding: 0 5px;  }
 	.info-title-list li a { font-size:13px; }
-	.cbd-info-bx { height: 310px; overflow-y: auto;  }
 	.contact-form-inner .form-group {   margin-bottom: 35px;   }
-	.craft-graybx { padding:5%; }
 	.navbar-body .menu-image-item img{ height: 100vh; object-fit: cover; }
 	.point-body{ max-width:230px;}
 	.point-1 .point-circle { top: 8%; left: 38%; transform: translate(-38%, -8%); }
@@ -200,13 +210,54 @@
 	.point-5 .point-body { top:48%; }
 	.point-6 .point-circle { top: 78%; left: 66%; transform: translate(-66%, -78%);	}
 	.point-6 .point-body { top:80%; right:0; }
+	.cbdx-brands-col .brand-link { margin-right:15px; }
+	.menu-parent li { padding-top:15px; padding-bottom:15px; }
       
 
 }
 
+@media (max-width:991px) {
+	/*--menu-css-for-mobile--*/
+	.menu-items { float: right;  width:100%; }
+	.nav-sections-items .menuBtn { top:15px; z-index:11;}
+	.menu-col-main { width: 50%; padding: 16px 0 30px; float: left; z-index: 5; right: 0; position: absolute;
+		top: 35%; height: calc(100% - 35%); overflow-y: auto; border-left: 1px solid #ccc; z-index: 10;  }
+	.menu-col-main ul { padding: 0 15px;  }
+	.menu-parent li a { font-size: 21px; }
+	.menu-parent li .fa { font-size:22px; }
+	.menu-inner .logo-brand { margin-bottom:30px; }
+	.menu-inner p { font-size:15px; line-height:24px; margin-bottom:15px;  }
+	.menu-parent li.labs-menu{ padding-top: 18px; margin-top: 12px;  }
+	.social-col li { margin-right:8px; }
+	.navbar-body { float: left; width: auto;   }
+	.menu-image-item { height:100vh; width:30%; float: left;  }
+	.menu-image-item img { width: 100%; float: left; object-fit: cover;   }
+	.menu-item-front .menu-image-item img { height: 60vh;  }
+	.menu-item-labs .menu-image-item img {  height: 50vh;   }
+	.menu-item-worx .menu-image-item img { height: 100vh;  }
+	.menu-item-cbdx .menu-image-item img { height: 80vh;  }
+	.menu-item-description { float: left; width: 50%; height: 100vh; padding: 10px 0; position: relative; }
+	.navbar-body { position: fixed; top: 0; right:0; width: 100%; background: #fff; z-index: 3; 
+		transition: all 0.4s ease; padding:0; opacity:0;
+	}
+	.navbar-body.active{ opacity:1; z-index:9;}
+	.navbar-body.mobile-active { right:0; z-index:5; }
+	.navbar-body .menu-image-item { width: 100%; position: fixed; top: 0; height: 35%; overflow: hidden;   }
+	.mobile-back-btn { margin:0 0 10px; display: block; position: relative; z-index:1; }
+	.mobile-back-btn a { font-size: 28px; color: #9b9b9b; padding: 0px 15px; display: inline-block; line-height: normal; cursor: pointer; }
+	.menu-inner { position: absolute; left: 0; right: 0; width: auto; overflow-y: auto; top: 35%;
+		padding:40px; height: calc(100% - 35%); opacity:0;
+	}
+	.menu-items    .active .menu-inner { opacity:1;}
+	.active .menu-inner .social-col { left:40px; bottom:40px; }
+	.nav-sections-items .menuBtn .menubar { background: #fff; }
+}
 
 
 @media (max-width:767px) {
+	.menu-parent li { padding:6px 15px 6px 0;   }
+	.menu-inner .logo-brand { margin-bottom:22px; }
+	.menu-inner { padding:20px 15px 50px; }
 	.container{ max-width:100%;}
 	.logo-col img { width:90px; }
 	.header, .cbdx-page.page-not-front .header { padding:15px 0; }
@@ -259,43 +310,9 @@
 	.success-stories { margin:12% 0; }
 	.stories-carousel {  padding: 0 15px;  }
 	.our-expertise h3 { margin:20px 0 30px; }
-	.freeapp-col figure{ max-width:100%; padding:0;  }
-	.app-info { width:100%; }
 	.appstore-col img { max-width:130px;}
 	.front-banner .owl-carousel .owl-nav button span:before { font-size: 28px; line-height: 28px;  }
-	/*--menu-css-for-mobile--*/
-	.menu-items { float: right;  width:100%; }
-	.nav-sections-items .menuBtn { top:15px; z-index:11;}
-	.menu-col-main { width: 50%; padding: 16px 0 30px; float: left; z-index: 5; right: 0; position: absolute;
-		top: 35%; height: calc(100% - 35%); overflow-y: auto; border-left: 1px solid #ccc; z-index: 10;  }
-	.menu-col-main ul { padding: 0 15px;  }
-	.menu-parent li a { font-size: 21px; }
-	.menu-parent li { padding:6px 15px 6px 0;   }
-	.menu-parent li .fa { font-size:22px; }
-	.menu-inner .logo-brand { margin-bottom:22px; }
-	.menu-inner p { font-size:15px; line-height:24px; margin-bottom:15px;  }
-	.menu-parent li.labs-menu{ padding-top: 18px; margin-top: 12px;  }
-	.social-col li { margin-right:8px; }
-	.navbar-body { float: left; width: auto;   }
-	.menu-image-item { height:100vh; width:30%; float: left;  }
-	.menu-image-item img { width: 100%; float: left; object-fit: cover;   }
-	.menu-item-front .menu-image-item img { height: 60vh;  }
-	.menu-item-labs .menu-image-item img {  height: 50vh;   }
-	.menu-item-worx .menu-image-item img { height: 100vh;  }
-	.menu-item-cbdx .menu-image-item img { height: 80vh;  }
-	.menu-item-description { float: left; width: 50%; height: 100vh; padding: 10px 0; position: relative; }
-	.navbar-body { position: fixed; top: 0; right:0; width: 100%; background: #fff; z-index: 3; 
-		transition: all 0.4s ease; padding:0; opacity:0;
-	}
-	.navbar-body.active{ opacity:1; z-index:9;}
-	.navbar-body.mobile-active { right:0; z-index:5; }
-	.navbar-body .menu-image-item { width: 100%; position: fixed; top: 0; height: 35%; overflow: hidden;   }
-	.mobile-back-btn { margin:0 0 10px; display: block; position: relative; z-index:1; }
-	.mobile-back-btn a { font-size: 28px; color: #9b9b9b; padding: 0px 15px; display: inline-block; line-height: normal; cursor: pointer; }
-	.menu-inner { position: absolute; left: 0; right: 0; width: auto; overflow-y: auto; top: 35%;
-		padding: 20px 15px 50px; height: calc(100% - 35%); opacity:0;
-	}
-	.menu-items    .active .menu-inner { opacity:1;}
+	
 	.cbdx-brands-col .brand-link img { width:55px; }
 	.cbdx-brands-col .brand-link:nth-of-type(2) img { width:42px; }
 	.menu-inner .adrs-col li a  { font-size:14px; }
@@ -307,20 +324,18 @@
 	.menu-inner .adrs-col { margin-bottom:10px; }
 	.filter-col .filter-link{ margin:0 6px 6px 0; padding:12px; }
 	.social-col li a { font-size:18px; }
-	.prize-filter { float:left;}
-	.product-tab-title li { width: auto; }
 	.container-inner { position: relative;  }
-	.cont-img-col img { width: auto; height: 100%; object-fit: cover;   }
-	.cont-img-col { width: 15%; position: absolute; left: 0; bottom: 0; top: 0;  }
-	.cont-form-col { padding-left: 15%; padding-right: 0;  }
+	.cont-img-col img { height: 450px; object-fit: cover; width: 100%; }
+	.cont-img-col { width: 100%; margin-bottom: 50px;	}
+	.cont-form-col { padding:0; width:100%;  }
 	.contact-form-inner { padding: 20px 15px;  }
 	.contact-form-inner h4 { font-size: 18px; margin-bottom: 30px;  }
 	.contact-form-inner .form-group {  margin-bottom: 30px;  }
 	.contact-form-inner .form-control { font-size:13px; }
-	.banner-title-notfront h1, h1 { font-size:40px; }
+	.banner-title-notfront h1, h1 { font-size:50px; line-height:normal; }
 	.owl-item-caption h1 br { display: none;   }
 	.owl-item-caption p { font-size: 28px; line-height: normal;  }
-	.news-featured h1 { margin-bottom: 20px; }
+	.news-featured h1 { margin-bottom: 20px; margin-top: 30px; font-size: 30px; }
 	.open-positions h2 {  margin-bottom: 10px;         }
 	.news-featured .owl-theme .owl-nav.disabled+.owl-dots {    margin-top: 10px;      }
 	.latest-post {margin-top: 30px;   }
@@ -335,13 +350,13 @@
 	.header .container { display: flex; align-items: center;  }
 	.header-right-col { margin-left: auto; }
 	.promoting-carousel .owl-carousel .owl-item img { width: auto; float: none; display: inline-block; }
-	.promoting-carousel { text-align: center; }
+	.promoting-carousel { text-align: center; margin-bottom:50px; }
 	.cbdx-brands-col { margin-bottom:12px; }
 	.menu-inner .adrs-col li { margin-bottom:10px; }
 	.social-media-col .footer-links li a {font-size:18px; }
 	.social-media-col .footer-links li { margin-right:8px;}
 	.information-mobile { display:block; }
-	.info-title-list { background: #fff; float: left; padding: 10px 0; display: none; }
+	.info-title-list { background: #fff; float: left; padding: 10px 0; display: none; width:100%; }
 	.banefints-image-points img { min-height: 500px; object-fit: cover; width: 300px; }
 	.banefints-image-points figure { text-align: center; }
 	.benefit-points { width: 100%; max-width: 300px; }
@@ -358,6 +373,17 @@
 	.point-5 .point-body { top:58%; }
 	.point-6 .point-circle { top: 78%; left: 82%; transform: translate(-82%, -78%);	}
 	.point-6 .point-body { top:81%; }
+	.featured-products { margin-top: 50px; }
+	.free-app { padding: 20px 0 0; }
+	.appstore-col a { margin: 0 0 20px; }
+	.theBrands-carousel .owl-carousel .owl-nav button.owl-next { right:0; }
+	.theBrands-carousel .owl-carousel .owl-nav button.owl-prev { left:0; }
+	.size-filter .filter-dropdown,
+	.prize-filter .filter-dropdown	{ right: 0;  left: inherit; }	
+	.menu-caption { bottom:10px; left:10px; max-width:80%; }
+	.menu-caption h2 { font-size:28px; line-height:32px; }
+	.menu-caption h3 { font-size:20px; }
+	.menu-caption h2 br, .menu-caption h3 br { display:none; }
 	
 		
       
