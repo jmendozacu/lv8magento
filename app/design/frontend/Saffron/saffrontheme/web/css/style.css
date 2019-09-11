@@ -2042,3 +2042,9 @@ button#product-addtocart-button {
     color: #F57B3B;
     font-size: 13px;
 }
+.careers-page .breadcrumbs {
+    display: none;
+}
+.careers-page .banner-breadcrumbs .breadcrumbs {
+    display: block;
+}
