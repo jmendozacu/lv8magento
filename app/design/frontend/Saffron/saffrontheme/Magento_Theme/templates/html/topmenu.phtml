@@ -14,16 +14,16 @@
                         <a href="index.php" class="">Home</a>
                     </li>
                     <li class="menu-level">
-                        <a href="about-us.php" class="">About</a>
+                        <a href="<?php echo $this->getUrl('about')?>" class="">About</a>
                     </li>
                     <li class="menu-level">
-                        <a href="javascript:void(0);" class="">News</a>
+                        <a href="<?php echo $this->getUrl('blog')?>" class="">News</a>
                     </li>
                     <li class="menu-level">
-                        <a href="javascript:void(0);" class="">Careers</a>
+                        <a href="<?php echo $this->getUrl('careers')?>" class="">Careers</a>
                     </li>
                     <li class="menu-level">
-                        <a href="javascript:void(0);" class="">Contact</a>
+                        <a href="<?php echo $this->getUrl('contact')?>" class="">Contact</a>
                     </li>
                     <li class="menu-item labs-menu">
                         <i class="fa fa-angle-left"></i>
@@ -123,9 +123,8 @@
     </div>
                     
 	<div class="menu-image-item">
-       <img src="<?php echo $this->getMedia().'catalog/category/'.$this->getNavimage(3); ?>" alt="" class="img-fluid">
-    
-	<div class="menu-caption">
+    <img src="<?php echo $this->getMedia().'catalog/category/'.$this->getNavimage(3); ?>" alt="" class="img-fluid">
+    <div class="menu-caption">
 	<?php echo $catgrieslab->getDescription();?>
 	</div>
 	
