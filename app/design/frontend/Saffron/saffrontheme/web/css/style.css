@@ -1481,6 +1481,12 @@ tbody tr td:first-child {
 .our-expertise h3 {
     margin: 0 0 60px;
     text-align: center;
+	font-size:46px;
+}
+#scroll-the-players >h3 {
+    text-align: center;
+    margin: 0 0 5%;
+    font-size: 46px;
 }
 .our-expertise figure {
     float: left;
@@ -2042,9 +2048,30 @@ button#product-addtocart-button {
     color: #F57B3B;
     font-size: 13px;
 }
-.careers-page .breadcrumbs {
-    display: none;
+.careers-page .breadcrumbs,
+.contact-index-index .page-wrapper .page-title-wrapper { display: none;}
+.careers-page .banner-breadcrumbs .breadcrumbs {  display: block; }
+.our-craft .craft-box-row {  margin-bottom: 40px; }
+.minicart-wrapper .action.showcart {  position: relative; }
+.minicart-wrapper .action.showcart .counter-number {
+    text-shadow: none;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
 }
-.careers-page .banner-breadcrumbs .breadcrumbs {
-    display: block;
+.minicart-wrapper .action.showcart .counter.qty {
+    background: #F57B3B;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    box-shadow: none;
+    text-shadow: none;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    font-size: 12px;
+    margin: 0;
+    line-height: 22px;
+    padding: 0;
+    font-weight: 500;
 }
