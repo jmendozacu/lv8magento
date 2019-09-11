@@ -13,7 +13,7 @@ li { list-style:none;}
 a, a:hover{ text-decoration:none; }
 ul{ padding:0; }
 .header .container {
-    max-width: 100%;
+    max-width: 1600px;
     display: flex;
     align-items: center;
 }
@@ -29,8 +29,13 @@ ul{ padding:0; }
     float: left;
     width: 100%;
 }
-.cbdx-page.page-not-front .header { padding: 20px 0; }
+.cbdx-page.page-not-front .header,
+.category-products header { padding: 20px 0; }
 .cbdx-page.page-not-front .logo-col img { height: 70px;  width: auto; }
+.category-products .logo-col img {
+    height: 70px;
+    width: auto;
+}
 .logo-col {
     float: left;
     width: auto;
@@ -1520,7 +1525,7 @@ div.scroll-page {
 }
 
 .breadcrumbs .items {
-    max-width: 1600px;
+    max-width: 100%;
     width: 92%;
     margin: 0 auto;
 }
@@ -1534,8 +1539,8 @@ div.scroll-page {
 }
 .breadcrumbs li {
     display: inline-block;
-    color:#fff;
     padding-right: 5px;
+	color:#262626;
 }
 .breadcrumbs a {
     color: #262626;
@@ -1543,15 +1548,10 @@ div.scroll-page {
 .breadcrumbs a:hover{
     text-decoration: underline;
 }
-.labs-bread .breadcrumbs li { color:#4d75a4; }
-.worx-bread .breadcrumbs li { color:#37BFB2; }
-.cbd-bread .breadcrumbs li { color:#F57B3B; }
 .page-not-front .header {
     box-shadow: 0 0 5px #ddd;
 }
-.news-page .breadcrumbs li {
-    color: #888;
-}
+
 .news-featured h1 {
     text-align: center;
     margin-bottom: 50px;
@@ -1779,9 +1779,28 @@ ul.filter-cat-list li:last-child a {
     font-size: 16px;
 }
 
-.breadcrumbs li a:visited {
-    color: #F57B3B;
-}
+.lv8-page .breadcrumbs li,
+.labs-page .breadcrumbs li,
+.worx-page .breadcrumbs li,
+.cbdx-page .breadcrumbs li { color:#fff; }
+
+.breadcrumbs li a,
+.breadcrumbs li a:hover,
+.breadcrumbs li a:visited { color: #F57B3B; }
+
+.lv8-page .breadcrumbs li a,
+.lv8-page .breadcrumbs li a:hover,
+.lv8-page .breadcrumbs li a:visited { color:#262626; }
+.labs-page .breadcrumbs li a,
+.labs-page .breadcrumbs li a:hover,
+.labs-page .breadcrumbs li a:visited { color:#4d75a4; }
+.worx-page .breadcrumbs li a,
+.worx-page .breadcrumbs li a:hover,
+.worx-page .breadcrumbs li a:visited { color:#37BFB2; }
+.cbdx-page .breadcrumbs li a,
+.cbdx-page .breadcrumbs li a:hover,
+.cbdx-page .breadcrumbs li a:visited { color:#F57B3B; }
+
 .breadcrumbs .item:not(:last-child):after{
     display:none;
 }
@@ -1814,6 +1833,8 @@ body.checkout-cart-index .column.main {
 .box-tocart .field.qty {
     display: flex;
     align-items: center;
+    margin-right: 25px;
+    margin-bottom: 0;
 }
 .box-tocart .field.qty label.label {
     font-size: 14px;
@@ -1869,7 +1890,7 @@ textarea:not([disabled]):focus, select:not([disabled]):focus {
 }
 .fieldset > .field.required > .label:after, .fieldset > .fields > .field.required > .label:after, .fieldset > .field._required > .label:after, .fieldset > .fields > .field._required > .label:after {
     color:#F57B3B;
-	font-size:16px          
+	font-size:18px          
 }
 .fieldset .review-legend.legend strong {
     margin-top: 10px;
@@ -1881,22 +1902,8 @@ textarea:not([disabled]):focus, select:not([disabled]):focus {
 .field.review-field-text textarea {
     height: 140px;
 }
-body .product.data.items > .item.title > .switch {
-    font-size: 17px;
-    padding: 0px 40px;
-    height: auto;
-    width: auto;
-    min-width: auto;
-    font-weight: 500;
-    color: #262626 !important;
-    line-height: 41px;
-}
-body .product.data.items > .item.title.active > .switch {
-    color: #F57B3B !important;
-}
-.product.data.items > .item.title > .switch:visited {
-    color:inherit !important;
-}
+
+
 .product.info.detailed {
     margin: 60px 0;
     float: left;
@@ -1921,7 +1928,7 @@ body .product.data.items > .item.title.active > .switch {
     margin-bottom: 25px;
 }
 .catalog-product-view .banner-title-notfront h1.page-title {
-	font-size: 28px;
+	font-size: 30px;
 }
 .checkout-cart-index .banner-title-notfront h1.page-title {
     font-size: 46px;
@@ -1941,13 +1948,14 @@ body .product.data.items > .item.title.active > .switch {
 .product-social-links {
     margin-bottom: 30px;
 }
-.catalog-product-view .page-wrapper .page-header .header.content {
-    display: block;
+
+.cbdx-page.page-not-front .content,
+.catalog-product-view .page-header .header.content  {
     position: absolute;
     margin-right: 10%;
     width: auto;
     right: 0;
-    padding: 14px 14px;
+    padding: 20px 15px;
     box-shadow: none;
 }
 .page-layout-1column .page-wrapper .page-header {
@@ -2005,4 +2013,32 @@ table tbody tr td:first-child {
     font-size: 30px;
     margin: 0;
 }
-
+.copyright {
+    background-color: #4f5054;
+    border-top: 1px solid #5f5f61;
+}
+.copyright span {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+.category-cms {
+    float: left;
+    width: 100%;
+}
+.box-tocart {
+    margin-bottom: 50px;
+}
+.box-tocart .fieldset {
+    display: flex;
+    align-items: center;
+}
+.box-tocart .fieldset .actions {width: 100%;}
+button#product-addtocart-button {
+    margin: 0;
+    min-width: 70%;
+}
+.product-social-links .product-addto-links .action:before,
+.product-social-links .action.mailto.friend:before {
+    color: #F57B3B;
+    font-size: 13px;
+}

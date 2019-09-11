@@ -43,6 +43,51 @@
       .craft-research .craft-graybx{ margin-left: -15%; }
 	  .craft-img-col img{ min-height: 579px; object-fit: cover; }
 	  .cbd-info-row figure img {  min-height: 544px; object-fit: cover; }
+	  .page-layout-1column.page-with-filter .column.main { padding-top:0; }
+	  .navigation, .breadcrumbs, .page-header .header.panel, .header.content, .footer.content, .page-wrapper > .widget, .page-wrapper > .page-bottom, .block.category.event, .top-container, .page-main {
+		  max-width:100%; padding-left:0; padding-right:0;
+	  }
+	  .product.data.items > .item.title > .switch{ color:#262626 !important; }
+	  .product.data.items > .item.content {
+			border: none;
+			background: #fafaf9;
+			border-top: 2px solid #F57B3B;
+			margin-top: 51px;
+		}
+		body .product.data.items>.item.title>.switch {
+			padding: 5px 35px 5px;
+			background: #FFF;
+			border-radius: 0;
+			border: 2px solid #F57B3B;
+			font-size: 18px;
+			text-align: center;
+			margin-right: -2px;
+			height: auto;
+			margin-top: -1px;
+			color: #053052;
+			font-weight: 500;
+			min-width: 190px;
+			position: relative;
+			text-transform: capitalize;
+		}
+		.product.data.items > .item.title:not(.disabled) > .switch:active,
+		body .product.data.items > .item.title.active > .switch,
+		.product.data.items > .item.title.active > .switch:focus,
+		.product.data.items > .item.title.active > .switch:hover {
+			background: #F57B3B;
+			padding-bottom: 5px;
+			color: #fff !important;
+		}
+
+		.product.data.items>.item.title>.switch:before {
+			content: "\f105";
+			font-family: fontawesome;
+			order: 2;
+			margin-left: 8px;
+			font-size: 22px;
+		}
+		.product.data.items>.item.title.active>.switch:before { content: "\f107";}
+		.product.data.items>.item.title>.switch {display: flex; justify-content: center; align-items: center;}
       
  
 }
@@ -57,6 +102,7 @@
 	  .faqs-panel:nth-of-type(2n+1) {  padding-right: 30px; }
 	  .faqs-panel:nth-of-type(2n+2) { padding-left: 30px; }
 	  .faqs-panel {  flex: 1 1 50%; }
+	  .menu-item-cbdx .menu-item-description {  padding-top: 25px; }
 
 }
 
