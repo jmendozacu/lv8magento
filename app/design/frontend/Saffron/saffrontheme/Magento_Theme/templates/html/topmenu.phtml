@@ -85,9 +85,9 @@
                 <!--menu-1-labs-->
  <div class="navbar-body menu-item-labs">
      <div class="menu-item-description">
-        <div class="mobile-back-btn">
+       <!--<div class="mobile-back-btn">
           <a href="javascript:void(0);" class=""><i class="fa fa-angle-left"></i></a>
-        </div>
+        </div> -->
     <div class="menu-inner">
      <div class="logo-brand">
 	 <?php $catgries = $this->getallcategries(3);?>
@@ -124,16 +124,21 @@
                     
 	<div class="menu-image-item">
        <img src="<?php echo $this->getMedia().'catalog/category/'.$this->getNavimage(3); ?>" alt="" class="img-fluid">
-    </div> 
+    
+	<div class="menu-caption">
+	<?php echo $catgrieslab->getDescription();?>
+	</div>
+	
+	</div> 
     </div>
                 <!--/menu-1-labs-->
 
  <!--menu-2-worx-->
  <div class="navbar-body menu-item-worx">
     <div class="menu-item-description">
-     <div class="mobile-back-btn">
+     <!--<div class="mobile-back-btn">
      <a href="javascript:void(0);" class=""><i class="fa fa-angle-left"></i></a>
-     </div>
+     </div>-->
      <div class="menu-inner">
      <?php $catgrieslab = $this->getallcategries(4)?>   
 		<div class="logo-brand">
@@ -172,7 +177,11 @@
     </div>
     <div class="menu-image-item">
       <img src="<?php echo $this->getMedia().'catalog/category/'.$this->getNavimage(4); ?>" alt="" class="img-fluid">
-     </div> 
+     <div class="menu-caption">
+	<?php echo $catgrieslab->getDescription();?>
+	 </div>
+	 
+	 </div> 
    </div>
   
   <!--/menu-2-worx-->
@@ -180,9 +189,9 @@
  <!--menu-3-cbdx-->
   <div class="navbar-body menu-item-cbdx">
       <div class="menu-item-description">
-       <div class="mobile-back-btn">
+       <!--<div class="mobile-back-btn">
          <a href="javascript:void(0);" class=""><i class="fa fa-angle-left"></i></a>
-      </div>
+      </div>-->
  <div class="menu-inner">
     <div class="logo-brand">
 	<?php $catgrieslab = $this->getallcategries(5)?>
@@ -219,7 +228,11 @@
 	</div>
       <div class="menu-image-item">
         <img src="<?php echo $this->getMedia().'catalog/category/'.$this->getNavimage(5); ?>" alt="" class="img-fluid">
-      </div> 
+      <div class="menu-caption">
+	<?php echo $catgrieslab->getDescription();?>
+	  </div>
+	  
+	  </div> 
    </div>
                 <!--/menu-3-cbdx-->
 
