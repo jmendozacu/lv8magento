@@ -1521,7 +1521,6 @@ div.scroll-page {
     width: 100%;
     position: relative;
 }
-
 .breadcrumbs .items {
     max-width: 100%;
     width: 92%;
@@ -2071,7 +2070,7 @@ button#product-addtocart-button {
 .page-layout-1column .page-wrapper .page-header {
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 3;
     background: #fff;
     padding:0;
     height:110px;
@@ -2084,5 +2083,6 @@ button#product-addtocart-button {
 .page-layout-1column .header-sticky img { height: 35px; }
 .cbdx-page .logo-col img { height:70px; }
 .cbdx-page.page-layout-1column .logo-col img { height:50px; }
-
+.banner-breadcrumbs,
+.careers-page main#maincontent { margin-top:110px; }
 
