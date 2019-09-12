@@ -87,6 +87,16 @@
 			  $box.siblings().find('.sub_menu').stop().slideUp();
 			  $box.find('.sub_menu').stop().slideToggle();
 			 })
+			 
+	//header scroll		 
+	jQuery(window).scroll(function(){
+		if(jQuery(window).scrollTop()> 120 ){
+			jQuery('.page-layout-1column .page-header').addClass('header-sticky');
+		}
+		else {
+			jQuery('.page-layout-1column .page-header').removeClass('header-sticky');
+		}
+	  }) ;
 
 		});	
 
