@@ -63,7 +63,8 @@ ul{ padding:0; }
 .page-not-front .menubar { background:#000; }
 .labs-page.page-not-front .menubar { background: #4d75a4; }
 .worx-page.page-not-front .menubar { background: #37BFB2; }
-.cbdx-page.page-not-front .menubar { background: #F57B3B; }
+.cbdx-page.page-not-front .menubar,
+.checkout-cart-index .menubar { background: #F57B3B; }
 .bar-button:hover .menubar2 {  width: 100%; }
 .bar-button:hover .menubar3 {  width: 100%; }
 
@@ -1947,12 +1948,13 @@ textarea:not([disabled]):focus, select:not([disabled]):focus {
 }
 
 .cbdx-page.page-not-front .content,
-.catalog-product-view .page-header .header.content  {
+.catalog-product-view .page-header .header.content,
+.checkout-cart-index .header.content  {
     position: absolute;
     margin-right: 10%;
     width: auto;
     right: 0;
-    padding: 20px 15px;
+    padding: 20px 15px 0;
     box-shadow: none;
 }
 .page-layout-1column .page-wrapper .page-header {
@@ -1992,6 +1994,7 @@ table tbody tr td:first-child {
 	right:20px;
 	display:inline-table;
     opacity: 0;
+	max-width: 75%;
 }
 .active .menu-caption {
     opacity: 1;
@@ -2002,7 +2005,7 @@ table tbody tr td:first-child {
     margin: 0;
     font-weight: bold;
     font-size: 50px;
-	line-height:46px;
+	line-height:50px;
 }
 .menu-caption h3 {
     color: #fff;
@@ -2082,7 +2085,93 @@ button#product-addtocart-button {
 .page-layout-1column .page-wrapper .header-sticky { height: 70px; }
 .page-layout-1column .header-sticky img { height: 35px; }
 .cbdx-page .logo-col img { height:70px; }
-.cbdx-page.page-layout-1column .logo-col img { height:50px; }
+.cbdx-page.page-layout-1column .header-sticky .logo-col img { height:50px; }
 .banner-breadcrumbs,
-.careers-page main#maincontent { margin-top:110px; }
+.careers-page main#maincontent,
+.catalog-product-view .breadcrumbs,
+.checkout-cart-index main#maincontent { margin-top:110px; }
 
+.careers-page main#maincontent .banner-breadcrumbs { margin-top: 0; }
+.minicart-wrapper .action.showcart .counter.qty.empty { display:block; }
+.catalog-product-view .header.content,
+.checkout-cart-index .header.content { display: block; }
+.cart.table-wrapper .actions-toolbar > .action-delete { top:-1px; }
+
+.paypal-review-discount .block > .title strong,
+.cart-discount .block > .title strong {
+    color: #F57B3B;
+    font-weight: 500;
+}
+.abs-discount-block .block > .title:after,
+.cart-summary .block > .title:after,
+.paypal-review-discount .block > .title:after {
+	color: #262626;
+}
+.cart-discount .block > .title:after {
+    color: #F57B3B;
+}
+.cart.table-wrapper .cart > .item,
+.cart.table-wrapper .cart thead tr th.col {  border-bottom: 1px solid #ddd; }
+.cart.table-wrapper .cart thead tr th.col { padding-top:20px; padding-bottom:20px; font-weight:600; }
+dt { font-weight:600; }
+.cart-summary .block .item-options .field .radio { height:auto; }
+input[type="radio"], input[type="textbox"] { height:auto; }
+.cart-summary .block form:not(:last-of-type) .fieldset { margin-bottom:0; }
+
+
+
+table#shopping-cart-table td { vertical-align: middle; }
+
+.table, .paypal-review .table-paypal-review-items .col.price .price-including-tax, .paypal-review .table-paypal-review-items .col.price .price-excluding-tax, .paypal-review .table-paypal-review-items .col.subtotal .price-including-tax, .paypal-review .table-paypal-review-items .col.subtotal .price-excluding-tax, .cart.table-wrapper .col.price .price-including-tax, .cart.table-wrapper .col.price .price-excluding-tax, .cart.table-wrapper .col.subtotal .price-including-tax, .cart.table-wrapper .col.subtotal .price-excluding-tax, .cart.table-wrapper .col.msrp .price-including-tax, .cart.table-wrapper .col.msrp .price-excluding-tax, .order-details-items .col.price .price-including-tax, .order-details-items .col.price .price-excluding-tax, .order-details-items .col.subtotal .price-including-tax, .order-details-items .col.subtotal .price-excluding-tax {
+    color: #262626;
+}
+
+.product-image-photo { width: 120px; height: auto; }
+.cart.table-wrapper .actions-toolbar > .action-edit:before,
+.cart.table-wrapper .actions-toolbar > .action-delete:before {  color: #F57B3B; }
+button.action.update {
+    background: #F57B3B;
+    color: #fff;
+    border: none;
+    font-weight: normal;
+    padding: 14px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    background: #4E4F53;
+}
+.cart-summary {  background: #f8f8f8; }
+.paypal-review-discount .actions-toolbar .action.primary,.paypal-review-discount .actions-toolbar .action.cancel, .cart-discount .actions-toolbar .action.primary,.cart-discount .actions-toolbar .action.cancel {
+	box-shadow: none !important;border: none;background: #F57B3B;color: #fff;
+}
+
+.abs-revert-secondary-color:hover, .abs-revert-to-action-secondary:hover, .paypal-review .block .actions-toolbar .action.primary:hover, .abs-discount-block .actions-toolbar .action.primary:hover, .abs-discount-block .actions-toolbar .action.cancel:hover, .block-compare .action.primary:hover, .cart-summary .block .actions-toolbar > .primary .action.primary:hover, .cart-summary .form.giftregistry .fieldset .action.primary:hover, .paypal-review-discount .actions-toolbar .action.primary:hover, .paypal-review-discount .actions-toolbar .action.cancel:hover, .cart-discount .actions-toolbar .action.primary:hover, .cart-discount .actions-toolbar .action.cancel:hover {
+    background: #4E4F53;
+    color: #fff;
+    border: none;
+}
+.cart-discount .actions-toolbar .action.primary {
+    padding: 9px 20px;
+    margin-left: -1px;
+    z-index: 1;
+    position: relative;
+    font-size: 16px;
+    box-shadow: none !important;
+}
+.cart-summary .action.multicheckout {
+    color: #F57B3B;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: underline;
+}
+.cart-summary .action.multicheckout:hover {
+    text-decoration: none;
+}
+.paypal-review .table-paypal-review-items .col.price .price-including-tax .price, .paypal-review .table-paypal-review-items .col.price .price-excluding-tax .price, .paypal-review .table-paypal-review-items .col.subtotal .price-including-tax .price, .paypal-review .table-paypal-review-items .col.subtotal .price-excluding-tax .price, .cart.table-wrapper .col.price .price-including-tax .price, .cart.table-wrapper .col.price .price-excluding-tax .price, .cart.table-wrapper .col.subtotal .price-including-tax .price, .cart.table-wrapper .col.subtotal .price-excluding-tax .price, .cart.table-wrapper .col.msrp .price-including-tax .price, .cart.table-wrapper .col.msrp .price-excluding-tax .price, .order-details-items .col.price .price-including-tax .price, .order-details-items .col.price .price-excluding-tax .price, .order-details-items .col.subtotal .price-including-tax .price, .order-details-items .col.subtotal .price-excluding-tax .price {
+    font-weight: 600;
+}
+
+select {
+    height: 40px;
+    font-size: 16px;
+}
+.catalog-category-view.page-layout-1column .column.main {  float: left; }

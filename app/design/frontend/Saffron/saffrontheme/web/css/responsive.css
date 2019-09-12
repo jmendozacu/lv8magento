@@ -88,6 +88,14 @@
 		}
 		.product.data.items>.item.title.active>.switch:before { content: "\f107";}
 		.product.data.items>.item.title>.switch {display: flex; justify-content: center; align-items: center;}
+		.checkout-cart-index .columns { padding-bottom: 100px; }
+		.cart.table-wrapper .product-item-details,
+		table#shopping-cart-table td {  vertical-align: middle; }
+		.cart.table-wrapper .actions-toolbar { padding-bottom:40px; }
+		.cart.table-wrapper .product-item-details { padding-bottom:0; }
+		.cart-summary > .title { font-size: 26px; font-weight: 500; margin: 20px 0; }
+		.cart-summary .block .fieldset .field { margin-bottom:20px; }
+		
       
  
 }
