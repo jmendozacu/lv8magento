@@ -2090,6 +2090,7 @@ button#product-addtocart-button {
 .careers-page main#maincontent,
 .catalog-product-view .breadcrumbs,
 .checkout-cart-index main#maincontent { margin-top:110px; }
+.page-layout-1column-home .banner-breadcrumbs { margin-top: 0; }
 
 .careers-page main#maincontent .banner-breadcrumbs { margin-top: 0; }
 .minicart-wrapper .action.showcart .counter.qty.empty { display:block; }
@@ -2126,7 +2127,7 @@ table#shopping-cart-table td { vertical-align: middle; }
     color: #262626;
 }
 
-
+.product-image-photo { width: 120px; height: auto; }
 .cart.table-wrapper .actions-toolbar > .action-edit:before,
 .cart.table-wrapper .actions-toolbar > .action-delete:before {  color: #F57B3B; }
 button.action.update {
