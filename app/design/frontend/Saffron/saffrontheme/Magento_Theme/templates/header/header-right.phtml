@@ -1,10 +1,27 @@
+<div class="user-dropdown">
+	<div class="sign-col">
+		<a href="javascript:void(0);" class="singin-link">
+			<i class="fa fa-user" aria-hidden="true"></i>
+		</a>
+		<div class="singin-dropdown" style="display: block;">
+		<ul>
+			<li><a href="javascript:void(0);">Sign In</a></li>
+			<li><a href="javascript:void(0);">Create Account</a></li>
+			<li><a href="javascript:void(0);">Shopping Bag</a></li>
+			<li><a href="javascript:void(0);">Customer Service</a></li>
+		</ul>
+	</div>
+	</div>
+
+</div>
+
 <div class="navbar-col">
-                    <button class="menuBtn bar-button">
-                        <span class="menubar menubar1"></span>
-                        <span class="menubar menubar2"></span>
-                        <span class="menubar menubar3"></span>
-                    </button>
-  </div>
+	<button class="menuBtn bar-button">
+		<span class="menubar menubar1"></span>
+		<span class="menubar menubar2"></span>
+		<span class="menubar menubar3"></span>
+	</button>
+</div>
 	
 	
 
@@ -95,6 +112,12 @@ $(document).ready(function(){
       
     })
  
+	
+	//header user dropdown js
+	$(".sign-col .singin-link").on("click", function(){
+		$(this).toggleClass('active');
+		$(".singin-dropdown").slideToggle('slow');
+	})
  
 
  
