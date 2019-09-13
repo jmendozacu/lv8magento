@@ -2189,7 +2189,7 @@ select {
     color: #000;
     font-size: 31px;
 }
-.minicart-wrapper .action.showcart:hover:before { color: #F57B3B; }
+.minicart-wrapper .action.showcart:hover:before { color: #000; }
 .sign-col .singin-dropdown {
     position: absolute;
     top: 100%;
