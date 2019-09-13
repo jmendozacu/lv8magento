@@ -2176,3 +2176,4 @@ select {
     font-size: 16px;
 }
 .catalog-category-view.page-layout-1column .column.main {  float: left; }
+.singin-dropdown {   display: none; }
