@@ -1952,10 +1952,10 @@ textarea:not([disabled]):focus, select:not([disabled]):focus {
 .checkout-cart-index .header.content  {
     position: absolute;
     width: auto;
-    right: 15.5%;
+    right: 15%;
     padding: 0 0 0;
     box-shadow: none;
-    margin-right: 0;
+    margin-right: 10px;
 }
 .page-layout-1column .page-wrapper .page-header {
     background: #fff;
@@ -2186,7 +2186,7 @@ select {
 }
 .sign-col { margin-right: 30px; position: relative; }
 .minicart-wrapper .action.showcart:before {
-    color: #F57B3B;
+    color: #000;
     font-size: 31px;
 }
 .minicart-wrapper .action.showcart:hover:before { color: #F57B3B; }
