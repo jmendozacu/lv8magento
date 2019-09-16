@@ -1,3 +1,6 @@
+<?php
+	$isLoggedIn = $block->isLoggedIn();
+?>
 <div class="user-dropdown">
 	<div class="sign-col">
 		<a href="javascript:void(0);" class="singin-link">
@@ -5,10 +8,15 @@
 		</a>
 		<div class="singin-dropdown">
 		<ul>
-			<li><a href="javascript:void(0);">Sign In</a></li>
-			<li><a href="javascript:void(0);">Create Account</a></li>
-			<li><a href="javascript:void(0);">Shopping Bag</a></li>
-			<li><a href="javascript:void(0);">Customer Service</a></li>
+		<?php if($isLoggedIn): ?>
+		<li><a href="<?php echo $this->getUrl('customer/account/'); ?>">Account</a></li>
+		<li><a href="<?php echo $this->getUrl('checkout/cart/'); ?>">Shopping Bag</a></li>
+		<li><a href="<?php echo $this->getUrl('customer/account/logout/'); ?>">Log Out</a></li>
+		<?php else :?>
+		 <li><a href="<?php echo $this->getUrl('customer/account/login/'); ?>">Sign In</a></li>
+		 <li><a href="<?php echo $this->getUrl('customer/account/create/'); ?>">Create Account</a></li>
+		 <li><a href="<?php echo $this->getUrl('checkout/cart/'); ?>">Shopping Bag</a></li>
+		<?php endif; ?>	  
 		</ul>
 	</div>
 	</div>
