@@ -509,6 +509,7 @@ button:focus{ outline:none; }
     width: auto;
     transition: all 0.4s ease;
 }
+.cbdx-page .logo-col img {  height: 70px; }
 .banner-notfront {
     float: left;
     width: 100%;
@@ -1952,7 +1953,7 @@ textarea:not([disabled]):focus, select:not([disabled]):focus {
     margin-bottom: 30px;
 }
 
-.cbdx-page .content,
+header.header .header.content,
 .catalog-product-view .page-header .header.content,
 .checkout-cart-index .header.content  {
     position: absolute;
