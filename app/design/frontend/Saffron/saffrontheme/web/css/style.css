@@ -23,7 +23,7 @@ ul{ padding:0; }
     left: 0;
     right: 0;
     z-index:2;
-	height: 130px;
+	height:auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,6 +33,7 @@ ul{ padding:0; }
     float: left;
     width: 100%;
 }
+.page-front .header { padding:30px 0; }
 
 .logo-col {
     float: left;
@@ -2088,7 +2089,6 @@ button#product-addtocart-button {
 }
 .page-layout-1column .page-wrapper .header-sticky { height: 70px; }
 .page-layout-1column .header-sticky img { height: 35px; }
-.cbdx-page .logo-col img { height:70px; }
 .cbdx-page.page-layout-1column .header-sticky .logo-col img { height:50px; }
 .banner-breadcrumbs,
 .careers-page main#maincontent,
