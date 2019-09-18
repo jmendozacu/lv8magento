@@ -2293,15 +2293,28 @@ body .checkout-payment-method .payment-option-title .action-toggle { color: #F57
 }
 .checkout-index-index header.header .header.content {
     width: calc(100% - 10%);
-    padding-left: 10%;
     display: flex;
-	align-items: center;
+    align-items: center;
+    right: auto;
+    padding-left: 0;
 }
 .checkout-index-index header.header .header.content >a {
     margin-right: auto;
 }
 .checkout-index-index header.header .header.content .minicart-wrapper {
     order: 2;
+	margin-right: 14%;
 }
-.checkout-index-index .header .container { width:100%; }
 
+.page-wrapper > .breadcrumbs {
+    max-width: 1600px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.checkout-index-index header.header .header.content >a img {
+    height: 70px;
+    width: auto;
+}
+.checkout-index-index header.header.header-sticky .header.content >a img {
+    height: 50px;
+}
