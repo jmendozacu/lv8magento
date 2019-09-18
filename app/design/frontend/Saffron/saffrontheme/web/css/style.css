@@ -840,7 +840,7 @@ button#product-addtocart-button:focus {
     width: 100%;
     margin-bottom: 30px;
 }
-.featured-products {  margin: 2% 0 5%; }
+.featured-products {  margin: 3% 0 5%; }
 
 /*--input-css--*/
 input, .form-control {
@@ -1884,7 +1884,7 @@ input[type="datetime"], input[type="email"] {
     border: 1px solid #d8d8d8;
     height: 40px;
     outline: none;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
 }
 ._keyfocus *:focus, input:not([disabled]):focus,
@@ -2101,7 +2101,7 @@ button#product-addtocart-button {
 .careers-page main#maincontent,
 .catalog-product-view .breadcrumbs,
 .checkout-cart-index main#maincontent,
-#maincontent.page-main { margin-top:110px; }
+.checkout-index-index #maincontent.page-main { margin-top:110px; }
 
 .page-layout-1column-home .banner-breadcrumbs { margin-top: 0; }
 
@@ -2238,17 +2238,51 @@ form#co-shipping-method-form dt  {  font-size: 15px; }
 .cart-summary .block .content { padding-bottom: 0; }
 .cart-totals tbody .mark, .cart-totals tfoot .mark,
 .cart-totals tbody .amount, .cart-totals tfoot .amount, .opc-block-summary .table-totals tbody .amount, .opc-block-summary .table-totals tfoot .amount, form#shipping-zip-form select,
-form#shipping-zip-form input { font-size:15px; }
+form#shipping-zip-form input,
+.cart-totals .grand strong, .opc-block-summary .table-totals .grand strong { font-size:15px; }
 .cart-totals, .checkout-cart-index .page-main { padding: 0; }
 
 .checkout-index-index #checkout.am-checkout {
     margin: 0;
     background: none;
 }
-.checkout-index-index .column.main {
+body.checkout-index-index .column.main {
     max-width: 1600px;
     width: 94%;
     margin: 0 auto;
     float: none;
     padding: 30px 15px;
 }
+.opc-wrapper .step-title, .opc-block-shipping-information .shipping-information-title, .opc-block-summary > .title, .checkout-agreements-items .checkout-agreements-item-title {
+    font-weight: 500;
+    color: #262626;
+}
+.opc-wrapper .form-login .fieldset .field .label, .opc-wrapper .form-shipping-address .fieldset .field .label {
+    font-weight: 600;
+}
+fieldset.field.street.admin__control-fields .control .field._required .label {
+    display: none;
+}
+body.checkout-index-index .checkout-header { padding:0;}
+body.checkout-index-index .checkout-block {  margin: 0; padding:30px;  }
+body.checkout-index-index .opc-wrapper.am-opc-wrapper .payment-method-content, 
+body.checkout-index-index .opc-wrapper.am-opc-wrapper .payment-option-content { padding:0; }
+table.table-checkout-shipping-method tr.row { margin: 0; }
+.checkout-payment-method .billing-address-same-as-shipping-block {  display: flex; }
+.checkout-payment-method .billing-address-same-as-shipping-block input {
+    justify-content: flex-start;
+    height: auto;
+}
+.checkout-index-index .opc-block-summary { background: none; }
+body .mark, body mark { background:none; }
+.checkout-index-index .block.items-in-cart {  margin-bottom: -1px; }
+body .checkout-payment-method .payment-option-title { padding-left:0; }
+body .checkout-payment-method .payment-option-title .action-toggle { color: #F57B3B; }
+.checkout-payment-method .payment-methods .actions-toolbar .primary { width:100%; }
+.authentication-wrapper button.action.action-auth-toggle {
+    color:#F57B3B;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+
