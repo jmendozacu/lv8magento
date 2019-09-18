@@ -2224,5 +2224,5 @@ select {
 .singin-dropdown ul li:last-child {  border-bottom: none; }
 .singin-dropdown ul a:hover {  color: #F57B3B; }
 header .header.content {  display: block; }
-
+.navbar-col { position: relative;  top: 3px; }
 
