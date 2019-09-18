@@ -7,7 +7,7 @@
       h2, .worx-about-page h3 {  font-size: 46px; }
       .process-bx ul, .cbd-info-bx ul  {  column-count:2;   -webkit-column-count:2;  }
       .lv8-page .owl-item-caption h1{ font-size:85px; }
-      .owl-item-caption h1{ font-size:75px; }
+      .owl-item-caption h1{ font-size:85px; }
       .craft-box-row, .cbd-info-row .left-col, .cbd-info-bx { display: flex; display: -webkit-flex; }
       .craft-higher .left-col, .brand-2 .left-col,
       .info-row-2 .left-col {   order:2; -webkit-order:2;   }

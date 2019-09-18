@@ -174,7 +174,7 @@ button:focus{ outline:none; }
 .owl-item-caption h1 {
     color: #fff;
     margin: 0;
-    font-weight:600; 
+    font-weight:700; 
     line-height: normal;
 }
 .owl-item-caption p {
@@ -195,7 +195,7 @@ button:focus{ outline:none; }
 }
 
 
-/*--nav-sections-css--*/
+/*--nav-sections-css --*/
 .nav-sections .menubar-close {
     position: absolute;
     right: 5%;
