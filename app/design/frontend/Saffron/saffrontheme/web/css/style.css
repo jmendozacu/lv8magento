@@ -2075,6 +2075,9 @@ button#product-addtocart-button {
     padding: 0;
     font-weight: 500;
 }
+.labs-page .minicart-wrapper .action.showcart .counter.qty{	background:#4d75a4 }
+.worx-page .minicart-wrapper .action.showcart .counter.qty{	background:#37BFB2 }
+.lv8-page .minicart-wrapper .action.showcart .counter.qty{	background:#262626 }
 
 .page-layout-1column .page-wrapper .page-header {
     position: fixed;
