@@ -2096,6 +2096,7 @@ button#product-addtocart-button {
 }
 .page-layout-1column .page-wrapper .header-sticky { height: 70px; }
 .page-layout-1column .header-sticky img { height: 35px; }
+.checkout-index-index.page-layout-1column .header-sticky img,
 .cbdx-page.page-layout-1column .header-sticky .logo-col img { height:50px; }
 .banner-breadcrumbs,
 .careers-page main#maincontent,
@@ -2284,5 +2285,23 @@ body .checkout-payment-method .payment-option-title .action-toggle { color: #F57
     text-decoration: underline;
     font-weight: 500;
 }
-
+.checkout-index-index header.header .header.content {
+    width: calc(100% - 10%);
+    padding-left: 10%;
+    display: flex;
+    align-items: center;
+}
+.checkout-index-index header.header .header.content {
+    width: calc(100% - 10%);
+    padding-left: 10%;
+    display: flex;
+	align-items: center;
+}
+.checkout-index-index header.header .header.content >a {
+    margin-right: auto;
+}
+.checkout-index-index header.header .header.content .minicart-wrapper {
+    order: 2;
+}
+.checkout-index-index .header .container { width:100%; }
 
