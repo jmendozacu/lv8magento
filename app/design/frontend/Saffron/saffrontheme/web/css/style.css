@@ -732,6 +732,7 @@ footer.page-footer {
     background: #4E4F53;
     color:#fff;
 }
+.learn-btn:visited {  color: #fff; }
 .btn-orange { background: #F57B3B; }
 
 .theBrands-carousel {
