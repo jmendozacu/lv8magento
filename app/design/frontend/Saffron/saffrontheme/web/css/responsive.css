@@ -2,10 +2,10 @@
 
 /*==========---min-width-768---==========*/
 @media (min-width: 768px) {
-      .banner-title-notfront h1 {  font-size: 85px; }
+      .banner-title-notfront h1 {  font-size: 75px; }
       .lv8-about-info .abtInfo p{ font-size:20px; line-height:30px; }
       .process-bx ul, .cbd-info-bx ul  {  column-count:2;   -webkit-column-count:2;  }
-      .lv8-page .owl-item-caption h1{ font-size:85px; }
+      .lv8-page .owl-item-caption h1{ font-size:100px; font-weight:700;  }
       .owl-item-caption h1{ font-size:75px; }
       .craft-box-row, .cbd-info-row .left-col, .cbd-info-bx { display: flex; display: -webkit-flex; }
       .craft-higher .left-col, .brand-2 .left-col,

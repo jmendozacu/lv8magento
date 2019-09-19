@@ -177,7 +177,7 @@ button:focus{ outline:none; }
 .owl-item-caption h1 {
     color: #fff;
     margin: 0;
-    font-weight:700; 
+    font-weight:500; 
     line-height: normal;
 }
 .owl-item-caption p {
@@ -537,7 +537,7 @@ button:focus{ outline:none; }
 .banner-title-notfront h1 {
     margin: 0;
     color: #fff;
-    font-weight:600;
+    font-weight:500;
 }
 .row-full{
     float: left;
