@@ -159,9 +159,9 @@ button:focus{ outline:none; }
 .labs-page  .front-banner .item,
 .cbdx-page  .front-banner .item,
 .worx-page  .front-banner .item{
-    background-repeat: no-repeat;
-    background-size:cover; 
-    background-position: center top;
+    background-repeat: no-repeat !important;
+    background-size:cover !important; 
+    background-position: center top !important;
 }
 .front-banner .item { height: 100vh; }
 .owl-item-caption {
