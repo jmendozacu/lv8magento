@@ -3,8 +3,7 @@
 /*==========---min-width-768---==========*/
 @media (min-width: 768px) {
       .banner-title-notfront h1 {  font-size: 85px; }
-      .lv8-about-info .abtInfo p{ font-size:20px; }
-      h2, .worx-about-page h3 {  font-size: 46px; }
+      .lv8-about-info .abtInfo p{ font-size:20px; line-height:30px; }
       .process-bx ul, .cbd-info-bx ul  {  column-count:2;   -webkit-column-count:2;  }
       .lv8-page .owl-item-caption h1{ font-size:85px; }
       .owl-item-caption h1{ font-size:75px; }
@@ -105,7 +104,7 @@
 	  .craft-graybx{ width: 120%; }
       .craft-higher .craft-info-col { width: calc(100% - 11.5%); margin-left: 11.5%; }
       .craft-research .craft-info-col{ width: calc(100% - 11.5%); margin-right: 11.5%; }
-      .craft-graybx p { font-size: 18px; }
+      .craft-graybx p { font-size: 20px;  line-height: 30px; }
       .brand-info { position: absolute; left: 0; top: 50%; transform: translate(0, -50%); -webkit-transform: translate(0, -50%); }
       .footer-links ul  {  column-count:2;   -webkit-column-count:2;  }
 	  .faqs-panel:nth-of-type(2n+1) {  padding-right: 30px; }

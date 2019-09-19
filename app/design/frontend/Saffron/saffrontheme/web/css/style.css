@@ -3,12 +3,13 @@
 body{
     font-family: 'Montserrat', sans-serif;
 	font-size:16px;
-    color:#262626;
+    color:#4E4F53;
     line-height:normal; 
 }
 h1 { font-size:46px;}
-h1, .h1, h2, .h2, h3, .h3, h4 { color:#262626; line-height: normal;  font-weight:600; font-family: 'Montserrat', sans-serif; }
-p{ font-size:17px; line-height:26px; color:#262626; font-family: 'Montserrat', sans-serif;  }
+h1, .h1, h2, .h2, h3, .h3, h4 { color:#4E4F53; line-height: normal;  font-weight:600; font-family: 'Montserrat', sans-serif; }
+h1, .h1, h2, .h2, h3 { font-size:55px; color:#4E4F53; }
+p{ font-size:18px; line-height:26px; color:#4E4F53; font-family: 'Montserrat', sans-serif;  }
 li { list-style:none;}
 a, a:hover{ text-decoration:none; }
 ul{ padding:0; }
@@ -332,7 +333,7 @@ button:focus{ outline:none; }
     z-index: 2;
 }
 .nav-sections-items .menuBtn .menubar {
-    background: #262626;
+    background: #4E4F53;
     position: absolute;
     right: 0;
 }
@@ -404,7 +405,7 @@ button:focus{ outline:none; }
     text-transform: uppercase;
     margin: 0 0 15px;
     font-weight: 600;
-    color:#262626;
+    color:#4E4F53;
 }
 .brand-name-col {
     float: left;
@@ -676,9 +677,8 @@ footer.page-footer {
     width: auto;
 }
 .labs-about-brand h4 {
-    font-size: 32px;
-    font-weight: 400;
-    font-family: ;
+    font-size: 35px;
+    font-weight: 500;
 }
 .title-col {
     text-align: center;
@@ -708,20 +708,20 @@ footer.page-footer {
 	width:100%;
 }
 .craft-graybx h3 {
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 500;
     color: #000;
     margin: 0 0 30px;
 }
 /*--btns-css--*/
-.craft-graybx .learn-btn  { margin: 15px 0 0; }
+.craft-graybx .learn-btn  { margin: 20px 0 0; }
 .learn-btn  {
     background: #5f89b3;
     border: none;
     color: #fff;
     text-transform: uppercase;
-    padding: 17px 30px;
-    font-size: 18px;
+    padding: 20px 26px;
+    font-size: 19px;
     display: inline-block;
     font-weight: 400;
     line-height: normal;
@@ -779,10 +779,14 @@ button#product-addtocart-button:focus {
     width: 90%;
 }
 .theBrands-carousel .boxBrands {
-    display: block;
     background: #fff;
-    padding:  7%;
+    padding: 7%;
     text-align: center;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .theBrands-carousel .boxBrands img {
@@ -817,7 +821,7 @@ button#product-addtocart-button:focus {
 .featured-name-col .name {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    color: #262626;
+    color: #4E4F53;
     font-weight: 600;
     margin-bottom: 7px;
     display: inline-block;
@@ -825,9 +829,10 @@ button#product-addtocart-button:focus {
 
 .featured-name-col p {
     font-size: 16px;
+	margin-bottom: 20px;
 }
 .featured-item figure {
-    border-bottom: 1px solid #d8d8d8;
+    border-bottom: 1px solid #4E5054;
     margin-bottom: 20px;
     padding-bottom: 12px;
     text-align:center;
@@ -848,7 +853,7 @@ input, .form-control {
     box-shadow: none;
     border-radius: 0;
     height: calc(1.7em + .8rem + 2px);
-    color: #262626;
+    color: #4E4F53;
     font-size:16px; 
 }
 textarea{
@@ -864,7 +869,7 @@ textarea{
 }
 .stayUpdate-col .form-group {
     position: relative;
-    margin:30px 0 0; 
+    margin:35px 0 0; 
 }
 .join-btn {
     background: #F57B3B;
@@ -881,7 +886,7 @@ textarea{
 .join-btn:hover{
     background:#4E4F53; 
 }
-.stayUpdate-col .form-control{ height:50px; padding-right:112px; }
+.stayUpdate-col .form-control{ height:50px; padding-right:112px; border: 1px solid #e8e8e8; }
 .stayUpdate-col .craft-graybx {
     padding: 15% 10%;
 }
@@ -889,8 +894,8 @@ textarea{
 .customer-say h3 {
     color: #fff;
     font-size: 22px;
-    font-weight: initial;
     line-height: 30px;
+    font-weight: 600;
 }
 .customer-say {
     text-align: center;
@@ -914,8 +919,9 @@ textarea{
     width:90%;
 }
 .customer-carousel p{
-    color:#fff;
+    color: #fff;
     font-size: 16px;
+    font-weight: 500;
 
 }
 .customer-name {
@@ -927,7 +933,6 @@ textarea{
 .customer-name h5 {
     font-size: 16px;
     color: #fff;
-    
     text-transform: uppercase;
     margin: 0 0 12px;
     font-weight: initial;
@@ -936,9 +941,11 @@ textarea{
 .customer-name span {
     color: #F57B3B;
     font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 .free-app {
-    padding: 30px 0 0;
+    padding: 80px 0 0;
 }
 .freeapp-col {
     max-width: 800px;
@@ -948,24 +955,23 @@ textarea{
 	display: flex;
     justify-content: center;
     align-items: center;
-	align-items: flex-end;
+	align-items:center;
 }
 .freeapp-col figure {
     float: left;
-    max-width: 340px;
-    padding-right: 13%;
-    margin:0; 
+    max-width: 320px;
+    margin: 0;
+    width: 100%;
 }
 .app-info {
     float: left;
     width:auto;
-    padding: 6% 0;
+    padding: 60px 0 60px 13%;
 }
 .app-info h4 {
-    
-    font-size: 32px;
-    font-weight: initial;
-    margin: 0 0 12px;
+   font-size: 35px;
+    margin: 0 0 25px;
+    font-weight: 600;
 }
 .appstore-col a {
     display: inline-block;
@@ -1090,7 +1096,7 @@ textarea{
     font-size: 14px;
 }
 .product-list .featured-item {
-    margin-bottom: 70px;
+    margin-bottom: 90px;
     position: relative;
 }
 .featured-item .price-col {
@@ -1102,6 +1108,7 @@ textarea{
     color: #F57B3B;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
+	font-size:16px;
 }
 .brands-list, .brand-row {
     float: left;
@@ -1138,7 +1145,7 @@ textarea{
     font-family: 'Montserrat', sans-serif;
     color: #4E5054;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 16px;
 }
 .info-title-list li.active a{
     color:#F57B3B;
@@ -1150,8 +1157,8 @@ textarea{
     margin: 30px 0;
 }
 .cbd-info-bx h3 {
-    
-    font-size: 32px;
+   font-size: 35px;
+    margin-bottom: 20px;
 }
 .cbd-info-row .container{ width:100%;  }
 .cbd-info-row figure img { width:100%; }
@@ -1196,9 +1203,9 @@ textarea{
 }
 .process-bx h3 {
     color: #fff;
-    font-size: 34px;
+    font-size: 35px;
     margin: 0 0 20px;
-    font-weight: 500;
+    font-weight: 600;
 }
 .process-bx p {
     color: #fff;
@@ -1220,8 +1227,7 @@ textarea{
     margin: 0 0 20px;
 }
 .faqs-panel h4 {
-    
-    font-size: 20px;
+    font-size: 24px;
     margin: 0 0 15px;
     position: relative;
     padding-left:32px;
@@ -1231,6 +1237,7 @@ textarea{
     position: absolute;
     left: 0;
     top: 0;
+	font-weight:500;
 }
 .ans p {
     position: relative;
@@ -1247,7 +1254,8 @@ textarea{
     text-transform: uppercase;
     display: inline-block;
     margin: 20px 0 0;
-    font-size:18px;
+    font-size: 15px;
+    font-weight: 500;
 }
 .learn-more-link:hover {
     color:#000;
@@ -1270,7 +1278,7 @@ textarea{
     content: "";
     width: 4px;
     height: 4px;
-    background: #262626;
+    background: #4E4F53;
     position: absolute;
     left: 0;
     top: 9px;
@@ -1290,8 +1298,8 @@ textarea{
     position: absolute;
     top: 6px;
     right: 6px;
-    color: #262626;
-    border: 2px solid #262626;
+    color: #4E4F53;
+    border: 2px solid #4E4F53;
     line-height: normal;
     width: 30px;
     height: 30px;
@@ -1462,16 +1470,18 @@ tbody tr td:first-child {
 }
 .stories-carousel .customer-caption h5 {
     font-weight: 600;
+    margin-top: 30px;
+    font-size: 20px;
 }
 .worx-about-page .our-craft > h3 {
     text-align: center;
     margin: 0 0 5%;
 }
 .worx-about-page  .craft-graybx h3 {
-    margin: 0 0 20px;
+    margin: 0 0 22px;
     line-height: normal;
-    font-size: 30px;
     font-weight: 600;
+	color: #4E4F53;
 }
 .worx-about-page   .craft-box-row {
     margin-bottom: 40px;
@@ -1502,7 +1512,7 @@ tbody tr td:first-child {
 }
 .expertise-info h5 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 26px;
+    font-size: 30px;
 }
 .stories-carousel {
     padding: 0 15px;
@@ -1547,10 +1557,10 @@ div.scroll-page {
 .breadcrumbs li {
     display: inline-block;
     padding-right: 5px;
-	color:#262626;
+	color:#4E4F53;
 }
 .breadcrumbs a {
-    color: #262626;
+    color: #4E4F53;
 }
 .breadcrumbs a:hover{
     text-decoration: underline;
@@ -1713,7 +1723,7 @@ ul.filter-cat-list {
 ul.filter-cat-list li a {
     padding: 10px 15px;
     display: block;
-    color: #262626;
+    color: #4E4F53;
     font-size: 14px;
     border-bottom: 1px dotted #d8d8d8;
 }
@@ -1778,11 +1788,11 @@ ul.filter-cat-list li:last-child a {
 
 .breadcrumbs li a {
     font-size: 16px;
-    color: #262626;
+    color: #4E4F53;
 }
 
 .breadcrumbs li {
-    color: #262626;
+    color: #4E4F53;
     font-size: 16px;
 }
 
@@ -1797,7 +1807,7 @@ ul.filter-cat-list li:last-child a {
 
 .lv8-page .breadcrumbs li a,
 .lv8-page .breadcrumbs li a:hover,
-.lv8-page .breadcrumbs li a:visited { color:#262626; }
+.lv8-page .breadcrumbs li a:visited { color:#4E4F53; }
 .labs-page .breadcrumbs li a,
 .labs-page .breadcrumbs li a:hover,
 .labs-page .breadcrumbs li a:visited { color:#4d75a4; }
@@ -1829,7 +1839,7 @@ body.checkout-cart-index .column.main {
 }
 
 .catalog-product-view a.action.add {
-	color: #262626;
+	color: #4E4F53;
 	font-size: 16px;
 	text-decoration: underline;
 	font-weight: 500;
@@ -1846,7 +1856,7 @@ body.checkout-cart-index .column.main {
 .box-tocart .field.qty label.label {
     font-size: 14px;
     font-weight: 500;
-    color: #262626;
+    color: #4E4F53;
     margin: 0 10px 0 0;
     line-height: normal;
 }
@@ -1859,7 +1869,7 @@ body.checkout-cart-index .column.main {
     font-size: 13px;
 }
 .product-info-main .product-info-price {
-    color: #262626;
+    color: #4E4F53;
 }
 .product-info-main .product-add-form {
     padding-top: 0;
@@ -1873,7 +1883,7 @@ body.checkout-cart-index .column.main {
 }
 .product-social-links .product-addto-links .action, .product-social-links .action.mailto.friend {
     font-size: 12px;
-    color: #262626;
+    color: #4E4F53;
     letter-spacing: 0;
     text-decoration: underline;
 }
@@ -1931,7 +1941,7 @@ textarea:not([disabled]):focus, select:not([disabled]):focus {
 }
 .catalog-product-view .banner-title-notfront h1.page-title,
 .checkout-cart-index .banner-title-notfront h1.page-title {
-    color: #262626;
+    color: #4E4F53;
     margin-bottom: 25px;
 }
 .catalog-product-view .banner-title-notfront h1.page-title {
@@ -2080,7 +2090,7 @@ button#product-addtocart-button {
 }
 .labs-page .minicart-wrapper .action.showcart .counter.qty{	background:#4d75a4 }
 .worx-page .minicart-wrapper .action.showcart .counter.qty{	background:#37BFB2 }
-.lv8-page .minicart-wrapper .action.showcart .counter.qty{	background:#262626 }
+.lv8-page .minicart-wrapper .action.showcart .counter.qty{	background:#4E4F53 }
 
 .page-layout-1column .page-wrapper .page-header {
     position: fixed;
@@ -2120,7 +2130,7 @@ button#product-addtocart-button {
 .abs-discount-block .block > .title:after,
 .cart-summary .block > .title:after,
 .paypal-review-discount .block > .title:after {
-	color: #262626;
+	color: #4E4F53;
 }
 .cart-discount .block > .title:after {
     color: #F57B3B;
@@ -2138,7 +2148,7 @@ input[type="radio"], input[type="textbox"] { height:auto; }
 table#shopping-cart-table td { vertical-align: middle; }
 
 .table, .paypal-review .table-paypal-review-items .col.price .price-including-tax, .paypal-review .table-paypal-review-items .col.price .price-excluding-tax, .paypal-review .table-paypal-review-items .col.subtotal .price-including-tax, .paypal-review .table-paypal-review-items .col.subtotal .price-excluding-tax, .cart.table-wrapper .col.price .price-including-tax, .cart.table-wrapper .col.price .price-excluding-tax, .cart.table-wrapper .col.subtotal .price-including-tax, .cart.table-wrapper .col.subtotal .price-excluding-tax, .cart.table-wrapper .col.msrp .price-including-tax, .cart.table-wrapper .col.msrp .price-excluding-tax, .order-details-items .col.price .price-including-tax, .order-details-items .col.price .price-excluding-tax, .order-details-items .col.subtotal .price-including-tax, .order-details-items .col.subtotal .price-excluding-tax {
-    color: #262626;
+    color: #4E4F53;
 }
 
 .cart.table-wrapper .actions-toolbar > .action-edit:before,
@@ -2219,7 +2229,7 @@ select {
 .singin-dropdown ul {  margin: 0; }
 .singin-dropdown ul li:last-child {  margin-bottom: 0; }
 .singin-dropdown ul a {
-    color: #262626;
+    color: #4E4F53;
     font-size: 17px;
 }
 .singin-dropdown ul li {
@@ -2256,7 +2266,7 @@ body.checkout-index-index .column.main {
 }
 .opc-wrapper .step-title, .opc-block-shipping-information .shipping-information-title, .opc-block-summary > .title, .checkout-agreements-items .checkout-agreements-item-title {
     font-weight: 500;
-    color: #262626;
+    color: #4E4F53;
 }
 .opc-wrapper .form-login .fieldset .field .label, .opc-wrapper .form-shipping-address .fieldset .field .label {
     font-weight: 600;
@@ -2317,4 +2327,20 @@ body .checkout-payment-method .payment-option-title .action-toggle { color: #F57
 }
 .checkout-index-index header.header.header-sticky .header.content >a img {
     height: 50px;
+}
+.featured-products h2 {
+    font-size: 35px;
+}
+.visitstore-btn {
+    margin-top: 25px;
+    display: block;
+}
+.stay-updated .craft-graybx h3 {
+    color: #4E5054;
+}
+.customer-say  .owl-nav button span {
+    color: #fff;
+}
+.customer-say .owl-carousel .owl-nav button {
+    opacity: 1;
 }

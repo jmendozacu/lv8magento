@@ -18,6 +18,7 @@
 			</container>
         </container>
 
-
+		<move element="catalog.leftnav" destination="category.product.list.additional" before="-"/>
+		 <referenceBlock name="product_list_toolbar" remove="true" />
    </body>
 </page>
