@@ -1,0 +1,13 @@
+<?php
+
+$protocol = 'http';
+$url = $protocol . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+?>
+
+<div class="filter-col prize-filter">
+                                    <a href="javascript:void(0);" class="filter-link">Sort by Prize</a>
+                                    <ul class="filter-dropdown" style="display: block;">
+                                        <li><a href="<?php echo $url; ?>?product_list_order=price">Price: Low to High</a></li>
+                                        <li><a href="<?php echo $url; ?>?product_list_order=price&product_list_dir=desc">Price: High to Low</a></li>
+                                    </ul>
+                                </div>
