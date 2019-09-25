@@ -72,6 +72,7 @@ ul{ padding:0; }
 .checkout-cart-index .menubar,
 .checkout-index-index .menubar,
 .checkout-onepage-success .menubar,
+.page-products .menubar,
 body[class*="customer-account-"] .menubar { background: #F57B3B; }
 .bar-button:hover .menubar2 {  width: 100%; }
 .bar-button:hover .menubar3 {  width: 100%; }
