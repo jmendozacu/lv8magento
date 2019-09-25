@@ -40,7 +40,7 @@ $_helper = $this->helper('Magento\Catalog\Helper\Output');
 <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="pills-home-tab">    
                         
 <?php //$block->getToolbarHtml() ?>
-    <?php $block->getAdditionalHtml() ?>
+    <?php echo $block->getAdditionalHtml() ?>
     <?php
     if ($block->getMode() == 'grid') {
         $viewMode = 'grid';
