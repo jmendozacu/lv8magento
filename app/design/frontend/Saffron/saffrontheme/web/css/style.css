@@ -2357,7 +2357,7 @@ body.page-layout-1column .column.main { padding-bottom:0; }
 table#product-attribute-specs-table .col { max-width: inherit; width: auto; }
 .fotorama__caption__wrap { font-weight: 600; color: #4E4F53; }
 .product-tab-title { display:none; }
-.catalog-category-view .product-tab-title {  display: block; }
+.category-products .product-tab-title {  display: block; }
 .contact-form-inner h4 {  font-size: 24px; }
 
 button.learn-btn:hover, button.learn-btn:focus {  border: none; }
@@ -2483,13 +2483,15 @@ body[class*="customer-account-"] .banner-title-notfront h1.page-title {
 body button, body a.action.primary { border-radius: 0; }
 form#login-form .secondary {  margin-top: 16px; }
 button.action.reload.captcha-reload {
-    background: #F57B3B;
+    background: #4E4F53;
     color: #fff;
     font-weight: 400;
     border: none;
     text-transform: capitalize;
 }
+.action.remind { color:#F57B3B; }
 .action.remind:hover {
     text-decoration: underline;
     color: #4E4F53;
 }
+form.form .field label span {  font-weight: 600; }
