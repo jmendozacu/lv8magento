@@ -70,7 +70,10 @@ $(document).ready(function(){
     $(".menu-parent li.cbdx-menu .fa").on("click", function(){
         $(".menu-item-cbdx").addClass('active');
     })
-   
+    $(".menu-parent li").on("click", function(){
+        $(this).addClass("active");
+        $(this).siblings().removeClass("active");
+    })
     
     //end-menu 
     
