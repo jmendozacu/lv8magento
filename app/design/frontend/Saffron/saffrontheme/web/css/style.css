@@ -301,6 +301,13 @@ button:focus{ outline:none; }
     margin: 0;
     transition: all 0.5s ease; -webkit-transition: all 0.5s ease; 
 }
+.menu-parent li.menu-level.active a {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #292929;
+    color: #fff;
+    -moz-text-stroke-color: #292929;
+    -ms-text-stroke-color: #292929;
+}
 .menu-parent li.menu-item a{
     color:#4e5054;
 }
@@ -1044,9 +1051,11 @@ textarea{
 }
 /*--hover-color-css--*/
 .product-tab-title li a:hover,
-.filter-dropdown a:hover,
 .info-title-list li a:hover {
     color: #F57B3B;
+}
+.filter-dropdown a:hover {
+	color: #4E5054;
 }
 .product-tab-title li a.active,
 .filter-dropdown a.active,
@@ -1104,7 +1113,7 @@ textarea{
     width: 100%;
     min-width:160px; 
     margin: 0;
-    z-index: 1;
+    z-index: 2;
     display: none;
 }
 .filter-dropdown a {
