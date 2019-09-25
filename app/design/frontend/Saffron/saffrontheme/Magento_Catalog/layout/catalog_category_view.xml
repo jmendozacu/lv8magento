@@ -7,14 +7,23 @@
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-	 
+	
 		<move element="banners" destination="page.wrapper" before="main.content"/>
-		<move element="category.cms" destination="topmain"   before="-"/>
-		<container name="banners" as="banners" label="Page Banner" htmlTag="div" htmlClass="banner_padding">
-			<container	name="topmain" htmlTag="div" htmlClass="banners">
+	    <move element="breadcrumbs" destination="topmain" />
+		<move element="category.image" destination="topmain" />
+		<move element="category.cms" destination="content" before="-"/>
+		<move element="page.main.title" destination="topmain" before="category.cms"/>
+		<container name="banners" as="banners" label="Page Banner" htmlTag="div" htmlClass="banner-breadcrumbs labs-bread">
+			<container	name="topmain"  >
 			</container>
         </container>
-
-
+<referenceContainer name="content">
+        <block class="Magento\Framework\View\Element\Template" template="Magento_Catalog::category/categorycustom.phtml" name="banner_category_ptk" before="-"/>
+          <block class="Magento\Framework\View\Element\Template" template="Magento_Catalog::category/categorysort.phtml" name="banner_category_ptk_sort" after="catalog.leftnav"/>
+</referenceContainer>
+<move element="banner_category_ptk_sort" destination="category.product.list.additional" before="-"/>
+<move element="catalog.leftnav" destination="category.product.list.additional" before="-"/>
+		 <referenceBlock name="product_list_toolbar" remove="true" />
+	
    </body>
 </page>
