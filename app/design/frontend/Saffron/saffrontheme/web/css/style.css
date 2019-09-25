@@ -1008,12 +1008,14 @@ textarea{
     width: 90%;
     margin: 0 auto;
     float: none;
+	display: table;
 }
 .product-tab-title {
     float: left;
     width: 100%;
     background: #f8f8f8;
     padding: 25px 0;
+	margin-bottom:60px;
 }
 
 .product-tab-title .nav {
@@ -2357,7 +2359,10 @@ body.page-layout-1column .column.main { padding-bottom:0; }
 table#product-attribute-specs-table .col { max-width: inherit; width: auto; }
 .fotorama__caption__wrap { font-weight: 600; color: #4E4F53; }
 .product-tab-title { display:none; }
-.category-products .product-tab-title {  display: block; }
+.category-capsules .product-tab-title,
+.category-pet-tincure .product-tab-title,
+.category-balms .product-tab-title,
+.category-oils .product-tab-title {  display: block; }
 .contact-form-inner h4 {  font-size: 24px; }
 
 button.learn-btn:hover, button.learn-btn:focus {  border: none; }
@@ -2495,3 +2500,7 @@ button.action.reload.captcha-reload {
     color: #4E4F53;
 }
 form.form .field label span {  font-weight: 600; }
+.catalog-category-view .breadcrumbs .items > li { color: #fff; }
+.product-tab-title div#layered-filter-block { float: left; width: 100%; }
+.page-layout-1column .filter.block { border: none; }
+
