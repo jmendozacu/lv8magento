@@ -2302,24 +2302,26 @@ body .checkout-payment-method .payment-option-title .action-toggle { color: #F57
     font-weight: 500;
 }
 .checkout-index-index header.header .header.content {
-    width: calc(100% - 10%);
-    padding-left: 10%;
     display: flex;
     align-items: center;
-}
-.checkout-index-index header.header .header.content {
-    width: calc(100% - 10%);
-    display: flex;
-    align-items: center;
-    right: auto;
+    left: 0;
+    width: calc(100% - 12%);
     padding-left: 0;
+    right: 0;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 .checkout-index-index header.header .header.content >a {
     margin-right: auto;
 }
 .checkout-index-index header.header .header.content .minicart-wrapper {
     order: 2;
-	margin-right: 14%;
+	margin-right: 150px;
+}
+.checkout-index-index .container {
+    padding: 0;
+    width: calc(100% - 12%);
+    margin-left: auto;
 }
 .page-wrapper > .breadcrumbs {
     max-width: 1600px;
