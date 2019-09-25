@@ -2357,14 +2357,14 @@ body.page-layout-1column .column.main { padding-bottom:0; }
 table#product-attribute-specs-table .col { max-width: inherit; width: auto; }
 .fotorama__caption__wrap { font-weight: 600; color: #4E4F53; }
 .product-tab-title { display:none; }
-.page-products .product-tab-title {  display: block; }
+.catalog-category-view .product-tab-title {  display: block; }
 .contact-form-inner h4 {  font-size: 24px; }
 
 button.learn-btn:hover, button.learn-btn:focus {  border: none; }
 
-body[class*="customer-account-"] a:visited,
-body[class*="customer-account-"] .alink:visited,
-body[class*="customer-account-"]  a,
+body[class*="customer-account-"] .page-main a:visited,
+body[class*="customer-account-"] .page-main .alink:visited,
+body[class*="customer-account-"]  .page-main a,
 .cbdx-page a:visited,
 .cbdx-page .alink:visited,
 .cbdx-page a,
@@ -2379,7 +2379,7 @@ body[class*="customer-account-"]  a,
 .checkout-cart-index a { color: #F57B3B; }
 .cbdx-page a:hover,
 .checkout-cart-index a:hover,
-body[class*="customer-account-"]  a:hover {  color: #0056b3; }
+body[class*="customer-account-"] .page-main  a:hover {  color: #0056b3; }
 body.checkout-index-index .opc-wrapper.am-opc-wrapper .payment-option-content .action-apply {
     background: #4E4F53;
     color: #fff;
@@ -2493,4 +2493,7 @@ button.action.reload.captcha-reload {
     border: none;
     text-transform: capitalize;
 }
-
+.action.remind:hover {
+    text-decoration: underline;
+    color: #4E4F53;
+}
