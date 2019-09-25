@@ -2266,7 +2266,7 @@ form#shipping-zip-form input,
 body.checkout-index-index .column.main {
     max-width: 1600px;
     width: 94%;
-    margin: 0 auto;
+    margin: 0 auto 50px;
     float: none;
     padding: 30px 15px;
 }
@@ -2280,7 +2280,7 @@ body.checkout-index-index .column.main {
 fieldset.field.street.admin__control-fields .control .field._required .label {
     display: none;
 }
-body.checkout-index-index .checkout-header { padding:0;}
+body.checkout-index-index .checkout-header { padding:0 12px;}
 body.checkout-index-index .checkout-block {  margin: 0; padding:30px;  }
 body.checkout-index-index .opc-wrapper.am-opc-wrapper .payment-method-content, 
 body.checkout-index-index .opc-wrapper.am-opc-wrapper .payment-option-content { padding:0; }
@@ -2297,9 +2297,12 @@ body .checkout-payment-method .payment-option-title { padding-left:0; }
 body .checkout-payment-method .payment-option-title .action-toggle { color: #F57B3B; }
 .checkout-payment-method .payment-methods .actions-toolbar .primary { width:100%; }
 .authentication-wrapper button.action.action-auth-toggle {
-    color:#F57B3B;
-    text-decoration: underline;
+    color: #fff;
+    text-decoration: none;
     font-weight: 500;
+    background: #F57B3B;
+    padding: 7px 15px;
+    text-transform: uppercase;
 }
 .checkout-index-index header.header .header.content {
     display: flex;
@@ -2345,5 +2348,26 @@ table#product-attribute-specs-table .col { max-width: inherit; width: auto; }
 
 button.learn-btn:hover, button.learn-btn:focus {  border: none; }
 
+.cbdx-page a:visited,
+.cbdx-page .alink:visited,
+.cbdx-page a,
+.checkout-cart-index a:visited, 
+.checkout-cart-index .alink:visited, 
+.checkout-cart-index a,
+.checkout-cart-index a:visited, 
+.checkout-cart-index .alink:visited, 
+.checkout-cart-index a { color: #F57B3B; }
+.cbdx-page a:hover
+.checkout-cart-index a:hover {  color: #0056b3; }
+body.checkout-index-index .opc-wrapper.am-opc-wrapper .payment-option-content .action-apply {
+    background: #4E4F53;
+    color: #fff;
+    border: none;
+    font-weight: normal;
+    font-size: 14px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
 
 

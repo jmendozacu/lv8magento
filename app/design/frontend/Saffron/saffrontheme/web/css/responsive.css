@@ -111,9 +111,7 @@
 	  .faqs-panel:nth-of-type(2n+2) { padding-left: 30px; }
 	  .faqs-panel {  flex: 1 1 50%; }
 	  .menu-item-cbdx .menu-item-description {  padding-top: 25px; }
-	  body.checkout-index-index .opc-wrapper.am-opc-wrapper.layout-3-columns .checkout-column {
-		margin-right: 60px;
-		}
+	  body.checkout-index-index .opc-wrapper.am-opc-wrapper.layout-3-columns .checkout-column{padding:0 15px;}
 		
 
 }
