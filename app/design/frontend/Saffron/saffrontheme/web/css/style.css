@@ -2362,9 +2362,6 @@ table#product-attribute-specs-table .col { max-width: inherit; width: auto; }
 
 button.learn-btn:hover, button.learn-btn:focus {  border: none; }
 
-body[class*="customer-account-"] .page-main a:visited,
-body[class*="customer-account-"] .page-main .alink:visited,
-body[class*="customer-account-"]  .page-main a,
 .cbdx-page a:visited,
 .cbdx-page .alink:visited,
 .cbdx-page a,
@@ -2378,8 +2375,7 @@ body[class*="customer-account-"]  .page-main a,
 .checkout-onepage-success .alink:visited,
 .checkout-cart-index a { color: #F57B3B; }
 .cbdx-page a:hover,
-.checkout-cart-index a:hover,
-body[class*="customer-account-"] .page-main  a:hover {  color: #0056b3; }
+.checkout-cart-index a:hover {  color: #0056b3; }
 body.checkout-index-index .opc-wrapper.am-opc-wrapper .payment-option-content .action-apply {
     background: #4E4F53;
     color: #fff;
