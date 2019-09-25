@@ -70,9 +70,9 @@ $(document).ready(function(){
     $(".menu-parent li.cbdx-menu .fa").on("click", function(){
         $(".menu-item-cbdx").addClass('active');
     })
-    $(".menu-parent li a").on("click", function(){
-        $(this).parent().addClass("active");
-        $(this).parent().siblings().removeClass("active");
+    jQuery(".menu-parent li a").on("click", function(){
+        jQuery(this).parent().addClass("active");
+        jQuery(this).parent().siblings().removeClass("active");
     })
     
     //end-menu 
