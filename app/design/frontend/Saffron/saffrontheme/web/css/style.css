@@ -2593,5 +2593,14 @@ aside.modal-popup.confirm footer.modal-footer button {
 }
 aside.modal-popup.confirm footer.modal-footer button.action-dismiss { background: #4E4F53; }
 aside.modal-popup.confirm footer.modal-footer button.action-accept { background: #F57B3B; }
-
+aside.modal-popup.confirm._show .modal-content {
+    border: none;
+    padding: 30px;
+    font-size: 19px;
+    text-align: center;
+    line-height: 26px;
+}
+aside.modal-popup.confirm._show header.modal-header {
+    border: none;
+}
 
