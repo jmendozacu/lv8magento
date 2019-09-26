@@ -2143,10 +2143,10 @@ body.page-layout-1column .page-wrapper .header-sticky { height: 70px; }
 .catalog-product-view .breadcrumbs,
 .checkout-cart-index main#maincontent,
 .checkout-index-index #maincontent.page-main,
-.careers-page main#maincontent,
 .checkout-onepage-success main#maincontent,
 body[class*="customer-account-"] main#maincontent { margin-top:110px; }
- 
+
+.cms-careers main#maincontent { margin-top:100px; }
 
 .page-layout-1column-home .banner-breadcrumbs { margin-top: 0; }
 .careers-page main#maincontent .banner-breadcrumbs { margin-top: 0; }
@@ -2549,3 +2549,4 @@ body.page-layout-1column .filter-options-title:hover {
 .page-layout-1column .filter-options-content .item a {  font-size: 14px; }
 .page-layout-1column .filter-options-content .item a:hover { color: #4E5054; }
 body.page-layout-1column .filter-options-content { min-width: 200px; }
+.careers-page .breadcrumbs { margin: 0; }
