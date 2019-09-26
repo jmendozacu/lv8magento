@@ -404,7 +404,6 @@
 	.post-item { margin-bottom: 40px;   }
 	.image-notfront img {  min-height: 500px;  object-fit: cover;  }
 	.banner-breadcrumbs .breadcrumbs { display: none; }
-	.banner-notfront { margin-top:0; }
 	.ourFamily-row {  padding: 0 15px;   }
 	.family-image img { min-height: 400px; object-fit: cover;  }
 	.mobile-arrow { display:block; }
@@ -453,7 +452,8 @@
 	body .minicart-wrapper .block-minicart { right: -110px; top: 40px; }
 	.minicart-wrapper .block-minicart:before,
 	.minicart-wrapper .block-minicart:after { display:none; }
-	
+	.page-layout-1column .page-wrapper .page-header { height:90px; }
+	.banner-breadcrumbs, .catalog-product-view .breadcrumbs, .checkout-cart-index main#maincontent, .checkout-index-index #maincontent.page-main, .checkout-onepage-success main#maincontent, body[class*="customer-account-"] main#maincontent, .multishipping-checkout-login main#maincontent, .careers-page main#maincontent { margin-top:90px; }
 		
       
 }
