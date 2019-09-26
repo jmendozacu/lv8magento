@@ -2559,7 +2559,6 @@ body.page-layout-1column .filter-options-content { min-width: 200px; }
 .multishipping-checkout-login .block.block-customer-login {  margin-bottom: 0; }
 
 .authentication-dropdown._show {
-    border: none;
     background: #f8f8f8;
 }
 .authentication-dropdown .modal-inner-wrap .modal-content {

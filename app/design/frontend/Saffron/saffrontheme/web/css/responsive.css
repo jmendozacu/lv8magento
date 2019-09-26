@@ -317,7 +317,9 @@
 	.menu-inner .logo-brand { margin-bottom:22px; }
 	.menu-inner { padding:20px 15px 50px; }
 	.container{ max-width:100%;}
-	.logo-col img { width:90px; }
+	.logo-col img { width:auto; height:30px; }
+	.lv8-page .logo-col img {  height: 36px; }
+	.page-header { border:none; }
 	.header, .cbdx-page.page-not-front .header { padding:15px 0; }
 	.navbar-col .bar-button {  margin-top:0px; }
 	.lv8-about-info .abtInfo h3{ font-size:20px; }
@@ -442,7 +444,9 @@
 	.menu-caption h2 { font-size:28px; line-height:32px; }
 	.menu-caption h3 { font-size:20px; }
 	.menu-caption h2 br, .menu-caption h3 br { display:none; }
-	
+	.logo-col span.action.nav-toggle {  display: none; }
+	.sign-col { margin-right:11px; }
+	header.header .header.content, .catalog-product-view .page-header .header.content, .checkout-cart-index .header.content { right: 115px; margin-top: -2px; }	
 		
       
 }
