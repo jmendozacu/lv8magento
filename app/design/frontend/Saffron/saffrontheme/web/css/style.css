@@ -2150,10 +2150,9 @@ body.page-layout-1column .page-wrapper .header-sticky { height: 70px; }
 .checkout-index-index #maincontent.page-main,
 .checkout-onepage-success main#maincontent,
 body[class*="customer-account-"] main#maincontent,
-.multishipping-checkout-login main#maincontent { margin-top:110px; }
-
-.cms-careers main#maincontent { margin-top:100px; }
-
+.multishipping-checkout-login main#maincontent,
+.careers-page main#maincontent { margin-top:110px; }
+ 
 .page-layout-1column-home .banner-breadcrumbs { margin-top: 0; }
 .careers-page main#maincontent .banner-breadcrumbs { margin-top: 0; }
 .minicart-wrapper .action.showcart .counter.qty.empty { display:block; }
