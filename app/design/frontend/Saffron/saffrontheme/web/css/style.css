@@ -2124,6 +2124,7 @@ button#product-addtocart-button {
     line-height: 20px;
     padding: 0;
     font-weight: 500;
+	transition:none;
 }
 .labs-page .minicart-wrapper .action.showcart .counter.qty{	background:#4d75a4 }
 .worx-page .minicart-wrapper .action.showcart .counter.qty{	background:#37BFB2 }
@@ -2389,9 +2390,9 @@ button.learn-btn:hover, button.learn-btn:focus {  border: none; }
 .checkout-cart-index a,
 .checkout-cart-index a:visited, 
 .checkout-cart-index .alink:visited,
-.checkout-onepage-success a,
-.checkout-onepage-success a:visited,
-.checkout-onepage-success .alink:visited,
+.checkout-onepage-success address a,
+.checkout-onepage-success address a:visited,
+.checkout-onepage-success address .alink:visited,
 .checkout-cart-index a { color: #F57B3B; }
 .checkout-cart-index a:hover {  color: #0056b3; }
 body.checkout-index-index .opc-wrapper.am-opc-wrapper .payment-option-content .action-apply {
@@ -2515,7 +2516,7 @@ button.action.reload.captcha-reload {
     text-decoration: underline;
     color: #4E4F53;
 }
-form.form .field label span {  font-weight: 600; }
+form.form >.field label span {  font-weight: 600; }
 .catalog-category-view .breadcrumbs .items > li { color: #fff; }
 .product-tab-title div#layered-filter-block { float: left; width: 100%; }
 body.page-layout-1column .filter.block { 
