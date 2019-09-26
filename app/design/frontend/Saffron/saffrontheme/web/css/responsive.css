@@ -270,6 +270,8 @@
 	.point-6 .point-body { top:80%; right:0; }
 	.cbdx-brands-col .brand-link { margin-right:15px; }
 	.menu-parent li { padding-top:15px; padding-bottom:15px; }
+	header.header .header.content, .catalog-product-view .page-header .header.content, .checkout-cart-index .header.content { right:162px; }
+
       
 
 }
@@ -308,7 +310,7 @@
 	}
 	.menu-items    .active .menu-inner { opacity:1;}
 	.active .menu-inner .social-col { left:40px; bottom:40px; }
-	.nav-sections-items .menuBtn .menubar { background: #fff; }
+	.nav-sections-items .menuBtn .menubar { background: #00; }
 }
 
 
