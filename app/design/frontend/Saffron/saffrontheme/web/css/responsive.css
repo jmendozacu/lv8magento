@@ -445,8 +445,13 @@
 	.menu-caption h3 { font-size:20px; }
 	.menu-caption h2 br, .menu-caption h3 br { display:none; }
 	.logo-col span.action.nav-toggle {  display: none; }
-	.sign-col { margin-right:11px; }
+	.sign-col { margin-right:11px; position:inherit; }
 	header.header .header.content, .catalog-product-view .page-header .header.content, .checkout-cart-index .header.content { right: 115px; margin-top: -2px; }	
+	.sign-col .singin-dropdown {  right:15px; margin:0 auto;top:90%;  }
+	body .minicart-wrapper .block-minicart { right: -110px; top: 40px; }
+	.minicart-wrapper .block-minicart:before,
+	.minicart-wrapper .block-minicart:after { display:none; }
+	
 		
       
 }

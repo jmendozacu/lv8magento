@@ -2579,3 +2579,6 @@ body.page-layout-1column .filter-options-content { min-width: 200px; }
     text-transform: uppercase;
     font-weight: 400;
 }
+.block-minicart .block-content > .actions > .primary .action.primary { padding:14px 10px; }
+body .minicart-items .product-item-name a { color: #4E4F53; }
+.minicart-wrapper a.action.viewcart { color: #F57B3B; text-decoration: underline; }
