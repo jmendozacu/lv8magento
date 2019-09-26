@@ -2582,3 +2582,16 @@ body.page-layout-1column .filter-options-content { min-width: 200px; }
 .block-minicart .block-content > .actions > .primary .action.primary { padding:14px 10px; }
 body .minicart-items .product-item-name a { color: #4E4F53; }
 .minicart-wrapper a.action.viewcart { color: #F57B3B; text-decoration: underline; }
+aside.modal-popup.confirm footer.modal-footer {
+    border: none;
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+}
+aside.modal-popup.confirm footer.modal-footer button {
+	min-width: 100px;padding: 12px 10px;border: none;color: #fff;text-transform: uppercase;font-weight: 400;
+}
+aside.modal-popup.confirm footer.modal-footer button.action-dismiss { background: #4E4F53; }
+aside.modal-popup.confirm footer.modal-footer button.action-accept { background: #F57B3B; }
+
+
