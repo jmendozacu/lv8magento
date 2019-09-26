@@ -73,7 +73,8 @@ ul{ padding:0; }
 .checkout-index-index .menubar,
 .checkout-onepage-success .menubar,
 .cbdx-page.page-products .menubar,
-body[class*="customer-account-"] .menubar { background: #F57B3B; }
+body[class*="customer-account-"] .menubar,
+.multishipping-checkout-login .menubar { background: #F57B3B; }
 .bar-button:hover .menubar2 {  width: 100%; }
 .bar-button:hover .menubar3 {  width: 100%; }
 
@@ -524,14 +525,16 @@ button:focus{ outline:none; }
 .catalog-product-view .logo-col img,
 .checkout-cart-index .logo-col img,
 .checkout-onepage-success .logo-col img,
-body[class*="customer-account-"] .logo-col img {   height: 70px; }
+body[class*="customer-account-"] .logo-col img,
+.multishipping-checkout-login .logo-col img {   height: 70px; }
 
 .page-layout-1column .header-sticky img { height: 35px; }
 .checkout-index-index.page-layout-1column .header-sticky img,
 .cbdx-page.page-layout-1column .header-sticky .logo-col img,
 .cbdx-page.page-layout-1column .header-sticky .logo-col img,
 .checkout-onepage-success .header-sticky .logo-col img,
-body[class*="customer-account-"] .header-sticky .logo-col img  { height:50px; }
+body[class*="customer-account-"] .header-sticky .logo-col img,
+.multishipping-checkout-login .header-sticky .logo-col img   { height:50px; }
 
 .banner-notfront {
     float: left;
@@ -2491,7 +2494,8 @@ body[class*="customer-account-"] .banner-title-notfront,
     margin: 50px auto 0;
     padding: 0 15px;
 }
-body[class*="customer-account-"] .banner-title-notfront h1.page-title {
+body[class*="customer-account-"] .banner-title-notfront h1.page-title,
+.multishipping-checkout-login .banner-title-notfront h1.page-title {
     color: #4E4F53;
     font-size: 35px;
     font-weight: 600;
@@ -2551,3 +2555,5 @@ body.page-layout-1column .filter-options-title:hover {
 .page-layout-1column .filter-options-content .item a:hover { color: #4E5054; }
 body.page-layout-1column .filter-options-content { min-width: 200px; }
 .careers-page .breadcrumbs { margin: 0; }
+.multishipping-checkout-login .block.block-customer-login {  margin-bottom: 0; }
+
