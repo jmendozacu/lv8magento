@@ -2394,7 +2394,7 @@ button.learn-btn:hover, button.learn-btn:focus {  border: none; }
 .checkout-onepage-success address a:visited,
 .checkout-onepage-success address .alink:visited,
 .checkout-cart-index a { color: #F57B3B; }
-.checkout-cart-index a:hover {  color: #0056b3; }
+.checkout-cart-index a:hover {  color: #F57B3B; }
 body.checkout-index-index .opc-wrapper.am-opc-wrapper .payment-option-content .action-apply {
     background: #4E4F53;
     color: #fff;
@@ -2558,3 +2558,25 @@ body.page-layout-1column .filter-options-content { min-width: 200px; }
 .careers-page .breadcrumbs { margin: 0; }
 .multishipping-checkout-login .block.block-customer-login {  margin-bottom: 0; }
 
+.authentication-dropdown._show {
+    border: none;
+    background: #f8f8f8;
+}
+.authentication-dropdown .modal-inner-wrap .modal-content {
+    border: none;
+    background: none;
+}
+.authentication-dropdown .modal-inner-wrap .modal-header {
+    border: none;
+}
+.block-authentication .actions-toolbar > .secondary a {
+    color: #4E4F53;
+    text-decoration: underline;
+}
+.block-authentication .actions-toolbar > .primary .action {
+    background: #F57B3B;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+}
