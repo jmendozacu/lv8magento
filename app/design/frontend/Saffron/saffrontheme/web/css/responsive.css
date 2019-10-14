@@ -456,6 +456,7 @@
 	.minicart-wrapper .block-minicart:after { display:none; }
 	.page-layout-1column .page-wrapper .page-header { height:90px; }
 	.banner-breadcrumbs, .catalog-product-view .breadcrumbs, .checkout-cart-index main#maincontent, .checkout-index-index #maincontent.page-main, .checkout-onepage-success main#maincontent, body[class*="customer-account-"] main#maincontent, .multishipping-checkout-login main#maincontent, .careers-page main#maincontent { margin-top:90px; }
+	.labs-page.page-front .page-products .columns {  padding-top: 0; }
 		
       
 }
