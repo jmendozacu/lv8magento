@@ -127,7 +127,11 @@ $(document).ready(function(){
 		$(".singin-dropdown").slideToggle('slow');
 	})
  
-
+   $(".mobile-arrow .scroll-down").on("click", function(){
+		$('html, body').animate({
+			scrollTop: $(window).height()
+		}, 700);
+	});
  
  
   /*  require([ "jquery","aos/js"], function($,aos){ 
