@@ -1,0 +1,112 @@
+<?php 
+	$enable = $block->getConfig('enabled');
+	if($enable < 1) return ; 
+	$items = $block->getConfig('items');
+	$speed = $block->getConfig('speed');
+	$qty = $block->getConfig('qty');
+	$showCart =  1;
+	$showWishlist = 1;
+	$showCompare = 1;
+	$show_navigation = 0;
+	$show_pagination = $block->getConfig('pagination');
+	$auto = $block->getConfig('auto');
+	$rows = $block->getConfig('row');
+	
+?>
+
+<!--featured-products-->
+<div class="featured-products row-full" data-aos="fade-up" data-aos-offset="150" data-aos-easing="ease-in-sine">
+<div class="container">
+<div class="row">
+<div class="col-12 title-col">
+<h2><?php echo __('Featured Products'); ?></h2>
+<a class="small-title" href="<?php echo $this->getUrl('cdbx/products'); ?>">ALL PRODUCTS</a></div>
+<!--feature-item-->
+
+<?php 
+			$newItems =  $block -> getFeaturedProduct()->getItems(); 
+			
+			//echo count($newItems);
+			$imageBlock =  $block->getLayout()->createBlock('Magento\Catalog\Block\Product\Image');
+			$image = 'new_products_content_widget_grid';
+			$type = 'widget-new-grid';
+			$templateType = \Magento\Catalog\Block\Product\ReviewRendererInterface::DEFAULT_VIEW;
+			$i = 0;
+			foreach($newItems as $_item) { 
+				$productImage = $block->getImage($_item, $image);
+$product_url = $this->getBaseUrl().$_item['url_key'];
+				//echo"<pre>";print_r($_item);
+			?>
+			
+<?php //if($i++%$rows==0) { ?>
+ <div class="col-md-4 col-12"> 
+ <?php //}?>
+<div class="featured-item">
+<figure>
+<a href="<?php echo $product_url ; ?>" class="product-item-photo">
+								<?php echo $productImage->toHtml() ?>
+								</a>	
+</figure>
+<div class="featured-name-col">
+
+<a title="<?php echo $block->escapeHtml($_item->getName()) ?>"
+	href="<?php echo $product_url ; ?>" class="name">
+   <?php echo $block->escapeHtml($_item->getName()) ?>
+</a>
+<p>
+<?php 
+						$short_description = $_item->getShortDescription();
+	                    $short_description = preg_replace("/<img[^>]+\>/i", "", $short_description); 
+                         if (strlen($short_description) > 100){
+                        echo strip_tags(substr($short_description, 0, strpos($short_description,' ',100))).'...';
+                           } 
+                       else { 
+                       echo strip_tags($short_description); 
+                           }
+                           ?>
+						   
+</p>
+</div>
+<div class="visitstore-btn"><a class="learn-btn btn-orange" href="<?php echo $product_url ; ?>">VISIT STORE</a></div>
+</div>
+<?php //if($i%$rows==0 || $i == count($newItems)) { ?> 
+</div> 
+<?php //}?>
+
+
+
+
+<?php }?>
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+<script type="text/javascript">
+/*
+require([
+  "jquery",
+  "owlcarousel/minjs"
+ ], function($,owlCarousel){
+	
+   $(".feature-container").owlCarousel( {
+		items : <?php if($items) { echo $items; } else { echo 5; }?>,
+		autoPlay : <?php if($auto) echo 'true'; else echo 'false'; ?>,
+		slideSpeed : <?php if($speed) echo $speed; else echo '500'; ?>,
+		navigation : true,
+		stopOnHover : true,
+		pagination : <?php if($show_pagination) echo 'true'; else echo 'false'; ?>,
+		items : 4,
+		itemsDesktop : [1199,3],
+		itemsDesktopSmall : [992,2],
+		itemsTablet: [767,2],
+		itemsMobile : [479,1]
+   });
+   
+});*/
+</script>   

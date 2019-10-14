@@ -130,6 +130,7 @@ return [
         'Saffron_Aoslib' => 1,
         'Saffron_Bannerslider' => 1,
         'Saffron_Clogo' => 1,
+        'Saffron_Featureproductslider' => 1,
         'Saffron_Loadjs' => 1,
         'Saffron_Theme' => 1,
         'Temando_Shipping' => 1,
