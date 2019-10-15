@@ -302,7 +302,7 @@
 	.menu-image-item img { width: 100%; float: left; object-fit: cover;   }
 	.menu-item-front .menu-image-item img { height: 60vh;  }
 	.menu-item-labs .menu-image-item img {  height: 50vh;   }
-	.menu-item-worx .menu-image-item img { height: 100vh;  }
+	.menu-item-worx .menu-image-item img { height: calc(100vh - 60%);  }
 	.menu-item-cbdx .menu-image-item img { height: 80vh;  }
 	.menu-item-description { float: left; width: 50%; height: 100vh; padding: 10px 0; position: relative; }
 	.navbar-body { position: fixed; top: 0; right:0; width: 100%; background: #fff; z-index: 3; 

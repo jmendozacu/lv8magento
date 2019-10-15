@@ -313,11 +313,14 @@ button:focus{ outline:none; }
     color:#4e5054;
 }
 .menu-parent li.labs-menu:hover a,
-.menu-parent li.labs-menu:hover i { color:#4d75a4; }
+.menu-parent li.labs-menu:hover i,
+.menu-parent li.labs-menu a:focus { color:#4d75a4; }
 .menu-parent li.worx-menu:hover a,
-.menu-parent li.worx-menu:hover i { color:#37BFB2; }
+.menu-parent li.worx-menu:hover i,
+.menu-parent li.worx-menu a:focus { color:#37BFB2; }
 .menu-parent li.cbdx-menu:hover a,
-.menu-parent li.cbdx-menu:hover i { color:#F57B3B; }
+.menu-parent li.cbdx-menu:hover i,
+.menu-parent li.cbdx-menu a:focus { color:#F57B3B; }
 
 .menu-parent li.menu-level a:hover,
 .menu-parent li.menu-level a:focus{ color:#4e5054; }
