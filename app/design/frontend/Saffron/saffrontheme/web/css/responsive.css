@@ -228,6 +228,9 @@
 	  .theBrands-carousel .caption { max-width:500px; }
 	  .banner-notfront img { min-height: 400px; object-fit: cover; }
 	  .menu-caption h2{ font-size:42px; }
+	  .cont-form-col {  padding-left: 40%;  padding-right: 30px; }
+	  .cont-img-col {  width: 40%; }
+	  .contact-form-inner { padding-top:10%; }
 	  
 
 
@@ -273,6 +276,7 @@
 	.cbdx-brands-col .brand-link { margin-right:15px; }
 	.menu-parent li { padding-top:15px; padding-bottom:15px; }
 	header.header .header.content, .catalog-product-view .page-header .header.content, .checkout-cart-index .header.content { right:162px; }
+	.form.contact .col-md-6 { flex: 0 0 100%; max-width: 100%; }
 
       
 
@@ -457,6 +461,6 @@
 	.page-layout-1column .page-wrapper .page-header { height:90px; }
 	.banner-breadcrumbs, .catalog-product-view .breadcrumbs, .checkout-cart-index main#maincontent, .checkout-index-index #maincontent.page-main, .checkout-onepage-success main#maincontent, body[class*="customer-account-"] main#maincontent, .multishipping-checkout-login main#maincontent, .careers-page main#maincontent { margin-top:90px; }
 	.labs-page.page-front .page-products .columns {  padding-top: 0; }
-		
+	.cont-img-col { height:auto; }		
       
 }
