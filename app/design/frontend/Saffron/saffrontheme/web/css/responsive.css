@@ -317,7 +317,7 @@
 		padding:40px; height: calc(100% - 35%); opacity:0;
 	}
 	.menu-items    .active .menu-inner { opacity:1;}
-	.active .menu-inner .social-col { left:40px; bottom:40px; }
+	.active .menu-inner .social-col { bottom: 20px; position: absolute; left: 15px; }
 	.nav-sections-items .menuBtn .menubar { background: #fff; }
 	.lv8-page .nav-sections-items .menuBtn .menubar { background: #000; }
 }
