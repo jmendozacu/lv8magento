@@ -219,7 +219,9 @@
       .learn-btn{ padding:15px 20px;  }
       .craft-graybx .learn-btn {  margin: 0; }
       .craft-graybx h3 {  font-size: 26px; margin: 0 0 10px; }
-      .news-featured h1, h1, h2, .worx-about-page h3 { font-size: 36px; }
+      .news-featured h1, h1, h2, .worx-about-page h3,
+		#scroll-the-players >h3, .our-expertise h3	  { font-size: 36px; }
+		.expertise-info h5 { font-size:24px; }
       .brand-info figure img {  max-width: 150px; }
       .cbd-info-bx h3{ font-size:28px; }
       .faqs-panel h4 { font-size:22px; }
@@ -316,7 +318,8 @@
 	}
 	.menu-items    .active .menu-inner { opacity:1;}
 	.active .menu-inner .social-col { left:40px; bottom:40px; }
-	.nav-sections-items .menuBtn .menubar { background: #00; }
+	.nav-sections-items .menuBtn .menubar { background: #fff; }
+	.lv8-page .nav-sections-items .menuBtn .menubar { background: #000; }
 }
 
 
@@ -385,7 +388,7 @@
 	.cbdx-brands-col .brand-link:nth-of-type(2) img { width:42px; }
 	.menu-inner .adrs-col li a  { font-size:14px; }
 	.cbdx-brands-col .brand-link { margin:0 7px 15px 0;  }
-	.social-col h5, .cbdx-brands-col h5 { font-size:13px;  }
+	.social-col h5, .cbdx-brands-col h5 { font-size: 14px;  font-weight: normal;  }
 	.menu-inner .logo-brand img { height:22px; }
 	.menu-item-front .menu-inner .logo-brand img { height: 26px;   }
 	.menu-item-cbdx .menu-inner .logo-brand img { height:45px; }
@@ -447,7 +450,7 @@
 	.theBrands-carousel .owl-carousel .owl-nav button.owl-prev { left:0; }
 	.size-filter .filter-dropdown,
 	.prize-filter .filter-dropdown	{ right: 0;  left: inherit; }	
-	.menu-caption { bottom:10px; left:10px; max-width:80%; }
+	.menu-caption { bottom:15px; left:15px; max-width:80%; }
 	.menu-caption h2 { font-size:28px; line-height:32px; }
 	.menu-caption h3 { font-size:20px; }
 	.menu-caption h2 br, .menu-caption h3 br { display:none; }
@@ -460,9 +463,16 @@
 	.minicart-wrapper .block-minicart:after { display:none; }
 	.page-layout-1column .page-wrapper .page-header { height:90px; }
 	.banner-breadcrumbs, .catalog-product-view .breadcrumbs, .checkout-cart-index main#maincontent, .checkout-index-index #maincontent.page-main, .checkout-onepage-success main#maincontent, body[class*="customer-account-"] main#maincontent, .multishipping-checkout-login main#maincontent, .careers-page main#maincontent { margin-top:90px; }
-	.labs-page.page-front .page-products .columns {  padding-top: 0; }
+	.labs-page.page-front .columns,
+	.worx-page.page-front .columns,
+	.cbdx-page.page-front .columns{  padding-top: 0; }
 	.cont-img-col { height:auto; }		
 	.worx-page .front-banner .item{ background-position: 68% top !important; }
-	.worx-page.page-front .columns { padding-top: 0; }
+	 
+	h2,
+	#scroll-the-players >h3,
+	.our-expertise h3	{ font-size:32px; }
+	.page-products .columns { padding-top:0; }
+	.stories-carousel .customer-caption h5 { font-size:16px; }
       
 }
