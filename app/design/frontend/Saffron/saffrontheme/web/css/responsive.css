@@ -462,5 +462,7 @@
 	.banner-breadcrumbs, .catalog-product-view .breadcrumbs, .checkout-cart-index main#maincontent, .checkout-index-index #maincontent.page-main, .checkout-onepage-success main#maincontent, body[class*="customer-account-"] main#maincontent, .multishipping-checkout-login main#maincontent, .careers-page main#maincontent { margin-top:90px; }
 	.labs-page.page-front .page-products .columns {  padding-top: 0; }
 	.cont-img-col { height:auto; }		
+	.worx-page .front-banner .item{ background-position: 68% top !important; }
+	.worx-page.page-front .columns { padding-top: 0; }
       
 }
