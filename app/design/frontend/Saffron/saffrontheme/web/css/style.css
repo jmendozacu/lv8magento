@@ -1880,9 +1880,16 @@ body[class*="customer-account-"] main#maincontent .columns > .column.main,
 	text-decoration: underline;
 	font-weight: 500;
 }
-.catalog-product-view a.action.add:hover {
-    text-decoration: none;
+.breadcrumbs li a:after {
+    content: "\f105";
+    font-family: fontawesome;
+    padding-left: 5px;
+    font-size: 16px;
+    color: #fff;
 }
+.catalog-product-view a.action.add:hover,
+.breadcrumbs li:hover a:after {  text-decoration: none; }
+
 .box-tocart .field.qty {
     display: flex;
     align-items: center;
