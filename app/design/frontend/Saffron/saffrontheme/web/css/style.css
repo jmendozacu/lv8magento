@@ -1594,7 +1594,7 @@ div.scroll-page {
     color: #4E4F53;
 }
 .breadcrumbs a:hover{
-    text-decoration: underline;
+    text-decoration: none;
 }
 .page-not-front .header {
     box-shadow: 0 0 5px #ddd;
@@ -1817,18 +1817,14 @@ ul.filter-cat-list li:last-child a {
 .cbdx-brands-col p {
     margin: 0;
 }
-
-
 .breadcrumbs li a {
     font-size: 16px;
     color: #4E4F53;
 }
-
 .breadcrumbs li {
     color: #4E4F53;
     font-size: 16px;
 }
-
 .lv8-page .breadcrumbs li,
 .labs-page .breadcrumbs li,
 .worx-page .breadcrumbs li,
