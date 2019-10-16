@@ -7,11 +7,11 @@
  */
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
-	<update handle="blog_default"/>
-    <update handle="blog_post_list"/>
+	<!--<update handle="blog_default"/>
+    <update handle="blog_post_list"/>-->
     <body>
-        <referenceContainer name="content">
+        <!--<referenceContainer name="content">
         	<block class="Saffron\Blog\Block\Category\View" name="blog.posts.list" template="post/list.phtml" />
-        </referenceContainer>
+        </referenceContainer>-->
     </body>
 </page>

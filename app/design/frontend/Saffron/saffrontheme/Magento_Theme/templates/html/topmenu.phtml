@@ -10,20 +10,21 @@
             
             <div class="menu-col-main">
                 <ul class="menu-parent">
-                    <li class="menu-level active">
+                    <li class="menu-level  <?php if(($_SERVER['REQUEST_URI']=='')||($_SERVER['REQUEST_URI']=='/')) {echo "active";}?>">
+					<?php //echo $_SERVER['REQUEST_URI'] ; ?>
                         <a href="<?php echo $this->getUrl('')?>" class="">Home</a>
                     </li>
-                    <li class="menu-level">
+                    <li class="menu-level <?php if(($_SERVER['REQUEST_URI']=='/about/')||($_SERVER['REQUEST_URI']=='/about')) {echo "active";}?>" >
                         <a href="<?php echo $this->getUrl('about')?>" class="">About</a>
                     </li>
-                    <li class="menu-level">
+                    <li class="menu-level <?php if(($_SERVER['REQUEST_URI']=='/blog/')||($_SERVER['REQUEST_URI']=='/blog')) {echo "active";}?>">
                         <a href="<?php echo $this->getUrl('blog')?>" class="">News</a>
                     </li>
-                    <li class="menu-level">
+                    <li class="menu-level <?php if(($_SERVER['REQUEST_URI']=='/careers/')||($_SERVER['REQUEST_URI']=='/careers')) {echo "active";}?>">
                         <a href="<?php echo $this->getUrl('careers')?>" class="">Careers</a>
                     </li>
-                    <li class="menu-level">
-                        <a href="<?php echo $this->getUrl('contact')?>" class="">Contact</a>
+                    <li class="menu-level <?php if(($_SERVER['REQUEST_URI']=='/contact/')||($_SERVER['REQUEST_URI']=='/contact')) {echo "active";}?>">
+                        <a href="<?php echo $this->getUrl('')?>" class="">Contact</a>
                     </li>
                     <li class="menu-item labs-menu">
                         <i class="fa fa-angle-left"></i>
@@ -218,11 +219,23 @@
 	<?php  $subcats = $catgrieslab->getChildrenCategories();?>	
 	<ul>
 	<?php foreach ($subcats as $subcat) { ?>
+	<?php  
+	$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+    $_category = $objectManager->create('Magento\Catalog\Model\Category')->load($subcat->getId());
+      //echo $_category->getData('include_in_menu')    ;    
+	if($_category->getData('include_in_menu') == 1){		  
+			  ?>
+	<?php ///$categ = $subcat->getData();
+	//echo"<pre>";print_r($categ);
+	?>
      <li class="scrollMenu-home"><a href="<?php echo $subcat->getUrl();?>"><?php echo $subcat->getName()?></a></li>
-    <?php }?>	
-	<?php foreach ($subcats as $subcat) { ?>
+    <?php }}?>	
+	
+	<?php foreach ($subcats as $subcat) { 
+	if($_category->getData('include_in_menu') == 1){
+	?>
 	<li class="scrollMenu"><a href="<?php echo $subcat->getUrl();?>"><?php echo $subcat->getName()?></a></li>
-   <?php }?>
+	<?php }}?>
 	</ul>			
 	</div>
        

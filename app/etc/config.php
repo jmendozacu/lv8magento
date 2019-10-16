@@ -133,6 +133,7 @@ return [
         'Saffron_Clogo' => 1,
         'Saffron_Featureproductslider' => 1,
         'Saffron_Loadjs' => 1,
+        'Saffron_Newsletterpopup' => 1,
         'Saffron_Theme' => 1,
         'Temando_Shipping' => 1,
         'Vertex_Tax' => 1
