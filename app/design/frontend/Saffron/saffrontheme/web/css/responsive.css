@@ -279,6 +279,10 @@
 	.menu-parent li { padding-top:15px; padding-bottom:15px; }
 	header.header .header.content, .catalog-product-view .page-header .header.content, .checkout-cart-index .header.content { right:162px; }
 	.form.contact .col-md-6 { flex: 0 0 100%; max-width: 100%; }
+	.active .menu-inner .social-col { bottom:20px; left:40px; }
+	.menu-inner { padding:30px 40px; }
+	.menu-item-cbdx .menu-image-item img { height:100vh; }
+	
 
       
 
@@ -313,7 +317,7 @@
 	.navbar-body .menu-image-item { width: 100%; position: fixed; top: 0; height: 35%; overflow: hidden;   }
 	.mobile-back-btn { margin:0 0 10px; display: block; position: relative; z-index:1; }
 	.mobile-back-btn a { font-size: 28px; color: #9b9b9b; padding: 0px 15px; display: inline-block; line-height: normal; cursor: pointer; }
-	.menu-inner { position: absolute; left: 0; right: 0; width: auto; overflow-y: auto; top: 35%;
+	.menu-inner { position: absolute; left: 0; right: 0; width: auto; overflow-y: auto; overflow-x: hidden; top: 35%;
 		padding:40px; height: calc(100% - 35%); opacity:0;
 	}
 	.menu-items    .active .menu-inner { opacity:1;}
@@ -402,7 +406,7 @@
 	.contact-form-inner h4 { font-size: 18px; margin-bottom: 30px;  }
 	.contact-form-inner .form-group {  margin-bottom: 30px;  }
 	.contact-form-inner .form-control { font-size:13px; }
-	.banner-title-notfront h1, h1 { font-size:40px; line-height:normal; }
+	.banner-title-notfront h1, h1 { font-size:30px; line-height:normal; }
 	.owl-item-caption h1 br { display: none;   }
 	.owl-item-caption p { font-size: 26px; line-height: normal;  }
 	.news-featured h1 { margin-bottom: 20px; margin-top: 30px; font-size: 30px; }
@@ -410,11 +414,12 @@
 	.news-featured .owl-theme .owl-nav.disabled+.owl-dots {    margin-top: 10px;      }
 	.latest-post {margin-top: 30px;   }
 	.post-item { margin-bottom: 40px;   }
-	.image-notfront img {  min-height: 500px;  object-fit: cover;  }
-	.banner-breadcrumbs .breadcrumbs { display: none; }
+	/* .image-notfront img {  min-height: 500px;  object-fit: cover;  } */
+	.banner-breadcrumbs .breadcrumbs,
+	.careers-page .banner-breadcrumbs .breadcrumbs	{ display: none; }
 	.ourFamily-row {  padding: 0 15px;   }
 	.family-image img { min-height: 400px; object-fit: cover;  }
-	.mobile-arrow { display:block; }
+	.mobile-arrow { display:none; }
 	.labs-about-brand { margin-bottom:10%; }
 	.header .container { display: flex; align-items: center;  }
 	.header-right-col { margin-left: auto; }
@@ -460,8 +465,9 @@
 	body .minicart-wrapper .block-minicart { right: -110px; top: 40px; }
 	.minicart-wrapper .block-minicart:before,
 	.minicart-wrapper .block-minicart:after { display:none; }
-	.page-layout-1column .page-wrapper .page-header { height:90px; }
-	.banner-breadcrumbs, .catalog-product-view .breadcrumbs, .checkout-cart-index main#maincontent, .checkout-index-index #maincontent.page-main, .checkout-onepage-success main#maincontent, body[class*="customer-account-"] main#maincontent, .multishipping-checkout-login main#maincontent, .careers-page main#maincontent { margin-top:90px; }
+	.page-layout-1column .page-wrapper .page-header { height:70px; margin-bottom:0; }
+	.banner-breadcrumbs, .catalog-product-view .breadcrumbs, .checkout-cart-index main#maincontent, .checkout-index-index #maincontent.page-main, .checkout-onepage-success main#maincontent, body[class*="customer-account-"] main#maincontent, .multishipping-checkout-login main#maincontent, .careers-page main#maincontent { margin-top:70px; }
+	.banner-notfront { margin-top:0px; }
 	.labs-page.page-front .columns,
 	.worx-page.page-front .columns,
 	.cbdx-page.page-front .columns{  padding-top: 0; }
@@ -475,5 +481,6 @@
 	.stories-carousel .customer-caption h5 { font-size:16px; }
 	.page-front .header { padding: 20px 0; }
 	.front-banner .item { height: 100vh !important; }
+	.page-layout-1column .header-sticky img { height: 30px; }
       
 }

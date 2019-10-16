@@ -300,9 +300,10 @@ button:focus{ outline:none; }
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     margin: 0;
-    transition: all 0.5s ease; -webkit-transition: all 0.5s ease; 
+    transition:none;
 }
-.menu-parent li.menu-level.active a {
+.menu-parent li.menu-level.active a,
+.menu-parent li.menu-level:hover a {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #292929;
     color: #fff;
@@ -414,11 +415,11 @@ button:focus{ outline:none; }
 .cbdx-brands-col { float: left; width:100%; margin-bottom: 30px; }
 .cbdx-brands-col h5,
 .cbdx-brands-col .brand-name {
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
     margin: 0 0 15px;
-    font-weight: 600;
-    color:#4E4F53;
+    font-weight: 400;
+    color:#4E5054;
 }
 .brand-name-col {
     float: left;
@@ -2143,6 +2144,7 @@ button#product-addtocart-button {
     display: flex;
     align-items: center;
     justify-content: center;
+	margin:0;
 }
 body.page-layout-1column .page-wrapper .header-sticky { height: 70px; }
 
