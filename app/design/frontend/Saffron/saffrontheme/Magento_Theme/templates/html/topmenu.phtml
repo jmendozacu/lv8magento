@@ -115,10 +115,10 @@
 	
 	<li><a href="<?php echo $subcat->getUrl();?>"><?php echo $subcat->getName()?></a></li>
 	<?php }?>
-	<li class="scrollMenu-home"><a href="<?php echo $subcat->getUrl();?>#scroll-our-craft">OUR CRAFT</a></li>
-	<li class="scrollMenu-home"><a href="<?php echo $subcat->getUrl();?>#scroll-brands">BRANDS</a></li>
-	<li class="scrollMenu"><a href="<?php echo $subcat->getUrl();?>#scroll-our-craft">OUR CRAFT</a></li>
-	<li class="scrollMenu"><a href="<?php echo $subcat->getUrl();?>#scroll-brands">BRANDS</a></li>
+	<li class="scrollMenu-home  <?php if($category_id == $subcat->getId()){echo 'active';} ?>"><a href="<?php echo $subcat->getUrl();?>#scroll-our-craft">OUR CRAFT</a></li>
+	<li class="scrollMenu-home <?php if($category_id == $subcat->getId()){echo 'active';} ?>"><a href="<?php echo $subcat->getUrl();?>#scroll-brands">BRANDS</a></li>
+	<li class="scrollMenu <?php if($category_id== $subcat->getId()){echo'active';} ?>"><a href="<?php echo $subcat->getUrl();?>#scroll-our-craft">OUR CRAFT</a></li>
+	<li class="scrollMenu <?php if($category_id== $subcat->getId()){echo'active';} ?>"><a href="<?php echo $subcat->getUrl();?>#scroll-brands">BRANDS</a></li>
 	</ul>
 <?php //echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('cdbx-brands')->toHtml(); ?>				
 <?php //echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('menu-us-labs')->toHtml(); ?>				
@@ -164,15 +164,15 @@
 	<?php foreach ($subcats as $subcat) { ?>
      <li><a href="<?php echo $subcat->getUrl();?>"><?php echo $subcat->getName()?></a></li>
     <?php }?>	
-	<li class="scrollMenu-home"><a href="<?php echo $subcat->getUrl();?>#scroll-worx-grid-images">WORK</a></li>
-	<li class="scrollMenu-home"><a href="<?php echo $subcat->getUrl();?>#scroll-success-stories">STORIES</a></li>
-	<li class="scrollMenu-home"><a href="<?php echo $subcat->getUrl();?>#scroll-the-players">PLAYERS</a></li>
-	<li class="scrollMenu-home"><a href="<?php echo $subcat->getUrl();?>#scroll-our-expertise">SKILLS</a></li>
+	<li class="scrollMenu-home <?php if($category_id== $subcat->getId()){echo'active';} ?>"><a href="<?php echo $subcat->getUrl();?>#scroll-worx-grid-images">WORK</a></li>
+	<li class="scrollMenu-home <?php if($category_id== $subcat->getId()){echo'active';} ?>"><a href="<?php echo $subcat->getUrl();?>#scroll-success-stories">STORIES</a></li>
+	<li class="scrollMenu-home <?php if($category_id== $subcat->getId()){echo'active';} ?>"><a href="<?php echo $subcat->getUrl();?>#scroll-the-players">PLAYERS</a></li>
+	<li class="scrollMenu-home <?php if($category_id== $subcat->getId()){echo'active';} ?>"><a href="<?php echo $subcat->getUrl();?>#scroll-our-expertise">SKILLS</a></li>
 	<!--end-->
-	<li class="scrollMenu"><a href="<?php echo $subcat->getUrl();?>#scroll-worx-grid-images">WORK</a></li>
-	<li class="scrollMenu"><a href="<?php echo $subcat->getUrl();?>#scroll-success-stories">STORIES</a></li>
-	<li class="scrollMenu"><a href="<?php echo $subcat->getUrl();?>#scroll-the-players">PLAYERS</a></li>
-	<li class="scrollMenu"><a href="<?php echo $subcat->getUrl();?>#scroll-our-expertise">SKILLS</a></li>
+	<li class="scrollMenu <?php if($category_id== $subcat->getId()){echo'active';} ?>"><a href="<?php echo $subcat->getUrl();?>#scroll-worx-grid-images">WORK</a></li>
+	<li class="scrollMenu <?php if($category_id== $subcat->getId()){echo'active';} ?>"><a href="<?php echo $subcat->getUrl();?>#scroll-success-stories">STORIES</a></li>
+	<li class="scrollMenu <?php if($category_id== $subcat->getId()){echo'active';} ?>"><a href="<?php echo $subcat->getUrl();?>#scroll-the-players">PLAYERS</a></li>
+	<li class="scrollMenu <?php if($category_id== $subcat->getId()){echo'active';} ?>"><a href="<?php echo $subcat->getUrl();?>#scroll-our-expertise">SKILLS</a></li>
 	<ul>
 <?php //echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('menu-worx')->toHtml(); ?>				
 </div>
@@ -228,13 +228,13 @@
 	<?php ///$categ = $subcat->getData();
 	//echo"<pre>";print_r($categ);
 	?>
-     <li class="scrollMenu-home"><a href="<?php echo $subcat->getUrl();?>"><?php echo $subcat->getName()?></a></li>
+     <li class="scrollMenu-home <?php if($category_id== $subcat->getId()){echo'active';} ?>"><a href="<?php echo $subcat->getUrl();?>"><?php echo $subcat->getName()?></a></li>
     <?php }}?>	
 	
 	<?php foreach ($subcats as $subcat) { 
 	if($_category->getData('include_in_menu') == 1){
 	?>
-	<li class="scrollMenu"><a href="<?php echo $subcat->getUrl();?>"><?php echo $subcat->getName()?></a></li>
+	<li class="scrollMenu <?php if($category_id == $subcat->getId()){echo'active';} ?>"><a href="<?php echo $subcat->getUrl();?>"><?php echo $subcat->getName()?></a></li>
 	<?php }}?>
 	</ul>			
 	</div>
