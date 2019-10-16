@@ -210,9 +210,9 @@
 	<?php $catgrieslab = $this->getallcategries(5)?>
      <a href="<?php echo $catgrieslab->getUrl();?>"><img src="<?php echo $this->getMedia().'catalog/category/'.$this->getInnerlogo(5); ?>" alt="" class="img-fluid"></a>
      </div>
-     <div class="cbdx-brands-col">
+     
 <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('cdbx-brands')->toHtml(); ?>				
-     </div>
+     
     <div class="adrs-col">
     <?php //echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('menu-cbdx')->toHtml(); ?>				
 		
