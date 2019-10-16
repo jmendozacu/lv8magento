@@ -300,7 +300,7 @@ button:focus{ outline:none; }
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     margin: 0;
-    transition:all 0.2s ease;
+    transition:none;
 }
 .menu-parent li.menu-level.active a,
 .menu-parent li.menu-level:hover a,
@@ -429,23 +429,18 @@ button:focus{ outline:none; }
 }
 .cbdx-brands-col .brand-link {
     display: inline-block;
-    margin: 0 30px 0 0;
+    margin: 0 20px 0 0;
 }
 .cbdx-brands-col .brand-link:last-child {
     margin: 0;
 }
-.cbdx-brands-col .brand-link img { width:80px; height:auto;}
-.cbdx-brands-col .brand-link:nth-of-type(2) img { width:60px; height:auto;}
+.cbdx-brands-col .brand-link img { width:70px; height:auto;}
+
 .social-col { float: left; width:100%; }
 .menu-inner, .navbar-body .menu-image-item {
     position: relative;
   
 }
-
-
-
-
-
 
 .social-col li a:hover { color:#000; }
 .menu-item-labs .adrs-col li a:hover, 
@@ -830,7 +825,7 @@ button#product-addtocart-button:focus {
 }
 .craft-box-row{ overflow: hidden; }
 .promoting-carousel {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto 80px;
     padding: 0 30px;
     width: 100%;
@@ -2607,4 +2602,4 @@ aside.modal-popup.confirm._show .modal-content {
 aside.modal-popup.confirm._show header.modal-header {
     border: none;
 }
-
+.promoting-carousel .owl-item img {  padding: 0 20px; }
