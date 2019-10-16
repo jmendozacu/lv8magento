@@ -332,7 +332,14 @@
 	.menu-inner { padding:20px 15px 50px; }
 	.container{ max-width:100%;}
 	.logo-col img { width:auto; height:30px; }
-	.lv8-page .logo-col img {  height: 36px; }
+	.lv8-page .logo-col img {  height: 30px; }
+	.minicart-wrapper .action.showcart:before, .minicart-wrapper .action.showcart.active:before {
+		font-size:26px;
+	}
+	.sign-col .singin-link { font-size:22px; }
+	.menubar1, .menubar2 { margin-bottom:9px; }
+	.minicart-wrapper .action.showcart .counter.qty { width:18px; height:18px; line-height:18px; top: -7px;
+	font-size:11px; }
 	.page-header { border:none; }
 	.header, .cbdx-page.page-not-front .header { padding:15px 0; }
 	.navbar-col .bar-button {  margin-top:0px; }
@@ -466,6 +473,7 @@
 	.minicart-wrapper .block-minicart:before,
 	.minicart-wrapper .block-minicart:after { display:none; }
 	.page-layout-1column .page-wrapper .page-header { height:70px; margin-bottom:0; }
+	body.page-layout-1column .page-wrapper .header-sticky { height: 60px; }
 	.banner-breadcrumbs, .catalog-product-view .breadcrumbs, .checkout-cart-index main#maincontent, .checkout-index-index #maincontent.page-main, .checkout-onepage-success main#maincontent, body[class*="customer-account-"] main#maincontent, .multishipping-checkout-login main#maincontent, .careers-page main#maincontent { margin-top:70px; }
 	.banner-notfront { margin-top:0px; }
 	.labs-page.page-front .columns,
