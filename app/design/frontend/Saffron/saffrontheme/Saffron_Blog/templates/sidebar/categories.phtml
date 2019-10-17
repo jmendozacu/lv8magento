@@ -43,9 +43,14 @@
 				}
 			}
 
+			
+		  $categoriesdata = $item->getData();
+			
 			?>
+			
+			
 				<li>
-					<a href="<?php echo $item->getCategoryUrl() ?>">
+					<a href="javascript:void(0);<?php //echo $item->getCategoryUrl() ?>"  onclick="getCategoryid(<?php echo $categoriesdata['category_id']?>)" >
 						<?php echo $block->escapeHtml($item->getTitle()) ?>
 					</a>
 			<?php
@@ -56,3 +61,27 @@
 	</ul>
 </div> 
 <?php } ?>
+
+<span id="recent-blog"></span>
+
+
+<script>
+function getCategoryid(obj){
+	
+jQuery(document).ready(function($){
+  $("#loderpop").addClass("showpopup");
+  
+  $.ajax({
+        url: "<?php echo $this->getBaseUrl()?>/blog/category/view/",
+        type: "GET",
+        data:  {"id":obj},
+        success: function(response){
+		$('#recent-blog').html(response);	
+		$("#loderpop").removeClass("showpopup");
+        }
+	  });
+ 
+});
+	
+}
+</script>

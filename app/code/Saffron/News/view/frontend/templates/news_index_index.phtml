@@ -1,0 +1,193 @@
+<?php  $newcategories =$this->getNewcategories();?>
+<?php  $newsFeacture =$this->getNewsFeacture();?>
+<?php  $NewsAllPost =$this->getNewsAllPost();?>
+
+
+<div class="section-notfront">
+           
+           <!--news-featurd--> 
+           <div class="news-featured row-full" data-aos="fade-up" data-aos-offset="150"  data-aos-easing="ease-in-sine">
+                <div class="container">
+                    <h1>Featured</h1>
+                    <div class="owl-carousel owl-theme">
+                        
+						
+						<?php foreach($newsFeacture as $itemFeacture){
+							
+							$itemsFeacture = $itemFeacture->getData();
+							//echo"<pre>";print_r($itemsFeacture );
+						?>
+                      
+                        <div class="item">
+                            <div class="craft-higher craft-box-row">
+                                <div class="col-md-6 left-col">
+                                    <div class="craft-img-col">
+                                        <img src="<?php echo $this->getMediaUrl().$itemsFeacture['thumbnail'] ?>" alt="<?php echo $itemsFeacture['post_title'] ?>" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 right-col">
+                                    <div class="craft-info-col">
+                                        <div class="craft-graybx">
+                                            <span class="small-title">Featured</span>
+                                            <h3><?php echo $itemsFeacture['post_title'] ?></h3>
+                                            <p><?php echo $itemsFeacture['short_content'] ?></p>
+                                            <a href="<?php echo $this->getUrl('news/index/detail?id='.$itemsFeacture['id'].''); ?>" class="learn-btn read-btn">Read Article</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+						
+						<?php }?>
+
+                    </div>
+                </div>
+           </div> 
+           <!--/news-featurd--> 
+
+           <!--latest-posts-->
+           <div class="latest-post row-full" data-aos="fade-up" data-aos-offset="150"  data-aos-easing="ease-in-sine">
+               <div class="container">
+                   <h2>Latest Posts</h2>
+                   <div class="filter-category">
+                    <span class="fliter-name">Filter by Category</span>
+					<ul class="filter-cat-list">
+					<?php 
+					$i= 1; 
+					foreach($newcategories as $categoriesitem){ 
+					$item = $categoriesitem->getData();?>
+                    <input type="hidden" id="categoriesitem-<?php echo $i?>" value="<?php echo $item['id'];?>">
+					<li><a href="javascript:void(0);"   onclick="getCategoryid(<?php echo $item['id'];?>)" ><?php echo $item['categorie_title'];?></a></li>
+					<?php $i++;}?>
+					</ul>
+                   </div>
+                   <div class="row">
+                       
+					  <span id="recent-blog"> </span>
+                       
+                      
+                       <div class="col-12 read-col">
+                           <a href="javascript:void(0);" class="text-link">Load More</a>
+                       </div>
+
+                   </div>
+				  
+				   
+               </div>
+           </div>
+           <!--/latest-posts-->
+
+
+           <!--CBDX-launches-->
+           <div class="cbdx-launches row-full" data-aos="fade-up" data-aos-offset="150"  data-aos-easing="ease-in-sine">
+               <div class="container">
+			   <div class="row">
+                  <?php foreach($NewsAllPost as $post)
+                    $item_post = $post->getData();
+				  {?>
+				  
+                        <div class="col-lg-6 col-md-6 col-12 left-col">
+                            <div class="launches-bx">
+                                <h3><?php echo $item_post['post_title']?></h3>
+                                <p><?php echo $item_post['short_content']?></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12 right-col">
+                            <div class="launches-vide-col">
+                                <img src="<?php echo $this->getMediaUrl().$item_post['thumbnail']?>" alt="<?php echo $item_post['post_title']?>" class="img-fluid">
+                            </div>
+                        </div>
+                       
+                   
+					
+				  <?php } ?>
+
+                       <div class="col-12 read-col">
+                            <a href="javascript:void(0);" class="text-link">See More</a>
+                        </div>				  
+					 </div>
+               </div>
+           </div>
+           <!--/CBDX-launches-->
+           
+
+           
+
+
+        </div>
+		
+		
+
+
+
+<script>
+function getCategoryid(obj){
+	
+jQuery(document).ready(function($){
+  $("#loderpop").addClass("showpopup");
+  
+  $.ajax({
+        url: "<?php echo $this->getBaseUrl()?>/news/index/recent/",
+        type: "GET",
+        data:  {"id":obj},
+        success: function(response){
+		$('#recent-blog').html(response);	
+		$("#loderpop").removeClass("showpopup");
+        }
+	  });
+ 
+});
+	
+}
+</script>	
+<script type="text/javascript">
+require([ 'jquery'], function($){
+$(document).ready(function(){
+	//news page filter category js
+    $(".filter-category span.fliter-name").on("click", function(){
+        $("ul.filter-cat-list").slideToggle();
+    })	
+	
+	 var obj = $("categoriesitem-1").val();
+	 $.ajax({
+        url: "<?php echo $this->getBaseUrl()?>/news/index/recent/",
+        type: "GET",
+        data:  {"id":obj},
+        success: function(response){
+		$('#recent-blog').html(response);	
+		//$("#loderpop").removeClass("showpopup");
+        }
+	  });
+	
+	
+	
+	
+	});
+	});
+</script>	
+
+<script type="text/javascript">
+	
+	require([
+	  "jquery",
+	  "owlcarousel/minjs"
+	 ], function($,owlCarousel){
+		$(document).ready(function(){
+			
+	$('.news-featured .owl-carousel').owlCarousel({
+    loop:true,
+    items:1,
+    margin:0,
+    nav:false,
+    dots:true,
+    autoplay:false,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    smartSpeed: 500,
+   
+}) ;
+
+});
+	});
+</script>
+
