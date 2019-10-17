@@ -1,3 +1,15 @@
+<?php 
+    $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+    $category = $objectManager->get('Magento\Framework\Registry')->registry('current_category');//get current category
+    if(!empty($category)){
+    $category_id = $category->getId();
+    $parentcategory = $category->getParentCategory()->getId();
+	}else{
+	 $category_id = '';	
+	 $parentcategory ='';
+	}
+?>  
+
 <div class="nav-sections">
     <div class="nav-sections-items">
              
@@ -26,17 +38,17 @@
                     <li class="menu-level <?php if(($_SERVER['REQUEST_URI']=='/contact/')||($_SERVER['REQUEST_URI']=='/contact')) {echo "active";}?>">
                         <a href="<?php echo $this->getUrl('contact')?>" class="">Contact</a>
                     </li>
-                    <li class="menu-item labs-menu">
+                    <li class="menu-item labs-menu  <?php if($category_id == '3'){echo 'active';} ?>">
                         <i class="fa fa-angle-left"></i>
 						<?php $catgries = $this->getallcategries(3)?>
 						<a href="<?php echo $catgries->getUrl();?>" class="">Labs</a>
                     </li>
-                    <li class="menu-item worx-menu">
+                    <li class="menu-item worx-menu <?php if($category_id == '4'){echo 'active';} ?>">
                         <i class="fa fa-angle-left"></i>
 						<?php $catgries = $this->getallcategries(4)?>
                             <a href="<?php echo $catgries->getUrl();?>" class="">Worx</a>
                     </li>
-                    <li class="menu-item cbdx-menu">
+                    <li class="menu-item cbdx-menu <?php if($category_id == '5'){echo 'active';} ?>">
                         <i class="fa fa-angle-left"></i>
 						<?php $catgries = $this->getallcategries(5)?>
                             <a href="<?php echo $catgries->getUrl();?>" class="">CBDX</a>
@@ -48,17 +60,7 @@
             <!--menu-items-->
             <div class="menu-items">
              			  <!--menu-front-->
- <?php 
-    $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
-    $category = $objectManager->get('Magento\Framework\Registry')->registry('current_category');//get current category
-    if(!empty($category)){
-    $category_id = $category->getId();
-    $parentcategory = $category->getParentCategory()->getId();
-	}else{
-	 $category_id = '';	
-	 $parentcategory ='';
-	}
-?>             
+            
 
 			 <div class="navbar-body menu-item-front <?php if(empty($category_id)){echo 'active';}?>">
                     <div class="menu-item-description">

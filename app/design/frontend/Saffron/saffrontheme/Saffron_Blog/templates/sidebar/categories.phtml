@@ -16,7 +16,16 @@
 <?php $items = $this->getGroupedChilds(); ?>
 
 <?php if (count($items)) { ?>
-
+<?php
+		$level = 0;
+		$first = true;
+		foreach($items as $item) {
+			
+	
+			$level = $newLevel;
+			$first = false;
+		}
+		?>
 <div class="widget block block-categories" data-bind="scope: 'categories'">
     <div class="block-title">
         <strong><?php echo __('Categories') ?></strong>
@@ -54,5 +63,5 @@
 		}
 	?>
 	</ul>
-</div>
+</div> 
 <?php } ?>

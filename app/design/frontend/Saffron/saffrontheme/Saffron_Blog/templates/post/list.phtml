@@ -18,6 +18,153 @@ use Magento\Framework\App\Action\Action;
 <?php
 $_postCollection = $block->getPostCollection();
 ?>
+
+
+<div class="section-notfront">
+           
+           <!--news-featurd--> 
+           <div class="news-featured row-full" data-aos="fade-up" data-aos-offset="150"  data-aos-easing="ease-in-sine">
+                <div class="container">
+                    <h1>Featured</h1>
+                    <div class="owl-carousel owl-theme">
+                     <?php if (!$_postCollection->count()): ?>
+    <div class="message info empty"><div><?php echo __('We can\'t find posts matching the selection.') ?></div></div>
+<?php else: ?>   
+						
+			<?php foreach ($_postCollection as $_post): ?>
+                <?php echo $block->getPostHtml($_post) ?>
+            	
+						
+						<div class="item">
+                            <div class="craft-higher craft-box-row">
+                                <div class="col-md-6 left-col">
+                                    <div class="craft-img-col">
+                                        <img src="images/blog-slider1.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 right-col">
+                                    <div class="craft-info-col">
+                                        <div class="craft-graybx">
+                                            <span class="small-title">Featured</span>
+                                            <h3>LV8 Labs Growing Businesses</h3>
+                                            <p>LV8 Labs is passionate about research, development and testing of optimized business processes + workflows. We take brands to the next level, reaching millions of potential customers.</p>
+                                            <a href="javascript:void(0);" class="learn-btn read-btn">Read Article</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+					<?php endforeach; ?>	
+						
+                       
+              <script type="text/javascript">var addthis_config = {"data_track_clickback":false};</script>
+    <script type="text/javascript" async src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4def63cd3cf37569"></script>
+    <script type="text/javascript">
+        var addthis_config = {
+            ui_language: "en"
+        }
+    </script>
+<?php endif; ?>         
+
+                    </div>
+                </div>
+           </div> 
+           <!--/news-featurd--> 
+
+           <!--latest-posts-->
+           <div class="latest-post row-full" data-aos="fade-up" data-aos-offset="150"  data-aos-easing="ease-in-sine">
+               <div class="container">
+                   <h2>Latest Posts</h2>
+                   <div class="filter-category">
+                       <span class="fliter-name">Filter by Category</span>
+                       
+		<?php echo $block->getLayout()->createBlock('Saffron\Blog\Block\Sidebar\Categories')->setTemplate('sidebar/categories.phtml')->toHtml();?> 
+
+
+			   
+					   <ul class="filter-cat-list">
+                           <li><a href="javascript:void(0);">Filter category</a></li>
+                           <li><a href="javascript:void(0);">Filter category</a></li>
+                           <li><a href="javascript:void(0);">Filter category</a></li>
+                           <li><a href="javascript:void(0);">Filter category</a></li>
+                       </ul>
+                   </div>
+                   <div class="row">
+                       
+	<?php if (!$_postCollection->count()): ?>
+    <div class="message info empty"><div><?php echo __('We can\'t find posts matching the selection.') ?></div></div>
+    <?php else: ?>
+	
+	 <?php foreach ($_postCollection as $_post): ?>
+                <?php echo $block->getPostHtml($_post) ?>
+            
+					   
+					   <div class="col-md-4 col-12">
+                           <div class="post-item">
+                               <div class="post-image">
+                                   <a href="javascript:void(0);">
+                                        <img src="images/post-img1.jpg" alt="" class="img-fluid">         
+                                   </a>
+                                   
+                               </div>
+                               <div class="post-info">
+                                   <span class="small-title">News</span>
+                                   <a href="javascript:void(0);" class="name">Internships <br> Starting in July</a>
+                               </div>
+                           </div>
+                       </div>
+                       
+                       <?php endforeach; ?>
+			
+    <script type="text/javascript">var addthis_config = {"data_track_clickback":false};</script>
+    <script type="text/javascript" async src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4def63cd3cf37569"></script>
+    <script type="text/javascript">
+        var addthis_config = {
+            ui_language: "en"
+        }
+    </script>
+<?php endif; ?>		   
+					   
+					   
+                       <div class="col-12 read-col">
+                           <a href="javascript:void(0);" class="text-link">Load More</a>
+                       </div>
+
+                   </div>
+               </div>
+           </div>
+           <!--/latest-posts-->
+
+
+           <!--CBDX-launches-->
+           <div class="cbdx-launches row-full" data-aos="fade-up" data-aos-offset="150"  data-aos-easing="ease-in-sine">
+               <div class="container">
+                   <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12 left-col">
+                            <div class="launches-bx">
+                                <h3>CBDX Launches New Line</h3>
+                                <p>LV8 Labs is passionate about research, development and testing of optimized business processes + workflows. We take brands to the next level, reaching millions of potential customers and delivering quality products we are proud to put our name to.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12 right-col">
+                            <div class="launches-vide-col">
+                                <img src="images/launches-video-img.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-12 read-col">
+                            <a href="javascript:void(0);" class="text-link">See More</a>
+                        </div>
+                    </div>
+               </div>
+           </div>
+           <!--/CBDX-launches-->
+           
+
+           
+
+
+        </div>
+		
 <?php if (!$_postCollection->count()): ?>
     <div class="message info empty"><div><?php echo __('We can\'t find posts matching the selection.') ?></div></div>
 <?php else: ?>
