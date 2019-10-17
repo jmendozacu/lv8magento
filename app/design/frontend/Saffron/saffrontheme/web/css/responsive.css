@@ -413,7 +413,7 @@
 	.contact-form-inner h4 { font-size: 18px; margin-bottom: 30px;  }
 	.contact-form-inner .form-group {  margin-bottom: 30px;  }
 	.contact-form-inner .form-control { font-size:13px; }
-	.banner-title-notfront h1, h1 { font-size:36px; line-height:normal; }
+	.banner-title-notfront h1, h1 { font-size:36px; line-height:36px; }
 	.owl-item-caption h1 br { display: none;   }
 	.owl-item-caption p { font-size: 26px; line-height: normal;  }
 	.news-featured h1 { margin-bottom: 20px; margin-top: 30px; font-size: 30px; }
@@ -438,7 +438,7 @@
 	.social-media-col .footer-links li a {font-size:18px; }
 	.social-media-col .footer-links li { margin-right:8px;}
 	.information-mobile { display:block; }
-	.info-title-list { background: #fff; float: left; padding: 10px 0; display: none; width:100%; }
+	.info-title-list { background: none; float: left; padding: 15px 0 5px; display: none; width:100%; }
 	.banefints-image-points img { min-height: 500px; object-fit: cover; width: 300px; }
 	.banefints-image-points figure { text-align: center; }
 	.benefit-points { width: 100%; max-width: 300px; }
