@@ -18,14 +18,20 @@ class Recent extends \Magento\Framework\View\Element\Template {
 	
 	public function getNewpostlist(){
 		
+		$id = $_GET['id'];
+		
+		//print_r($id);die;
 	$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
    	$newcategories = $objectManager->create('Saffron\News\Model\ResourceModel\Newspost\Collection')
-			 //->addFieldToFilter('categories', array('eq' => 0))
+			 ->addFieldToFilter('categories', array('eq' => $id))
 			 ->addFieldToFilter('status', array('eq' => 0));
 			 //->setOrder('position', 'DESC');
 	          
 
-
+     if(count($newcategories)=='0'){
+		 
+		 $newcategories=[] ;
+	 }
 	 return   $newcategories  ;	
 		
 	}

@@ -36,7 +36,9 @@ class Save extends \Magento\Backend\App\Action
                 $model->load($id);
                 $model->setCreatedAt(date('Y-m-d H:i:s'));
             }
+			 if (isset($_FILES['thumbnail']) && !empty($_FILES['thumbnail']['name']) ) {
 			
+		
 			try{
 				$uploader = $this->_objectManager->create(
 					'Magento\MediaStorage\Model\File\Uploader',
@@ -61,7 +63,17 @@ class Save extends \Magento\Backend\App\Action
 			//var_dump($data);die;
 			if(isset($data['thumbnail']['delete']) && $data['thumbnail']['delete'] == '1')
 				$data['thumbnail'] = '';
-
+           }else {
+                if (isset($data['thumbnail']) && isset($data['thumbnail']['value'])) {
+                    if (isset($data['thumbnail']['delete'])) {
+                        $data['thumbnail'] = '';
+                    } elseif (isset($data['thumbnail']['value'])) {
+                        $data['thumbnail'] = $data['thumbnail']['value'];
+                    } else {
+                        $data['thumbnail'] = '';
+                    }
+                }
+            }
 
             $model->setData($data);
 

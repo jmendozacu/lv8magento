@@ -61,16 +61,13 @@
 					<?php $i++;}?>
 					</ul>
                    </div>
-                   <div class="row">
+                  
                        
 					  <span id="recent-blog"> </span>
                        
                       
-                       <div class="col-12 read-col">
-                           <a href="javascript:void(0);" class="text-link">Load More</a>
-                       </div>
+                       
 
-                   </div>
 				  
 				   
                </div>
@@ -125,7 +122,8 @@ function getCategoryid(obj){
 	
 jQuery(document).ready(function($){
   $("#loderpop").addClass("showpopup");
-  
+  var $el = $("categoriesitem"+obj);
+  $el.addClass("active").siblings().removeClass('active');
   $.ajax({
         url: "<?php echo $this->getBaseUrl()?>/news/index/recent/",
         type: "GET",
@@ -148,9 +146,11 @@ $(document).ready(function(){
         $("ul.filter-cat-list").slideToggle();
     })	
 	
-	 var obj = $("categoriesitem-1").val();
+	 //var obj = $("categoriesitem-1").val();
+	 var obj = $("#categoriesitem-1").val(); 
+	 //alert(obj);
 	 $.ajax({
-        url: "<?php echo $this->getBaseUrl()?>/news/index/recent/",
+        url: "<?php echo $this->getBaseUrl()?>news/index/recent/",
         type: "GET",
         data:  {"id":obj},
         success: function(response){

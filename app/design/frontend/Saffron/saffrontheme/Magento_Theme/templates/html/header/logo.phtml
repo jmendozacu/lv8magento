@@ -48,6 +48,21 @@ $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
 $request = $objectManager->get('\Magento\Framework\App\Request\Http');
 $checkModule = $request->getModuleName();
 if($checkModule == 'cms'){ ?>
+
+<?php  $checkcbdx = (explode("/",$_SERVER['REQUEST_URI'])) ;  ?>
+<?php if($checkcbdx[1]=='cbdx' ){ ?>
+
+<a  href="<?= $block->getUrl('') ?>" title="<?= /* @escapeNotVerified */ $storeName ?>">
+
+  <img src="<?= /* @escapeNotVerified */ $block->getLogoSrc() ?>"
+             title="<?= /* @escapeNotVerified */ $block->getLogoAlt() ?>"
+             alt="<?= /* @escapeNotVerified */ $block->getLogoAlt() ?>"
+             <?= $block->getLogoWidth() ? 'width="' . $block->getLogoWidth() . '"' : '' ?>
+             <?= $block->getLogoHeight() ? 'height="' . $block->getLogoHeight() . '"' : '' ?>
+        />
+		
+<?php }else{?>
+
 <a  href="<?= $block->getUrl('') ?>" title="<?= /* @escapeNotVerified */ $storeName ?>">
   <img src="<?php echo $this->getMedia().'/theme/lv8-logo2.png' ?>"
              title="<?= /* @escapeNotVerified */ $block->getLogoAlt() ?>"
@@ -55,6 +70,9 @@ if($checkModule == 'cms'){ ?>
              <?= $block->getLogoWidth() ? 'width="' . $block->getLogoWidth() . '"' : '' ?>
              <?= $block->getLogoHeight() ? 'height="' . $block->getLogoHeight() . '"' : '' ?>
         />
+
+<?php }?>		
+		
 
 <?php }else{ ?>
     

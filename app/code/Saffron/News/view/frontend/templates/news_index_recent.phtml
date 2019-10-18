@@ -1,12 +1,19 @@
-<?php  $newcategories =$this->getNewpostlist();?>
+<?php  $newcategories =$this->getNewpostlist();
+$newcategories = $newcategories->getData() ;
 
- <?php foreach($newcategories as $post)
-                    $item_post = $post->getData();
-				  {?>
+//count($newcategories);
+//echo "<pre>";print_r( $newcategories);
+?>
+<?php if(count($newcategories) != '0') { ?>
+ <div class="row">
+                   
+ <?php $i=1 ;foreach($newcategories as $item_post)
+     //$item_post = $post->getData();
+{?>
 <?php  $dataitem  =  $this->getCategriename($item_post['categories'] );
   $categorie_title = $dataitem->getData();
   
-  //echo "<pre>";print_r( $categorie_title);
+  //echo "<pre>";print_r( $newcategories->getData() );
 ?> 
 <div class="col-md-4 col-12">
                            <div class="post-item">
@@ -24,7 +31,42 @@
                        </div>
                        
 					   
-				  <?php }?>			   
+				  <?php  $x = $i++;  }?>			   
                   					   
-                      
-                      
+    </div>                  
+	<div class="col-12 read-col">
+	
+	 
+	 <a href="javascript:void(0);" class="text-link" id="<?php echo ($x +3) ;?>" onclick="getLoadmoreid(<?php echo ($x +3) ;?>)" >Load More</a>
+     </div>				  
+<?php }else {?>
+
+<p> there no Recent News</p>
+<?php }?>  
+
+
+
+
+<script>
+function getLoadmoreid(page){
+	
+jQuery(document).ready(function($){
+  $("#loderpop").addClass("showpopup");
+  	 var obj = $("#categoriesitem-1").val(); 
+	 //var page = $("#categoriesitem-1").val(); 
+	 alert(page);
+	 alert(obj)
+ /* $.ajax({
+        url: "<?php echo $this->getBaseUrl()?>/news/index/recent/",
+        type: "GET",
+        data:  {"id":obj},
+        success: function(response){
+		$('#recent-blog').html(response);	
+		$("#loderpop").removeClass("showpopup");
+        }
+	  });*/
+ 
+});
+	
+}
+</script>           
