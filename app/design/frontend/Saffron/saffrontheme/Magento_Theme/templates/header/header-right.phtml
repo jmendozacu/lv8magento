@@ -45,7 +45,7 @@ $(document).ready(function(){
     })
     $(".nav-sections-items .bar-button").on("click", function(){
         $(".nav-sections").removeClass('open');
-		 $(".menu-item-labs, .menu-item-worx, .menu-item-cbdx" ).removeClass("active");
+		 
     })
     $(".navbar-col .menuBtn").on("click", function(){
         $("body").addClass('menu-open');
@@ -79,25 +79,22 @@ $(document).ready(function(){
 	//mousehover menu script
 	
 	
+	if ($(window).width() => 1025) {
+			$(".menu-parent li.menu-item.labs-menu").on('mouseenter', function(e){
+			$(".navbar-body").siblings().removeClass("active");
+			$(".navbar-body.menu-item-labs").addClass("active");
+		})
 	
-	$(".menu-parent li.menu-level").on('mouseenter', function(e){
-		$(".navbar-body").siblings().removeClass("active");
-		$(".navbar-body.menu-item-front").addClass("active");
-    })	
-	$(".menu-parent li.menu-item.labs-menu").on('mouseenter', function(e){
-		$(".navbar-body").siblings().removeClass("active");
-		$(".navbar-body.menu-item-labs").addClass("active");
-    })
+		$(".menu-parent li.menu-item.worx-menu").on('mouseenter', function(){
+			$(".navbar-body").siblings().removeClass("active");
+			$(".navbar-body.menu-item-worx").addClass("active");
+		})
 	
-	$(".menu-parent li.menu-item.worx-menu").on('mouseenter', function(){
-		$(".navbar-body").siblings().removeClass("active");
-		$(".navbar-body.menu-item-worx").addClass("active");
-    })
-	
-	$(".menu-parent li.menu-item.cbdx-menu").on('mouseenter', function(){
-		$(".navbar-body").siblings().removeClass("active");
-		$(".navbar-body.menu-item-cbdx").addClass("active");
-    })
+		$(".menu-parent li.menu-item.cbdx-menu").on('mouseenter', function(){
+			$(".navbar-body").siblings().removeClass("active");
+			$(".navbar-body.menu-item-cbdx").addClass("active");
+		})
+	}
     
     //end-menu 
     
