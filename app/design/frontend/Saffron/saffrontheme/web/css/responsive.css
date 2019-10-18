@@ -34,7 +34,7 @@
       .active.navbar-body .menu-image-item img { opacity:1;  transition:  opacity 1.9s;   }
       .menu-inner { opacity:0; }
       .active .menu-inner { transition: opacity 1.5s;  opacity:1;   }
-      .menu-inner .social-col { position: absolute;  bottom: -100px; left: 0;   }
+      .menu-inner .social-col { position: absolute;  bottom:0; left: 0;   }
       .active .menu-inner .social-col {  bottom:0;  transition: bottom 1s;    } 
       .menu-parent li { padding-right:30%; }
 	  .craft-graybx{ width: 110%; }
