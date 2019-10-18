@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="Saffron_News::parent" title="News" module="Saffron_News" sortOrder="100" resource="Saffron_News::parent"/>
+		<add id="Saffron_News::newspost" title="News Post" module="Saffron_News" sortOrder="20" parent="Saffron_News::parent" action="news/newspost" resource="Saffron_News::newspost"/>
+        <add id="Saffron_News::newcategories" title="News Categories" module="Saffron_News" sortOrder="30" parent="Saffron_News::parent" action="news/newcategories" resource="Saffron_News::newcategories"/>
+
+    </menu>
+</config>

@@ -76,61 +76,9 @@ $_postCollection = $block->getPostCollection();
                <div class="container">
                    <h2>Latest Posts</h2>
                    <div class="filter-category">
-                       <span class="fliter-name">Filter by Category</span>
-                       
-		<?php echo $block->getLayout()->createBlock('Saffron\Blog\Block\Sidebar\Categories')->setTemplate('sidebar/categories.phtml')->toHtml();?> 
-
-
-			   
-					   <ul class="filter-cat-list">
-                           <li><a href="javascript:void(0);">Filter category</a></li>
-                           <li><a href="javascript:void(0);">Filter category</a></li>
-                           <li><a href="javascript:void(0);">Filter category</a></li>
-                           <li><a href="javascript:void(0);">Filter category</a></li>
-                       </ul>
-                   </div>
-                   <div class="row">
-                       
-	<?php if (!$_postCollection->count()): ?>
-    <div class="message info empty"><div><?php echo __('We can\'t find posts matching the selection.') ?></div></div>
-    <?php else: ?>
-	
-	 <?php foreach ($_postCollection as $_post): ?>
-                <?php echo $block->getPostHtml($_post) ?>
-            
-					   
-					   <div class="col-md-4 col-12">
-                           <div class="post-item">
-                               <div class="post-image">
-                                   <a href="javascript:void(0);">
-                                        <img src="images/post-img1.jpg" alt="" class="img-fluid">         
-                                   </a>
-                                   
-                               </div>
-                               <div class="post-info">
-                                   <span class="small-title">News</span>
-                                   <a href="javascript:void(0);" class="name">Internships <br> Starting in July</a>
-                               </div>
-                           </div>
-                       </div>
-                       
-                       <?php endforeach; ?>
-			
-    <script type="text/javascript">var addthis_config = {"data_track_clickback":false};</script>
-    <script type="text/javascript" async src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4def63cd3cf37569"></script>
-    <script type="text/javascript">
-        var addthis_config = {
-            ui_language: "en"
-        }
-    </script>
-<?php endif; ?>		   
-					   
-					   
-                       <div class="col-12 read-col">
-                           <a href="javascript:void(0);" class="text-link">Load More</a>
-                       </div>
-
-                   </div>
+        <?php echo $block->getLayout()->createBlock('Saffron\Blog\Block\Sidebar\Categories')->setTemplate('sidebar/categories.phtml')->toHtml();?> 
+                  </div>
+                 
                </div>
            </div>
            <!--/latest-posts-->
