@@ -225,8 +225,8 @@ class Grid extends \Magento\Backend\Block\Widget\Grid\Extended
 		static public function getOptionArray14()
 		{
             $data_array=array(); 
-			$data_array[0]='0';
-			$data_array[1]='1';
+			$data_array[0]='Enable';
+			$data_array[1]='Disable';
             return($data_array);
 		}
 		static public function getValueArray14()

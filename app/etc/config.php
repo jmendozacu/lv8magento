@@ -129,7 +129,6 @@ return [
         'Magento_WishlistAnalytics' => 1,
         'Saffron_Aoslib' => 1,
         'Saffron_Bannerslider' => 1,
-        'Saffron_Blog' => 1,
         'Saffron_Clogo' => 1,
         'Saffron_Featureproductslider' => 1,
         'Saffron_Loadjs' => 1,
