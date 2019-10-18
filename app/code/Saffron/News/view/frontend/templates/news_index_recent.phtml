@@ -54,17 +54,17 @@ jQuery(document).ready(function($){
   $("#loderpop").addClass("showpopup");
   	 var obj = $("#categoriesitem-1").val(); 
 	 //var page = $("#categoriesitem-1").val(); 
-	 alert(page);
-	 alert(obj)
- /* $.ajax({
+	 //alert(page);
+	 //alert(obj)
+     $.ajax({
         url: "<?php echo $this->getBaseUrl()?>/news/index/recent/",
         type: "GET",
-        data:  {"id":obj},
+        data:  {"id":obj,"page":page},
         success: function(response){
 		$('#recent-blog').html(response);	
 		$("#loderpop").removeClass("showpopup");
         }
-	  });*/
+	  });
  
 });
 	

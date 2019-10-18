@@ -78,8 +78,10 @@
            <!--CBDX-launches-->
            <div class="cbdx-launches row-full" data-aos="fade-up" data-aos-offset="150"  data-aos-easing="ease-in-sine">
                <div class="container">
-			   <div class="row">
-                  <?php foreach($NewsAllPost as $post)
+			  
+                 <span id="categries-video"></span>
+			  <!--<div class="row">
+                  <?php $i= 1; foreach($NewsAllPost as $post)
                     $item_post = $post->getData();
 				  {?>
 				  
@@ -97,12 +99,12 @@
                        
                    
 					
-				  <?php } ?>
+				  <?php $x = $i++; } ?>
 
                        <div class="col-12 read-col">
-                            <a href="javascript:void(0);" class="text-link">See More</a>
+                            <a href="javascript:void(0);" class="text-link <?php echo($x+2); ?>"  onclick="getLoadmorevideo(<?php echo ($x +2) ;?>)">See More</a>
                         </div>				  
-					 </div>
+					 </div> -->
                </div>
            </div>
            <!--/CBDX-launches-->
@@ -125,9 +127,9 @@ jQuery(document).ready(function($){
   var $el = $("categoriesitem"+obj);
   $el.addClass("active").siblings().removeClass('active');
   $.ajax({
-        url: "<?php echo $this->getBaseUrl()?>/news/index/recent/",
+        url: "<?php echo $this->getBaseUrl()?>news/index/recent/",
         type: "GET",
-        data:  {"id":obj},
+        data:  {"id":obj,"page":3},
         success: function(response){
 		$('#recent-blog').html(response);	
 		$("#loderpop").removeClass("showpopup");
@@ -137,6 +139,7 @@ jQuery(document).ready(function($){
 });
 	
 }
+
 </script>	
 <script type="text/javascript">
 require([ 'jquery'], function($){
@@ -152,9 +155,21 @@ $(document).ready(function(){
 	 $.ajax({
         url: "<?php echo $this->getBaseUrl()?>news/index/recent/",
         type: "GET",
-        data:  {"id":obj},
+        data:  {"id":obj,"page":3},
         success: function(response){
 		$('#recent-blog').html(response);	
+		//$("#loderpop").removeClass("showpopup");
+        }
+	  });
+	
+	
+	
+	$.ajax({
+        url: "<?php echo $this->getBaseUrl()?>news/index/recentvideo/",
+        type: "GET",
+        data:  {"page":1},
+        success: function(response){
+		$('#categries-video').html(response);	
 		//$("#loderpop").removeClass("showpopup");
         }
 	  });
@@ -164,6 +179,10 @@ $(document).ready(function(){
 	
 	});
 	});
+	
+	
+	
+	
 </script>	
 
 <script type="text/javascript">

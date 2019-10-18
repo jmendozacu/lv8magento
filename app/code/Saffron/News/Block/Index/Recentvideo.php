@@ -3,7 +3,7 @@
 namespace Saffron\News\Block\Index;
 
 
-class Recent extends \Magento\Framework\View\Element\Template {
+class Recentvideo extends \Magento\Framework\View\Element\Template {
 
     public function __construct(\Magento\Catalog\Block\Product\Context $context, array $data = []) {
 
@@ -16,7 +16,7 @@ class Recent extends \Magento\Framework\View\Element\Template {
 
 	
 	
-	public function getNewpostlist(){
+	/*public function getNewpostlist(){
 		
 		$id = $_GET['id'];
 		$page=$_GET['page'];
@@ -36,19 +36,20 @@ class Recent extends \Magento\Framework\View\Element\Template {
 	 }
 	 return   $newcategories  ;	
 		
-	}
+	}*/
 	
-	public function getCategriename($id){
+	public function getNewsAllPost(){
+	  $page= $_GET['page'];
+     	
 	$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
-   	$newcategories = $objectManager->create('Saffron\News\Model\ResourceModel\Newcategories\Collection')
+   	$newcategories = $objectManager->create('Saffron\News\Model\ResourceModel\Newspost\Collection')
 			 ->addFieldToFilter('status', array('eq' => 0))
-			 ->addFieldToFilter('id', array('eq' => $id));
-	
-	
-	  
-	
-	 return  $newcategories ;
+			  ->setPageSize($page) // only get 10 products 
+             ->setCurPage(1) ;
+	      return   $newcategories  ;	
+		
 	}
+	
 	
 	public function getMediaurl(){
 	

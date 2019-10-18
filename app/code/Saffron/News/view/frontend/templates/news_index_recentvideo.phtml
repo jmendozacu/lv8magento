@@ -1,0 +1,67 @@
+<?php  $newcategories =$this->getNewsAllPost();
+$newcategories = $newcategories->getData() ;
+
+//count($newcategories);
+//echo "<pre>";print_r( $newcategories);
+?>
+<?php if(count($newcategories) != '0') { ?>
+ <div class="row">
+ <?php $i= 1; foreach($newcategories as $item_post)
+                    //$item_post = $post->getData();
+				  //echo"<pre>";print_r($item_post );
+				  
+				  {?>
+				  
+                        <div class="col-lg-6 col-md-6 col-12 left-col">
+                            <div class="launches-bx">
+                                <h3><?php echo $item_post['post_title']?></h3>
+                                <p><?php echo $item_post['short_content']?></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12 right-col">
+                            <div class="launches-vide-col">
+                                <img src="<?php echo $this->getMediaUrl().$item_post['thumbnail']?>" alt="<?php echo $item_post['post_title']?>" class="img-fluid">
+                            </div>
+                        </div>
+                       
+                   
+					
+				  <?php $x = $i++; } ?>
+
+                       <div class="col-12 read-col">
+                            <a href="javascript:void(0);" class="text-link <?php echo($x+2); ?>"  onclick="getLoadmorevideo(<?php echo ($x +2) ;?>)">See More</a>
+                        </div>	
+                       
+	</div>                  
+				  
+<?php }else {?>
+
+<p> there no Recent News</p>
+<?php }?>  
+
+
+
+
+<script>
+function getLoadmorevideo(page){
+	
+jQuery(document).ready(function($){
+  $("#loderpop").addClass("showpopup");
+  	 //var obj = $("#categoriesitem-1").val(); 
+	 //var page = $("#categoriesitem-1").val(); 
+	 alert(page);
+	 //alert(obj)
+    $.ajax({
+        url: "<?php echo $this->getBaseUrl()?>/news/index/recentvideo/",
+        type: "GET",
+        data:  {"page":page},
+        success: function(response){
+		$('#categries-video').html(response);	
+		$("#loderpop").removeClass("showpopup");
+        }
+	  });
+ 
+});
+	
+}
+</script>           

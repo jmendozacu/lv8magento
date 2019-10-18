@@ -16,8 +16,11 @@
 
     <body>
 
-
-        <referenceContainer name="sidebar.main">
+	   <attribute name="class" value="lv8-page"/>
+	   <attribute name="class" value="page-not-front"/>
+	   <attribute name="class" value="careers-page"/>
+		   
+	   <referenceContainer name="sidebar.main">
             <block class="Saffron\News\Block\Index\Sidebar" name="news_index_sidebar" before="-" template="Saffron_News::news_index_sidebar.phtml"/>
         </referenceContainer>
 
