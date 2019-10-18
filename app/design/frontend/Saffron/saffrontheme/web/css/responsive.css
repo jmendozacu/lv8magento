@@ -329,7 +329,7 @@
 @media (max-width:767px) {
 	.menu-parent li { padding:6px 15px 6px 0;   }
 	.menu-inner .logo-brand { margin-bottom:20px; }
-	.menu-inner { padding:15px 15px 20px; }
+	.menu-inner, .menu-col-main ul { padding:20px 12px; }
 	.container{ max-width:100%;}
 	.logo-col img { width:auto; height:30px; }
 	.lv8-page .logo-col img {  height: 30px; }
@@ -403,7 +403,7 @@
 	.menu-item-front .menu-inner .logo-brand img { height: 26px;   }
 	.menu-item-cbdx .menu-inner .logo-brand img { height:45px; }
 	.menu-items .active .menu-inner { display: flex; flex-direction: column; }
-	.menu-inner .adrs-col { margin-bottom:10px; display: flex; flex: 1; }
+	.menu-inner .adrs-col { margin-bottom:10px; display: flex; flex: 1; flex-direction: column; }
 	.filter-col .filter-link{ margin:0; padding:12px; }
 	.social-col li a { font-size:18px; }
 	.container-inner { position: relative;  }
