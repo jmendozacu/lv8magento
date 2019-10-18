@@ -74,6 +74,23 @@ $(document).ready(function(){
         $(this).addClass("active");
         $(this).siblings().removeClass("active");
     })
+	
+	//mousehover menu script
+	
+	$(".menu-parent li.menu-item.labs-menu").on('mouseenter', function(e){
+		$(".navbar-body").siblings().removeClass("active");
+		$(".navbar-body.menu-item-labs").addClass("active");
+    })
+	
+	$(".menu-parent li.menu-item.worx-menu").on('mouseenter', function(){
+		$(".navbar-body").siblings().removeClass("active");
+		$(".navbar-body.menu-item-worx").addClass("active");
+    })
+	
+	$(".menu-parent li.menu-item.cbdx-menu").on('mouseenter', function(){
+		$(".navbar-body").siblings().removeClass("active");
+		$(".navbar-body.menu-item-cbdx").addClass("active");
+    })
     
     //end-menu 
     
