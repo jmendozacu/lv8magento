@@ -45,6 +45,7 @@ $(document).ready(function(){
     })
     $(".nav-sections-items .bar-button").on("click", function(){
         $(".nav-sections").removeClass('open');
+		 $(".menu-item-labs, .menu-item-worx, .menu-item-cbdx" ).removeClass("active");
     })
     $(".navbar-col .menuBtn").on("click", function(){
         $("body").addClass('menu-open');
@@ -76,7 +77,9 @@ $(document).ready(function(){
     })
 	
 	//mousehover menu script
-	 
+	
+	
+	
 	$(".menu-parent li.menu-level").on('mouseenter', function(e){
 		$(".navbar-body").siblings().removeClass("active");
 		$(".navbar-body.menu-item-front").addClass("active");
