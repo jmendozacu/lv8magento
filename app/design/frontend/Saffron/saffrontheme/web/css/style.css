@@ -393,6 +393,7 @@ button:focus{ outline:none; }
 .navbar-body {
     float: left;
     width: 100%;
+	background:#fff;
 }
 .menu-items {
     position: relative;
@@ -1884,10 +1885,13 @@ body[class*="customer-account-"] main#maincontent .columns > .column.main,
 .breadcrumbs li a:after {
     content: "\f105";
     font-family: fontawesome;
-    padding-left: 5px;
+    padding-left: 8px;
     font-size: 16px;
     color: #fff;
 }
+.breadcrumbs li.item.home a { font-size: 0; position: relative; }
+.breadcrumbs li.item.home a:before {content: "LV8";font-size: 16px;}
+
 .catalog-product-view a.action.add:hover,
 .breadcrumbs li:hover a:after {  text-decoration: none; }
 
