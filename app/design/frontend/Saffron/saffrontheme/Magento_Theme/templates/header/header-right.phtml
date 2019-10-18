@@ -76,7 +76,11 @@ $(document).ready(function(){
     })
 	
 	//mousehover menu script
-	
+	 
+	$(".menu-parent li.menu-level").on('mouseenter', function(e){
+		$(".navbar-body").siblings().removeClass("active");
+		$(".navbar-body.menu-item-front").addClass("active");
+    })	
 	$(".menu-parent li.menu-item.labs-menu").on('mouseenter', function(e){
 		$(".navbar-body").siblings().removeClass("active");
 		$(".navbar-body.menu-item-labs").addClass("active");
