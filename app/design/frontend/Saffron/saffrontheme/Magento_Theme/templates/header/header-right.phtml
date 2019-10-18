@@ -76,23 +76,28 @@ $(document).ready(function(){
         $(this).siblings().removeClass("active");
     })
 	
-	//mousehover menu script
-	
-	
+	//mousehover menu script for >= 1025
 	if ($(window).width() >= 1025) {
-			$(".menu-parent li.menu-item.labs-menu").on('mouseenter', function(e){
-			$(".navbar-body").siblings().removeClass("active");
-			$(".navbar-body.menu-item-labs").addClass("active");
+		$(".nav-sections-items .menuBtn").on('click', function(){
+			$(".navbar-body").siblings().removeClass("hover-active");
+		})
+		$(".menu-parent li .fa").on("click", function(){
+			$(".navbar-body").siblings().removeClass("hover-active");
+		})
+		$(".menu-parent li.menu-item.labs-menu").on('mouseenter', function(e){
+			$(".navbar-body").siblings().removeClass("hover-active");
+			$(".navbar-body.menu-item-labs").addClass("hover-active");
+			
 		})
 	
 		$(".menu-parent li.menu-item.worx-menu").on('mouseenter', function(){
-			$(".navbar-body").siblings().removeClass("active");
-			$(".navbar-body.menu-item-worx").addClass("active");
+			$(".navbar-body").siblings().removeClass("hover-active");
+			$(".navbar-body.menu-item-worx").addClass("hover-active");
 		})
 	
 		$(".menu-parent li.menu-item.cbdx-menu").on('mouseenter', function(){
-			$(".navbar-body").siblings().removeClass("active");
-			$(".navbar-body.menu-item-cbdx").addClass("active");
+			$(".navbar-body").siblings().removeClass("hover-active");
+			$(".navbar-body.menu-item-cbdx").addClass("hover-active");
 		})
 	}
     
