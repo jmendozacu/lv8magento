@@ -498,17 +498,11 @@
 	.app-info h4 { font-size: 30px; margin-bottom: 15px; line-height: 34px; }
 	.freeapp-col figure img { max-width: 180px; }
 	footer.page-footer { margin-top: 0; }
-	.filter-title strong {
-    background: #f8f8f8;
-    border: none;
-    padding: 12px 20px;
-    box-shadow: none;
-    font-size: 14px;
-    margin: 20px 0 0;
-    position: relative;
-    top: 10px;
-}
-.filter.active .filter-title strong { width: 100%; margin: 0; }
-.filter.active .filter-title strong:after { display:none; } 
+	.filter-title strong { background: #f8f8f8; border: none; padding: 12px 20px; box-shadow: none;
+		font-size: 14px; margin: 20px 0 0; position: relative; top: 10px; }
+	.filter.active .filter-title strong { width: 100%; margin: 0; }
+	.filter.active .filter-title strong:after { display:none; } 
+	.menu-item-front:after { content: ""; position: absolute; height: 35%; width: 100%; 
+		background: rgba(0, 0, 0, 0.3); left: 0; right: 0; }
  
 }
