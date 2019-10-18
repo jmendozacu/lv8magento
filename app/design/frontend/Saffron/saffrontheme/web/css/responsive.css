@@ -119,46 +119,49 @@
 }
 
 @media ( min-width:1025px ){
-      .point {  position: absolute;  width: 44%; }
-      .point-1 { top: 7%; }
-      .point-2 { top: 37%; }
-      .point-3 { top: 53%; }
-      .point-circle { position: absolute; top: 13px; right:0;  }
-      .point-circle:after  { content: ""; height: 3px; background: #fff; position: absolute; top: 12px;
-            right: 27px; width:0; opacity:0; 
-      }
-      .point-body { opacity:0; }
-      .point-circle:hover + .point-body,
-      .point-circle:hover:after{ opacity:1;  }
-      .point-circle:hover:after { width:170px; }
-      .point-4 .point-circle:hover:after,
-      .point-5 .point-circle:hover:after { width:370px; }
-      .point-6 .point-circle:hover:after { width:130px; }
-      .point-4 { right: 0;  top: 12%; }
-      .point-5 { right: 0;  top: 21%; }
-      .point-6 { right: 0;  bottom:30%; }
-      .point-4 .point-circle { left: -22%; }
-      .point-6 .point-circle { left: 15%; }
-      .point-5 .point-circle { left: -19%; }
-      .point-4 .point-circle:after { left: 26px;  }
-      .point-5 .point-circle:after { left: 26px; }
-      .point-6 .point-circle:after { left: 26px;  }
-      .banefints-image-points img {  width: 100%; }
-      .point-circle:after { transition: all 0.5s ease; -webkit-transition: all 0.5s ease; }
-      .point-circle,
-      .point-body { transition: all 0.3s ease; -webkit-transition: all 0.3s ease; }
-      .point .point-body { position: absolute;  top: 0; }
-      .point-1 .point-body,
-      .point-2 .point-body,
-      .point-3 .point-body { right: 38%; }
-      .point-1 .point-circle { right:8%; }
-      .point-2 .point-circle { right: 9%; }
-      .point-3 .point-circle { right: 12%; }
-      .point-4 .point-body,
-      .point-5 .point-body,
-      .point-6 .point-body { left: 38%; }
-      .thc-content { margin-top: -180px;  }
-      .compounds-box.row1 { min-height: 330px;  }
+	.point {  position: absolute;  width: 44%; }
+	.point-1 { top: 7%; }
+	.point-2 { top: 37%; }
+	.point-3 { top: 53%; }
+	.point-circle { position: absolute; top: 13px; right:0;  }
+	.point-circle:after  { content: ""; height: 3px; background: #fff; position: absolute; top: 12px;
+		right: 27px; width:0; opacity:0; 
+	}
+	.point-body { opacity:0; }
+	.point-circle:hover + .point-body,
+	.point-circle:hover:after{ opacity:1;  }
+	.point-circle:hover:after { width:170px; }
+	.point-4 .point-circle:hover:after,
+	.point-5 .point-circle:hover:after { width:370px; }
+	.point-6 .point-circle:hover:after { width:130px; }
+	.point-4 { right: 0;  top: 12%; }
+	.point-5 { right: 0;  top: 21%; }
+	.point-6 { right: 0;  bottom:30%; }
+	.point-4 .point-circle { left: -22%; }
+	.point-6 .point-circle { left: 15%; }
+	.point-5 .point-circle { left: -19%; }
+	.point-4 .point-circle:after { left: 26px;  }
+	.point-5 .point-circle:after { left: 26px; }
+	.point-6 .point-circle:after { left: 26px;  }
+	.banefints-image-points img {  width: 100%; }
+	.point-circle:after { transition: all 0.5s ease; -webkit-transition: all 0.5s ease; }
+	.point-circle,
+	.point-body { transition: all 0.3s ease; -webkit-transition: all 0.3s ease; }
+	.point .point-body { position: absolute;  top: 0; }
+	.point-1 .point-body,
+	.point-2 .point-body,
+	.point-3 .point-body { right: 38%; }
+	.point-1 .point-circle { right:8%; }
+	.point-2 .point-circle { right: 9%; }
+	.point-3 .point-circle { right: 12%; }
+	.point-4 .point-body,
+	.point-5 .point-body,
+	.point-6 .point-body { left: 38%; }
+	.thc-content { margin-top: -180px;  }
+	.compounds-box.row1 { min-height: 330px;  }
+	.navbar-body.hover-active{ z-index:2; opacity:1; }
+	.navbar-body.hover-active div { opacity:1; }
+	.navbar-body .menu-image-item img { opacity:1 }
 
 }
 @media (min-width: 1200px) {
