@@ -515,8 +515,11 @@
 	footer.page-footer { margin-top: 0; }
 	.filter-title strong { background: #f8f8f8; border: none; padding: 12px 20px; box-shadow: none;
 		font-size: 14px; margin: 20px 0 0; position: relative; top: 10px; }
-	.filter.active .filter-title strong { width: 100%; margin: 0; }
-	/* .filter.active .filter-title strong:after { display:none; }  */
+	.filter.active .filter-title strong { width: 100%; margin: 0; position:relative; }
+	.filter.active .filter-title strong:after { position: absolute; top: 10px; right: 15px; }
+	.filter.active .filter-title { height: auto; padding-bottom: 10px; }
+	body.page-layout-1column .filter-options-item {  margin-right: 0; }
+	.filter-options-item { padding-bottom:0; }
 	.menu-item-front:after { content: ""; position: absolute; height: 35%; width: 100%; 
 		background: rgba(0, 0, 0, 0.3); left: 0; right: 0; }
 	.open-positions { padding:40px 0; }
