@@ -219,7 +219,7 @@
 	.family-brand img {  max-width: 200px;  }
 	.cbdx-brand img { max-width:140px; }
 	.footer-logo img {  width: 120px; }
-	.learn-btn{ padding:15px 20px;  }
+	.learn-btn{ padding:15px 20px; max-width:220px;  }
 	.craft-graybx h3 {  font-size: 26px; margin: 0 0 10px; }
 	.craft-higher .craft-graybx { min-height: 40vh; }
 	.news-featured h1, h1, h2, .worx-about-page h3,
@@ -291,6 +291,7 @@
 	.menu-item-cbdx .menu-image-item img { height:100vh; }
 	.cont-img-col { width: 45%; }
 	.cont-form-col { padding-left: 45%;  padding-right: 20px; }
+	.freeapp-col figure { margin-bottom:-44px; }
 	
 
       
@@ -400,7 +401,7 @@
 	.success-stories { margin:15% 0; }
 	.stories-carousel {  padding: 0 15px;  }
 	.our-expertise h3 { margin:20px 0 30px; }
-	.appstore-col img { max-width:130px;}
+	.appstore-col img { height: 40px; width: auto; }
 	.front-banner .owl-carousel .owl-nav button span:before { font-size: 28px; line-height: 28px;  }
 	
 	.cbdx-brands-col .brand-link img { width:55px; }
@@ -442,7 +443,7 @@
 	.header .container { display: flex; align-items: center;  }
 	.header-right-col { margin-left: auto; }
 	.promoting-carousel .owl-carousel .owl-item img { width: auto; float: none; display: inline-block;
-		padding:0 30px;	}
+		padding:0 30px; max-width:170px;	}
 	.promoting-carousel { text-align: center; margin-bottom:50px; }
 	.cbdx-brands-col { margin-bottom:12px; }
 	.menu-inner .adrs-col li { margin-bottom:10px; }
@@ -468,7 +469,7 @@
 	.point-6 .point-body { top:81%; }
 	.featured-products { margin-top: 50px; }
 	.free-app { padding: 20px 0 0; }
-	.appstore-col a { margin: 0 0 20px; }
+	.appstore-col a { margin: 0 3px 20px; }
 	.theBrands-carousel .owl-carousel .owl-nav button.owl-next { right:0; }
 	.theBrands-carousel .owl-carousel .owl-nav button.owl-prev { left:0; }
 	.size-filter .filter-dropdown,
@@ -509,7 +510,7 @@
 	.freeapp-col {  flex-direction: column; text-align: center; }
 	.app-info {padding: 10px 0 20px; }
 	.freeapp-col figure { order: 2; }
-	.app-info h4 { font-size: 30px; margin-bottom: 15px; line-height: 34px; }
+	.app-info h4 { font-size: 23px; margin-bottom:10px; line-height:normal; }
 	.freeapp-col figure img { max-width: 180px; }
 	footer.page-footer { margin-top: 0; }
 	.filter-title strong { background: #f8f8f8; border: none; padding: 12px 20px; box-shadow: none;
@@ -524,5 +525,10 @@
 	#scroll-the-players >h3 { margin-bottom:8%; }
 	.our-expertise figure { width:45px;}
 	.our-expertise .expertise-info { width:calc(100% - 45px); }
+	.featured-products h2 { font-size:30px; }
+	.our-craft .craft-box-row { margin-bottom:0; }
+	.stayUpdate-col .craft-graybx { padding-left:15px; padding-right:15px; }
+	.join-btn { padding:15px 20px; }
+	.stayUpdate-col .form-control { padding-right:85px; }
 	
 }
