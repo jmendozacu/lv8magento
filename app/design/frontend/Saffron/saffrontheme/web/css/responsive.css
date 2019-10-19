@@ -244,6 +244,8 @@
 	body.catalog-product-view .column.main, body.checkout-cart-index .column.main, body.checkout-onepage-success .columns > .column.main, body[class*="customer-account-"] main#maincontent .columns > .column.main, .multishipping-checkout-login main#maincontent .columns > .column.main,
 	body.checkout-cart-index .banner-title-notfront	{ width:98%; }
 	.product-info-main .product-info-stock-sku { padding-left:0; }
+	.checkout-cart-index .page-main { padding:0; }
+	.checkout-cart-index .banner-title-notfront h1.page-title { font-size:36px; }
 	  
 
 
@@ -296,6 +298,11 @@
 	.cont-img-col { width: 45%; }
 	.cont-form-col { padding-left: 45%;  padding-right: 20px; }
 	.freeapp-col figure { margin-bottom:-44px; }
+	.cart-container { display: flex;  flex-direction: column; }
+	.cart-summary { width:100%; top:inherit !important; }
+	.abs-shopping-cart-items-desktop, .block-cart-failed, .cart-container .form-cart, .cart-container .cart-gift-item { width:100%; padding-right:0; margin-bottom:30px; }
+	.cart-discount { margin-bottom:25px; }
+	.cart-summary .checkout-methods-items .action.primary.checkout { width:auto; }
 	
 
       
