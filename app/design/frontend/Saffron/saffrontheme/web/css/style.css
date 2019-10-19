@@ -544,9 +544,10 @@ body[class*="customer-account-"] .header-sticky .logo-col img,
 .banner-notfront {
     float: left;
     width: 100%;
-	margin-top: -58px;
+	margin-top: -74px;
     position: relative;
 }
+.careers-page .banner-notfront { margin-top: -58px; }
 .banner-notfront img {
     width: 100%;
 }
