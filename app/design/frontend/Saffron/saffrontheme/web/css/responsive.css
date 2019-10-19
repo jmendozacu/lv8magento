@@ -236,6 +236,7 @@
 	  .cont-form-col {  padding-left: 40%;  padding-right: 30px; }
 	  .cont-img-col {  width: 40%; }
 	  .contact-form-inner { padding-top:10%; }
+	  .labs-about-brand h4 { font-size:24px; }
 	  
 
 
@@ -348,7 +349,7 @@
 	.page-header { border:none; }
 	.header, .cbdx-page.page-not-front .header { padding:15px 0; }
 	.navbar-col .bar-button {  margin-top:0px; }
-	.lv8-about-info .abtInfo h3{ font-size:20px; }
+	.lv8-about-info .abtInfo h3, .labs-page .lv8-about-info .abtInfo h3{ font-size:20px; }
 	.h2, h2 { font-size:30px; }
 	.cbd-info-bx h3 { font-size:26px; }
 	.title-col h2{ margin-bottom:20px; }
@@ -372,7 +373,7 @@
 	.theBrands-carousel {  margin: 40px 0 0; }
 	.theBrands-carousel .boxBrands img {  margin: 0 0 30px;  width: 120px;  }
 	.theBrands-carousel .boxBrands p { line-height: 22px; }
-	.theBrands-carousel .boxBrands{ padding: 30px 30px 60px;  background: rgba(255,255,255,0.8);  }
+	.theBrands-carousel .boxBrands{ padding: 30px 15px;  background: rgba(255,255,255,0.8);  }
 	.theBrands-carousel .caption { width:80%; }
 	.theBrands-carousel .owl-item .item >img { min-height: 400px; object-fit: cover; }
 	.brand-info figure img { max-width: 140px; }
