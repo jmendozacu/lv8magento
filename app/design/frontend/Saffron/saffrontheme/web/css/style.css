@@ -2164,7 +2164,8 @@ body.page-layout-1column .page-wrapper .header-sticky { height: 70px; }
 .checkout-onepage-success main#maincontent,
 body[class*="customer-account-"] main#maincontent,
 .multishipping-checkout-login main#maincontent,
-.contact-index-index main#maincontent { margin-top:110px; }
+.contact-index-index main#maincontent,
+.cms-careers main#maincontent { margin-top:110px; }
  
 .page-layout-1column-home .banner-breadcrumbs { margin-top: 0; }
 .cms-careers main#maincontent .banner-breadcrumbs { margin-top: -10px; }
