@@ -548,5 +548,8 @@
 	.product.media .fotorama__stage { width: 300px !important; height: 300px !important; }
 	.product.media .fotorama__active .fotorama__dot { background-color: #053052; border-color: #053052; }
 	.product.media .fotorama__dot { width:6px; height:6px; }
+	.catalog-product-view main#maincontent { margin-top: 70px; }
+	.catalog-product-view .banner-title-notfront h1.page-title {  font-size: 24px; margin-top: 20px; }
+	.product-reviews-summary .reviews-actions { margin-bottom: 30px; }
 	
 }
