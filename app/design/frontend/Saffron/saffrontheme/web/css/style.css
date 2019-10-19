@@ -2167,7 +2167,7 @@ body[class*="customer-account-"] main#maincontent,
 .careers-page main#maincontent { margin-top:110px; }
  
 .page-layout-1column-home .banner-breadcrumbs { margin-top: 0; }
-.careers-page main#maincontent .banner-breadcrumbs { margin-top: 0; }
+.careers-page main#maincontent .banner-breadcrumbs { margin-top: -10px; }
 .minicart-wrapper .action.showcart .counter.qty.empty { display:block; }
 .catalog-product-view .header.content,
 .checkout-cart-index .header.content { display: block; }

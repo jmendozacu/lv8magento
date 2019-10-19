@@ -220,8 +220,8 @@
       .cbdx-brand img { max-width:140px; }
       .footer-logo img {  width: 120px; }
       .learn-btn{ padding:15px 20px;  }
-      .craft-graybx .learn-btn {  margin: 0; }
       .craft-graybx h3 {  font-size: 26px; margin: 0 0 10px; }
+	  .craft-higher .craft-graybx { min-height: 40vh; }
       .news-featured h1, h1, h2, .worx-about-page h3,
 		#scroll-the-players >h3, .our-expertise h3	  { font-size: 36px; }
 		.expertise-info h5 { font-size:24px; }
@@ -365,7 +365,7 @@
 	.front-banner .owl-carousel .owl-nav button.owl-prev { top:initial; bottom:40px; margin:0;   }
 	p { font-size:16px; line-height:24px;  }
 	.labs-about-brand h4, .expertise-info h5{ font-size:20px; }
-	.craft-graybx h3, .worx-about-page .craft-graybx h3 { font-size: 24px;  margin: 0 0 10px; }
+	.craft-graybx h3, .worx-about-page .craft-graybx h3 { font-size: 22px;  margin: 0 0 10px; }
 	.learn-btn{ padding:15px; font-size:16px; }
 	.theBrands-carousel {  margin: 40px 0 0; }
 	.theBrands-carousel .boxBrands img {  margin: 0 0 30px;  width: 120px;  }
@@ -479,7 +479,7 @@
 	.minicart-wrapper .block-minicart:after { display:none; }
 	.page-layout-1column .page-wrapper .page-header { height:70px; margin-bottom:0; }
 	body.page-layout-1column .page-wrapper .header-sticky { height: 60px; }
-	.banner-breadcrumbs, .catalog-product-view .breadcrumbs, .checkout-cart-index main#maincontent, .checkout-index-index #maincontent.page-main, .checkout-onepage-success main#maincontent, body[class*="customer-account-"] main#maincontent, .multishipping-checkout-login main#maincontent, .careers-page main#maincontent { margin-top:70px; }
+	.banner-breadcrumbs, .catalog-product-view .breadcrumbs, .checkout-cart-index main#maincontent, .checkout-index-index #maincontent.page-main, .checkout-onepage-success main#maincontent, body[class*="customer-account-"] main#maincontent, .multishipping-checkout-login main#maincontent, .careers-page main#maincontent { margin-top:80px; }
 	.banner-notfront { margin-top:0px; }
 	.labs-page.page-front .columns,
 	.worx-page.page-front .columns,
@@ -507,5 +507,7 @@
 	.filter.active .filter-title strong:after { display:none; } 
 	.menu-item-front:after { content: ""; position: absolute; height: 35%; width: 100%; 
 		background: rgba(0, 0, 0, 0.3); left: 0; right: 0; }
- 
+	.open-positions { padding:40px 0; }
+	footer.page-footer {  padding: 50px 0 25px; }
+	.craft-graybx { padding:10% 20px; }
 }
