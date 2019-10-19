@@ -343,6 +343,11 @@
 	.container{ max-width:100%;}
 	.logo-col img { width:auto; height:30px; }
 	.lv8-page .logo-col img {  height: 30px; }
+	.cbdx-page .logo-col img, .catalog-product-view .logo-col img, .checkout-cart-index .logo-col img,
+	.checkout-onepage-success .logo-col img, body[class*="customer-account-"] .logo-col img,
+	.multishipping-checkout-login .logo-col img {
+		height: 40px;
+	}
 	.minicart-wrapper .action.showcart:before, .minicart-wrapper .action.showcart.active:before {
 		font-size:26px;
 	}
@@ -533,5 +538,15 @@
 	.stayUpdate-col .craft-graybx { padding-left:15px; padding-right:15px; }
 	.join-btn { padding:15px 20px; }
 	.stayUpdate-col .form-control { padding-right:85px; }
+	.action.primary, .review-form .action.submit.primary, button#product-addtocart-button { padding:17px 10px; }
+	.product.data.items { margin: 0; }
+	.product.data.items > .item.content {  padding: 20px; }
+	.product.data.items > .item.content { border-bottom:none; }
+	.product.data.items > .item.title > .switch { font-size:16px; }
+	
+	.product.media .fotorama__stage__shaft.fotorama__grab { width: 300px !important; }
+	.product.media .fotorama__stage { width: 300px !important; height: 300px !important; }
+	.product.media .fotorama__active .fotorama__dot { background-color: #053052; border-color: #053052; }
+	.product.media .fotorama__dot { width:6px; height:6px; }
 	
 }
