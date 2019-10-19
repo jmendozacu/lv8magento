@@ -17,6 +17,9 @@
             <block class="Magento\Framework\View\Element\Js\Cookie" name="js_cookies" template="Magento_Theme::js/cookie.phtml"/>
             <block class="Magento\Theme\Block\Html\Notices" name="global_notices" template="Magento_Theme::html/notices.phtml"/>
         </referenceContainer>
+		<referenceContainer name="content">
+        <block class="Magento\Framework\View\Element\Template" name="refresh.minicart" template="{vendor}_{module}::refreshMinicart.phtml"  />
+        </referenceContainer>
         <referenceBlock name="top.links">
             <block class="Magento\Theme\Block\Html\Header" name="header" as="header" before="-">
                 <arguments>
