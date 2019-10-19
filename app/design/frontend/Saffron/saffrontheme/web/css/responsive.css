@@ -484,7 +484,7 @@
 	.banner-breadcrumbs, .catalog-product-view .breadcrumbs, .checkout-cart-index main#maincontent, .checkout-index-index #maincontent.page-main, .checkout-onepage-success main#maincontent, body[class*="customer-account-"] main#maincontent, .multishipping-checkout-login main#maincontent {
 		margin-top:70px; 
 	}
-	.careers-page main#maincontent { margin-top:80px; }
+	.cms-careers main#maincontent { margin-top:80px; }
 	.banner-notfront { margin-top:0px; }
 	.labs-page.page-front .columns,
 	.worx-page.page-front .columns,
