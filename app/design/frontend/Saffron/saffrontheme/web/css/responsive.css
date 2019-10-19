@@ -246,6 +246,7 @@
 	.product-info-main .product-info-stock-sku { padding-left:0; }
 	.checkout-cart-index .page-main { padding:0; }
 	.checkout-cart-index .banner-title-notfront h1.page-title { font-size:36px; }
+	.cart-discount .block { width: 100%; max-width: 400px; }
 	  
 
 
@@ -562,5 +563,17 @@
 	.catalog-product-view main#maincontent { margin-top: 70px; }
 	.catalog-product-view .banner-title-notfront h1.page-title {  font-size: 24px; margin-top: 20px; }
 	.product-reviews-summary .reviews-actions { margin-bottom: 30px; }
+	.checkout-cart-index .banner-title-notfront h1.page-title { font-size:30px; }
+	.cart-discount .block { width: 100%; }
+	body.checkout-cart-index .banner-title-notfront { padding-top:12%; }
+	.cart-summary .checkout-methods-items .action.primary.checkout { font-size:18px; }
+	.column.main .cart-discount .block { margin-bottom: 40px; padding-top: 10px; }
+	.paypal-review-discount .fieldset, .cart-discount .fieldset { display: inherit; }
+	.cart-discount .actions-toolbar button.action.apply.primary { border-radius: 0; }
+	.cart-container { display: flex; flex-direction: column; }
+	.cart-summary { order:2; }
+	.cart-discount { border-bottom:none; }
+	.checkout-cart-index .product-image-photo { height:60px; }
+	.cart.table-wrapper .col.qty:before, .cart.table-wrapper .col.price:before, .cart.table-wrapper .col.subtotal:before, .cart.table-wrapper .col.msrp:before { text-align:left;}
 	
 }
