@@ -27,6 +27,7 @@ ul{ padding:0; }
     display: flex;
     align-items: center;
     justify-content: center;
+	margin:0;
 }
 .header {
     padding:0;
@@ -543,7 +544,7 @@ body[class*="customer-account-"] .header-sticky .logo-col img,
 .banner-notfront {
     float: left;
     width: 100%;
-	margin-top: -74px;
+	margin-top: -58px;
     position: relative;
 }
 .banner-notfront img {
