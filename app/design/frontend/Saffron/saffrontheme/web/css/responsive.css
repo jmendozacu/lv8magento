@@ -248,6 +248,8 @@
 	.checkout-cart-index .page-main { padding:0; }
 	.checkout-cart-index .banner-title-notfront h1.page-title { font-size:36px; }
 	.cart-discount .block { width: 100%; max-width: 400px; }
+	.banner-title-notfront h1 { font-size:50px; }
+	.cbd-info-section .container {  max-width: 100%; padding:0 5px;  }
 	  
 
 
@@ -405,7 +407,7 @@
 	.info-title-list li a br,
 	.cms-content h3 br { display: none;}
 	.cbdx-page.page-not-front .logo-col img { height:42px;}
-	.banefints-image-points {  margin: 40px auto; width:100%;  }
+	.banefints-image-points {  margin:0px auto 40px; width:100%;  }
 	.cbd-info-bx { margin-bottom: 30px;  }
 	.faqs-panel h4 { font-size:18px; }
 	.cms-title .title-left, .cms-title .logo-right { width:100%; }
@@ -442,7 +444,7 @@
 	.contact-form-inner h4 { font-size:20px; margin-bottom: 30px;  }
 	.contact-form-inner .form-group {  margin-bottom:40px;  }
 	.contact-form-inner .form-control { font-size:13px; }
-	.banner-title-notfront h1, h1, .owl-item-caption h1 { font-size:36px; line-height:normal; }
+	.banner-title-notfront h1, h1, .owl-item-caption h1 { font-size:32px; line-height:normal; }
 	
 	.owl-item-caption h1 br { display: none;   }
 	.owl-item-caption p { font-size: 26px; line-height: normal;  }
