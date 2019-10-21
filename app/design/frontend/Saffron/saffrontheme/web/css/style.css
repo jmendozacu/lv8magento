@@ -1287,7 +1287,8 @@ textarea{
     left: 0;
     top: 0;
 }
-.learn-more-link {
+.learn-more-link,
+.category-research .cbd-info-bx a  {
     color: #F57B3B;
     text-transform: uppercase;
     display: inline-block;
@@ -1295,7 +1296,8 @@ textarea{
     font-size: 15px;
     font-weight: 500;
 }
-.learn-more-link:hover {
+.learn-more-link:hover,
+.category-research .cbd-info-bx a:hover  {
     color:#000;
     text-decoration: underline;
 }
@@ -2742,29 +2744,25 @@ div#newsletter_pop_up {
     justify-content: center;
     opacity: 1;
 }
+.modal-slide .action-close:before { color: #4E5054; }
 .modal-slide .action-close:hover {  border: 2px solid #4E5054; }
 .modal-custom .action-close:before,
 .modal-popup .action-close:before,
 .modal-slide .action-close:before {
     font-weight: bold;
 }
-.modal-content {
-    border: none;
-}
+.modal-content { border: none; }
 footer.modal-footer button {
     background: #ee6839;
     color: #fff;
     border: none;
     padding: 12px 15px;
 }
-.modal-content p {
-    font-size: 16px;
-}
-.modal-inner-wrap .modal-content {
-    padding: 20px;
-}
+.modal-content p { font-size: 16px; }
+.modal-inner-wrap .modal-content { padding: 20px; }
 .modal-popup .modal-inner-wrap {
     width: 90%;
     max-width: 900px;
 }
 .learn-more-link:visited { color: #F57B3B; }
+
