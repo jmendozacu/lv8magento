@@ -595,7 +595,7 @@
 	.newspopup-body .news-control-field .actions button { min-width: inherit;  padding: 0; line-height: 18px; }
 	.newspopup-body .news-control-field input#newsletters { padding-left: 10px; }
 	.descount-model .b-close { top: 5px; right: 5px; }
-	.info-row-1 .cbd-info-bx { margin-left: 0; width: 100%; padding-right: 0; margin-bottom: 15px; }
+	.info-row-1 .cbd-info-bx { margin-left: 0; width: 100%; padding-right: 0; }
 	.cbd-info-row { margin: 0 0 40px; }
 	.cbd-info-title { margin-bottom:30px; }
 	.cbd-stay { padding:40px 0; }
