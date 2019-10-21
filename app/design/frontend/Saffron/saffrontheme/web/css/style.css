@@ -2617,15 +2617,17 @@ div#newsletter_pop_up {
     left: 50% !important;
     top: 50% !important;
     transform: translate(-50%, -50%);
-    background: #0079ae;
+    background-color: #0079ae;
     padding: 40px;
+    max-width: 900px;
+    width: 92%;
 }
 .newspopup-body .newsletter label {
-    font-size: 30px;
+    font-size: 40px;
     color: #fff;
     text-transform: uppercase;
-    line-height: 40px;
-    font-weight: 500;
+    line-height: normal;
+    font-weight: 600;
     margin-bottom: 30px;
 }
 .newspopup-body .newsletter h5 {
@@ -2714,4 +2716,11 @@ div#newsletter_pop_up {
     background: none;
     border: 2px solid #7c94a0;
     outline: none;
+}
+.content.newsletter-popup {
+    background-size: 33% 100%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    display: flex;
+    padding-left: 35%;
 }

@@ -575,5 +575,21 @@
 	.cart-discount { border-bottom:none; }
 	.checkout-cart-index .product-image-photo { height:60px; }
 	.cart.table-wrapper .col.qty:before, .cart.table-wrapper .col.price:before, .cart.table-wrapper .col.subtotal:before, .cart.table-wrapper .col.msrp:before { text-align:left;}
+	.content.newsletter-popup {
+		background-size: 33% 100%;
+		padding-left: 0;
+		background-size: auto 160px;
+		background-position: center bottom;
+		padding-bottom: 200px;
+	}
+	div#newsletter_pop_up { padding: 50px 10px 0; height: 94%; overflow-y: auto; }
+	.newspopup-body .newsletter label { font-size: 20px; margin: 0 0 10px; text-align: center;	}
+	.newspopup-body .newsletter h5 { font-size: 14px; line-height: 22px; margin-bottom: 15px; }
+	.newspopup-body .news-control-field { margin-bottom: 20px; }
+	.newspopup-body .news-control-field .actions { width: 70px; }
+	.newspopup-body .news-control-field .control { width: calc(100% - 70px); }
+	.newspopup-body .news-control-field .actions button { min-width: inherit;  padding: 0; line-height: 18px; }
+	.newspopup-body .news-control-field input#newsletters { padding-left: 10px; }
+	.descount-model .b-close { top: 5px; right: 5px; }
 	
 }
