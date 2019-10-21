@@ -2613,4 +2613,10 @@ aside.modal-popup.confirm._show header.modal-header {   border: none; }
 .catalog-category-view .product-content {  margin-top: 60px; }
 .block-actions.filter-actions .filter-clear { color: #F57B3B; font-weight: 500; text-decoration: underline; }
 .category-how-our-cbd-works .banner-title-notfront h1 { text-transform: capitalize; }
-
+div#newsletter_pop_up {
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%);
+    background: #0079ae;
+    padding: 40px;
+}
