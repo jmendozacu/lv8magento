@@ -2620,3 +2620,75 @@ div#newsletter_pop_up {
     background: #0079ae;
     padding: 40px;
 }
+
+.newspopup-body .custom-control-label::after {
+    width: 16px;
+    height: 16px;
+    left: -16px;
+    top: 1px;
+}
+.newspopup-body .custom-control-input:checked~.custom-control-label::before {
+	background-color: #edd93e;
+    border-color: #edd93e;
+}
+.newspopup-body .newsletter label {
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 40px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.newspopup-body .newsletter h5 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 35px;
+}
+.newspopup-body .news-control-field {
+    position: relative;
+    margin-bottom: 40px;
+    float: left;
+    width: 100%;
+}
+.newspopup-body .news-control-field .control {
+    width: calc(100% - 140px);
+    float: left;
+}
+.newspopup-body .news-control-field .actions {
+    width: 140px;
+    float: left;
+}
+.newspopup-body .news-control-field input#newsletters {
+    height: 58px;
+    border: none;
+    font-size: 16px;
+    padding-left: 20px;
+}
+.newspopup-body .subscribe-bottom {
+    float: left;
+    width: 100%;
+}
+.newspopup-body .news-control-field .actions button {
+    background: #edd93e;
+    border: 1px solid #fff;
+    border-left: none;
+    height: 58px;
+}
+.newspopup-body .subscribe-bottom label.custom-control-label,
+.newspopup-body .subscribe-bottom label.custom-control-label a {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.newspopup-body .subscribe-bottom label.custom-control-label a {
+    text-decoration: underline;
+}
+.newspopup-body .subscribe-bottom label.custom-control-label {
+    padding-left: 10px;
+}
+
+
