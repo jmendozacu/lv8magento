@@ -2724,3 +2724,4 @@ div#newsletter_pop_up {
     display: flex;
     padding-left: 35%;
 }
+.stayUpdate-col .craft-graybx { min-height: inherit; }

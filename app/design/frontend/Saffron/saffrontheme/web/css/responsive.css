@@ -221,6 +221,7 @@
 	.footer-logo img {  width: 120px; }
 	.learn-btn{ padding:15px 20px; max-width:220px;  }
 	.craft-graybx h3 {  font-size: 26px; margin: 0 0 10px; }
+	.stay-updated .craft-graybx h3 { font-size:35px; }
 	.craft-higher .craft-graybx { min-height: 40vh; }
 	.news-featured h1, h1, h2, .worx-about-page h3,
 	#scroll-the-players >h3, .our-expertise h3	  { font-size: 36px; }
@@ -372,7 +373,7 @@
 	.navbar-col .bar-button {  margin-top:0px; }
 	.lv8-about-info .abtInfo h3, .labs-page .lv8-about-info .abtInfo h3{ font-size:20px; }
 	.h2, h2 { font-size:30px; }
-	.cbd-info-bx h3 { font-size:26px; }
+	.cbd-info-bx h3 { font-size:24px; }
 	.title-col h2{ margin-bottom:20px; }
 	.family-brand a{ background: rgba(255,255,255,0.8);  }
 	.family-brand { width:80%; }
@@ -484,7 +485,7 @@
 	.point-5 .point-body { top:58%; }
 	.point-6 .point-circle { top: 78%; left: 82%; transform: translate(-82%, -78%);	}
 	.point-6 .point-body { top:81%; }
-	.featured-products { margin-top: 50px; }
+	.featured-products { margin-top: 10px; }
 	.free-app { padding: 20px 0 0; }
 	.appstore-col a { margin: 0 3px 20px; }
 	.theBrands-carousel .owl-carousel .owl-nav button.owl-next { right:0; }
@@ -545,9 +546,10 @@
 	#scroll-the-players >h3 { margin-bottom:8%; }
 	.our-expertise figure { width:45px;}
 	.our-expertise .expertise-info { width:calc(100% - 45px); }
-	.featured-products h2 { font-size:30px; }
+	.featured-products h2 { font-size:30px; margin-bottom:10px; }
+	.stay-updated .craft-graybx h3 {  font-size: 30px; }
 	.our-craft .craft-box-row { margin-bottom:0; }
-	.stayUpdate-col .craft-graybx { padding-left:15px; padding-right:15px; }
+	.stayUpdate-col .craft-graybx { padding-left:0px; padding-right:0px; }
 	.join-btn { padding:15px 20px; }
 	.stayUpdate-col .form-control { padding-right:85px; }
 	.action.primary, .review-form .action.submit.primary, button#product-addtocart-button { padding:17px 10px; }
@@ -591,5 +593,9 @@
 	.newspopup-body .news-control-field .actions button { min-width: inherit;  padding: 0; line-height: 18px; }
 	.newspopup-body .news-control-field input#newsletters { padding-left: 10px; }
 	.descount-model .b-close { top: 5px; right: 5px; }
+	.info-row-1 .cbd-info-bx { margin-left: 0; width: 100%; padding-right: 0; margin-bottom: 15px; }
+	.cbd-info-row { margin: 0 0 40px; }
+	.cbd-info-title { margin-bottom:30px; }
+	.cbd-stay { padding:40px 0; }
 	
 }
