@@ -2725,7 +2725,8 @@ div#newsletter_pop_up {
     padding-left: 35%;
 }
 .stayUpdate-col .craft-graybx { min-height: inherit; }
-.modal-slide .action-close {
+.modal-slide .action-close,
+.modal-slide .action-close:focus {
     position: absolute;
     top: 6px;
     right: 6px;
