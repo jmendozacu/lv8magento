@@ -250,7 +250,7 @@
 	.cart-discount .block { width: 100%; max-width: 400px; }
 	.banner-title-notfront h1 { font-size:50px; }
 	.cbd-info-section .container {  max-width: 100%; padding:0 5px;  }
-	  
+	.faqs-content { padding: 0 25px; }  
 
 
 }
@@ -508,7 +508,8 @@
 	.page-layout-1column .page-wrapper .page-header { height:70px; margin-bottom:0; }
 	body.page-layout-1column .page-wrapper .header-sticky { height: 60px; }
 	.banner-breadcrumbs, .catalog-product-view .breadcrumbs, .checkout-cart-index main#maincontent, .checkout-index-index #maincontent.page-main, .checkout-onepage-success main#maincontent, body[class*="customer-account-"] main#maincontent, .multishipping-checkout-login main#maincontent,
-	.contact-index-index main#maincontent	{
+	.contact-index-index main#maincontent, 
+	.cms-cbdx-science-of-cannabis- main#maincontent	{
 		margin-top:70px; 
 	}
 	.cms-careers main#maincontent { margin-top:80px; }
@@ -604,5 +605,6 @@
 	.modal-popup._inner-scroll .modal-content {  overflow-y: auto;  height: 90vh; border-radius: 0; }
 	table th, table td { font-size: 14px; }
 	.modal-content p { font-size: 15px; }
-	
+	.science-container { padding-top:40px; }
+	.faqs-content { margin-top:10px; }
 }

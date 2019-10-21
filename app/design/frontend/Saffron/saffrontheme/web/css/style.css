@@ -9,7 +9,7 @@ body{
 h1 { font-size:46px;}
 h1, .h1, h2, .h2, h3, .h3, h4 { color:#4E4F53; line-height: normal;  font-weight:600; font-family: 'Montserrat', sans-serif; }
 h1, .h1, h2, .h2, h3 { font-size:55px; color:#4E4F53; }
-p{ font-size:18px; line-height:26px; color:#4E4F53; font-family: 'Montserrat', sans-serif;  }
+p{ font-size:18px; line-height:26px; color:#4E4F53; font-family: 'Montserrat', sans-serif; margin-bottom:16px;  }
 li { list-style:none;}
 a, a:hover{ text-decoration:none; }
 ul{ padding:0; }
@@ -2167,7 +2167,8 @@ body.page-layout-1column .page-wrapper .header-sticky { height: 70px; }
 body[class*="customer-account-"] main#maincontent,
 .multishipping-checkout-login main#maincontent,
 .contact-index-index main#maincontent,
-.cms-careers main#maincontent { margin-top:110px; }
+.cms-careers main#maincontent,
+.news-index-index main#maincontent { margin-top:110px; }
  
 .page-layout-1column-home .banner-breadcrumbs { margin-top: 0; }
 .cms-careers main#maincontent .banner-breadcrumbs { margin-top: -10px; }
@@ -2765,4 +2766,14 @@ footer.modal-footer button {
     max-width: 900px;
 }
 .learn-more-link:visited { color: #F57B3B; }
-
+.science-container .cms-title h1 {  margin-bottom: 10px; }
+.cms-cbdx-science-of-cannabis- main#maincontent {  margin-top: 110px; }
+.cms-cbdx-science-of-cannabis-  .breadcrumbs { display: none; }
+.news-featured h1 {
+    font-size: 55px;
+    margin-top: 40px;
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 14px;
+    height: 14px;
+}
