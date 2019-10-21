@@ -1357,8 +1357,7 @@ textarea{
     background: #ee6839;
     color: #fff;
 }
-
-tbody tr td:first-child {
+.dosing-chart-table table tbody tr td:first-child {
     background: #45464a;
     color: #fff;
 }
@@ -1368,6 +1367,7 @@ tbody tr td:first-child {
 .dosing-chart-table .table td,
 .dosing-chart-table .table th {
     border: 1px solid #ddd;
+	padding: 15px 10px;
 }
 .dosing-chart-table {
     margin: 25px 0 15px;
@@ -2725,3 +2725,43 @@ div#newsletter_pop_up {
     padding-left: 35%;
 }
 .stayUpdate-col .craft-graybx { min-height: inherit; }
+.modal-slide .action-close {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    color: #4E5054;
+    border: 2px solid #4E5054;
+    line-height: normal;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+.modal-custom .action-close:before,
+.modal-popup .action-close:before,
+.modal-slide .action-close:before {
+    font-weight: bold;
+}
+.modal-content {
+    border: none;
+}
+footer.modal-footer button {
+    background: #ee6839;
+    color: #fff;
+    border: none;
+    padding: 12px 15px;
+}
+.modal-content p {
+    font-size: 16px;
+}
+.modal-inner-wrap .modal-content {
+    padding: 20px;
+}
+.modal-popup .modal-inner-wrap {
+    width: 90%;
+    max-width: 900px;
+}

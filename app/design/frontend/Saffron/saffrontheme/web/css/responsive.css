@@ -599,5 +599,10 @@
 	.cbd-info-row { margin: 0 0 40px; }
 	.cbd-info-title { margin-bottom:30px; }
 	.cbd-stay { padding:40px 0; }
+	.process-bx h3 { font-size:30px; }
+	.cbd-info-bx h4 { font-size:16px; }
+	.modal-popup._inner-scroll .modal-content {  overflow-y: auto;  height: 90vh; border-radius: 0; }
+	table th, table td { font-size: 14px; }
+	.modal-content p { font-size: 15px; }
 	
 }
