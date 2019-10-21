@@ -22,32 +22,40 @@ $background = $mediaUrl.'logo/'. $block->getConfig('background');
             method="post"
             data-mage-init='{"validation": {"errorClass": "mage-error"}}'
             id="newsletter-validate-details">
-			<div class="title"><strong><?php echo $title; ?></strong></div>
-			<span class="b-close">
-				<!--<img src="<?php echo $mediaUrl; ?>themeimage/close-icon.png">-->
-				<i class="fa fa-times"></i>
-			</span>
-			<div class="newspopup-body">
-				<div class="field newsletter">
-					<label class="label" for="newsletter"><span><?php echo $content; ?></span></label>
-					<div class="news-control-field">
-						<div class="control">
-								<input name="email" type="email" id="newsletters"
-									placeholder="<?php /* @escapeNotVerified */ echo __('Enter your email address') ?>"
-									data-validate="{required:true, 'validate-email':true}"/>
+			<div class="descount-model">
+				<div class="title"><strong><?php echo $title; ?></strong></div>
+				<span class="b-close">
+					<!--<img src="<?php echo $mediaUrl; ?>themeimage/close-icon.png">-->
+					<i class="fa fa-times"></i>
+				</span>
+				<div class="newspopup-body">
+					<div class="popup-img-field">
+						<img src="<?php echo $mediaUrl; ?>themeimage/popup-image.png">
+					</div>
+					<div class="descount-field">
+						<div class="field newsletter">
+							<label class="label" for="newsletter"><span><?php echo $content; ?></span></label>
+							<div class="news-control-field">
+								<div class="control">
+										<input name="email" type="email" id="newsletters"
+											placeholder="<?php /* @escapeNotVerified */ echo __('Enter your email address') ?>"
+											data-validate="{required:true, 'validate-email':true}"/>
+								</div>
+								 <div class="actions">
+									<button class="action subscribe primary" title="<?php /* @escapeNotVerified */ echo __('Sign up!') ?>" type="submit">
+										<span><?php /* @escapeNotVerified */ echo __('Sign up!') ?></span>
+									</button>
+								</div>
+							</div>
 						</div>
-						 <div class="actions">
-							<button class="action subscribe primary" title="<?php /* @escapeNotVerified */ echo __('Sign up!') ?>" type="submit">
-								<span><?php /* @escapeNotVerified */ echo __('Sign up!') ?></span>
-							</button>
+						<div class="subscribe-bottom">
+							<div class="custom-control custom-radio">
+							<input type="radio" class="custom-control-input" id="newsletter_popup_dont_show_again">
+							<label class="custom-control-label" for="newsletter_popup_dont_show_again">By joining, I accept Jerome Alexander’s <a href="<?php echo $this->getUrl('terms-conditions/');?>">Terms & Conditions</a> and agree to receive Jerome Alexander’s marketing emails. You may unsubscribe at anytime.</label>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="subscribe-bottom">
-					<div class="custom-control custom-radio">
-					<input type="radio" class="custom-control-input" id="newsletter_popup_dont_show_again">
-					<label class="custom-control-label" for="newsletter_popup_dont_show_again">By joining, I accept Jerome Alexander’s <a href="<?php echo $this->getUrl('terms-conditions/');?>">Terms & Conditions</a> and agree to receive Jerome Alexander’s marketing emails. You may unsubscribe at anytime.</label>
-					</div>
+					
 				</div>
 			</div>
         </form>
