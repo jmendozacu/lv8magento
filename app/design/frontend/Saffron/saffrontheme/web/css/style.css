@@ -190,7 +190,7 @@ button:focus{ outline:none; }
     font-size: 32px;
     margin:15px 0 0; 
 }
-.lv8-page .owl-item-caption h1 {
+.lv8-page .owl-item-caption .h1 {
     font-weight: 700;
 }
 

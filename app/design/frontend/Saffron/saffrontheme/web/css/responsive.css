@@ -5,7 +5,7 @@
       .banner-title-notfront h1 {  font-size: 75px; }
       .lv8-about-info .abtInfo p{ font-size:20px; line-height:30px; }
       .process-bx ul, .cbd-info-bx ul  {  column-count:2;   -webkit-column-count:2;  }
-      .lv8-page .owl-item-caption h1{ font-size:100px; font-weight:700;  }
+      .lv8-page .owl-item-caption .h1{ font-size:100px; font-weight:700;  }
       .owl-item-caption h1{ font-size:75px; }
       .craft-box-row, .cbd-info-row .left-col, .cbd-info-bx { display: flex; display: -webkit-flex; }
       .craft-higher .left-col, .brand-2 .left-col,
@@ -175,7 +175,7 @@
 }
 
 @media (min-width: 1600px) {
-      .lv8-page .owl-item-caption h1, .owl-item-caption h1 { font-size:100px; }
+      .lv8-page .owl-item-caption .h1, .owl-item-caption .h1 { font-size:100px; }
       .owl-item-caption p { font-size:40px; }
       .owl-item-caption { max-width: 1340px;  }
 	  .menu-parent li{ padding-top:16px; padding-bottom:16px; }
@@ -323,6 +323,9 @@
 	.cart-summary { padding: 10px 30px 40px; }
 	body.checkout-index-index .checkout-header { padding:0; }
 	body.checkout-index-index .checkout-block { margin-bottom:30px; }
+	body[class*="customer-account-"] .banner-title-notfront, .multishipping-checkout-login .banner-title-notfront {
+		width:98%; 
+	}
       
 
 }
@@ -478,7 +481,7 @@
 	.contact-form-inner h4 { font-size:20px; margin-bottom: 30px;  }
 	.contact-form-inner .form-group {  margin-bottom:40px;  }
 	.contact-form-inner .form-control { font-size:13px; }
-	.banner-title-notfront h1, h1, .owl-item-caption h1 { font-size:32px; line-height:normal; }
+	.banner-title-notfront h1,  .h1, h1, .owl-item-caption h1 { font-size:32px; line-height:normal; }
 	
 	.owl-item-caption h1 br { display: none;   }
 	.owl-item-caption p { font-size: 26px; line-height: normal;  }
@@ -656,5 +659,10 @@
 	.checkout-success .actions-toolbar {  margin-top: 20px; }
 	.checkout-onepage-success .banner-title-notfront { width:100%; }
 	.checkout-onepage-success .banner-title-notfront h1.page-title { font-size:28px; }
+	body[class*="customer-account-"] .banner-title-notfront, .multishipping-checkout-login .banner-title-notfront {
+		width:100%; 
+	}
+	body[class*="customer-account-"] .banner-title-notfront h1.page-title, .multishipping-checkout-login .banner-title-notfront h1.page-title { font-size:28px; }
+	.block-minicart .subtotal span.label { font-size: 14px; }
 	
 }
