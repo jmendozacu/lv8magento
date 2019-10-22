@@ -651,5 +651,6 @@
 	.fieldset.address { margin:0; }
 	.fieldset.address > .field { padding:0 12px; }
 	.checkout-index-index .opc-wrapper.am-opc-wrapper .payment-method-content .primary {  padding-right: 15px; }
+	.authentication-dropdown .modal-inner-wrap .modal-content { padding:0; }
 	
 }
