@@ -12,6 +12,11 @@
 
 ?>
 
+<div class="news-detail-container">
+<div class="news-detail-banner">
+	<img src="<?php echo $this->getMediaUrl().$NewsDetail[0]['thumbnail'];?>" alt="" class="img-fluid">
+</div>
+
 <div class="news-detail-info">
 	<div class="news-detail-title">
 		<?php echo $NewsDetail[0]['post_title']; ?>
@@ -20,7 +25,5 @@
 		<?php echo $NewsDetail[0]['full_content']; ?> 
 	</div>
 </div>
-<div class="news-detail-banner">
-	<img src="<?php echo $this->getMediaUrl().$NewsDetail[0]['thumbnail'];?>" alt="" class="img-fluid">
-</div>
 
+</div>
