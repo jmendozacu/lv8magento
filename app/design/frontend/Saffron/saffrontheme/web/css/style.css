@@ -2796,3 +2796,9 @@ footer.modal-footer button {
     color: #000;
     margin-bottom: 15px;
 }
+.cart-empty a {
+    color: #F57B3B;
+    text-decoration: underline;
+}
+.popup-img-field {  display: none; }
+.checkout-payment-method .payment-option-title { padding-top:0; }

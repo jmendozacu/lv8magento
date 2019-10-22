@@ -321,6 +321,7 @@
 	.cms-page-view .columns .breadcrumbs ul.items { width: 100%; }
 	.cart-summary { padding: 10px 30px 40px; }
 	body.checkout-index-index .checkout-header { padding:0; }
+	body.checkout-index-index .checkout-block { margin-bottom:30px; }
       
 
 }
@@ -375,9 +376,9 @@
 	body[class*="customer-account-"] .logo-col img,
 	.multishipping-checkout-login .logo-col img,
 	.checkout-index-index header.header .header.content >a img	{
-		height: 42px;
+		height: 46px;
 	}
-	.checkout-index-index header.header.header-sticky .header.content >a img { height: 42px;}
+	.checkout-index-index header.header.header-sticky .header.content >a img { height: 40px;}
 	.checkout-index-index header.header .header.content .minicart-wrapper { margin-right:115px; }
 	.checkout-index-index #checkout.am-checkout { padding:0; }
 	.checkout-index-index .authentication-wrapper { margin:0; }
@@ -386,8 +387,11 @@
 	.opc-wrapper .methods-shipping { padding-top:0; }
 	.checkout-payment-method .payment-methods .actions-toolbar .primary { margin-top:20px; }
 	.opc-wrapper .form-login, .opc-wrapper .form-shipping-address, .opc-wrapper .methods-shipping {
-		margin:0; padding:0; 
+		margin:0; padding:0; background:none;
 	}
+	.opc-wrapper .form-login { margin-top: 20px; }
+	.opc-wrapper .form-login .fieldset .note, .opc-wrapper .form-shipping-address .fieldset .note { margin-bottom:10px;}
+	.checkout-payment-method .billing-address-same-as-shipping-block { padding:0 15px;}
 	
 	.minicart-wrapper .action.showcart:before, .minicart-wrapper .action.showcart.active:before {
 		font-size:26px;
@@ -640,5 +644,10 @@
 	.news-detail-container { margin: 30px auto 50px;  width: 100%; }
 	.family-brand img { margin-bottom:20px; }
 	.family-brand a { padding-left:15px; padding-right:15px; }
+	body.checkout-cart-index .column.main {  padding-bottom: 40px; }
+	body.checkout-index-index .column.main { width: 100%; }
+	.fieldset.address { margin:0; }
+	.fieldset.address > .field { padding:0 12px; }
+	.checkout-index-index .opc-wrapper.am-opc-wrapper .payment-method-content .primary {  padding-right: 15px; }
 	
 }
