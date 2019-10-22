@@ -386,7 +386,7 @@
 	.cbd-info-bx h3 { font-size:24px; }
 	.title-col h2{ margin-bottom:20px; }
 	.family-brand a{ background: rgba(255,255,255,0.8);  }
-	.family-brand { width:80%; }
+	.family-brand { width:84%; }
 	.family-brand img { max-width:120px;}
 	.cbdx-brand img{ max-width:110px;}
 	.family-brand figure{ margin-bottom:25px; }
@@ -618,5 +618,7 @@
 	.faqs-content { margin-top:10px; }
 	.brand-row { margin-bottom: 30px; text-align: center; }
 	.news-detail-container { margin: 30px auto 50px;  width: 100%; }
+	.family-brand img { margin-bottom:20px; }
+	.family-brand a { padding-left:15px; padding-right:15px; }
 	
 }

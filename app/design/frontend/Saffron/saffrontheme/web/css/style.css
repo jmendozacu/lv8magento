@@ -619,6 +619,7 @@ body[class*="customer-account-"] .header-sticky .logo-col img,
     align-items: center;
     justify-content: center;
     text-align: center;
+	flex-direction: column;
 }
 .cbdx-brand a {
     padding: 12% 30px;
@@ -626,7 +627,9 @@ body[class*="customer-account-"] .header-sticky .logo-col img,
 .family-brand img{
     max-width: 262px;
     width:100%;
+	margin-bottom: 40px;
 }
+.family-brand span {color: #4E4F53;font-size: 22px;font-weight: 500;}
 .cbdx-brand img {
     max-width: 200px;
 }
