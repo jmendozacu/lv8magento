@@ -41,6 +41,7 @@
 	  .craft-higher .craft-graybx{ margin-right: -15%; }
       .craft-research .craft-graybx{ margin-left: -15%; }
 	  .craft-img-col img{ min-height: 579px; object-fit: cover; }
+	  .news-featured .craft-img-col img { min-height:inherit; }
 	  .cbd-info-row figure img {  min-height: 544px; object-fit: cover; }
 	  .page-layout-1column.page-with-filter .column.main { padding-top:0; padding-bottom:0; }
 	  .navigation, .page-header .header.panel, .header.content, .footer.content, .page-wrapper > .widget, .page-wrapper > .page-bottom, .block.category.event, .top-container, .page-main {
