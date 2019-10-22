@@ -533,13 +533,18 @@ button:focus{ outline:none; }
 body[class*="customer-account-"] .logo-col img,
 .multishipping-checkout-login .logo-col img {   height: 70px; }
 
-.page-layout-1column .header-sticky img { height: 35px; }
-.checkout-index-index.page-layout-1column .header-sticky img,
-.cbdx-page.page-layout-1column .header-sticky .logo-col img,
-.cbdx-page.page-layout-1column .header-sticky .logo-col img,
-.checkout-onepage-success .header-sticky .logo-col img,
-body[class*="customer-account-"] .header-sticky .logo-col img,
-.multishipping-checkout-login .header-sticky .logo-col img   { height:50px; }
+.lv8-page.page-layout-1column .header-sticky img,
+.labs-page.page-layout-1column .header-sticky img,
+.worx-page.page-layout-1column .header-sticky img { height: 35px; }
+
+.page-layout-1column .header-sticky img { height: 50px; }
+
+/* .checkout-index-index.page-layout-1column .header-sticky img, */
+/* .cbdx-page.page-layout-1column .header-sticky .logo-col img, */
+/* .cbdx-page.page-layout-1column .header-sticky .logo-col img, */
+/* .checkout-onepage-success .header-sticky .logo-col img, */
+/* body[class*="customer-account-"] .header-sticky .logo-col img, */
+/* .multishipping-checkout-login .header-sticky .logo-col img   { height:50px; } */
 
 .banner-notfront {
     float: left;

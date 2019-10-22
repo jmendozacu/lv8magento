@@ -539,7 +539,7 @@
 	.minicart-wrapper .block-minicart:before,
 	.minicart-wrapper .block-minicart:after { display:none; }
 	.page-layout-1column .page-wrapper .page-header { height:70px; margin-bottom:0; }
-	body.page-layout-1column .page-wrapper .header-sticky { height: 60px; }
+	body.page-layout-1column .page-wrapper .header-sticky { height: 50px; }
 	.banner-breadcrumbs, .catalog-product-view .breadcrumbs, .checkout-cart-index main#maincontent, 
 	.checkout-index-index #maincontent.page-main, .checkout-onepage-success main#maincontent, body[class*="customer-account-"] main#maincontent, .multishipping-checkout-login main#maincontent,
 	.contact-index-index main#maincontent, 
