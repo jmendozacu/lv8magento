@@ -2169,7 +2169,8 @@ body[class*="customer-account-"] main#maincontent,
 .contact-index-index main#maincontent,
 .cms-careers main#maincontent,
 .news-index-index main#maincontent,
-.cms-page-view main#maincontent { margin-top:110px; }
+.cms-page-view main#maincontent,
+.news-index-detail main#maincontent { margin-top:110px; }
 
  
 .page-layout-1column-home .banner-breadcrumbs { margin-top: 0; }
@@ -2778,3 +2779,16 @@ footer.modal-footer button {
 .owl-theme .owl-dots .owl-dot span { width: 14px; height: 14px; }
 .cms-page-view .page-wrapper > .breadcrumbs { display: none; }
 .cms-page-view .columns .breadcrumbs { max-width:1600px;  }
+.news-detail-container {
+    max-width: 1600px;
+    width: 92%;
+    margin: 60px auto 70px;
+    padding: 0 15px;
+}
+.news-detail-info {  margin-bottom: 30px; }
+.news-detail-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 15px;
+}
