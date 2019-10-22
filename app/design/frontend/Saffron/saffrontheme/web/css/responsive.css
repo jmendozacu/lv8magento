@@ -98,6 +98,7 @@
 		.page.messages {  max-width: 1600px;  width: 94%;  margin: 0 auto; }
 		form.form-create-account .fieldset:nth-of-type(1) { margin-bottom: 60px; }
 		.checkout-onepage-success .table .col {  min-width: 160px; }
+		.columns .breadcrumbs { max-width:1600px; }
 		
       
  

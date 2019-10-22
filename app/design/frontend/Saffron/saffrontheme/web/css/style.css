@@ -2168,7 +2168,9 @@ body[class*="customer-account-"] main#maincontent,
 .multishipping-checkout-login main#maincontent,
 .contact-index-index main#maincontent,
 .cms-careers main#maincontent,
-.news-index-index main#maincontent { margin-top:110px; }
+.news-index-index main#maincontent,
+.cms-page-view main#maincontent { margin-top:110px; }
+
  
 .page-layout-1column-home .banner-breadcrumbs { margin-top: 0; }
 .cms-careers main#maincontent .banner-breadcrumbs { margin-top: -10px; }
@@ -2773,7 +2775,6 @@ footer.modal-footer button {
     font-size: 55px;
     margin-top: 40px;
 }
-.owl-theme .owl-dots .owl-dot span {
-    width: 14px;
-    height: 14px;
-}
+.owl-theme .owl-dots .owl-dot span { width: 14px; height: 14px; }
+.cms-page-view .page-wrapper > .breadcrumbs { display: none; }
+
