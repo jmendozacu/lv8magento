@@ -2172,7 +2172,8 @@ body[class*="customer-account-"] main#maincontent,
 .cms-careers main#maincontent,
 .news-index-index main#maincontent,
 .cms-page-view main#maincontent,
-.news-index-detail main#maincontent { margin-top:110px; }
+.news-index-detail main#maincontent,
+.page-wrapper > .banner-breadcrumbs { margin-top:110px; }
 
  
 .page-layout-1column-home .banner-breadcrumbs { margin-top: 0; }
