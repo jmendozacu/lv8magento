@@ -2777,4 +2777,4 @@ footer.modal-footer button {
 }
 .owl-theme .owl-dots .owl-dot span { width: 14px; height: 14px; }
 .cms-page-view .page-wrapper > .breadcrumbs { display: none; }
-
+.cms-page-view .columns .breadcrumbs { max-width:1600px;  }

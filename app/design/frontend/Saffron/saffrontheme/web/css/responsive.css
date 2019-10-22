@@ -98,7 +98,7 @@
 		.page.messages {  max-width: 1600px;  width: 94%;  margin: 0 auto; }
 		form.form-create-account .fieldset:nth-of-type(1) { margin-bottom: 60px; }
 		.checkout-onepage-success .table .col {  min-width: 160px; }
-		.columns .breadcrumbs { max-width: 100%; padding-left: 0; padding-right: 0; }
+		
 		
       
  
@@ -272,6 +272,7 @@
 	.point-6 .point-circle { top: 78%; left: 66%; transform: translate(-66%, -78%);	}
 	.point-6 .point-body { top:70%; right:0; }
 	.menu-parent li { padding-top:15px; padding-bottom:15px; }
+	.cms-page-view .columns .breadcrumbs ul.items { width: 100%; }
 	
 }
 
@@ -314,6 +315,7 @@
 	.news-featured .craft-graybx { padding:5%; }
 	.news-featured .craft-graybx h3 { font-size:22px; }
 	.news-featured .craft-graybx .learn-btn { margin-top:5px; }
+	.cms-page-view .columns .breadcrumbs ul.items { width: 100%; }
       
 
 }
