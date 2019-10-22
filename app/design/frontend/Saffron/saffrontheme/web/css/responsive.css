@@ -98,7 +98,7 @@
 		.page.messages {  max-width: 1600px;  width: 94%;  margin: 0 auto; }
 		form.form-create-account .fieldset:nth-of-type(1) { margin-bottom: 60px; }
 		.checkout-onepage-success .table .col {  min-width: 160px; }
-		.columns .breadcrumbs { max-width:1600px; }
+		.columns .breadcrumbs { max-width: 100%; padding-left: 0; padding-right: 0; }
 		
       
  
@@ -514,7 +514,8 @@
 	body.page-layout-1column .page-wrapper .header-sticky { height: 60px; }
 	.banner-breadcrumbs, .catalog-product-view .breadcrumbs, .checkout-cart-index main#maincontent, .checkout-index-index #maincontent.page-main, .checkout-onepage-success main#maincontent, body[class*="customer-account-"] main#maincontent, .multishipping-checkout-login main#maincontent,
 	.contact-index-index main#maincontent, 
-	.cms-cbdx-science-of-cannabis- main#maincontent	{
+	.cms-cbdx-science-of-cannabis- main#maincontent,
+	.cms-page-view main#maincontent	{
 		margin-top:70px; 
 	}
 	.cms-careers main#maincontent { margin-top:80px; }
