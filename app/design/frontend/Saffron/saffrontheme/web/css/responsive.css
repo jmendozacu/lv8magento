@@ -369,16 +369,20 @@
 	.menu-inner .logo-brand { margin-bottom:20px; }
 	.menu-inner, .menu-col-main ul { padding:20px 12px; }
 	.container{ max-width:100%;}
-	.logo-col img { width:auto; height:26px; }
-	.lv8-page .logo-col img {  height: 26px; }
+	.logo-col img { width:auto; height:30px; }
+	.lv8-page .logo-col img {  height: 30px; }
+	
 	.cbdx-page .logo-col img, .catalog-product-view .logo-col img, .checkout-cart-index .logo-col img,
 	.checkout-onepage-success .logo-col img,
 	body[class*="customer-account-"] .logo-col img,
 	.multishipping-checkout-login .logo-col img,
-	.checkout-index-index header.header .header.content >a img	{
+	.checkout-index-index header.header .header.content >a img,
+	.cbdx-page.page-not-front .logo-col img	{
 		height: 46px;
 	}
-	.checkout-index-index header.header.header-sticky .header.content >a img { height: 40px;}
+	.lv8-page.page-layout-1column .header-sticky img,
+	.labs-page.page-layout-1column .header-sticky img,
+	.worx-page.page-layout-1column .header-sticky img { height: 30px; }
 	.checkout-index-index header.header .header.content .minicart-wrapper { margin-right:115px; }
 	.checkout-index-index #checkout.am-checkout { padding:0; }
 	.checkout-index-index .authentication-wrapper { margin:0; }
@@ -436,7 +440,6 @@
 	.info-title-list li a{ font-weight:500; }
 	.info-title-list li a br,
 	.cms-content h3 br { display: none;}
-	.cbdx-page.page-not-front .logo-col img { height:42px;}
 	.banefints-image-points {  margin:0px auto 40px; width:100%;  }
 	.cbd-info-bx { margin-bottom: 30px;  }
 	.faqs-panel h4 { font-size:18px; }
@@ -560,7 +563,6 @@
 	.stories-carousel .customer-caption h5 { font-size:16px; }
 	.page-front .header { padding: 20px 0; }
 	.front-banner .item { height: 100vh !important; }
-	.page-layout-1column .header-sticky img { height: 22px; }
 	.freeapp-col {  flex-direction: column; text-align: center; }
 	.app-info {padding: 10px 0 20px; }
 	.freeapp-col figure { order: 2; }
