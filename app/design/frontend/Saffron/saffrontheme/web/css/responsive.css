@@ -308,7 +308,10 @@
 	.cart-discount { margin-bottom:25px; }
 	.cart-summary .checkout-methods-items .action.primary.checkout { width:auto; }
 	.brand-row {  margin-bottom: 60px; }
-
+	.news-featured .craft-graybx { width:100%; }
+	.news-featured .craft-graybx { padding:5%; }
+	.news-featured .craft-graybx h3 { font-size:22px; }
+	.news-featured .craft-graybx .learn-btn { margin-top:5px; }
       
 
 }
