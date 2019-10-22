@@ -2,14 +2,25 @@
 <?php  $NewsDetail =  $NewsDetail->getData();
 
 
-echo $NewsDetail[0]['post_title'].'<br>';
-echo $NewsDetail[0]['thumbnail'].'<br>';
-echo $NewsDetail[0]['url_key'].'<br>';
-echo $NewsDetail[0]['categories'].'<br>';
-echo $NewsDetail[0]['video_url'].'<br>';
-echo $NewsDetail[0]['full_content'];
+//echo $NewsDetail[0]['post_title'].'<br>';
+//echo $NewsDetail[0]['thumbnail'].'<br>';
+//echo $NewsDetail[0]['url_key'].'<br>';
+//echo $NewsDetail[0]['categories'].'<br>';
+//echo $NewsDetail[0]['video_url'].'<br>';
+//echo $NewsDetail[0]['full_content'];
 
 
 ?>
 
-<img src="<?php echo $this->getMediaUrl().$NewsDetail[0]['thumbnail'];?>" alt="" class="img-fluid">
+<div class="news-detail-info">
+	<div class="news-detail-title">
+		<?php echo $NewsDetail[0]['post_title']; ?>
+	</div>
+	<div class="news-detail-content">
+		<?php echo $NewsDetail[0]['full_content']; ?> 
+	</div>
+</div>
+<div class="news-detail-banner">
+	<img src="<?php echo $this->getMediaUrl().$NewsDetail[0]['thumbnail'];?>" alt="" class="img-fluid">
+</div>
+
