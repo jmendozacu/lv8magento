@@ -2342,8 +2342,9 @@ body.checkout-index-index .column.main {
     padding: 30px 15px;
 }
 .opc-wrapper .step-title, .opc-block-shipping-information .shipping-information-title, .opc-block-summary > .title, .checkout-agreements-items .checkout-agreements-item-title {
-    font-weight: 500;
+    font-weight: 600;
     color: #4E4F53;
+	
 }
 .opc-wrapper .form-login .fieldset .field .label, .opc-wrapper .form-shipping-address .fieldset .field .label {
     font-weight: 600;
@@ -2819,3 +2820,6 @@ footer.modal-footer button {
 .popup-img-field {  display: none; }
 .checkout-payment-method .payment-option-title { padding-top:0; }
 .block-authentication .block-title strong {  font-weight: 600; }
+.data.table.table-order-items {  table-layout: fixed; }
+.box-content address a { color: #ff5501; }
+

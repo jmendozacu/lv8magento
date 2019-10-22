@@ -254,6 +254,7 @@
 	.cbd-info-section .container {  max-width: 100%; padding:0 5px;  }
 	.faqs-content { padding: 0 25px; }  
 	.news-detail-container { width:96%; }
+	.checkout-onepage-success .banner-title-notfront { width:96%; padding:0; }
 
 
 }
@@ -649,8 +650,11 @@
 	body.checkout-cart-index .column.main {  padding-bottom: 40px; }
 	body.checkout-index-index .column.main { width: 100%; }
 	.fieldset.address { margin:0; }
-	.fieldset.address > .field { padding:0 12px; }
+	.fieldset.address > .field { padding:0; }
 	.checkout-index-index .opc-wrapper.am-opc-wrapper .payment-method-content .primary {  padding-right: 15px; }
 	.authentication-dropdown .modal-inner-wrap .modal-content { padding:0; }
+	.checkout-success .actions-toolbar {  margin-top: 20px; }
+	.checkout-onepage-success .banner-title-notfront { width:100%; }
+	.checkout-onepage-success .banner-title-notfront h1.page-title { font-size:28px; }
 	
 }
