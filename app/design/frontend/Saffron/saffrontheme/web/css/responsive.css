@@ -274,6 +274,8 @@
 	.point-6 .point-body { top:70%; right:0; }
 	.menu-parent li { padding-top:15px; padding-bottom:15px; }
 	.cms-page-view .columns .breadcrumbs ul.items { width: 100%; }
+	.cart-summary { padding:1px 15px 25px; }
+	.cart-summary .checkout-methods-items .action.primary.checkout { padding: 17px 8px; font-size: 16px; }
 	
 }
 
@@ -317,6 +319,8 @@
 	.news-featured .craft-graybx h3 { font-size:22px; }
 	.news-featured .craft-graybx .learn-btn { margin-top:5px; }
 	.cms-page-view .columns .breadcrumbs ul.items { width: 100%; }
+	.cart-summary { padding: 10px 30px 40px; }
+	body.checkout-index-index .checkout-header { padding:0; }
       
 
 }
@@ -364,13 +368,27 @@
 	.menu-inner .logo-brand { margin-bottom:20px; }
 	.menu-inner, .menu-col-main ul { padding:20px 12px; }
 	.container{ max-width:100%;}
-	.logo-col img { width:auto; height:30px; }
-	.lv8-page .logo-col img {  height: 30px; }
+	.logo-col img { width:auto; height:26px; }
+	.lv8-page .logo-col img {  height: 26px; }
 	.cbdx-page .logo-col img, .catalog-product-view .logo-col img, .checkout-cart-index .logo-col img,
-	.checkout-onepage-success .logo-col img, body[class*="customer-account-"] .logo-col img,
-	.multishipping-checkout-login .logo-col img {
-		height: 40px;
+	.checkout-onepage-success .logo-col img,
+	body[class*="customer-account-"] .logo-col img,
+	.multishipping-checkout-login .logo-col img,
+	.checkout-index-index header.header .header.content >a img	{
+		height: 42px;
 	}
+	.checkout-index-index header.header.header-sticky .header.content >a img { height: 42px;}
+	.checkout-index-index header.header .header.content .minicart-wrapper { margin-right:115px; }
+	.checkout-index-index #checkout.am-checkout { padding:0; }
+	.checkout-index-index .authentication-wrapper { margin:0; }
+	.opc-estimated-wrapper {  margin: 90px 0 30px; }
+	body.checkout-index-index .checkout-block { margin-bottom:30px; padding:20px 15px; }
+	.opc-wrapper .methods-shipping { padding-top:0; }
+	.checkout-payment-method .payment-methods .actions-toolbar .primary { margin-top:20px; }
+	.opc-wrapper .form-login, .opc-wrapper .form-shipping-address, .opc-wrapper .methods-shipping {
+		margin:0; padding:0; 
+	}
+	
 	.minicart-wrapper .action.showcart:before, .minicart-wrapper .action.showcart.active:before {
 		font-size:26px;
 	}
@@ -515,10 +533,12 @@
 	.minicart-wrapper .block-minicart:after { display:none; }
 	.page-layout-1column .page-wrapper .page-header { height:70px; margin-bottom:0; }
 	body.page-layout-1column .page-wrapper .header-sticky { height: 60px; }
-	.banner-breadcrumbs, .catalog-product-view .breadcrumbs, .checkout-cart-index main#maincontent, .checkout-index-index #maincontent.page-main, .checkout-onepage-success main#maincontent, body[class*="customer-account-"] main#maincontent, .multishipping-checkout-login main#maincontent,
+	.banner-breadcrumbs, .catalog-product-view .breadcrumbs, .checkout-cart-index main#maincontent, 
+	.checkout-index-index #maincontent.page-main, .checkout-onepage-success main#maincontent, body[class*="customer-account-"] main#maincontent, .multishipping-checkout-login main#maincontent,
 	.contact-index-index main#maincontent, 
 	.cms-cbdx-science-of-cannabis- main#maincontent,
-	.cms-page-view main#maincontent, .news-index-detail main#maincontent 	{
+	.cms-page-view main#maincontent, .news-index-detail main#maincontent,
+	.page-wrapper > .banner-breadcrumbs 	{
 		margin-top:70px; 
 	}
 	.cms-careers main#maincontent { margin-top:80px; }
@@ -536,7 +556,7 @@
 	.stories-carousel .customer-caption h5 { font-size:16px; }
 	.page-front .header { padding: 20px 0; }
 	.front-banner .item { height: 100vh !important; }
-	.page-layout-1column .header-sticky img { height: 30px; }
+	.page-layout-1column .header-sticky img { height: 22px; }
 	.freeapp-col {  flex-direction: column; text-align: center; }
 	.app-info {padding: 10px 0 20px; }
 	.freeapp-col figure { order: 2; }
