@@ -1,9 +1,3 @@
-
-
-<img src="<?php echo $this->getMediaUrl().$NewsDetail[0]['thumbnail'];?>" alt="" class="img-fluid">
-
-
-
 <?php  $NewsDetail = $this->getNewsDetail();?>
 <?php  $NewsDetail =  $NewsDetail->getData();
 
@@ -18,3 +12,4 @@ echo $NewsDetail[0]['full_content'];
 
 ?>
 
+<img src="<?php echo $this->getMediaUrl().$NewsDetail[0]['thumbnail'];?>" alt="" class="img-fluid">
