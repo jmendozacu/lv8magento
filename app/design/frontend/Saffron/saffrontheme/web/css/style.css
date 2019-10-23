@@ -429,6 +429,9 @@ button:focus{ outline:none; }
     font-weight: 400;
     color:#4E5054;
 }
+.cbdx-brands-menu a:hover{
+	color:#F57B3B;
+} 
 .brand-name-col {
     float: left;
     width: 100%;
