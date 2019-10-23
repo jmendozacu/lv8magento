@@ -364,6 +364,8 @@
 	}
 	.menu-items .active .menu-inner { opacity:1; }
 	.nav-sections-items .menuBtn .menubar { background: #fff; }
+	.menu-item-front:after { content: ""; position: absolute; height: 35%; width: 100%; 
+		background: rgba(0, 0, 0, 0.3); left: 0; right: 0; }
 	
 }
 
@@ -580,8 +582,6 @@
 	.filter.active .filter-title { height: auto; padding-bottom: 10px; }
 	body.page-layout-1column .filter-options-item {  margin-right: 0; }
 	.filter-options-item { padding-bottom:0; }
-	.menu-item-front:after { content: ""; position: absolute; height: 35%; width: 100%; 
-		background: rgba(0, 0, 0, 0.3); left: 0; right: 0; }
 	.open-positions { padding:40px 0; }
 	footer.page-footer {  padding: 50px 0 25px; }
 	.craft-graybx { padding:10% 20px; }
