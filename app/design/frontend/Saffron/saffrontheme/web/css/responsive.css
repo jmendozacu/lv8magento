@@ -256,7 +256,8 @@
 	.faqs-content { padding: 0 25px; }  
 	.news-detail-container { width:96%; }
 	.checkout-onepage-success .banner-title-notfront { width:96%; padding:0; }
-
+	.cbd-info-section .cbd-info-container .container { padding: 0; }
+	.cbd-info-section .cbd-info-container .container .row { margin: 0; }
 
 }
 

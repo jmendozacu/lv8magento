@@ -1254,6 +1254,9 @@ textarea{
 }
 .identify-quality{
     background: url(../images/identify-quality-img.jpg);
+	background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
 }
 .process-bx {
     position: absolute;
