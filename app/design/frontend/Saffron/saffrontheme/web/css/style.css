@@ -2831,4 +2831,4 @@ footer.modal-footer button {
 .block-authentication .block-title strong {  font-weight: 600; }
 .data.table.table-order-items {  table-layout: fixed; }
 .box-content address a { color: #ff5501; }
-
+.filter-options { position:relative; z-index:3; }

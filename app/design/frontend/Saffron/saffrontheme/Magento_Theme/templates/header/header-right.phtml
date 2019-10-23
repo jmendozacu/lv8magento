@@ -130,12 +130,17 @@ $(document).ready(function(){
 
     
     //banefit page circle js
-    $(".point .point-circle").on("click", function(){
-        $(this).addClass("active");
-        $(this).parent().siblings().children().removeClass("active");
-        $(this).next().slideToggle();
-        $(this).parent().siblings().children().next().slideUp();
-    })
+	if( $(window).width() <= 1024 ){
+		$(".point .point-circle").on("click", function(){
+			$(this).addClass("active");
+			$(this).parent().siblings().children().removeClass("active");
+			$(this).next().slideToggle();
+			$(this).parent().siblings().children().next().slideUp();
+		})
+		
+	}
+	
+    
     
     // scroll menu click respectively #div 
     $(".scrollMenu a, .cbdx-brands-col .brand-link").on("click", function(){
