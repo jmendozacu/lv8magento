@@ -2756,13 +2756,7 @@ div#newsletter_pop_up {
     border: 2px solid #7c94a0;
     outline: none;
 }
-.content.newsletter-popup {
-    background-size: 33% 100%;
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    display: flex;
-    padding-left: 35%;
-}
+
 .stayUpdate-col .craft-graybx { min-height: inherit; }
 .modal-slide .action-close,
 .modal-slide .action-close:focus {
@@ -2829,7 +2823,6 @@ footer.modal-footer button {
     color: #F57B3B;
     text-decoration: underline;
 }
-.popup-img-field {  display: none; }
 .checkout-payment-method .payment-option-title { padding-top:0; }
 .block-authentication .block-title strong {  font-weight: 600; }
 .data.table.table-order-items {  table-layout: fixed; }
