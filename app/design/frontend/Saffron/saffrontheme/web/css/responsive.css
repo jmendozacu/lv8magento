@@ -98,7 +98,7 @@
 		.page.messages {  max-width: 1600px;  width: 94%;  margin: 0 auto; }
 		form.form-create-account .fieldset:nth-of-type(1) { margin-bottom: 60px; }
 		.checkout-onepage-success .table .col {  min-width: 160px; }
-		
+		.theBrands-carousel { padding:0 20px; }
 		
       
  
@@ -457,7 +457,7 @@
 	.cms-content h3 { font-size:20px; }
 	.summar-bx { margin-bottom:20px; }
 	.worx-about-page .lv8-about-info .abtInfo p { margin: 0; }
-	.success-stories { margin:15% 0; }
+	.success-stories { margin:20% 0; }
 	.stories-carousel {  padding: 0 15px;  }
 	.our-expertise h3 { margin:20px 0 30px; }
 	.appstore-col img { height: 40px; width: auto; }
