@@ -2828,3 +2828,14 @@ footer.modal-footer button {
 .data.table.table-order-items {  table-layout: fixed; }
 .box-content address a { color: #ff5501; }
 .filter-options { position:relative; z-index:3; }
+.newsletter-popup .newspopup-body .popup-img-field {
+    float: left;
+    width: 35%;
+}
+.newsletter-popup .newspopup-body .descount-field {
+    width: 65%;
+    float: left;
+}
+
+
+
