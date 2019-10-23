@@ -421,7 +421,8 @@ button:focus{ outline:none; }
 
 .cbdx-brands-col { float: left; width:100%; margin-bottom: 30px; }
 .cbdx-brands-col h5,
-.cbdx-brands-col .brand-name {
+.cbdx-brands-col .brand-name,
+.cbdx-brands-menu a {
     font-size: 16px;
     text-transform: uppercase;
     margin: 0 0 15px;
