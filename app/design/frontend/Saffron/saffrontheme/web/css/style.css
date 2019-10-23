@@ -9,7 +9,9 @@ body{
 h1 { font-size:46px;}
 h1, .h1, h2, .h2, h3, .h3, h4 { color:#4E4F53; line-height: normal;  font-weight:600; font-family: 'Montserrat', sans-serif; }
 h1, .h1, h2, .h2, h3 { font-size:55px; color:#4E4F53; }
-p{ font-size:18px; line-height:26px; color:#4E4F53; font-family: 'Montserrat', sans-serif; margin-bottom:16px;  }
+p{ font-size:18px; line-height:26px; color:#4E4F53; font-family: 'Montserrat', sans-serif; margin-bottom:16px; 
+	font-weight:300;
+}
 li { list-style:none;}
 a, a:hover{ text-decoration:none; }
 ul{ padding:0; }
@@ -850,7 +852,7 @@ button#product-addtocart-button:focus {
 }
 
 .theBrands-carousel .boxBrands p {
-    font-weight: 500;
+    font-weight: 300;
     margin:0;
 }
 .craft-box-row{ overflow: hidden; }
