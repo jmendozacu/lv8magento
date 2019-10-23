@@ -621,14 +621,11 @@
 	.cart-discount { border-bottom:none; }
 	.checkout-cart-index .product-image-photo { height:60px; }
 	.cart.table-wrapper .col.qty:before, .cart.table-wrapper .col.price:before, .cart.table-wrapper .col.subtotal:before, .cart.table-wrapper .col.msrp:before { text-align:left;}
-	.content.newsletter-popup {
-		background-size: 33% 100%;
-		padding-left: 0;
-		background-size: auto 160px;
-		background-position: center bottom;
-		padding-bottom: 200px;
-	}
+
 	div#newsletter_pop_up { padding: 50px 10px 0; height: 94%; overflow-y: auto; }
+	.newsletter-popup .newspopup-body .popup-img-field { width: 100%; order: 2; }
+	.newsletter-popup .newspopup-body .descount-field { width: 100%; order: 1; padding: 0; }
+	.newspopup-body { display: flex;  flex-direction: column; }
 	.newspopup-body .newsletter label { font-size: 20px; margin: 0 0 10px; text-align: center;	}
 	.newspopup-body .newsletter h5 { font-size: 14px; line-height: 22px; margin-bottom: 15px; }
 	.newspopup-body .news-control-field { margin-bottom: 20px; }

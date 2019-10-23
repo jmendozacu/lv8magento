@@ -2842,7 +2842,10 @@ footer.modal-footer button {
 .newsletter-popup .descount-model {
     display: flex;
 }
-
+.newspopup-body .custom-control-label::before,
+.newspopup-body .custom-control-label::after {
+    top: 7px;
+}
 
 
 
