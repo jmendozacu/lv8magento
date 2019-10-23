@@ -2657,8 +2657,8 @@ div#newsletter_pop_up {
     top: 50% !important;
     transform: translate(-50%, -50%);
     background-color: #0079ae;
-    padding: 40px;
-    max-width: 900px;
+    padding: 40px 40px 0 20px;
+    max-width: 950px;
     width: 92%;
 }
 .newspopup-body .newsletter label {
@@ -2830,12 +2830,19 @@ footer.modal-footer button {
 .filter-options { position:relative; z-index:3; }
 .newsletter-popup .newspopup-body .popup-img-field {
     float: left;
-    width: 35%;
+    width: 45%;
+    display: flex;
+    height: 100%;
 }
 .newsletter-popup .newspopup-body .descount-field {
-    width: 65%;
+    width: 55%;
     float: left;
+    padding: 100px 0 50px;
 }
+.newsletter-popup .descount-model {
+    display: flex;
+}
+
 
 
 
