@@ -429,6 +429,7 @@ button:focus{ outline:none; }
     font-weight: 400;
     color:#4E5054;
 }
+.cbdx-brands-menu a { margin: 0 0 18px; display:inline-block; }
 .cbdx-brands-menu a:hover{
 	color:#F57B3B;
 } 
