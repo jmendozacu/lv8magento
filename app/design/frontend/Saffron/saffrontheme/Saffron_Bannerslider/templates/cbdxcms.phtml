@@ -4,27 +4,29 @@
 							<span>More Information</span>
 						</div>
                         <ul class="info-title-list">
- <li class="<?php if( $_SERVER['REQUEST_URI']=='/cdbx/what-is-cbd') 
+						
+						<?php echo $_SERVER['REQUEST_URI'] ;?>
+ <li class="<?php if(( $_SERVER['REQUEST_URI']=='/cdbx/what-is-cbd')||( $_SERVER['REQUEST_URI']=='/cdbx/what-is-cbd/') )
  {echo 'active';}else{ '';}?>">
  <a href="<?php echo $this->getUrl('cdbx/what-is-cbd'); ?>">WHAT IS CBD?</a>
  </li>
-<li class="<?php if( $_SERVER['REQUEST_URI']=='/cdbx/how-our-cbd-works') {echo 'active';}else{ '';}?>
+<li class="<?php if(( $_SERVER['REQUEST_URI']=='/cdbx/how-our-cbd-works')||( $_SERVER['REQUEST_URI']=='/cdbx/how-our-cbd-works/') ) {echo 'active';}else{ '';}?>
 ">
 <a href="<?php echo $this->getUrl('cdbx/how-our-cbd-works'); ?>">HOW OUR CBD <br> PRODUCTS WORK</a>
 </li>
-<li class="<?php if( $_SERVER['REQUEST_URI']=='/cdbx/the-benefits') {echo'active';}else{'';}?>">
+<li class="<?php if(( $_SERVER['REQUEST_URI']=='/cdbx/the-benefits')||( $_SERVER['REQUEST_URI']=='/cdbx/the-benefits/')) {echo'active';}else{'';}?>">
 <a href="<?php echo $this->getUrl('cdbx/the-benefits'); ?>">THE VALUE IS IN <br> THE BENEFITS</a>
 </li>
-<li class="<?php if( $_SERVER['REQUEST_URI']=='/cdbx/quality-matters') {echo 'active';}else{'';}?>">
+<li class="<?php if(( $_SERVER['REQUEST_URI']=='/cdbx/quality-matters')||( $_SERVER['REQUEST_URI']=='/cdbx/quality-matters/') ) {echo 'active';}else{'';}?>">
 <a href="<?php echo $this->getUrl('cdbx/quality-matters'); ?>">QUALITY <br> MATTERS</a></li>
 
-<li class="<?php if( $_SERVER['REQUEST_URI']=='/cdbx/top-products') {echo 'active';}else{'';}?>">
+<li class="<?php if(( $_SERVER['REQUEST_URI']=='/cdbx/top-products')||( $_SERVER['REQUEST_URI']=='/cdbx/top-products/')) {echo 'active';}else{'';}?>">
 <a href="<?php echo $this->getUrl('cdbx/top-products'); ?>">OUR TOP <br> PRODUCTS</a></li>
 
-<li class="<?php if( $_SERVER['REQUEST_URI']=='/cdbx/research') {echo 'active';}else{'';}?>">
+<li class="<?php if(( $_SERVER['REQUEST_URI']=='/cdbx/research')||( $_SERVER['REQUEST_URI']=='/cdbx/research/')) {echo 'active';}else{'';}?>">
 <a href="<?php echo $this->getUrl('cdbx/research'); ?>">RESEARCH</a></li>
 
-<li class="<?php if( $_SERVER['REQUEST_URI']=='/cdbx/faqs') {echo 'active';}else{ '';}?>">
+<li class="<?php if(( $_SERVER['REQUEST_URI']=='/cdbx/faqs')||( $_SERVER['REQUEST_URI']=='/cdbx/faqs/')) {echo 'active';}else{ '';}?>">
 <a href="<?php echo $this->getUrl('cdbx/faqs'); ?>">FAQS</a></li>
                         </ul>
                     </div>
