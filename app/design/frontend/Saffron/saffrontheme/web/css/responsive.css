@@ -173,7 +173,7 @@
       .family-brand {  max-width:630px; }
       .faqs-content .faqs-left {  padding-right: 30px;  }
       .faqs-content .faqs-right { padding-left: 30px;   }
-	  .craft-graybx { min-height: 55vh; display: flex;  flex-direction: column; justify-content: center; }
+	  .our-craft .craft-graybx{min-height: 55vh; display:flex; flex-direction:column; justify-content:center; }
 
 }
 
