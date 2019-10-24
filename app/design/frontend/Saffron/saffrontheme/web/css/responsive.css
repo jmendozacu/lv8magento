@@ -666,5 +666,8 @@
 	}
 	body[class*="customer-account-"] .banner-title-notfront h1.page-title, .multishipping-checkout-login .banner-title-notfront h1.page-title { font-size:28px; }
 	.block-minicart .subtotal span.label { font-size: 14px; }
+	.banner-notfront img, .category-image .image {
+		height: calc(100vh - 70px);  object-fit: cover;
+	}
 	
 }
