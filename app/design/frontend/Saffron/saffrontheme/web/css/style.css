@@ -2846,7 +2846,7 @@ footer.modal-footer button {
 .newspopup-body .custom-control-label::after {
     top: 7px;
 }
-.banner-notfront .image {
+.banner-notfront img {
     height: calc(100vh - 110px);
     object-fit: cover;
 }
