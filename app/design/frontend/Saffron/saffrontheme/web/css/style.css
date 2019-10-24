@@ -1612,7 +1612,7 @@ div.scroll-page {
 }
 .breadcrumbs .items {
     max-width:1600px;
-    width: 92%;
+    width: 94%;
     margin: 0 auto;
 	padding:0 15px;
 }
@@ -2808,7 +2808,7 @@ footer.modal-footer button {
 .cms-page-view .columns .breadcrumbs { max-width:1600px;  }
 .news-detail-container {
     max-width: 1600px;
-    width: 92%;
+    width: 94%;
     margin: 60px auto 70px;
     padding: 0 15px;
 }
@@ -2846,11 +2846,18 @@ footer.modal-footer button {
 .newspopup-body .custom-control-label::after {
     top: 7px;
 }
-
 .banner-notfront img, .category-image .image {
     height: calc(100vh - 110px);
     object-fit: cover;
 }
 .craft-graybx p {  margin: 0; }
+.account .logo-col img { height: 70px;  width: auto; }
+.account header.header {
+    height: 110px;
+    box-shadow: 0 0 5px #ddd;
+    display: flex;
+}
+.account header.header .header.content { top: 40px; }
+body.account main#maincontent { margin-top: 0; }
 
 
