@@ -497,12 +497,10 @@
 	.news-featured .owl-theme .owl-nav.disabled+.owl-dots {    margin-top: 10px;      }
 	.latest-post {margin-top: 30px;   }
 	.post-item { margin-bottom: 40px;   }
-	/* .image-notfront img {  min-height: 500px;  object-fit: cover;  } */
 	.banner-breadcrumbs .breadcrumbs,
 	.careers-page .banner-breadcrumbs .breadcrumbs	{ display: none; }
 	.ourFamily-row {  padding: 0 15px;   }
 	.family-image img { min-height: 400px; object-fit: cover;  }
-	.mobile-arrow { display:none; }
 	.labs-about-brand { margin-bottom:10%; }
 	.header .container { display: flex; align-items: center;  }
 	.header-right-col { margin-left: auto; }
