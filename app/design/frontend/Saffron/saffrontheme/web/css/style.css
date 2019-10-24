@@ -1814,7 +1814,7 @@ ul.filter-cat-list li:last-child a {
     right: 0;
     text-align: center;
     padding: 0;
-    display: none;
+    z-index:1;
 }
 .mobile-arrow .scroll-down {
     font-size: 70px;
@@ -2657,7 +2657,7 @@ div#newsletter_pop_up {
     top: 50% !important;
     transform: translate(-50%, -50%);
     background-color: #0079ae;
-    padding: 40px 40px 0 20px;
+    padding: 40px 40px 0 40px;
     max-width: 950px;
     width: 92%;
 }
@@ -2846,6 +2846,9 @@ footer.modal-footer button {
 .newspopup-body .custom-control-label::after {
     top: 7px;
 }
-
+.banner-notfront .image {
+    height: calc(100vh - 110px);
+    object-fit: cover;
+}
 
 

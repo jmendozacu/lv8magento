@@ -328,6 +328,7 @@
 	body[class*="customer-account-"] .banner-title-notfront, .multishipping-checkout-login .banner-title-notfront {
 		width:98%; 
 	}
+	div#newsletter_pop_up { width:96%; }
       
 
 }
@@ -623,7 +624,7 @@
 	.cart.table-wrapper .col.qty:before, .cart.table-wrapper .col.price:before, .cart.table-wrapper .col.subtotal:before, .cart.table-wrapper .col.msrp:before { text-align:left;}
 
 	div#newsletter_pop_up { padding: 50px 10px 0; height: 94%; overflow-y: auto; }
-	.newsletter-popup .newspopup-body .popup-img-field { width: 100%; order: 2; }
+	.newsletter-popup .newspopup-body .popup-img-field { width: 100%; order: 2; padding-top:30px; }
 	.newsletter-popup .newspopup-body .descount-field { width: 100%; order: 1; padding: 0; }
 	.newspopup-body { display: flex;  flex-direction: column; }
 	.newspopup-body .newsletter label { font-size: 20px; margin: 0 0 10px; text-align: center;	}
