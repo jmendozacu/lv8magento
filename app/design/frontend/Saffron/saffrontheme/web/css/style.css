@@ -1611,8 +1611,8 @@ div.scroll-page {
     position: relative;
 }
 .breadcrumbs .items {
-    max-width: 100%;
-    width: 94%;
+    max-width:1600px;
+    width: 92%;
     margin: 0 auto;
 	padding:0 15px;
 }
@@ -2850,5 +2850,6 @@ footer.modal-footer button {
     height: calc(100vh - 110px);
     object-fit: cover;
 }
+.craft-graybx p {  margin: 0; }
 
 

@@ -99,6 +99,7 @@
 		form.form-create-account .fieldset:nth-of-type(1) { margin-bottom: 60px; }
 		.checkout-onepage-success .table .col {  min-width: 160px; }
 		.theBrands-carousel { padding:0 20px; }
+		.portfolio-boxes .container { max-width: 100%; width: 100%; padding: 0 20px; }
 		
 		
       
@@ -172,6 +173,7 @@
       .family-brand {  max-width:630px; }
       .faqs-content .faqs-left {  padding-right: 30px;  }
       .faqs-content .faqs-right { padding-left: 30px;   }
+	  .craft-graybx { min-height: 55vh; display: flex;  flex-direction: column; justify-content: center; }
 
 }
 
