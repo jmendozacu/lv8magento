@@ -262,6 +262,7 @@
 	.checkout-onepage-success .banner-title-notfront { width:96%; padding:0; }
 	.cbd-info-section .cbd-info-container .container { padding: 0; }
 	.cbd-info-section .cbd-info-container .container .row { margin: 0; }
+	body.account.page-layout-2columns-left .columns { width:100%; }
 
 }
 
@@ -333,6 +334,14 @@
 		width:98%; 
 	}
 	div#newsletter_pop_up { width:96%; }
+	body.account.page-layout-2columns-left main#maincontent .columns > .column.main { width: 73.7%; }
+	.account.page-layout-2columns-left .sidebar-main,
+	.account.page-layout-2columns-left .sidebar-additional { width: 26.3%; }
+	.account .column.main .block:not(.widget) .block-content .box { width: 100%; }
+	.account .block .box-actions a { margin-top:10px; }
+	.account .box { margin-bottom: 40px; }
+	.account .box:last-child { margin-bottom: 0; }
+	
       
 
 }
