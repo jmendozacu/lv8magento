@@ -691,6 +691,7 @@
 	body.account.page-layout-2columns-left main#maincontent.page-main .columns {  padding: 20px 0; }
 	.account .block .box-actions a {  margin-top: 10px;  margin-bottom: 20px; }
 	.block-dashboard-addresses .block-title a.action.edit { font-size: 13px; margin-left: 5px; }
+	.account .column.main {  padding: 0 15px; }
 	
 	
 	
