@@ -683,11 +683,15 @@
 	}
 	.careers-page .banner-notfront { margin-top:0; }
 	.account .page-title-wrapper.banner-title-notfront .page-title { font-size:22px; }
-	body.account main#maincontent { padding: 30px 15px 0; }
+	body.account main#maincontent { padding: 0; margin-top:0; }
 	.account .block.account-nav {  margin: 0; }
 	.account header.header { height:70px; }
 	.account .logo-col img {  height: 50px; }
 	.account header.header .header.content {  top: 14px; }
+	body.account.page-layout-2columns-left main#maincontent.page-main .columns {  padding: 20px 0; }
+	.account .block .box-actions a {  margin-top: 10px;  margin-bottom: 20px; }
+	.block-dashboard-addresses .block-title a.action.edit { font-size: 13px; margin-left: 5px; }
+	
 	
 	
 }
