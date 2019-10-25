@@ -2859,5 +2859,18 @@ footer.modal-footer button {
 }
 .account header.header .header.content { top: 40px; }
 body.account main#maincontent { margin-top: 0; }
+.block-collapsible-nav .item {  display: block; margin:0px 0; }
+.block-collapsible-nav .item a, .block-collapsible-nav .item > strong {  padding: 10px 10px; }
+.block-collapsible-nav .content { padding:35px 0; }
+.account .page-title-wrapper.banner-title-notfront {
+    width: 100%; margin: 70px 0 40px;  padding: 0; }
+.account .block .box-actions a {
+    color: #F57B3B;
+    margin-top: 30px;
+    display: inline-block;
+    text-decoration: underline;
+}
+.account .block .box-actions a:hover {  text-decoration: none; }	
+
 
 
