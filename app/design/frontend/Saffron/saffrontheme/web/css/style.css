@@ -2863,7 +2863,15 @@ body.account main#maincontent { margin-top: 0; }
 .block-collapsible-nav .item a, .block-collapsible-nav .item > strong {  padding: 10px 10px; }
 .block-collapsible-nav .content { padding:35px 0; }
 .account .page-title-wrapper.banner-title-notfront {
-    width: 100%; margin: 70px 0 40px;  padding: 0; }
+	width: 100%;
+    margin: 0 0 40px;
+    padding: 0;
+    position: inherit;
+    left: inherit;
+    top: inherit;
+    transform: none;
+    max-width: 100%;
+}
 .account .block .box-actions a {
     color: #F57B3B;
     margin-top: 30px;
@@ -2878,5 +2886,14 @@ body.account main#maincontent { margin-top: 0; }
 .account a.action.edit:hover {  text-decoration: none; }	
 .account ul.nav.items { display: inherit; }
 input[type=checkbox], input[type=radio] { height:auto; }
-
+.account .menubar {  background: #F57B3B; }
+.form-address-edit fieldset.fieldset {  width: 100%; }
+.form-address-edit fieldset.fieldset .field { max-width: 700px; width: 100%; }
+.account .page-title-wrapper.banner-title-notfront .page-title {
+    color: #4E4F53;
+    font-size: 35px;
+    text-align: left;
+    display: block;
+    margin: 0;
+}
 
