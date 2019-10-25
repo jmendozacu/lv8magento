@@ -2870,7 +2870,13 @@ body.account main#maincontent { margin-top: 0; }
     display: inline-block;
     text-decoration: underline;
 }
-.account .block .box-actions a:hover {  text-decoration: none; }	
-
+.account a.action.edit {
+    color: #F57B3B;
+    text-decoration: underline;
+}
+.account .block .box-actions a:hover,
+.account a.action.edit:hover {  text-decoration: none; }	
+.account ul.nav.items { display: inherit; }
+input[type=checkbox], input[type=radio] { height:auto; }
 
 
