@@ -153,9 +153,13 @@ $(document).ready(function(){
  
 	
 	//header user dropdown js
-	$(".sign-col .singin-link").on("click", function(){
+	$(document).click( function(){
+		$(".singin-dropdown").slideUp();
+	})
+	$(".sign-col .singin-link").on("click", function(e){
+		e.stopPropagation();	
 		$(this).toggleClass('active');
-		$(".singin-dropdown").slideToggle('slow');
+		$(".singin-dropdown").slideToggle();
 	})
  
    $(".mobile-arrow .scroll-down").on("click", function(){
