@@ -104,6 +104,7 @@
 			width: 77.7%; padding:70px 0; }
 		body.account.page-layout-2columns-left .columns { max-width: 1600px; width: 94%; padding: 0 15px !important; margin: 0 auto;
 		float: none; }
+		.block-collapsible-nav .content { padding:35px 0; }
  
 }
 
@@ -341,6 +342,7 @@
 	.account .block .box-actions a { margin-top:10px; }
 	.account .box { margin-bottom: 40px; }
 	.account .box:last-child { margin-bottom: 0; }
+	.account .page-title-wrapper.banner-title-notfront .page-title { font-size:30px; }
 	
       
 
@@ -680,5 +682,12 @@
 		height: calc(100vh - 70px);  object-fit: cover;
 	}
 	.careers-page .banner-notfront { margin-top:0; }
+	.account .page-title-wrapper.banner-title-notfront .page-title { font-size:22px; }
+	body.account main#maincontent { padding: 30px 15px 0; }
+	.account .block.account-nav {  margin: 0; }
+	.account header.header { height:70px; }
+	.account .logo-col img {  height: 50px; }
+	.account header.header .header.content {  top: 14px; }
+	
 	
 }

@@ -2861,7 +2861,6 @@ footer.modal-footer button {
 body.account main#maincontent { margin-top: 0; }
 .block-collapsible-nav .item {  display: block; margin:0px 0; }
 .block-collapsible-nav .item a, .block-collapsible-nav .item > strong {  padding: 10px 10px; }
-.block-collapsible-nav .content { padding:35px 0; }
 .account .page-title-wrapper.banner-title-notfront {
 	width: 100%;
     margin: 0 0 40px;
@@ -2896,4 +2895,5 @@ input[type=checkbox], input[type=radio] { height:auto; }
     display: block;
     margin: 0;
 }
+.account .mobile-arrow { display: none; }
 
