@@ -2896,4 +2896,4 @@ input[type=checkbox], input[type=radio] { height:auto; }
     margin: 0;
 }
 .account .mobile-arrow { display: none; }
-
+.page-main > .mobile-arrow { display: none; }
