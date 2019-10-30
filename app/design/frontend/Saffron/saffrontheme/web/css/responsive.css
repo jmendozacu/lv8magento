@@ -365,7 +365,7 @@
 	.navbar-body { float: left; width: auto;   }
 	.menu-image-item { height:100vh; width:30%; float: left;  }
 	.menu-image-item img { width: 100%; float: left; object-fit: cover;   }
-	.menu-item-front .menu-image-item img { height: 60vh;  }
+	.menu-item-front .menu-image-item img { height: 50vh;  }
 	.menu-item-labs .menu-image-item img {  height: 50vh;   }
 	.menu-item-worx .menu-image-item img { height: calc(100vh - 60%);  }
 	.menu-item-description { float: left; width: 50%; height: 100vh; padding: 10px 0; position: relative; }
