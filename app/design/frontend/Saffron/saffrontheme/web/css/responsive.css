@@ -697,6 +697,8 @@
 	.cbdx-page.page-front .banner-breadcrumbs { margin-top: 0; }
 	.cms-no-route .banner-title-notfront h1 { font-size:36px; }
 	.page-layout-2columns-right main#maincontent { margin:30px auto; }
+	.page-layout-1column .logo-col img, .page-layout-2columns-right .logo-col img { height:46px; }
+	.page-layout-2columns-right .page-header { height:70px; }
 	
 	
 }
