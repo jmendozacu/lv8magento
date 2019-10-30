@@ -343,6 +343,7 @@
 	.account .box { margin-bottom: 40px; }
 	.account .box:last-child { margin-bottom: 0; }
 	.account .page-title-wrapper.banner-title-notfront .page-title { font-size:30px; }
+	.menu-item-cbdx .menu-image-item img { height: 96vh;  }	
 	
       
 
@@ -367,7 +368,6 @@
 	.menu-item-front .menu-image-item img { height: 60vh;  }
 	.menu-item-labs .menu-image-item img {  height: 50vh;   }
 	.menu-item-worx .menu-image-item img { height: calc(100vh - 60%);  }
-	.menu-item-cbdx .menu-image-item img { height: 80vh;  }
 	.menu-item-description { float: left; width: 50%; height: 100vh; padding: 10px 0; position: relative; }
 	.navbar-body { position: fixed; top: 0; right:0; width: 100%; background: #fff; z-index: 3; 
 		transition: all 0.4s ease; padding:0; opacity:0;
@@ -692,7 +692,7 @@
 	.account .block .box-actions a {  margin-top: 10px;  margin-bottom: 20px; }
 	.block-dashboard-addresses .block-title a.action.edit { font-size: 13px; margin-left: 5px; }
 	.account .column.main {  padding: 0 15px; }
-	
+	.menu-item-cbdx .menu-image-item img { height: 84vh;  }	
 	
 	
 }
