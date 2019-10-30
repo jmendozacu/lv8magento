@@ -693,6 +693,8 @@
 	.block-dashboard-addresses .block-title a.action.edit { font-size: 13px; margin-left: 5px; }
 	.account .column.main {  padding: 0 15px; }
 	.menu-item-cbdx .menu-image-item img { height: 84vh;  }	
+	.cbdx-page.page-front .logo-col img { height: 46px; width: auto; }
+	.cbdx-page.page-front .banner-breadcrumbs { margin-top: 0; }
 	
 	
 }

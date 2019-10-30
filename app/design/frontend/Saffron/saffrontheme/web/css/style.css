@@ -542,6 +542,11 @@ button:focus{ outline:none; }
     transition: all 0.4s ease;
 }
 
+.cbdx-page.page-front .logo-col img {
+    height: 70px;
+    width: auto;
+}
+
 /* .cbdx-page .logo-col img, */
 /* .catalog-product-view .logo-col img, */
 /* .checkout-cart-index .logo-col img, */
