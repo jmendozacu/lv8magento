@@ -529,7 +529,8 @@ button:focus{ outline:none; }
 }
 .mobile-back-btn, .menu-items2 {   display: none; }
 
-.page-layout-1column .logo-col img {
+.page-layout-1column .logo-col img,
+.page-layout-2columns-right .logo-col img {
     height: 70px;
     width: auto;
     transition: all 0.4s ease;
@@ -2903,3 +2904,40 @@ input[type=checkbox], input[type=radio] { height:auto; }
 .account .mobile-arrow { display: none; }
 .page-main > .mobile-arrow { display: none; }
 .craft-graybx .learn-btn {  max-width: 185px; }
+.page-layout-2columns-right .page-header {
+    height: 110px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 5px #ddd;
+}
+.page-layout-2columns-right main#maincontent {
+    margin: 80px auto;
+    max-width: 1600px;
+    width: 94%;
+    padding: 0 15px;
+}
+.page-layout-2columns-right .menubar { background:#F57B3B; }
+.cms-no-route .column.main {  width: 100%; }
+.cms-no-route .column.main dl {  margin-bottom: 40px; }
+.cms-no-route .column.main dl ul.disc li {
+    margin-bottom: 30px;
+    line-height: 26px;
+}
+.cms-no-route .banner-title-notfront {
+    position: inherit;
+    left: inherit;
+    transform: inherit;
+    top: inherit;
+    text-align: left;
+}
+.cms-no-route .banner-title-notfront h1 {
+    color: #4E4F53;
+    font-size: 55px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.cms-no-route .column.main dl ul.disc li a {
+    color: #F57B3B;
+    text-decoration: underline;
+}
+
