@@ -2094,7 +2094,7 @@ table tbody tr td:first-child {
     opacity: 0;
     max-width: 75%;
     /* text-shadow: 0 4px 5px #000; */
-	text-shadow:0 0 6px rgba(0,0,0,0.6);
+	text-shadow:0 0 30px rgba(0,0,0,0.6);
 }
 .active .menu-caption {
     opacity: 1;
