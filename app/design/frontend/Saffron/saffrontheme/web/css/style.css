@@ -2897,3 +2897,4 @@ input[type=checkbox], input[type=radio] { height:auto; }
 }
 .account .mobile-arrow { display: none; }
 .page-main > .mobile-arrow { display: none; }
+.craft-graybx .learn-btn {  max-width: 185px; }
