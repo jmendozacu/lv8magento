@@ -695,6 +695,8 @@
 	.menu-item-cbdx .menu-image-item img { height: 84vh;  }	
 	.cbdx-page.page-front .logo-col img { height: 46px; width: auto; }
 	.cbdx-page.page-front .banner-breadcrumbs { margin-top: 0; }
+	.cms-no-route .banner-title-notfront h1 { font-size:36px; }
+	.page-layout-2columns-right main#maincontent { margin:30px auto; }
 	
 	
 }
