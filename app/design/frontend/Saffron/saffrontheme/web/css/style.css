@@ -2945,4 +2945,7 @@ input[type=checkbox], input[type=radio] { height:auto; }
     color: #F57B3B;
     text-decoration: underline;
 }
+.catalog-product-view .column.main .mobile-arrow {  display: none; }
+
+
 
