@@ -1967,11 +1967,30 @@ body[class*="customer-account-"] main#maincontent .columns > .column.main,
 }
 .box-tocart .field.qty  input#qty {
     border: 1px solid #d8d8d8;
-    height: 58px;
+    height: 44px;
     width: 70px;
     font-size: 16px;
     box-shadow: none;
+    float: left;
+    border-top: none;
+    border-bottom: none;
 }
+.qty-container .qty-input {
+    width: 146px;
+    border: 1px solid #d8d8d8;
+    float: left;
+}
+.qty-container .qty-input button {
+    background: none;
+    height: 44px;
+    margin: 0;
+    font-size: 20px;
+    color: #555;
+    border: none;
+    width: 37px;
+    float: left;
+}
+button#product-addtocart-button { padding: 11px 30px; }
 .product-social-links .product-addto-links .action, .product-social-links .action.mailto.friend {
     font-size: 12px;
     color: #4E4F53;
