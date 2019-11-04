@@ -67,8 +67,41 @@ $product_url = $this->getBaseUrl().$_item['url_key'];
 						   
 </p>
 </div>
-<div class="visitstore-btn"><a class="learn-btn btn-orange" href="<?php echo $product_url ; ?>">VISIT STORE</a></div>
+
+<div class="visitstore-btn">
+<a class="learn-btn btn-orange" href="<?php echo $product_url ; ?>">VISIT STORE</a>
 </div>
+
+<?php if ($showCart): ?>
+	<div class="actions-primary">
+		<?php if ($_item->isSaleable()): ?>
+		<?php if ($_item->getTypeInstance()->hasRequiredOptions($_item)): ?>
+			<button class="action tocart learn-btn btn-orange" data-mage-init='{"redirectUrl":{"url":"<?php echo $block->getAddToCartUrl($_item) ?>"}}' type="button" title="<?php echo __('Shop Now') ?>">
+			<span><?php echo __('Shop Now') ?></span></button>
+		<?php else: ?>
+		<?php
+			$postDataHelper = $this->helper('Magento\Framework\Data\Helper\PostHelper');
+			$postData = $postDataHelper->getPostData($block->getAddToCartUrl($_item), ['product' => $_item->getEntityId()])?>
+		<button class="action tocart learn-btn btn-orange" data-post='<?php echo $postData; ?>' type="button" title="<?php echo __('Shop Now') ?>"><span><?php echo __('Shop Now') ?></span>
+		</button>
+		<?php endif; ?>
+		<?php else: ?>
+		<?php if ($_item->getIsSalable()): ?>
+		<div class="stock available"><span><?php echo __('In stock') ?></span></div>
+		<?php else: ?>
+		<div class="stock unavailable"><span><?php echo __('Out of stock') ?></span></div>
+		<?php endif; ?>
+		<?php endif; ?>
+		</div>
+		<?php endif; ?>
+						
+					
+				
+
+
+
+</div>
+
 <?php //if($i%$rows==0 || $i == count($newItems)) { ?> 
 </div> 
 <?php //}?>

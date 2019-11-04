@@ -19,7 +19,7 @@ use Magento\Framework\App\Action\Action;
 <?php 
     $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
     $category = $objectManager->get('Magento\Framework\Registry')->registry('current_category');//get current category
-    if($category->getId()=='3'){	
+   if($category->getId()=='3'){	
  //Block for shop all page		
 ?>
 <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('shopall')->toHtml(); ?>				
@@ -112,9 +112,9 @@ $_helper = $this->helper('Magento\Catalog\Helper\Output');
                 <input type="hidden" name="product" value="<?= /* @escapeNotVerified */ $postParams['data']['product'] ?>">
                 <input type="hidden" name="<?= /* @escapeNotVerified */ Action::PARAM_NAME_URL_ENCODED ?>" value="<?= /* @escapeNotVerified */ $postParams['data'][Action::PARAM_NAME_URL_ENCODED] ?>">
                  <?= $block->getBlockHtml('formkey') ?>
-                <button type="submit" title="<?= $block->escapeHtml(__('Buy Now')) ?>"
+                <button type="submit" title="<?= $block->escapeHtml(__('Shop Now')) ?>"
                    class="action tocart primary learn-btn btn-orange">
-                <span><?= /* @escapeNotVerified */ __('Buy Now') ?></span>
+                <span><?= /* @escapeNotVerified */ __('Shop Now') ?></span>
                 </button>
                </form>
                <?php else: ?>
