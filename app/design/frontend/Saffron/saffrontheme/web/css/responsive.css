@@ -382,6 +382,8 @@
 	.nav-sections-items .menuBtn .menubar { background: #fff; }
 	.menu-item-front:after { content: ""; position: absolute; height: 35%; width: 100%; 
 		background: rgba(0, 0, 0, 0.3); left: 0; right: 0; }
+	.box-tocart .fieldset { display: inherit; }
+	.box-tocart .fieldset .actions { margin-top: 30px; }	
 	
 }
 
@@ -697,7 +699,6 @@
 	.page-layout-2columns-right main#maincontent { margin:30px auto; }
 	.page-layout-1column .logo-col img, .page-layout-2columns-right .logo-col img { height:46px; }
 	.page-layout-2columns-right .page-header { height:70px; }
-	.box-tocart .fieldset { display: inherit; }
-	.box-tocart .fieldset .actions { margin-top: 30px; }
+	
 	
 }
