@@ -41,17 +41,17 @@
                     <li class="menu-level <?php if(($_SERVER['REQUEST_URI']=='/contact/')||($_SERVER['REQUEST_URI']=='/contact')) {echo "active";}?>">
                         <a href="<?php echo $this->getUrl('contact')?>" class="">Contact</a>
                     </li>
-                    <li class="menu-item labs-menu  <?php if($category_id == '3'){echo 'active';} ?>">
+                    <li class="menu-item labs-menu  <?php if($category_id == '3'){echo 'active';} ?>  <?php if($parentcategory =='3'){echo 'active';}?>">
                         <i class="fa fa-angle-left"></i>
 						<?php $catgries = $this->getallcategries(3)?>
 						<a href="<?php echo $catgries->getUrl();?>" class="">Labs</a>
                     </li>
-                    <li class="menu-item worx-menu <?php if($category_id == '4'){echo 'active';} ?>">
+                    <li class="menu-item worx-menu <?php if($category_id == '4'){echo 'active';} ?>   <?php if($parentcategory =='4'){echo 'active';}?>">
                         <i class="fa fa-angle-left"></i>
 						<?php $catgries = $this->getallcategries(4)?>
                             <a href="<?php echo $catgries->getUrl();?>" class="">Worx</a>
                     </li>
-                    <li class="menu-item cbdx-menu <?php if($category_id == '5'){echo 'active';} ?>">
+                    <li class="menu-item cbdx-menu <?php if($category_id == '5'){echo 'active';} ?>   <?php if($parentcategory =='5'){echo 'active';}?>">
                         <i class="fa fa-angle-left"></i>
 						<?php $catgries = $this->getallcategries(5)?>
                             <a href="<?php echo $catgries->getUrl();?>" class="">CBDX</a>
@@ -103,7 +103,7 @@
                 <!--menu-1-labs-->
  <div class="navbar-body menu-item-labs <?php if($category_id =='3'){echo 'active';}?>  <?php if($parentcategory =='3'){echo 'active';}?>" >
 
-	<?php if($parentcategory == '3'){echo 'active';}?> 
+	
 	 <div class="menu-item-description">
 	 
        <!--<div class="mobile-back-btn">
