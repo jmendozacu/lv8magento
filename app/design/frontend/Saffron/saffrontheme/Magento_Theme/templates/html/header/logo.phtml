@@ -87,7 +87,9 @@ if($checkModule == 'cms'){ ?>
 <?php }else{ ?>
     
  <a  href="<?= $block->getUrl('') ?>" title="<?= /* @escapeNotVerified */ $storeName ?>">
-<?php if(($_SERVER['REQUEST_URI']=='/news/')||($_SERVER['REQUEST_URI']=='/news')||($_SERVER['REQUEST_URI']=='/contact/')||($_SERVER['REQUEST_URI']=='/contact')) {?>
+ 
+<?php  $checkcbdx1 = (explode("/",$_SERVER['REQUEST_URI'])) ;  ?>
+<?php if(($_SERVER['REQUEST_URI']=='/news/')||($_SERVER['REQUEST_URI']=='/news')||($_SERVER['REQUEST_URI']=='/contact/')||($_SERVER['REQUEST_URI']=='/contact')||$checkcbdx1[1]=='news' ) {?>
 
 <img src="<?php echo $this->getMedia().'/theme/lv8-logo2.png' ?>"
              title="<?= /* @escapeNotVerified */ $block->getLogoAlt() ?>"
