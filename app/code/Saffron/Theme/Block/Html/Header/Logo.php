@@ -166,7 +166,7 @@ class Logo extends \Magento\Framework\View\Element\Template
 	    $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
         $subcategory = $objectManager->create('Magento\Catalog\Model\Category')->load($id);           
         $alldate = $subcategory->getData();
-		return $alldate['innerlogo'];
+		return $alldate ;
 	}
 		
  public function getMedia(){

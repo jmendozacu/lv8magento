@@ -19,9 +19,12 @@ if(!empty($categreisdata['entity_id'])){ ?>
 </a>
 <?php } else { ?>
 
-<?php echo $categreisdata->getUrl() ;?>
+<?php  $substr = $this->getInnerlogo($categreisdata['parent_id']) ;
+
+echo"<pre>";print_r($substr->getData());
+?>
 <a  href="<?php echo $this->getUrl('') ;?>" title="">
-<img src="<?php echo $this->getMedia().'catalog/category/'.$this->getInnerlogo($categreisdata['parent_id']); ?>" title="" alt="" width="275" height="28">
+<img src="<?php //echo $this->getMedia().'catalog/category/'.$this->getInnerlogo($categreisdata['parent_id']); ?>" title="" alt="" width="275" height="28">
 </a>
 <?php }?>
 
