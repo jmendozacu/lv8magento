@@ -3,7 +3,7 @@
     $category = $objectManager->get('Magento\Framework\Registry')->registry('current_category');//get current 
     if(!empty($category)){
     $category_id = $category->getId();
-    echo $parentcategory = $category->getParentCategory()->getId();
+    $parentcategory = $category->getParentCategory()->getId();
 	}else{
 	 $category_id = '';	
 	 $parentcategory ='';
@@ -101,7 +101,7 @@
                 <!--/menu-front-->
 
                 <!--menu-1-labs-->
- <div class="navbar-body menu-item-labs <?php if(($category_id=='3')||($parentcategory=='3')){echo 'active';}?>" >
+ <div class="navbar-body menu-item-labs <?php if($category_id =='3'){echo 'active';}?>  <?php if($parentcategory =='3'){echo 'active';}?>" >
      <?php echo $parentcategory ;?>
 	 
 	 <div class="menu-item-description">
@@ -155,7 +155,7 @@
                 <!--/menu-1-labs-->
 
  <!--menu-2-worx-->
- <div class="navbar-body menu-item-worx <?php if(($category_id=='4')||($parentcategory=='4')){echo 'active' ;}?>">
+ <div class="navbar-body menu-item-worx <?php if($category_id =='4'){echo 'active' ;}?>  <?php if($parentcategory=='4'){echo 'active';}?>">
     <div class="menu-item-description">
      <!--<div class="mobile-back-btn">
      <a href="javascript:void(0);" class=""><i class="fa fa-angle-left"></i></a>
@@ -208,7 +208,7 @@
   <!--/menu-2-worx-->
 
  <!--menu-3-cbdx-->
-  <div class="navbar-body menu-item-cbdx <?php if(($category_id=='5')||($parentcategory=='5')){echo 'active';}?>">
+  <div class="navbar-body menu-item-cbdx <?php if($category_id =='5'){echo 'active';}?>  <?php if($parentcategory =='5'){echo 'active';}?>">
       <div class="menu-item-description">
        <!--<div class="mobile-back-btn">
          <a href="javascript:void(0);" class=""><i class="fa fa-angle-left"></i></a>
