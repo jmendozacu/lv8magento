@@ -171,6 +171,11 @@ $(document).ready(function(){
    $(".information-mobile span").on("click", function(){
 		$(this).parent().next(".info-title-list").slideToggle();	
 	})
+	
+	$(".menu-item-worx .adrs-col li a, .menu-item-labs .adrs-col li a").on("click", function(){
+		$(".nav-sections").removeClass('open');
+	})
+
  
   /*  require([ "jquery","aos/js"], function($,aos){ 
      AOS.init();	
