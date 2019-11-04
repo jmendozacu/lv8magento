@@ -394,8 +394,9 @@
 	.menu-inner, .menu-col-main ul { padding:20px 12px; }
 	.container{ max-width:100%;}
 	.logo-col img,
-	.lv8-page .logo-col img, .labs-page .logo-col img, .worx-page .logo-col img{ width:auto; height:30px; }
-	.lv8-page .logo-col img {  height: 30px; }
+	body.lv8-page .logo-col img, body.labs-page .logo-col img,
+	body.worx-page .logo-col img{ width:auto; height:30px; }
+	body.lv8-page .logo-col img {  height: 30px; }
 	
 	.cbdx-page .logo-col img, .catalog-product-view .logo-col img, .checkout-cart-index .logo-col img,
 	.checkout-onepage-success .logo-col img,
