@@ -247,7 +247,7 @@
 	.our-expertise figure { width:50px;}
 	.our-expertise .expertise-info { width:calc(100% - 50px); }
 	.craft-graybx { min-height: 40vh; display: flex; flex-direction: column;  justify-content: center; }
-	button#product-addtocart-button { width:100%; padding:17px 10px; }
+	button#product-addtocart-button { width:100%; }
 	body.catalog-product-view .column.main, body.checkout-cart-index .column.main, body.checkout-onepage-success .columns > .column.main, body[class*="customer-account-"] main#maincontent .columns > .column.main, .multishipping-checkout-login main#maincontent .columns > .column.main,
 	body.checkout-cart-index .banner-title-notfront	{ width:98%; }
 	.product-info-main .product-info-stock-sku { padding-left:0; }
@@ -609,7 +609,7 @@
 	.stayUpdate-col .craft-graybx { padding-left:0px; padding-right:0px; }
 	.join-btn { padding:15px 20px; }
 	.stayUpdate-col .form-control { padding-right:85px; }
-	.action.primary, .review-form .action.submit.primary, button#product-addtocart-button { padding:17px 10px; }
+	.action.primary, .review-form .action.submit.primary  { padding:17px 10px; }
 	.product.data.items { margin: 0; }
 	.product.data.items > .item.content {  padding: 20px; }
 	.product.data.items > .item.content { border-bottom:none; }
@@ -697,6 +697,7 @@
 	.page-layout-2columns-right main#maincontent { margin:30px auto; }
 	.page-layout-1column .logo-col img, .page-layout-2columns-right .logo-col img { height:46px; }
 	.page-layout-2columns-right .page-header { height:70px; }
-	
+	.box-tocart .fieldset { display: inherit; }
+	.box-tocart .fieldset .actions { margin-top: 30px; }
 	
 }
