@@ -167,7 +167,10 @@ $(document).ready(function(){
 			scrollTop: $(window).height()
 		}, 700);
 	});
- 
+   
+   $(".information-mobile span").on("click", function(){
+		$(this).parent().next(".info-title-list").slideToggle();	
+	})
  
   /*  require([ "jquery","aos/js"], function($,aos){ 
      AOS.init();	
