@@ -68,12 +68,10 @@ $product_url = $this->getBaseUrl().$_item['url_key'];
 </p>
 </div>
 
-<div class="visitstore-btn">
-<a class="learn-btn btn-orange" href="<?php echo $product_url ; ?>">VISIT STORE</a>
-</div>
+
 
 <?php if ($showCart): ?>
-	<div class="actions-primary">
+	<div class="actions-primary visitstore-btn">
 		<?php if ($_item->isSaleable()): ?>
 		<?php if ($_item->getTypeInstance()->hasRequiredOptions($_item)): ?>
 			<button class="action tocart learn-btn btn-orange" data-mage-init='{"redirectUrl":{"url":"<?php echo $block->getAddToCartUrl($_item) ?>"}}' type="button" title="<?php echo __('Shop Now') ?>">
