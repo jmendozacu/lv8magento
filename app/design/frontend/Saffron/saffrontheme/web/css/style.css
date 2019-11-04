@@ -2965,6 +2965,6 @@ input[type=checkbox], input[type=radio] { height:auto; }
     text-decoration: underline;
 }
 .catalog-product-view .column.main .mobile-arrow {  display: none; }
-
+.checkout-index-index .nav-sections, .checkout-index-index .nav-toggle { display:block; }
 
 

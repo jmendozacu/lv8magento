@@ -28,10 +28,6 @@ button:not(.primary) {
     display: block;
 }
 
-.block.block-search {
-    display: none;
-}
-
 .cbdx-page.page-not-front header {
     position: relative;
 }
