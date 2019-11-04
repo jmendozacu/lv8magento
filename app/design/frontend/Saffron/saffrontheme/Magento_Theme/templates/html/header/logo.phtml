@@ -12,14 +12,19 @@
 ?>
 <?php   $categreisdata = $this->getCategrieslogo();
 if(!empty($categreisdata['entity_id'])){ ?>
-<a  href="<?php echo $this->getUrl($categreisdata['url_path']) ;?>" title="">
+
 <?php if($categreisdata['parent_id']=='2'){?>
+<a  href="<?php echo $this->getUrl('') ;?>" title="">
 <img src="<?php echo $this->getMedia().'catalog/category/'.$categreisdata->getHomelogo(); ?>" title="" alt="" width="275" height="28">
-<?php } else { ?>
-<?php var_dump($categreisdata->getData());?>
-<img src="<?php echo $this->getMedia().'catalog/category/'.$this->getInnerlogo($categreisdata['parent_id']); ?>" title="" alt="" width="275" height="28">
-<?php }?>
 </a>
+<?php } else { ?>
+
+<?php echo $categreisdata->getUrl() ;?>
+<a  href="<?php echo $this->getUrl('') ;?>" title="">
+<img src="<?php echo $this->getMedia().'catalog/category/'.$this->getInnerlogo($categreisdata['parent_id']); ?>" title="" alt="" width="275" height="28">
+</a>
+<?php }?>
+
 
  
  
