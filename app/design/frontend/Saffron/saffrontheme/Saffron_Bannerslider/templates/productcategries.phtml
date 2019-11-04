@@ -1,0 +1,32 @@
+<?php
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$category = $objectManager->get('Magento\Framework\Registry')->registry('current_category');//get current category
+$subcats = $category->getChildrenCategories();
+$_helper = $this->helper('Magento\Catalog\Helper\Output');
+?>
+<?php $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$categoryFactory = $objectManager->get('\Magento\Catalog\Model\CategoryFactory');
+$categoryId = 9; // YOUR CATEGORY ID
+$category = $categoryFactory->create()->load($categoryId);
+$childrenCategories = $category->getChildrenCategories();
+$protocol = 'http';
+$url = $protocol . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+
+?>
+
+<div class="product-tab-title" id="pills-tabs">
+                    <div class="container">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <?php foreach($childrenCategories as $child){ ?>
+                            <li class="nav-item">
+                                <?php if($url == $child->getUrl()){?>
+                                <a class="nav-link active" data-toggle="pill" href="<?php echo $child->getUrl();?>/#pills-tabs" role="tab" aria-controls="pills-home" aria-selected="true"><?php echo $child->getName();?></a>
+                                <?php }else{ ?>
+                                <a class="nav-link" data-toggle="pill" href="<?php echo $child->getUrl();?>/#pills-tabs" role="tab" aria-controls="pills-home" aria-selected="false"><?php echo $child->getName();?></a>
+                                <?php } ?>
+                            </li>
+                            <?php } ?>
+                        </ul>
+                    </div>
+</div>
+     
