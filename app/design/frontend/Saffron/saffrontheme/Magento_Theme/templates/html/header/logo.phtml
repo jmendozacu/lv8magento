@@ -86,15 +86,25 @@ if($checkModule == 'cms'){ ?>
 
 <?php }else{ ?>
     
-<?php echo $_SERVER['REQUEST_URI']; ?>
  <a  href="<?= $block->getUrl('') ?>" title="<?= /* @escapeNotVerified */ $storeName ?>">
+<?php if(($_SERVER['REQUEST_URI']=='/news/')||($_SERVER['REQUEST_URI']=='/news')||($_SERVER['REQUEST_URI']=='/contact/')||($_SERVER['REQUEST_URI']=='/contact')) {?>
 
-  <img src="<?= /* @escapeNotVerified */ $block->getLogoSrc() ?>"
+<img src="<?php echo $this->getMedia().'/theme/lv8-logo2.png' ?>"
              title="<?= /* @escapeNotVerified */ $block->getLogoAlt() ?>"
              alt="<?= /* @escapeNotVerified */ $block->getLogoAlt() ?>"
              <?= $block->getLogoWidth() ? 'width="' . $block->getLogoWidth() . '"' : '' ?>
              <?= $block->getLogoHeight() ? 'height="' . $block->getLogoHeight() . '"' : '' ?>
         />
+<?php }else{ ?>
+ <img src="<?= /* @escapeNotVerified */ $block->getLogoSrc() ?>"
+             title="<?= /* @escapeNotVerified */ $block->getLogoAlt() ?>"
+             alt="<?= /* @escapeNotVerified */ $block->getLogoAlt() ?>"
+             <?= $block->getLogoWidth() ? 'width="' . $block->getLogoWidth() . '"' : '' ?>
+             <?= $block->getLogoHeight() ? 'height="' . $block->getLogoHeight() . '"' : '' ?>
+        />
+	
+<?php }
+?>
 
 	
 <?php }
