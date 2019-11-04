@@ -12,7 +12,7 @@
 ?>
 <?php   $categreisdata = $this->getCategrieslogo();
 if(!empty($categreisdata['entity_id'])){ ?>
-<a  href="<?php echo $this->getUrl('') ;?>" title="">
+<a  href="<?php echo $this->getUrl($categreisdata['url_path']) ;?>" title="">
 <?php if($categreisdata['parent_id']=='2'){?>
 <img src="<?php echo $this->getMedia().'catalog/category/'.$categreisdata->getHomelogo(); ?>" title="" alt="" width="275" height="28">
 <?php } else { ?>
