@@ -86,7 +86,7 @@ if($checkModule == 'cms'){ ?>
 
 <?php }else{ ?>
     
-<?php echo $checkcbdx ; ?>
+<?php echo $_SERVER['REQUEST_URI']; ?>
  <a  href="<?= $block->getUrl('') ?>" title="<?= /* @escapeNotVerified */ $storeName ?>">
 
   <img src="<?= /* @escapeNotVerified */ $block->getLogoSrc() ?>"
