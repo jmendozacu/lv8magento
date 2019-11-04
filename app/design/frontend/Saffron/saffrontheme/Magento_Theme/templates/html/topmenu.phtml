@@ -1,9 +1,9 @@
 <?php 
     $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
-    $category = $objectManager->get('Magento\Framework\Registry')->registry('current_category');//get current category
+    $category = $objectManager->get('Magento\Framework\Registry')->registry('current_category');//get current 
     if(!empty($category)){
     $category_id = $category->getId();
-    $parentcategory = $category->getParentCategory()->getId();
+    echo $parentcategory = $category->getParentCategory()->getId();
 	}else{
 	 $category_id = '';	
 	 $parentcategory ='';
@@ -105,6 +105,7 @@
      <?php echo $parentcategory ;?>
 	 
 	 <div class="menu-item-description">
+	 <?php echo $parentcategory ;?>
        <!--<div class="mobile-back-btn">
           <a href="javascript:void(0);" class=""><i class="fa fa-angle-left"></i></a>
         </div> -->
