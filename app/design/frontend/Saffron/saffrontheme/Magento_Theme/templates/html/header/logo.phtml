@@ -21,7 +21,7 @@ if(!empty($categreisdata['entity_id'])){ ?>
 
 <?php  $substr = $this->getInnerlogo($categreisdata['parent_id']) ;
 
-echo"<pre>";print_r($substr->getData());
+echo"<pre>";print_r($substr);
 ?>
 <a  href="<?php echo $this->getUrl('') ;?>" title="">
 <img src="<?php //echo $this->getMedia().'catalog/category/'.$this->getInnerlogo($categreisdata['parent_id']); ?>" title="" alt="" width="275" height="28">
