@@ -184,7 +184,7 @@ $(document).ready(function(){
 	$(".block.block-search .block.block-title strong").on("click", function(){
 		$(".header .block-search .block-content").fadeIn();	
 	});
-	$(document).on("click", function(){
+	$(document).on("click", function(e){
 		e.stopPropagation(); 
 		$(".header .block-search .block-content").fadeOut();	
 	});
