@@ -862,7 +862,8 @@ button#product-addtocart-button:focus {
     height: auto;
 }
 
-.theBrands-carousel .boxBrands p {
+.theBrands-carousel .boxBrands p,
+.theBrands-carousel .boxBrands span {
     font-weight: 300;
     margin:0;
 }
@@ -2967,7 +2968,7 @@ input[type=checkbox], input[type=radio] { height:auto; }
 .checkout-index-index .nav-sections, .checkout-index-index .nav-toggle { display:block; }
 .product-tab-title { display:none; }
 .page-not-front.categorypath-cbdx-products .product-tab-title { display:block; }
-
+.craft-graybx b { font-weight: 600; }
 
 
 

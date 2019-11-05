@@ -13,7 +13,8 @@
       .craft-research .left-col {  order:initial; -webkit-order:initial;  }
       .craft-box-row .right-col { display: flex;  position: relative; }
       .craft-box-row .craft-info-col {  position: absolute; top: 50%; transform: translate(0, -50%); }
-      .theBrands-carousel .boxBrands p { font-size: 18px; }
+      .theBrands-carousel .boxBrands p,
+		.theBrands-carousel .boxBrands span	  { font-size: 18px; }
       .cbd-info-bx {  flex-wrap: wrap;   align-items: center;   }
       .cbd-info-row .row .col-md-6 { padding: 0;   }
       .info-row-1 .cbd-info-bx { margin-left: 12%; width: calc(100% - 12%); box-sizing: border-box; padding: 0 12% 0 0; }
