@@ -2981,9 +2981,10 @@ input[type=checkbox], input[type=radio] { height:auto; }
 }
 .header .block-search .block-content {
     position: absolute;
-    right: 150px;
-    top: -13px;
-	display:none;
+    right: 13px;
+    top: -9px;
+    display: none;
+    width: 280px;
 }
 .header .block.block-search .block.block-title {
     display: block;
@@ -3003,6 +3004,14 @@ input[type=checkbox], input[type=radio] { height:auto; }
     font-weight: 400;
     cursor: pointer;
 }
-
+.header .block-search .label:before { display:none; }
+.header .block-search .block-content input {
+    background: none;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-left: 0;
+    padding-right: 50px;
+}
 
 

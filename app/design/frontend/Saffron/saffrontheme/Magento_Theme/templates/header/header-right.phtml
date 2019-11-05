@@ -185,9 +185,13 @@ $(document).ready(function(){
 		e.stopPropagation(); 
 		$(".header .block-search .block-content").fadeIn();	
 	});
+	$(".header .block.block-search").on("click", function(e){
+		e.stopPropagation(); 
+	});	
 	$(document).on("click", function(){
 		$(".header .block-search .block-content").fadeOut();	
 	});
+	
 
  
   /*  require([ "jquery","aos/js"], function($,aos){ 
