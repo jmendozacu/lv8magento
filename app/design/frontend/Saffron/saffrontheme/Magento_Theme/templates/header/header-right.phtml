@@ -184,6 +184,10 @@ $(document).ready(function(){
 	$(".block.block-search .block.block-title strong").on("click", function(){
 		$(".header .block-search .block-content").fadeIn();	
 	});
+	$(document).on("click", function(){
+		e.stopPropagation(); 
+		$(".header .block-search .block-content").fadeOut();	
+	});
 
  
   /*  require([ "jquery","aos/js"], function($,aos){ 
