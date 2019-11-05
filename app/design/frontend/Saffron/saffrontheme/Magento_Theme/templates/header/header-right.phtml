@@ -183,13 +183,13 @@ $(document).ready(function(){
 	
 	$(".block.block-search .block.block-title strong").on("click", function(e){
 		e.stopPropagation(); 
-		$(".header .block-search .block-content").fadeIn();	
+		$(".header .block-search .block-content").show(500);	
 	});
 	$(".header .block.block-search").on("click", function(e){
 		e.stopPropagation(); 
 	});	
 	$(document).on("click", function(){
-		$(".header .block-search .block-content").fadeOut();	
+		$(".header .block-search .block-content").hide(500);	
 	});
 	
 
