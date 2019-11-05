@@ -2966,7 +2966,7 @@ input[type=checkbox], input[type=radio] { height:auto; }
 .catalog-product-view .column.main .mobile-arrow {  display: none; }
 .checkout-index-index .nav-sections, .checkout-index-index .nav-toggle { display:block; }
 .product-tab-title { display:none; }
-.catalog-category-view .product-tab-title { display:block; }
+.page-not-front.categorypath-cbdx-products .product-tab-title { display:block; }
 
 
 
