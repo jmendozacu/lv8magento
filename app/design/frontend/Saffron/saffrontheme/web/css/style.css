@@ -2986,18 +2986,21 @@ input[type=checkbox], input[type=radio] { height:auto; }
 }
 .block.block-search .block.block-title {
     display: block;
-    margin: 0 40px 0 0;
+    margin: 0 30px 0 0;
+    position: relative;
+    top: 2px;
 }
 .block.block-search .block.block-title strong {
     font-size: 0;
     color: transparent;
 }
 .block.block-search .block.block-title strong:before {
-	content: "\f002";
-	font-family: fontawesome;
-	color: #4E4F53;
-	font-size: 22px;
-	font-weight: 400;
+	content: "\e615";
+    font-family: luma-icons;
+    color: #000;
+    font-size: 26px;
+    font-weight: 400;
+    cursor: pointer;
 }
 
 
