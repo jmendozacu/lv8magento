@@ -3019,10 +3019,14 @@ input[type=checkbox], input[type=radio] { height:auto; }
     font-size: 26px;
     margin-top: 7px;
     opacity: 1;
+    position: relative;
+    right: -3px;
+    top: 1px;
 }
 header.header .block-search .action.search {
     opacity: 1;
     cursor: pointer;
     pointer-events: unset;
 }
+.header .block-search .action.search:hover:before { color:#000; }
 
