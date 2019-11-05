@@ -3004,7 +3004,8 @@ input[type=checkbox], input[type=radio] { height:auto; }
     font-weight: 400;
     cursor: pointer;
 }
-.header .block-search .label:before { display:none; }
+.header .block-search .label:before,
+.header .block-search .action.search:before { display:none; }
 .header .block-search .block-content input {
     background: none;
     font-size: 15px;
