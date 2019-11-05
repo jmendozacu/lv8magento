@@ -2972,6 +2972,33 @@ input[type=checkbox], input[type=radio] { height:auto; }
 .page-not-front.categorypath-cbdx-products .product-tab-title { display:block; }
 .craft-graybx b { font-weight: 600; }
 
+/*search-css*/
+.block.block-search {
+    position: relative;
+    float: none;
+    width: auto;
+    display: inline-block;
+}
+.block-search .block-content {
+    position: absolute;
+    right: 150px;
+    top: -13px;
+}
+.block.block-search .block.block-title {
+    display: block;
+    margin: 0 40px 0 0;
+}
+.block.block-search .block.block-title strong {
+    font-size: 0;
+    color: transparent;
+}
+.block.block-search .block.block-title strong:before {
+	content: "\f002";
+	font-family: fontawesome;
+	color: #4E4F53;
+	font-size: 22px;
+	font-weight: 400;
+}
 
 
 
