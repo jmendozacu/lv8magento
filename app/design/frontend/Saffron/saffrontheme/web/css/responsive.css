@@ -709,5 +709,6 @@
 	header.header .block-search .action.search span { font-size: 0;  color: transparent; }
 	header.header .block-search .action.search span:before { content: "\e615"; font-family: luma-icons; color: #000;  font-size: 26px; font-weight: 400; cursor: pointer; }
 	.header .block.block-search .block.block-title.active strong:before { content: "\e616"; }	
+	.product-info-main .product-info-stock-sku { padding-left:0; }
 	
 }
