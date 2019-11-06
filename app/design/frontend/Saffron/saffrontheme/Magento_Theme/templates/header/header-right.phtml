@@ -180,23 +180,27 @@ $(document).ready(function(){
 	
 	
 	//header search script
-	$(".block.block-search .block.block-title strong").on("click", function(e){
-		e.stopPropagation(); 
-		$(this).parent().toggleClass('active');
-		$(".header .block-search .block-content").show();
-	});
+	if ($(window).width() >= 768) {
+		$(".block.block-search .block.block-title strong").on("click", function(e){
+			e.stopPropagation(); 
+			$(".header .block-search .block-content").show();
+		});
+	}
 	$(".header .block.block-search").on("click", function(e){
 		e.stopPropagation(); 
 	});	
 	$(document).on("click", function(){
 		$(".header .block-search .block-content").hide();	
 	});
+	
 	if ($(window).width() <= 767) {
+		$(".block.block-search .block.block-title strong").on("click", function(){
+			e.stopPropagation(); 
+			$(this).parent().toggleClass('active');
+			$(".header .block-search .block-content").slideToggle();
+		});
 		$(".block.block-search .block.block-title.active strong").on("click", function(){
 			$(".header .block-search .block-content").hide();
-		});
-		$(".block.block-search .block.block-title strong").on("click", function(){
-			$(".header .block-search .block-content").show();
 		});
 	};
 	
