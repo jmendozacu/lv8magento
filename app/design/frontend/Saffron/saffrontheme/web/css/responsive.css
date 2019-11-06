@@ -701,6 +701,12 @@
 	.page-layout-2columns-right main#maincontent { margin:30px auto; }
 	.page-layout-1column .logo-col img, .page-layout-2columns-right .logo-col img { height:46px; }
 	.page-layout-2columns-right .page-header { height:70px; }
+	.block-search .control { border:none; margin:0; padding:0; }
+	.header .block-search .block-content { top:40px; width:auto; right:-136px; min-width: 280px; padding:10px; }
+	.header .block-search .block-content input { width: 270px;  background: #fff; }
+	header.header .block-search .action.search { background: none; border: none; box-shadow: none;
+		display:block; position: absolute; top: 18px; right: 8px; padding: 10px; cursor: pointer;}
+	header.header .block-search .action.search span { font-size: 0;  color: transparent; }
 	
 	
 }
