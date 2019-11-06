@@ -104,6 +104,14 @@
 		body.account.page-layout-2columns-left .columns { max-width: 1600px; width: 94%; padding: 0 15px !important; margin: 0 auto;
 		float: none; }
 		.block-collapsible-nav .content { padding:35px 0; }
+		.page-front .header .block-search .block-content input { background:#fff; padding-left:6px; }
+		.page-front .header .block-search .action.search:before,
+		.page-front .header .block-search .action.search:hover:before { color:#fff; }
+		.page-front .header .block-search .block-content input { border-color:#fff; color:#fff;}
+		.page-front .header .block-search .block-content input::-webkit-input-placeholder { color:#fff; }
+		.page-front .header .block-search .block-content input:-ms-input-placeholder {color:#fff;}
+		.page-front .header .block-search .block-content input::placeholder {color:#fff;}
+		
  
 }
 
@@ -405,11 +413,11 @@
 	.multishipping-checkout-login .logo-col img,
 	.checkout-index-index header.header .header.content >a img,
 	.cbdx-page.page-not-front .logo-col img	{
-		height: 46px;
+		height: 40px;
 	}
 	.lv8-page.page-layout-1column .header-sticky img,
 	.labs-page.page-layout-1column .header-sticky img,
-	.worx-page.page-layout-1column .header-sticky img { height: 30px; }
+	.worx-page.page-layout-1column .header-sticky img { height: 24px; }
 	.checkout-index-index header.header .header.content .minicart-wrapper { margin-right:115px; }
 	.checkout-index-index #checkout.am-checkout { padding:0; }
 	.checkout-index-index .authentication-wrapper { margin:0; }
@@ -700,7 +708,7 @@
 	.cbdx-page.page-front .banner-breadcrumbs { margin-top: 0; }
 	.cms-no-route .banner-title-notfront h1 { font-size:36px; }
 	.page-layout-2columns-right main#maincontent { margin:30px auto; }
-	.page-layout-1column .logo-col img, .page-layout-2columns-right .logo-col img { height:46px; }
+	.page-layout-1column .logo-col img, .page-layout-2columns-right .logo-col img { height:40px; }
 	.page-layout-2columns-right .page-header { height:70px; }
 	.block-search .control { border:none; margin:0; padding:0; }
 	.header .block-search .block-content { top:40px; width:auto; right:-136px; min-width: 280px; padding:10px;z-index:2; background:#fff; }
@@ -712,5 +720,6 @@
 	.header .block.block-search .block.block-title.active strong:before { content: "\e616"; }	
 	.product-info-main .product-info-stock-sku { padding-left:0; }
 	.header .block.block-search .block.block-title { margin-right:12px;}
+	.lv8-page.cms-about .banner-breadcrumbs { margin-top: 0; }
 	
 }
