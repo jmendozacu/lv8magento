@@ -191,11 +191,11 @@ $(document).ready(function(){
 	$(document).on("click", function(){
 		$(".header .block-search .block-content").hide();	
 	});
-	if(window).width() <= 767 {
+	if ($(window).width() <= 767) {
 		$(".block.block-search .block.block-title.active strong").on("click", function(){
 		$(".header .block-search .block-content").hide();
 	});
-	}
+	};
 	
 	
 
