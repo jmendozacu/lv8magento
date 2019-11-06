@@ -396,8 +396,8 @@
 	.container{ max-width:100%;}
 	.logo-col img,
 	body.lv8-page .logo-col img, body.labs-page .logo-col img,
-	body.worx-page .logo-col img{ width:auto; height:30px; }
-	body.lv8-page .logo-col img {  height: 30px; }
+	body.worx-page .logo-col img{ width:auto; height:24px; }
+	body.lv8-page .logo-col img {  height: 24px; }
 	
 	.cbdx-page .logo-col img, .catalog-product-view .logo-col img, .checkout-cart-index .logo-col img,
 	.checkout-onepage-success .logo-col img,
@@ -558,7 +558,7 @@
 	.menu-caption h2 br, .menu-caption h3 br { display:none; }
 	.logo-col span.action.nav-toggle {  display: none; }
 	.sign-col { margin-right:11px; position:inherit; }
-	header.header .header.content, .catalog-product-view .page-header .header.content, .checkout-cart-index .header.content { right: 115px; margin-top: -2px; }	
+	header.header .header.content, .catalog-product-view .page-header .header.content, .checkout-cart-index .header.content { right: 110px; margin-top: -2px; }	
 	.sign-col .singin-dropdown {  right:15px; margin:0 auto;top:90%;  }
 	body .minicart-wrapper .block-minicart { right: -110px; top: 40px; }
 	.minicart-wrapper .block-minicart:before,
@@ -710,5 +710,6 @@
 	header.header .block-search .action.search span:before { content: "\e615"; font-family: luma-icons; color: #000;  font-size: 26px; font-weight: 400; cursor: pointer; }
 	.header .block.block-search .block.block-title.active strong:before { content: "\e616"; }	
 	.product-info-main .product-info-stock-sku { padding-left:0; }
+	.header .block.block-search .block.block-title { margin-right:12px;}
 	
 }
