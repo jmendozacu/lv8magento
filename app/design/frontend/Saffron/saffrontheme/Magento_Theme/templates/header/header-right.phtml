@@ -180,11 +180,12 @@ $(document).ready(function(){
 	
 	
 	//header search script
-
+	if ($(window).width() > 767) {
 	$(".block.block-search .block.block-title strong").on("click", function(e){
 		e.stopPropagation(); 
 		$(".header .block-search .block-content").show();
 	});
+	};
 	$(".header .block.block-search").on("click", function(e){
 		e.stopPropagation(); 
 	});	
@@ -192,7 +193,7 @@ $(document).ready(function(){
 		$(".header .block-search .block-content").hide();	
 	});
 	
-	if ($(window).width() <= 767) {
+	if ($(window).width() < 768) {
 		$(".block.block-search .block.block-title strong").on("click", function(e){
 			e.stopPropagation(); 
 			$(this).parent().toggleClass('active');
