@@ -201,6 +201,11 @@ $(document).ready(function(){
 		});
 		$(".block.block-search .block.block-title.active strong").on("click", function(){
 			$(".header .block-search .block-content").hide();
+			$(this).parent().removeClass('active');
+		});
+		$(document).on("click", function(){
+			$(".block.block-search .block.block-title").removeClass('active');
+			$(".header .block-search .block-content").hide();	
 		});
 	};
 	
