@@ -702,14 +702,12 @@
 	.page-layout-1column .logo-col img, .page-layout-2columns-right .logo-col img { height:46px; }
 	.page-layout-2columns-right .page-header { height:70px; }
 	.block-search .control { border:none; margin:0; padding:0; }
-	.header .block-search .block-content { top:40px; width:auto; right:-136px; min-width: 280px; padding:10px; }
+	.header .block-search .block-content { top:40px; width:auto; right:-136px; min-width: 280px; padding:10px;z-index:2; }
 	.header .block-search .block-content input { width: 270px;  background: #fff; position:inherit; left:inherit; }
 	header.header .block-search .action.search { background: none; border: none; box-shadow: none;
 		display:block; position: absolute; top: 29px; right: 8px; padding:6px 10px; cursor: pointer;}
 	header.header .block-search .action.search span { font-size: 0;  color: transparent; }
-	header.header .block-search .action.search span:before {
-    content: "\e615"; font-family: luma-icons; color: #000;  font-size: 26px; font-weight: 400; cursor: pointer;
-	}
-	
+	header.header .block-search .action.search span:before { content: "\e615"; font-family: luma-icons; color: #000;  font-size: 26px; font-weight: 400; cursor: pointer; }
+	.header .block.block-search .block.block-title.active strong:before { content: "\e616"; }	
 	
 }

@@ -180,10 +180,10 @@ $(document).ready(function(){
 	
 	
 	//header search script
-	
 	$(".block.block-search .block.block-title strong").on("click", function(e){
 		e.stopPropagation(); 
-		$(".header .block-search .block-content").show();	
+		$(this).parent().toggleClass('active');
+		$(".header .block-search .block-content").show();
 	});
 	$(".header .block.block-search").on("click", function(e){
 		e.stopPropagation(); 
@@ -191,6 +191,12 @@ $(document).ready(function(){
 	$(document).on("click", function(){
 		$(".header .block-search .block-content").hide();	
 	});
+	if(window).width() <= 767 {
+		$(".block.block-search .block.block-title.active strong").on("click", function(){
+		$(".header .block-search .block-content").hide();
+	});
+	}
+	
 	
 
  
