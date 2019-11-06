@@ -193,8 +193,11 @@ $(document).ready(function(){
 	});
 	if ($(window).width() <= 767) {
 		$(".block.block-search .block.block-title.active strong").on("click", function(){
-		$(".header .block-search .block-content").hide();
-	});
+			$(".header .block-search .block-content").hide();
+		});
+		$(".block.block-search .block.block-title strong").on("click", function(){
+			$(".header .block-search .block-content").show();
+		});
 	};
 	
 	
