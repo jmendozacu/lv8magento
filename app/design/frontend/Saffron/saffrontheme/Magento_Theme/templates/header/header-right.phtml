@@ -194,7 +194,7 @@ $(document).ready(function(){
 	});
 	
 	if ($(window).width() <= 767) {
-		$(".block.block-search .block.block-title strong").on("click", function(){
+		$(".block.block-search .block.block-title strong").on("click", function(e){
 			e.stopPropagation(); 
 			$(this).parent().toggleClass('active');
 			$(".header .block-search .block-content").slideToggle();
