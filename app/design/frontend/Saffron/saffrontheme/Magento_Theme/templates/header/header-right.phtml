@@ -180,12 +180,11 @@ $(document).ready(function(){
 	
 	
 	//header search script
-	if ($(window).width() >= 768) {
-		$(".block.block-search .block.block-title strong").on("click", function(e){
-			e.stopPropagation(); 
-			$(".header .block-search .block-content").show();
-		});
-	}
+
+	$(".block.block-search .block.block-title strong").on("click", function(e){
+		e.stopPropagation(); 
+		$(".header .block-search .block-content").show();
+	});
 	$(".header .block.block-search").on("click", function(e){
 		e.stopPropagation(); 
 	});	
