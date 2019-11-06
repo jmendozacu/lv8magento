@@ -104,7 +104,8 @@
 		body.account.page-layout-2columns-left .columns { max-width: 1600px; width: 94%; padding: 0 15px !important; margin: 0 auto;
 		float: none; }
 		.block-collapsible-nav .content { padding:35px 0; }
-		.page-front .header .block-search .block-content input { background:#fff; padding-left:6px; }
+		.page-front .header .block-search .block-content input { padding-left:6px; }
+		.page-front .header .block.block-search .block.block-title strong:before{ color:#fff;}
 		.page-front .header .block-search .action.search:before,
 		.page-front .header .block-search .action.search:hover:before { color:#fff; }
 		.page-front .header .block-search .block-content input { border-color:#fff; color:#fff;}
