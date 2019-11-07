@@ -18,7 +18,7 @@ $banners = $block->getBannerSlider();
 	<?php $url_image = $this->getMediaFolder().$banner['image']; ?>
 	
 	<?php if(!empty($banner['image_alt'])){?>
-	
+	<div class="item">
 	
 	<iframe src="https://player.vimeo.com/video/<?php echo trim($banner['image_alt']);?>?title=0&byline=0&portrait=0"   frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
 			</iframe>
@@ -38,6 +38,9 @@ $banners = $block->getBannerSlider();
 	     <?php echo $banner['image_alt'] ;?>
 			<?php echo $banner['title2']; ?>	 
 			<?php echo $banner['click_url']; ?>
+	
+	
+	 </div>
 	
 	<?php } else {?>
 	
