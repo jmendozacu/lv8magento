@@ -723,5 +723,7 @@
 	.lv8-page.cms-about .banner-breadcrumbs,
 	.page-front .banner-breadcrumbs	{ margin-top: 0; }
 	.page-front .header .block.block-search .block.block-title strong:before{ color:#fff;}
+	.vedio-mobile{ display:block;; }
+	.vedio-desktop { display:none; }
 	
 }

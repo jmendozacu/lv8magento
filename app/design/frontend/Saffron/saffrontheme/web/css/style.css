@@ -3030,4 +3030,10 @@ header.header .block-search .action.search {
     pointer-events: unset;
 }
 .header .block-search .action.search:hover:before { color:#000; }
+.vedio-mobile{ display:none; }
+
+.vedio-desktop {  height: 100vh; width: 100vw; }
+.vedio-desktop iframe { height: 100vh; width: 100vw; }
+
+
 
