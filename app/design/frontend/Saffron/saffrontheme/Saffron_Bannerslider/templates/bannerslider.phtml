@@ -20,11 +20,11 @@ $banners = $block->getBannerSlider();
 	<?php if(!empty($banner['image_alt'])){?>
 	<div class="item">
 	<div class="vedio-desktop">
-	<iframe src="https://player.vimeo.com/video/<?php echo trim($banner['image_alt']);?>?title=0&byline=0&portrait=0"   frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+	<iframe src="https://player.vimeo.com/video/<?php echo trim($banner['image_alt']);?>?autoplay=0&amp;background=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;muted=0&amp" allowfullscreen>
 	</iframe>
 	</div>	
     <div class="vedio-mobile">	
-	<iframe src="https://player.vimeo.com/video/<?php echo trim($banner['title2']);?>?title=0&byline=0&portrait=0"   frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+	<iframe src="https://player.vimeo.com/video/<?php echo trim($banner['title2']);?>?autoplay=0&amp;background=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;muted=0&amp" allowfullscreen>
 	</iframe>		
 	</div>	
     <audio id="player">
@@ -138,7 +138,7 @@ require([ 'jquery'], function($){
 $(document).ready(function(){
 /***Desktop Audio button***/
 //var button = document.getElementById("audio-section");
-var audio = $("#player");
+var audio = document.getElementById("player");
 
 $('#audio-section').click(function(e){ 
 alert('+++');
