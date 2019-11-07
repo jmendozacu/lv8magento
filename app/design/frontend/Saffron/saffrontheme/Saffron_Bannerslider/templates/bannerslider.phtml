@@ -13,18 +13,26 @@ $banners = $block->getBannerSlider();
 		<?php $i = 1; ?>
     <?php foreach ($banners as $banner): ?>
 	
-	<?php echo $banner['image_alt'] ;?>
+	    
+	
+	<?php $url_image = $this->getMediaFolder().$banner['image']; ?>
+	
+	<?php if(!empty($banner['image_alt'])){?>
+	  <?php echo $banner['image_alt'] ;?>
 			<?php echo $banner['title2']; ?>	 
 			<?php echo $banner['click_url']; ?>
 	
-	<?php $url_image = $this->getMediaFolder().$banner['image']; ?>
-            <div class="item"  style="background: url(<?php echo $url_image; ?>)">
+	<?php } else {?>
+	
+	<div class="item"  style="background: url(<?php echo $url_image; ?>)">
                 <div class="owl-item-caption">
                  <!--<a href="<?php echo $banner['click_url'] ?>" >  </a>  -->
-				 <h2><?php echo $banner['name']; ?></h2>
+				 <h1><?php echo $banner['name']; ?></h1>
 				
                 </div>    
             </div>
+	<?php } ?>
+            
         
 	<?php $i++; ?>            
     <?php endforeach; ?>     
