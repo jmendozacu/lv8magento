@@ -141,15 +141,7 @@ class Banner extends \Magento\Backend\Block\Widget\Form\Generic
 			]
 		);
 		
-		$elements['title2'] = $fieldset->addField(
-			'title2',
-			'text',
-			[
-				'name' => 'title2',
-				'label' => __('Title 2'),
-				'title' => __('Title 2'),
-			]
-		);
+		
 		
 		$elements['status'] = $fieldset->addField(
 			'status',
@@ -163,23 +155,36 @@ class Banner extends \Magento\Backend\Block\Widget\Form\Generic
 		);
 
 
+		
+		 
+		 
+		$elements['title2'] = $fieldset->addField(
+			'title2',
+			'text',
+			[
+				'name' => 'title2',
+				'label' => __('Mobile vedio ID'),
+				'title' => __('Mobile vedio ID'),
+			]
+		);
 		$elements['image_alt'] = $fieldset->addField(
 			'image_alt',
 			'text',
 			[
-				'title' => __('Alt Text'),
-				'label' => __('Alt Text'),
+				'title' => __('Desktop vedio ID'),
+				'label' => __('Desktop vedio ID'),
 				'name' => 'image_alt',
 				'note' => 'Used for SEO',
 			]
 		);
-
+         
+		
 		$elements['click_url'] = $fieldset->addField(
 			'click_url',
 			'text',
 			[
-				'title' => __('URL'),
-				'label' => __('URL'),
+				'title' => __('Vedio Sound '),
+				'label' => __('Vedio Sound '),
 				'name' => 'click_url',
 			]
 		);

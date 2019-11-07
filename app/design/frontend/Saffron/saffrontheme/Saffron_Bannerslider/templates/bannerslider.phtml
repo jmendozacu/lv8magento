@@ -13,13 +13,39 @@ $banners = $block->getBannerSlider();
 		<?php $i = 1; ?>
     <?php foreach ($banners as $banner): ?>
 	<?php $url_image = $this->getMediaFolder().$banner['image']; ?>
+	
+	
+		<?php if(!empty( $banner['image_alt')){ ?>
+			
+				 
+			<iframe src="https://player.vimeo.com/video/<?php echo $banner['image_alt'] ?>?title=0&byline=0&portrait=0"   frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+			</iframe>
+			
+			<iframe src="https://player.vimeo.com/video/<?php echo $banner['title2'] ?>?title=0&byline=0&portrait=0"   frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+			</iframe>
+			
+			<audio id="player">
+			  <source src='<?php echo $this->getMediaFolder().'videosound/'.$banner['click_url'] ?>' type='audio/mp3'/>
+			</audio>
+			
+			<div class="audio-section">
+			  <button id="button-on"><img src="<?php $url_image = $this->getMediaFolder(); ?>videosound/s-off.png"></button>
+			  <button id="button-off"><img src="<?php $url_image = $this->getMediaFolder(); ?>videosound/s-off.png"></button>
+			</div>
+
+			
+		  <?php } else { ?>
+	
             <div class="item"  style="background: url(<?php echo $url_image; ?>)">
                 <div class="owl-item-caption">
-                 <!--<a href="<?php echo $banner['click_url'] ?>" >  </a>  -->
-				 <h1><?php echo $banner['name']; ?></h1>
+                  
+				 <h2><?php echo $banner['name']; ?></h2>
+				
 				
                 </div>    
             </div>
+			
+			<?php }?>	
         
 	<?php $i++; ?>            
     <?php endforeach; ?>     
