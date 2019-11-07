@@ -19,13 +19,14 @@ $banners = $block->getBannerSlider();
 	
 	<?php if(!empty($banner['image_alt'])){?>
 	<div class="item">
-	
+	<div class="vedio-desktop">
 	<iframe src="https://player.vimeo.com/video/<?php echo trim($banner['image_alt']);?>?title=0&byline=0&portrait=0"   frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
-			</iframe>
-			
+	</iframe>
+	</div>	
+    <div class="vedio-mobile">	
 	<iframe src="https://player.vimeo.com/video/<?php echo trim($banner['title2']);?>?title=0&byline=0&portrait=0"   frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
 	</iframe>		
-		
+	</div>	
     <audio id="player">
 	<source src='<?php echo $this->getMediaFolder().'videosound/'.$banner['click_url'] ?>' type='audio/mp3'/>
 	</audio>
@@ -36,9 +37,7 @@ $banners = $block->getBannerSlider();
 	</div>		
 	
 	    
-	
-	
-	 </div>
+	</div>
 	
 	<?php } else {?>
 	
