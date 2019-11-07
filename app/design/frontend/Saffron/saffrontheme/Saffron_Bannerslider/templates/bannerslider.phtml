@@ -143,6 +143,7 @@ var audio = document.getElementById("player");
 $('#audio-section').click(function(e){ 
 alert('+++');
 if(audio.paused){
+	alert('+++1');
 audio.play();
 $('#button-off').hide();
 $('#button-on').show();
@@ -150,6 +151,7 @@ $('#button-on').show();
 //button.innerHTML = "<img src=\'/wp-content/uploads/2019/07/s-on.png\' width=\'46px\' height=\'46px\'>"; 
 } else {
 audio.pause();
+alert('+++2');
 $('#button-off').show();
 $('#button-on').hide();
 //button.innerHTML = "<img src=\'/wp-content/uploads/2019/07/s-off.png\' width=\'46px\' height=\'46px\'>";
