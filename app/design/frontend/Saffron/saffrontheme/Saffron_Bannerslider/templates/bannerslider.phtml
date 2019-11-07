@@ -137,20 +137,21 @@ require([ 'jquery'], function($){
 
 $(document).ready(function(){
 /***Desktop Audio button***/
-var button = document.getElementById("audio-section");
+//var button = document.getElementById("audio-section");
 var audio = document.getElementById("player");
 
-button.addEventListener("click", function(){
+$('#audio-section').click(function(e){ 
+alert('+++');
 if(audio.paused){
 audio.play();
-$('button-off').hide();
-$('button-on').show();
+$('#button-off').hide();
+$('#button-on').show();
 
 //button.innerHTML = "<img src=\'/wp-content/uploads/2019/07/s-on.png\' width=\'46px\' height=\'46px\'>"; 
 } else {
 audio.pause();
-$('button-off').show();
-$('button-on').hide();
+$('#button-off').show();
+$('#button-on').hide();
 //button.innerHTML = "<img src=\'/wp-content/uploads/2019/07/s-off.png\' width=\'46px\' height=\'46px\'>";
 }
 });
