@@ -2980,12 +2980,13 @@ input[type=checkbox], input[type=radio] { height:auto; }
     display: inline-block;
 }
 .header .block-search .block-content {
-    position: absolute;
+   position: absolute;
     right: 13px;
     top: -9px;
     display: none;
-    width: 280px;
-	background:none;
+    width: 300px;
+    background: none;
+    padding: 0px 0px 0px 60px;
 }
 .header .block.block-search .block.block-title {
     display: block;
