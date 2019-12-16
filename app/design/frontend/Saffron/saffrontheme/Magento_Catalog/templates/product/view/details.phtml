@@ -38,3 +38,23 @@
         </div>
     </div>
 <?php endif; ?>
+
+<span id="popup-image"></span>
+<?php echo $this->getUrl('review/product/listAjax/id/1/')?>
+<script type="text/javascript">
+require([ 'jquery'], function($){
+jQuery(document).ready(function($){
+   $.ajax({
+        url: <?php echo $this->getUrl('review/product/listAjax/id/1/')?>,
+        type: "GET",
+        data:  {"id":obj,"vediourl":vediourl},
+        success: function(response){
+			//alert(response);
+		$('#popup-image').html(response);	
+		
+        }
+	  });
+ 
+});
+});
+</script>
