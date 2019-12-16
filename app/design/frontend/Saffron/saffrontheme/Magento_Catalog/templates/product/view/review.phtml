@@ -8,4 +8,9 @@
 
 ?>
 <?php /** @var $block \Magento\Catalog\Block\Product\AbstractProduct */ ?>
+
+<div class="review_section">
+<div class="label-reviews-title"> Reviews </div>
+<button type="submit" title="write a review" class="action primary write-a-review" ><span>write a review</span></button>
 <?= $block->getReviewsSummaryHtml($block->getProduct(), false, true) ?>
+</div>
