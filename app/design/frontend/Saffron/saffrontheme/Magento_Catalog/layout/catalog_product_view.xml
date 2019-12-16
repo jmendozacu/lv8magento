@@ -12,7 +12,7 @@
     <update handle="catalog_product_opengraph" />
     <update handle="page_calendar"/>
     <body>
-	  
+	   <referenceBlock name="product.info.additional" remove="true" />
         <attribute name="itemtype" value="http://schema.org/Product" />
         <attribute name="itemscope" value="itemscope"/>
         <referenceBlock name="head.components">
