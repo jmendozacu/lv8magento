@@ -97,7 +97,7 @@ public function Shippingrangeprice(){
 	$subTotal = $cart->getQuote()->getSubtotal();
 	
 	
-	if(('0.00' < $subTotal)&&($subTotal <= '99.99') ){
+	if(('0.00' < $subTotal <= '99.99') ){
 		$pricerang = '10.00';
 	//}else if(('21.00' <= $subTotal)&& ($subTotal <= '39.99')){
 		//$pricerang ='7.95';
