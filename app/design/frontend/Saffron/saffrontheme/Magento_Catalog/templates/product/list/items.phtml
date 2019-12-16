@@ -162,13 +162,15 @@ switch ($type = $block->getType()) {
     <?php else: ?>
         <div class="block <?= /* @escapeNotVerified */ $class ?>">
     <?php endif; ?>
-    <div class="block-title title">
+    
+	
+	<div class="block-title title">
 	<?php if ($type == 'related'){ ?>
 	<?php $title ='You Might Also Love'; ?>
 	<?php }?>
 	<strong id="block-<?= /* @escapeNotVerified */ $class ?>-heading" role="heading" aria-level="2"><?= /* @escapeNotVerified */ $title ?></strong>
-    <a href="<?php echo $this->getUrl('cbdx/products');?>" class="pdp-allproducts">All Products</a>
-	</div>
+   </div>
+   <a href="<?php echo $this->getUrl('cbdx/products');?>" class="pdp-allproducts">All Products</a>
     <div class="block-content content" aria-labelledby="block-<?= /* @escapeNotVerified */ $class ?>-heading">
         <?php if ($type == 'related' && $canItemsAddToCart): ?>
         <!--<div class="block-actions">

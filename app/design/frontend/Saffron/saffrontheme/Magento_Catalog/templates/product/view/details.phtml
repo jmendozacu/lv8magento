@@ -7,6 +7,7 @@
 // @codingStandardsIgnoreFile
 
 ?>
+<?php $_product = $block->getProduct(); ?>
 <?php if ($detailedInfoGroup = $block->getGroupChildNames('detailed_info', 'getChildHtml')):?>
     <div class="product info detailed">
         <?php $layout = $block->getLayout(); ?>
@@ -44,6 +45,8 @@
 				<div  class ="all-product-<?= /* @escapeNotVerified */ $alias ?>"> <?= /* @escapeNotVerified */ $html ?> 
 				   
 				<span id="<?= /* @escapeNotVerified */ $alias ?>"></span>
+				
+				<?php echo $_product->getId();?>
 				</div>
 				
 				</div>
