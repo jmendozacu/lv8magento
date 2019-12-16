@@ -46,12 +46,15 @@
 				   
 				<span id="<?= /* @escapeNotVerified */ $alias ?>"></span>
 				
-				<?php echo $_product->getId();?>
+				
 				</div>
 				
 				</div>
 				<?php } else { ?>
 				<div  class ="all-product-<?= /* @escapeNotVerified */ $alias ?>"> <?= /* @escapeNotVerified */ $html ?> </div>
+				
+				<div class="banner-detail-page"><?php echo $_product['banner_detail_page'] ;?></div>
+
 				<?php }?>
 				
 				
@@ -68,7 +71,7 @@
 require([ 'jquery'], function($){
 jQuery(document).ready(function($){
    $.ajax({
-        url: "<?php echo $this->getUrl('review/product/listAjax/id/1/')?>",
+        url: "<?php echo $this->getUrl('review/product/listAjax/id/'.$_product->getId())?>",
         type: "GET",
         //data:  {"id":obj,"vediourl":vediourl},
         success: function(response){
