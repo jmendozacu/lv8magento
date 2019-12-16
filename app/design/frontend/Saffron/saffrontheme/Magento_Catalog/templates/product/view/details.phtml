@@ -35,13 +35,23 @@
                 
                 </div>-->
                    
-                 <?php if($alias != 'additional') {?>				   
+                <?php if($alias != 'additional') {?>				   
 				
- 				
-				  <div  class ="all-product-<?= /* @escapeNotVerified */ $alias ?>"> <?= /* @escapeNotVerified */ $html ?> 
+ 				<?php if($alias != 'reviews') {?>	
+				<div class="review_section">
+				<div class="label-reviews-title"> Reviews </div>
+				<button type="submit" title="write a review" class="action primary write-a-review" ><span>write a review</span></button>
+				<div  class ="all-product-<?= /* @escapeNotVerified */ $alias ?>"> <?= /* @escapeNotVerified */ $html ?> 
 				   
-				   <span id="<?= /* @escapeNotVerified */ $alias ?>"></span>
-				  </div>
+				<span id="<?= /* @escapeNotVerified */ $alias ?>"></span>
+				</div>
+				
+				</div>
+				<?php } else { ?>
+				<div  class ="all-product-<?= /* @escapeNotVerified */ $alias ?>"> <?= /* @escapeNotVerified */ $html ?> </div>
+				<?php }?>
+				
+				
 				   
 				 <?php } ?>  
             <?php endforeach;?>
