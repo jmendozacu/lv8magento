@@ -20,7 +20,7 @@
                     $alias = $layout->getElementAlias($name);
                     $label = $block->getChildData($alias, 'title');
                 ?>
-                <div class="data item title"
+                <!--<div class="data item title"
                      aria-labeledby="tab-label-<?= /* @escapeNotVerified */ $alias ?>-title"
                      data-role="collapsible" id="tab-label-<?= /* @escapeNotVerified */ $alias ?>">
                     <a class="data switch"
@@ -30,16 +30,26 @@
                        id="tab-label-<?= /* @escapeNotVerified */ $alias ?>-title">
                         <?= /* @escapeNotVerified */ $label ?>
                     </a>
-                </div>
-                <div class="data item content" id="<?= /* @escapeNotVerified */ $alias ?>" data-role="content">
-                    <?= /* @escapeNotVerified */ $html ?>
-                </div>
+                </div>-->
+                <!--<div class="data item content" id="<?= /* @escapeNotVerified */ $alias ?>" data-role="content">
+                
+                </div>-->
+                   
+                 <?php if($alias != 'additional') {?>				   
+				
+ 				
+				  <div  class ="all-product-<?= /* @escapeNotVerified */ $alias ?>"> <?= /* @escapeNotVerified */ $html ?> 
+				   
+				   <span id="<?= /* @escapeNotVerified */ $alias ?>"></span>
+				  </div>
+				   
+				 <?php } ?>  
             <?php endforeach;?>
         </div>
     </div>
 <?php endif; ?>
 
-<span id="popup-image"></span>
+
 <?php //echo $this->getUrl('review/product/listAjax/id/1/')?>
 <script type="text/javascript">
 require([ 'jquery'], function($){
@@ -50,7 +60,7 @@ jQuery(document).ready(function($){
         //data:  {"id":obj,"vediourl":vediourl},
         success: function(response){
 			//alert(response);
-		$('#popup-image').html(response);	
+		$('#reviews').html(response);	
 		
         }
 	  });
