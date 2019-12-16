@@ -59,13 +59,21 @@ class Shippingcost extends \Magento\Shipping\Model\Carrier\AbstractCarrier imple
         $method = $this->_rateMethodFactory->create();
 
         $method->setCarrier('shippingcost');
-        $method->setCarrierTitle($this->getConfigData('title'));
-
+		
+		$amount = $this->Shippingrangeprice();
+		
+		if($amount =='0.00'){
+	    $method->setCarrierTitle('Free');
         $method->setMethod('shippingcost');
-        $method->setMethodTitle($this->getConfigData('name'));
-
-        /*you can fetch shipping price from different sources over some APIs, we used price from config.xml - xml node price*/
-        $amount = $this->getConfigData('price');
+        $method->setMethodTitle('Free Shipping');
+		}else{
+		$method->setCarrierTitle($this->getConfigData('title'));
+        $method->setMethod('shippingcost');
+        $method->setMethodTitle($this->getConfigData('name'));	
+			
+		}
+	    /*you can fetch shipping price from different sources over some APIs, we used price from config.xml - xml node price*/
+        //$amount = $this->getConfigData('price');
 
         $method->setPrice($amount);
         $method->setCost($amount);
@@ -74,4 +82,34 @@ class Shippingcost extends \Magento\Shipping\Model\Carrier\AbstractCarrier imple
 
         return $result;
     }
+	
+	
+	
+	
+public function Shippingrangeprice(){
+	$objectManager = \Magento\Framework\App\ObjectManager::getInstance(); 
+	$quoteId = $objectManager->create('Magento\Checkout\Model\Session')->getQuoteId(); 
+	$cart = $objectManager->get('\Magento\Checkout\Model\Cart'); 
+	$itemsCollection = $cart->getQuote()->getItemsCollection();
+	$itemsVisible = $cart->getQuote()->getAllVisibleItems();
+	$items = $cart->getQuote()->getAllItems();
+	$qty_item = $totalQuantity = $cart->getQuote()->getItemsQty();
+	$subTotal = $cart->getQuote()->getSubtotal();
+	
+	
+	if(('0.00' < $subTotal)&&($subTotal <= '99.99') ){
+		$pricerang = '10.00';
+	//}else if(('21.00' <= $subTotal)&& ($subTotal <= '39.99')){
+		//$pricerang ='7.95';
+	//}else if(('40.00' <= $subTotal)&& ($subTotal <= '48.99')){
+		//$pricerang = '9.95';
+	}else{
+	$pricerang = '0.00';	
+	}
+	
+	 return  $pricerang;
+			
+}
+
+
 }
