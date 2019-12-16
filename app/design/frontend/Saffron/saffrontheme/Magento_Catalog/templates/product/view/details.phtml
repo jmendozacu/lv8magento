@@ -20,7 +20,9 @@
                     $alias = $layout->getElementAlias($name);
                     $label = $block->getChildData($alias, 'title');
                 ?>
-                <div class="data item title"
+				
+				 <?= /* @escapeNotVerified */ $label ?>
+                <!--<div class="data item title"
                      aria-labeledby="tab-label-<?= /* @escapeNotVerified */ $alias ?>-title"
                      data-role="collapsible" id="tab-label-<?= /* @escapeNotVerified */ $alias ?>">
                     <a class="data switch"
@@ -30,11 +32,15 @@
                        id="tab-label-<?= /* @escapeNotVerified */ $alias ?>-title">
                         <?= /* @escapeNotVerified */ $label ?>
                     </a>
-                </div>
-                <div class="data item content" id="<?= /* @escapeNotVerified */ $alias ?>" data-role="content">
+                </div> -->
+                <!--<div class="data item content" id="<?= /* @escapeNotVerified */ $alias ?>" data-role="content">
                     <?= /* @escapeNotVerified */ $html ?>
-                </div>
+                </div>-->
+				
+				 <?= /* @escapeNotVerified */ $html ?>
             <?php endforeach;?>
+			
+			
         </div>
     </div>
 <?php endif; ?>
