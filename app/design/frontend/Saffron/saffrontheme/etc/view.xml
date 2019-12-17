@@ -13,7 +13,7 @@
                 <height>140</height>
             </image>
             <image id="cart_cross_sell_products" type="small_image">
-                <width>350</width>
+                <width>400</width>
                 <height>400</height>
 				<frame>false</frame>
             </image>
@@ -22,17 +22,17 @@
                 <height>165</height>
             </image>
             <image id="category_page_grid" type="small_image">
-                <width>350</width>
+                <width>400</width>
                 <height>400</height>
 				<frame>false</frame>
             </image>
             <image id="category_page_grid-1" type="small_image">
-                <width>350</width>
+                <width>400</width>
                 <height>400</height>
 				<frame>false</frame>
             </image>
             <image id="category_page_list" type="small_image">
-                <width>350</width>
+                <width>400</width>
                 <height>400</height>
 				<frame>false</frame>
             </image>
@@ -61,12 +61,12 @@
                 <height>75</height>
             </image>
             <image id="new_products_content_widget_grid" type="small_image">
-                <width>350</width>
+                <width>400</width>
                 <height>400</height>
 				<frame>false</frame>
             </image>
             <image id="new_products_content_widget_list" type="small_image">
-                <width>350</width>
+                <width>400</width>
                 <height>400</height>
 				<frame>false</frame>
             </image>
@@ -137,12 +137,12 @@
                 <height>76</height>
             </image>
             <image id="recently_compared_products_list_content_widget" type="small_image">
-                <width>350</width>
+                <width>400</width>
                 <height>400</height>
 				<frame>false</frame>
             </image>
             <image id="recently_viewed_products_grid_content_widget" type="small_image">
-                <width>350</width>
+                <width>400</width>
                 <height>400</height>
 				<frame>false</frame>
             </image>
@@ -196,7 +196,7 @@
                 <height>113</height>
             </image>
             <image id="wishlist_thumbnail" type="small_image">
-                <width>350</width>
+                <width>400</width>
                 <height>400</height>
 				<frame>false</frame>
             </image>
