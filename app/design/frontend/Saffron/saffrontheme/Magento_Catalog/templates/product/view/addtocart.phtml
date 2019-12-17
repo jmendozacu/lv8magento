@@ -11,6 +11,22 @@
 <?php $_product = $block->getProduct(); ?>
 <?php $buttonTitle = __('Add to Cart'); ?>
 <?php if ($_product->isSaleable()): ?>
+
+<div class="product_inner_section">	
+	<div class="subscribe">
+	<div class="sub_text">Subscribe + Save 10% </div>
+	<div class="onoffswitch">
+	<input id="toggle-on" name="toggle" type="radio"><label for="toggle-on">Yes</label>
+	<input id="toggle-off" name="toggle" type="radio"><label for="toggle-off">No</label>
+	</div>
+	</div>
+	<div class="subscribe_learn"><a href="#">Learn More</a></div>
+								
+								
+								
+								
+								
+<div class="qty_section">
 <div class="box-tocart">
     <div class="fieldset">
         <?php if ($block->shouldRenderQuantity()): ?>
@@ -43,7 +59,15 @@
         </div>
     </div>
 </div>
+</div>
 <?php endif; ?>
+
+
+<div class="demand_section">
+<p><i class="fa fa-info" aria-hidden="true"></i>Due to the high demand and adoption rate of our signature Novocanna products, we are currently out of stock on our product boxes and will ship the product without the box until further notice. Thank you for your understanding and continued support!</p>
+</div>
+</div>
+
 <script type="text/x-magento-init">
     {
         "#product_addtocart_form": {
