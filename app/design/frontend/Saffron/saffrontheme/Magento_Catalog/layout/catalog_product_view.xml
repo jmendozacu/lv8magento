@@ -15,6 +15,7 @@
 	   
         <attribute name="itemtype" value="http://schema.org/Product" />
         <attribute name="itemscope" value="itemscope"/>
+		<move element="product.info.overview" destination="product.info.main" after="product.info.price"/>
         <referenceBlock name="head.components">
             <block class="Magento\Framework\View\Element\Js\Components" name="checkout_page_head_components" template="Magento_Catalog::js/components.phtml"/>
         </referenceBlock>
