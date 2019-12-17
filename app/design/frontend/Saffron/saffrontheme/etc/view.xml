@@ -13,24 +13,28 @@
                 <height>140</height>
             </image>
             <image id="cart_cross_sell_products" type="small_image">
-                <width>240</width>
-                <height>300</height>
+                <width>350</width>
+                <height>400</height>
+				<frame>false</frame>
             </image>
             <image id="cart_page_product_thumbnail" type="small_image">
                 <width>165</width>
                 <height>165</height>
             </image>
             <image id="category_page_grid" type="small_image">
-                <width>240</width>
-                <height>300</height>
+                <width>350</width>
+                <height>400</height>
+				<frame>false</frame>
             </image>
             <image id="category_page_grid-1" type="small_image">
-                <width>240</width>
-                <height>300</height>
+                <width>350</width>
+                <height>400</height>
+				<frame>false</frame>
             </image>
             <image id="category_page_list" type="small_image">
-                <width>240</width>
-                <height>300</height>
+                <width>350</width>
+                <height>400</height>
+				<frame>false</frame>
             </image>
             <image id="customer_account_my_tags_tag_view" type="small_image">
                 <width>100</width>
@@ -57,12 +61,14 @@
                 <height>75</height>
             </image>
             <image id="new_products_content_widget_grid" type="small_image">
-                <width>240</width>
-                <height>300</height>
+                <width>350</width>
+                <height>400</height>
+				<frame>false</frame>
             </image>
             <image id="new_products_content_widget_list" type="small_image">
-                <width>270</width>
-                <height>340</height>
+                <width>350</width>
+                <height>400</height>
+				<frame>false</frame>
             </image>
             <image id="new_products_images_only_widget" type="small_image">
                 <width>78</width>
@@ -118,8 +124,9 @@
                 <height>75</height>
             </image>
             <image id="recently_compared_products_grid_content_widget" type="small_image">
-                <width>240</width>
-                <height>300</height>
+                <width>350</width>
+                <height>400</height>
+				<frame>false</frame>
             </image>
             <image id="recently_compared_products_images_names_widget" type="thumbnail">
                 <width>75</width>
@@ -130,12 +137,14 @@
                 <height>76</height>
             </image>
             <image id="recently_compared_products_list_content_widget" type="small_image">
-                <width>270</width>
-                <height>340</height>
+                <width>350</width>
+                <height>400</height>
+				<frame>false</frame>
             </image>
             <image id="recently_viewed_products_grid_content_widget" type="small_image">
-                <width>240</width>
-                <height>300</height>
+                <width>350</width>
+                <height>400</height>
+				<frame>false</frame>
             </image>
             <image id="recently_viewed_products_images_names_widget" type="small_image">
                 <width>75</width>
@@ -146,8 +155,9 @@
                 <height>76</height>
             </image>
             <image id="recently_viewed_products_list_content_widget" type="small_image">
-                <width>270</width>
-                <height>340</height>
+                <width>350</width>
+                <height>400</height>
+				<frame>false</frame>
             </image>
             <image id="related_products_list" type="small_image">
                 <width>152</width>
@@ -186,8 +196,9 @@
                 <height>113</height>
             </image>
             <image id="wishlist_thumbnail" type="small_image">
-                <width>240</width>
-                <height>300</height>
+                <width>350</width>
+                <height>400</height>
+				<frame>false</frame>
             </image>
         </images>
     </media>
