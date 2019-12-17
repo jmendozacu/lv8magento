@@ -13,6 +13,8 @@
 <?php if ($_product->isSaleable()): ?>
 
 <div class="product_inner_section">	
+	
+	<?php echo $_product['show_subscribe'];?>
 	<div class="subscribe">
 	<div class="sub_text">Subscribe + Save 10% </div>
 	<div class="onoffswitch">
@@ -64,7 +66,7 @@
 
 
 <div class="demand_section">
-<p><i class="fa fa-info" aria-hidden="true"></i>Due to the high demand and adoption rate of our signature Novocanna products, we are currently out of stock on our product boxes and will ship the product without the box until further notice. Thank you for your understanding and continued support!</p>
+<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('stock-massage')->toHtml(); ?>	
 </div>
 </div>
 
