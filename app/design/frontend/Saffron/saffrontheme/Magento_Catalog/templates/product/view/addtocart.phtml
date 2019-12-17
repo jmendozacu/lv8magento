@@ -14,7 +14,7 @@
 
 <div class="product_inner_section">	
 	
-	<?php echo $_product['show_subscribe'];?>
+	<?php if($_product['show_subscribe']=='1'){?>
 	<div class="subscribe">
 	<div class="sub_text">Subscribe + Save 10% </div>
 	<div class="onoffswitch">
@@ -22,8 +22,8 @@
 	<input id="toggle-off" name="toggle" type="radio"><label for="toggle-off">No</label>
 	</div>
 	</div>
-	<div class="subscribe_learn"><a href="#">Learn More</a></div>
-								
+	<div class="subscribe_learn"><a href="<?php echo $this->getUrl('subscribe-learn-more') ?>">Learn More</a></div>
+	<?php }?>							
 								
 								
 								
