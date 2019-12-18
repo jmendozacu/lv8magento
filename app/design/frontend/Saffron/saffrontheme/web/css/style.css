@@ -3174,5 +3174,117 @@ body .fotorama__stage {
 }
 body .fotorama__nav--thumbs .fotorama__nav__frame { margin: 0 15px; }
 
+body.catalog-product-view .column.main {
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+}
+.product-list-view:nth-of-type(1) { border-top: 1px solid #bdbdbd; padding-top: 50px; }
+.product-list-view { margin-bottom: 50px; }
+body.catalog-product-view .column.main {
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+}
+.product-list-view:nth-of-type(1) {
+    border-top: 1px solid #bdbdbd;
+    padding-top: 50px;
+}
+
+.product-list-view {
+    margin-bottom: 60px;
+}
+
+.all-product-description h3 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+ul.listing_doted li {
+    font-size: 16px;
+    position: relative;
+    line-height: 24px;
+    padding-left: 9px;
+    margin-bottom: 8px;
+}
+
+ul.listing_doted li:before {content: "";width: 4px;height: 4px;background: #4E4F53;border-radius: 50%;position: absolute;left: 0;top: 9px;}
+
+ul.listing_doted { margin-left: 20px; }
+.product-list-view .col-md-6 {
+    display: flex;
+    align-items: center;
+}
+.benefits_section {
+    background: #f8f8f8;
+    padding: 50px 0;
+    margin-bottom: 60px;
+}
+
+.benefits_section .col-md-6 {
+    display: flex;
+    align-items: center;
+}
+
+.best_uses.pull-right {
+    margin-left: auto;
+}
+.benefits_section {
+    background: #f8f8f8;
+    padding: 50px 0;
+    margin-bottom: 60px;
+}
+
+.benefits_section .col-md-6 {
+    display: flex;
+    align-items: center;
+}
+
+.best_uses.pull-right {
+    margin-left: auto;
+}
+
+.banner-detail-page .banner_CBD {
+    position: relative;
+}
+
+.banner-detail-page .container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translate(0, -50%);
+    text-align: center;
+}
+
+.banner-detail-page .banner_texts h3 {
+    color: #fff;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.banner-detail-page .banner_texts p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.banner_CBD .banner_texts {
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.banner_CBD .banner_texts a.btn {
+    background: #f57b3b;
+    color: #fff;
+    border-radius: 0;
+    padding: 14px;
+    font-size: 19px;
+    min-width: 170px;
+    display: inline-block;
+    margin-top: 30px;
+    border: none;
+}
 
 
