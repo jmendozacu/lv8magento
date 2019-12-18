@@ -223,6 +223,11 @@ require([ "jquery","bootstrap"], function(jquery,bootstrap){
 			jQuery('.page-layout-1column .page-header').removeClass('header-sticky');
 		}
 	  }) ;
+	  
+	  
+jQuery(".review-container button.write-a-review").on('click', function(){
+    jQuery(".all-product-reviews").slideToggle();
+});
 	
 });	
 
