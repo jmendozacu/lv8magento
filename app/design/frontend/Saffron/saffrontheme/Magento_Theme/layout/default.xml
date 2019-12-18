@@ -48,15 +48,12 @@
             </container>
 			
           <container name="header.bottom" htmlClass="header-right-col" htmlTag="div">
-		  <block class="Saffron\Theme\Block\Html\Header" name="header.bottom.template" template="Magento_Theme::header/header-right.phtml" />
+		  <block class="Saffron\Theme\Block\Html\Header" name="header.bottom.template" as="header-bottom" template="Magento_Theme::header/header-right.phtml" />
           </container>
 		  </container>
-		 
-		 <block class="Magento\Framework\View\Element\Template" name="custom-header" as="custom-header" template="Magento_Theme::html/customheader.phtml"  after="header.panel.wrapper" />
-		 
-        </referenceContainer>
-		<move element="minicart" destination="custom-header"/>
-<move element="top.search" destination="custom-header"/>
+		  </referenceContainer>
+		<move element="minicart" destination="header-bottom"/>
+       <move element="top.search" destination="header-bottom"/>
 			 
 			 
         <!--<referenceContainer name="header.container">
