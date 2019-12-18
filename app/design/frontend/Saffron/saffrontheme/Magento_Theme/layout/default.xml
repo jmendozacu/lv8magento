@@ -35,7 +35,7 @@
             </block>
         </referenceContainer>
 		
-		  <referenceContainer name="header.container" htmlClass="page-header header">
+		<referenceContainer name="header.container" htmlClass="page-header header">
 		   <container name="header.panel.wrapper" htmlClass="container" htmlTag="div" after="-">
  
            <container name="header.top" htmlClass="logo-col" htmlTag="div">
@@ -45,11 +45,12 @@
                                 <argument name="logo_img_height" xsi:type="number">28</argument>
                             </arguments>
                         </block>
-            </container>
+           </container>
 			
           <container name="header.bottom" htmlClass="header-right-col" htmlTag="div">
 		  <block class="Saffron\Theme\Block\Html\Header" name="header.bottom.template" template="Magento_Theme::header/header-right.phtml" />
           </container>
+		  
 		  </container>
 		 
         </referenceContainer>

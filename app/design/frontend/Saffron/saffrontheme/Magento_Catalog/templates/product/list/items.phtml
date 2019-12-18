@@ -194,16 +194,23 @@ switch ($type = $block->getType()) {
                     <?= /* @escapeNotVerified */ ($iterator++ == 1) ? '<li class="item product product-item">' : '</li><li class="item product product-item">' ?>
                 <?php endif; ?>
                 <div class="product-item-info <?= /* @escapeNotVerified */ $available ?>">
-                    <?= /* @escapeNotVerified */ '<!-- ' . $image . '-->' ?>
+                    
+					<div class="price-col">
+					<?= /* @escapeNotVerified */ $block->getProductPrice($_item) ?>
+					</div>
+					<?= /* @escapeNotVerified */ '<!-- ' . $image . '-->' ?>
+                   
                     <a href="<?= /* @escapeNotVerified */ $block->getProductUrl($_item) ?>" class="product photo product-item-photo">
                         <?= $block->getImage($_item, $image)->toHtml() ?>
                     </a>
+					
+					
                     <div class="product details product-item-details">
                         <strong class="product name product-item-name"><a class="product-item-link" title="<?= $block->escapeHtml($_item->getName()) ?>" href="<?= /* @escapeNotVerified */ $block->getProductUrl($_item) ?>">
                             <?= $block->escapeHtml($_item->getName()) ?></a>
                         </strong>
 
-                        <?= /* @escapeNotVerified */ $block->getProductPrice($_item) ?>
+                      
 
                             <?php if ($templateType): ?>
                                 <?= $block->getReviewsSummaryHtml($_item, $templateType) ?>
@@ -218,7 +225,7 @@ switch ($type = $block->getType()) {
                                 <?php endif; ?>
                             <?php endif; ?>
 
-                            <?php if ($showAddTo || $showCart): ?>
+                            <?php //if ($showAddTo || $showCart): ?>
                                 <div class="product actions product-item-actions">
                                     <?php if ($showCart): ?>
                                         <div class="actions-primary">
@@ -255,7 +262,7 @@ switch ($type = $block->getType()) {
                                         </div>-->
                                     <?php endif; ?>
                                 </div>
-                            <?php endif; ?>
+                            <?php //endif; ?>
                         </div>
                     </div>
                     <?= ($iterator == count($items)+1) ? '</li>' : '' ?>
