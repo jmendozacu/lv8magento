@@ -51,14 +51,14 @@
 		  <block class="Saffron\Theme\Block\Html\Header" name="header.bottom.template"  template="Magento_Theme::header/header-right.phtml" />
           </container>
 		  
-		  <container name="header.right" htmlClass="header-right" as="header-right" htmlTag="div" after="header.bottom">
+		  <container name="header.right" htmlClass="header-right" as="header-right" htmlTag="div" >
 		   
 		   </container>
 		  
 		  </container>
 		  </referenceContainer>
-		<move element="minicart" destination="header-right"/>
-       <move element="top.search" destination="header-right"/>
+		<move element="minicart" destination="header.right"/>
+       <move element="top.search" destination="header.right"/>
 			 
 			 
         <!--<referenceContainer name="header.container">
