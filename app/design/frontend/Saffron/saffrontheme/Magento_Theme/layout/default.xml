@@ -54,7 +54,10 @@
 		 
         </referenceContainer>
 			 
-			 
+		<referenceContainer name="header.container">
+                <container name="header.panel.wrapper" htmlClass="panel wrapper" htmlTag="div" before="-">
+				</container>
+		</referenceContainer>
         <!--<referenceContainer name="header.container">
             <container name="header.panel.wrapper" htmlClass="panel wrapper" htmlTag="div" before="-">
                 <container name="header.panel" label="Page Header Panel" htmlTag="div" htmlClass="panel header">
