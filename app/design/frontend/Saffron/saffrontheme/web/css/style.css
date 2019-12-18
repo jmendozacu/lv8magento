@@ -3286,5 +3286,11 @@ ul.listing_doted { margin-left: 20px; }
     margin-top: 30px;
     border: none;
 }
+.product-new-main {
+    max-width: 1600px;
+    width: 94%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
 
