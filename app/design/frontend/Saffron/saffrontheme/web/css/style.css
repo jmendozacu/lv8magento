@@ -3174,5 +3174,47 @@ body .fotorama__stage {
 }
 body .fotorama__nav--thumbs .fotorama__nav__frame { margin: 0 15px; }
 
+body.catalog-product-view .column.main {
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+}
+.product-list-view:nth-of-type(1) { border-top: 1px solid #bdbdbd; padding-top: 50px; }
+.product-list-view { margin-bottom: 50px; }
+body.catalog-product-view .column.main {
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+}
+.product-list-view:nth-of-type(1) {
+    border-top: 1px solid #bdbdbd;
+    padding-top: 50px;
+}
+
+.product-list-view {
+    margin-bottom: 60px;
+}
+
+.product-list-view h3 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+ul.listing_doted li {
+    font-size: 16px;
+    position: relative;
+    line-height: 24px;
+    padding-left: 9px;
+    margin-bottom: 8px;
+}
+
+ul.listing_doted li:before {content: "";width: 4px;height: 4px;background: #4E4F53;border-radius: 50%;position: absolute;left: 0;top: 9px;}
+
+ul.listing_doted { margin-left: 20px; }
+.product-list-view .col-md-6 {
+    display: flex;
+    align-items: center;
+}
+
 
 
