@@ -3154,10 +3154,7 @@ body .swatch-option.text.selected {
 .product-info-main .product-options-bottom .box-tocart { margin-bottom: 30px; }
 .product-info-main .product.attribute.overview { margin: 10px 0 30px; }
 .product-info-main .product-add-form { padding-top:0;}
-body .fotorama__nav__shaft {
-    left: 93px;
-    top: 18px;
-}
+body .fotorama__nav__shaft { left: 51px; }
 body .fotorama__thumb {
     background: none;
     border: 1px solid #bdbdbd;
@@ -3170,11 +3167,12 @@ body .fotorama__stage__shaft {
     max-width: 600px;
     width: 100% !important;
 }
-.fotorama__stage {
+body .fotorama__stage {
     border: 1px solid #bdbdbd;
     max-width: 600px;
     margin: 0 auto 20px;
 }
+body .fotorama__nav--thumbs .fotorama__nav__frame { margin: 0 15px; }
 
 
 
