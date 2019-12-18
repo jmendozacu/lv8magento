@@ -3121,10 +3121,11 @@ body .swatch-attribute.size .swatch-option, body .swatch-attribute.manufacturer 
     width: 100%;
     margin-bottom: 25px;
 }
-.swatch-option.selected {
+body .swatch-option.selected {
     outline: none;
 }
-.swatch-option.text.selected {
+
+body .swatch-option.text.selected {
     background: #f57b3b !important;
     color: #fff !important;
 }
@@ -3153,11 +3154,11 @@ body .swatch-attribute.size .swatch-option, body .swatch-attribute.manufacturer 
 .product-info-main .product-options-bottom .box-tocart { margin-bottom: 30px; }
 .product-info-main .product.attribute.overview { margin: 10px 0 30px; }
 .product-info-main .product-add-form { padding-top:0;}
-.fotorama__nav__shaft {
+body .fotorama__nav__shaft {
     left: 93px;
     top: 18px;
 }
-.fotorama__thumb {
+body .fotorama__thumb {
     background: none;
     border: 1px solid #bdbdbd;
     height: 104px;
@@ -3165,6 +3166,15 @@ body .swatch-attribute.size .swatch-option, body .swatch-attribute.manufacturer 
     margin-right: 10px;
 }
 
+body .fotorama__stage__shaft {
+    max-width: 600px;
+    width: 100% !important;
+}
+.fotorama__stage {
+    border: 1px solid #bdbdbd;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
 
 
 
