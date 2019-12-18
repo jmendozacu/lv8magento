@@ -3093,7 +3093,7 @@ header.header .block-search .action.search {
 .product-reviews-summary .reviews-actions {
     margin: 0;
 }
-.swatch-attribute-label {
+body .swatch-attribute-label {
     font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
@@ -3111,10 +3111,21 @@ header.header .block-search .action.search {
     font-weight: 400;
     color: #4e5054;
 }
+.swatch-attribute.size .swatch-option, .swatch-attribute.manufacturer .swatch-option {
+    background: none;
+    color: #4e5054;
+}
 .swatch-opt .swatch-attribute {
     float: left;
     width: 100%;
     margin-bottom: 25px;
+}
+.swatch-option.selected {
+    outline: none;
+}
+.swatch-option.text.selected {
+    background: #f57b3b !important;
+    color: #fff !important;
 }
 .demand_section p {
     position: relative;
@@ -3141,7 +3152,17 @@ header.header .block-search .action.search {
 .product-info-main .product-options-bottom .box-tocart { margin-bottom: 30px; }
 .product-info-main .product.attribute.overview { margin: 10px 0 30px; }
 .product-info-main .product-add-form { padding-top:0;}
-
+.fotorama__nav__shaft {
+    left: 93px;
+    top: 18px;
+}
+.fotorama__thumb {
+    background: none;
+    border: 1px solid #bdbdbd;
+    height: 104px;
+    width: 104px;
+    margin-right: 10px;
+}
 
 
 
