@@ -3,6 +3,14 @@
 	
 	 <move element="product.info.overview" destination="product.info.main" after="product.info.price"/>
     
-	
+	   <referenceContainer name="content">
+            <container name="product.new.main" htmlTag="div" htmlClass="product-new-main" before="-">
+				<container name="product.info.main" htmlTag="div" htmlClass="product-info-main" before="-">
+				</container>
+				<container name="product.info.media" htmlTag="div" htmlClass="product media" after="product.info.main">
+				 </container>
+            </container>
+           
+        </referenceContainer>
 	</body>
 </page>
