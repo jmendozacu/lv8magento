@@ -3293,4 +3293,56 @@ ul.listing_doted { margin-left: 20px; }
     padding: 0 15px;
 }
 
+.review_section .review-container {
+    max-width: 1600px;
+    width: 94%;
+    margin: 70px auto 0;
+    padding: 0 15px;
+}
+.unsubscribe-massge p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+.product-new-main {
+    max-width: 1600px;
+    width: 94%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.review_section .review-container {
+    max-width: 1600px;
+    width: 94%;
+    margin: 70px auto 0;
+    padding: 0 15px;
+}
+.review-container .label-reviews-title {
+    color: #4e5054;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.review-container button.action.primary.write-a-review {   float: right; }
+.all-product-reviews {
+    float: left; width: 100%; display:none;
+}
+form#review-form .fieldset > .field .field.choice {
+    margin-bottom: 20px;
+    float: left;
+    width: 100%;
+}
+.all-product-reviews span#reviews {
+    float: left;
+    width: 100%;
+    margin: 60px 0 0;
+}
+.block.related {
+    max-width: 1600px;
+    width: 94%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 
