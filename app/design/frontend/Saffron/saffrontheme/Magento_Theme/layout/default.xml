@@ -52,7 +52,11 @@
           </container>
 		  </container>
 		 
+		 <block class="Magento\Framework\View\Element\Template" name="custom-header" as="custom-header" template="Magento_Theme::html/customheader.phtml"  after="header.panel.wrapper" />
+		 
         </referenceContainer>
+		<move element="minicart" destination="custom-header"/>
+<move element="top.search" destination="custom-header"/>
 			 
 			 
         <!--<referenceContainer name="header.container">
