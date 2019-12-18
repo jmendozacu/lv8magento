@@ -195,7 +195,7 @@ switch ($type = $block->getType()) {
                 <?php endif; ?>
                 <div class="product-item-info <?= /* @escapeNotVerified */ $available ?>">
                     
-					<div class="price-col">
+					<div class="price-col-related">
 					<?= /* @escapeNotVerified */ $block->getProductPrice($_item) ?>
 					</div>
 					<?= /* @escapeNotVerified */ '<!-- ' . $image . '-->' ?>
@@ -226,7 +226,7 @@ switch ($type = $block->getType()) {
                             <?php endif; ?>
 
                             <?php //if ($showAddTo || $showCart): ?>
-                                <div class="product actions product-item-actions">
+                                <div class="product actions product-item-actions add-related">
                                     <?php //if ($showCart): ?>
                                         <div class="actions-primary">
                                             <?php if ($_item->isSaleable()): ?>
