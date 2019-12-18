@@ -1995,6 +1995,7 @@ body[class*="customer-account-"] main#maincontent .columns > .column.main,
     display: flex;
     justify-content: center;
     right: 0;
+	background:none;
 }
 .qty-container .qty-input button:before {
     font-family: fontawesome;
@@ -3111,7 +3112,7 @@ body .swatch-attribute-label {
     font-weight: 400;
     color: #4e5054;
 }
-.swatch-attribute.size .swatch-option, .swatch-attribute.manufacturer .swatch-option {
+body .swatch-attribute.size .swatch-option, body .swatch-attribute.manufacturer .swatch-option {
     background: none;
     color: #4e5054;
 }
