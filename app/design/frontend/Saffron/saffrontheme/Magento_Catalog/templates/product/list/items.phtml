@@ -227,7 +227,7 @@ switch ($type = $block->getType()) {
 
                             <?php //if ($showAddTo || $showCart): ?>
                                 <div class="product actions product-item-actions">
-                                    <?php if ($showCart): ?>
+                                    <?php //if ($showCart): ?>
                                         <div class="actions-primary">
                                             <?php if ($_item->isSaleable()): ?>
                                                 <?php if ($_item->getTypeInstance()->hasRequiredOptions($_item)): ?>
@@ -252,7 +252,7 @@ switch ($type = $block->getType()) {
                                                 <?php endif; ?>
                                             <?php endif; ?>
                                         </div>
-                                    <?php endif; ?>
+                                    <?php //endif; ?>
 
                                     <?php if ($showAddTo): ?>
                                         <!--<div class="secondary-addto-links actions-secondary" data-role="add-to-links">
