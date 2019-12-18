@@ -34,7 +34,7 @@
                 </arguments>
             </block>
         </referenceContainer>
-		<referenceContainer name="header-wrapper-upper" htmlClass="header-content-upper" htmlTag="div" after="-">
+		<referenceContainer name="header-wrapper-upper" htmlClass="header-content-upper" htmlTag="div">
 		  <referenceContainer name="header.container" htmlClass="page-header header">
 		   <container name="header.panel.wrapper" htmlClass="container" htmlTag="div" after="-">
  
