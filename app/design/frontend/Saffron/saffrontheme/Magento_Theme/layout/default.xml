@@ -47,13 +47,14 @@
                         </block>
             </container>
 			
-          <container name="header.bottom" htmlClass="header-right-col" htmlTag="div">
+         <container name="header.right" htmlClass="header-right" as="header-right" htmlTag="div" >
+		   
+		 </container>
+		 <container name="header.bottom" htmlClass="header-right-col" htmlTag="div">
 		  <block class="Saffron\Theme\Block\Html\Header" name="header.bottom.template"  template="Magento_Theme::header/header-right.phtml" />
           </container>
 		  
-		  <container name="header.right" htmlClass="header-right" as="header-right" htmlTag="div" >
-		   
-		   </container>
+		
 		  
 		  </container>
 		  </referenceContainer>
