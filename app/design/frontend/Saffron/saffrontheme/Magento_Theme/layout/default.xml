@@ -36,7 +36,7 @@
         </referenceContainer>
 		
 		  <referenceContainer name="header.container" htmlClass="page-header header">
-		  <container name="header.containertwo" as="header_containertwo" label="Page Header Container"  htmlTag="header" htmlClass="header-mini-container" after="header.panel.wrapper"/>
+		  <container name="header.containertwo" as="header_containertwo"  htmlTag="div" htmlClass="header-mini-container" after="header.panel"/>
   
 		   <container name="header.panel.wrapper" htmlClass="container" htmlTag="div" after="-">
  
