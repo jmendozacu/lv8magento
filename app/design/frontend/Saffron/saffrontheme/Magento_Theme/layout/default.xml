@@ -8,7 +8,7 @@
 <page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <update handle="default_head_blocks"/>
     <body>
-	 <move element="header.content" as="header.content" destination="header.panel.inner"/>
+	
         <block name="require.js" class="Magento\Framework\View\Element\Template" template="Magento_Theme::page/js/require_js.phtml" />
         <referenceContainer name="after.body.start">
             <block class="Magento\RequireJs\Block\Html\Head\Config" name="requirejs-config"/>
@@ -36,7 +36,6 @@
         </referenceContainer>
 		
 		  <referenceContainer name="header.container" htmlClass="page-header header">
-		   <container name="header.panel.inner" htmlClass="inner-wrapper" htmlTag="div" before="-">
 		   <container name="header.panel.wrapper" htmlClass="container" htmlTag="div" after="-">
  
            <container name="header.top" htmlClass="logo-col" htmlTag="div">
@@ -52,12 +51,10 @@
 		  <block class="Saffron\Theme\Block\Html\Header" name="header.bottom.template" template="Magento_Theme::header/header-right.phtml" />
           </container>
 		  </container>
-		  </container>
+		 
         </referenceContainer>
 			 
-		
-             
-	
+			 
         <!--<referenceContainer name="header.container">
             <container name="header.panel.wrapper" htmlClass="panel wrapper" htmlTag="div" before="-">
                 <container name="header.panel" label="Page Header Panel" htmlTag="div" htmlClass="panel header">
