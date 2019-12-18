@@ -36,6 +36,7 @@
         </referenceContainer>
 		
 		  <referenceContainer name="header.container" htmlClass="page-header header">
+		   <container name="header.panel.wrapper" htmlClass="inner-wrapper" htmlTag="div" before="-">
 		   <container name="header.panel.wrapper" htmlClass="container" htmlTag="div" after="-">
  
            <container name="header.top" htmlClass="logo-col" htmlTag="div">
@@ -51,13 +52,12 @@
 		  <block class="Saffron\Theme\Block\Html\Header" name="header.bottom.template" template="Magento_Theme::header/header-right.phtml" />
           </container>
 		  </container>
-		 
+		  </container>
         </referenceContainer>
 			 
-		<referenceContainer name="header.container">
+		
                 <container name="header.panel.wrapper" htmlClass="panel wrapper" htmlTag="div" before="-">
-				</container>
-		</referenceContainer>
+	
         <!--<referenceContainer name="header.container">
             <container name="header.panel.wrapper" htmlClass="panel wrapper" htmlTag="div" before="-">
                 <container name="header.panel" label="Page Header Panel" htmlTag="div" htmlClass="panel header">
