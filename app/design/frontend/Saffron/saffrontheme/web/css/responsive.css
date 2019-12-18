@@ -527,7 +527,6 @@
 	.family-image img { min-height: 400px; object-fit: cover;  }
 	.labs-about-brand { margin-bottom:10%; }
 	.header .container { display: flex; align-items: center;  }
-	.header-right-col { margin-left: auto; }
 	.promoting-carousel .owl-carousel .owl-item img { width: auto; float: none; display: inline-block;
 		padding:0 30px; max-width:170px;	}
 	.promoting-carousel { text-align: center; margin-bottom:50px; }
