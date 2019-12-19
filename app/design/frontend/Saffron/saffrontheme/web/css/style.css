@@ -3444,6 +3444,42 @@ form#review-form .fieldset > .field .field.choice {
 body .review-ratings { line-height:26px; }
 ol.items.review-items .review-content { margin-bottom: 10px; }
 
+.pop_up_newleet{left: 233px; position: absolute; top: 120px; z-index: 9999; display: block; opacity: 1;}
+.newsletter-hide{ display: none;}
+
+
+
+
+/*--on-of-toggle-switch--*/
+.switch {
+    position:relative;
+    width:37px;
+    height:16px;
+    overflow:hidden;
+    cursor:pointer;
+}
+.switch .overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    width:37px;
+    height:16px;
+    background:url('./overlay.png') no-repeat 0 0;
+    z-index:9;
+}
+.switch span.switched {
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    width:58px;
+    height:16px;
+    background:#d9d9d9 url('./switch.gif') no-repeat 0 0;
+    z-index:8;
+}
+.switch span.off {  left:-21px; }
+.switch input { display:none; }
+
 
 
 
