@@ -126,24 +126,26 @@ require(["jquery"], function($){
 			}
 			
 			$( "#newsletter_pop_up form" ).submit(function( event ) {
-				        alert('++++');
+				        //alert('++++');
 					setCookie("shownewsletter",'1',<?php if($timeout!='') echo $timeout;else echo '1' ?>);
 					setCookie("shownewstext",'1',<?php if($timeout!='') echo $timeout;else echo '1' ?>);
-					alert(getCookie("shownewstext") );
-					if(getCookie("shownewstext") == 1){   
+					//alert(getCookie("shownewstext") );
 					
-						alert(getCookie("shownewstext") );
-						$("#newsletter-new").addClass('newsletter-hide');
-						$("#newsletter-mass").Html('<span>You are in</span>');	
-							//setCookie("shownewsletter",'1',<?php if($timeout!='') echo $timeout;else echo '1' ?>)
-					}
 					
 					
 					
 			});
 			
 		
-			
+	$( document ).ready(function() {
+    if(getCookie("shownewstext") == 1){   
+					
+						alert(getCookie("shownewstext") );
+						$("#newsletter-new").addClass('newsletter-hide');
+						$("#newsletter-mass").Html('<span>You are in</span>');	
+							//setCookie("shownewsletter",'1',<?php if($timeout!='') echo $timeout;else echo '1' ?>)
+					}
+     });
 
  });	 
 </script>
