@@ -28,13 +28,17 @@ $background = $mediaUrl.'logo/'. $block->getConfig('background');
 					<!--<img src="<?php echo $mediaUrl; ?>themeimage/close-icon.png">-->
 					<i class="fa fa-times"></i>
 				</span>
-				<div class="newspopup-body">
-					<div class="popup-img-field">
+				<div class="newspopup-body" style ='background-image:url(<?php echo $background;?>);'>
+					<!--<div class="popup-img-field">
 						<img src="<?php echo $background;?>">
-					</div>
+					</div>-->
 					
 					<div class="descount-field">
-						<div class="field newsletter">
+						
+						<div id="newsletter-mass"></div>
+						
+						
+						<div class="field newsletter"  id="newsletter-new">
 							<label class="label" for="newsletter"><span><?php echo $title; ?> </span></label>
 							<h5><?php echo $content; ?></h5>
 							<div class="news-control-field">
@@ -50,6 +54,9 @@ $background = $mediaUrl.'logo/'. $block->getConfig('background');
 								</div>
 							</div>
 						</div>
+						
+						
+						
 						<div class="subscribe-bottom">
 						    <div class="unsubscribe-massge"><p>Fear not! We don’t spam and you can unsubscribe at any time.</p>
 							<p>By submitting this form and clicking logo arrow you accept receiving email updates on LV8 and LV8 brands and agree to the LV8 <a href="<?php echo $this->getUrl('privacy-policy');?>">Privacy Policy</a>.</p>
@@ -121,6 +128,16 @@ require(["jquery"], function($){
 			$( "#newsletter_pop_up form" ).submit(function( event ) {
 				        alert('++++');
 					setCookie("shownewsletter",'1',<?php if($timeout!='') echo $timeout;else echo '1' ?>);
+					setCookie("shownewstext",'1',<?php if($timeout!='') echo $timeout;else echo '1' ?>);
+					
+					if(getCookie("shownewstext") == 1){   
+						$("#newsletter-new").addClass('newsletter-hide');
+						$("#newsletter-mass").Html('<span>You are in</span>');	
+							//setCookie("shownewsletter",'1',<?php if($timeout!='') echo $timeout;else echo '1' ?>)
+					}
+					
+					
+					
 			});
 			
 		
