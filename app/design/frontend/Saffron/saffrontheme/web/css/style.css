@@ -2717,7 +2717,7 @@ div#newsletter_pop_up {
     max-width: 900px;
     width: 92%;
 }
-.newspopup-body .newsletter label {
+.newspopup-body .label {
     font-size: 40px;
     color: #fff;
     text-transform: uppercase;
@@ -2727,7 +2727,7 @@ div#newsletter_pop_up {
     text-align: center;
     display: flex;
 }
-.newspopup-body .newsletter h5 {
+.newspopup-body  h5 {
     font-size: 18px;
     color: #fff;
     font-weight: 400;
@@ -2894,7 +2894,7 @@ footer.modal-footer button {
 }
 .newsletter-popup .newspopup-body .descount-field {
     width: 55%;
-    float: left;
+    float: right;
     padding: 40px 0 25px;
 }
 .newsletter-popup .descount-model {
