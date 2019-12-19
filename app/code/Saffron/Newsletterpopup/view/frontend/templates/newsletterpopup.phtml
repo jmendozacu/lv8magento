@@ -76,6 +76,12 @@ $background = $mediaUrl.'logo/'. $block->getConfig('background');
 		
     </div>
 </div>
+
+
+
+
+<label for='opt2'>Option 2 (off by default)</label>
+<input type='checkbox' name='opt2' id='opt2' value='1' class='toggleswitch' />
 <script type ="text/javascript">
 require(["jquery"], function($){
 		function setCookie(name,value,days)
@@ -150,6 +156,51 @@ require(["jquery"], function($){
 	 //setCookie("shownewsletter",'1',<?php if($timeout!='') echo $timeout;else echo '1' ?>)
 	}
      });
+	 
+	 
+	 
+	 
+	(function ($) {
+    'use strict';
+    $.fn.toggleSwitch = function (options) {
+        var settings = $.extend({
+            onClick: function () { return true; },
+            onChangeOn: function () { return true; },
+            onChangeOff: function () { return true; }
+        }, options);
+        $(this).each(function () {
+            var obj = $(this), status = obj.is(':checked') ? '' : ' off';
+            if (!obj.parent('div.switch').length) {
+                obj.wrap('<div class="switch"></div>');
+                obj.parent('div.switch').prepend('<span class="switched' + status + '" />').prepend('<div class="overlay" />');
+            }
+            obj.parent('div.switch').add($('label[for=' + obj.prop('id') + ']')).click(function (e) {
+                e.preventDefault();
+                if (!obj.prop('disabled')) {
+                    var value, check;
+                    settings.onClick.call(obj);
+                    if ($(this).is('label')) {
+                        value = $('#' + $(this).prop('for')).prev('span.switched');
+                        check = $('#' + $(this).prop('for'));
+                    } else {
+                        value = $(this).children('span.switched');
+                        check = $(this).children('input[type=checkbox]');
+                    }
+                    if (value.is('.off')) {
+                        value.stop().animate({left: 0}, 150, 'linear').removeClass('off');
+                        check.prop('checked', 'checked');
+                        settings.onChangeOn.call(obj);
+                    } else {
+                        value.stop().animate({left: -21}, 150, 'linear').addClass('off');
+                        check.prop('checked', '');
+                        settings.onChangeOff.call(obj);
+                    }
+                }
+            });
+        });
+    };
+}(jQuery)); 
+	 
 
  });	 
 </script>
@@ -158,4 +209,51 @@ require(["jquery"], function($){
 <style>
 .pop_up_newleet{left: 233px; position: absolute; top: 120px; z-index: 9999; display: block; opacity: 1;}
 .newsletter-hide{ display: none;}
+
+
+
+
+
+.switch {
+    position:relative;
+    width:37px;
+    height:16px;
+    overflow:hidden;
+    cursor:pointer;
+}
+.switch .overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    width:37px;
+    height:16px;
+    background:url('./overlay.png') no-repeat 0 0;
+    z-index:9;
+}
+.switch span.switched {
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    width:58px;
+    height:16px;
+    background:#d9d9d9 url('./switch.gif') no-repeat 0 0;
+    z-index:8;
+}
+.switch span.off {
+    left:-21px;
+}
+.switch input {
+    display:none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .switch .overlay {
+        background:url('./overlay@2x.png') no-repeat 0 0;
+        background-size:37px 16px;
+    }
+    .switch span.switched {
+        background:url('./switch@2x.gif') no-repeat 0 0;
+        background-size:58px 16px;
+    }
+}
 </style>
