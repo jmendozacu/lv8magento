@@ -3159,7 +3159,7 @@ body .swatch-option.text.selected {
 .product-info-main .product-options-bottom .box-tocart { margin-bottom: 30px; }
 .product-info-main .product.attribute.overview { margin: 10px 0 30px; }
 .product-info-main .product-add-form { padding-top:0;}
-body .fotorama__nav__shaft { left: 51px; }
+body .fotorama__nav--thumbs { text-align:center; }
 body .fotorama__thumb {
     background: none;
     border: 1px solid #bdbdbd;
@@ -3178,7 +3178,8 @@ body .fotorama__stage {
     margin: 0 auto 20px;
 }
 body .fotorama__nav--thumbs .fotorama__nav__frame { margin: 0 15px; }
-
+body .fotorama__active .fotorama__thumb { border:2px solid #F57B3B; transition:all 0.3s ease; }
+body .fotorama__thumb-border { display:none !important; }
 body.catalog-product-view .column.main {
     max-width: 100%;
     width: 100%;
@@ -3418,4 +3419,10 @@ form#review-form .fieldset > .field .field.choice {
     font-size: 18px;
     color: #F57B3B;
 }
+.fotorama__nav-wrap.fotorama__nav-wrap--horizontal {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 
