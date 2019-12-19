@@ -3525,4 +3525,12 @@ ol.items.review-items .review-content { margin-bottom: 10px; }
     font-weight: 300;
 }
 .cms-find-a-store .column.main h1 {  margin-top: 140px; }
+div#newsletter-mass {
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
 
