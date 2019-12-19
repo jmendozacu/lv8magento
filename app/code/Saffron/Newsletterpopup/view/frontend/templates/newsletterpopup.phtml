@@ -157,7 +157,10 @@ require(["jquery"], function($){
 	}
      });
 	 
-	 
+	 $(document).ready(function($) {
+	  $('.toggleswitch').toggleSwitch();
+	  $("#opt2").trigger("click"); // turn it on
+	});
 	 
 	 
 	(function ($) {
