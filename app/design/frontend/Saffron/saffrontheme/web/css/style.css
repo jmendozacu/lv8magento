@@ -2712,32 +2712,33 @@ div#newsletter_pop_up {
     left: 50% !important;
     top: 50% !important;
     transform: translate(-50%, -50%);
-    background-color: #0079ae;
-    padding: 20px 30px 0 30px;
+    /* background-color: #0079ae; */
+    /* padding: 20px 30px 0 30px; */
+	padding:0;
     max-width: 900px;
     width: 92%;
 }
 .newspopup-body .label {
-    font-size: 40px;
+    font-size: 34px;
     color: #fff;
     text-transform: uppercase;
     line-height: normal;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: center;
     display: flex;
 }
 .newspopup-body  h5 {
-    font-size: 18px;
+    font-size: 15px;
     color: #fff;
     font-weight: 400;
     text-align: center;
-    line-height: 26px;
-    margin-bottom: 25px;
+    line-height: 22px;
+    margin-bottom: 15px;
 }
 .newspopup-body .news-control-field {
     position: relative;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     float: left;
     width: 100%;
 }
@@ -2892,10 +2893,17 @@ footer.modal-footer button {
     display: flex;
     height: 100%;
 }
+.newspopup-body {
+    background-color: #2879b1;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 100%;
+    padding: 0;
+}
 .newsletter-popup .newspopup-body .descount-field {
     width: 55%;
     float: right;
-    padding: 40px 0 25px;
+    padding: 40px 40px 25px 80px;
 }
 .newsletter-popup .descount-model {
     display: flex;
@@ -3307,8 +3315,8 @@ ul.listing_doted { margin-left: 20px; }
 }
 .unsubscribe-massge p {
     color: #fff;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 13px;
+    line-height: 20px;
     margin-bottom: 10px;
 }
 .product-new-main {
