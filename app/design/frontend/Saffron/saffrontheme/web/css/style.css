@@ -3178,8 +3178,8 @@ body .fotorama__stage {
     margin: 0 auto 20px;
 }
 body .fotorama__nav--thumbs .fotorama__nav__frame { margin: 0 15px; }
-body .fotorama__active .fotorama__thumb { border:2px solid #F57B3B; }
-boyd .fotorama__thumb-border { display:none; }
+body .fotorama__active .fotorama__thumb { border:2px solid #F57B3B; transition:all 0.3s ease; }
+body .fotorama__thumb-border { display:none !important; }
 body.catalog-product-view .column.main {
     max-width: 100%;
     width: 100%;
