@@ -129,7 +129,7 @@ require(["jquery"], function($){
 			
 			$( "#newsletter_pop_up form" ).submit(function( event ) {
 				        //alert('++++');
-					setCookie("shownewsletter",'1',<?php if($timeout!='') echo $timeout;else echo '1' ?>);
+					
 					setCookie("shownewstext",'1',<?php if($timeout!='') echo $timeout;else echo '1' ?>);
 					//alert(getCookie("shownewstext") );
 			});
@@ -137,7 +137,7 @@ require(["jquery"], function($){
 		
 	$(document).ready(function() {
 	 $('#newsletter-validate-details').on('click','.b-close', function(){
-			 alert('+++');
+		setCookie("shownewsletter",'1',<?php if($timeout!='') echo $timeout;else echo '1' ?>);
 			 
 	 });	
 		
