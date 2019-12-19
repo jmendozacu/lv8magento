@@ -3178,7 +3178,7 @@ body .fotorama__stage {
     margin: 0 auto 20px;
 }
 body .fotorama__nav--thumbs .fotorama__nav__frame { margin: 0 15px; }
-body .fotorama__active .fotorama__thumb { border:2px solid #F57B3B; transition:all 0.3s ease; }
+body .fotorama__active .fotorama__thumb { border:2px solid #F57B3B; }
 body .fotorama__thumb-border { display:none !important; }
 body.catalog-product-view .column.main {
     max-width: 100%;
@@ -3330,7 +3330,7 @@ ul.listing_doted { margin-left: 20px; }
     font-weight: 600;
     margin-bottom: 30px;
 }
-.review-container button.action.primary.write-a-review {   float: right; }
+.review-container button.action.primary.write-a-review { margin-left: auto;  }
 .all-product-reviews {
     float: left; width: 100%; display:none;
 }
@@ -3424,5 +3424,27 @@ form#review-form .fieldset > .field .field.choice {
     width: 100%;
     margin: 0 auto;
 }
+.rewive-name-p {
+    border-bottom: 1px solid #bdbdbd;
+    padding-bottom: 20px;
+    float: left;
+    width: 100%;
+    display: flex;
+    align-items: center;
+	margin-bottom:30px;
+}
+.rewive-name-p .rewive-name {
+    float: left;
+    width: auto;
+    font-size: 25px;
+    color: #262626;
+    font-weight: 500;
+}
+#reviews .review-title::first-letter { text-transform: capitalize; }
+body .review-ratings { line-height:26px; }
+ol.items.review-items .review-content { margin-bottom: 10px; }
+
+
+
 
 
