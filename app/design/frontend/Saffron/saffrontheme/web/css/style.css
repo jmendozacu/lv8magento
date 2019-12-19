@@ -2060,7 +2060,7 @@ textarea:not([disabled]):focus, select:not([disabled]):focus {
 
 
 .product.info.detailed {
-    margin: 60px 0;
+    margin: 40px 0;
     float: left;
     width: 100%;
 }

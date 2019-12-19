@@ -272,7 +272,7 @@
 	.cbd-info-section .cbd-info-container .container { padding: 0; }
 	.cbd-info-section .cbd-info-container .container .row { margin: 0; }
 	body.account.page-layout-2columns-left .columns { width:100%; }
-
+	
 }
 
 @media (min-width: 992px) and ( max-width:1024px ){
@@ -292,8 +292,8 @@
 	.menu-parent li { padding-top:15px; padding-bottom:15px; }
 	.cms-page-view .columns .breadcrumbs ul.items { width: 100%; }
 	.cart-summary { padding:1px 15px 25px; }
-	.cart-summary .checkout-methods-items .action.primary.checkout { padding: 17px 8px; font-size: 16px; }
-	
+	.cart-summary .checkout-methods-items .action.primary.checkout{ padding: 17px 8px; font-size: 16px; }
+	.banner-detail-page {  margin-top: 40px; }
 }
 
 @media (min-width: 768px) and ( max-width:991px ){
@@ -356,9 +356,11 @@
 	.page-layout-1column .product-info-main { width:47%; }
 	.product-new-main { width:100%; }
      .catalog-product-view .banner-title-notfront h1.page-title,
-	.all-product-description h3, .block.related .block-title.title	 { font-size:28px; } 
+	.all-product-description h3, .block.related .block-title.title,
+	.block.related .block-title.title strong	{ font-size:28px; } 
 	.banner-detail-page { margin-top:40px; }
-	.novocann_row-full .container, body.catalog-product-view .column.main {  max-width: 100%; }
+	.novocann_row-full .container, body.catalog-product-view .column.main {  max-width: 100%;
+		width:100%; }
 	.product.info.detailed { margin-bottom:0; }
 
 }
