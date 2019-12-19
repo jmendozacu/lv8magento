@@ -3508,7 +3508,14 @@ ol.items.review-items .review-content { margin-bottom: 10px; }
     font-weight: 500;
     text-transform: uppercase;
 }
-
+.banner-detail-page {
+    float: left;
+    width: 100%;
+}
+.review_section {
+    float: left;
+    width: 100%;
+}
 
 
 

@@ -744,9 +744,21 @@
 	button#product-addtocart-button {  font-size: 16px;  padding: 17px; }
 	.box-tocart .fieldset .actions {    margin: 0; }
 	.product.info.detailed {  margin: 0 0 20px; }
-	.all-product-description h3 {    font-size: 26px; }
+	.all-product-description h3, .review-container .label-reviews-title,
+	.block.related .block-title.title strong, .block.related .block-title.title
+		{    font-size: 26px; }
 	ul.listing_doted {   margin-bottom: 30px; }
 	.benefits_section {   padding: 30px 0; }
 	.benefits_section .novocann_content {  margin-bottom: 20px; }
+	.banner-detail-page .banner_CBD img { min-height: 500px; object-fit: cover; }
+	.banner-detail-page .banner_texts h3 {  font-size: 26px; margin-bottom: 20px; }
+	.banner-detail-page .banner_texts p {  font-size: 16px;  line-height: 24px; }
+	.banner_CBD .banner_texts a.btn { margin-top: 15px; }
+	.review_section .review-container { width: 100%; margin: 40px auto 0; }
+	.rewive-name-p {flex-direction: column; }
+	.rewive-name-p .rewive-name { text-align: center; font-size:20px; }
+	.review-container button.action.primary.write-a-review { margin-left: initial;margin-top: 15px; }
+	.block.related { width:100%; }
+	.related .products-related li.item {  width: 100%;  margin-bottom: 40px; }
 	
 }
