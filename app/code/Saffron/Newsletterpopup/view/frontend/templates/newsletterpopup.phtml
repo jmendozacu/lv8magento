@@ -139,13 +139,18 @@ require(["jquery"], function($){
 		
 	$( document ).ready(function() {
     if(getCookie("shownewstext") == 1){   
-					
-						alert(getCookie("shownewstext") );
-						$("#newsletter-new").addClass('newsletter-hide');
-						$("#newsletter-mass").html('<span>You are in</span>');	
-							//setCookie("shownewsletter",'1',<?php if($timeout!='') echo $timeout;else echo '1' ?>)
-					}
+	 $("#newsletter-new").addClass('newsletter-hide');
+	 $("#newsletter-mass").html('<span>You are in</span>');	
+	  $("#newsletter_pop_up").addClass('pop_up_newleet');	
+	 //setCookie("shownewsletter",'1',<?php if($timeout!='') echo $timeout;else echo '1' ?>)
+	}
      });
 
  });	 
 </script>
+
+
+<style>
+.pop_up_newleet{left: 233px; position: absolute; top: 120px; z-index: 9999; display: block; opacity: 1;}
+.newsletter-hide{ display: none;}
+</style>
