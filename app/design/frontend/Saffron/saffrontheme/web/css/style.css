@@ -3512,6 +3512,9 @@ ol.items.review-items .review-content { margin-bottom: 10px; }
     float: left;
     width: 100%;
 }
-
+.novocann_content ul.listing_doted li {
+    color: #4E4F53;
+    font-weight: 300;
+}
 
 
