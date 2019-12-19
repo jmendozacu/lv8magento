@@ -102,6 +102,11 @@ require(["jquery"], function($){
 		// setCookie("shownewsletter",'1',1);
 		// alert(getCookie("shownewsletter"));
 
+         $('body').on('click','.b-close' function(){
+			 alert('+++');
+			 
+		 })
+
 		if(getCookie("shownewsletter") != 1){
 			$('#newsletter_pop_up').bPopup({
 				position: ['auto', <?php if($top != '') echo $top; else echo '120'; ?>],
@@ -130,14 +135,10 @@ require(["jquery"], function($){
 					setCookie("shownewsletter",'1',<?php if($timeout!='') echo $timeout;else echo '1' ?>);
 					setCookie("shownewstext",'1',<?php if($timeout!='') echo $timeout;else echo '1' ?>);
 					//alert(getCookie("shownewstext") );
-					
-					
-					
-					
 			});
 			
 		
-	$( document ).ready(function() {
+	$(document).ready(function() {
     if(getCookie("shownewstext") == 1){   
 	 $("#newsletter-new").addClass('newsletter-hide');
 	 $("#newsletter-mass").html('<span>You are in</span>');	
