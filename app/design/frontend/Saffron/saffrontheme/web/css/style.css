@@ -3464,7 +3464,7 @@ ol.items.review-items .review-content { margin-bottom: 10px; }
     left:0;
     width:37px;
     height:16px;
-    background:url('./overlay.png') no-repeat 0 0;
+    background:url('../images/overlay.png') no-repeat 0 0;
     z-index:9;
 }
 .switch span.switched {
@@ -3474,7 +3474,7 @@ ol.items.review-items .review-content { margin-bottom: 10px; }
     left:0;
     width:58px;
     height:16px;
-    background:#d9d9d9 url('./switch.gif') no-repeat 0 0;
+    background:#d9d9d9 url('../images/switch.gif') no-repeat 0 0;
     z-index:8;
 }
 .switch span.off {  left:-21px; }
