@@ -2723,14 +2723,16 @@ div#newsletter_pop_up {
     text-transform: uppercase;
     line-height: normal;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
 }
 .newspopup-body .newsletter h5 {
     font-size: 18px;
     color: #fff;
     font-weight: 400;
     text-align: center;
-    line-height: 30px;
+    line-height: 26px;
     margin-bottom: 25px;
 }
 .newspopup-body .news-control-field {
@@ -3347,7 +3349,31 @@ form#review-form .fieldset > .field .field.choice {
     margin: 0 auto;
     padding: 0 15px;
 }
-
-.banner_CBD img {
-    width: 100%;
+.banner_CBD img { width: 100%; }
+.unsubscribe-massge a {  color: #fff; }
+.product-options-bottom {  float: left; width: 100%; }
+.block.related .block-title.title {
+    font-size: 35px;
+    text-align: center;
+    color: #4E4F53;
 }
+
+.block.related .block-title.title strong {
+    font-size: 35px;
+}
+.block.related .pdp-allproducts {
+    margin: 0 auto 50px;
+    display: flex;
+    justify-content: center;
+    color: #F57B3B;
+    font-weight: 500;
+}
+.related .products-related li.item {  width: 33.333%;  padding: 0 15px; }
+.related .products-related  ol.products {  margin: 0 -15px; }
+.related .products-related li.item .product-item-info {  width: 100%; }
+.block.related .product-item-info:hover {
+    box-shadow: none;
+    border: none;
+}
+
+
