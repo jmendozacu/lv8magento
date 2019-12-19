@@ -3479,7 +3479,35 @@ ol.items.review-items .review-content { margin-bottom: 10px; }
 }
 .switch span.off {  left:-21px; }
 .switch input { display:none; }
-
+.subscribe-learn .subscribe {
+    border: 1px solid #979797;
+    float: left;
+    width: auto;
+    padding: 20px;
+    display: flex;
+    margin-right: 20px;
+}
+.product_inner_section > div {
+    float: left;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.subscribe-learn .subscribe .sub_text {
+    float: left;
+    color: #4e5054;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+.subscribe_learn a {
+    color: #F57B3B;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
 
 
 

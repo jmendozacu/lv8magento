@@ -15,13 +15,15 @@
 <div class="product_inner_section">	
 	
 	<?php if($_product['show_subscribe']=='1'){?>
-	<div class="subscribe">
-	<div class="sub_text">Subscribe + Save 10% </div>
-	<div class="onoffswitch-sub">
-     <input type='checkbox' name='opt2' id='opt2' value='1' class='toggleswitch' />
+	<div class="subscribe-learn">
+		<div class="subscribe">
+			<div class="sub_text">Subscribe + Save 10% </div>
+			<div class="onoffswitch-sub">
+			 <input type='checkbox' name='opt2' id='opt2' value='1' class='toggleswitch' />
+			</div>
+		</div>
+		<div class="subscribe_learn"><a href="<?php echo $this->getUrl('subscribe-learn-more') ?>">Learn More</a></div>
 	</div>
-	</div>
-	<div class="subscribe_learn"><a href="<?php echo $this->getUrl('subscribe-learn-more') ?>">Learn More</a></div>
 	<?php }?>							
 								
 								
