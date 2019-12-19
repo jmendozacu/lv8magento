@@ -629,11 +629,12 @@
 	
 	.product.media .fotorama__stage__shaft.fotorama__grab { width: 300px !important; }
 	.product.media .fotorama__stage { width: 300px !important; height: 300px !important; }
-	.product.media .fotorama__active .fotorama__dot { background-color: #053052; border-color: #053052; }
+	.product.media .fotorama__active .fotorama__dot { background-color:#ff5501; border-color:#ff5501; }
 	.product.media .fotorama__dot { width:6px; height:6px; }
 	.catalog-product-view main#maincontent { margin-top: 70px; }
 	.catalog-product-view .banner-title-notfront h1.page-title {  font-size: 24px; margin-top: 20px; }
-	.product-reviews-summary .reviews-actions { margin-bottom: 30px; }
+	.product-reviews-summary .reviews-actions { margin-bottom: 0; display: flex;
+		flex-direction: column; }
 	.checkout-cart-index .banner-title-notfront h1.page-title { font-size:30px; }
 	.cart-discount .block { width: 100%; }
 	body.checkout-cart-index .banner-title-notfront { padding-top:12%; }
@@ -724,5 +725,28 @@
 	.page-front .header .block.block-search .block.block-title strong:before{ color:#fff;}
 	.vedio-mobile{ display:block;; }
 	.vedio-desktop { display:none; }
+	.product-info-main .rating-summary { margin-right:20px; } 
+	.product-new-main {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		margin: 40px auto 0;
+		align-items: center;
+	}
+	.product-new-main .product-info-main { order: 2; }
+	.catalog-product-view .product.media { order: 1; }
+	.product-reviews-summary .reviews-actions a {  margin-bottom: 12px; }
+	.product-options-bottom .price-box .price-container .price, .product-info-price .price-box .price-container .price {  font-size: 22px; }
+	.stock.available span, .product-info-main .product.attribute.sku, .product-info-main .product.attribute.sku .type {  font-size: 13px; }
+	.subscribe-learn .subscribe { flex-direction: column; width: 100%; margin: 0 0 20px; }
+	.product_inner_section > div {  flex-direction: column; }
+	.product-info-main .product-options-bottom .box-tocart .fieldset {   display: inline-flex; }
+	button#product-addtocart-button {  font-size: 16px;  padding: 17px; }
+	.box-tocart .fieldset .actions {    margin: 0; }
+	.product.info.detailed {  margin: 0 0 20px; }
+	.all-product-description h3 {    font-size: 26px; }
+	ul.listing_doted {   margin-bottom: 30px; }
+	.benefits_section {   padding: 30px 0; }
+	.benefits_section .novocann_content {  margin-bottom: 20px; }
 	
 }
