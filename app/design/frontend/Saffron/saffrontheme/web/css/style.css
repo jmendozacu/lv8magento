@@ -3331,9 +3331,8 @@ ul.listing_doted { margin-left: 20px; }
     margin-bottom: 30px;
 }
 .review-container button.action.primary.write-a-review { margin-left: auto;  }
-.all-product-reviews {
-    float: left; width: 100%; display:none;
-}
+.all-product-reviews {  float: left; width: 100%;  }
+.all-product-reviews .block.review-add { display:none; }
 form#review-form .fieldset > .field .field.choice {
     margin-bottom: 20px;
     float: left;
@@ -3342,8 +3341,9 @@ form#review-form .fieldset > .field .field.choice {
 .all-product-reviews span#reviews {
     float: left;
     width: 100%;
-    margin: 60px 0 0;
+    margin: 0;
 }
+.all-product-reviews .review-form {  margin-bottom: 60px; }
 .block.related {
     max-width: 1600px;
     width: 94%;
@@ -3452,40 +3452,36 @@ ol.items.review-items .review-content { margin-bottom: 10px; }
 
 /*--on-of-toggle-switch--*/
 .switch {
-    position:relative;
-    width:37px;
-    height:16px;
-    overflow:hidden;
-    cursor:pointer;
-}
-.switch .overlay {
-    position:absolute;
-    top:0;
-    left:0;
-    width:37px;
-    height:16px;
-    background:url('../images/overlay.png') no-repeat 0 0;
-    z-index:9;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    width: 60px;
+    height: 28px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
 }
 .switch span.switched {
-    display:block;
-    position:absolute;
-    top:0;
-    left:0;
-    width:58px;
-    height:16px;
-    background:#d9d9d9 url('../images/switch.png') no-repeat 0 0;
-    z-index:8;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #d9d9d9 url(../images/switch.png) no-repeat 0 0;
+    z-index: 8;
+    width: 115px;
+    height: 35px;
+    background-size: auto 28px;
+    transition: all 0.3s ease;
 }
-.switch span.off {  left:-21px; }
+.switch span.off {  left: -33px !important; }
 .switch input { display:none; }
 .subscribe-learn .subscribe {
     border: 1px solid #979797;
     float: left;
     width: auto;
-    padding: 20px;
+    padding: 15px;
     display: flex;
     margin-right: 20px;
+    align-items: center;
 }
 .product_inner_section > div {
     float: left;

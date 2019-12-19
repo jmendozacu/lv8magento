@@ -738,8 +738,9 @@
 	.product-reviews-summary .reviews-actions a {  margin-bottom: 12px; }
 	.product-options-bottom .price-box .price-container .price, .product-info-price .price-box .price-container .price {  font-size: 22px; }
 	.stock.available span, .product-info-main .product.attribute.sku, .product-info-main .product.attribute.sku .type {  font-size: 13px; }
-	.subscribe-learn .subscribe { flex-direction: column; width: 100%; margin: 0 0 20px; }
+	.subscribe-learn .subscribe {  margin: 0 0 20px; }
 	.product_inner_section > div {  flex-direction: column; }
+	.product-info-main .product-options-bottom .box-tocart { margin-bottom:10px; }
 	.product-info-main .product-options-bottom .box-tocart .fieldset {   display: inline-flex; }
 	button#product-addtocart-button {  font-size: 16px;  padding: 17px; }
 	.box-tocart .fieldset .actions {    margin: 0; }
@@ -760,5 +761,6 @@
 	.review-container button.action.primary.write-a-review { margin-left: initial;margin-top: 15px; }
 	.block.related { width:100%; }
 	.related .products-related li.item {  width: 100%;  margin-bottom: 40px; }
+	.related .products-related li.item:last-child {  margin-bottom: 20px; }
 	
 }
