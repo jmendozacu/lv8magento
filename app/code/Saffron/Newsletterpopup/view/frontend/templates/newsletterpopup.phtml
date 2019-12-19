@@ -129,8 +129,10 @@ require(["jquery"], function($){
 				        alert('++++');
 					setCookie("shownewsletter",'1',<?php if($timeout!='') echo $timeout;else echo '1' ?>);
 					setCookie("shownewstext",'1',<?php if($timeout!='') echo $timeout;else echo '1' ?>);
-					
+					alert(getCookie("shownewstext") );
 					if(getCookie("shownewstext") == 1){   
+					
+						alert(getCookie("shownewstext") );
 						$("#newsletter-new").addClass('newsletter-hide');
 						$("#newsletter-mass").Html('<span>You are in</span>');	
 							//setCookie("shownewsletter",'1',<?php if($timeout!='') echo $timeout;else echo '1' ?>)
