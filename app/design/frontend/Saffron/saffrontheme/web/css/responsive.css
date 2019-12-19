@@ -362,6 +362,8 @@
 	.novocann_row-full .container, body.catalog-product-view .column.main {  max-width: 100%;
 		width:100%; }
 	.product.info.detailed { margin-bottom:0; }
+	.newsletter-popup .newspopup-body .descount-field { width:70%; }
+	.newspopup-body { background-size: 70%; }
 
 }
 
