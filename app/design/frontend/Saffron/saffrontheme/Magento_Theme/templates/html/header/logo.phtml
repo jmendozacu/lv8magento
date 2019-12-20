@@ -14,9 +14,11 @@
 if(!empty($categreisdata['entity_id'])){ ?>
 
 <?php if($categreisdata['parent_id']=='2'){?>
-<?php   $substr1 = $this->getInnerlogo($categreisdata['entity_id']) ; ?>
+<?php   $substr1 = $this->getInnerlogo($categreisdata['entity_id']) ; 
+//$substr1['url_path'] ;
+?>
 
-<a  href="<?php echo $this->getUrl($substr1['url_path']) ; ?>" title="">
+<a  href="<?php echo $this->getUrl() ; ?>" title="">
 <img src="<?php echo $this->getMedia().'catalog/category/'.$categreisdata->getHomelogo(); ?>" title="<?php echo $substr1['name'] ; ?>" alt="<?php echo $substr1['name'] ; ?>" width="275" height="28">
 </a>
 <?php } else { ?>
@@ -24,8 +26,9 @@ if(!empty($categreisdata['entity_id'])){ ?>
 <?php  $substr = $this->getInnerlogo($categreisdata['parent_id']) ;
 
 //echo"<pre>";print_r($substr);
+//$substr['url_path'];
 ?>
-<a  href="<?php echo $this->getUrl($substr['url_path']) ;?>" title="">
+<a  href="<?php echo $this->getUrl() ;?>" title="">
 <img src="<?php echo $this->getMedia().'catalog/category/'.$substr['innerlogo']; ?>" title="<?php echo $substr['name'] ; ?>" alt="<?php echo $substr['name'] ; ?>" width="275" height="28">
 </a>
 <?php }?>
