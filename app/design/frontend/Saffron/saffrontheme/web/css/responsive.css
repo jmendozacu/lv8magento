@@ -773,7 +773,7 @@
 	.related .products-related li.item:last-child {  margin-bottom: 20px; }
 	.opc-wrapper .form-discount { padding: 0 15px; }
 	body.checkout-index-index .opc-wrapper.am-opc-wrapper .payment-option-content .action-apply {	   	margin-bottom: 0; }
-	
+	.checkout-onepage-success .column.main { padding: 0; }
 	
 	
 	

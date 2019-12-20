@@ -2412,7 +2412,7 @@ body.checkout-index-index .column.main {
 }
 .opc-wrapper .step-title, .opc-block-shipping-information .shipping-information-title, .opc-block-summary > .title, .checkout-agreements-items .checkout-agreements-item-title {
     font-weight: 600;
-    color: #4E4F53;
+    color: #4E4F53; margin-bottom:20px;
 	
 }
 .opc-wrapper .form-login .fieldset .field .label, .opc-wrapper .form-shipping-address .fieldset .field .label {
@@ -3534,4 +3534,22 @@ div#newsletter-mass {
     margin-bottom: 10px;
     text-transform: uppercase;
 }
+a.order-number, a.print,
+.shipping-address-item a,
+button.action.edit-address-link  { color: #F57B3B; }
+.checkout-index-index button.action.action-show-popup,
+.checkout-index-index button.action.action-select-shipping-item {
+    background: #4E4F53;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 12px 15px;
+    border: none;
+}
+
+
+
+
+
+
 
