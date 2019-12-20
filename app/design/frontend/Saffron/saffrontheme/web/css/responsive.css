@@ -774,7 +774,11 @@
 	.opc-wrapper .form-discount { padding: 0 15px; }
 	body.checkout-index-index .opc-wrapper.am-opc-wrapper .payment-option-content .action-apply {	   	margin-bottom: 0; }
 	.checkout-onepage-success .column.main { padding: 0; }
-	
+	.checkout-index-index .modal-popup.modal-slide {  left: 0; }
+	body.checkout-index-index .modal-popup:not(.agreements-modal):not(.popup-authentication) .modal-inner-wrap {width: 100%;padding: 15px;}
+	.checkout-index-index .modal-popup.modal-slide header.modal-header { padding-left: 0; }
+	.checkout-index-index .modal-popup.modal-slide header.modal-header .modal-title {
+		width: 100%; float: left; font-size: 18px; font-weight: 600; border: none; }	
 	
 	
 }
