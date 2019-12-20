@@ -114,6 +114,7 @@
 		.page-front .header .block-search .block-content input::placeholder {color:#fff;}
 		.banner_CBD img {     min-height: 450px;  object-fit: cover; }
 		.novocann_content p { font-size: 16px; }
+		.checkout-index-index .modal-popup .modal-header { padding-left: 20px; }
  }
 
 
@@ -432,7 +433,7 @@
 	.checkout-index-index #checkout.am-checkout { padding:0; }
 	.checkout-index-index .authentication-wrapper { margin:0; }
 	.opc-estimated-wrapper {  margin: 90px 0 30px; }
-	body.checkout-index-index .checkout-block { padding:20px 15px; }
+	body.checkout-index-index .checkout-block { padding:20px 15px; margin: 0 0 20px; }
 	.opc-wrapper .methods-shipping { padding-top:0; }
 	.checkout-payment-method .payment-methods .actions-toolbar .primary { margin-top:20px; }
 	.opc-wrapper .form-login, .opc-wrapper .form-shipping-address, .opc-wrapper .methods-shipping {
@@ -777,10 +778,10 @@
 	.checkout-index-index .modal-popup.modal-slide {  left: 0; }
 	body.checkout-index-index .modal-popup:not(.agreements-modal):not(.popup-authentication) .modal-inner-wrap {width: 100%;padding: 15px;}
 	.checkout-index-index .modal-popup.modal-slide header.modal-header { padding-left: 0; }
-	.checkout-index-index .modal-popup.modal-slide header.modal-header .modal-title {
-		width: 100%; float: left; font-size: 18px; font-weight: 600; border: none; }	
-	
-	
+	.checkout-index-index .modal-popup.modal-slide header.modal-header .modal-title{font-size: 18px; }	
+	.checkout-index-index .modal-popup .modal-footer .action-save-address { font-size:16px; }
+	.checkout-index-index .opc-estimated-wrapper .estimated-block { font-weight:600; }
+	.checkout-index-index .opc-estimated-wrapper {  margin-top: 0; }
 }
 
 
