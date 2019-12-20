@@ -3588,7 +3588,7 @@ body .opc-wrapper .shipping-address-item.selected-item:after { background: #F57B
 .table-wrapper .table tbody td {  border-top: none; }
 .account .data.table .col.actions { white-space: normal }
 .block-collapsible-nav .item.current a, .block-collapsible-nav .item.current > strong{
-	border-color: #F57B3B;
+	border-color: #F57B3B; color:#F57B3B;
 }
 .account .sidebar-additional { margin-top:0; }
 .sidebar .product-items-names .product-item { display: flex; }

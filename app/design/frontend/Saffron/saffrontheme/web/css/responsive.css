@@ -115,6 +115,7 @@
 		.banner_CBD img {     min-height: 450px;  object-fit: cover; }
 		.novocann_content p { font-size: 16px; }
 		.checkout-index-index .modal-popup .modal-header { padding-left: 20px; }
+		.limiter {  float: right; }
  }
 
 
@@ -782,7 +783,13 @@
 	.checkout-index-index .modal-popup .modal-footer .action-save-address { font-size:16px; }
 	.checkout-index-index .opc-estimated-wrapper .estimated-block { font-weight:600; }
 	.checkout-index-index .opc-estimated-wrapper {  margin-top: 0; }
+	.account .sidebar-additional { padding:0 15px; }
+	.account .table-wrapper { border-bottom:none; }
+	.block-reorder .actions-toolbar { display:flex; }
+	.account .column.main .block-title.order { margin-bottom: 10px !important; }
+	
 }
+
 
 
 
