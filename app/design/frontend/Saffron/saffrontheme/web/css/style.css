@@ -3577,7 +3577,7 @@ body .opc-wrapper .shipping-address-item.selected-item:after { background: #F57B
 }
 .block-content .table-wrapper { width: 100%; overflow-x: auto; }
 .block-content .table-wrapper .table { width: 100%; }
-.table-wrapper td.col.actions a {  display: inline-flex; margin-bottom:10px; }
+.table-wrapper td.col.actions a { margin-bottom: 10px; white-space: normal; display: flex; }
 .account .data.table .col.actions .action:after { display: none; }
 .account .column.main .block-title.order {
     float: left;
