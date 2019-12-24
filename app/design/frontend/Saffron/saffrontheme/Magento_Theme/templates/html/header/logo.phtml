@@ -34,10 +34,10 @@ if($substr['level'] !='3'){?>
  <?php }else{ 
  
   $substr11 = $this->getInnerlogo($substr ['parent_id']) ;
-  echo"<pre>";print_r($substr11);
+  //echo"<pre>";print_r($substr11);
  ?>
 	 
-<a  href="<?php echo $this->getUrl($substr['url_path']) ;?>" title="">
+<a  href="<?php echo $this->getUrl($substr11['url_path']) ;?>" title="">
 <img src="<?php echo $this->getMedia().'catalog/category/'.$substr['innerlogo']; ?>" title="<?php echo $substr['name'] ; ?>" alt="<?php echo $substr['name'] ; ?>" width="275" height="28">
 </a>  
  
