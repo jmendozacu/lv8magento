@@ -22,7 +22,7 @@ use Magento\Framework\App\Action\Action;
    if($category->getId()=='3'){	
  //Block for shop all page		
 ?>
-<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('shopall')->toHtml(); ?>				
+<?php //echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('shopall')->toHtml(); ?>				
 <?php } else { ?>
 
 
@@ -33,7 +33,9 @@ $_productCollection = $block->getLoadedProductCollection();
 $_helper = $this->helper('Magento\Catalog\Helper\Output');
 ?>
 <?php if (!$_productCollection->count()): ?>
-    <div class="message info empty"><div><?= /* @escapeNotVerified */ __('We can\'t find products matching the selection.') ?></div></div>
+<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('coming-soon')->toHtml(); ?>	
+
+    <!--<div class="message info empty"><div><?= /* @escapeNotVerified */ __('We can\'t find products matching the selection.') ?></div></div>-->
 <?php else: ?>
 <div class="tab-content product-content" id="pills-tabContent">
                     
