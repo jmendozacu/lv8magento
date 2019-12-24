@@ -3609,5 +3609,13 @@ body .opc-wrapper .shipping-address-item.selected-item:after { background: #F57B
     margin: -80px 0 0;
 	line-height:normal;
 }
+.product-tab-title { transition:all 0.3s ease; }
+.category-sticky {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+}
+
 
 

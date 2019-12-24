@@ -306,22 +306,22 @@ $('.customer-carousel .owl-carousel').owlCarousel({
 	
 	 });
 	 
-	 
-var $banner = jQuery(".banner").height();
 
-var $scrollTop = jQuery(window).scrollTop();
-var $category = jQuery(".category");
 
-$(window).scroll(function() { 
-    var scroll = $(window).scrollTop();    
-    if (  scroll > $banner ) {
-		$category.addClass('active');
-    }
-	else{
-		$category.removeClass('active');
-	}
-}); 
-		
+$(document).ready(function(){
+	var $banner = jQuery(".catalog-category-view .banner-breadcrumbs").height();
+	var $category = jQuery(".catalog-category-view .product-tab-title");
+
+	$(window).scroll(function() { 
+		var $scroll = $(window).scrollTop();    
+		if (  $scroll > $banner ) {
+			$category.addClass('category-sticky');
+		}
+		else{
+			$category.removeClass('category-sticky');
+		}
+	}); 
+});		
 
 </script>	
 
