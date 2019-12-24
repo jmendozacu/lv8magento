@@ -308,12 +308,12 @@ $('.customer-carousel .owl-carousel').owlCarousel({
 	 
 
 
-$(document).ready(function(){
+jQuery(document).ready(function(){
 	var $banner = jQuery(".catalog-category-view .banner-breadcrumbs").height();
 	var $category = jQuery(".catalog-category-view .product-tab-title");
 
-	$(window).scroll(function() { 
-		var $scroll = $(window).scrollTop();    
+	jQuery(window).scroll(function() { 
+		var $scroll = jQuery(window).scrollTop();    
 		if (  $scroll > $banner ) {
 			$category.addClass('category-sticky');
 		}
