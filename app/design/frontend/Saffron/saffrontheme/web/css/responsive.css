@@ -116,6 +116,9 @@
 		.novocann_content p { font-size: 16px; }
 		.checkout-index-index .modal-popup .modal-header { padding-left: 20px; }
 		.limiter {  float: right; }
+		.product-tab-title { transition:all 0.3s ease; }
+		.category-sticky { position: fixed; top: 70px; left: 0;	right: 0; z-index:9; padding:15px 0; }
+		
  }
 
 
