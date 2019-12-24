@@ -25,7 +25,7 @@ if(!empty($categreisdata['entity_id'])){ ?>
 
 <?php  $substr = $this->getInnerlogo($categreisdata['parent_id']) ;
 
-//echo"<pre>";print_r($substr);
+echo"<pre>";print_r($substr);
 //$substr['url_path'];
 ?>
 <a  href="<?php echo $this->getUrl($substr['url_path']) ;?>" title="">
@@ -65,7 +65,7 @@ if($checkModule == 'cms'){ ?>
 <?php  $checkcbdx = (explode("/",$_SERVER['REQUEST_URI'])) ;  ?>
 <?php if($checkcbdx[1]=='cbdx' ){ ?>
 
-<a  href="<?= $block->getUrl('') ?>" title="<?= /* @escapeNotVerified */ $storeName ?>">
+<a  href="<?= $block->getUrl('cbdx/') ?>" title="<?= /* @escapeNotVerified */ $storeName ?>">
 
   <img src="<?= /* @escapeNotVerified */ $block->getLogoSrc() ?>"
              title="<?= /* @escapeNotVerified */ $block->getLogoAlt() ?>"
