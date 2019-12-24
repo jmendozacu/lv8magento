@@ -3593,6 +3593,21 @@ body .opc-wrapper .shipping-address-item.selected-item:after { background: #F57B
 .account .sidebar-additional { margin-top:0; }
 .sidebar .product-items-names .product-item { display: flex; }
 
-
+.coming-soon {
+    float: left;
+    width: 100%;
+    text-align: center;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.coming-soon p {
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: -80px 0 0;
+	line-height:normal;
+}
 
 

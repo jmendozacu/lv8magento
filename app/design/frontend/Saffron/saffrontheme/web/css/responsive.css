@@ -788,6 +788,7 @@
 	.account .table-wrapper { border-bottom:none; }
 	.block-reorder .actions-toolbar { display:flex; }
 	.account .column.main .block-title.order { margin-bottom: 10px !important; }
+	.coming-soon p { font-size:30px; }
 	
 }
 

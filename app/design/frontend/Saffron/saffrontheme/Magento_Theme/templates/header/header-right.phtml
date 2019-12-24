@@ -305,6 +305,22 @@ $('.customer-carousel .owl-carousel').owlCarousel({
 		
 	
 	 });
+	 
+	 
+var $banner = jQuery(".banner").height();
+
+var $scrollTop = jQuery(window).scrollTop();
+var $category = jQuery(".category");
+
+$(window).scroll(function() { 
+    var scroll = $(window).scrollTop();    
+    if (  scroll > $banner ) {
+		$category.addClass('active');
+    }
+	else{
+		$category.removeClass('active');
+	}
+}); 
 		
 
 </script>	
