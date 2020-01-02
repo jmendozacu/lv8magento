@@ -1,4 +1,10 @@
 
+@media (min-width: 1200px) {
+	.lv8-page .front-banner .item { background-position: center -80px !important; }	
+	
+}
+
+
 /*==========---min-width-768---==========*/
 @media (min-width: 768px) {
       .banner-title-notfront h1 {  font-size: 75px; }
