@@ -137,8 +137,21 @@ $(document).ready(function(){
 			$(this).next().slideToggle();
 			$(this).parent().siblings().children().next().slideUp();
 		})
-		
 	}
+	$(window).resize(function(){
+		if( $(window).width() <= 1024 ){
+		$(".point .point-circle").on("click", function(){
+			$(this).addClass("active");
+			$(this).parent().siblings().children().removeClass("active");
+			$(this).next().slideToggle();
+			$(this).parent().siblings().children().next().slideUp();
+		})
+	}
+	});
+	$(".point-body .closeBtn").on("click", function(){
+		$(this).parent().fadeOut();	
+		$(this).parent().siblings("span").removeClass('active');
+	});
 	
     
     
