@@ -451,7 +451,7 @@ button:focus{ outline:none; }
     font-family: 'Montserrat', sans-serif;
 }
 .menu-inner .logo-brand { margin-bottom: 10%; float: left; width:100%; }
-.menu-inner .logo-brand img { height: 50px;  width: auto; }
+.menu-inner .logo-brand img { height: 36px;  width: auto; }
 .menu-item-cbdx .menu-inner .logo-brand img { height: 70px;  width: auto; }
 .menu-inner h4 {
     text-transform: uppercase;

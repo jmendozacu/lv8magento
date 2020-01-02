@@ -84,17 +84,21 @@ $(document).ready(function(){
 		$(".menu-parent li .fa").on("click", function(){
 			$(".navbar-body").siblings().removeClass("hover-active");
 		})
+		
+		$(".menu-parent li.menu-item.menu-home").on('mouseenter', function(e){
+			$(".navbar-body").siblings().removeClass("hover-active");
+			$(".navbar-body.menu-item-front").addClass("hover-active");
+			
+		})
 		$(".menu-parent li.menu-item.labs-menu").on('mouseenter', function(e){
 			$(".navbar-body").siblings().removeClass("hover-active");
 			$(".navbar-body.menu-item-labs").addClass("hover-active");
 			
 		})
-	
 		$(".menu-parent li.menu-item.worx-menu").on('mouseenter', function(){
 			$(".navbar-body").siblings().removeClass("hover-active");
 			$(".navbar-body.menu-item-worx").addClass("hover-active");
 		})
-	
 		$(".menu-parent li.menu-item.cbdx-menu").on('mouseenter', function(){
 			$(".navbar-body").siblings().removeClass("hover-active");
 			$(".navbar-body.menu-item-cbdx").addClass("hover-active");
