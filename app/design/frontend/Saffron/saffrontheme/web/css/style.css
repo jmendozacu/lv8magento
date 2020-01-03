@@ -922,7 +922,7 @@ textarea{
     display: flex; display: -webkit-flex;
     flex: 1;
 	justify-content: center;
-    align-items: center;
+    align-items: center; margin:0;
 }
 .product-tab-title ul {
     float: left;
@@ -3146,6 +3146,7 @@ body .opc-wrapper .shipping-address-item.selected-item:after { background: #F57B
 .filter-options-content .swatch-attribute-options { padding: 0 8px; }
 .filter-options .swatch-attribute-options .swatch-option.text { width: 84px; margin: 3px 3px; }
 .filter-active .logo-col img, .filter-active .menubar {  transition: none; }
+.product-item .price-box .price-label { font-weight:500; }
 
 
 

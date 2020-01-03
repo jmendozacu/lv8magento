@@ -806,7 +806,10 @@
 	.block-reorder .actions-toolbar { display:flex; }
 	.account .column.main .block-title.order { margin-bottom: 10px !important; }
 	.coming-soon p { font-size:30px; }
-	
+	.product-tab-title { padding:15px 0; margin-bottom:30px;  }
+	.product-list .featured-item { margin-bottom:50px; }
+	.product-tab-title li a { font-size:15px; }
+		
 	
 }
 
