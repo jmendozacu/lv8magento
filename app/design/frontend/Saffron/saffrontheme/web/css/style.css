@@ -1536,6 +1536,7 @@ ul.filter-cat-list li:last-child a { border: none; }
 	font-size: 26px;
 	padding-left: 8px;
 }
+.information-mobile span.open:after { content: "\f107"; }
 .point-body .closeBtn {
     color: #333;
     font-weight: normal;

@@ -84,12 +84,6 @@ $(document).ready(function(){
 		$(".menu-parent li .fa").on("click", function(){
 			$(".navbar-body").siblings().removeClass("hover-active");
 		})
-		
-		$(".menu-parent li.menu-level.menu-home").on('mouseenter', function(e){
-			$(".navbar-body").siblings().removeClass("hover-active");
-			$(".navbar-body.menu-item-front").addClass("hover-active");
-			
-		})
 		$(".menu-parent li.menu-item.labs-menu").on('mouseenter', function(e){
 			$(".navbar-body").siblings().removeClass("hover-active");
 			$(".navbar-body.menu-item-labs").addClass("hover-active");
@@ -186,6 +180,7 @@ $(document).ready(function(){
 	});
    
    $(".information-mobile span").on("click", function(){
+		$(this).toggleClass('open');
 		$(this).parent().next(".info-title-list").slideToggle();	
 	})
 	
