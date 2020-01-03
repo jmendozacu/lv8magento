@@ -3149,7 +3149,8 @@ body .opc-wrapper .shipping-address-item.selected-item:after { background: #F57B
 .filter-options .swatch-attribute-options .swatch-option.text { width: 84px; margin: 3px 3px; }
 .filter-active .logo-col img, .filter-active .menubar {  transition: none; }
 .product-item .price-box .price-label { font-weight:500; }
-
+.menu-inner a.email-address { color: #4E5054; font-size: 18px; }
+.menu-inner a.email-address:hover { color:#000; }
 
 
 
