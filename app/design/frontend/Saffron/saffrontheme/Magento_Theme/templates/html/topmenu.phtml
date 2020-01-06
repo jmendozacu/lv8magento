@@ -124,7 +124,7 @@
 	<ul>
 	<?php foreach ($subcats as $subcat) { ?>
 	
-	<li><a href="<?php echo $subcat->getUrl();?>"><?php echo $subcat->getName()?></a></li>
+	<li class="<?php if($category_id == $subcat->getId()){echo 'active';} ?>"><a href="<?php echo $subcat->getUrl();?>"><?php echo $subcat->getName()?></a></li>
 	<?php }?>
 	<li class="scrollMenu-home  <?php if($category_id == $subcat->getId()){echo 'active';} ?>"><a href="<?php echo $subcat->getUrl();?>#scroll-our-craft">OUR CRAFT</a></li>
 	<li class="scrollMenu-home <?php if($category_id == $subcat->getId()){echo 'active';} ?>"><a href="<?php echo $subcat->getUrl();?>#scroll-brands">BRANDS</a></li>
@@ -173,7 +173,7 @@
 	<?php  $subcats = $catgrieslab->getChildrenCategories();?>	
 	<ul>
 	<?php foreach ($subcats as $subcat) { ?>
-     <li><a href="<?php echo $subcat->getUrl();?>"><?php echo $subcat->getName()?></a></li>
+     <li class="<?php if($category_id== $subcat->getId()){echo'active';} ?>"><a href="<?php echo $subcat->getUrl();?>"><?php echo $subcat->getName()?></a></li>
     <?php }?>	
 	<li class="scrollMenu-home <?php if($category_id== $subcat->getId()){echo'active';} ?>"><a href="<?php echo $subcat->getUrl();?>#scroll-worx-grid-images">WORK</a></li>
 	<li class="scrollMenu-home <?php if($category_id== $subcat->getId()){echo'active';} ?>"><a href="<?php echo $subcat->getUrl();?>#scroll-success-stories">STORIES</a></li>
