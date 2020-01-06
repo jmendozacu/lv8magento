@@ -2336,11 +2336,11 @@ div#newsletter_pop_up {
     width: 100%;
 }
 .newspopup-body .news-control-field .control {
-    width: calc(100% - 140px);
+    width: calc(100% - 80px);
     float: left;
 }
 .newspopup-body .news-control-field .actions {
-    width: 140px;
+    width: 80px;
     float: left;
 }
 .newspopup-body .news-control-field input#newsletters {
@@ -2358,6 +2358,17 @@ div#newsletter_pop_up {
     border: 1px solid #fff;
     border-left: none;
     height: 58px;
+    padding: 0;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: inherit;
+    width: 100%;
+}
+.newspopup-body .news-control-field .actions button img {
+    width: 25px;
+    height: auto;
 }
 .newspopup-body .subscribe-bottom label.custom-control-label,
 .newspopup-body .subscribe-bottom label.custom-control-label a {
