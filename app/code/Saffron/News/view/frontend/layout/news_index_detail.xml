@@ -18,7 +18,7 @@
  
     <attribute name="class" value="lv8-page"/>
    <attribute name="class" value="page-not-front"/>
-   <attribute name="class" value="careers-page"/>
+   <attribute name="class" value="blog-detail-page"/>
 <referenceBlock name="page.main.title" remove="true" />
 
         <referenceContainer name="sidebar.main">
