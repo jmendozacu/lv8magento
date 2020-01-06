@@ -305,7 +305,7 @@ class Grid extends \Magento\Backend\Block\Widget\Grid\Extended
 		static public function getOptionArray7()
 		{
            $data_array=array();
-            $data_array[2]='other';		   
+            $data_array[0]='other';		   
 			$data_array[1]='Featured';
 			$data_array[2]='Video';
 			

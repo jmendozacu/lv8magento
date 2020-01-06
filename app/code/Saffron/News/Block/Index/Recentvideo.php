@@ -43,9 +43,10 @@ class Recentvideo extends \Magento\Framework\View\Element\Template {
      	
 	$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
    	$newcategories = $objectManager->create('Saffron\News\Model\ResourceModel\Newspost\Collection')
+			 ->addFieldToFilter('featured', array('eq' => 2))
 			 ->addFieldToFilter('status', array('eq' => 0))
-			  ->setPageSize($page) // only get 10 products 
-             ->setCurPage(1) ;
+			 ->setPageSize($page) // only get 10 products 
+             ->setCurPage(8) ;
 	      return   $newcategories  ;	
 		
 	}
