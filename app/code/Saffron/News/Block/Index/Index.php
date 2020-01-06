@@ -32,7 +32,8 @@ public function getNewsFeacture(){
 	$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
    	$newcategories = $objectManager->create('Saffron\News\Model\ResourceModel\Newspost\Collection')
 			 ->addFieldToFilter('status', array('eq' => 0))
-			 ->addFieldToFilter('featured', array('eq' => 0));
+			 ->addFieldToFilter('featured', array('eq' => 1))
+			 ->setPageSize(8);
 			 
 	      return   $newcategories  ;	
 		
@@ -50,6 +51,20 @@ public function getNewsAllPost(){
 		
 	}
 	
+
+public function getNewsvedio(){
+		
+	$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+   	$newcategories = $objectManager->create('Saffron\News\Model\ResourceModel\Newspost\Collection')
+			 ->addFieldToFilter('status', array('eq' => 0))
+			 ->addFieldToFilter('featured', array('eq' => 2))
+			  ->setPageSize(8);
+			 
+	      return   $newcategories  ;	
+		
+	}
+	
+
 	
 public function getMediaUrl(){
 	$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
