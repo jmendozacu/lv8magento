@@ -154,7 +154,44 @@ class Save extends \Magento\Backend\App\Action
                 }
             }			
 			 
-			 
+			 if (isset($_FILES['detailpagebanner']) && !empty($_FILES['detailpagebanner']['name']) ) {
+			
+		
+			try{
+				$uploader = $this->_objectManager->create(
+					'Magento\MediaStorage\Model\File\Uploader',
+					['fileId' => 'detailpagebanner']
+				);
+				$uploader->setAllowedExtensions(['jpg', 'jpeg', 'gif', 'png']);
+				/** @var \Magento\Framework\Image\Adapter\AdapterInterface $imageAdapter */
+				$imageAdapter = $this->_objectManager->get('Magento\Framework\Image\AdapterFactory')->create();
+				$uploader->setAllowRenameFiles(true);
+				$uploader->setFilesDispersion(true);
+				/** @var \Magento\Framework\Filesystem\Directory\Read $mediaDirectory */
+				$mediaDirectory = $this->_objectManager->get('Magento\Framework\Filesystem')
+					->getDirectoryRead(DirectoryList::MEDIA);
+				$result = $uploader->save($mediaDirectory->getAbsolutePath('news_newspost'));
+					if($result['error']==0)
+					{
+						$data['detailpagebanner'] = 'news_newspost' . $result['file'];
+					}
+			} catch (\Exception $e) {
+				//unset($data['image']);
+            }
+			//var_dump($data);die;
+			if(isset($data['detailpagebanner']['delete']) && $data['detailpagebanner']['delete'] == '1')
+				$data['detailpagebanner'] = '';
+           }else {
+                if (isset($data['detailpagebanner']) && isset($data['detailpagebanner']['value'])) {
+                    if (isset($data['detailpagebanner']['delete'])) {
+                        $data['detailpagebanner'] = '';
+                    } elseif (isset($data['detailpagebanner']['value'])) {
+                        $data['detailpagebanner'] = $data['detailpagebanner']['value'];
+                    } else {
+                        $data['detailpagebanner'] = '';
+                    }
+                }
+            }	 
 			 
             $model->setData($data);
 

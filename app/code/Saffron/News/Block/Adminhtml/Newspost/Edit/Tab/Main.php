@@ -123,7 +123,19 @@ class Main extends \Magento\Backend\Block\Widget\Form\Generic implements \Magent
                 'disabled' => $isElementDisabled
             ]
         );
-						
+			
+
+       $fieldset->addField(
+            'detailpagebanner',
+            'image',
+            [
+                'name' => 'detailpagebanner',
+                'label' => __('Detail Page Banner'),
+                'title' => __('Detail Page Banner'),
+				'required' => true,
+                'disabled' => $isElementDisabled
+            ]
+        );			
         $fieldset->addField(
             'url_key',
             'text',
