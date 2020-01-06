@@ -200,8 +200,8 @@ class Main extends \Magento\Backend\Block\Widget\Form\Generic implements \Magent
             'featured',
             'select',
             [
-                'label' => __('Featured'),
-                'title' => __('Featured'),
+                'label' => __('Select Type'),
+                'title' => __('Select Type'),
                 'name' => 'featured',
 				
                 'options' => \Saffron\News\Block\Adminhtml\Newspost\Grid::getOptionArray7(),
