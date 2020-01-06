@@ -98,7 +98,31 @@ class Main extends \Magento\Backend\Block\Widget\Form\Generic implements \Magent
                 'disabled' => $isElementDisabled
             ]
         );
-
+        
+		
+		 $fieldset->addField(
+            'featuredimg',
+            'image',
+            [
+                'name' => 'featuredimg',
+                'label' => __('Featured Image'),
+                'title' => __('Featured Image'),
+				'required' => true,
+                'disabled' => $isElementDisabled
+            ]
+        );
+		
+		 $fieldset->addField(
+            'vedioimg',
+            'image',
+            [
+                'name' => 'vedioimg',
+                'label' => __('Vedio Image'),
+                'title' => __('Vedio Image'),
+				'required' => true,
+                'disabled' => $isElementDisabled
+            ]
+        );
 						
         $fieldset->addField(
             'url_key',

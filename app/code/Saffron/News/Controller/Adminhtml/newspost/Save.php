@@ -74,7 +74,88 @@ class Save extends \Magento\Backend\App\Action
                     }
                 }
             }
+             
+			 
+			if (isset($_FILES['vedioimg']) && !empty($_FILES['vedioimg']['name']) ) {
+			
+		
+			try{
+				$uploader = $this->_objectManager->create(
+					'Magento\MediaStorage\Model\File\Uploader',
+					['fileId' => 'vedioimg']
+				);
+				$uploader->setAllowedExtensions(['jpg', 'jpeg', 'gif', 'png']);
+				/** @var \Magento\Framework\Image\Adapter\AdapterInterface $imageAdapter */
+				$imageAdapter = $this->_objectManager->get('Magento\Framework\Image\AdapterFactory')->create();
+				$uploader->setAllowRenameFiles(true);
+				$uploader->setFilesDispersion(true);
+				/** @var \Magento\Framework\Filesystem\Directory\Read $mediaDirectory */
+				$mediaDirectory = $this->_objectManager->get('Magento\Framework\Filesystem')
+					->getDirectoryRead(DirectoryList::MEDIA);
+				$result = $uploader->save($mediaDirectory->getAbsolutePath('news_newspost'));
+					if($result['error']==0)
+					{
+						$data['vedioimg'] = 'news_newspost' . $result['file'];
+					}
+			} catch (\Exception $e) {
+				//unset($data['image']);
+            }
+			//var_dump($data);die;
+			if(isset($data['vedioimg']['delete']) && $data['vedioimg']['delete'] == '1')
+				$data['vedioimg'] = '';
+           }else {
+                if (isset($data['vedioimg']) && isset($data['vedioimg']['value'])) {
+                    if (isset($data['vedioimg']['delete'])) {
+                        $data['vedioimg'] = '';
+                    } elseif (isset($data['vedioimg']['value'])) {
+                        $data['vedioimg'] = $data['vedioimg']['value'];
+                    } else {
+                        $data['vedioimg'] = '';
+                    }
+                }
+            }
 
+          if (isset($_FILES['featuredimg']) && !empty($_FILES['featuredimg']['name']) ) {
+			
+		
+			try{
+				$uploader = $this->_objectManager->create(
+					'Magento\MediaStorage\Model\File\Uploader',
+					['fileId' => 'featuredimg']
+				);
+				$uploader->setAllowedExtensions(['jpg', 'jpeg', 'gif', 'png']);
+				/** @var \Magento\Framework\Image\Adapter\AdapterInterface $imageAdapter */
+				$imageAdapter = $this->_objectManager->get('Magento\Framework\Image\AdapterFactory')->create();
+				$uploader->setAllowRenameFiles(true);
+				$uploader->setFilesDispersion(true);
+				/** @var \Magento\Framework\Filesystem\Directory\Read $mediaDirectory */
+				$mediaDirectory = $this->_objectManager->get('Magento\Framework\Filesystem')
+					->getDirectoryRead(DirectoryList::MEDIA);
+				$result = $uploader->save($mediaDirectory->getAbsolutePath('news_newspost'));
+					if($result['error']==0)
+					{
+						$data['featuredimg'] = 'news_newspost' . $result['file'];
+					}
+			} catch (\Exception $e) {
+				//unset($data['image']);
+            }
+			//var_dump($data);die;
+			if(isset($data['featuredimg']['delete']) && $data['featuredimg']['delete'] == '1')
+				$data['featuredimg'] = '';
+           }else {
+                if (isset($data['featuredimg']) && isset($data['featuredimg']['value'])) {
+                    if (isset($data['featuredimg']['delete'])) {
+                        $data['featuredimg'] = '';
+                    } elseif (isset($data['featuredimg']['value'])) {
+                        $data['featuredimg'] = $data['featuredimg']['value'];
+                    } else {
+                        $data['featuredimg'] = '';
+                    }
+                }
+            }			
+			 
+			 
+			 
             $model->setData($data);
 
             try {
