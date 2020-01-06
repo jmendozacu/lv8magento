@@ -523,7 +523,7 @@
 	.menu-item-front .menu-inner .logo-brand img { height: 26px;   }
 	.menu-item-cbdx .menu-inner .logo-brand img { height:45px; }
 	.menu-items .active .menu-inner,
-	.menu-inner	{ display: inherit; flex-direction:inherit; }
+	.menu-inner, .menu-inner .adrs-col	{ display: inherit; flex-direction:inherit; }
 	.menu-inner .adrs-col { margin-bottom:10px;  }
 	.filter-col .filter-link{ margin:0; padding:12px; }
 	.social-col li a { font-size:18px; }
