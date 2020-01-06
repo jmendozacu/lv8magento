@@ -29,10 +29,75 @@
 		
 		
 		<div class="news-detail-content">
-			<?php echo $NewsDetail[0]['full_content']; ?> 
+		<div class="col-lg-9 col-md-8 col-12 left-side">
+          <?php echo $NewsDetail[0]['full_content']; ?> 
+		</div>
+		<div class="col-lg-3 col-md-4 col-12 right-side"></div>
 		</div>
      
 
-	
+	<div class="latest-post row-full" data-aos="fade-up" data-aos-offset="150"  data-aos-easing="ease-in-sine">
+               <div class="container">
+                    <span id="recent-blog"> </span>
+                   
+               </div>
+           </div>
 
 </div>
+
+
+
+
+
+
+
+<script>
+function getCategoryid(obj){
+	
+jQuery(document).ready(function($){
+  $("#loderpop").addClass("showpopup");
+  var $el = $("categoriesitem"+obj);
+  $el.addClass("active").siblings().removeClass('active');
+  $.ajax({
+        url: "<?php echo $this->getBaseUrl()?>news/index/recent/",
+        type: "GET",
+        data:  {"id":obj,"page":3},
+        success: function(response){
+		$('#recent-blog').html(response);	
+		$("#loderpop").removeClass("showpopup");
+        }
+	  });
+ 
+});
+	
+}
+
+</script>	
+
+
+
+<script type="text/javascript">
+require([ 'jquery'], function($){
+$(document).ready(function(){
+	
+     //var obj = $("categoriesitem-1").val();
+	 var obj = 2;//$("#categoriesitem-1").val(); 
+	 //alert(obj);
+	 $.ajax({
+        url: "<?php echo $this->getBaseUrl()?>news/index/recent/",
+        type: "GET",
+        data:  {"id":obj,"page":3},
+        success: function(response){
+		$('#recent-blog').html(response);	
+		//$("#loderpop").removeClass("showpopup");
+        }
+	  });
+	
+
+	});
+	});
+	
+	
+	
+	
+</script>	
