@@ -92,13 +92,55 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-12 right-col">
-                            <div class="launches-vide-col">
+                            <div class="launches-vide-col"  id="click-header">
                                 <img src="<?php echo $this->getMediaUrl().$item_post['vedioimg']?>" alt="<?php echo $item_post['post_title']?>" class="img-fluid">
                             </div>
                         </div>
                        
                    
-					
+				   
+	<div id="header-mpdal" style="display:none;">
+    <div class="videoWrapper">
+        <iframe allow="encrypted-media" allowfullscreen="" frameborder="0" gesture="media" height="315" src="https://www.youtube.com/embed/P45AMKIW0ok" width="560">
+        </iframe>
+    </div>
+    </div>
+				   
+  <script>
+    require(
+        [
+            'jquery',
+            'Magento_Ui/js/modal/modal'
+        ],
+        function(
+            $,
+            modal
+        ) {
+            var options = {
+                type: 'popup',
+                responsive: true,
+                innerScroll: true,
+                title: '',
+                buttons: [{
+                    text: $.mage.__('Close'),
+                    class: '',
+                    click: function () {
+                        this.closeModal();
+                    }
+                }]
+            };
+
+            var popup = modal(options, $('#header-mpdal'));
+            $("#click-header").on('click',function(){ 
+                $("#header-mpdal").modal("openModal");
+            });
+
+        }
+    );
+</script>
+				
+
+				
 				  <?php $x = $i++; } ?>
 
                        <div class="col-12 read-col">
@@ -209,4 +251,11 @@ $(document).ready(function(){
 });
 	});
 </script>
+
+
+
+ <a href="#" id="click-header">
+    View Video
+</a>
+
 
