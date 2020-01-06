@@ -92,14 +92,14 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-12 right-col">
-                            <div class="launches-vide-col"  id="click-header">
+                            <div class="launches-vide-col"  id="click-header<?php echo $i;?>">
                                 <img src="<?php echo $this->getMediaUrl().$item_post['vedioimg']?>" alt="<?php echo $item_post['post_title']?>" class="img-fluid">
                             </div>
                         </div>
                        
                    
 				   
-	<div id="header-mpdal" style="display:none;">
+	<div id="header-mpdal<?php echo $i;?>" style="display:none;">
     <div class="videoWrapper">
         <iframe allow="encrypted-media" allowfullscreen="" frameborder="0" gesture="media" height="315" src="https://www.youtube.com/embed/P45AMKIW0ok" width="560">
         </iframe>
@@ -130,9 +130,9 @@
                 }]
             };
 
-            var popup = modal(options, $('#header-mpdal'));
-            $("#click-header").on('click',function(){ 
-                $("#header-mpdal").modal("openModal");
+            var popup = modal(options, $('#header-mpdal<?php echo $i;?>'));
+            $("#click-header<?php echo $i;?>").on('click',function(){ 
+                $("#header-mpdal<?php echo $i;?>").modal("openModal");
             });
 
         }
@@ -141,10 +141,10 @@
 				
 
 				
-				  <?php $x = $i++; } ?>
+				  <?php $i++; } ?>
 
                        <div class="col-12 read-col">
-                            <a href="javascript:void(0);" class="text-link <?php echo($x+2); ?>"  onclick="getLoadmorevideo(<?php echo ($x +2) ;?>)">See More</a>
+                            <a href="javascript:void(0);" class="text-link">See More</a>
                         </div>				  
 					 </div> 
                </div>
