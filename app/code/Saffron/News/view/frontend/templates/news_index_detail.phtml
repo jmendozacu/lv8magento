@@ -20,16 +20,18 @@
 		<div class="news-detail-title">
 			<?php echo $NewsDetail[0]['post_title']; ?>
 		</div>
+		<?php ($NewsDetail[0]['publish_at'] !='0'){?>
 		<div class="publish_atdate">
 		<?php echo $NewsDetail[0]['publish_at']; ?>
 		</div>
+		   <?php }?>
     </div>	
 		
-		<?php ($NewsDetail[0]['full_content'] !='0'){?>
+		
 		<div class="news-detail-content">
 			<?php echo $NewsDetail[0]['full_content']; ?> 
 		</div>
-        <?php }?>
+     
 
 	
 
