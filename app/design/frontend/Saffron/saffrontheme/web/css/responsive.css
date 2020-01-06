@@ -643,8 +643,6 @@
 	footer.page-footer {  padding: 50px 0 25px; }
 	.craft-graybx { padding:10% 20px; }
 	#scroll-the-players >h3 { margin-bottom:8%; }
-	.our-expertise figure { width:45px;}
-	.our-expertise .expertise-info { width:calc(100% - 45px); }
 	.featured-products h2 { font-size:30px; margin-bottom:10px; }
 	.stay-updated .craft-graybx h3 {  font-size: 30px; }
 	.our-craft .craft-box-row { margin-bottom:0; }
