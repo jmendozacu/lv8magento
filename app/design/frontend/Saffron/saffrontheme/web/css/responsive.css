@@ -818,6 +818,7 @@
 	
 }
 
-
-
+@media (mix-width:375px) and (max-width:767px) {
+	.menu-col-main { padding:30px 0; }
+}
 
