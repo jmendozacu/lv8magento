@@ -276,7 +276,6 @@
 	.checkout-cart-index .page-main { padding:0; }
 	.checkout-cart-index .banner-title-notfront h1.page-title { font-size:36px; }
 	.cart-discount .block { width: 100%; max-width: 400px; }
-	.banner-title-notfront h1 { font-size:50px; }
 	.cbd-info-section .container {  max-width: 100%; padding:0 5px;  }
 	.faqs-content { padding: 0 25px; }  
 	.news-detail-container { width:96%; }
@@ -285,6 +284,9 @@
 	.cbd-info-section .cbd-info-container .container .row { margin: 0; }
 	body.account.page-layout-2columns-left .columns { width:100%; }
 	
+}
+@media (min-width: 768px)  and ( max-width:1024px ){
+	.banner-title-notfront h1 { font-size:50px; }
 }
 
 @media (min-width: 992px) and ( max-width:1024px ){
