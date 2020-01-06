@@ -382,7 +382,7 @@
 	/*--menu-css-for-mobile--*/
 	.menu-items { float: right;  width:100%; }
 	.nav-sections-items .menuBtn { top:15px; z-index:11;}
-	.menu-col-main { width: 50%; padding: 16px 0 30px; float: left; z-index: 5; right: 0; position: absolute;
+	.menu-col-main { width: 50%; padding: 0 0 30px; float: left; z-index: 5; right: 0; position: absolute;
 		top: 35%; height: calc(100% - 35%); overflow-y: auto; border-left: 1px solid #ccc; z-index: 10;  }
 	.menu-col-main ul { padding: 0 15px;  }
 	.menu-parent li a { font-size: 21px; }
@@ -811,7 +811,7 @@
 	.product-tab-title { padding:15px 0; margin-bottom:30px;  }
 	.product-list .featured-item { margin-bottom:50px; }
 	.product-tab-title li a { font-size:15px; }
-	.header-right { margin-left:26px; }
+	.header-right { margin-right:26px; }
 		
 	
 }
