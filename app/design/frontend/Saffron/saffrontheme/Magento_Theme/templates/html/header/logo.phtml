@@ -87,7 +87,11 @@ if($checkModule == 'cms'){ ?>
         />
 		
 <?php }else{?>
+<?php 
 
+ $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+    $product = $objectManager->get('Magento\Framework\Registry')->registry('current_product');
+?>
 <a  href="<?= $block->getUrl('') ?>" title="<?= /* @escapeNotVerified */ $storeName ?>">
   <img src="<?php echo $this->getMedia().'/theme/lv8-logo2.png' ?>"
              title="<?= /* @escapeNotVerified */ $block->getLogoAlt() ?>"
