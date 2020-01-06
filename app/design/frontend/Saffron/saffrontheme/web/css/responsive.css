@@ -427,7 +427,7 @@
 	.logo-col img,
 	body.lv8-page .logo-col img, body.labs-page .logo-col img,
 	body.worx-page .logo-col img{ width:auto; height:24px; }
-	body.lv8-page .logo-col img {  height: 24px; }
+	body.lv8-page .logo-col img {  height: 28px; }
 	
 	.cbdx-page .logo-col img, .catalog-product-view .logo-col img, .checkout-cart-index .logo-col img,
 	.checkout-onepage-success .logo-col img,
@@ -811,6 +811,7 @@
 	.product-tab-title { padding:15px 0; margin-bottom:30px;  }
 	.product-list .featured-item { margin-bottom:50px; }
 	.product-tab-title li a { font-size:15px; }
+	.header-right { margin-left:26px; }
 		
 	
 }
