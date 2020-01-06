@@ -13,18 +13,24 @@
 ?>
 
 <div class="news-detail-container">
-
+<div class="news-detail-banner">
+		<img src="<?php echo $this->getMediaUrl().$NewsDetail[0]['detailpagebanner'];?>" alt="" class="img-fluid">
+</div>
 	<div class="news-detail-info">
 		<div class="news-detail-title">
 			<?php echo $NewsDetail[0]['post_title']; ?>
 		</div>
+		<div class="publish_atdate">
+		<?php echo $NewsDetail[0]['publish_at']; ?>
+		</div>
+    </div>	
+		
+		
 		<div class="news-detail-content">
 			<?php echo $NewsDetail[0]['full_content']; ?> 
 		</div>
-	</div>
 
-	<div class="news-detail-banner">
-		<img src="<?php echo $this->getMediaUrl().$NewsDetail[0]['thumbnail'];?>" alt="" class="img-fluid">
-	</div>
+
+	
 
 </div>
