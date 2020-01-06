@@ -26,12 +26,22 @@
 					<?php //echo $_SERVER['REQUEST_URI'] ; ?>
                         <a href="<?php echo $this->getUrl('')?>" class="">Home</a>
                     </li>
+<<<<<<< HEAD
 					<li class="menu-level <?php if(($_SERVER['REQUEST_URI']=='/cbdx/products/')||($_SERVER['REQUEST_URI']=='/cbdx/products')) {echo "active";}?>" >
 						<a href="<?php echo $this->getUrl('cbdx/products/')?>" class="">Shop</a>
 					</li>
                     <li class="menu-level <?php if(($_SERVER['REQUEST_URI']=='/about/')||($_SERVER['REQUEST_URI']=='/about')) {echo "active";}?>" >
                         <a href="<?php echo $this->getUrl('about')?>" class="">About</a>
                     </li>
+=======
+				    <li class="menu-level <?php if(($_SERVER['REQUEST_URI']=='/cbdx/products/')||($_SERVER['REQUEST_URI']=='/cbdx/products')) {echo "active";}?>" >
+                        <a href="<?php echo $this->getUrl('cbdx/products/')?>" class="">Shop</a>
+                    </li>
+                    <li class="menu-level <?php if(($_SERVER['REQUEST_URI']=='/about/')||($_SERVER['REQUEST_URI']=='/about')) {echo "active";}?>" >
+                        <a href="<?php echo $this->getUrl('about')?>" class="">About</a>
+                    </li>
+					
+>>>>>>> 73bb9dcf65318010304f763525cccd737a569304
                     <li class="menu-level <?php if(($_SERVER['REQUEST_URI']=='/news/')||($_SERVER['REQUEST_URI']=='/news')) {echo "active";}?>">
                         <a href="<?php echo $this->getUrl('news')?>" class="">News</a>
                     </li>
