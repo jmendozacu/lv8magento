@@ -403,7 +403,7 @@
 	}
 	.navbar-body.active{ opacity:1; z-index:9;}
 	.navbar-body.mobile-active { right:0; z-index:5; }
-	.navbar-body .menu-image-item { width: 100%; position: fixed; top: 0; height: 35vh; overflow: hidden;   }
+	.navbar-body .menu-image-item { width: 100%; position: fixed; top: 0; height: 35vh; overflow: hidden; z-index:1;   }
 	.mobile-back-btn { margin:0 0 10px; display: block; position: relative; z-index:1; }
 	.mobile-back-btn a { font-size: 28px; color: #9b9b9b; padding: 0px 15px; display: inline-block; line-height: normal; cursor: pointer; }
 	.menu-inner { position: absolute; left: 0; right: 0; width: auto; overflow-y: auto; overflow-x: hidden; top: 35%;
@@ -412,7 +412,7 @@
 	.menu-items .active .menu-inner { opacity:1; }
 	.nav-sections-items .menuBtn .menubar { background: #fff; }
 	.menu-item-front:after { content: ""; position: absolute; height: 35vh; width: 100%; 
-		background: rgba(0, 0, 0, 0.3); left: 0; right: 0; }
+		background: rgba(0, 0, 0, 0.3); left: 0; right: 0; z-index:2; }
 	.box-tocart .fieldset { display: inherit; }
 	.box-tocart .fieldset .actions { margin-top: 30px; }	
 	body.checkout-index-index .checkout-block { margin:0 15px 20px; }
