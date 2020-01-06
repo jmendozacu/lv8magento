@@ -89,9 +89,7 @@ if($checkModule == 'cms'){ ?>
 <?php }else{?>
 <?php 
 
- $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
-  $product = $objectManager->get('Magento\Framework\Registry')->registry('current_product');
-	if(!empty($product)){echo $product->getId();}
+
 	 
 	 
 ?>
@@ -107,7 +105,9 @@ if($checkModule == 'cms'){ ?>
 		
 
 <?php }else{ ?>
-    
+    <?php $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+  $product = $objectManager->get('Magento\Framework\Registry')->registry('current_product');
+	if(!empty($product)){echo $product->getId();} ?> 
  <a  href="<?= $block->getUrl('') ?>" title="<?= /* @escapeNotVerified */ $storeName ?>">
  
 <?php  $checkcbdx1 = (explode("/",$_SERVER['REQUEST_URI'])) ;  ?>
