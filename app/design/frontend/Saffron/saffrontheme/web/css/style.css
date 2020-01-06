@@ -1333,10 +1333,10 @@ textarea{
     margin: 0 0 5%;
     font-size: 46px;
 }
-.our-expertise figure { float: left;  width: 70px; }
+.our-expertise figure { float: left;  width: 42px; }
 .our-expertise  .expertise-info {
     float: left;
-    width: calc(100% - 70px);
+    width: calc(100% - 42px);
     margin:0 0 20px; 
     padding-left: 20px;
 }
