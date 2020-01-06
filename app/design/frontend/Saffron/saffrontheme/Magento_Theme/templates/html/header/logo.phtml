@@ -90,7 +90,10 @@ if($checkModule == 'cms'){ ?>
 <?php 
 
  $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
-    $product = $objectManager->get('Magento\Framework\Registry')->registry('current_product');
+  $product = $objectManager->get('Magento\Framework\Registry')->registry('current_product');
+	if(!empty($product)){echo $product->getId();}
+	 
+	 
 ?>
 <a  href="<?= $block->getUrl('') ?>" title="<?= /* @escapeNotVerified */ $storeName ?>">
   <img src="<?php echo $this->getMedia().'/theme/lv8-logo2.png' ?>"
