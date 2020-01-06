@@ -420,7 +420,8 @@
 @media (max-width:767px) {
 	.menu-parent li { padding:6px 15px 6px 0;   }
 	.menu-inner .logo-brand { margin-bottom:20px; }
-	.menu-inner, .menu-col-main ul { padding:20px 12px; }
+	.menu-inner { padding:20px 12px; }
+	.menu-col-main { padding: 30px 12px 30px; }
 	.container{ max-width:100%;}
 	.logo-col img,
 	body.lv8-page .logo-col img, body.labs-page .logo-col img,
