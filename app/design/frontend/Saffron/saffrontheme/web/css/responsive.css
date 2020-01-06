@@ -405,7 +405,7 @@
 	.navbar-body .menu-image-item { width: 100%; position: fixed; top: 0; height: 35vh; overflow: hidden; z-index:11;   }
 	.mobile-back-btn { margin:0 0 10px; display: block; position: relative; z-index:1; }
 	.mobile-back-btn a { font-size: 28px; color: #9b9b9b; padding: 0px 15px; display: inline-block; line-height: normal; cursor: pointer; }
-	.menu-inner { position: absolute; left: 0; right: 0; width: auto; overflow-y: auto; overflow-x: hidden; top: 35%; padding:40px; height: calc(100% - 35%); opacity:0; border-right:1px solid #ccc;
+	.menu-inner { position: absolute; left: 0; right: 0; width: auto; overflow-y: auto; overflow-x: hidden; top: 35vh; padding:40px; height: calc(100% - 35vh); opacity:0; border-right:1px solid #ccc;
 	}
 	.menu-items .active .menu-inner { opacity:1; }
 	.nav-sections-items .menuBtn .menubar { background: #fff; }
@@ -522,8 +522,9 @@
 	.menu-inner .logo-brand img { height:22px; }
 	.menu-item-front .menu-inner .logo-brand img { height: 26px;   }
 	.menu-item-cbdx .menu-inner .logo-brand img { height:45px; }
-	.menu-items .active .menu-inner,
-	.menu-inner	{ display: inherit; flex-direction:inherit; }
+	/* .menu-items .active .menu-inner, */
+	/* .menu-inner, .menu-inner .adrs-col	{ display: inherit; flex-direction:inherit; } */
+	.social-col { min-height:60px; }
 	.menu-inner .adrs-col { margin-bottom:10px;  }
 	.filter-col .filter-link{ margin:0; padding:12px; }
 	.social-col li a { font-size:18px; }
