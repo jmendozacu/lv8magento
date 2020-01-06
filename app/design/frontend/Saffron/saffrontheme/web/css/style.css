@@ -3154,7 +3154,9 @@ body .opc-wrapper .shipping-address-item.selected-item:after { background: #F57B
 .menu-inner a.email-address:hover { color:#000; }
 .unsubscribe-massge a { text-decoration: underline; }
 .family-portfolio.cbdx-family { margin-top: -1px; }
-
-
+.news-index-detail .news-detail-title {font-size: 35px; margin-top: 30px; }
+.news-index-detail .latest-post { background:#f8f8f8; padding:50px 0 30px; }
+.news-index-index .videoWrapper iframe { width: 100%; }
+.news-index-index footer.modal-footer {  display: none; }
 
 
