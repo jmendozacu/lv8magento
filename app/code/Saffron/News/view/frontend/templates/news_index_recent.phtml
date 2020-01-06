@@ -18,7 +18,7 @@ $newcategories = $newcategories->getData() ;
 <div class="col-md-4 col-12">
                            <div class="post-item">
                                <div class="post-image">
-                                   <a href="<?php  echo $item_post['id'] ;?>">
+                                   <a href="<?php  echo $this->getUrl('news/index/detail?id='.$item_post['id'].'') ;?>">
                                         <img src="<?php  echo $this->getMediaurl().$item_post['thumbnail'] ;?>" alt="<?php  echo $item_post['post_title']?>" class="img-fluid">         
                                    </a>
                                    
