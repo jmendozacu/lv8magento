@@ -19,14 +19,25 @@
 <div class="container">
 <div class="row">
 <div class="col-12 title-col">
-<h2><?php echo __('Featured Products'); ?></h2>
-<a class="small-title" href="<?php echo $this->getUrl('cbdx/brands'); ?>">Our Brands</a></div>
 <!--feature-item-->
 
 <?php 
 			$newItems =  $block -> getFeaturedProduct()->getItems(); 
 			
-			//echo count($newItems);
+			echo count($newItems);
+			
+?>
+
+
+<?php if(count($newItems) !='0'){?>
+	
+<h2><?php echo __('Featured Products'); ?></h2>
+<a class="small-title" href="<?php echo $this->getUrl('cbdx/brands'); ?>">Our Brands</a></div>
+	
+<?php }?>
+
+<?php 			
+			
 			$imageBlock =  $block->getLayout()->createBlock('Magento\Catalog\Block\Product\Image');
 			$image = 'new_products_content_widget_grid';
 			$type = 'widget-new-grid';
