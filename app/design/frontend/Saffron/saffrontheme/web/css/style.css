@@ -1702,11 +1702,17 @@ input[type="datetime"], input[type="email"] {
     font-size: 15px;
     font-weight: 400;
 	font-family: 'Montserrat', sans-serif;
-	color:#4E4F53;
+	color:#000;
 }
-.form-group input::placeholder { color: red; }
-.form-group input:-ms-input-placeholder { color: red; }
-.form-group input::-ms-input-placeholder { color: red; }
+.form-group input::placeholder { color: #b9b9b9; }
+.form-group input:-ms-input-placeholder { color: #b9b9b9; }
+.form-group input::-ms-input-placeholder { color: #b9b9b9; }
+
+.form-group textarea::placeholder { color: #b9b9b9; }
+.form-group textarea:-ms-input-placeholder { color: #b9b9b9; }
+.form-group textarea::-ms-input-placeholder { color: #b9b9b9; }
+
+
 ._keyfocus *:focus, input:not([disabled]):focus,
 textarea:not([disabled]):focus, select:not([disabled]):focus {
     box-shadow: none;
