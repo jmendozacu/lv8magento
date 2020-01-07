@@ -283,8 +283,10 @@
 	.cbd-info-section .cbd-info-container .container { padding: 0; }
 	.cbd-info-section .cbd-info-container .container .row { margin: 0; }
 	body.account.page-layout-2columns-left .columns { width:100%; }
+	.launches-bx h3 { font-size: 30px; }
 	
 }
+
 @media (min-width: 768px)  and ( max-width:1024px ){
 	.banner-title-notfront h1 { font-size:50px; }
 }
@@ -488,7 +490,7 @@
 	.craft-graybx h3, .worx-about-page .craft-graybx h3 { font-size: 22px;  margin: 0 0 10px; }
 	.learn-btn{ padding:15px; font-size:16px; }
 	.theBrands-carousel {  margin: 40px 0 0; }
-	.theBrands-carousel .boxBrands img {  margin: 0 0 30px;  width: 120px;  }
+	.theBrands-carousel .boxBrands img {  margin: 0 0 30px;  height: 80px;  }
 	.theBrands-carousel .boxBrands p { line-height: 22px; }
 	.theBrands-carousel .boxBrands{ padding: 30px 15px;  background: rgba(255,255,255,0.8);  }
 	.theBrands-carousel .caption { width:80%; }
@@ -814,6 +816,9 @@
 	.header-right { margin-right:26px; }
 	.header .block.block-search,
 	.header .block.block-search, body .minicart-wrapper { margin-top:0; }
+	.news-index-index main#maincontent { margin-top:90px; }
+	.launches-bx h3 { font-size: 28px; }
+	.theBrands-carousel .boxBrands img { height:100px; }
 		
 	
 }
