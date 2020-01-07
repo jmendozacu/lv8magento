@@ -1704,9 +1704,9 @@ input[type="datetime"], input[type="email"] {
 	font-family: 'Montserrat', sans-serif;
 	color:#4E4F53;
 }
-input::placeholder { color: #b9b9b9; }
-input:-ms-input-placeholder { color: #b9b9b9; }
-input::-ms-input-placeholder { color: #b9b9b9; }
+.form-group input::placeholder { color: red; }
+.form-group input:-ms-input-placeholder { color: red; }
+.form-group input::-ms-input-placeholder { color: red; }
 ._keyfocus *:focus, input:not([disabled]):focus,
 textarea:not([disabled]):focus, select:not([disabled]):focus {
     box-shadow: none;
