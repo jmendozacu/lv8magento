@@ -125,6 +125,7 @@
 			z-index:4; }
 		.page-layout-1column .filter-options-item.active { z-index:3; }
 		.family-portfolio { padding:0 15px;  }
+		.lv8-page .owl-item-caption h1 {  font-size: 100px; }
 		
  }
 
@@ -820,6 +821,9 @@
 	.launches-bx h3 { font-size: 28px; }
 	.theBrands-carousel .boxBrands img { height:100px; }
 	.news-index-index .videoWrapper iframe { min-height:400px; }
+	.cms-container ul.listing_doted li { font-size:16px; }
+	.cms-container h2 { font-size:30px; }
+	.lv8-page .owl-item-caption h1 {  font-size: 50px; }
 		
 	
 }
