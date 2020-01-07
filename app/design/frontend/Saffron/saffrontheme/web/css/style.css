@@ -503,7 +503,7 @@ button:focus{ outline:none; }
 .banner-title-notfront h1 {
     margin: 0;
     color: #fff;
-    font-weight:500;
+    font-weight:600;
 }
 .row-full{ float: left;  width:100%; }
 .lv8-about-info {  padding: 68px 0; }
