@@ -2255,6 +2255,7 @@ body.page-layout-1column .filter-options-title {
     color: #4E5054;
     font-weight: 400;
     padding: 12px 30px 12px 15px;
+	border: 1px solid #f8f8f8;
 }
 
 body.page-layout-1column .filter-options-title:first-letter {
@@ -2263,8 +2264,7 @@ body.page-layout-1column .filter-options-title:first-letter {
 body.page-layout-1column .filter-options-title:after{  top:15px;  right:10px; }
 body.page-layout-1column .filter-options-item { margin-right: 10px; }
 body.page-layout-1column .filter-options-title:hover {
-    background: #F57B3B;
-    color: #fff;
+    border: 1px solid #F57B3B;
 }
 .column.main .product-list .product-item {  padding-left: 15px; }
 .page-layout-1column .filter-options-content .item a {  font-size: 14px; }
