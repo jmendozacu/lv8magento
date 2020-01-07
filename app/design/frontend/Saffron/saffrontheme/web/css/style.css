@@ -1672,14 +1672,17 @@ body[class*="customer-account-"] main#maincontent .columns > .column.main,
     position: absolute;
 }
 .qty-container .qty-input button.btnAdd {
+    top: 0;
+}
+.qty-container .qty-input button.btnMin {
     bottom: 0;
 }
 .qty-container .qty-input button.btnAdd:before {
-    content: "\f107";
+    content: "\f106";
     bottom: 0;
 }
 .qty-container .qty-input button.btnMin:before {
-    content: "\f106";
+    content: "\f107";
     top: 0;
 }
 button#product-addtocart-button { padding: 13px 30px; }
@@ -1696,10 +1699,14 @@ input[type="datetime"], input[type="email"] {
     border: 1px solid #d8d8d8;
     height: 40px;
     outline: none;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
 	font-family: 'Montserrat', sans-serif;
+	color:#4E4F53;
 }
+input::placeholder { color: #b9b9b9; }
+input:-ms-input-placeholder { color: #b9b9b9; }
+input::-ms-input-placeholder { color: #b9b9b9; }
 ._keyfocus *:focus, input:not([disabled]):focus,
 textarea:not([disabled]):focus, select:not([disabled]):focus {
     box-shadow: none;
@@ -1886,7 +1893,7 @@ body[class*="customer-account-"] main#maincontent,
 .page-wrapper > .banner-breadcrumbs { margin-top:110px; }
  
 .page-layout-1column-home .banner-breadcrumbs { margin-top: 0; }
-.cms-careers main#maincontent .banner-breadcrumbs { margin-top: -10px; }
+.cms-careers main#maincontent .banner-breadcrumbs { margin-top: -16px; }
 .minicart-wrapper .action.showcart .counter.qty.empty { display:block; }
 .catalog-product-view .header.content,
 .checkout-cart-index .header.content { display: block; }
