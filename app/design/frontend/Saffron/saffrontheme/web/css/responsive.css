@@ -819,6 +819,7 @@
 	.news-index-index main#maincontent { margin-top:90px; }
 	.launches-bx h3 { font-size: 28px; }
 	.theBrands-carousel .boxBrands img { height:100px; }
+	.news-index-index .videoWrapper iframe { min-height:400px; }
 		
 	
 }
