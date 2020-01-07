@@ -976,6 +976,7 @@ textarea{
     min-width: 150px;
     position: relative;
     text-align: left;
+	border: 1px solid #f8f8f8;
 }
 .filter-col .filter-link:after {
     content: '\e622';
@@ -984,7 +985,7 @@ textarea{
     right: 13px;
 }
 .product-filters .prize-filter .filter-link {  margin-right: 0; }
-.filter-col .filter-link:hover { background: #F57B3B; color: #fff; }
+.filter-col .filter-link:hover { border: 1px solid #F57B3B; }
 .filter-dropdown {
     background: #f8f8f8;
     position: absolute;
