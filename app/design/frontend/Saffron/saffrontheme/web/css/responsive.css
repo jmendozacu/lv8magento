@@ -605,7 +605,9 @@
 	header.header .header.content, .catalog-product-view .page-header .header.content, .checkout-cart-index .header.content { right: 104px; margin-top: -5px; }	
 	.navbar-col { top:2px; }
 	.sign-col .singin-dropdown {  right:15px; margin:0 auto;top:90%;  }
-	body .minicart-wrapper .block-minicart { right: -110px; top: 40px; }
+	.minicart-wrapper .mage-dropdown-dialog .block-minicart { 
+		padding:5px 15px 15px; min-width:280px; width:auto; }
+	.header .block-minicart .items-total { font-size:22px; }
 	.minicart-wrapper .block-minicart:before,
 	.minicart-wrapper .block-minicart:after { display:none; }
 	.page-layout-1column .page-wrapper .page-header { height:70px; margin-bottom:0; }
@@ -834,6 +836,7 @@
 	.cms-container ul.listing_doted li { font-size:16px; }
 	.cms-container h2 { font-size:30px; }
 	.lv8-page .owl-item-caption h1 {  font-size: 50px; }
+	.modal-popup.confirm .modal-inner-wrap { width: 90%; }
 		
 	
 }

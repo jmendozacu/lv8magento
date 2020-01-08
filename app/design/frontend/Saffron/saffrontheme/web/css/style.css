@@ -3222,7 +3222,7 @@ body.page-front { overflow: hidden; }
     margin: 0;
     padding-left: 0;
     padding-right: 0;
-    max-height: 300px;
+    max-height: 320px;
     height: auto !important;
 }
 .header .block-minicart .block-content > .actions > .primary {  margin: 0 0 30px; }
