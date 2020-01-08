@@ -311,6 +311,8 @@
 	.cart-summary { padding:1px 15px 25px; }
 	.cart-summary .checkout-methods-items .action.primary.checkout{ padding: 17px 8px; font-size: 16px; }
 	.banner-detail-page {  margin-top: 40px; }
+	.social-col { min-height:110px; }
+	.menu-caption { bottom:70px; }
 }
 
 @media (min-width: 768px) and ( max-width:991px ){
@@ -380,8 +382,7 @@
 	.product.info.detailed { margin-bottom:0; }
 	.newsletter-popup .newspopup-body .descount-field { width:70%; }
 	.newspopup-body { background-size: auto 63%; }
-	.social-col { min-height:110px; }
-	.menu-caption { bottom:70px; }
+	
 }
 
 @media (max-width:991px) {
