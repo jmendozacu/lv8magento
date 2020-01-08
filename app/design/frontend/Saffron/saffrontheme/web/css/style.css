@@ -3194,6 +3194,6 @@ body .opc-wrapper .shipping-address-item.selected-item:after { background: #F57B
 .cms-container ul.listing_doted { margin-bottom: 30px; }
 .cms-container .email-address { color: #4E4F53; }
 .cms-container .email-address:hover { color: #4E4F53; text-decoration: underline; }
-
+body.page-front { overflow: hidden; }
 
 
