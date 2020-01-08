@@ -419,9 +419,9 @@
 	.box-tocart .fieldset { display: inherit; }
 	.box-tocart .fieldset .actions { margin-top: 30px; }	
 	body.checkout-index-index .checkout-block { margin:0 15px 20px; }
-	.social-col { min-height:100px; }
-	.menu-inner { padding:20px 15px; }
-	.menu-col-main { padding: 20px 0px; overflow:hidden; }
+	.social-col { min-height:150px; }
+	.menu-inner { padding:30px 15px; }
+	.menu-col-main { padding: 50px 0px 30px; overflow:hidden; }
 	
 }
 
@@ -429,7 +429,8 @@
 @media (max-width:767px) {
 	.menu-parent li { padding:6px 15px 6px 0;   }
 	.menu-inner .logo-brand { margin-bottom:20px; }
-	
+	.menu-inner { padding:20px 15px; }
+	.menu-col-main { padding: 20px 0px; overflow:hidden; }
 	.menu-col-main .menu-parent { height: 100%; overflow-y: auto; padding: 0 15px;}
 	.container{ max-width:100%;}
 	.logo-col img,
