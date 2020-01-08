@@ -294,7 +294,7 @@
 
 @media (min-width: 992px) and ( max-width:1199px ){
 	.social-col { min-height:110px; }
-	.menu-caption { bottom:70px; }
+	.menu-caption { bottom:80px; }
 }
 
 @media (min-width: 992px) and ( max-width:1024px ){
