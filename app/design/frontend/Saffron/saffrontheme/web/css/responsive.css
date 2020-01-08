@@ -389,8 +389,6 @@
 	.nav-sections-items .menuBtn { top:15px; z-index:11;}
 	.menu-col-main { width: 50%; padding:0; float: left; right: 0; position: absolute; top: 35%; height: calc(100% - 35%); overflow-y: auto; overflow-x: hidden; z-index: 10; box-sizing: border-box;  }
 	.menu-col-main ul { padding: 0 15px;  }
-	.menu-parent li a { font-size: 21px; }
-	.menu-parent li .fa { font-size:22px; }
 	.menu-inner .logo-brand { margin-bottom:30px; }
 	.menu-inner p { font-size:15px; line-height:24px; margin-bottom:15px;  }
 	.menu-parent li.labs-menu{ padding-top: 18px; margin-top: 12px;  }
@@ -419,14 +417,18 @@
 	.box-tocart .fieldset { display: inherit; }
 	.box-tocart .fieldset .actions { margin-top: 30px; }	
 	body.checkout-index-index .checkout-block { margin:0 15px 20px; }
-	.social-col { min-height:150px; }
+	.social-col { min-height:110px; }
 	.menu-inner { padding:30px 15px; }
 	.menu-col-main { padding: 50px 0px 30px; overflow:hidden; }
+	.menu-parent li a { font-size: 24px; }
+	.menu-parent li .fa { font-size:22px; }
 	
 }
 
 
 @media (max-width:767px) {
+	.menu-parent li a { font-size: 21px; }
+	.menu-parent li .fa { font-size:22px; }
 	.menu-parent li { padding:6px 15px 6px 0;   }
 	.menu-inner .logo-brand { margin-bottom:20px; }
 	.menu-inner { padding:20px 15px; }
