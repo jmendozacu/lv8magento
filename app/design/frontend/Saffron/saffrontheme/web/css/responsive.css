@@ -333,7 +333,7 @@
 	.point-6 .point-circle { top: 78%; left: 66%; transform: translate(-66%, -78%);	}
 	.point-6 .point-body { top:80%; right:0; }
 	.cbdx-brands-col .brand-link { margin-right:15px; }
-	.menu-parent li { padding-top:15px; padding-bottom:15px; }
+	.menu-parent li { padding-top:15px; padding-bottom:10px; }
 	header.header .header.content, .catalog-product-view .page-header .header.content, .checkout-cart-index .header.content { right:162px; }
 	.form.contact .col-md-6 { flex: 0 0 100%; max-width: 100%; }
 	.active .menu-inner .social-col { bottom:20px; left:40px; }
@@ -380,7 +380,8 @@
 	.product.info.detailed { margin-bottom:0; }
 	.newsletter-popup .newspopup-body .descount-field { width:70%; }
 	.newspopup-body { background-size: auto 63%; }
-	
+	.social-col { min-height:110px; }
+	.menu-caption { bottom:70px; }
 }
 
 @media (max-width:991px) {
@@ -417,7 +418,6 @@
 	.box-tocart .fieldset { display: inherit; }
 	.box-tocart .fieldset .actions { margin-top: 30px; }	
 	body.checkout-index-index .checkout-block { margin:0 15px 20px; }
-	.social-col { min-height:110px; }
 	.menu-inner { padding:30px 15px; }
 	.menu-col-main { padding: 50px 0px 30px; overflow:hidden; }
 	.menu-parent li a { font-size: 24px; }
