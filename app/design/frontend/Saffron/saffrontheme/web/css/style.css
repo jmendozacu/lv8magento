@@ -1999,10 +1999,11 @@ select {  height: 40px;  font-size: 15px; }
 .sign-col .singin-dropdown {
     position: absolute;
     top: 100%;
-    background: #f8f8f9;
+    background: #fff;
     min-width: 240px;
     right: 0;
     padding: 0 20px;
+	border:1px solid #bbb;
 }
 .singin-dropdown ul {  margin: 0; }
 .singin-dropdown ul li:last-child {  margin-bottom: 0; }
