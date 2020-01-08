@@ -2301,7 +2301,7 @@ aside.modal-popup.confirm footer.modal-footer {
     justify-content: center;
 }
 aside.modal-popup.confirm footer.modal-footer button {
-	min-width: 100px;padding: 12px 10px;border: none;color: #fff;text-transform: uppercase;font-weight: 400;
+	min-width: 100px;padding: 12px 10px;border: none;color: #fff;text-transform: uppercase;font-weight: 400; margin-right:10px;
 }
 aside.modal-popup.confirm footer.modal-footer button.action-dismiss { background: #4E4F53; }
 aside.modal-popup.confirm footer.modal-footer button.action-accept { background: #F57B3B; }
@@ -3204,8 +3204,10 @@ body.page-front { overflow: hidden; }
     right: 0;
     top: 0;
     z-index: 99;
-    transform: translateZ(-100%);
+    transition: all 0.5s ease;
+    opacity: 0;
 }
+.header .minicart-wrapper.active .mage-dropdown-dialog { opacity: 1; }
 .minicart-wrapper .mage-dropdown-dialog .block-minicart {
     height: 100vh;
     margin: 0;
@@ -3220,6 +3222,8 @@ body.page-front { overflow: hidden; }
     margin: 0;
     padding-left: 0;
     padding-right: 0;
+    max-height: 300px;
+    height: auto !important;
 }
 .header .block-minicart .block-content > .actions > .primary {  margin: 0 0 30px; }
 .header .block-minicart .items-total {
@@ -3256,7 +3260,10 @@ body.page-front { overflow: hidden; }
     margin: 0 auto;
     line-height: 26px;
 }
-.minicart-wrapper .action.close:hover:before {
-	color: #F57B3B;
-}
+.minicart-wrapper .action.close:hover:before{ color: #F57B3B; }
+body ::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #f9f9f9; }
+::-webkit-scrollbar-thumb { background: #aaa; }
+::-webkit-scrollbar-thumb:hover { background: #F57B3B; }
+
 
