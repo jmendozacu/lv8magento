@@ -3284,6 +3284,8 @@ body ::-webkit-scrollbar { width: 5px; }
     display: flex;
     margin: 30px 0;
 }
-
+.account .column.main .order-details-items {
+    margin-bottom: 50px;
+}
 
 
