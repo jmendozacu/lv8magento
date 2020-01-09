@@ -3265,5 +3265,6 @@ body ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-thumb:hover { background: #F57B3B; }
 .news-featured .craft-graybx .learn-btn { margin-top:40px; }
 .craft-graybx span.small-title { text-transform: uppercase; }
-
+.account .sidebar.sidebar-additional { display: none; }
+.order-actions-toolbar .action { color: #F57B3B; }
 
