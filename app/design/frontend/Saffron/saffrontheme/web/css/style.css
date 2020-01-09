@@ -2582,8 +2582,6 @@ input[type=checkbox], input[type=radio] { height:auto; }
 }
 .account .mobile-arrow { display: none; }
 .page-main > .mobile-arrow { display: none; }
-.craft-graybx .learn-btn {  max-width: 185px; }
-.news-index-index .craft-graybx .learn-btn {  max-width: inherit; }
 .page-layout-2columns-right .page-header {
     height: 110px;
     display: flex; display: -webkit-flex;
@@ -3265,5 +3263,7 @@ body ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: #f9f9f9; }
 ::-webkit-scrollbar-thumb { background: #aaa; }
 ::-webkit-scrollbar-thumb:hover { background: #F57B3B; }
+.news-featured .craft-graybx .learn-btn { margin-top:40px; }
+.craft-graybx span.small-title { text-transform: uppercase; }
 
 
