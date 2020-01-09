@@ -3267,4 +3267,23 @@ body ::-webkit-scrollbar { width: 5px; }
 .craft-graybx span.small-title { text-transform: uppercase; }
 .account .sidebar.sidebar-additional { display: none; }
 .order-actions-toolbar .action { color: #F57B3B; }
+.account span.order-status,
+.page-print span.order-status { display: inline-flex; margin: 30px 0 30px; }
+.page-print main#maincontent {
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+}
+.page-print main#maincontent .order-details-items {
+    margin-bottom: 50px;
+}
+.page-print main#maincontent a img {
+    height: 90px;
+    width: auto;
+    display: flex;
+    margin: 30px 0;
+}
+
+
 
