@@ -2516,13 +2516,13 @@ footer.modal-footer button {
     background-color: #2879b1;
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-size:auto 94%;
+    background-size:25%;
     padding: 0;
 }
 .newsletter-popup .newspopup-body .descount-field {
-    width: 65%;
+    width: 58%;
     float: right;
-    padding: 40px 40px 25px 80px;
+    padding: 40px 30px 25px 20px;
 }
 .newsletter-popup .descount-model {
     display: flex; display: -webkit-flex;
