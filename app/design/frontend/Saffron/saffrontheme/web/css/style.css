@@ -286,11 +286,12 @@ button:focus{ outline:none; }
 .menu-parent li.menu-level:hover a,
 .menu-parent li.menu-level a:hover,
 .menu-parent li.menu-level a:focus {
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #292929;
-    color: #fff;
-    -moz-text-stroke-color: #292929;
-    -ms-text-stroke-color: #292929;
+    /* -webkit-text-stroke-width: 1px; */
+    /* -webkit-text-stroke-color: #292929; */
+    /* color: #fff; */
+    /* -moz-text-stroke-color: #292929; */
+    /* -ms-text-stroke-color: #292929; */
+	text-shadow: 0 0 1px #000, 0 0 1px #000, 0 0 1px #000, 0 0 1px #000;
 }
 .menu-parent li.menu-item a{
     color:#4e5054;
