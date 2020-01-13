@@ -607,7 +607,7 @@
 	.sign-col { margin-right:8px; position:inherit; }
 	header.header .header.content, .catalog-product-view .page-header .header.content, .checkout-cart-index .header.content { right: 104px; margin-top: -5px; }	
 	.navbar-col { top:2px; }
-	.sign-col .singin-dropdown {  right:15px; margin:0 auto;top:90%;  }
+	.sign-col .singin-dropdown {  right:15px; margin:0 auto;top:69px; z-index:9;  }
 	.minicart-wrapper .mage-dropdown-dialog .block-minicart { 
 		padding:5px 15px 15px; min-width:280px; width:auto; }
 	.header .block-minicart .items-total { font-size:22px; }
@@ -759,7 +759,7 @@
 	.page-layout-1column .logo-col img, .page-layout-2columns-right .logo-col img { height:40px; }
 	.page-layout-2columns-right .page-header { height:70px; }
 	.block-search .control { border:none; margin:0; padding:0; }
-	.header .block-search .block-content { top:40px; width:auto; right:-136px; min-width: 280px; padding:10px;z-index:2; background:#fff; }
+	.header .block-search .block-content { top:40px; width:auto; right:-136px; min-width: 280px; padding:10px;z-index:9; background:#fff; }
 	.header .block-search .block-content input { width: 270px;  background: #fff; position:inherit; left:inherit; }
 	header.header .block-search .action.search { background: none; border: none; box-shadow: none;
 		display:block; position: absolute; top: 29px; right: 8px; padding:6px 10px; cursor: pointer;}
@@ -840,6 +840,7 @@
 	.cms-container h2 { font-size:30px; }
 	.lv8-page .owl-item-caption h1 {  font-size: 50px; }
 	.modal-popup.confirm .modal-inner-wrap { width: 90%; }
+	.menu-open .block-collapsible-nav { z-index: inherit; }
 		
 	
 }
