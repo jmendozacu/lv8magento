@@ -117,7 +117,8 @@ $(document).ready(function(){
    
 
     //cbdx product filter script
-    $(".filter-col .filter-link").on("click", function(){
+    $(".filter-col .filter-link").on("click", function(e){
+		e.stopPropagation();
 		$(this).toggleClass('active');
         $(this).next('ul').slideToggle();
        // $(this).parent().siblings().children().next().slideUp();
