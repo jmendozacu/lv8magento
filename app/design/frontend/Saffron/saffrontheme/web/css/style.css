@@ -985,6 +985,9 @@ textarea{
     position: absolute;
     right: 13px;
 }
+.filter-col .filter-link.active:after {
+    content: '\e621';
+}
 .product-filters .prize-filter .filter-link {  margin-right: 0; }
 .filter-col .filter-link:hover { border: 1px solid #F57B3B; }
 .filter-dropdown {
