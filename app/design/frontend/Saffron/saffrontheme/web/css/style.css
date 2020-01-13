@@ -3284,8 +3284,8 @@ body ::-webkit-scrollbar { width: 5px; }
     display: flex;
     margin: 30px 0;
 }
-.account .column.main .order-details-items {
-    margin-bottom: 50px;
-}
+.account .column.main .order-details-items {  margin-bottom: 50px; }
+.cbdx-page.page-front .menubar { background: #fff; }
+.categorypath-cbdx-about .craft-graybx .learn-btn { max-width: 200px; }
 
 
