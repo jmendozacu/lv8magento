@@ -3150,7 +3150,7 @@ body .opc-wrapper .shipping-address-item.selected-item:after { background: #F57B
 .table-wrapper .table tbody td {  border-top: none; }
 .account .data.table .col.actions { white-space: normal }
 .block-collapsible-nav .item.current a, .block-collapsible-nav .item.current > strong{
-	border-color: #F57B3B; color:#F57B3B;
+	border-color: #F57B3B; color:#F57B3B; font-weight:500;
 }
 .account .sidebar-additional { margin-top:0; }
 .sidebar .product-items-names .product-item { display: flex; display: -webkit-flex; }
@@ -3287,5 +3287,19 @@ body ::-webkit-scrollbar { width: 5px; }
 .account .column.main .order-details-items {  margin-bottom: 50px; }
 .cbdx-page.page-front .menubar { background: #fff; }
 .categorypath-cbdx-about .craft-graybx .learn-btn { max-width: 200px; }
+.account .block-title a {
+    color: #F57B3B;
+    text-decoration: underline;
+}
 
+.block.block-reviews-dashboard .item a {
+    color: #F57B3B;
+}
+.account .form-wishlist-items button.action {
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 15px;
+    border: none;
+    line-height: normal;
+}
 

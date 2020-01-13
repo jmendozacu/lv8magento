@@ -126,6 +126,10 @@
 		.page-layout-1column .filter-options-item.active { z-index:3; }
 		.family-portfolio { padding:0 15px;  }
 		.lv8-page .owl-item-caption h1 {  font-size: 100px; }
+		.products-grid .product-item-info:hover,
+		.products-grid .product-item-info.active {
+			min-width:33.333%;
+		}
 		
  }
 
