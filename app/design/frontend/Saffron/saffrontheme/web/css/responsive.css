@@ -305,6 +305,7 @@
 @media (min-width: 992px) and ( max-width:1199px ){
 	.social-col { min-height:110px; }
 	.menu-caption { bottom:80px; }
+	.wishlist-index-index .products-grid .product-item { width:33.333%; }
 }
 
 @media (min-width: 992px) and ( max-width:1024px ){
@@ -395,7 +396,7 @@
 	.product.info.detailed { margin-bottom:0; }
 	.menu-caption { bottom:20px; }
 	.social-col { min-height:110px; }
-	
+	.wishlist-index-index .products-grid .product-item { width:50%; }
 }
 
 @media (max-width:991px) {
@@ -849,6 +850,7 @@
 	.menu-open .block-collapsible-nav { z-index: inherit; }
 	body.account .page-main .page-title-wrapper span.order-status,
 	body.page-print .page-main .page-title-wrapper span.order-status {  margin: 20px 0; }
+	.products-grid.wishlist .product-item-name { float:left; width:100%; margin-left:0;}
 		
 	
 }
