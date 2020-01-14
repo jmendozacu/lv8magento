@@ -2693,10 +2693,10 @@ header.header .block-search .action.search {
 .catalog-product-view .banner-title-notfront h1.page-title { font-size: 35px; color: #262626; }
 .rating-summary .rating-result > span:before {
     color: #fe7b37;
-    font-size: 18px;
+    font-size: 16px;
     height: auto; letter-spacing: 5px;
 }
-.rating-summary .rating-result:before { font-size: 18px; height: auto; letter-spacing: 5px; }
+.rating-summary .rating-result:before { font-size: 16px; height: auto; letter-spacing: 5px; }
 .rating-summary .rating-result { width: auto;  height: 20px; }
 .product-options-bottom .price-box .price-container .price, .product-info-price .price-box .price-container .price {
     font-weight: bold;
@@ -3305,4 +3305,6 @@ body ::-webkit-scrollbar { width: 5px; }
     border: none;
     line-height: normal;
 }
-
+body.page-layout-1column .filter-options-title[aria-selected="true"] {
+    border-color: #F57B3B;
+}
