@@ -3311,3 +3311,4 @@ body.page-layout-1column .filter-options-title[aria-selected="true"]{ border-col
 .products-grid.wishlist .product-item-actions > *:last-child { color: #4E4F53;   text-decoration: underline; }
 .products-grid.wishlist .product-item-actions > *:last-child:hover{ text-decoration:none; }
 .wishlist-index-index .product-item-inner .box-tocart {  margin-bottom: 15px; }
+.minicart-wrapper .block-minicart li { padding-right:15px; }
