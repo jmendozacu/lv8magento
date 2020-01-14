@@ -127,9 +127,10 @@
 		.family-portfolio { padding:0 15px;  }
 		.lv8-page .owl-item-caption h1 {  font-size: 100px; }
 		.products-grid .product-item-info:hover,
-		.products-grid .product-item-info.active {
-			min-width:33.333%;
-		}
+		.products-grid .product-item-info.active { min-width:33.333%; }
+		.products-grid .product-item-info {	border:1px solid #fff;   }
+		.products-grid .product-item-info:hover,
+		.products-grid .product-item-info.active { margin: 0; border:1px solid #ddd; }
 		
  }
 

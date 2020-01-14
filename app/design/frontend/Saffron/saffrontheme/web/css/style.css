@@ -2008,7 +2008,7 @@ select {  height: 40px;  font-size: 15px; }
     min-width: 240px;
     right: 0;
     padding: 0 20px;
-	border:1px solid #bbb;
+	border:1px solid #bbb; z-index:9;
 }
 .singin-dropdown ul {  margin: 0; }
 .singin-dropdown ul li:last-child {  margin-bottom: 0; }
@@ -3307,10 +3307,6 @@ body.page-print .page-main .page-title-wrapper span.order-status { display: inli
     line-height: normal;
 }
 body.page-layout-1column .filter-options-title[aria-selected="true"]{ border-color: #F57B3B;}
-
-.products-grid .product-item-info {	border:1px solid #fff;   }
-.products-grid .product-item-info:hover,
-.products-grid .product-item-info.active { margin: 0; }
 .return-status, .order-status { vertical-align:inherit; }
 
 
