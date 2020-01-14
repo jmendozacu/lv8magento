@@ -3308,5 +3308,6 @@ body.page-print .page-main .page-title-wrapper span.order-status { display: inli
 }
 body.page-layout-1column .filter-options-title[aria-selected="true"]{ border-color: #F57B3B;}
 .return-status, .order-status { vertical-align:inherit; }
-
-
+.products-grid.wishlist .product-item-actions > *:last-child { color: #4E4F53;   text-decoration: underline; }
+.products-grid.wishlist .product-item-actions > *:last-child:hover{ text-decoration:none; }
+.wishlist-index-index .product-item-inner .box-tocart {  margin-bottom: 15px; }

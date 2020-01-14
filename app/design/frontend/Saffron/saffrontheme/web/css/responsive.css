@@ -128,9 +128,14 @@
 		.lv8-page .owl-item-caption h1 {  font-size: 100px; }
 		.products-grid .product-item-info:hover,
 		.products-grid .product-item-info.active { min-width:33.333%; }
-		.products-grid .product-item-info {	border:1px solid #fff;   }
+		.products-grid .product-item-info {	border:1px solid #fff; box-shadow:none; padding:9px;   }
 		.products-grid .product-item-info:hover,
-		.products-grid .product-item-info.active { margin: 0; border:1px solid #ddd; }
+		.products-grid .product-item-info.active { margin: 0; box-shadow:none; `border:1px solid #ddd; padding:9px; }
+		.wishlist-index-index .product-item-inner { margin-top:0; padding-top:10px; }
+		.product-item-inner .box-tocart .field.qty label.label { margin-bottom: 8px; }
+		.products-grid.wishlist .product-item .box-tocart .tocart {  padding: 12px 10px; }
+		.wishlist-index-index .product-item-inner { box-shadow:none; }
+		
 		
  }
 
