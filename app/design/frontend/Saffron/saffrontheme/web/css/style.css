@@ -3312,8 +3312,9 @@ body.page-layout-1column .filter-options-title[aria-selected="true"]{ border-col
 .products-grid.wishlist .product-item-actions > *:last-child:hover{ text-decoration:none; }
 .wishlist-index-index .product-item-inner .box-tocart {  margin-bottom: 15px; }
 .minicart-wrapper .block-minicart li { padding-right:15px; }
-.catalogsearch-result-index .breadcrumbs {  margin-top: 110px; }
+.catalogsearch-result-index .breadcrumbs {  margin-top: 110px; display:none; }
 .catalogsearch-result-index .breadcrumbs li { color: #4E4F53; }
 .catalogsearch-result-index .banner-title-notfront h1 { color: #4E4F53; font-size: 40px; }
-.catalogsearch-result-index main#maincontent { min-height: 500px; }
+.catalogsearch-result-index main#maincontent {min-height: 400px; margin-top: 110px;
+ position: relative; }
 
