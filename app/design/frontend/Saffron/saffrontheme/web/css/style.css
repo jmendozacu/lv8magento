@@ -3272,8 +3272,8 @@ body ::-webkit-scrollbar { width: 5px; }
 .craft-graybx span.small-title { text-transform: uppercase; }
 .account .sidebar.sidebar-additional { display: none; }
 .order-actions-toolbar .action { color: #F57B3B; }
-.account span.order-status,
-.page-print span.order-status { display: inline-flex; margin: 30px 0 30px; }
+body.account .page-main .page-title-wrapper span.order-status,
+body.page-print .page-main .page-title-wrapper span.order-status { display: inline-flex; margin: 30px 0 30px; }
 .page-print main#maincontent {
     max-width: 1600px;
     margin: 0 auto;
@@ -3311,5 +3311,6 @@ body.page-layout-1column .filter-options-title[aria-selected="true"]{ border-col
 .products-grid .product-item-info {	border:1px solid #fff;   }
 .products-grid .product-item-info:hover,
 .products-grid .product-item-info.active { margin: 0; }
+.return-status, .order-status { vertical-align:inherit; }
 
 

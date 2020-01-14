@@ -841,6 +841,8 @@
 	.lv8-page .owl-item-caption h1 {  font-size: 50px; }
 	.modal-popup.confirm .modal-inner-wrap { width: 90%; }
 	.menu-open .block-collapsible-nav { z-index: inherit; }
+	body.account .page-main .page-title-wrapper span.order-status,
+	body.page-print .page-main .page-title-wrapper span.order-status {  margin: 20px 0; }
 		
 	
 }
