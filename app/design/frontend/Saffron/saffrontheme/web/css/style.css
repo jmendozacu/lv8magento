@@ -989,7 +989,8 @@ textarea{
     content: '\e621';
 }
 .product-filters .prize-filter .filter-link {  margin-right: 0; }
-.filter-col .filter-link:hover { border: 1px solid #F57B3B; }
+.filter-col .filter-link:hover,
+.filter-col .filter-link.active { border: 1px solid #F57B3B; }
 .filter-dropdown {
     background: #f8f8f8;
     position: absolute;
@@ -3305,6 +3306,10 @@ body ::-webkit-scrollbar { width: 5px; }
     border: none;
     line-height: normal;
 }
-body.page-layout-1column .filter-options-title[aria-selected="true"] {
-    border-color: #F57B3B;
-}
+body.page-layout-1column .filter-options-title[aria-selected="true"]{ border-color: #F57B3B;}
+
+.products-grid .product-item-info {	border:1px solid #fff;   }
+.products-grid .product-item-info:hover,
+.products-grid .product-item-info.active { margin: 0; }
+
+
