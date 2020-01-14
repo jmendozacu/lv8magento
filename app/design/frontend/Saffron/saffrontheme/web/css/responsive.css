@@ -850,8 +850,8 @@
 	.menu-open .block-collapsible-nav { z-index: inherit; }
 	body.account .page-main .page-title-wrapper span.order-status,
 	body.page-print .page-main .page-title-wrapper span.order-status {  margin: 20px 0; }
-	.products-grid.wishlist .product-item-name { float:left; width:100%; margin-left:0;}
-		
+	.products-grid.wishlist .product-item-name,
+	.products-grid.wishlist .product-item .price-box{ float:left; width:100%; margin-left:0;}		
 	
 }
 
