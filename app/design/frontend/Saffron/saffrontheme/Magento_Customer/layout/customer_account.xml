@@ -15,5 +15,6 @@
         <referenceBlock name="customer-account-navigation-my-credit-cards-link" remove="true"/>
 		<referenceBlock name="customer-account-navigation-my-credit-cards-link" remove="true"/>
 		<referenceBlock name="customer-account-navigation-wish-list-link" remove="true"/>
+
    </body>
 </page>
