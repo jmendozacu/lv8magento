@@ -154,7 +154,9 @@ require(["jquery"], function($){
 	 $("#newsletter-mass").html('<span>You are in</span>');	
 	  $("#newsletter_pop_up").addClass('pop_up_newleet');	
 	  
-	
+	 setInterval(function(){
+	 jQuery("#newsletter_pop_up").modal('close');
+	 },1000);
 	 //setCookie("shownewsletter",'1',<?php if($timeout!='') echo $timeout;else echo '1' ?>)
 	}
      });
@@ -167,16 +169,6 @@ require(["jquery"], function($){
  });	
 
 
-require([
-    'jquery',
-    'Magento_Ui/js/modal/modal'
-], function($){
-    setTimeout(function() {
-		 if(getCookie("shownewstext") == 1){  
-        jQuery('#site-pop-up').modal('close');
-    }, 1000);
-	}
-});
  
 </script>
 
