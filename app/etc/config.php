@@ -101,7 +101,7 @@ return [
         'Magento_CatalogSearch' => 1,
         'Magento_CustomerAnalytics' => 1,
         'Magento_Shipping' => 1,
-        'Magento_Wishlist' => 0,
+        'Magento_Wishlist' => 1,
         'Magento_Signifyd' => 1,
         'Magento_Sitemap' => 1,
         'Amazon_Payment' => 1,
