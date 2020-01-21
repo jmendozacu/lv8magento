@@ -135,6 +135,8 @@
 		.product-item-inner .box-tocart .field.qty label.label { margin-bottom: 8px; }
 		.products-grid.wishlist .product-item .box-tocart .tocart {  padding: 12px 10px; }
 		.wishlist-index-index .product-item-inner { box-shadow:none; }
+		.account .table-wrapper { overflow: hidden; overflow-x: auto; }
+		.account .table-wrapper table.table { width: 962px; }
 		
 		
  }
@@ -855,6 +857,9 @@
 	.catalogsearch-result-index .banner-title-notfront h1{ font-size:22px; line-height: 30px; }
 	.catalogsearch-result-index main#maincontent { margin-top:70px; min-height:250px; }
 	.catalogsearch-result-index .banner-title-notfront { margin:40px 0 10px; }
+	.actions-toolbar.order-actions-toolbar {  display: flex; display: -webkit-flex; justify-content: center; }
+	.order-actions-toolbar .action.print { display: inline-block; }
+	.order-actions-toolbar .action { margin-right:20px; }
 	
 }
 
