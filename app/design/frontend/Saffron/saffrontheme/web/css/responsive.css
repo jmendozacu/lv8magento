@@ -137,7 +137,7 @@
 		.wishlist-index-index .product-item-inner { box-shadow:none; }
 		.account .table-wrapper { overflow: hidden; overflow-x: auto; }
 		.account .table-wrapper table.table { width: 962px; }
-		
+		.account .table-wrapper .table tbody td { min-width:180px; }
 		
  }
 
