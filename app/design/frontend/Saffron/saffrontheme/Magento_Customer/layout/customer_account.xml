@@ -13,5 +13,8 @@
         <referenceBlock name="customer-account-navigation-billing-agreements-link" remove="true"/>
         <!-- My credit card link -->
         <referenceBlock name="customer-account-navigation-my-credit-cards-link" remove="true"/>
+		<referenceBlock name="customer-account-navigation-my-credit-cards-link" remove="true"/>
+		<referenceBlock name="customer-account-navigation-wish-list-link" remove="true"/>
+
    </body>
 </page>

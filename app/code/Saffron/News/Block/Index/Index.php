@@ -58,7 +58,7 @@ public function getNewsvedio(){
    	$newcategories = $objectManager->create('Saffron\News\Model\ResourceModel\Newspost\Collection')
 			 ->addFieldToFilter('status', array('eq' => 0))
 			 ->addFieldToFilter('featured', array('eq' => 2))
-			  ->setPageSize(8);
+			  ->setPageSize(1);
 			 
 	      return   $newcategories  ;	
 		
