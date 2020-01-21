@@ -3504,4 +3504,7 @@ body.page-layout-1column .filter-options-title[aria-selected="true"]{ border-col
 }
 
 .ready-challenge .learn-btn { background:#000; }
+.account .table-wrapper .table tbody td { min-width:200px; }
+.account .table-wrapper .table tbody td a { color: #F57B3B; }
+
 
