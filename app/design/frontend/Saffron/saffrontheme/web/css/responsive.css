@@ -852,8 +852,9 @@
 	body.page-print .page-main .page-title-wrapper span.order-status {  margin: 20px 0; }
 	.products-grid.wishlist .product-item-name,
 	.products-grid.wishlist .product-item .price-box{ float:left; width:100%; margin-left:0;}
-	.catalogsearch-result-index .banner-title-notfront h1 { font-size:24px; }
+	.catalogsearch-result-index .banner-title-notfront h1{ font-size:22px; line-height: 30px; }
 	.catalogsearch-result-index main#maincontent { margin-top:70px; }
+	.catalogsearch-result-index .banner-title-notfront { margin:40px 0 10px; }
 	
 }
 
