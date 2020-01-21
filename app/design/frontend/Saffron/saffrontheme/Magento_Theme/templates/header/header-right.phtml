@@ -173,7 +173,8 @@ $(document).ready(function(){
 		$(".singin-dropdown").slideUp();
 	})
 	$(".sign-col .singin-link").on("click", function(e){
-		e.stopPropagation();	
+		e.stopPropagation();
+		$(".header .block-search .block-content").hide();	
 		$(this).toggleClass('active');
 		$(".singin-dropdown").slideToggle();
 	})
@@ -200,6 +201,7 @@ $(document).ready(function(){
 	$(".block.block-search .block.block-title strong").on("click", function(e){
 		e.stopPropagation(); 
 		$(".header .block-search .block-content").show();
+		$(".singin-dropdown").slideUp();
 	});
 
 	$(".header .block.block-search").on("click", function(e){
