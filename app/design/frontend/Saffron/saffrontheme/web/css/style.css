@@ -2125,7 +2125,8 @@ table#product-attribute-specs-table .col { max-width: inherit; width: auto; }
 .category-capsules .product-tab-title,
 .category-pet-tincure .product-tab-title,
 .category-balms .product-tab-title,
-.category-oils .product-tab-title {  display: block; }
+.category-oils .product-tab-title,
+.category-pet .product-tab-title {  display: block; }
 .contact-form-inner h4 {  font-size: 24px; }
 
 button.learn-btn:hover, button.learn-btn:focus {  border: none; }
