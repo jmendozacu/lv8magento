@@ -644,7 +644,7 @@ footer.page-footer {
     margin: 0 0 30px;
 }
 /*--btns-css--*/
-.craft-graybx .learn-btn  { margin: 20px 0 0; }
+.craft-graybx .learn-btn  { margin: 20px 0 0; max-width:220px; }
 .learn-btn  {
     background: #5f89b3;
     border: none;
