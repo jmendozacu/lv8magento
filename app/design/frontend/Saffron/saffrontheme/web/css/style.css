@@ -3510,5 +3510,9 @@ body.page-layout-1column .filter-options-title[aria-selected="true"]{ border-col
 .sales-order-view .block-order-details-view .block-content { 
 	margin-left: -15px;    margin-right: -15px;
 }
+.cart.table-wrapper .col.price, .order-items.table-wrapper .col.price, .cart.table-wrapper .col.qty, .order-items.table-wrapper .col.qty, .cart.table-wrapper .col.subtotal, .order-items.table-wrapper .col.subtotal, .cart.table-wrapper .col.msrp, .order-items.table-wrapper .col.msrp { text-align:left; }
+
+
+
 
 
