@@ -152,6 +152,7 @@ button:focus{ outline:none; }
     background-repeat: no-repeat !important;
     background-size:cover !important; 
     background-position: center top !important;
+	height:100vh !important;
 }
 .front-banner .item { height: 100vh; }
 .owl-item-caption {
@@ -3198,7 +3199,7 @@ body .opc-wrapper .shipping-address-item.selected-item:after { background: #F57B
 .cms-container ul.listing_doted { margin-bottom: 30px; }
 .cms-container .email-address { color: #4E4F53; }
 .cms-container .email-address:hover { color: #4E4F53; text-decoration: underline; }
-body.page-front { overflow: hidden; height:100vh; }
+body.page-front { overflow: hidden;  }
 
 
 /*--header-minicart-css--*/
