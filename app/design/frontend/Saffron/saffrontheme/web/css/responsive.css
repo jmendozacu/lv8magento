@@ -297,6 +297,7 @@
 	.cbd-info-section .cbd-info-container .container .row { margin: 0; }
 	body.account.page-layout-2columns-left .columns { width:100%; }
 	.launches-bx h3 { font-size: 30px; }
+	.mobile-arrow { bottom:40px; }
 	
 	
 }
@@ -451,7 +452,7 @@
 	.menu-inner .logo-brand { margin-bottom:20px; }
 	.menu-inner { padding:20px 15px; }
 	.social-col { min-height:100px; }
-	.menu-col-main { padding: 10px 0px 20px; overflow:hidden; }
+	.menu-col-main { padding: 10px 0px 20px;  }
 	.menu-col-main .menu-parent { height: 100%; overflow-y: auto; padding: 0 15px;}
 	.container{ max-width:100%;}
 	.logo-col img,
