@@ -3514,6 +3514,6 @@ body.page-layout-1column .filter-options-title[aria-selected="true"]{ border-col
 .cart.table-wrapper .col.price, .order-items.table-wrapper .col.price, .cart.table-wrapper .col.qty, .order-items.table-wrapper .col.qty, .cart.table-wrapper .col.subtotal, .order-items.table-wrapper .col.subtotal, .cart.table-wrapper .col.msrp, .order-items.table-wrapper .col.msrp { text-align:left; }
 
 .use-ajax.action.action-towishlist { display: none; }
-
+.minicart-wrapper .action.showcart::before { overflow:inherit; }
 
 
