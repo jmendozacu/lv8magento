@@ -452,6 +452,7 @@
 	.menu-inner .logo-brand { margin-bottom:20px; }
 	.menu-inner { padding:20px 10px 20px 15px; }
 	.menu-item-cbdx .menu-inner{ padding:10px 10px 20px 10px; }
+	.cbdx-brands-menu a { margin-bottom:10px; }
 	.social-col { min-height:110px; }
 	.menu-item-cbdx .social-col { min-height: inherit; }
 	.menu-item-cbdx .menu-inner .adrs-col,
@@ -556,7 +557,7 @@
 	.cbdx-brands-col .brand-link img { width:55px; }
 	.cbdx-brands-col .brand-link:nth-of-type(2) img { width:42px; }
 	.menu-inner .adrs-col li a  { font-size:14px; }
-	.cbdx-brands-col .brand-link { margin:0 7px 15px 0;  }
+	.cbdx-brands-col .brand-link { margin:0 7px 10px 0;  }
 	.social-col h5, .cbdx-brands-col h5 { font-size: 14px;  font-weight: normal;  }
 	.menu-inner .logo-brand img { height:22px; }
 	.menu-item-front .menu-inner .logo-brand img { height: 26px;   }
