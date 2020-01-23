@@ -453,7 +453,11 @@
 	.menu-inner { padding:20px 15px; }
 	.social-col { min-height:110px; }
 	.menu-item-cbdx .social-col { min-height: inherit; }
-	.menu-item-cbdx .menu-inner .adrs-col { display:none; }
+	.menu-item-cbdx .menu-inner .adrs-col {
+		display: inherit;
+		flex-direction: inherit;
+		flex: inherit;
+	}	
 	.menu-col-main { padding: 10px 0px 20px;  }
 	.menu-col-main .menu-parent { height: 100%; overflow-y: auto; padding: 0 15px;}
 	.container{ max-width:100%;}
