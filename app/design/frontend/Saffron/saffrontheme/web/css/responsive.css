@@ -451,7 +451,7 @@
 	.menu-parent li { padding:4px 15px 4px 0;   }
 	.menu-inner .logo-brand { margin-bottom:20px; }
 	.menu-inner { padding:20px 10px 20px 15px; }
-	.menu-item-cbdx .menu-inner{ padding:10px 10px 20px 10px; }
+	.menu-item-cbdx .menu-inner{ padding:10px 10px 30px 10px; }
 	.cbdx-brands-menu a { margin-bottom:10px; }
 	.social-col { min-height:110px; }
 	.menu-item-cbdx .social-col { min-height: inherit; }
