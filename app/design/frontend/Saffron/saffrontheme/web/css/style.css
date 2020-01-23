@@ -3140,7 +3140,7 @@ body .opc-wrapper .shipping-address-item.selected-item:after { background: #F57B
     margin-top: 10px;
 }
 .block-title.order a.action.view, .table-wrapper td.col.actions a { color: #F57B3B;  }
-.table-wrapper .table thead th, .table-wrapper .table tbody td {
+.account .table-wrapper .table thead th, .account .table-wrapper .table tbody td {
     padding: 20px 10px; font-size:15px;
 }
 .block-content .table-wrapper { width: 100%; overflow-x: auto; }
@@ -3153,12 +3153,11 @@ body .opc-wrapper .shipping-address-item.selected-item:after { background: #F57B
     margin-bottom: 40px !important;
 }
 .account .table-wrapper .table thead { background: #f9f9f9; }
-.table-wrapper .table tbody td {  
+.account .table-wrapper .table tbody td {  
 	border-top: none;
-    white-space: normal;
-    word-break: break-word;
     font-size: 15px;
 	}
+.account .table-wrapper .table tbody td	{  white-space: normal; word-break: break-word;}
 .account .data.table .col.actions { white-space: normal }
 .block-collapsible-nav .item.current a, .block-collapsible-nav .item.current > strong{
 	border-color: #F57B3B; color:#F57B3B; font-weight:500;
@@ -3521,4 +3520,4 @@ body.page-layout-1column .filter-options-title[aria-selected="true"]{ border-col
 .use-ajax.action.action-towishlist { display: none; }
 .minicart-wrapper .action.showcart::before { overflow:inherit; }
 .open .nav-sections { overflow:hidden; }
-
+.cart.table-wrapper .actions-toolbar>.action-edit, .cart.table-wrapper .actions-toolbar>.action-delete { display: inline-flex; }
