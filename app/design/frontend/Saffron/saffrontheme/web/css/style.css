@@ -153,7 +153,7 @@ button:focus{ outline:none; }
     background-size:cover !important; 
     background-position: center top !important;
 }
-/* body.page-front .front-banner .item {  height:100vh !important; } */
+body.page-front .front-banner .item {  height:100vh !important; }
 .owl-item-caption {
     position: absolute;
     top: 50%;

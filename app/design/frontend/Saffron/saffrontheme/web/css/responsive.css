@@ -297,6 +297,7 @@
 	.cbd-info-section .cbd-info-container .container .row { margin: 0; }
 	body.account.page-layout-2columns-left .columns { width:100%; }
 	.launches-bx h3 { font-size: 30px; }
+	.mobile-arrow {  bottom:40px; }
 	
 }
 
