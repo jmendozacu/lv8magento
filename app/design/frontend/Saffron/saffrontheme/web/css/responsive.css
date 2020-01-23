@@ -453,7 +453,8 @@
 	.menu-inner { padding:20px 15px; }
 	.social-col { min-height:110px; }
 	.menu-item-cbdx .social-col { min-height: inherit; }
-	.menu-item-cbdx .menu-inner .adrs-col {
+	.menu-item-cbdx .menu-inner .adrs-col,
+	.menu-item-cbdx .menu-inner	{
 		display: inherit;
 		flex-direction: inherit;
 		flex: inherit;
