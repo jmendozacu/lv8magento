@@ -3514,5 +3514,5 @@ body.page-layout-1column .filter-options-title[aria-selected="true"]{ border-col
 
 .use-ajax.action.action-towishlist { display: none; }
 .minicart-wrapper .action.showcart::before { overflow:inherit; }
-
+.open .nav-sections { overflow:hidden; }
 

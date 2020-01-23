@@ -297,7 +297,7 @@
 	.cbd-info-section .cbd-info-container .container .row { margin: 0; }
 	body.account.page-layout-2columns-left .columns { width:100%; }
 	.launches-bx h3 { font-size: 30px; }
-	.mobile-arrow {  bottom:40px; }
+	
 	
 }
 
@@ -398,7 +398,7 @@
 		width:100%; }
 	.product.info.detailed { margin-bottom:0; }
 	.menu-caption { bottom:20px; }
-	.social-col { min-height:110px; }
+	.social-col { min-height:120px; }
 	.wishlist-index-index .products-grid .product-item { width:50%; }
 }
 
