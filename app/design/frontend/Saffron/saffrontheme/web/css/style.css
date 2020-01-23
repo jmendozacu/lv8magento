@@ -146,15 +146,14 @@ button:focus{ outline:none; }
     background: url(../images/worx-slider.jpg);
 }
 .lv8-page .front-banner .item,
-.labs-page  .front-banner .item,
-.cbdx-page  .front-banner .item,
-.worx-page  .front-banner .item{
+.labs-page .front-banner .item,
+.cbdx-page .front-banner .item,
+.worx-page .front-banner .item{
     background-repeat: no-repeat !important;
     background-size:cover !important; 
     background-position: center top !important;
-	height:100vh !important;
 }
-.front-banner .item { height: 100vh; }
+body.page-front .front-banner .item {  height:100vh !important; }
 .owl-item-caption {
     position: absolute;
     top: 50%;
