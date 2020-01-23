@@ -16,7 +16,7 @@
       .craft-higher .left-col, .brand-2 .left-col,
       .info-row-2 .left-col {   order:2; -webkit-order:2;   }
       .craft-research .left-col {  order:initial; -webkit-order:initial;  }
-      .craft-box-row .right-col { display: flex;  position: relative; }
+      .craft-box-row .right-col { display: flex;  position: relative; z-index:1; }
       .craft-box-row .craft-info-col {  position: absolute; top: 50%; transform: translate(0, -50%); }
       .theBrands-carousel .boxBrands p,
 		.theBrands-carousel .boxBrands span	  { font-size: 18px; }
