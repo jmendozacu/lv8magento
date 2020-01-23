@@ -649,7 +649,7 @@
 	}
 	.cms-careers main#maincontent { margin-top:80px; }
 	.banner-notfront { margin-top:0px; height:calc(100% - 70px); }
-	.mobile-arrow { bottom:40px; }
+	.mobile-arrow { bottom:50px; }
 	.labs-page.page-front .columns,
 	.worx-page.page-front .columns,
 	.cbdx-page.page-front .columns{  padding-top: 0; }
