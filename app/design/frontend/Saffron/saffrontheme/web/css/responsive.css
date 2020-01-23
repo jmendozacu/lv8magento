@@ -449,7 +449,8 @@
 	.menu-parent li .fa { font-size:22px; }
 	.menu-parent li { padding:6px 15px 6px 0;   }
 	.menu-inner .logo-brand { margin-bottom:20px; }
-	.menu-inner { padding:20px 15px 30px; }
+	.menu-inner { padding:20px 15px; }
+	.social-col { min-height:110px; }
 	.menu-col-main { padding: 20px 0px ; overflow:hidden; }
 	.menu-col-main .menu-parent { height: 100%; overflow-y: auto; padding: 0 15px;}
 	.container{ max-width:100%;}
