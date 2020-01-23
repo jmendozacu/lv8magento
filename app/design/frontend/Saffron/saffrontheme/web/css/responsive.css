@@ -154,6 +154,9 @@
 	  .faqs-panel {  flex: 1 1 50%; }
 	  .menu-item-cbdx .menu-item-description {  padding-top: 25px; }
 	  body.checkout-index-index .opc-wrapper.am-opc-wrapper.layout-3-columns .checkout-column{padding:0 15px;}
+	  footer.page-footer .col-lg-2:nth-of-type(1) {
+		display: flex; display: -webkit-flex; align-items: center;
+	 }
 		
 
 }
