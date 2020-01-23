@@ -450,7 +450,7 @@
 	.menu-parent li .fa { font-size:22px; }
 	.menu-parent li { padding:4px 15px 4px 0;   }
 	.menu-inner .logo-brand { margin-bottom:20px; }
-	.menu-inner { padding:20px 15px; }
+	.menu-inner { padding:20px 10px 20px 15px; }
 	.social-col { min-height:110px; }
 	.menu-item-cbdx .social-col { min-height: inherit; }
 	.menu-item-cbdx .menu-inner .adrs-col,
@@ -870,7 +870,6 @@
 	.actions-toolbar.order-actions-toolbar {  display: flex; display: -webkit-flex; justify-content: center; }
 	.order-actions-toolbar .action.print { display: inline-block; }
 	.order-actions-toolbar .action { margin-right:20px; }
-	.mobile-arrow { bottom:40px; }
 	
 }
 
