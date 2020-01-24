@@ -3523,7 +3523,7 @@ body.page-layout-1column .filter-options-title[aria-selected="true"]{ border-col
 .open .nav-sections { overflow:hidden; }
 .cart.table-wrapper .actions-toolbar>.action-edit, .cart.table-wrapper .actions-toolbar>.action-delete { display: inline-flex; }
 
-.mobile-arrow .scroll-down  {
+.mobile-arrow  {
     -webkit-animation: pulse 1.5s infinite;
     animation: pulse 1.5s infinite;
 }
