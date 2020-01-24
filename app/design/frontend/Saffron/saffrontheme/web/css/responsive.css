@@ -747,7 +747,6 @@
 	table th, table td { font-size: 14px; }
 	.modal-content p { font-size: 15px; }
 	.science-container { padding-top:40px; }
-	.faqs-content { margin-top:10px; }
 	.brand-row { margin-bottom: 30px; text-align: center; }
 	.news-detail-container { margin: 30px auto 50px;  width: 100%; }
 	.family-brand img { margin-bottom:20px; }
@@ -880,6 +879,14 @@
 	.actions-toolbar.order-actions-toolbar {  display: flex; display: -webkit-flex; justify-content: center; }
 	.order-actions-toolbar .action.print { display: inline-block; }
 	.order-actions-toolbar .action { margin-right:20px; }
+	.cms-internships .banner-breadcrumbs { margin-top: 0; }
+	.looking-internship { background: #bacbdb; }
+	.looking-internship .inner { width:100%; margin-left:0; }
+	.cms-internships h2, .cms-internships h3 { font-size:28px;}
+	.faq-row h4 img {width: 40px;  margin-right: 10px; }
+	.faq-row h4 { font-size:20px; }
+	.answer { padding-left: 50px; width: 100%; margin: 0; }
+	.faq-row {     margin-bottom: 20px; padding-bottom: 20px; }
 	
 }
 

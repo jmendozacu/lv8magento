@@ -3366,7 +3366,7 @@ body.page-layout-1column .filter-options-title[aria-selected="true"]{ border-col
 .cirle-listing li {
     position: relative;
     padding-left: 25px;
-    line-height: normal;
+    line-height: 26px;
     padding-bottom: 25px;
 }
 .cirle-listing li:before {content: "";width: 14px;height: 14px;border: 1px solid #979797;border-radius: 100%;position: absolute;left: 0;top: 3px;background: #d3d7e0;}
