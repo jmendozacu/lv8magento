@@ -263,14 +263,6 @@ jQuery(".faq-row h4").on("click", function(){
 	jQuery(this).parent().siblings().removeClass('active').children('.answer').slideUp();
 });
 
-//cbdx menu brands logo scroll js 
-jQuery(".cbdx-brands-col .brand-link").on("click", function(){
-	alert();
-	jQuery("html, body").animate( { scrollTop: jQuery(jQuery(this).attr("href") ).offset().top-200 }, 1000 
- );
-  
-})
-
 
 //category page on scroll category fix javascript
 	var $banner = jQuery(".catalog-category-view .banner-breadcrumbs").height();
