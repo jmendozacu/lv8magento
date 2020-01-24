@@ -307,6 +307,7 @@
 
 @media (min-width: 768px)  and ( max-width:1024px ){
 	.banner-title-notfront h1 { font-size:50px; }
+	.cms-internships h2,.cms-internships h3 { font-size:40px; }
 }
 
 @media (min-width: 992px) and ( max-width:1199px ){
@@ -334,6 +335,7 @@
 	.cart-summary { padding:1px 15px 25px; }
 	.cart-summary .checkout-methods-items .action.primary.checkout{ padding: 17px 8px; font-size: 16px; }
 	.banner-detail-page {  margin-top: 40px; }
+	
 	
 }
 
@@ -404,6 +406,8 @@
 	.menu-caption { bottom:20px; }
 	.social-col { min-height:130px; }
 	.wishlist-index-index .products-grid .product-item { width:50%; }
+	.looking-internship { background-position: -330px center; }
+	.cms-internships h2,.cms-internships h3 { font-size:34px; }
 }
 
 @media (max-width:991px) {
