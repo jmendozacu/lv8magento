@@ -3522,3 +3522,40 @@ body.page-layout-1column .filter-options-title[aria-selected="true"]{ border-col
 .minicart-wrapper .action.showcart::before { overflow:inherit; }
 .open .nav-sections { overflow:hidden; }
 .cart.table-wrapper .actions-toolbar>.action-edit, .cart.table-wrapper .actions-toolbar>.action-delete { display: inline-flex; }
+
+.mobile-arrow .scroll-down  {
+    -webkit-animation: pulse 1.5s infinite;
+    animation: pulse 1.5s infinite;
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+	}
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px); 
+	}
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); 
+	}
+			
+	}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); 
+	}
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px); 
+	}
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); 
+	}
+}
+
+
