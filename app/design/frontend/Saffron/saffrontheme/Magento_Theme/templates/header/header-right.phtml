@@ -255,6 +255,14 @@ jQuery(".review-container button.write-a-review").on('click', function(){
 });	
 
 
+//internshil collapse jquery
+jQuery(".faq-row.active .answer").show();
+jQuery(".faq-row h4").on("click", function(){
+	jQuery(this).parent().toggleClass('active');
+    jQuery(this).next().slideToggle();
+	jQuery(this).parent().siblings().removeClass('active').children('.answer').slideUp();
+});
+
 
 //category page on scroll category fix javascript
 	var $banner = jQuery(".catalog-category-view .banner-breadcrumbs").height();

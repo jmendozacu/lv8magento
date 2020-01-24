@@ -3395,7 +3395,9 @@ body.page-layout-1column .filter-options-title[aria-selected="true"]{ border-col
     padding-left: 140px;
     width: calc(100% - 140px);
     margin-top: -20px;
+	display:none;
 }
+.faq-row.active .fa:before { content: "\f068"; }
 .faq-row {
     float: left;
     width: 100%;
