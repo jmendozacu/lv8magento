@@ -880,13 +880,27 @@
 	.order-actions-toolbar .action.print { display: inline-block; }
 	.order-actions-toolbar .action { margin-right:20px; }
 	.cms-internships .banner-breadcrumbs { margin-top: 0; }
-	.looking-internship { background: #bacbdb; }
+	.looking-internship { background: #bacbdb; padding:40px 0 0; }
 	.looking-internship .inner { width:100%; margin-left:0; }
-	.cms-internships h2, .cms-internships h3 { font-size:28px;}
+	.cms-internships h2, .cms-internships h3 { font-size:26px;}
 	.faq-row h4 img {width: 40px;  margin-right: 10px; }
-	.faq-row h4 { font-size:20px; }
+	.faq-row h4, .faq-row h4 .fa { font-size:18px; }
 	.answer { padding-left: 50px; width: 100%; margin: 0; }
-	.faq-row {     margin-bottom: 20px; padding-bottom: 20px; }
+	.faq-row { margin-bottom: 20px; padding-bottom: 20px; }
+	.summer-internship { height:auto; padding:50px 0; }
+	.looking-internship { padding:40px 0; }
+	.internship-opt { padding: 30px 0; }
+	
+	.steps-column .step-2, .steps-column .step-4,
+	.steps-column .step-6	{ padding-left: 0; }
+	.steps-column .step-1, .steps-column .step-3,
+	.steps-column .step-5	{ padding-right: 0; }
+	.steps-column .step-bx {  margin-bottom: 60px; }
+	.step-2 .inner:before, .step-4 .inner:before, .step-6 .inner:before { left: 0; }
+	.step-2 .inner:after, .step-4 .inner:after, .step-6 .inner:after { left: 6px; }
+	.step-6 .inner:after { display: block; }
+	.internship-deal { padding: 50px 0 20px; }
+	.ready-challenge { padding:60px 0; }
 	
 }
 
