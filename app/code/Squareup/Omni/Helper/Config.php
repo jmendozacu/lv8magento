@@ -15,6 +15,7 @@ namespace Squareup\Omni\Helper;
 use Magento\Framework\App\Helper\AbstractHelper;
 use Magento\Framework\App\Helper\Context;
 use Magento\Store\Model\ScopeInterface;
+use Squareup\Omni\Logger\Logger;
 use Squareup\Omni\Model\LocationFactory;
 use Squareup\Omni\Model\ResourceModel\Config\CollectionFactory as ConfigCollection;
 use Squareup\Omni\Model\ResourceModel\Config as ConfigResource;
@@ -69,6 +70,10 @@ class Config extends AbstractHelper
      * @var InventoryCollection
      */
     private $inventoryCollection;
+    /**
+     * @var Logger
+     */
+    private $logger;
 
     /**
      * Config constructor.
@@ -90,7 +95,8 @@ class Config extends AbstractHelper
         ConfigFactory $configFactory,
         ProductFactory $productFactory,
         InventoryCollection $inventoryCollection,
-        Context $context
+        Context $context,
+        Logger $logger
     ) {
         $this->locationFactory = $locationFactory;
         $this->configCollection = $configCollection;
@@ -101,6 +107,7 @@ class Config extends AbstractHelper
         $this->productFactory = $productFactory;
         $this->inventoryCollection = $inventoryCollection;
         parent::__construct($context);
+        $this->logger = $logger;
     }
 
     /**
@@ -203,6 +210,9 @@ class Config extends AbstractHelper
         return null;
     }
 
+    /**
+     * @param $locationId
+     */
     public function setLocationId($locationId)
     {
         $path = 'squareup_omni/general/location_id';
@@ -430,41 +440,79 @@ class Config extends AbstractHelper
         return $this->getConfig('squareup_omni/refunds/begin_time');
     }
 
+    /**
+     * Save the catalog ran at time
+     *
+     * @param null $ranAt
+     */
     public function saveRanAt($ranAt = null)
     {
         return $this->setConfig('squareup_omni/general/cron_ran_at', $ranAt);
     }
 
+    /**
+     * Save the OAuth token received from Square
+     *
+     * @param null $token
+     */
     public function saveOauthToken($token = null)
     {
         return $this->setConfig('squareup_omni/oauth_settings/oauth_token', $token);
     }
 
+    /**
+     * Save the OAuth token expiration received from Square
+     *
+     * @param null $expire
+     */
     public function saveOauthExpire($expire = null)
     {
         return $this->setConfig('squareup_omni/oauth_settings/oauth_expire', $expire);
     }
 
+    /**
+     * Save the OAuth refresh token received from Square
+     *
+     * @param null $token
+     */
     public function saveOauthRefresh($token = null)
     {
         return $this->setConfig('squareup_omni/oauth_settings/oauth_refresh', $token);
     }
 
+    /**
+     * Check if catalog images sync is enabled
+     *
+     * @return bool
+     */
     public function isImagesEnabled()
     {
         return ($this->getConfig('squareup_omni/catalog/enable_images') === '1') ? true : false;
     }
 
+    /**
+     * Save the catalog images ran at time
+     *
+     * @param null $ranAt
+     */
     public function saveImagesRanAt($ranAt = null)
     {
         return $this->setConfig('squareup_omni/general/images_ran_at', $ranAt);
     }
 
+    /**
+     * Get the catalog images ran at time
+     *
+     * @return mixed
+     */
     public function getImagesRanAt()
     {
         return $this->getConfig('squareup_omni/general/images_ran_at');
     }
 
+    /**
+     * @throws \Magento\Framework\Exception\NoSuchEntityException
+     */
     public function syncLocationInventory()
     {
         if ($locationId = $this->getLocationId()) {
@@ -481,6 +529,11 @@ class Config extends AbstractHelper
         }
     }
 
+    /**
+     * Get the webhook signature saved in Magento
+     *
+     * @return mixed
+     */
     public function getWebhookSignature()
     {
         return $this->getConfig('squareup_omni/webhooks_settings/webhook_signature');
@@ -506,7 +559,7 @@ class Config extends AbstractHelper
         return (bool)$this->getConfig('squareup_omni/orders/enable_gift');
     }
     
-        /**
+    /**
      * Get the oauth refresh for newer versions of api
      *
      * @return mixed
@@ -514,5 +567,22 @@ class Config extends AbstractHelper
     public function getRefreshToken()
     {
         return $this->getConfig('squareup_omni/oauth_settings/oauth_refresh');
+    }
+
+    /**
+     * Check if only the payment method is used
+     *
+     * @return bool
+     */
+    public function isPaymentOnly()
+    {
+        $isCustomerEnabled = (bool)$this->getAllowCustomerSync();
+        $isCatalogEnabled = (bool)$this->isCatalogEnabled();
+        $isTransactionEnabled = (bool)$this->getAllowImportTrans();
+        if($isCustomerEnabled || $isCatalogEnabled ||  $isTransactionEnabled ) {
+            return false;
+        } else {
+            return true;
+        }
     }
 }

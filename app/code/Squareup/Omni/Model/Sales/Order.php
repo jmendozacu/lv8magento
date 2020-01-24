@@ -10,6 +10,10 @@ use Squareup\Omni\Model\ResourceModel\GiftCard\CollectionFactory as GiftCardColl
 class Order extends \Magento\Sales\Model\Order
 {
     private $giftCardCollection;
+    /**
+     * @var \Magento\Framework\App\ProductMetadataInterface
+     */
+    private $productMetadata;
 
     public function __construct(
         \Magento\Framework\Model\Context $context,
@@ -37,12 +41,20 @@ class Order extends \Magento\Sales\Model\Order
         PriceCurrencyInterface $priceCurrency,
         \Magento\Catalog\Model\ResourceModel\Product\CollectionFactory $productListFactory,
         GiftCardCollection $giftCardCollection,
+        \Magento\Framework\App\ProductMetadataInterface $productMetadata,
         \Magento\Framework\Model\ResourceModel\AbstractResource $resource = null,
         \Magento\Framework\Data\Collection\AbstractDb $resourceCollection = null,
         array $data = [],
         ResolverInterface $localeResolver = null
     ){
-        parent::__construct($context, $registry, $extensionFactory, $customAttributeFactory, $timezone, $storeManager, $orderConfig, $productRepository, $orderItemCollectionFactory, $productVisibility, $invoiceManagement, $currencyFactory, $eavConfig, $orderHistoryFactory, $addressCollectionFactory, $paymentCollectionFactory, $historyCollectionFactory, $invoiceCollectionFactory, $shipmentCollectionFactory, $memoCollectionFactory, $trackCollectionFactory, $salesOrderCollectionFactory, $priceCurrency, $productListFactory, $resource, $resourceCollection, $data, $localeResolver);
+        $this->productMetadata = $productMetadata;
+        $version = $productMetadata->getVersion();
+        if(version_compare($version, '2.2.4') < 0) {
+            parent::__construct($context, $registry, $extensionFactory, $customAttributeFactory, $timezone, $storeManager, $orderConfig, $productRepository, $orderItemCollectionFactory, $productVisibility, $invoiceManagement, $currencyFactory, $eavConfig, $orderHistoryFactory, $addressCollectionFactory, $paymentCollectionFactory, $historyCollectionFactory, $invoiceCollectionFactory, $shipmentCollectionFactory, $memoCollectionFactory, $trackCollectionFactory, $salesOrderCollectionFactory, $priceCurrency, $productListFactory, $resource, $resourceCollection, $data);
+        } else {
+            parent::__construct($context, $registry, $extensionFactory, $customAttributeFactory, $timezone, $storeManager, $orderConfig, $productRepository, $orderItemCollectionFactory, $productVisibility, $invoiceManagement, $currencyFactory, $eavConfig, $orderHistoryFactory, $addressCollectionFactory, $paymentCollectionFactory, $historyCollectionFactory, $invoiceCollectionFactory, $shipmentCollectionFactory, $memoCollectionFactory, $trackCollectionFactory, $salesOrderCollectionFactory, $priceCurrency, $productListFactory, $resource, $resourceCollection, $data, $localeResolver);
+        }
+
         $this->giftCardCollection = $giftCardCollection;
     }
 

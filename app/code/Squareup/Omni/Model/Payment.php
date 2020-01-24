@@ -190,27 +190,27 @@ class Payment extends \Magento\Payment\Model\Method\Cc
                 'cc_exp_month' => null,
                 'cc_exp_year' => null
             ];
-            if ($additionalData['cc_type']) {
+            if (array_key_exists('cc_type', $additionalData)) {
                 $info->setAdditionalInformation('cc_type', $additionalData['cc_type']);
                 $ccData['cc_type'] =  $additionalData['cc_type'];
             }
 
-            if ($additionalData['cc_last_4']) {
+            if (array_key_exists('cc_last_4', $additionalData)) {
                 $info->setAdditionalInformation('cc_last_4', $additionalData['cc_last_4']);
                 $ccData['cc_last_4'] =  $additionalData['cc_last_4'];
             }
 
-            if ($additionalData['cc_number']) {
+            if (array_key_exists('cc_number', $additionalData)) {
                 $info->setAdditionalInformation('cc_number', $additionalData['cc_number']);
                 $ccData['cc_number'] =  $additionalData['cc_number'];
             }
 
-            if ($additionalData['cc_exp_month']) {
+            if (array_key_exists('cc_exp_month', $additionalData)) {
                 $info->setAdditionalInformation('cc_exp_month', $additionalData['cc_exp_month']);
                 $ccData['cc_exp_month'] =  $additionalData['cc_exp_month'];
             }
 
-            if ($additionalData['cc_exp_year']) {
+            if (array_key_exists('cc_exp_year', $additionalData)) {
                 $info->setAdditionalInformation('cc_exp_year', $additionalData['cc_exp_year']);
                 $ccData['cc_exp_year'] =  $additionalData['cc_exp_year'];
             }

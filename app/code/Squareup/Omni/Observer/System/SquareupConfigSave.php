@@ -17,6 +17,7 @@ use Magento\CatalogInventory\Model\Stock\ItemFactory;
 use Magento\Framework\App\Config\ReinitableConfigInterface;
 use Magento\Framework\Event\ManagerInterface as EventManager;
 use Magento\CatalogInventory\Model\ResourceModel\Stock\Item as ItemResource;
+use Squareup\Omni\Logger\Logger;
 
 class SquareupConfigSave implements ObserverInterface
 {
@@ -80,6 +81,10 @@ class SquareupConfigSave implements ObserverInterface
      * @var EventManager
      */
     private $eventManager;
+    /**
+     * @var Logger
+     */
+    private $logger;
 
     /**
      * SquareupConfigSave constructor
@@ -115,7 +120,8 @@ class SquareupConfigSave implements ObserverInterface
         \Squareup\Omni\Model\Location\Import $locationImport,
         ItemFactory $itemFactory,
         ReinitableConfigInterface $reinitableConfig,
-        EventManager $eventManager
+        EventManager $eventManager,
+        Logger $logger
     ) {
         $this->registry = $registry;
         $this->configHelper = $configHelper;
@@ -132,6 +138,7 @@ class SquareupConfigSave implements ObserverInterface
         $this->itemFactory = $itemFactory;
         $this->reinitableConfig = $reinitableConfig;
         $this->eventManager = $eventManager;
+        $this->logger = $logger;
     }
 
     /**
@@ -156,23 +163,27 @@ class SquareupConfigSave implements ObserverInterface
                     $this->registry->registry('before_location_id')
                 );
             }
+            if(false === $this->configHelper->isPaymentOnly()){
+                $this->logger->info("Omni integration is enabled");
+                $this->inventoryFactory->create()->getResource()->emptyInventory();
+                $this->locationFactory->create()->getResource()->emptyLocations();
 
-            $this->inventoryFactory->create()->getResource()->emptyInventory();
-            $this->locationFactory->create()->getResource()->emptyLocations();
+                /* Delete all square flag from customers */
+                $this->dataHelper->resetSquareCustomerFlag();
+                /* Delete all square transactions from magento */
+                $this->transactionsFactory->create()->getResource()->emptyTransactions();
+                /* Delete all square transactions from magento */
+                $this->refundsFactory->create()->getResource()->emptyRefunds();
 
-            /* Delete all square flag from customers */
-            $this->dataHelper->resetSquareCustomerFlag();
-            /* Delete all square transactions from magento */
-            $this->transactionsFactory->create()->getResource()->emptyTransactions();
-            /* Delete all square transactions from magento */
-            $this->refundsFactory->create()->getResource()->emptyRefunds();
+                $this->productResource->resetProducts();
 
-            $this->productResource->resetProducts();
-
-            $this->configHelper->saveRanAt();
-            $this->configHelper->saveImagesRanAt();
-            $this->configHelper->setTransactionsBeginTime();
-            $this->configHelper->setRefundsBeginTime();
+                $this->configHelper->saveRanAt();
+                $this->configHelper->saveImagesRanAt();
+                $this->configHelper->setTransactionsBeginTime();
+                $this->configHelper->setRefundsBeginTime();
+            } else {
+                $this->logger->info("Payment only is enabled");
+            }
 
             if (($before_square_application_id != $after_square_application_id) ||
                 ($before_square_application_secret != $after_square_application_secret)) {

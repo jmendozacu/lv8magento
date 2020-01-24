@@ -101,6 +101,11 @@ Squareup.callbacks = {
             return false;
         }
 
+        document.getElementById('digital-wallet').value = cardData.digital_wallet_type;
+        document.getElementById('card-brand').value = cardData.card_brand;
+        document.getElementById('card-last-4').value = cardData.last_4;
+        document.getElementById('card-exp-month').value = cardData.exp_month;
+        document.getElementById('card-exp-year').value = cardData.exp_year;
 
         window.Squareup.paymentForm.verifyBuyer(
             nonce,

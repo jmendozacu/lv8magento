@@ -130,7 +130,7 @@ class Import extends AbstractModel
                 $status = 1;
             }
 
-            if (count($location->getCapabilities())) {
+            if (null !== $location->getCapabilities() && count($location->getCapabilities())) {
                 foreach ($location->getCapabilities() as $capability) {
                     if ($capability == 'CREDIT_CARD_PROCESSING') {
                         $ccProcessing = true;

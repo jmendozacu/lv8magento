@@ -138,8 +138,8 @@ class Mapping extends AbstractHelper
     /**
      * Set catalog object
      *
-     * @param $product
-     * @param null $receivedObj
+     * @param \Magento\Catalog\Model\Product $product
+     * @param \SquareConnect\Model\RetrieveCatalogObjectResponse|null $receivedObj
      *
      * @return array
      */
@@ -162,7 +162,7 @@ class Mapping extends AbstractHelper
                 "abbreviation" => substr($product->getName(), 0, 2),
                 "available_online" => true,
                 "available_for_pickup" => false,
-                "tax_ids" => [],
+                "tax_ids" => (null !== $receivedObj)? $receivedObj->getObject()->getItemData()->getTaxIds() : [],
                 "modifier_list_info" => [],
                 "available_electronically" => (
                     $product->getTypeId() == \Magento\Downloadable\Model\Product\Type::TYPE_DOWNLOADABLE
@@ -171,6 +171,10 @@ class Mapping extends AbstractHelper
                 "variations" => $this->setItemVariation($product, $receivedObj)
             ]
         ];
+
+        if(null !== $receivedObj) {
+            $catalogObject['item_data']['category_id'] = $receivedObj->getObject()->getItemData()->getCategoryId();
+        }
 
         return $catalogObject;
     }

@@ -367,7 +367,9 @@ class Images extends Square
                 $this->callSquare($args['row'][$this->column], $args['row']['square_id'], $fullImage);
             }
         } catch (\Exception $e) {
+            $this->logger->error('Info:  square_Id: ' .  $args['row']['square_id']);
             $this->logger->error($e->getMessage());
+            $this->logger->error($e->__toString());
         }
 
         $this->configHelper->saveImagesRanAt($args['row']['updated_at']);
