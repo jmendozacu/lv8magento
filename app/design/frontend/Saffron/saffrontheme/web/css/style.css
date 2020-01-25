@@ -3523,9 +3523,6 @@ body.page-layout-1column .filter-options-title[aria-selected="true"]{ border-col
 .open .nav-sections { overflow:hidden; }
 .cart.table-wrapper .actions-toolbar>.action-edit, .cart.table-wrapper .actions-toolbar>.action-delete { display: inline-flex; }
 
-span.info-span {
-    position:relative;
-}
 span.info-span .fa{
     color: #F57B3B;
     cursor: pointer;
