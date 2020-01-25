@@ -3523,6 +3523,34 @@ body.page-layout-1column .filter-options-title[aria-selected="true"]{ border-col
 .open .nav-sections { overflow:hidden; }
 .cart.table-wrapper .actions-toolbar>.action-edit, .cart.table-wrapper .actions-toolbar>.action-delete { display: inline-flex; }
 
-
+span.info-span {
+    position:relative;
+}
+span.info-span .fa{
+    color: #F57B3B;
+    cursor: pointer;
+}
+span.info-hoverd {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    max-width: 500px;
+    width: 100%;
+    background: #f1f1f1;
+    padding: 8px 10px;
+    min-width: 250px;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 400;
+    z-index: 1;
+    display: none;
+}
+.field.choice.newsletter label.label {
+    position: relative;
+}
+.field.choice.newsletter label.label:hover span.info-hoverd {
+    display: block;
+}
 
 
