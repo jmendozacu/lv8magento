@@ -3549,7 +3549,7 @@ span.info-hoverd {
 .field.choice.newsletter label.label {
     position: relative;
 }
-.field.choice.newsletter label.label:hover span.info-hoverd {
+span.info-span:hover span.info-hoverd {
     display: block;
 }
 
