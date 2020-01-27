@@ -302,7 +302,9 @@
 	body.account.page-layout-2columns-left .columns { width:100%; }
 	.launches-bx h3 { font-size: 30px; }
 	.mobile-arrow { bottom:40px; }
-	
+	.opc-block-shipping-information .shipping-information-title{ font-size:18px; }
+	.checkout-index-index .opc-block-summary > .title,
+	.checkout-index-index .opc-wrapper .step-title	{ font-size:24px; }
 	
 }
 
@@ -409,6 +411,10 @@
 	.wishlist-index-index .products-grid .product-item { width:50%; }
 	.looking-internship { background-position: -330px center; }
 	.cms-internships h2,.cms-internships h3 { font-size:34px; }
+	body.checkout-index-index .column.main { width:100%; }
+	.checkout-index-index .authentication-dropdown .modal-inner-wrap .modal-content{ padding:0;}
+	.checkout-index-index header.header .header.content,
+	.checkout-index-index .container	{ width: calc(100% - 5%);}
 }
 
 @media (max-width:991px) {

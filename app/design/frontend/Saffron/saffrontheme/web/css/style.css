@@ -3619,5 +3619,12 @@ li#shipping.checkout-shipping-address { margin-top: 37px; }
     font-weight: 500;
     text-transform: uppercase;
 }
+.checkout-index-index .block.items-in-cart { padding-bottom: 20px; }
+.checkout-index-index .block-authentication .actions-toolbar > .secondary {
+	margin-right: 0;
+}
+
+
+
 
 
