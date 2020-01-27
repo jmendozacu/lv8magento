@@ -7,8 +7,7 @@ define([
     'underscore',
     'Magento_Checkout/js/model/quote',
     'Magento_Checkout/js/model/payment/method-list',
-    'Magento_Checkout/js/action/select-payment-method',
-	'Magento_Checkout/js/view/payment'
+    'Magento_Checkout/js/action/select-payment-method'
 ], function (_, quote, methodList, selectPaymentMethod) {
     'use strict';
 
