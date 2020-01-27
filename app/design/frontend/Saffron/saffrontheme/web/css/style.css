@@ -3094,7 +3094,7 @@ ol.items.review-items .review-content { margin-bottom: 10px; }
     color: #4E4F53;
     font-weight: 300;
 }
-.cms-find-a-store .column.main h1 {  margin-top: 140px; }
+
 div#newsletter-mass {
     text-align: center;
     color: #fff;
@@ -3549,5 +3549,7 @@ span.info-hoverd {
 span.info-span:hover span.info-hoverd {
     display: block;
 }
-
-
+/*--temp-css--*/
+.cms-find-a-store .banner-title-notfront { display:none; }
+.cms-find-a-store .column.main h1 { min-height: 200px; padding: 100px 0 50px; }
+/*--/temp-css--*/
