@@ -3560,4 +3560,5 @@ li#shipping.checkout-shipping-address { margin-top: 37px; }
 .checkout-index-index .modal-inner-wrap .modal-header { display:none; }
 .checkout-index-index .opc-wrapper .step-title { border-bottom: none; }
 .checkout-index-index dl.item-options dt.label { margin-top: 15px; }
-
+.checkout-index-index .opc-block-summary .table-totals { border-top: none; }
+.checkout-index-index .opc-block-summary > .title {  padding-bottom: 30px; }
