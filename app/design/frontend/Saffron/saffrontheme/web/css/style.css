@@ -2171,7 +2171,7 @@ button.action.action-edit-address {
     margin-top: 20px;
 }
 button.action.action-edit-address:hover{ background: #4E4F53; } 
-.checkout-index-index .opc-block-summary {   padding-bottom: 0; }
+.checkout-index-index .opc-block-summary {   padding-bottom: 0; padding-top:0; }
 .checkout-onepage-success .columns { padding: 30px 0 60px; }
 .checkout-onepage-success .menubar { background: #F57B3B; }
 .box-content address { line-height: 26px; }
@@ -3555,3 +3555,9 @@ span.info-span:hover span.info-hoverd {
 .cms-find-a-store .banner-title-notfront { display:none; }
 .cms-find-a-store .column.main h1 { min-height: 250px; padding: 100px 0 50px; }
 /*--/temp-css--*/
+
+li#shipping.checkout-shipping-address { margin-top: 37px; }
+.checkout-index-index .modal-inner-wrap .modal-header { display:none; }
+.checkout-index-index .opc-wrapper .step-title { border-bottom: none; }
+.checkout-index-index dl.item-options dt.label { margin-top: 15px; }
+
