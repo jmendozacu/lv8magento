@@ -7,7 +7,8 @@ define([
     'Magento_Checkout/js/model/full-screen-loader',
     'Magento_Checkout/js/model/quote',
     'Magento_Checkout/js/model/cart/totals-processor/default',
-    'Magento_Checkout/js/model/cart/cache'
+    'Magento_Checkout/js/model/cart/cache',
+	'Magento_Checkout/js/view/payment'
 ], function ($, ko, url, totals, getPaymentInformation, fullScreenLoader, quote, totalsDefaultProvider, cartCache) {
     'use strict';
 

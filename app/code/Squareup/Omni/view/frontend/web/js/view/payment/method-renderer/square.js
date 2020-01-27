@@ -7,7 +7,7 @@ define(
         'Magento_Checkout/js/model/payment/additional-validators',
         'Magento_Checkout/js/action/redirect-on-success',
         'Squareup_Omni/js/view/payment/giftcard/square',
-        'Magento_Checkout/js/model/quote'
+        'Magento_Checkout/js/model/quote',
 		'Magento_Checkout/js/view/payment'
     ],
     function (
