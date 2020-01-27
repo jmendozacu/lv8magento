@@ -82,11 +82,13 @@
                <div class="container">
 			  
                  
-			 <div class="row">
+			 
                   <?php $i= 1; foreach($NewsAllPost as $post)
                     $item_post = $post->getData();
 				  {?>
+				  
 				  <div  class="post" id="post_<?php echo $item_post['id']; ?>">
+				  <div class="row">
                         <div class="col-lg-6 col-md-6 col-12 left-col">
                             <div class="launches-bx">
                                 <h3><?php echo $item_post['post_title']?></h3>
@@ -141,17 +143,17 @@
     );
 </script>
 				
-</div>
-				
+                     </div>
+				 </div> 
 				  <?php $i++; } ?>
 
                        <div class="col-12 read-col">
-                            <a href="javascript:void(0);" class="text-link">See More</a>
-							<h1 class="load-more">Load More</h1>
+                            <a href="javascript:void(0);" class="load-more text-link">See More</a>
+							<!--<h5 class="load-more">Load More</h5>-->
 							<input type="hidden" id="row" value="0">
 							<input type="hidden" id="all" value="<?php echo $allcount; ?>">
                         </div>				  
-					 </div> 
+					
                </div>
            </div>
            <!--/CBDX-launches-->

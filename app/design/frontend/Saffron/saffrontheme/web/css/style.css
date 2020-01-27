@@ -3549,6 +3549,8 @@ span.info-hoverd {
 span.info-span:hover span.info-hoverd {
     display: block;
 }
+.cbdx-launches .post { display: flex; }
+
 /*--temp-css--*/
 .cms-find-a-store .banner-title-notfront { display:none; }
 .cms-find-a-store .column.main h1 { min-height: 250px; padding: 100px 0 50px; }
