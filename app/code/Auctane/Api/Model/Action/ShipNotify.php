@@ -2,8 +2,6 @@
 
 namespace Auctane\Api\Model\Action;
 
-use Auctane\Api\Model\OrderDoesNotExistException;
-use Auctane\Api\Model\ShipmentCannotBeCreatedForOrderException;
 use Exception;
 
 class ShipNotify
@@ -12,7 +10,7 @@ class ShipNotify
      * Invoice Comment
      */
     const COMMENT = 'Issued by Auctane ShipStation.';
-
+    
     /**
      * Order factory
      *
@@ -23,7 +21,7 @@ class ShipNotify
     /**
      * Scope config interface
      *
-     * @var \Magento\Framework\App\Config\ScopeConfigInterface
+     * @var \Magento\Framework\App\Config\ScopeConfigInterface 
      */
     private $_scopeConfig;
 
@@ -36,7 +34,7 @@ class ShipNotify
 
     /**
      * Shipment factory
-     *
+     * 
      * @var \Magento\Sales\Model\Order\ShipmentFactory
      */
     private $_shipmentFactory;
@@ -71,17 +69,10 @@ class ShipNotify
 
     /**
      * Import child
-     *
+     * 
      * @var boolean
      */
     private $_importChild = 0;
-
-    /**
-     * Custom Invoicing
-     *
-     * @var boolean
-     */
-    private $_customInvoicing = 0;
 
     /**
      * Scope interface
@@ -92,25 +83,25 @@ class ShipNotify
 
     /**
      * Product type
-     *
+     * 
      * @var \Magento\Catalog\Model\Product\Type
      */
     private $_typeBundle = '';
 
-    /**
-     * Shipnotify contructor
-     *
-     * @param \OrderFactory $orderFactory order factory
-     * @param \ScopeConfigInterface $scopeConfig scope config
-     * @param \TransactionFactory $transactionFactory transaction
-     * @param \ShipmentFactory $shipmentFactory shipment
-     * @param \InvoiceSender $invoiceSender invoice
-     * @param \ShipmentSender $shipmentSender shipment
-     * @param \TrackFactory $trackFactory track
-     * @param \Data $dataHelper helper
-     *
-     * @return boolean
-     */
+     /**
+      * Shipnotify contructor
+      * 
+      * @param \OrderFactory         $orderFactory       order factory
+      * @param \ScopeConfigInterface $scopeConfig        scope config
+      * @param \TransactionFactory   $transactionFactory transaction
+      * @param \ShipmentFactory      $shipmentFactory    shipment
+      * @param \InvoiceSender        $invoiceSender      invoice  
+      * @param \ShipmentSender       $shipmentSender     shipment 
+      * @param \TrackFactory         $trackFactory       track
+      * @param \Data                 $dataHelper         helper
+      *
+      * @return boolean
+      */
     public function __construct(
         \Magento\Sales\Model\OrderFactory $orderFactory,
         \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig,
@@ -129,20 +120,12 @@ class ShipNotify
         $this->_shipmentSender = $shipmentSender;
         $this->_trackFactory = $trackFactory;
         $this->_dataHelper = $dataHelper;
-
+        
         $this->_store = \Magento\Store\Model\ScopeInterface::SCOPE_STORE;
         //Check for the import child items for the bundle product
         $importChild = 'shipstation_general/shipstation/import_child_products';
         $this->_importChild = $this->_scopeConfig->getValue(
-            $importChild,
-            $this->_store
-        );
-
-        // Settings to check custom/auto invoice is enabled on not
-        $customInvoicing = 'shipstation_general/shipstation/custom_invoicing';
-        $this->_customInvoicing = $this->_scopeConfig->getValue(
-            $customInvoicing,
-            $this->_store
+            $importChild, $this->_store
         );
 
         $this->_typeBundle = \Magento\Catalog\Model\Product\Type::TYPE_BUNDLE;
@@ -162,7 +145,7 @@ class ShipNotify
         try {
             $order = $this->_getOrder($xml->OrderID);
             $qtys = $this->_getOrderItemQtys($xml->Items, $order);
-            if ($order->canInvoice() && !$this->_customInvoicing) {
+            if ($order->canInvoice()) {
                 // 'NotifyCustomer' must be "true" or "yes" to trigger email
                 $notify = filter_var($xml->NotifyCustomer, FILTER_VALIDATE_BOOLEAN);
                 $invoice = $order->prepareInvoice($qtys);
@@ -182,12 +165,32 @@ class ShipNotify
             if ($order->canShip()) {
                 $shipment = $this->_getOrderShipment($order, $qtys, $xml);
             } else {
-                throw new ShipmentCannotBeCreatedForOrderException($xml->OrderID);
+                throw new Exception(
+                    "Shipment can not be created for Order : {$xml->OrderID}",
+                    400
+                );
             }
 
         } catch (Exception $fault) {
             return $this->_dataHelper->fault($fault->getCode(), $fault->getMessage());
         }
+    }
+    
+    /**
+     * Save the order transaction
+     *
+     * @param \Magento\Sales\Model\Order $order order
+     * @param object                     $type  transaction type
+     *
+     * @return boolean
+     */
+    private function _saveTransaction($order, $type)
+    {
+        // \Magento\Framework\DB\Transaction $transaction
+        $transaction = $this->_transactionFactory->create();
+        $transaction->addObject($type)
+            ->addObject($order)
+            ->save();
     }
 
     /**
@@ -202,7 +205,7 @@ class ShipNotify
         //$order \Magento\Sales\Model\Order
         $order = $this->_orderFactory->create()->loadByIncrementId($orderId);
         if (!$order->getIncrementId()) {
-            throw new OrderDoesNotExistException($orderId);
+            throw new Exception("Order '{$orderId}' does not exist", 400);
         }
 
         return $order;
@@ -211,17 +214,15 @@ class ShipNotify
     /**
      * Get order quantity
      *
-     * @param object $xmlItems xml
-     * @param \Magento\Sales\Model\Order $order order
+     * @param object                     $xmlItems xml 
+     * @param \Magento\Sales\Model\Order $order    order
      *
      * @return item quantity
      */
     private function _getOrderItemQtys($xmlItems, $order)
     {
-        $shipAll = !count((array)$xmlItems);
+        $shipAll = !count((array) $xmlItems);
         $qtys = [];
-        $skuCount = [];
-
         /* @var $item Mage_Sales_Model_Order_Item */
         foreach ($order->getItems() as $item) {
             /* collect all items qtys if shipall flag is true */
@@ -235,36 +236,18 @@ class ShipNotify
             }
 
             // search for item by SKU
-            $sku = trim($item->getSku());
+            $sku = addslashes($item->getSku());
             $xmlItemResult = $xmlItems->xpath(
                 sprintf('//Item/SKU[text()="%s"]/..', $sku)
             );
-
-            if (count($xmlItemResult) > 1) {
-                if (isset($skuCount[$sku])) {
-                    $count = $skuCount[$sku];
-                    $skuCount[$sku] = $skuCount[$sku] + 1;
-                } else {
-                    $count = 0;
-                    $skuCount[$sku] = 1;
-                }
-
-                list($xmlItem) = $xmlItemResult[$count];
-            } elseif (is_array($xmlItemResult) && !empty($xmlItemResult)) {
+            if (!empty($xmlItemResult)) {
                 list($xmlItem) = $xmlItemResult;
-            } else {
-                $xmlItem = null;
-            }
-
-            if ($xmlItem) {
-                $itemSku = trim($xmlItem->SKU);
-                // store quantity by order item ID, not by SKU
-                if ($itemSku == $sku) {
-                    $qtys[$item->getId()] = (float)$xmlItem->Quantity;
+                if ($xmlItem) {
+                    // store quantity by order item ID, not by SKU
+                    $qtys[$item->getId()] = (float) $xmlItem->Quantity;
                     if ($item->getParentItemId()) {
-                        $qtys[$item->getParentItemId()] = (float)$xmlItem->Quantity;
+                        $qtys[$item->getParentItemId()] = (float) $xmlItem->Quantity;
                     }
-
                 }
 
             }
@@ -288,28 +271,11 @@ class ShipNotify
     }
 
     /**
-     * Save the order transaction
-     *
-     * @param \Magento\Sales\Model\Order $order order
-     * @param object $type transaction type
-     *
-     * @return boolean
-     */
-    private function _saveTransaction($order, $type)
-    {
-        // \Magento\Framework\DB\Transaction $transaction
-        $transaction = $this->_transactionFactory->create();
-        $transaction->addObject($type)
-            ->addObject($order)
-            ->save();
-    }
-
-    /**
      * Order shipment
      *
      * @param \Magento\Sales\Model\Order $order order
-     * @param array $qtys quantity
-     * @param object $xml xml
+     * @param array                      $qtys  quantity
+     * @param object                     $xml   xml
      *
      * @return Shipment
      */
@@ -318,8 +284,8 @@ class ShipNotify
         //Set the tracking information.
         $tracking[] = [
             'number' => $xml->TrackingNumber,
-            'carrier_code' => $xml->Carrier,
-            'title' => strtoupper($xml->Carrier)
+            'carrier_code'=> $xml->Carrier,
+            'title'=> strtoupper($xml->Carrier)
         ];
         $shipment = $this->_shipmentFactory->create($order, $qtys, $tracking);
         // Internal notes are only visible to admin
@@ -329,12 +295,12 @@ class ShipNotify
 
         // 'NotifyCustomer' must be "true" or "yes" to trigger an email
         $notify = filter_var($xml->NotifyCustomer, FILTER_VALIDATE_BOOLEAN);
-
+        
         if ($xml->NotesToCustomer) {
             $shipment->setCustomerNote($xml->NotesToCustomer);
             $shipment->setCustomerNoteNotify($notify);
         }
-
+        
         $shipment->register();
         $order->setIsInProgress(true);
         //Save the shipment tranaction
@@ -342,7 +308,7 @@ class ShipNotify
         if ($notify) {
             $this->_shipmentSender->send($shipment);
         }
-
+        
         return $shipment;
     }
 }

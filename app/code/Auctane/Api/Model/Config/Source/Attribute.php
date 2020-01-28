@@ -2,6 +2,8 @@
 
 namespace Auctane\Api\Model\Config\Source;
 
+use Magento\Framework\Api\AttributeValueFactory;
+
 class Attribute implements \Magento\Framework\Option\ArrayInterface
 {
     /**
@@ -21,7 +23,7 @@ class Attribute implements \Magento\Framework\Option\ArrayInterface
     ) {
         $this->_factory = $factory;
     }
-
+    
     /**
      * Options getter
      *
