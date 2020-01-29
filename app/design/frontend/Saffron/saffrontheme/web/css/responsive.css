@@ -448,7 +448,6 @@
 	.nav-sections-items .menuBtn .menubar { background: #fff; }
 	.menu-item-front:after { content: ""; position: absolute; height: 32vh; width: 100%; 
 		background: rgba(0, 0, 0, 0.3); left: 0; right: 0; z-index:12; }
-	.box-tocart .fieldset { display: inherit; }
 	.box-tocart .fieldset .actions { margin-top: 30px; }	
 	body.checkout-index-index .checkout-block { margin:0 15px 20px; }
 	.menu-inner { padding:30px 15px; }
