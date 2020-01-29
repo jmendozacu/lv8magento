@@ -2959,7 +2959,8 @@ form#review-form .fieldset > .field .field.choice {
 }
 .related .products-related li.item {  width: 33.333%;  padding: 0 15px; margin-bottom:60px; }
 .related .products-related  ol.products {  margin: 0 -15px; }
-.related .products-related li.item .product-item-info {  width: 100%; margin:0; }
+.related .products-related li.item .product-item-info {  
+	width: 100%; margin:0; border:none; padding:0; }
 .block.related .product-item-info:hover {
     box-shadow: none;
     border: none; margin:0; padding:0;
