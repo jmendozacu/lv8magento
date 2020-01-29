@@ -913,6 +913,8 @@
 	.cms-privacy-policy .page-main { padding-top:0; }
 	.product-reviews-summary .reviews-actions a:not(:last-child){ margin-bottom:8px; }
 	.box-tocart, .product-info-main .product-reviews-summary { margin-bottom: 15px; }
+	.cart-container .control.qty { text-align: left; margin-top: 5px; }
+	table#shopping-cart-table td {  padding-bottom: 10px; }
 	
 }
 
