@@ -912,6 +912,7 @@
 	span.info-hoverd { top:20px; left:0; }
 	.cms-privacy-policy .page-main { padding-top:0; }
 	.product-reviews-summary .reviews-actions a:not(:last-child){ margin-bottom:8px; }
+	.box-tocart { margin-bottom: 15px; }
 	
 }
 
