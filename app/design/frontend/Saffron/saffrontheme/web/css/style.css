@@ -3086,6 +3086,7 @@ ol.items.review-items .review-content { margin-bottom: 10px; }
 .banner-detail-page {
     float: left;
     width: 100%;
+	padding:0 15px;
 }
 .review_section {
     float: left;
