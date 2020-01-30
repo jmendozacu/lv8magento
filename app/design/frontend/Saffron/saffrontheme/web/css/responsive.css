@@ -766,7 +766,7 @@
 	.authentication-dropdown .modal-inner-wrap .modal-content { padding:0; }
 	.checkout-success .actions-toolbar {  margin-top: 20px; }
 	.checkout-onepage-success .banner-title-notfront { width:100%; }
-	.checkout-onepage-success .banner-title-notfront h1.page-title { font-size:28px; }
+	.checkout-onepage-success .banner-title-notfront h1.page-title { font-size:24px; }
 	body[class*="customer-account-"] .banner-title-notfront, .multishipping-checkout-login .banner-title-notfront {
 		width:100%; 
 	}
@@ -923,7 +923,7 @@
 		right: 0;
 		background: #fff;
 		padding: 15px;
-		z-index: 9;
+		z-index: 2;
 		margin: 0;
 	}
 	.checkout-cart-index ul.checkout.methods.items.checkout-methods-items .item:last-child {
@@ -936,6 +936,11 @@
 	.checkout-index-index #sq-walletbox { margin:0; padding:0;}
 	.checkout-index-index .opc-wrapper .form-discount { padding:0;}
 	body .checkout-payment-method .payment-option-title .action-toggle {margin-top:10px; }
+	.block-minicart .block-content > .actions > .primary .action.primary {
+		padding: 12px 10px; font-size: 16px;
+	}
+	.checkout-payment-method .payment-methods .actions-toolbar .primary { width:100%; }
+	.checkout-onepage-success .banner-title-notfront { margin-top:35px;}
 	
 }
 
