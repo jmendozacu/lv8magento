@@ -495,7 +495,7 @@
 	.worx-page.page-layout-1column .header-sticky img { height: 24px; }
 	.checkout-index-index header.header .header.content .minicart-wrapper { margin-right:115px; }
 	.checkout-index-index #checkout.am-checkout { padding:0; }
-	.checkout-index-index .authentication-wrapper { margin:0; }
+	.checkout-index-index .authentication-wrapper { margin:-45px 0 0; }
 	.opc-estimated-wrapper {  margin: 90px 0 30px; }
 	body.checkout-index-index .checkout-block { padding:20px 15px; margin: 0 0 20px; }
 	.opc-wrapper .methods-shipping { padding-top:0; }

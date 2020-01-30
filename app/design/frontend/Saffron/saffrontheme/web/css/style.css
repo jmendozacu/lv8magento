@@ -3625,8 +3625,6 @@ li#shipping.checkout-shipping-address { margin-top: 37px; }
 .checkout-index-index .block-authentication .actions-toolbar > .secondary {
 	margin-right: 0;
 }
-
-
-
+.authentication-wrapper button.action.action-auth-toggle:hover{	background:#4E4F53; }
 
 
