@@ -165,7 +165,7 @@
         </div>
 		
 		
-
+<span id="categries-video"> </span>
 
 
 <script>
@@ -216,7 +216,7 @@ $(document).ready(function(){
 	$.ajax({
         url: "<?php echo $this->getBaseUrl()?>news/index/recentvideo/",
         type: "GET",
-        data:  {"page":1},
+        data:  {"row":1},
         success: function(response){
 		$('#categries-video').html(response);	
 		//$("#loderpop").removeClass("showpopup");
