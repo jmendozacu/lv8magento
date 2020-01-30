@@ -915,6 +915,21 @@
 	.box-tocart, .product-info-main .product-reviews-summary { margin-bottom: 15px; }
 	.cart-container .control.qty { text-align: left; margin-top: 5px; }
 	table#shopping-cart-table td {  padding-bottom: 10px; }
+	.checkout-cart-index ul.checkout.methods.items.checkout-methods-items {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: #fff;
+		padding: 15px;
+		z-index: 9;
+		margin: 0;
+	}
+	.checkout-cart-index ul.checkout.methods.items.checkout-methods-items .item:last-child {
+		display: none;
+	}
+	.checkout-cart-index ul.checkout.methods.items.checkout-methods-items .item{ margin: 0; }
+	.checkout-cart-index footer.page-footer { padding-bottom: 80px; }
 	
 }
 

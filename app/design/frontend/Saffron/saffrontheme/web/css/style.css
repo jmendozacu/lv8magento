@@ -1940,7 +1940,6 @@ table#shopping-cart-table td { vertical-align: middle; }
 .cart.table-wrapper .actions-toolbar > .action-edit:before,
 .cart.table-wrapper .actions-toolbar > .action-delete:before {  color: #F57B3B; }
 button.action.update {
-    background: #F57B3B;
     color: #fff;
     border: none;
     font-weight: normal;
@@ -1949,6 +1948,7 @@ button.action.update {
     text-transform: uppercase;
     background: #4E4F53;
 }
+button.action.update:hover{  background: #F57B3B; }
 .cart-summary {  background: #f8f8f8; }
 .paypal-review-discount .actions-toolbar .action.primary,.paypal-review-discount .actions-toolbar .action.cancel, .cart-discount .actions-toolbar .action.primary,.cart-discount .actions-toolbar .action.cancel {
 	box-shadow: none !important;border: none;background: #F57B3B;color: #fff;
