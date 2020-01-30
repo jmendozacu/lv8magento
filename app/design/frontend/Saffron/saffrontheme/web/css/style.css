@@ -3631,4 +3631,5 @@ li#shipping.checkout-shipping-address { margin-top: 37px; }
 .authentication-wrapper button.action.action-auth-toggle:hover{	background:#4E4F53; }
 .checkout-onepage-success #registration { width:100%; }
 .checkout-payment-method .payment-method-title { display:flex; }
-
+.checkout-cart-configure .box-tocart .field.qty input#qty { border: 1px solid #979797;}
+.checkout-cart-configure .box-tocart .fieldset .actions { margin-top: 20px; }
