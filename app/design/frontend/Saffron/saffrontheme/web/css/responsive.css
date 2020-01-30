@@ -941,6 +941,7 @@
 	}
 	.checkout-payment-method .payment-methods .actions-toolbar .primary { width:100%; }
 	.checkout-onepage-success .banner-title-notfront { margin-top:35px;}
+	.checkout-onepage-success .action.primary { padding: 12px 20px; font-size: 16px; }
 	
 }
 
