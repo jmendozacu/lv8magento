@@ -499,7 +499,8 @@
 	.opc-estimated-wrapper {  margin: 90px 0 30px; }
 	body.checkout-index-index .checkout-block { padding:20px 15px; margin: 0 0 20px; }
 	.opc-wrapper .methods-shipping { padding-top:0; }
-	.checkout-payment-method .payment-methods .actions-toolbar .primary { margin-top:20px; }
+	.checkout-payment-method .payment-methods .actions-toolbar .primary { 
+	margin-top:20px; padding:0 0 20px;}
 	.opc-wrapper .form-login, .opc-wrapper .form-shipping-address, .opc-wrapper .methods-shipping {
 		margin:0; padding:0; background:none;
 	}
@@ -931,7 +932,8 @@
 	.checkout-cart-index ul.checkout.methods.items.checkout-methods-items .item{ margin: 0; }
 	.checkout-cart-index footer.page-footer { padding-bottom: 80px; }
 	.checkout-index-index .modal-inner-wrap .modal-header { display: block; }
-	.checkout-index-index div#payment_form_squareup_payment #sq-ccbox {margin-top:40px; }
+	.checkout-index-index div#payment_form_squareup_payment #sq-ccbox {margin:40px 0 0; padding:0; }
+	.checkout-index-index #sq-walletbox { margin:0; padding:0;}
 	.checkout-index-index .opc-wrapper .form-discount { padding:0;}
 	body .checkout-payment-method .payment-option-title .action-toggle {margin-top:10px; }
 	
