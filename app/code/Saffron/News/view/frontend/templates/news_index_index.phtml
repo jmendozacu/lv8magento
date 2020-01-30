@@ -152,7 +152,7 @@
                        <div class="col-12 read-col">
                             <a href="javascript:void(0);" class="load-more text-link">See More</a>
 							<!--<h5 class="load-more">Load More</h5>-->
-							<input type="hidden" id="row" value="0">
+							<input type="hidden" id="row" value="1">
 							<input type="hidden" id="all" value="<?php echo $allcount; ?>">
                        </div>				  
 					
@@ -248,7 +248,7 @@ require([ 'jquery'], function($){
         var row = Number($('#row').val());
         var allcount = Number($('#all').val());
         row = row + 1;
-
+        
         if(row <= allcount){
             $("#row").val(row);
 
