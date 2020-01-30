@@ -249,7 +249,7 @@ require([ 'jquery'], function($){
         var allcount = Number($('#all').val());
         row = row + 1;
         
-		alert(row)
+		//alert(row)
         if(row < allcount){
             $("#row").val(row);
 
@@ -297,8 +297,9 @@ require([ 'jquery'], function($){
 
                 // Change the text and background
                 $('.load-more').text("All Loaded");
-                $('.load-more').css("background","#15a9ce");
-                //$('.load-more').css("display","none");
+                $('.load-more').css("background","#4f5054");
+				$('.load-more').css("color","#ffffff");
+                $('.load-more').css("padding","8px");
             }, 2000);
 
 
