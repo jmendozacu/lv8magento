@@ -11,7 +11,7 @@ class Recentvideo extends \Magento\Framework\App\Action\Action
 	
     echo $this->_view->getLayout()
                  ->createBlock("Saffron\News\Block\Index\Recentvideo")
-                 ->setTemplate("Saffron_News::news_index_Recentvideo.phtml")
+                 ->setTemplate("Saffron_News::news_index_recentvideo.phtml")
                  ->toHtml();
 	
         die;
