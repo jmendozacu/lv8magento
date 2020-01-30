@@ -931,6 +931,9 @@
 	.checkout-cart-index ul.checkout.methods.items.checkout-methods-items .item{ margin: 0; }
 	.checkout-cart-index footer.page-footer { padding-bottom: 80px; }
 	.checkout-index-index .modal-inner-wrap .modal-header { display: block; }
+	.checkout-index-index div#payment_form_squareup_payment #sq-ccbox {margin-top:40px; }
+	.checkout-index-index .opc-wrapper .form-discount { padding:0;}
+	body .checkout-payment-method .payment-option-title .action-toggle {margin-top:10px; }
 	
 }
 
