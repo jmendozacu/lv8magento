@@ -5,14 +5,14 @@ $newcategories = $newcategories->getData() ;
 //echo "<pre>";print_r( $newcategories);
 ?>
 <?php if(count($newcategories) != '0') { ?>
- <div class="row">
+ <!--<div class="row">-->
  <?php $i= 1; foreach($newcategories as $item_post)
                     //$item_post = $post->getData();
 				  //echo"<pre>";print_r($item_post );
 				  
 				  {?>
 				  
-                        <div class="col-lg-6 col-md-6 col-12 left-col">
+                        <!--<div class="col-lg-6 col-md-6 col-12 left-col">
                             <div class="launches-bx">
                                 <h3><?php echo $item_post['post_title']?></h3>
                                 <p><?php echo $item_post['short_content']?></p>
@@ -22,17 +22,79 @@ $newcategories = $newcategories->getData() ;
                             <div class="launches-vide-col">
                                 <img src="<?php echo $this->getMediaUrl().$item_post['thumbnail']?>" alt="<?php echo $item_post['post_title']?>" class="img-fluid">
                             </div>
+                        </div>-->
+                       
+                   
+				   
+				  <div  class="post" id="post_<?php echo $item_post['id']; ?>">
+				  <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12 left-col">
+                            <div class="launches-bx">
+                                <h3><?php echo $item_post['post_title']?></h3>
+                                <p><?php echo $item_post['short_content']?></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12 right-col">
+                            <div class="launches-vide-col"  id="click-header<?php echo $i;?>">
+                                <img src="<?php echo $this->getMediaUrl().$item_post['vedioimg']?>" alt="<?php echo $item_post['post_title']?>" class="img-fluid">
+                            </div>
                         </div>
                        
                    
-					
-				  <?php $x = $i++; } ?>
+				   
+	<div id="header-mpdal<?php echo $i;?>" style="display:none;">
+    <div class="videoWrapper">
+        <iframe allow="encrypted-media" allowfullscreen="" frameborder="0" gesture="media" height="315" src="https://www.youtube.com/embed/<?php echo $item_post['video_url'];?>" width="560">
+        </iframe>
+    </div>
+    </div>
+				   
+  <script>
+    require(
+        [
+            'jquery',
+            'Magento_Ui/js/modal/modal'
+        ],
+        function(
+            $,
+            modal
+        ) {
+            var options = {
+                type: 'popup',
+                responsive: true,
+                innerScroll: true,
+                title: '',
+                buttons: [{
+                    text: $.mage.__('Close'),
+                    class: '',
+                    click: function () {
+                        this.closeModal();
+                    }
+                }]
+            };
 
-                       <div class="col-12 read-col">
+            var popup = modal(options, $('#header-mpdal<?php echo $i;?>'));
+            $("#click-header<?php echo $i;?>").on('click',function(){ 
+                $("#header-mpdal<?php echo $i;?>").modal("openModal");
+            });
+
+        }
+    );
+</script>
+				
+                     </div>
+				 </div> 
+				   
+				   
+				   
+					
+				  <?php  $i++; } ?>
+
+                      <!-- <div class="col-12 read-col">
                             <a href="javascript:void(0);" class="text-link <?php echo($x+2); ?>"  onclick="getLoadmorevideo(<?php echo ($x +2) ;?>)">See More</a>
                         </div>	
                        
-	</div>                  
+	</div>    -->              
 				  
 <?php }else {?>
 
@@ -43,7 +105,7 @@ $newcategories = $newcategories->getData() ;
 
 
 <script>
-function getLoadmorevideo(page){
+/*function getLoadmorevideo(page){
 	
 jQuery(document).ready(function($){
   $("#loderpop").addClass("showpopup");
@@ -63,5 +125,5 @@ jQuery(document).ready(function($){
  
 });
 	
-}
+}*/
 </script>           

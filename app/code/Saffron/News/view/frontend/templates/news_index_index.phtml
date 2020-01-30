@@ -83,7 +83,7 @@
 			  
                  
 			 
-                  <?php $i= 1; foreach($NewsAllPost as $post)
+					<?php $i= 1; foreach($NewsAllPost as $post)
                     $item_post = $post->getData();
 				  {?>
 				  
@@ -165,7 +165,7 @@
         </div>
 		
 		
-<span id="categries-video"> </span>
+
 
 
 <script>
@@ -213,7 +213,7 @@ $(document).ready(function(){
 	
 	
 	
-	$.ajax({
+	/*$.ajax({
         url: "<?php echo $this->getBaseUrl()?>news/index/recentvideo/",
         type: "GET",
         data:  {"row":1},
@@ -221,7 +221,7 @@ $(document).ready(function(){
 		$('#categries-video').html(response);	
 		//$("#loderpop").removeClass("showpopup");
         }
-	  });
+	  });*/
 	
 	
 	
