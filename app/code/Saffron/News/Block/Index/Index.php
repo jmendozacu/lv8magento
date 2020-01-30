@@ -64,7 +64,17 @@ public function getNewsvedio(){
 		
 	}
 	
-
+public function getNewsvediocount(){
+		
+	$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+   	$newcategories = $objectManager->create('Saffron\News\Model\ResourceModel\Newspost\Collection')
+			 ->addFieldToFilter('status', array('eq' => 0))
+			 ->addFieldToFilter('featured', array('eq' => 2));
+			 
+	      return   $newcategories  ;	
+		
+	}
+	
 	
 public function getMediaUrl(){
 	$objectManager = \Magento\Framework\App\ObjectManager::getInstance();

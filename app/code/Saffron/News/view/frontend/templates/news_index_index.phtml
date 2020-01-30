@@ -1,7 +1,9 @@
 <?php  $newcategories =$this->getNewcategories();?>
 <?php  $newsFeacture =$this->getNewsFeacture();?>
 <?php  $NewsAllPost =$this->getNewsAllPost();?>
-<?php  $NewsAllPost =$this->getNewsvedio();?>
+<?php  $NewsAllPost1 =$this->getNewsvedio();?>
+<?php  $Newsvediocount =$this->getNewsvediocount();?>
+
 
 <div class="section-notfront">
            
@@ -78,12 +80,12 @@
            <!--CBDX-launches-->
            <div class="cbdx-launches row-full" data-aos="fade-up" data-aos-offset="150"  data-aos-easing="ease-in-sine">
 		   
-		   <?php $allcount = count($NewsAllPost);  echo $allcount ; ?>
+		   <?php $allcount = count($Newsvediocount);  echo $allcount; ?>
                <div class="container">
 			  
                  
 			 
-					<?php $i= 1; foreach($NewsAllPost as $post)
+					<?php $i= 1; foreach($NewsAllPost1 as $post)
                     $item_post = $post->getData();
 				  {?>
 				  
