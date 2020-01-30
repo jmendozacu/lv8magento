@@ -73,9 +73,9 @@ $newcategories = $newcategories->getData() ;
                 }]
             };
 
-            var popup = modal(options, $('#header-mpdal<?php echo $item; ?> '));
-            $("#click-header<?php echo $item;?>").on('click',function(){ 
-                $("#header-mpdal<?php echo $item ;?>").modal("openModal");
+            var popup = modal(options, $('#header-mpdal<?php echo $item_post['id']; ?>'));
+            $("#click-header<?php echo $item_post['id']; ?>").on('click',function(){ 
+                $("#header-mpdal<?php echo $item_post['id']; ?>").modal("openModal");
             });
 
         }
