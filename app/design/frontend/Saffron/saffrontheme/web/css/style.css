@@ -378,9 +378,6 @@ body.page-front .front-banner .item {  height:100vh !important; }
 }
 .menu-inner .adrs-col {
     margin: 0 0 25px; float: left; width:100%;
-	display: flex; display: -webkit-flex;
-    flex: 1;
-    flex-direction: column;
 }
 .cbdx-brands-col { float: left; width:100%; margin-bottom: 30px; }
 .cbdx-brands-col h5,

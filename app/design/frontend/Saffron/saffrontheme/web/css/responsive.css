@@ -140,6 +140,8 @@
 		.review-customer-index .table-wrapper .table tbody td { min-width:180px; }
 		.cms-internships .banner-title-notfront h1 { font-weight:700; }
 		.checkout-shipping-method .actions-toolbar > .primary{float:left; margin-top:20px; }
+		.menu-inner .adrs-col { 
+			display: flex; display: -webkit-flex; flex: 1; flex-direction: column; }
  }
 
 
@@ -942,6 +944,7 @@
 	.checkout-payment-method .payment-methods .actions-toolbar .primary { width:100%; }
 	.checkout-onepage-success .banner-title-notfront { margin-top:35px;}
 	.checkout-onepage-success .action.primary { padding: 12px 20px; font-size: 16px; }
+	
 	
 }
 
