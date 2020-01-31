@@ -2474,7 +2474,7 @@ footer.modal-footer button {
 .modal-inner-wrap .modal-content { padding: 20px; }
 .modal-popup .modal-inner-wrap {
     width: 90%;
-    max-width: 900px;
+    max-width: 700px;
 }
 .learn-more-link:visited { color: #F57B3B; }
 .science-container .cms-title h1 {  margin-bottom: 10px; }
