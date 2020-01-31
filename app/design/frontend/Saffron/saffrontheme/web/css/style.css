@@ -417,7 +417,7 @@ body.page-front .front-banner .item {  height:100vh !important; }
 .menu-item-labs .social-col h5 { color:#4d75a4; }
 .menu-item-worx  .social-col h5 {  color:#37BFB2; }
 .menu-item-cbdx .social-col h5 { color:#F57B3B; }
-.menu-open{ overflow: hidden; }
+.menu-open{ overflow: hidden; position:fixed; }
 .menu-inner {
     float: left;
     width: 100%;
