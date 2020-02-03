@@ -246,42 +246,6 @@ require([ 'jquery'], function($){
 
 $(document).ready(function(){
 
-var videoButton = document.getElementById("playButton");
-var sound = document.getElementById("sound");
-
-videoButton.addEventListener('click', function(){
-     if(sound.paused){
-        sound.play();
-        videoButton.innerHTML='<i class="fa fa-pause"></i>';
-     }
-     else{
-        sound.pause();
-        videoButton.innerHTML='<i class="fa fa-play"></i>';
-     }
- });
-
-var iframeVideo = document.getElementById('video');
-var player = (iframeVideo);
-
-$('#playVideo').hide();
-
-$('#pauseVideo').click(function(){
-    player.api("pause");
-    $('#pauseVideo').hide();
-    $('#playVideo').show();
-    sound.pause();
-    videoButton.innerHTML='<i class="fa fa-play"></i>';
-    $('#fadeImage').addClass('fade-image');
-});
-
-$('#playVideo').click(function(){
-    player.api("play");
-    $('#playVideo').hide();
-    $('#pauseVideo').show();
-    sound.play();
-    videoButton.innerHTML='<i class="fa fa-pause"></i>';
-    $('#fadeImage').removeClass('fade-image');
-});
 
 //Mobile Video
 $(window).resize(function(){ 
@@ -591,13 +555,50 @@ var Froogaloop = (function(){
 </script>
 
 <script>
-    require(['https://player.vimeo.com/api/player.js'], function (Player) {
-        var iframe = document.querySelector('iframe');
-        var player = new Player(iframe);
+require(['https://player.vimeo.com/api/player.js'], function (Player) {
 
-        player.on('play', function() {
-            console.log('played the video!');
-        });
+$(document).ready(function(){  
+  //var iframe = document.querySelector('iframe');
+        //var player = new Player(iframe);
+var videoButton = document.getElementById("playButton");
+var sound = document.getElementById("sound");
+
+videoButton.addEventListener('click', function(){
+     if(sound.paused){
+        sound.play();
+        videoButton.innerHTML='<i class="fa fa-pause"></i>';
+     }
+     else{
+        sound.pause();
+        videoButton.innerHTML='<i class="fa fa-play"></i>';
+     }
+ });
+
+var iframeVideo = document.getElementById('video');
+var player = (iframeVideo);
+
+$('#playVideo').hide();
+
+$('#pauseVideo').click(function(){
+	alert('+++');
+    player.api("pause");
+    $('#pauseVideo').hide();
+    $('#playVideo').show();
+    sound.pause();
+    videoButton.innerHTML='<i class="fa fa-play"></i>';
+    $('#fadeImage').addClass('fade-image');
+});
+
+$('#playVideo').click(function(){
+	alert('+++');
+    player.api("play");
+    $('#playVideo').hide();
+    $('#pauseVideo').show();
+    sound.play();
+    videoButton.innerHTML='<i class="fa fa-pause"></i>';
+    $('#fadeImage').removeClass('fade-image');
+});
+  });
     });
 </script>
 <style>
