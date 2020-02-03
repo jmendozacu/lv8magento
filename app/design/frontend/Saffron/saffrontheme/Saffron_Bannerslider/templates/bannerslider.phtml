@@ -581,7 +581,8 @@ $('#playVideo').hide();
 
 $('#pauseVideo').click(function(){
 	alert('+++----');
-    player.api("pause");
+    //player.api("pause");
+	player.pause()
     $('#pauseVideo').hide();
     $('#playVideo').show();
     sound.pause();
@@ -591,7 +592,8 @@ $('#pauseVideo').click(function(){
 
 $('#playVideo').click(function(){
 	alert('+++');
-    player.api("play");
+    //player.api("play");
+	player.play() ;
     $('#playVideo').hide();
     $('#pauseVideo').show();
     sound.play();
