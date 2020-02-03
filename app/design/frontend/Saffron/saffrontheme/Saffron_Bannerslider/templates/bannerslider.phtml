@@ -160,9 +160,13 @@ $('#button-on').hide();
 }
 });
 });	
+});
 
 
-	});
+
+
+
+
 </script>
 
 
@@ -200,7 +204,7 @@ div#player {
 </style>
 
 
- <script src="https://player.vimeo.com/api/player.js"></script>
+
  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/froogaloop.js"></script>
  
  <section class="video-bg">
@@ -294,7 +298,16 @@ $(window).resize(function(){
 });
 </script>
 
+<script>
+    require(['https://player.vimeo.com/api/player.js'], function (Player) {
+        var iframe = document.querySelector('iframe');
+        var player = new Player(iframe);
 
+        player.on('play', function() {
+            console.log('played the video!');
+        });
+    });
+</script>
 <style>
 .main {
   position: relative;
