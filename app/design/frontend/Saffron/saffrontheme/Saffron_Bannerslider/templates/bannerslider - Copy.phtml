@@ -1,0 +1,692 @@
+<?php
+/**
+ * Copyright © 2015 Saffron.com. All rights reserved.
+
+ * @author Saffron Team <contact@Saffron.com>
+ */
+ 
+if($this->getEnable()):
+$banners = $block->getBannerSlider();
+?>
+<!--<div class="front-banner" >
+        <div class="owl-carousel owl-theme">
+		<?php $i = 1; ?>
+    <?php foreach ($banners as $banner): ?>
+	
+	    
+	
+	<?php $url_image = $this->getMediaFolder().$banner['image']; ?>
+	
+	<?php if(!empty($banner['image_alt'])){?>
+	<div class="item">
+	<div class="vedio-desktop">
+		<iframe src="https://player.vimeo.com/video/<?php echo trim($banner['image_alt']);?>?autoplay=1&amp;title=0&amp;byline=0" allowfullscreen>
+	</iframe>
+	
+	</div>	
+    <div class="vedio-mobile">	
+		<iframe src="https://player.vimeo.com/video/<?php echo trim($banner['title2']);?>?autoplay=1&amp;title=0&amp;byline=0" allowfullscreen>
+		</iframe>		
+	</div>	
+    <audio id="player">
+	<source src='<?php echo $this->getMediaFolder().'videosound/'.$banner['click_url'] ?>' type='audio/mp3'/>
+	</audio>
+
+    <div class="audio-section" id="audio-section">
+	<button id="button-on"><img src="<?php echo $this->getMediaFolder(); ?>videosound/s-off.png"></button>
+	<button id="button-off"><img src="<?php echo $this->getMediaFolder(); ?>videosound/s-on.png"></button>
+	</div>		
+	
+	    
+	</div>
+	
+	<?php } else {?>
+	
+	<div class="item"  style="background: url(<?php echo $url_image; ?>)">
+                <div class="owl-item-caption">
+                
+				 <h1><?php echo $banner['name']; ?></h1>
+				
+                </div>    
+            </div>
+	<?php } ?>
+            
+        
+	<?php $i++; ?>            
+    <?php endforeach; ?>     
+            
+        </div>
+    </div>
+
+
+
+<div class="pt-banner-container">
+   <ul class="ptowl"> 
+	<?php $i = 1; ?>
+    <?php foreach ($banners as $banner): ?>
+		
+		<?php $url_image = $this->getMediaFolder().$banner['image']; ?>
+            <li>
+				<?php if($banner['click_url']): ?>
+					<a href="<?php echo $banner['click_url'] ?>" class="pt-url">
+				<?php endif; ?>
+					<img alt="<?php echo $banner['image_alt'] ?>" src="<?php echo $url_image; ?>"/>
+				<?php if($banner['click_url']): ?>
+					</a>
+				<?php endif; ?>
+				
+				<div id="pt-banner-caption<?php echo $i; ?>" class="pt-caption pt-banner-caption">
+					
+					<div class="pt-banner-content ptslider-<?php echo $i?>">
+						<?php if($banner['name']): ?><h1 class="pt-title1"><?php echo __($banner['name']) ?></h1><?php endif; ?>
+						<?php if($banner['title1']): ?><h2 class="pt-title2" ><?php echo __($banner['title1']) ?></h2><?php endif; ?>
+						<?php if($banner['description']): ?><div class="pt-banner-des">
+							<p><?php echo __($banner['description']) ?></p>
+						</div><?php endif; ?>
+						<?php if($banner['title2']): ?><h3 class="pt-title3"><?php echo __($banner['title2']) ?></h3><?php endif; ?>
+						<?php if($banner['click_url']):?><a href="<?php echo $banner['click_url'] ?>" class="shopnow"><?php echo __('+ shop now')?></a><?php endif;?>
+					</div>	
+				</div>				
+            </li>
+		<?php $i++; ?>            
+    <?php //endif; ?>            
+    <?php endforeach; ?>            
+    </ul>
+</div>-->
+<script type="text/javascript">
+	
+	require([
+	  "jquery",
+	  "owlcarousel/minjs"
+	 ], function($,owlCarousel){
+		$(document).ready(function(){
+			$('.front-banner .owl-carousel').owlCarousel({
+			loop:true,
+			items:1,
+			margin:0,
+			nav:true,
+			dots:false,
+			autoplay: false,
+			touchDrag: false,
+			mouseDrag: false,
+			smartSpeed: 900
+       
+    }) ;
+			
+		});
+	});
+</script>
+<?php endif; ?>
+
+
+<style>
+footer.page-footer {
+    display: none;
+}
+
+small.copyright {
+    display: none;
+}
+.breadcrumbs {
+    display: none;
+}
+</style>
+
+
+
+<script type="text/javascript">
+require([ 'jquery'], function($){
+
+$(document).ready(function(){
+/***Desktop Audio button***/
+//var button = document.getElementById("audio-section");
+var audio = document.getElementById("player");
+
+$('#audio-section').click(function(e){ 
+alert('+++');
+if(audio.paused){
+	alert('+++1');
+audio.play();
+$('#button-off').hide();
+$('#button-on').show();
+
+//button.innerHTML = "<img src=\'/wp-content/uploads/2019/07/s-on.png\' width=\'46px\' height=\'46px\'>"; 
+} else {
+audio.pause();
+alert('+++2');
+$('#button-off').show();
+$('#button-on').hide();
+//button.innerHTML = "<img src=\'/wp-content/uploads/2019/07/s-off.png\' width=\'46px\' height=\'46px\'>";
+}
+});
+});	
+});
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    require(['aos'], function (AOS) {
+		AOS.init({
+                  duration: 1000,
+         });	
+		
+	
+	 });
+		
+
+</script>	
+
+<style>
+.vedio-desktop, .vedio-desktop iframe {
+    height: 100vh;
+    width: 100vw;
+}
+div#player {
+	width: 100vw;
+	height: 100vh !important;
+	max-width: 100vw !important;
+	min-width: 100vw;
+}
+.player .vp-video-wrapper .vp-preview { 
+	background-size: cover !important;
+}
+
+</style>
+
+
+<div class="mainss">
+
+ <section class="video-bg">
+        <!-- Video -->
+        <iframe src="https://player.vimeo.com/video/347091435?api=1&controls=0&loop=1&background=1&title=0&autoplay=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen id="video"></iframe>
+
+        <article>
+            <img src="https://new.lv8.com/pub/media/catalog/category/product-slider_1.jpg" alt="" id="fadeImage">
+        </article>
+
+        <!-- Sound -->
+        <div class="audio">
+            <audio id="sound" autoplay>
+                <source src="videosound/audioloop10.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <!-- Audio Button -->
+        <div class="audio-button">
+            <a href="javascript:void(0)" id="playButton"> 
+                <i class="fa fa-play"></i>
+            </a>
+        </div>
+
+        <!-- Video Button -->
+        <div class="video-button">
+            <a href="javascript:void(0)" id="playVideo">
+                <i class="fa fa-video-camera"></i>
+            </a>
+            <a href="javascript:void(0)" id="pauseVideo">
+                <i class="fa fa-stop"></i>
+            </a>
+        </div>
+  </section>
+   </div>
+  
+
+
+
+<script>
+require(['https://player.vimeo.com/api/player.js'], function (Player) {
+
+jQuery(document).ready(function($){  
+  //var iframe = document.querySelector('iframe');
+        //var player = new Player(iframe);
+var videoButton = document.getElementById("playButton");
+var sound = document.getElementById("sound");
+
+videoButton.addEventListener('click', function(){
+     if(sound.paused){
+        sound.play();
+        videoButton.innerHTML='<i class="fa fa-pause"></i>';
+     }
+     else{
+        sound.pause();
+        videoButton.innerHTML='<i class="fa fa-play"></i>';
+     }
+ });
+
+var iframeVideo = document.getElementById('video');
+var player = (iframeVideo);
+
+$('#playVideo').hide();
+
+$('#pauseVideo').click(function(){
+	alert('+++----');
+    player.api("pause");
+	//player.pause()
+    $('#pauseVideo').hide();
+    $('#playVideo').show();
+    sound.pause();
+    videoButton.innerHTML='<i class="fa fa-play"></i>';
+    $('#fadeImage').addClass('fade-image');
+});
+
+$('#playVideo').click(function(){
+	alert('+++');
+    player.api("play");
+	//player.play() ;
+    $('#playVideo').hide();
+    $('#pauseVideo').show();
+    sound.play();
+    videoButton.innerHTML='<i class="fa fa-pause"></i>';
+    $('#fadeImage').removeClass('fade-image');
+});
+  });
+    });
+</script>
+
+
+<script type="text/javascript">
+require([ 'jquery'], function($){
+
+$(document).ready(function(){
+
+
+//Mobile Video
+$(window).resize(function(){ 
+    if ($(window).width() < 768 || $(window).height() < 480) {
+        $(".mainss iframe").attr("src","https://player.vimeo.com/video/349579635?api=1&controls=0&loop=1&background=1&title=0&autoplay=1");
+    }
+    else{
+        $(".mainss iframe").attr("src","https://player.vimeo.com/video/347091435?api=1&controls=0&loop=1&background=1&title=0&autoplay=1");
+    }
+})
+
+
+// Init style shamelessly stolen from jQuery http://jquery.com
+var Froogaloop = (function(){
+    // Define a local copy of Froogaloop
+    function Froogaloop(iframe) {
+        // The Froogaloop object is actually just the init constructor
+        return new Froogaloop.fn.init(iframe);
+    }
+
+    var eventCallbacks = {},
+        hasWindowEvent = false,
+        isReady = false,
+        slice = Array.prototype.slice,
+        playerDomain = '';
+
+    Froogaloop.fn = Froogaloop.prototype = {
+        element: null,
+
+        init: function(iframe) {
+            if (typeof iframe === "string") {
+                iframe = document.getElementById(iframe);
+            }
+
+            this.element = iframe;
+
+            // Register message event listeners
+            playerDomain = getDomainFromUrl(this.element.getAttribute('src'));
+
+            return this;
+        },
+
+        /*
+         * Calls a function to act upon the player.
+         *
+         * @param {string} method The name of the Javascript API method to call. Eg: 'play'.
+         * @param {Array|Function} valueOrCallback params Array of parameters to pass when calling an API method
+         *                                or callback function when the method returns a value.
+         */
+        api: function(method, valueOrCallback) {
+            if (!this.element || !method) {
+                return false;
+            }
+
+            var self = this,
+                element = self.element,
+                target_id = element.id !== '' ? element.id : null,
+                params = !isFunction(valueOrCallback) ? valueOrCallback : null,
+                callback = isFunction(valueOrCallback) ? valueOrCallback : null;
+
+            // Store the callback for get functions
+            if (callback) {
+                storeCallback(method, callback, target_id);
+            }
+
+            postMessage(method, params, element);
+            return self;
+        },
+
+        /*
+         * Registers an event listener and a callback function that gets called when the event fires.
+         *
+         * @param eventName (String): Name of the event to listen for.
+         * @param callback (Function): Function that should be called when the event fires.
+         */
+        addEvent: function(eventName, callback) {
+            if (!this.element) {
+                return false;
+            }
+
+            var self = this,
+                element = self.element,
+                target_id = element.id !== '' ? element.id : null;
+
+
+            storeCallback(eventName, callback, target_id);
+
+            // The ready event is not registered via postMessage. It fires regardless.
+            if (eventName != 'ready') {
+                postMessage('addEventListener', eventName, element);
+            }
+            else if (eventName == 'ready' && isReady) {
+                callback.call(null, target_id);
+            }
+
+            return self;
+        },
+
+        /*
+         * Unregisters an event listener that gets called when the event fires.
+         *
+         * @param eventName (String): Name of the event to stop listening for.
+         */
+        removeEvent: function(eventName) {
+            if (!this.element) {
+                return false;
+            }
+
+            var self = this,
+                element = self.element,
+                target_id = element.id !== '' ? element.id : null,
+                removed = removeCallback(eventName, target_id);
+
+            // The ready event is not registered
+            if (eventName != 'ready' && removed) {
+                postMessage('removeEventListener', eventName, element);
+            }
+        }
+    };
+
+    /**
+     * Handles posting a message to the parent window.
+     *
+     * @param method (String): name of the method to call inside the player. For api calls
+     * this is the name of the api method (api_play or api_pause) while for events this method
+     * is api_addEventListener.
+     * @param params (Object or Array): List of parameters to submit to the method. Can be either
+     * a single param or an array list of parameters.
+     * @param target (HTMLElement): Target iframe to post the message to.
+     */
+    function postMessage(method, params, target) {
+        if (!target.contentWindow.postMessage) {
+            return false;
+        }
+
+        var url = target.getAttribute('src').split('?')[0],
+            data = JSON.stringify({
+                method: method,
+                value: params
+            });
+
+        if (url.substr(0, 2) === '//') {
+            url = window.location.protocol + url;
+        }
+
+        target.contentWindow.postMessage(data, url);
+    }
+
+    /**
+     * Event that fires whenever the window receives a message from its parent
+     * via window.postMessage.
+     */
+    function onMessageReceived(event) {
+        var data, method;
+
+        try {
+            data = JSON.parse(event.data);
+            method = data.event || data.method;
+        }
+        catch(e)  {
+            //fail silently... like a ninja!
+        }
+
+        if (method == 'ready' && !isReady) {
+            isReady = true;
+        }
+
+        // Handles messages from moogaloop only
+        if (event.origin != playerDomain) {
+            return false;
+        }
+
+        var value = data.value,
+            eventData = data.data,
+            target_id = target_id === '' ? null : data.player_id,
+
+            callback = getCallback(method, target_id),
+            params = [];
+
+        if (!callback) {
+            return false;
+        }
+
+        if (value !== undefined) {
+            params.push(value);
+        }
+
+        if (eventData) {
+            params.push(eventData);
+        }
+
+        if (target_id) {
+            params.push(target_id);
+        }
+
+        return params.length > 0 ? callback.apply(null, params) : callback.call();
+    }
+
+
+    /**
+     * Stores submitted callbacks for each iframe being tracked and each
+     * event for that iframe.
+     *
+     * @param eventName (String): Name of the event. Eg. api_onPlay
+     * @param callback (Function): Function that should get executed when the
+     * event is fired.
+     * @param target_id (String) [Optional]: If handling more than one iframe then
+     * it stores the different callbacks for different iframes based on the iframe's
+     * id.
+     */
+    function storeCallback(eventName, callback, target_id) {
+        if (target_id) {
+            if (!eventCallbacks[target_id]) {
+                eventCallbacks[target_id] = {};
+            }
+            eventCallbacks[target_id][eventName] = callback;
+        }
+        else {
+            eventCallbacks[eventName] = callback;
+        }
+    }
+
+    /**
+     * Retrieves stored callbacks.
+     */
+    function getCallback(eventName, target_id) {
+        if (target_id) {
+            return eventCallbacks[target_id][eventName];
+        }
+        else {
+            return eventCallbacks[eventName];
+        }
+    }
+
+    function removeCallback(eventName, target_id) {
+        if (target_id && eventCallbacks[target_id]) {
+            if (!eventCallbacks[target_id][eventName]) {
+                return false;
+            }
+            eventCallbacks[target_id][eventName] = null;
+        }
+        else {
+            if (!eventCallbacks[eventName]) {
+                return false;
+            }
+            eventCallbacks[eventName] = null;
+        }
+
+        return true;
+    }
+
+    /**
+     * Returns a domain's root domain.
+     * Eg. returns http://vimeo.com when http://vimeo.com/channels is sbumitted
+     *
+     * @param url (String): Url to test against.
+     * @return url (String): Root domain of submitted url
+     */
+    function getDomainFromUrl(url) {
+        if (url.substr(0, 2) === '//') {
+            url = window.location.protocol + url;
+        }
+
+        var url_pieces = url.split('/'),
+            domain_str = '';
+
+        for(var i = 0, length = url_pieces.length; i < length; i++) {
+            if(i<3) {domain_str += url_pieces[i];}
+            else {break;}
+            if(i<2) {domain_str += '/';}
+        }
+
+        return domain_str;
+    }
+
+    function isFunction(obj) {
+        return !!(obj && obj.constructor && obj.call && obj.apply);
+    }
+
+    function isArray(obj) {
+        return toString.call(obj) === '[object Array]';
+    }
+
+    // Give the init function the Froogaloop prototype for later instantiation
+    Froogaloop.fn.init.prototype = Froogaloop.fn;
+
+    // Listens for the message event.
+    // W3C
+    if (window.addEventListener) {
+        window.addEventListener('message', onMessageReceived, false);
+    }
+    // IE
+    else {
+        window.attachEvent('onmessage', onMessageReceived);
+    }
+
+    // Expose froogaloop to the global object
+    return (window.Froogaloop = window.$f = Froogaloop);
+
+})();
+
+
+
+});	
+
+});
+</script>
+
+<style>
+.mainss {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.mainss .video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.mainss .video-bg iframe {
+  width: 100vw;
+  height: 56.25vw;
+  min-height: 100vh;
+  min-width: 177.77vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.mainss .video-bg article img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100vh;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+}
+
+.mainss .video-bg .fade-image {
+  opacity: 1;
+}
+
+.mainss .video-bg .audio-button {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.mainss .video-bg .audio-button a {
+  cursor: pointer;
+  font-size: 40px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.mainss .video-bg .video-button {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  z-index: 5;
+}
+
+.mainss .video-bg .video-button a {
+  cursor: pointer;
+  font-size: 40px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .mainss .video-bg iframe {
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+}
+  </style>
