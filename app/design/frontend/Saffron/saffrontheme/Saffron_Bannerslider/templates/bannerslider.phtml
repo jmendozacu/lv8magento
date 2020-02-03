@@ -241,6 +241,59 @@ div#player {
    </div>
   
 
+
+
+<script>
+require(['https://player.vimeo.com/api/player.js'], function (Player) {
+
+jQuery(document).ready(function($){  
+  //var iframe = document.querySelector('iframe');
+        //var player = new Player(iframe);
+var videoButton = document.getElementById("playButton");
+var sound = document.getElementById("sound");
+
+videoButton.addEventListener('click', function(){
+     if(sound.paused){
+        sound.play();
+        videoButton.innerHTML='<i class="fa fa-pause"></i>';
+     }
+     else{
+        sound.pause();
+        videoButton.innerHTML='<i class="fa fa-play"></i>';
+     }
+ });
+
+var iframeVideo = document.getElementById('video');
+var player = (iframeVideo);
+
+$('#playVideo').hide();
+
+$('#pauseVideo').click(function(){
+	alert('+++----');
+    //player.api("pause");
+	player.pause()
+    $('#pauseVideo').hide();
+    $('#playVideo').show();
+    sound.pause();
+    videoButton.innerHTML='<i class="fa fa-play"></i>';
+    $('#fadeImage').addClass('fade-image');
+});
+
+$('#playVideo').click(function(){
+	alert('+++');
+    //player.api("play");
+	player.play() ;
+    $('#playVideo').hide();
+    $('#pauseVideo').show();
+    sound.play();
+    videoButton.innerHTML='<i class="fa fa-pause"></i>';
+    $('#fadeImage').removeClass('fade-image');
+});
+  });
+    });
+</script>
+
+
 <script type="text/javascript">
 require([ 'jquery'], function($){
 
@@ -554,55 +607,6 @@ var Froogaloop = (function(){
 });
 </script>
 
-<script>
-require(['https://player.vimeo.com/api/player.js'], function (Player) {
-
-jQuery(document).ready(function($){  
-  //var iframe = document.querySelector('iframe');
-        //var player = new Player(iframe);
-var videoButton = document.getElementById("playButton");
-var sound = document.getElementById("sound");
-
-videoButton.addEventListener('click', function(){
-     if(sound.paused){
-        sound.play();
-        videoButton.innerHTML='<i class="fa fa-pause"></i>';
-     }
-     else{
-        sound.pause();
-        videoButton.innerHTML='<i class="fa fa-play"></i>';
-     }
- });
-
-var iframeVideo = document.getElementById('video');
-var player = (iframeVideo);
-
-$('#playVideo').hide();
-
-$('#pauseVideo').click(function(){
-	alert('+++----');
-    //player.api("pause");
-	player.pause()
-    $('#pauseVideo').hide();
-    $('#playVideo').show();
-    sound.pause();
-    videoButton.innerHTML='<i class="fa fa-play"></i>';
-    $('#fadeImage').addClass('fade-image');
-});
-
-$('#playVideo').click(function(){
-	alert('+++');
-    //player.api("play");
-	player.play() ;
-    $('#playVideo').hide();
-    $('#pauseVideo').show();
-    sound.play();
-    videoButton.innerHTML='<i class="fa fa-pause"></i>';
-    $('#fadeImage').removeClass('fade-image');
-});
-  });
-    });
-</script>
 <style>
 .mainss {
   position: relative;
