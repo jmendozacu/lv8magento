@@ -3630,3 +3630,7 @@ li#shipping.checkout-shipping-address { margin-top: 37px; }
 .checkout-payment-method .payment-method-title { display:flex; }
 .checkout-cart-configure .box-tocart .field.qty input#qty { border: 1px solid #979797;}
 .checkout-cart-configure .box-tocart .fieldset .actions { margin-top: 20px; }
+
+.cms-careers .craft-higher.craft-box-row a.learn-btn.read-btn {
+    display: none;
+}
