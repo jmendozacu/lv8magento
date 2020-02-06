@@ -778,7 +778,7 @@
 		height: calc(100vh - 95px);  object-fit: cover;
 	}
 	.categorypath-labs-about .banner-notfront img {
-		object-position: 80% 100px;
+		object-position: 80% 0;
 	}
 	.careers-page .banner-notfront { margin-top:0; }
 	.account .page-title-wrapper.banner-title-notfront .page-title { font-size:22px; }
