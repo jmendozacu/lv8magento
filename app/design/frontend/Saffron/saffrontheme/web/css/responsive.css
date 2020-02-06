@@ -779,6 +779,12 @@
 	}
 	.categorypath-labs-about .banner-notfront img { object-position: 80% 0; }
 	.category-products .banner-notfront img { object-position: 35% 0; }
+	.cms-careers .banner-notfront img { object-position: 75% 0; }
+	.category-about .banner-notfront img { object-position: 38% 0; }
+	.category-how-our-cbd-works .banner-notfront img { object-position: 68% 0; }
+	.category-quality-matters .banner-notfront img { object-position: 75% 0; }
+	.category-top-products .banner-notfront img { object-position: 70% 0; }
+	.category-research .banner-notfront img { object-position: 54% 0; }
 	.careers-page .banner-notfront { margin-top:0; }
 	.account .page-title-wrapper.banner-title-notfront .page-title { font-size:22px; }
 	body.account main#maincontent { padding: 0; margin-top:0; }
