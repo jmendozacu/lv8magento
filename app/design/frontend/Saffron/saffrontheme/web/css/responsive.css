@@ -777,9 +777,8 @@
 	.banner-notfront img, .category-image .image {
 		height: calc(100vh - 95px);  object-fit: cover;
 	}
-	.categorypath-labs-about .banner-notfront img {
-		object-position: 80% 0;
-	}
+	.categorypath-labs-about .banner-notfront img { object-position: 80% 0; }
+	.category-products .banner-notfront img { object-position: 35% 0; }
 	.careers-page .banner-notfront { margin-top:0; }
 	.account .page-title-wrapper.banner-title-notfront .page-title { font-size:22px; }
 	body.account main#maincontent { padding: 0; margin-top:0; }
