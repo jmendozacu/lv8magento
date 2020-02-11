@@ -142,6 +142,7 @@
 		.checkout-shipping-method .actions-toolbar > .primary{float:left; margin-top:20px; }
 		.menu-inner .adrs-col { display: flex; display: -webkit-flex; flex: 1; flex-direction: column; }
 		.featured-name-col { min-height: 45px; }
+		.visitstore-btn button.action.tocart { min-width: 170.44px; }
 		
  }
 
