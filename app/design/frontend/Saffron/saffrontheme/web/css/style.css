@@ -3634,3 +3634,5 @@ li#shipping.checkout-shipping-address { margin-top: 37px; }
 .cms-careers .craft-higher.craft-box-row a.learn-btn.read-btn {
     display: none;
 }
+.checkout-index-index #sq-walletbox { display: none; }
+
