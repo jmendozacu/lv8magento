@@ -953,7 +953,11 @@
 	.checkout-payment-method .payment-methods .actions-toolbar .primary { width:100%; }
 	.checkout-onepage-success .banner-title-notfront { margin-top:35px;}
 	.checkout-onepage-success .action.primary { padding: 12px 20px; font-size: 16px; }
-	
+	.checkout-index-index .opc-estimated-wrapper .minicart-wrapper button.action.showcart {
+		margin-right: 10px;
+	}
+	.checkout-index-index .modal-custom .action-close { margin: 12px; }	
+	.checkout-index-index .opc-block-summary { padding-top:20px; }
 	
 }
 
