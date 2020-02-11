@@ -140,8 +140,9 @@
 		.review-customer-index .table-wrapper .table tbody td { min-width:180px; }
 		.cms-internships .banner-title-notfront h1 { font-weight:700; }
 		.checkout-shipping-method .actions-toolbar > .primary{float:left; margin-top:20px; }
-		.menu-inner .adrs-col { 
-			display: flex; display: -webkit-flex; flex: 1; flex-direction: column; }
+		.menu-inner .adrs-col { display: flex; display: -webkit-flex; flex: 1; flex-direction: column; }
+		.featured-name-col { min-height: 45px; }
+		
  }
 
 
@@ -513,7 +514,7 @@
 	.minicart-wrapper .action.showcart:before, .minicart-wrapper .action.showcart.active:before {
 		font-size:26px;
 	}
-	.sign-col .singin-link { font-size:22px; }
+	.sign-col .singin-link { font-size:22px; position:relative; }
 	.menubar1, .menubar2 { margin-bottom:9px; }
 	.minicart-wrapper .action.showcart .counter.qty { width:18px; height:18px; line-height:18px; top: -7px;
 	font-size:11px; }
