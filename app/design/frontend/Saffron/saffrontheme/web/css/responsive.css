@@ -146,6 +146,7 @@
 		.featured-name-col p { min-height: 80px; }
 		button#product-addtocart-button,
 		.checkout-cart-configure .box-tocart.update .fieldset .actions { min-width: 175px; width:70%; }
+		.box-tocart .action.tocart { width:auto; }
 		
  }
 
