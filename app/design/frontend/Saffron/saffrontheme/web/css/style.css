@@ -3607,7 +3607,7 @@ li#shipping.checkout-shipping-address { margin-top: 37px; }
     width: 100%;
     text-align: left;
 }
-.checkout-payment-method .payment-option._collapsible .payment-option-title{padding-top:20px;}
+.checkout-payment-method .payment-option._collapsible .payment-option-title{ padding-top:10px; margin-top: 20px; }
 .checkout-payment-method .payment-option-content { padding: 0; }
 .checkout-index-index .opc-wrapper .form-discount button.action.action-apply {
     margin-right: 0;

@@ -765,7 +765,7 @@
 	.family-brand img { margin-bottom:20px; }
 	.family-brand a { padding-left:15px; padding-right:15px; }
 	body.checkout-cart-index .column.main {  padding-bottom: 40px; }
-	body.checkout-index-index .column.main { width: 100%; }
+	body.checkout-index-index .column.main { width: 100%; margin-bottom:0; }
 	.fieldset.address { margin:0; }
 	.fieldset.address > .field { padding:0; }
 	.checkout-index-index .opc-wrapper.am-opc-wrapper .payment-method-content .primary {  padding-right: 15px; }
