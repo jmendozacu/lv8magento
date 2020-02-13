@@ -3653,7 +3653,7 @@ li#shipping.checkout-shipping-address { margin-top: 37px; }
     border-radius: 100%;
 }
 
-.news-index-index iframe .player .vp-video-wrapper .vp-preview {
+.news-index-index .player .vp-video-wrapper .vp-preview {
     background-size: cover;
     height: 450px;
     width: 100%;
