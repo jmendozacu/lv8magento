@@ -144,7 +144,8 @@
 		.featured-name-col { min-height: 45px; }
 		.visitstore-btn button.action.tocart { min-width: 175px; }
 		.featured-name-col p { min-height: 80px; }
-		button#product-addtocart-button { min-width: 175px; }
+		button#product-addtocart-button,
+		.checkout-cart-configure .box-tocart.update .fieldset .actions { min-width: 175px; }
 		
  }
 
@@ -962,6 +963,7 @@
 	}
 	.checkout-index-index .modal-custom .action-close { margin: 12px; }	
 	.checkout-index-index .opc-block-summary { padding-top:20px; }
+	.checkout-cart-configure .box-tocart.update .fieldset .actions { width: auto;}
 	
 }
 

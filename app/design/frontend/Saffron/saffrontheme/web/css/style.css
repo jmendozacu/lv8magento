@@ -3653,3 +3653,4 @@ li#shipping.checkout-shipping-address { margin-top: 37px; }
 .post-item {
     margin-bottom: 40px;
 }
+.checkout-cart-configure .box-tocart.update .fieldset .actions { float: left;}
