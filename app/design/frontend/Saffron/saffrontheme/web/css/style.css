@@ -3652,8 +3652,9 @@ li#shipping.checkout-shipping-address { margin-top: 37px; }
     background: #fff;
     border-radius: 100%;
 }
-.news-index-index iframe .vp-preview {
+
+.news-index-index iframe .player .vp-video-wrapper .vp-preview {
+    background-size: cover;
+    height: 450px;
     width: 100%;
-    min-height: 452px;
-    object-fit: cover;
 }
