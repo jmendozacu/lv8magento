@@ -979,6 +979,7 @@
 	}
 	.checkout-index-index footer.page-footer { padding-bottom: 70px; }
 	.checkout-payment-method .payment-methods .actions-toolbar .primary { padding-left:0; padding-right:0; }
+	.news-index-index .modal-popup .modal-header button.action-close { top:0; right:0; }
 	
 }
 
