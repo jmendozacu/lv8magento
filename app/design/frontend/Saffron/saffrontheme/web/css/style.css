@@ -3654,3 +3654,5 @@ li#shipping.checkout-shipping-address { margin-top: 37px; }
     margin-bottom: 40px;
 }
 .checkout-cart-configure .box-tocart.update .fieldset .actions { float: left;}
+.checkout-cart-index .header .minicart-wrapper {  display: none; }
+.checkout-cart-index .header-right { margin-right:10px; }
