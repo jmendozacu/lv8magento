@@ -3652,9 +3652,10 @@ li#shipping.checkout-shipping-address { margin-top: 37px; }
     background: #fff;
     border-radius: 100%;
 }
-
-.player .vp-video-wrapper .vp-preview {
-    background-size: cover;
-    height: 450px;
-    width: 100%;
+.checkout-index-index .form.form-login .actions-toolbar {
+    display: flex;
+    align-items: center;
+}
+.checkout-index-index .form.form-login .actions-toolbar .secondary a.action {
+    margin-top: 0;
 }
