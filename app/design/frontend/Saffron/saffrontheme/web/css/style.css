@@ -3652,10 +3652,7 @@ li#shipping.checkout-shipping-address { margin-top: 37px; }
     background: #fff;
     border-radius: 100%;
 }
-.checkout-index-index .form.form-login .actions-toolbar {
-    display: flex;
-    align-items: center;
-}
-.checkout-index-index .form.form-login .actions-toolbar .secondary a.action {
-    margin-top: 0;
-}
+.checkout-index-index .form.form-login .actions-toolbar {  display: flex;  align-items: center; }
+.checkout-index-index .form.form-login .actions-toolbar .secondary a.action {  margin-top: 0; }
+.checkout-cart-index .header-navbar .minicart-wrapper {  display: none;  }
+.checkout-cart-index .header-navbar .options-group {  margin-left: auto; }

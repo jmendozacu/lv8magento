@@ -145,7 +145,7 @@
 		.visitstore-btn button.action.tocart { min-width: 175px; }
 		.featured-name-col p { min-height: 80px; }
 		button#product-addtocart-button,
-		.checkout-cart-configure .box-tocart.update .fieldset .actions { min-width: 175px; }
+		.checkout-cart-configure .box-tocart.update .fieldset .actions { min-width: 175px; width:70%; }
 		
  }
 
