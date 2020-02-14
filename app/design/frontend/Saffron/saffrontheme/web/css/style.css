@@ -3670,4 +3670,13 @@ li#shipping.checkout-shipping-address { margin-top: 37px; }
     font-size: 30px;
     font-weight: 500;
 }
+.news-index-detail .breadcrumbs li {
+    color: #4E4F53;
+}
+.news-index-index .breadcrumbs li {
+    color: #4E4F53;
+}
+.news-index-detail main#maincontent {
+    margin-top: 50px;
+}
 
