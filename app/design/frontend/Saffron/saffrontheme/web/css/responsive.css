@@ -223,7 +223,7 @@
       .faqs-content .faqs-left {  padding-right: 30px;  }
       .faqs-content .faqs-right { padding-left: 30px;   }
 	  .our-craft .craft-graybx{ min-height: 55vh; display:flex; flex-direction:column; justify-content:center; }
-	  .categorypath-worx-about  .our-craft .craft-graybx { min-height: 70vh; }
+	  .categorypath-worx-about .our-expertise .container{ max-width: 80%; }
 
 }
 
