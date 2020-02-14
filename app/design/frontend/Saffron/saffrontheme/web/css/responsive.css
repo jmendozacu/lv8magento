@@ -145,7 +145,8 @@
 		.visitstore-btn button.action.tocart { min-width: 175px; }
 		.featured-name-col p { min-height: 80px; }
 		button#product-addtocart-button,
-		.checkout-cart-configure .box-tocart.update .fieldset .actions { min-width: 175px; }
+		.checkout-cart-configure .box-tocart.update .fieldset .actions { min-width: 175px; width:70%; }
+		.box-tocart .action.tocart { width:auto; }
 		
  }
 
@@ -507,8 +508,6 @@
 	.opc-estimated-wrapper {  margin: 90px 0 30px; }
 	body.checkout-index-index .checkout-block { padding:20px 15px; margin: 0 0 20px; }
 	.opc-wrapper .methods-shipping { padding-top:0; }
-	.checkout-payment-method .payment-methods .actions-toolbar .primary { 
-	margin-top:20px; padding:0 0 20px;}
 	.opc-wrapper .form-login, .opc-wrapper .form-shipping-address, .opc-wrapper .methods-shipping {
 		margin:0; padding:0; background:none;
 	}
@@ -767,7 +766,7 @@
 	.family-brand img { margin-bottom:20px; }
 	.family-brand a { padding-left:15px; padding-right:15px; }
 	body.checkout-cart-index .column.main {  padding-bottom: 40px; }
-	body.checkout-index-index .column.main { width: 100%; }
+	body.checkout-index-index .column.main { width: 100%; margin-bottom:0; }
 	.fieldset.address { margin:0; }
 	.fieldset.address > .field { padding:0; }
 	.checkout-index-index .opc-wrapper.am-opc-wrapper .payment-method-content .primary {  padding-right: 15px; }
@@ -965,6 +964,23 @@
 	.checkout-index-index .opc-block-summary { padding-top:20px; }
 	.checkout-cart-configure .box-tocart.update .fieldset .actions { width: auto;}
 	.box-tocart .field.qty { margin-right:12px; }
+	.checkout-index-index .checkout-payment-method .payment-option {
+		margin: 0;
+		float: left;
+		width: 100%;
+	}
+	.checkout-index-index .checkout-payment-method .payment-methods .actions-toolbar {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: #fff;
+		padding: 0 20px;
+		z-index: 9;
+	}
+	.checkout-index-index footer.page-footer { padding-bottom: 70px; }
+	.checkout-payment-method .payment-methods .actions-toolbar .primary { padding-left:0; padding-right:0; }
+	.news-index-index .modal-popup .modal-header button.action-close { top:0; right:0; }
 	
 }
 
