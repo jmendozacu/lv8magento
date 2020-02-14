@@ -40,7 +40,7 @@ class Recentvideo extends \Magento\Framework\View\Element\Template {
 	
 	public function getNewsAllPost(){
 	  $page = $_GET['row'];
-     	echo $page ;
+     	//echo $page ;
 	$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
    	$newcategories = $objectManager->create('Saffron\News\Model\ResourceModel\Newspost\Collection')
 			 ->addFieldToFilter('featured', array('eq' => 2))
