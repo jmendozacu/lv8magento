@@ -9,8 +9,8 @@ class Vediotitorial extends \Magento\Framework\View\Element\Template{
 public function getNewsvedio(){
 		
 	$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
-    $id  = $_GET['vediourl'];
-	echo $id ;
+    $id  = $_GET['id'];
+	
 	 if(!empty($id)){	
 	  $newcategories = $objectManager->create('Saffron\News\Model\ResourceModel\Newspost\Collection')
 			 ->addFieldToFilter('status', array('eq' => 0))
