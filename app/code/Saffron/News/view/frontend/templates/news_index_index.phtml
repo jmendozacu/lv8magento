@@ -270,7 +270,7 @@ require([ 'jquery'], function($){
 	   //alert(allcount+1);
         if(row < allcount+1){
             $("#row").val(row);
-             alert(row);
+             //alert(row);
             $.ajax({
                 url: "<?php echo $this->getBaseUrl()?>news/index/recentvideo/",
                 type: 'GET',
