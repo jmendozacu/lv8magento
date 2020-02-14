@@ -256,11 +256,14 @@ require([ 'jquery'], function($){
     $('.load-more').click(function(){
         var row = Number($('#row').val());
         var allcount = Number($('#all').val());
-         alert(row);         
-	   row = row + 2;
-       
-		alert(row);
-		alert(allcount+1);
+         alert(row);
+       if(row === 2){
+		   row = row + 1;
+	   }elae{
+		 row = row + 2;  
+	   }         
+	   alert(row);
+	   alert(allcount+1);
         if(row < allcount+1){
             $("#row").val(row);
              alert(row);
