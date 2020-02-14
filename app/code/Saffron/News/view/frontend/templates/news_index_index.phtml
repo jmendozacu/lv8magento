@@ -258,10 +258,10 @@ require([ 'jquery'], function($){
         var allcount = Number($('#all').val());
         row = row + 1;
         
-		alert(row)
+		//alert(row)
         if(row < allcount){
             $("#row").val(row);
-
+             alert(row);
             $.ajax({
                 url: "<?php echo $this->getBaseUrl()?>news/index/recentvideo/",
                 type: 'GET',
