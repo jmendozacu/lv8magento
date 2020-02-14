@@ -12,6 +12,17 @@
 
 ?>
 
+	<div class="banner-breadcrumbs lv8-bread">
+		<div class="breadcrumbs">
+		<ul class="items">
+		<li class="item home"><a href="<?php echo $this->getUrl('');?>">LV8</a></li>
+		<li class="item"><a href="<?php echo $this->getUrl('news/');?>">News</a></li>
+		<li class="item"><?php echo $NewsDetail[0]['post_title']; ?></li>
+		</ul>
+		</div>
+		</div>
+
+
 <div class="news-detail-container">
 <div class="news-detail-banner">
 		<img src="<?php echo $this->getMediaUrl().$NewsDetail[0]['detailpagebanner'];?>" alt="" class="img-fluid">
