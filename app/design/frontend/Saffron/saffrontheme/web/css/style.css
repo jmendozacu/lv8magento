@@ -3657,5 +3657,17 @@ li#shipping.checkout-shipping-address { margin-top: 37px; }
 .checkout-cart-index .header-navbar .minicart-wrapper {  display: none;  }
 .checkout-cart-index .header-navbar .options-group {  margin-left: auto; }
 .mini-cart-shopping-btn {  text-align: center; }
-
+.launches-vide-col {
+    float: left;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.launches-vide-col span {
+    font-size: 30px;
+    font-weight: 500;
+}
 
