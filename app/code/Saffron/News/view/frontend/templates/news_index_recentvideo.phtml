@@ -22,8 +22,13 @@ $newcategories = $newcategories->getData() ;
                         </div>
                         <div class="col-lg-6 col-md-6 col-12 right-col">
                             <div class="launches-vide-col"   onclick="popupFunction(<?php echo $item_post['id']; ?>)"  id="idvedio-<?php echo $item_post['id']; ?>">
-                                <img src="<?php echo $this->getMediaUrl().$item_post['vedioimg']?>" alt="<?php echo $item_post['post_title']?>" class="img-fluid">
-                            </div>
+                                
+								<?php if(!empty($item_post['video_url'])){?>
+								<img src="<?php echo $this->getMediaUrl().$item_post['vedioimg']?>" alt="<?php echo $item_post['post_title']?>" class="img-fluid">
+                                <?php } else {?>
+								<div class="video_url_coming-soon"><span>Coming Soon.</span></div>
+								<?php }?>
+							</div>
                         </div>
                        
                    
