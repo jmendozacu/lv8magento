@@ -16,7 +16,7 @@ $_SERVER['REQUEST_URI'] ;
                             
 							<?php if(($_SERVER['REQUEST_URI']=='/cbdx/products/')||($_SERVER['REQUEST_URI']=='/cbdx/products')){?>
 							<li class="nav-item">
-							<a class="nav-link active" data-toggle="pill" href="<?php echo $child->getUrl('/cbdx/products');?>" role="tab" aria-controls="pills-home" aria-selected="true"><?php echo 'All Products';?></a>
+							<a class="nav-link active" data-toggle="pill" href="<?php echo $this->getUrl('/cbdx/products');?>" role="tab" aria-controls="pills-home" aria-selected="true"><?php echo 'All Products';?></a>
                             </li>
 							<?php }?>
 							
