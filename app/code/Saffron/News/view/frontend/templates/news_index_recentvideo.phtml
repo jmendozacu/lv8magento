@@ -6,12 +6,13 @@ $newcategories = $newcategories->getData() ;
 ?>
 <?php if(count($newcategories) != '0') { ?>
  <!--<div class="row">-->
- <?php $i= 0; foreach($newcategories as $item_post)
-                 
+ <?php $i= 1; foreach($newcategories as $item_post)
+                    //$item_post = $post->getData();
+				  //echo"<pre>";print_r($item_post );
 				  
 				  {?>
 				  
-                   <div  class="post" id="post_<?php echo $item_post['id']; ?>">
+                     <div  class="post" id="post_<?php echo $item_post['id']; ?>">
 				  <div class="row">
                         <div class="col-lg-6 col-md-6 col-12 left-col">
                             <div class="launches-bx">
@@ -20,14 +21,14 @@ $newcategories = $newcategories->getData() ;
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-12 right-col">
-                            <div class="launches-vide-col"  id="click-header<?php echo $i;?>">
+                            <div class="launches-vide-col"  id="click-header<?php echo $item_post['id']; ?>">
                                 <img src="<?php echo $this->getMediaUrl().$item_post['vedioimg']?>" alt="<?php echo $item_post['post_title']?>" class="img-fluid">
                             </div>
                         </div>
                        
                    
 				   
-	<div id="header-mpdal<?php echo $i;?>" style="display:none;">
+	<div id="header-mpdal<?php echo $item_post['id']; ?>" style="display:none;">
     <div class="videoWrapper">
         <iframe allow="encrypted-media" allowfullscreen="" frameborder="0" gesture="media" height="315" src="https://player.vimeo.com/video/<?php echo $item_post['video_url'];?>" width="560">
         </iframe>
