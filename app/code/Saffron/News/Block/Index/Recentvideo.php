@@ -39,7 +39,7 @@ class Recentvideo extends \Magento\Framework\View\Element\Template {
 	}*/
 	
 	public function getNewsAllPost(){
-	  $page= $_GET['row'];
+	  $page = $_GET['row'];
      	
 	$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
    	$newcategories = $objectManager->create('Saffron\News\Model\ResourceModel\Newspost\Collection')
