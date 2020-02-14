@@ -86,7 +86,7 @@
 
            <!--CBDX-launches-->
            <div class="cbdx-launches row-full" data-aos="fade-up" data-aos-offset="150"  data-aos-easing="ease-in-sine">
-		   <span id="vedio-list">
+		   
 		   <?php $allcount = count($Newsvediocount);  ?>
                <div class="container">
 			  
@@ -97,7 +97,7 @@
 					
 					//echo"<pre>";print_r($item_post);
 				  {?>
-				  
+				  <span id="vedio-list">
 				  <div  class="post" id="post<?php //echo $item_post['id']; ?>">
 				  <div class="row">
                         <div class="col-lg-6 col-md-6 col-12 left-col">
@@ -156,8 +156,9 @@
 				
                      </div>
 				 </div> 
+				 </span>
 				  <?php $i++; } ?>
-             </span>
+             
                        <div class="col-12 read-col">
                             <a href="javascript:void(0);" class="load-more text-link">See More</a>
 							<!--<h5 class="load-more">Load More</h5>-->
