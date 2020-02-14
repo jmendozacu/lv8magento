@@ -10,6 +10,7 @@ public function getNewsvedio(){
 		
 	$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
     $id  = $_GET['vediourl'];
+	echo $id ;
 	 if(!empty($id)){	
 	  $newcategories = $objectManager->create('Saffron\News\Model\ResourceModel\Newspost\Collection')
 			 ->addFieldToFilter('status', array('eq' => 0))
