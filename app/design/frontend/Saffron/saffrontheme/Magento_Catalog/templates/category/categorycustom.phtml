@@ -6,12 +6,15 @@ $childrenCategories = $category->getChildrenCategories();
 $protocol = 'http';
 $url = $protocol . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 
+echo $url ;
+
 ?>
 
 <div class="product-tab-title" id="pills-tabs">
                     <div class="container">
                         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                             <?php foreach($childrenCategories as $child){ ?>
+							<?php echo $child->getUrl() ;?>
                             <li class="nav-item">
                                 <?php if($url == $child->getUrl()){?>
                                 <a class="nav-link active" data-toggle="pill" href="<?php echo $child->getUrl();?>" role="tab" aria-controls="pills-home" aria-selected="true"><?php echo $child->getName();?></a>
