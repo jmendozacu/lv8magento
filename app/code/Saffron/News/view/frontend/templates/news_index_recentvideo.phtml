@@ -158,4 +158,16 @@ jQuery(document).ready(function($){
  
 });
 }
-</script>         
+</script>      
+
+ <script type="text/javascript">
+require([ 'jquery'], function($){
+$(document).ready(function(){
+$('body').on('click','.action-close',function() {
+		$('#popup-image').html('');
+		//alert('++');
+	});
+	});
+	});
+</script>      
+	   
