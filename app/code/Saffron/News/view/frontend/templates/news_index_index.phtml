@@ -98,7 +98,7 @@
 					//echo"<pre>";print_r($item_post);
 				  {?>
 				  
-				  <div  class="post" id="post_<?php echo $item_post['id']; ?>">
+				  <div  class="post" id="post<?php //echo $item_post['id']; ?>">
 				  <div class="row">
                         <div class="col-lg-6 col-md-6 col-12 left-col">
                             <div class="launches-bx">
@@ -279,7 +279,7 @@ require([ 'jquery'], function($){
                     // Setting little delay while displaying new content
                     setTimeout(function() {
                         // appending posts after last post with class="post"
-                        $(".post:last").after(response).show().fadeIn("slow");
+                        $(".post").after(response).show().fadeIn("slow");
 
                         var rowno = row + 1;
 
