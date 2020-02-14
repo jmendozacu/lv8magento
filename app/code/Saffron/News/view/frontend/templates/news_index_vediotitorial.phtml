@@ -1,9 +1,9 @@
 <?php $vediourl= $this->getNewsvedio();?>
-<?php //echo "<pre>";print_r($vediourl->getData());?>
-<?php if(!empty($vediourl[0]['video_url'])) { ?>
+<?php  $newv = $vediourl->getData();?>
+<?php if(!empty($newv[0]['video_url'])) { ?>
  <!--<div class="row">-->
  <?php $i= 1; foreach($vediourl as $item_post){?>
- <?php $item_post['video_url'];?>
+ <?php //echo $item_post['video_url'];?>
  
  <?php }?>
  
@@ -14,7 +14,7 @@
 
 <?php } else{
 	
-	echo '<div class="message info empty  vedio-empty-message"><div>Coming Soon</div></div>';
+	echo '<div class="message info empty coming-soon-vedio"><span>Coming Soon.</span></div>';
 	
 }?>
 
