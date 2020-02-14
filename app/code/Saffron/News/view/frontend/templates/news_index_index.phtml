@@ -279,8 +279,8 @@ require([ 'jquery'], function($){
                     // Setting little delay while displaying new content
                     setTimeout(function() {
                         // appending posts after last post with class="post"
-                        $(".post").after(response).show().fadeIn("slow");
-
+                        //$(".post:last").after(response).show().fadeIn("slow");
+                           $(".post:").Html(response);
                         var rowno = row + 1;
 
                         // checking row value is greater than allcount or not
