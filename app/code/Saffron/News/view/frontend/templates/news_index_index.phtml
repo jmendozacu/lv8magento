@@ -86,7 +86,7 @@
 
            <!--CBDX-launches-->
            <div class="cbdx-launches row-full" data-aos="fade-up" data-aos-offset="150"  data-aos-easing="ease-in-sine">
-		   
+		   <span id="vedio-list">
 		   <?php $allcount = count($Newsvediocount);  ?>
                <div class="container">
 			  
@@ -157,7 +157,7 @@
                      </div>
 				 </div> 
 				  <?php $i++; } ?>
-
+             </span>
                        <div class="col-12 read-col">
                             <a href="javascript:void(0);" class="load-more text-link">See More</a>
 							<!--<h5 class="load-more">Load More</h5>-->
@@ -280,7 +280,7 @@ require([ 'jquery'], function($){
                     setTimeout(function() {
                         // appending posts after last post with class="post"
                         //$(".post:last").after(response).show().fadeIn("slow");
-                           $(".post").html(response);
+                           $("#vedio-list").html(response);
                         var rowno = row + 1;
 
                         // checking row value is greater than allcount or not
