@@ -1,14 +1,14 @@
 <?php $vediourl= $this->getNewsvedio();?>
 <?php echo "<pre>";print_r($vediourl->getData());?>
-<?php if(count($vediourl) != '0') { ?>
+<?php if(!empty($vediourl[0]['video_url'])) { ?>
  <!--<div class="row">-->
- <?php $i= 1; foreach($vediourl as $item_post){?>
- <?php $item_post['video_url'];?>
+ <?php //$i= 1; foreach($vediourl as $item_post){?>
+ <?php //$item_post['video_url'];?>
  
- <?php }?>
+ <?php //}?>
  
 <div class="videoWrapper">
-        <iframe allow="encrypted-media" allowfullscreen="" frameborder="0" gesture="media" height="315" src="https://player.vimeo.com/video/<?php echo $item_post['video_url'];?>" width="560">
+        <iframe allow="encrypted-media" allowfullscreen="" frameborder="0" gesture="media" height="315" src="https://player.vimeo.com/video/<?php echo $vediourl[0]['video_url'];?>" width="560">
         </iframe>
 	</div>
 
