@@ -3656,3 +3656,6 @@ li#shipping.checkout-shipping-address { margin-top: 37px; }
 .checkout-index-index .form.form-login .actions-toolbar .secondary a.action {  margin-top: 0; }
 .checkout-cart-index .header-navbar .minicart-wrapper {  display: none;  }
 .checkout-cart-index .header-navbar .options-group {  margin-left: auto; }
+.mini-cart-shopping-btn {  text-align: center; }
+
+
