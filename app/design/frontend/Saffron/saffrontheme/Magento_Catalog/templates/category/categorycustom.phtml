@@ -15,7 +15,7 @@ echo $_SERVER['REQUEST_URI'] ;
                         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                             <?php foreach($childrenCategories as $child){ ?>
 							<?php //echo $child->getUrl() ;?>
-							<?php if(if(($_SERVER['REQUEST_URI']=='/cbdx/products/')||($_SERVER['REQUEST_URI']=='/cbdx/products')) ){?>
+							<?php if(($_SERVER['REQUEST_URI']=='/cbdx/products/')||($_SERVER['REQUEST_URI']=='/cbdx/products')){?>
 							 <li class="nav-item">
 							<a class="nav-link active" data-toggle="pill" href="<?php echo $child->getUrl('/cbdx/products');?>" role="tab" aria-controls="pills-home" aria-selected="true"><?php echo 'All Products';?></a>
                              </li>
