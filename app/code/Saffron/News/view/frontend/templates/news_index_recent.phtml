@@ -18,14 +18,14 @@ $newcategories = $newcategories->getData() ;
 <div class="col-md-4 col-12">
                            <div class="post-item">
                                <div class="post-image">
-                                   <a href="<?php  echo $this->getUrl('news/index/detail/post/'.$item_post['url_key'].'') ;?>">
+         <a href="<?php  echo $this->getUrl('news/index/detail/post/'.$item_post['url_key'].'') ;?>">
                                         <img src="<?php  echo $this->getMediaurl().$item_post['thumbnail'] ;?>" alt="<?php  echo $item_post['post_title']?>" class="img-fluid">         
                                    </a>
                                    
                                </div>
                                <div class="post-info">
                                    <span class="small-title"> <?php echo $categorie_title[0]['categorie_title']; ?></span>
-                                   <a href="<?php  echo $this->getUrl('news/index/detail/Post/'.$item_post['url_key'].'') ;?>" class="name"><?php echo $item_post['post_title'];?></a>
+         <a href="<?php  echo $this->getUrl('news/index/detail/Post/'.$item_post['url_key'].'') ;?>" class="name"><?php echo $item_post['post_title'];?></a>
                                </div>
                            </div>
                        </div>
