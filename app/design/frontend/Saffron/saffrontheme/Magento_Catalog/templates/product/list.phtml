@@ -106,9 +106,9 @@ $_helper = $this->helper('Magento\Catalog\Helper\Output');
                 <input type="hidden" name="product" value="<?= /* @escapeNotVerified */ $postParams['data']['product'] ?>">
                 <input type="hidden" name="<?= /* @escapeNotVerified */ Action::PARAM_NAME_URL_ENCODED ?>" value="<?= /* @escapeNotVerified */ $postParams['data'][Action::PARAM_NAME_URL_ENCODED] ?>">
                  <?= $block->getBlockHtml('formkey') ?>
-                <button type="submit" title="<?= $block->escapeHtml(__('Add to Cart')) ?>"
+                <button type="submit" title="<?= $block->escapeHtml(__('Shop Now')) ?>"
                    class="action tocart primary learn-btn btn-orange">
-                <span><?= /* @escapeNotVerified */ __('Add to Cart') ?></span>
+                <span><?= /* @escapeNotVerified */ __('Shop Now') ?></span>
                 </button>
                </form>
                <?php else: ?>

@@ -91,7 +91,7 @@ $product_url = $this->getBaseUrl().$_item['url_key'];
 		<?php
 			$postDataHelper = $this->helper('Magento\Framework\Data\Helper\PostHelper');
 			$postData = $postDataHelper->getPostData($block->getAddToCartUrl($_item), ['product' => $_item->getEntityId()])?>
-		<button class="action tocart learn-btn btn-orange" data-post='<?php echo $postData; ?>' type="button" title="<?php echo __('Add to Cart') ?>"><span><?php echo __('Add to Cart') ?></span>
+		<button class="action tocart learn-btn btn-orange" data-post='<?php echo $postData; ?>' type="button" title="<?php echo __('Shop Now') ?>"><span><?php echo __('Shop Now') ?></span>
 		</button>
 		<?php endif; ?>
 		<?php else: ?>
