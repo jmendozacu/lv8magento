@@ -1,7 +1,11 @@
 <?php
 
-$protocol = 'http';
+$protocol = 'https';
 $url = $protocol . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+
+
+$parame = $_GET ;
+echo count($parame);
 ?>
 
 <div class="filter-col prize-filter">
