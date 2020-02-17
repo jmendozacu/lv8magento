@@ -16,11 +16,11 @@ $_SERVER['REQUEST_URI'] ;
                             
 							<?php if(($_SERVER['REQUEST_URI']=='/cbdx/products/')||($_SERVER['REQUEST_URI']=='/cbdx/products')){?>
 							<li class="nav-item">
-							<a class="nav-link active" data-toggle="pill" href="https://new.lv8.com/cbdx/products/" role="tab" aria-controls="pills-home" aria-selected="true"><?php echo 'All Products';?></a>
+							<a class="nav-link active" data-toggle="pill" href="https://new.lv8.com/cbdx/products#pills-tabs" role="tab" aria-controls="pills-home" aria-selected="true"><?php echo 'All Products';?></a>
                             </li>
 							<?php } else {?>
 							<li class="nav-item">
-							<a class="nav-link "  href="https://new.lv8.com/cbdx/products/" ><?php echo 'All Products';?></a>
+							<a class="nav-link "  href="https://new.lv8.com/cbdx/products#pills-tabs" ><?php echo 'All Products';?></a>
                             </li>
 							<?php } ?>
 							
@@ -30,9 +30,9 @@ $_SERVER['REQUEST_URI'] ;
 							
                             <li class="nav-item">
                                 <?php if($url == $child->getUrl()){?>
-                                <a class="nav-link active" data-toggle="pill" href="<?php echo $child->getUrl();?>" role="tab" aria-controls="pills-home" aria-selected="true"><?php echo $child->getName();?></a>
+                                <a class="nav-link active" data-toggle="pill" href="<?php echo $child->getUrl();?>" role="tab" aria-controls="pills-home" aria-selected="true"><?php echo $child->getName().'#pills-tabs';?></a>
                                 <?php }else{ ?>
-                                <a class="nav-link" data-toggle="pill" href="<?php echo $child->getUrl();?>" role="tab" aria-controls="pills-home" aria-selected="false"><?php echo $child->getName();?></a>
+                                <a class="nav-link" data-toggle="pill" href="<?php echo $child->getUrl();?>" role="tab" aria-controls="pills-home" aria-selected="false"><?php echo $child->getName().'#pills-tabs';?></a>
                                 <?php } ?>
                             </li>
                             <?php } ?>
