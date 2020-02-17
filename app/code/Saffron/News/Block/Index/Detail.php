@@ -16,12 +16,13 @@ class Detail extends \Magento\Framework\View\Element\Template {
 	protected function _prepareLayout()
     {
 		
-	$new_id  = $_GET['id'];
+	//$new_id  = $_GET['id'];
+	$new_id  = $this->getRequest()->getParam('post');
 	if(!empty($new_id)){
 	$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
    	$newcategories = $objectManager->create('Saffron\News\Model\ResourceModel\Newspost\Collection')
 			 ->addFieldToFilter('status', array('eq' => 0))
-			 ->addFieldToFilter('id', array('eq' => $new_id));
+			 ->addFieldToFilter('url_key', array('eq' => $new_id));
 			 $newcategories = $newcategories->getData();
 	}
 		
@@ -32,11 +33,12 @@ class Detail extends \Magento\Framework\View\Element\Template {
     }
 	
 public function getNewsDetail(){
-	$new_id  = $_GET['id'];
+	//$new_id  = $_GET['id'];
+	$new_id  = $this->getRequest()->getParam('post');
 	$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
    	$newcategories = $objectManager->create('Saffron\News\Model\ResourceModel\Newspost\Collection')
 			 ->addFieldToFilter('status', array('eq' => 0))
-			 ->addFieldToFilter('id', array('eq' => $new_id));
+			 ->addFieldToFilter('url_key', array('eq' => $new_id));
 			 
 	      return   $newcategories  ;	
 		
