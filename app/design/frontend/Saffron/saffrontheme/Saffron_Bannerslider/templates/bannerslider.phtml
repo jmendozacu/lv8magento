@@ -71,6 +71,26 @@ $banners = $block->getBannerSlider();
                 <source src="<?php echo $this->getUrl();?>videosound/<?php echo $banner['click_url']?>" type="audio/mpeg">
             </audio>
         </div>  
+
+<div class="audio-video-btns" style="display: none;">
+			<!-- Audio Button -->
+			<div class="audio-button">
+				<a href="javascript:void(0)" id="playButton"> 
+					<img src="<?php echo $this->getMediaFolder().'images/volume-off.png'?>" alt="volume">
+				</a>
+			</div>
+
+			<!-- Video Button -->
+			<div class="video-button">
+				<a href="javascript:void(0)" id="playVideo">
+				<img src="<?php echo $this->getMediaFolder().'images/video-play.png'?>" alt="play">
+				</a>
+				<a href="javascript:void(0)" id="pauseVideo">
+					<img src="<?php echo $this->getMediaFolder().'images/video-pause.png'?>" alt="pause"> 
+				</a>
+			</div>
+		</div>
+
             </div>
 		</div>
 	</div>
