@@ -31,7 +31,7 @@ $banners = $block->getBannerSlider();
         <!-- Sound -->
         <div class="audio">
             <audio id="sound" autoplay>
-                <source src="https://new.lv8.com/videosound/audioloop10.mp3" type="audio/mpeg">
+                <source src="<?php echo $this->?>/videosound/audioloop10.mp3" type="audio/mpeg">
             </audio>
         </div>
 		<div class="audio-video-btns">
@@ -170,10 +170,10 @@ small.copyright {
 
 
 <script type="text/javascript">
-require([ 'jquery'], function($){
+/*require([ 'jquery'], function($){
 
 $(document).ready(function(){
-/***Desktop Audio button***/
+
 //var button = document.getElementById("audio-section");
 var audio = document.getElementById("player");
 
@@ -197,7 +197,7 @@ $('#button-on').hide();
 });	
 
 
-	});
+	}); */
 </script>
 
 
@@ -233,11 +233,11 @@ $('#button-on').hide();
 				sound.play();
 				videoButton.innerHTML='<img src="<?php echo $this->getMediaFolder().'images/volume-on.png'?>">';
 			}
-			/*else{
+			else{
 				alert('+++1');
 				sound.pause();
 				videoButton.innerHTML='<img src="<?php echo $this->getMediaFolder().'images/volume-off.png'?>">';
-			}*/
+			}
 		 });
 
 		var iframeVideo = document.getElementById('video');
