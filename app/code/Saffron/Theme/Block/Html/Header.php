@@ -68,6 +68,17 @@ class Header extends \Magento\Framework\View\Element\Template
         return $this->_appContext->getValue(\Magento\Customer\Model\Context::CONTEXT_AUTH);
     }
 
+ public function getMediaurl(){
+
+   $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+   $medial_url  = $objectManager->get('Magento\Store\Model\StoreManagerInterface')
+                    ->getStore()
+                    ->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA);
+
+  return  $medial_url;
+
+  }
+
     public function getWishlistCount()
     {
         $collection = $this->_currentUserWishlistCollectionFactory->create();
