@@ -1,5 +1,12 @@
 var config = {
     paths: {
-        "aos":  "js/aos"
-    }
+        "aos":  "js/aos",
+		"froogaloop": 'js/froogaloop'
+    },
+ shim: {
+     froogaloop: {
+         "deps": ['jquery']
+     }
+   }
 }
+
