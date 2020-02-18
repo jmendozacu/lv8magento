@@ -8,7 +8,8 @@
 if($this->getEnable()):
 $banners = $block->getBannerSlider();
 ?>
-<section class="main-video">
+<!--<div class="front-banner" >
+        <div class="owl-carousel owl-theme">
 		<?php $i = 1; ?>
     <?php foreach ($banners as $banner): ?>
 	
@@ -54,12 +55,12 @@ $banners = $block->getBannerSlider();
 	<?php $i++; ?>            
     <?php endforeach; ?>     
             
-       
-    </section>
+        </div>
+    </div>
 
 
 
-<!--<div class="pt-banner-container">
+<div class="pt-banner-container">
    <ul class="ptowl"> 
 	<?php $i = 1; ?>
     <?php foreach ($banners as $banner): ?>
