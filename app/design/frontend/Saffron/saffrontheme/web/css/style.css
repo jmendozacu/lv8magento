@@ -3812,5 +3812,6 @@ div#player {
 .video-front-title.active{
 	display:block;
 }
+a#playVideo { display: none; }
 
 /*--/end-video-css*/
