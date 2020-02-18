@@ -21,7 +21,7 @@
         <?php if ($block->isNewsletterEnabled()): ?>
             <div class="field choice newsletter">
                 <input type="checkbox" name="is_subscribed" title="<?= $block->escapeHtmlAttr(__('In-the-know')) ?>" value="1" id="is_subscribed"<?php if ($block->getFormData()->getIsSubscribed()): ?> checked="checked"<?php endif; ?> class="checkbox">
-                <label for="is_subscribed" class="label"><span><?= $block->escapeHtml(__('Be In-the-know')) ?></span> <span class="info-span"><i class="fa fa-info-circle" aria-hidden="true"></i> <span class="info-hoverd">"Receive crazy cool updates including sneak previews, product updates + insights from industry experts!"</span></span></label>
+                <label for="is_subscribed" class="label"><span><?= $block->escapeHtml(__('Be In-the-know')) ?></span> <span class="info-span"><i class="fa fa-info-circle" aria-hidden="true"></i> <span class="info-hoverd">Receive crazy cool updates including sneak previews, product updates + insights from industry experts!</span></span></label>
             </div>
             <?php /* Extensions placeholder */ ?>
             <?= $block->getChildHtml('customer.form.register.newsletter') ?>
