@@ -229,10 +229,12 @@ $('#button-on').hide();
 
 		videoButton.addEventListener('click', function(){
 			if(sound.paused){
+				alert('+++');
 				sound.play();
 				videoButton.innerHTML='<img src="<?php echo $this->getMediaFolder().'images/volume-on.png'?>">';
 			}
 			else{
+				alert('+++1');
 				sound.pause();
 				videoButton.innerHTML='<img src="<?php echo $this->getMediaFolder().'images/volume-off.png'?>">';
 			}
