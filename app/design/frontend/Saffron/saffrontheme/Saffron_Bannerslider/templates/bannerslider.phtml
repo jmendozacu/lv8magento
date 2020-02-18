@@ -64,7 +64,13 @@ $banners = $block->getBannerSlider();
                  <!--<a href="<?php echo $banner['click_url'] ?>" >  </a>  -->
 				 <h1><?php echo $banner['name']; ?></h1>
 				
-                </div>    
+                </div>  
+
+<div class="audio"  style="display: none;">
+            <audio id="sound" autoplay>
+                <source src="<?php echo $this->getUrl();?>videosound/<?php echo $banner['click_url']?>" type="audio/mpeg">
+            </audio>
+        </div>  
             </div>
 		</div>
 	</div>
