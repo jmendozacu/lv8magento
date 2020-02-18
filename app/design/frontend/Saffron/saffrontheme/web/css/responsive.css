@@ -997,6 +997,20 @@
 	.checkout-index-index footer.page-footer { padding-bottom: 70px; }
 	.checkout-payment-method .payment-methods .actions-toolbar .primary { padding-left:0; padding-right:0; }
 	.news-index-index .modal-popup .modal-header button.action-close { top:0; right:0; }
+	/*============================
+		Home page video css
+	===============================*/
+	.main-video { position: fixed; overflow: hidden; }
+  .main-video .video-bg { min-width: 100vw;  min-height: 100vh;      }
+  .main-video .video-bg iframe {
+    min-width: 177.77vh;
+    min-height: 100vh;
+    -webkit-transform: translate(-50%, -50%) scale(1.05);
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+  .audio-video-btns  { bottom:50px;}
+  /*--/end-video-css*/
+	
 	
 }
 

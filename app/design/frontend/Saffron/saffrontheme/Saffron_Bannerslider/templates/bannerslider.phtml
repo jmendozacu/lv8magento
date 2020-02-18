@@ -23,9 +23,9 @@ $banners = $block->getBannerSlider();
         <!-- Video -->
         <iframe src="https://player.vimeo.com/video/<?php echo $banner['image_alt'];?>?api=1&controls=0&loop=1&background=1&title=0&autoplay=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen id="video"></iframe>
 
-        <article>
+        <article >
             <img src="<?php echo $url_image;?>" alt="" id="fadeImage">
-            <h1><?php echo $banner['name']; ?></h1>
+            <h1 class="video-front-title"><?php echo $banner['name']; ?></h1>
 		</article>
          
      </section>
@@ -206,11 +206,13 @@ small.copyright {
 		var player = $f(iframeVideo);
 
 		$('#playVideo').hide();
+		$('.video-front-title').hide();
 
 		$('#pauseVideo').click(function(){
 			player.api("pause");
 			$('#pauseVideo').hide();
 			$('#playVideo').show();
+			$('.video-front-title').show();
 			sound.pause();
 			videoButton.innerHTML='<img src="<?php echo $this->getMediaFolder().'images/volume-on.png'?>">';
 			$('#fadeImage').addClass('fade-image');
@@ -220,6 +222,7 @@ small.copyright {
 			player.api("play");
 			$('#playVideo').hide();
 			$('#pauseVideo').show();
+			$('.video-front-title').hide();
 			sound.play();
 			 videoButton.innerHTML='<img src="<?php echo $this->getMediaFolder().'images/volume-on.png'?>">';
 			$('#fadeImage').removeClass('fade-image');
