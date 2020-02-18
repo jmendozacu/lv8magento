@@ -14,11 +14,13 @@
         'froogaloop'
     ], function ($) {
         $(document).ready(function () {
-        var videoButton = document.getElementById("playButton");
-		var sound = document.getElementById("sound");
+      
           //alert(sound);
         var cli_rl = $('#click_url_u').val();
         alert(cli_rl);
+      if(cli_rl !=""){
+        var videoButton = document.getElementById("playButton");
+		var sound = document.getElementById("sound");
 		videoButton.addEventListener('click', function(){
 			//$('#playButton').addEventListener('click', function(){
 			if(sound.paused){
@@ -34,6 +36,7 @@
 				videoButton.innerHTML='<img src="<?php echo $medial_url;?>images/volume-off.png">';
 			}
 		 });
+      }
  });
     });
 </script>
