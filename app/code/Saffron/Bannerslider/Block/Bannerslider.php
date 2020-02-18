@@ -100,6 +100,17 @@ class Bannerslider extends \Magento\Framework\View\Element\Template {
 		return '';
 	}
 
+   public function getMediaurl(){
+
+   $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+   $medial_url  = $objectManager->get('Magento\Store\Model\StoreManagerInterface')
+                    ->getStore()
+                    ->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA);
+
+  return  $medial_url;
+
+  }
+
 	/**
 	 * Add elements in layout
 	 *
