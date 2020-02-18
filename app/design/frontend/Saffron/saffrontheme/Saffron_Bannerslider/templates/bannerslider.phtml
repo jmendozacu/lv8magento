@@ -177,7 +177,11 @@ small.copyright {
         'froogaloop'
     ], function ($) {
         $(document).ready(function () {
-        var videoButton = document.getElementById("playButton");
+       
+   var cli_rl = $('#click_url_u').val();
+      
+      if(cli_rl !=""){
+       var videoButton = document.getElementById("playButton");
 		var sound = document.getElementById("sound");
           //alert(sound);
 		/*videoButton.addEventListener('click', function(){
@@ -234,6 +238,8 @@ small.copyright {
 				$(".main-video iframe").attr("src","https://player.vimeo.com/video/<?php echo $banner['image_alt'];?>?api=1&controls=0&loop=1&background=1&title=0&autoplay=1");
 			}
 		});
+
+  }
         });
     });
 </script>
