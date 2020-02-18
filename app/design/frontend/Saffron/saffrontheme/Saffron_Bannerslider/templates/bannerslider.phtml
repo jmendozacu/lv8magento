@@ -12,7 +12,7 @@ $banners = $block->getBannerSlider();
      <?php $i = 1; ?>
     <?php foreach ($banners as $banner): ?>
 	
-	 <?php endforeach; ?>   
+	    
 	
 	<?php $url_image = $this->getMediaFolder().$banner['image']; ?>
 	
@@ -89,7 +89,7 @@ $banners = $block->getBannerSlider();
             
         
 	<?php $i++; ?>            
-     
+    <?php endforeach; ?>     
             
      
    </section>
@@ -269,7 +269,7 @@ small.copyright {
     height: 100%;
     z-index: 0;
     overflow: hidden;
-    background: url(../images/home-video-onload.jpg);
+    background: url('<?php echo $url_image;?>');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
