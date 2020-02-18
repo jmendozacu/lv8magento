@@ -23,8 +23,8 @@ $banners = $block->getBannerSlider();
         <!-- Video -->
         <iframe src="https://player.vimeo.com/video/<?php echo $banner['image_alt'];?>?api=1&controls=0&loop=1&background=1&title=0&autoplay=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen id="video"></iframe>
 
-        <article>
-            <img src="<?php echo $url_image;?>" alt="" id="fadeImage">
+        <article id="fadeImage">
+            <img src="<?php echo $url_image;?>" alt="" >
             <h1><?php echo $banner['name']; ?></h1>
 		</article>
          

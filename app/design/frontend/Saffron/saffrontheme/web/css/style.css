@@ -3794,4 +3794,15 @@ div#player {
 .player .vp-video-wrapper .vp-preview { 
 	background-size: cover !important;
 }
+.video-bg h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 100px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}
 /*--/end-video-css*/
