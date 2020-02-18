@@ -3805,6 +3805,9 @@ div#player {
     color: #fff;
     margin: 0;
 	display:none;
+	width: 100%;
+	padding: 0 15px;
+	text-align: center;
 }
 .video-front-title.active{
 	display:block;
