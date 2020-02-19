@@ -38,10 +38,11 @@
 		 });
 		 //menu click sound close
 		 var menuClick = document.getElementsByClassName("button.menuBtn.bar-button");
-		 videoButton.addEventListener('click', function(){
+		 menuClick.addEventListener('click', function(){
 			alert();
-			sound.paused();
-			 
+			if(sound.play){
+				sound.paused();
+			}
 		 });
 		 
       }
