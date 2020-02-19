@@ -36,6 +36,18 @@
 				videoButton.innerHTML='<img src="<?php echo $medial_url;?>images/volume-off.png">';
 			}
 		 });
+		 
+		 
+		 $(".navbar-col .bar-button").on("click", function(){
+               console.log(sound+'gihikg');
+			  //console.log(sound.paused+'gihikg');
+			   sound.pause();
+			   videoButton.innerHTML='<img src="<?php echo $medial_url;?>images/volume-off.png">';
+         })
+		 
+		 
+		 
+		 
       }
  });
     });
