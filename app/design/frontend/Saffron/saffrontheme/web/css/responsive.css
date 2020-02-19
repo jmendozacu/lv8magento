@@ -263,6 +263,7 @@
 	.point .point-circle { position: absolute; }
 	.point .point-body{  margin:0 auto; z-index:1; }
 	.cbd-info-section {  position: relative; z-index: 1; }
+	.audio-video-btns { bottom:50px; }
 	
 	
 	
