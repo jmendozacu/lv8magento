@@ -3809,7 +3809,7 @@ div#player {
 	padding: 0 15px;
 	text-align: center;
 	transition:all 0.3s ease;
-	-webkit-transition:all 0.3s ease;
+	-webkit-transition:all 1s ease;
 }
 .video-front-title.active{
 	display:block;
