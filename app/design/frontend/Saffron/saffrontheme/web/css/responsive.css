@@ -1010,6 +1010,7 @@
   }
   .audio-video-btns  { bottom:50px;}
   .video-front-title {  font-size: 50px;}
+  .page-front.menu-open .header { display: none; }
   /*--/end-video-css*/
 	
 	
