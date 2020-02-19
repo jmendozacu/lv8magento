@@ -186,7 +186,7 @@ small.copyright {
        var videoButton = document.getElementById("playButton");
 		var sound = document.getElementById("sound");
           //alert(sound);
-		/*videoButton.addEventListener('click', function(){
+		videoButton.addEventListener('click', function(){
 			//$('#playButton').addEventListener('click', function(){
 			if(sound.paused){
 				console.log(sound);
@@ -200,7 +200,7 @@ small.copyright {
 				sound.pause();
 				videoButton.innerHTML='<img src="<?php echo $this->getMediaFolder().'images/volume-off.png'?>">';
 			}
-		 });*/
+		 });
 
 		var iframeVideo = document.getElementById('video');
 		var player = $f(iframeVideo);
