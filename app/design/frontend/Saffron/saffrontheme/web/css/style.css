@@ -3779,7 +3779,7 @@ li#shipping.checkout-shipping-address { margin-top: 37px; }
     bottom: 28px;
 }
 .audio-button.audio-hide {
-	display:none;
+	opacity:0; z-index:0;
 }
 .vedio-desktop, .vedio-desktop iframe {
     height: 100vh;
