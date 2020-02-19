@@ -3815,5 +3815,6 @@ div#player {
 	display:block;
 }
 a#playVideo { display: none; }
+.video-bg article { height: 100vh; }
 
 /*--/end-video-css*/
