@@ -330,7 +330,7 @@
 	.opc-block-shipping-information .shipping-information-title{ font-size:18px; }
 	.checkout-index-index .opc-block-summary > .title,
 	.checkout-index-index .opc-wrapper .step-title	{ font-size:24px; }
-	.audio-video-btns { bottom:100px; }
+	.audio-video-btns { bottom:80px; }
 }
 
 @media (min-width: 768px)  and ( max-width:1024px ){
