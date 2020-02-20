@@ -140,7 +140,7 @@ require(["jquery"], function($){
 			
 			$( "#newsletter_pop_up form" ).submit(function( event ) {
 				      //alert('++++');
-					var email = $('#newsletter').val();
+					var email = $('#newsletters').val();
 					if(email != ''){
 					setCookie("shownewstext",'1',<?php if($timeout!='') echo $timeout;else echo '1' ?>);
 					//alert(getCookie("shownewstext") );
