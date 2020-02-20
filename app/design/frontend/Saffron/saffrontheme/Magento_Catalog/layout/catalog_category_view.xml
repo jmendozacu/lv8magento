@@ -24,7 +24,7 @@
 		</referenceContainer>
 		<move element="banner_category_ptk_sort" destination="category.product.list.additional" before="-"/>
 		<move element="catalog.leftnav" destination="category.product.list.additional" before="-"/>
-		 <referenceBlock name="product_list_toolbar" remove="true" />
+		 <!--<referenceBlock name="product_list_toolbar" remove="true" />-->
 
 
    </body>
