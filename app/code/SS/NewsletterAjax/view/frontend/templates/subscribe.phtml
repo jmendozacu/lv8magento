@@ -63,7 +63,7 @@
 							
                             let response = JSON.parse(data.responseText);
                             //alert(response);
-							
+							$('.newsletter-modal')addClass(response.message);
 							$('.newsletter-modal').text(response.message).modal('openModal');
                         }
                     });

@@ -99,7 +99,7 @@
 							
                             let response = JSON.parse(data.responseText);
                             //alert(response);
-							
+						    $('.newsletter-modal')addClass(response.status);
 							$('.newsletter-modal').text(response.message).modal('openModal');
                         }
                     });
