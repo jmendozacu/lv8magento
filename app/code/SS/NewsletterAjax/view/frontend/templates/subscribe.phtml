@@ -62,7 +62,7 @@
                         complete: function(data, status) {
 							
                             let response = JSON.parse(data.responseText);
-                            alert(response);
+                            //alert(response);
 							
 							$('.newsletter-modal').text(response.message).modal('openModal');
                         }
