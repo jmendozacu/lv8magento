@@ -8,7 +8,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
         <tab id="ss_newsletter_ajax_tab" translate="label" sortOrder="50">
-            <label>SS</label>
+            <label>DKS</label>
         </tab>
         <section id="newsletterajax" translate="label" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="50">
             <class>separator-top</class>
