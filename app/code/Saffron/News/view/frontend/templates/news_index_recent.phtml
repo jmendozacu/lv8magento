@@ -1,9 +1,11 @@
 <?php  $newcategories =$this->getNewpostlist();
 $newcategories = $newcategories->getData() ;
 
-echo count($newcategories);
+
 //echo "<pre>";print_r( $newcategories);
+
 ?>
+	<input type="hidden" id="allrec" value="<?php echo count($newcategories); ?>">
 <?php if(count($newcategories) != '0') { ?>
  <div class="row">
                    
@@ -34,7 +36,7 @@ echo count($newcategories);
 				  <?php  $x = $i++;  }?>			   
                   					   
     </div>                  
-	<div class="col-12 read-col">
+	<div class="col-12 read-col read-col-more">
 	
 	 
 	 <a href="javascript:void(0);" class="text-link" id="<?php echo ($x +3) ;?>" onclick="getLoadmoreid(<?php echo ($x +3) ;?>)" >Load More</a>
@@ -51,6 +53,11 @@ echo count($newcategories);
 function getLoadmoreid(page){
 	
 jQuery(document).ready(function($){
+	 var allcount = Number($('#allrec').val());
+ //alert(allcount);
+ if(allcount > 4){
+	$('.read-col-more').css("display","none"); 
+ }
   $("#loderpop").addClass("showpopup");
   	 var obj = $("#categoriesitem-1").val(); 
 	 //var page = $("#categoriesitem-1").val(); 
