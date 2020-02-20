@@ -60,8 +60,11 @@
                         dataType: 'json',
                         showLoader: true,
                         complete: function(data, status) {
+							
                             let response = JSON.parse(data.responseText);
-                            $('.newsletter-modal').text(response.message).modal('openModal');
+                            alert(response);
+							
+							$('.newsletter-modal').text(response.message).modal('openModal');
                         }
                     });
                 }
