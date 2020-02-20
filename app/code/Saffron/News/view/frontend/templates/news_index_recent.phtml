@@ -35,12 +35,13 @@ $newcategories = $newcategories->getData() ;
 					   
 				  <?php  $x = $i++;  }?>			   
                   					   
-    </div>                  
+    </div> 
+
+	<?php if(count($newcategories) >3){?>
 	<div class="col-12 read-col read-col-more">
-	
-	 
-	 <a href="javascript:void(0);" class="text-link" id="<?php echo ($x +3) ;?>" onclick="getLoadmoreid(<?php echo ($x +3) ;?>)" >Load More</a>
-     </div>				  
+	<a href="javascript:void(0);" class="text-link" id="<?php echo ($x +3) ;?>" onclick="getLoadmoreid(<?php echo ($x +3) ;?>)" >Load More</a>
+    </div>	
+	<?php } ?>	
 <?php }else {?>
 
 <p> there no Recent News</p>
@@ -55,9 +56,9 @@ function getLoadmoreid(page){
 jQuery(document).ready(function($){
 	 var allcount = Number($('#allrec').val());
  //alert(allcount);
- if(allcount === 3){
-	$('.read-col-more').css("display","none"); 
- }
+ //if(allcount === 3){
+	//$('.read-col-more').css("display","none"); 
+ //}
   $("#loderpop").addClass("showpopup");
   	 var obj = $("#categoriesitem-1").val(); 
 	 //var page = $("#categoriesitem-1").val(); 
