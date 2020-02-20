@@ -15,26 +15,15 @@ use Magento\Framework\App\Action\Action;
  * @var $block \Magento\Catalog\Block\Product\ListProduct
  */
 ?>
-
-
-
-
-
 <?php
 $_productCollection = $block->getLoadedProductCollection();
 $_helper = $this->helper('Magento\Catalog\Helper\Output');
 ?>
 <?php if (!$_productCollection->count()): ?>
-<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('coming-soon')->toHtml(); ?>	
-
-    <!--<div class="message info empty"><div><?= /* @escapeNotVerified */ __('We can\'t find products matching the selection.') ?></div></div>-->
+    <div class="message info empty"><div><?= /* @escapeNotVerified */ __('We can\'t find products matching the selection.') ?></div></div>
 <?php else: ?>
-<div class="tab-content product-content" id="pills-tabContent">
-                    
-<div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="pills-home-tab">    
-                        
-<?php //$block->getToolbarHtml() ?>
-    <?php echo $block->getAdditionalHtml() ?>
+    <?= $block->getToolbarHtml() ?>
+    <?= $block->getAdditionalHtml() ?>
     <?php
     if ($block->getMode() == 'grid') {
         $viewMode = 'grid';
@@ -52,21 +41,27 @@ $_helper = $this->helper('Magento\Catalog\Helper\Output');
      */
     $pos = $block->getPositioned();
     ?>
-   <!-- <div class="products wrapper <?= /* @escapeNotVerified */ $viewMode ?> products-<?= /* @escapeNotVerified */ $viewMode ?>">
-        </div> -->   
-		
-		
-		
-		
-		
-		
-		<?php $iterator = 1; ?>
-        <div class="product-list">
-            <div class="row">
-			<?php /** @var $_product \Magento\Catalog\Model\Product */ ?>
+    <div class="products wrapper <?= /* @escapeNotVerified */ $viewMode ?> products-<?= /* @escapeNotVerified */ $viewMode ?>">
+        <?php $iterator = 1; ?>
+        <ol class="products list items product-items">
+            <?php /** @var $_product \Magento\Catalog\Model\Product */ ?>
             <?php foreach ($_productCollection as $_product): ?>
-                <?= /* @escapeNotVerified */ ($iterator++ == 1) ? '<li class="item product product-item col-md-4 col-12">' : '</li><li class="item product product-item col-md-4 col-12">' ?>
-                <div class="featured-item" data-container="product-<?= /* @escapeNotVerified */ $viewMode ?>">
+               
+                <?php //echo"<pre>";print_r ($_product->getData()); ?>
+                <?php //echo ($_product['starting_bedding_date']); ?>
+                
+                
+            <?php            
+            $start = strtotime($_product['starting_bedding_date']);
+            $end = strtotime($_product['closeing_bedding_date']);
+            $days_between = ceil(abs($end - $start) / 86400);  
+           
+            ///$num = str_replace(',00', '', number_format($_product['weight'], 2, ',', ''));
+            ?>
+               <?php //echo "<pre>";print_r($_product->getData()); ?>
+            
+                <?= /* @escapeNotVerified */ ($iterator++ == 1) ? '<li class="item product product-item">' : '</li><li class="item product product-item">' ?>
+                <div class="product-item-info" data-container="product-<?= /* @escapeNotVerified */ $viewMode ?>">
                     <?php
                     $productImage = $block->getImage($_product, $image);
                     if ($pos != null) {
@@ -74,70 +69,44 @@ $_helper = $this->helper('Magento\Catalog\Helper\Output');
                             . 'top:' . $productImage->getHeight() . 'px;"';
                     }
                     ?>
-					
-					<div class="price-col">
-                     <?= /* @escapeNotVerified */ $block->getProductPrice($_product) ?>
-                    </div>
-					
-					
-					
                     <?php // Product Image ?>
-					  <figure>
                     <a href="<?= /* @escapeNotVerified */ $_product->getProductUrl() ?>" class="product photo product-item-photo" tabindex="-1">
                         <?= $productImage->toHtml() ?>
                     </a>
-                      </figure>
-					
-					
-				   <div class="featured-name-col">
-                   <a class="name"
-                               href="<?= /* @escapeNotVerified */ $_product->getProductUrl() ?>">
-                                <?= /* @escapeNotVerified */ $_helper->productAttribute($_product, $_product->getName(), 'name') ?>
-                            </a>
-
-				  <!--<p>CBD Oil</p>-->
-				   </div>
-					
-					
-			  <div class="visitstore-btn actions-primary"<?= strpos($pos, $viewMode . '-primary') ? $position : '' ?>>
-               <?php if ($_product->isSaleable()): ?>
-                 <?php $postParams = $block->getAddToCartPostParams($_product); ?>
-                <form data-role="tocart-form" data-product-sku="<?= $block->escapeHtml($_product->getSku()) ?>" action="<?= /* @NoEscape */ $postParams['action'] ?>" method="post">
-                <input type="hidden" name="product" value="<?= /* @escapeNotVerified */ $postParams['data']['product'] ?>">
-                <input type="hidden" name="<?= /* @escapeNotVerified */ Action::PARAM_NAME_URL_ENCODED ?>" value="<?= /* @escapeNotVerified */ $postParams['data'][Action::PARAM_NAME_URL_ENCODED] ?>">
-                 <?= $block->getBlockHtml('formkey') ?>
-                <button type="submit" title="<?= $block->escapeHtml(__('Shop Now')) ?>"
-                   class="action tocart primary learn-btn btn-orange">
-                <span><?= /* @escapeNotVerified */ __('Shop Now') ?></span>
-                </button>
-               </form>
-               <?php else: ?>
-               <?php if ($_product->isAvailable()): ?>
-                <div class="stock available"><span><?= /* @escapeNotVerified */ __('In stock') ?></span></div>
-                  <?php else: ?>
-                <div class="stock unavailable"><span><?= /* @escapeNotVerified */ __('Out of stock') ?></span></div>
-                <?php endif; ?>
-               <?php endif; ?>
-             </div>		
-					
-					
-					
-					<!--<div class="product details product-item-details">
+                    <div class="product details product-item-details">
                         <?php
                             $_productNameStripped = $block->stripTags($_product->getName(), null, true);
                         ?>
+                     <div   class="name-price">
                         <strong class="product name product-item-name">
                             <a class="product-item-link"
                                href="<?= /* @escapeNotVerified */ $_product->getProductUrl() ?>">
                                 <?= /* @escapeNotVerified */ $_helper->productAttribute($_product, $_product->getName(), 'name') ?>
                             </a>
                         </strong>
-                        <?= $block->getReviewsSummaryHtml($_product, $templateType) ?>
+                        <div class="price-perunit">
+                        <?= /* @escapeNotVerified */ $block->getProductPrice($_product) ?> 
+                         <span class="unit">Pre Quintal</span>
+                        </div>
                         
+                      </div>    
+                        
+                        <div  class="review-bids">
+                        <div class="bid-time"> Open <div class="min-ago"> <?php  echo  $days_between. ' Days' ; ?> Left</div>  -  <span> 400 bids </span> </div>     
+                        
+                        <div class="total-quantity-required">
+                        <?php   echo'Total Quantity Required :- ' .number_format($_product['weight'], 2, '.', ','); ?>
+                        </div>
+                        
+                        
+                        
+                        <?= $block->getReviewsSummaryHtml($_product, $templateType) ?>
+                        </div>
+                        
+                      
                         <?= $block->getProductDetailsHtml($_product) ?>
 
-                        <div class="product-item-inner">
-                            <div class="product actions product-item-actions"<?= strpos($pos, $viewMode . '-actions') ? $position : '' ?>>
+                         <!-- <div class="product actions product-item-actions"<?= strpos($pos, $viewMode . '-actions') ? $position : '' ?>>
                                 <div class="actions-primary"<?= strpos($pos, $viewMode . '-primary') ? $position : '' ?>>
                                     <?php if ($_product->isSaleable()): ?>
                                         <?php $postParams = $block->getAddToCartPostParams($_product); ?>
@@ -164,24 +133,36 @@ $_helper = $this->helper('Magento\Catalog\Helper\Output');
                                         <?= $addToBlock->setProduct($_product)->getChildHtml() ?>
                                     <?php endif; ?>
                                 </div>
-                            </div>
+                            </div> -->
+                            
+                         
+                   
+                            
                             <?php if ($showDescription):?>
                                 <div class="product description product-item-description">
-                                    <?= /* @escapeNotVerified */ $_helper->productAttribute($_product, $_product->getShortDescription(), 'short_description') ?>
+                            <?php echo substr(trim(strip_tags($_helper->productAttribute($_product, $_product->getShortDescription(), 'short_description'))), 0, 210);  ?>
+                                    
+                                    
                                     <a href="<?= /* @escapeNotVerified */ $_product->getProductUrl() ?>" title="<?= /* @escapeNotVerified */ $_productNameStripped ?>"
                                        class="action more"><?= /* @escapeNotVerified */ __('Learn More') ?></a>
                                 </div>
-                            <?php endif; ?>
+                               <?php endif; ?>
+                        
+                          <div class="product-item-inner">
+                           <div class="product actions product-item-actions">
+                             <div class="btn btn-primary">Bid on</div>  
+                           </div> 
+                            
+                        
+                        
                         </div>
                     </div>
-                </div>-->
+                </div>
                 <?= ($iterator == count($_productCollection)+1) ? '</li>' : '' ?>
             <?php endforeach; ?>
-        
-		</div>
-		</div>
-        </div>
-    <?php //$block->getToolbarHtml() ?>
+        </ol>
+    </div>
+    <?= $block->getToolbarHtml() ?>
     <?php if (!$block->isRedirectToCartEnabled()) : ?>
         <script type="text/x-magento-init">
         {
@@ -193,22 +174,8 @@ $_helper = $this->helper('Magento\Catalog\Helper\Output');
         }
         </script>
     <?php endif; ?>
-	
-	</div>
-	</div>
 <?php endif; ?>
 
 
-<script type="text/javascript">
-require([ 'jquery'], function($){
-$(document).ready(function(){
- $(".filter-col .filter-link").on("click", function(e){
-		e.stopPropagation();
-		$(this).toggleClass('active');
-        $(this).next('ul').slideToggle();
-       // $(this).parent().siblings().children().next().slideUp();
-    });
-}); 
-});
-	
-</script>
+
+
