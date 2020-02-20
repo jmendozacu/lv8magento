@@ -253,7 +253,11 @@ require([ 'jquery'], function($){
 	
 	$(document).ready(function(){
  var allcount = Number($('#all').val());
- alert(allcount);
+ //alert(allcount);
+ if(allcount == 2){
+	$('.load-more').css("display","none"); 
+ }
+ 
     // Load more data
     $('.load-more').click(function(){
         var row = Number($('#row').val());
