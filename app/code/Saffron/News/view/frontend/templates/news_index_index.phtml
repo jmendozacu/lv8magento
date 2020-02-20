@@ -252,7 +252,8 @@ $(document).ready(function(){
 require([ 'jquery'], function($){
 	
 	$(document).ready(function(){
-
+ var allcount = Number($('#all').val());
+ alert(allcount);
     // Load more data
     $('.load-more').click(function(){
         var row = Number($('#row').val());
