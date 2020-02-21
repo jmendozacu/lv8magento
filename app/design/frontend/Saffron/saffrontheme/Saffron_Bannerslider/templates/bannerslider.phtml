@@ -183,8 +183,11 @@ small.copyright {
    var cli_rl = $('#click_url_u').val();
       
       if(cli_rl !=""){
+		  
        var videoButton = document.getElementById("playButton");
 		var sound = document.getElementById("sound");
+		
+		
           //alert(sound);
 		/*videoButton.addEventListener('click', function(){
 			//$('#playButton').addEventListener('click', function(){
@@ -204,7 +207,7 @@ small.copyright {
 
 		var iframeVideo = document.getElementById('video');
 		var player = $f(iframeVideo);
-
+        player.api("pause");
 		$('#playVideo').hide();
 		
 
