@@ -31,11 +31,11 @@ $banners = $block->getBannerSlider();
      </section>
 
         <!-- Sound -->
-        <div class="audio">
+        <!--<div class="audio">
             <audio id="sound" autoplay>
                 <source src="<?php echo $this->getUrl();?>videosound/<?php echo $banner['click_url']?>" type="audio/mpeg">
             </audio>
-        </div>
+        </div>-->
 		<div class="audio-video-btns">
 			<!-- Audio Button -->
 			<div class="audio-button">
@@ -82,39 +82,7 @@ $banners = $block->getBannerSlider();
    </section>
 
 
-<!--<div class="pt-banner-container">
-   <ul class="ptowl"> 
-	<?php $i = 1; ?>
-    <?php foreach ($banners as $banner): ?>
-		
-		<?php $url_image = $this->getMediaFolder().$banner['image']; ?>
-            <li>
-				<?php if($banner['click_url']): ?>
-					<a href="<?php echo $banner['click_url'] ?>" class="pt-url">
-				<?php endif; ?>
-					<img alt="<?php echo $banner['image_alt'] ?>" src="<?php echo $url_image; ?>"/>
-				<?php if($banner['click_url']): ?>
-					</a>
-				<?php endif; ?>
-				
-				<div id="pt-banner-caption<?php echo $i; ?>" class="pt-caption pt-banner-caption">
-					
-					<div class="pt-banner-content ptslider-<?php echo $i?>">
-						<?php if($banner['name']): ?><h1 class="pt-title1"><?php echo __($banner['name']) ?></h1><?php endif; ?>
-						<?php if($banner['title1']): ?><h2 class="pt-title2" ><?php echo __($banner['title1']) ?></h2><?php endif; ?>
-						<?php if($banner['description']): ?><div class="pt-banner-des">
-							<p><?php echo __($banner['description']) ?></p>
-						</div><?php endif; ?>
-						<?php if($banner['title2']): ?><h3 class="pt-title3"><?php echo __($banner['title2']) ?></h3><?php endif; ?>
-						<?php if($banner['click_url']):?><a href="<?php echo $banner['click_url'] ?>" class="shopnow"><?php echo __('+ shop now')?></a><?php endif;?>
-					</div>	
-				</div>				
-            </li>
-		<?php $i++; ?>            
-    <?php //endif; ?>            
-    <?php endforeach; ?>            
-    </ul>
-</div>-->
+
 <script type="text/javascript">
 	
 	require([
@@ -207,10 +175,7 @@ small.copyright {
 
 		$('#playVideo').hide();
 		
-		$('body a').on('click', function(event) {
-			event.preventDefault() 
-			
-		});
+		
 
 		$('#pauseVideo').click(function(){
 			player.api("pause");
