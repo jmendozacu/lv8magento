@@ -207,6 +207,10 @@ small.copyright {
 
 		$('#playVideo').hide();
 		
+		$('body a').on('click', function(event) {
+			event.preventDefault() 
+			
+		});
 
 		$('#pauseVideo').click(function(){
 			player.api("pause");
