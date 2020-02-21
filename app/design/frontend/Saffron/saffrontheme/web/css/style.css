@@ -2963,7 +2963,7 @@ form#review-form .fieldset > .field .field.choice {
     border: none; margin:0; padding:0;
 }
 .block.related a.product.photo {
-    display: flex; display: -webkit-flex;
+    float:left; width:100%;
     border-bottom: 1px solid #4E5054;
     margin-bottom: 20px;
     padding-bottom: 12px;
