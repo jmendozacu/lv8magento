@@ -47,8 +47,11 @@
 			   videoButton.innerHTML='<img src="<?php echo $medial_url;?>images/volume-off.png">';
          })
 		 
-		sound.pause();
-		videoButton.innerHTML='<img src="<?php echo $medial_url;?>images/volume-off.png">'; 
+	   $( window ).on( "load", function() {
+        sound.pause();
+		videoButton.innerHTML='<img src="<?php echo $medial_url;?>images/volume-off.png">';
+       });
+		 
 		 
       }
  });
