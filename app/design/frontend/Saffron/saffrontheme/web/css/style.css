@@ -3819,6 +3819,7 @@ a#playVideo { display: none; }
 /*--/end-video-css*/
 
 
+/*---banner-arrow-animation-css---*/
 .mobile-arrow  {
     -webkit-animation: pulse 1.1s infinite;
     animation: pulse 1.1s infinite;
@@ -3845,4 +3846,16 @@ a#playVideo { display: none; }
   100% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0); }
+}
+/*---end-arrow-animation-css---*/
+
+.news-detail-container h4 {
+    font-size: 20px;
+    margin: 40px 0 15px;
+}
+.news-detail-container a {
+    color: #F57B3B;
+}
+.news-detail-container p:first-letter {
+    text-transform: capitalize;
 }
