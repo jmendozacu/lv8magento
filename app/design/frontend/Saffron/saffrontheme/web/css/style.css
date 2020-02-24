@@ -1841,7 +1841,6 @@ button#product-addtocart-button {
     color: #F57B3B;
     font-size: 13px;
 }
-.careers-page .breadcrumbs,
 .contact-index-index .page-wrapper .page-title-wrapper { display: none;}
 .careers-page .banner-breadcrumbs .breadcrumbs {  display: block; }
 .our-craft .craft-box-row {  margin-bottom: 40px; }
@@ -2276,7 +2275,7 @@ body.page-layout-1column .filter-options-title:hover {
 .page-layout-1column .filter-options-content .item a {  font-size: 14px; }
 .page-layout-1column .filter-options-content .item a:hover { color: #4E5054; }
 body.page-layout-1column .filter-options-content { min-width: 200px; }
-.careers-page .breadcrumbs { margin: 0; }
+.careers-page .breadcrumbs { margin: 0; padding-left: 0; padding-right: 0; max-width:100%; }
 .multishipping-checkout-login .block.block-customer-login {  margin-bottom: 0; }
 .authentication-dropdown._show { background: #f8f8f8; }
 .authentication-dropdown .modal-inner-wrap .modal-content {
