@@ -98,8 +98,12 @@ $(document).ready(function(){
 			$(".navbar-body.menu-item-cbdx").addClass("hover-active");
 		})
 	}
-    
     //end-menu 
+	
+	// scroll menu click respectively #div 
+    $("scrollMenu-home a").on("click", function(){
+       $("html, body").animate( { scrollTop: $($(this).attr("href") ).offset().top-200 }, 1000 );
+    })
     
  var $item = $('.front-banner .item'); 
     var $wHeight = $(window).height();
