@@ -163,6 +163,8 @@
 		.box-tocart .action.tocart { width:auto; }
 		.cms-container { min-height: 200px; }
 		.contact-index-index .section-notfront { margin-top: -59px; }
+		.cms-cbdx-science-of-cannabis- .page-wrapper > .breadcrumbs {  display: block; 		margin-top: 110px;
+		}
 		
  }
 
@@ -999,6 +1001,7 @@
 	.checkout-index-index footer.page-footer { padding-bottom: 70px; }
 	.checkout-payment-method .payment-methods .actions-toolbar .primary { padding-left:0; padding-right:0; }
 	.news-index-index .modal-popup .modal-header button.action-close { top:0; right:0; }
+	.science-container .cms-title h1 {  margin-bottom: 20px; }
 	/*============================
 		Home page video css
 	===============================*/
