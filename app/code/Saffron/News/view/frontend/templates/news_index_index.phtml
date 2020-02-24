@@ -206,10 +206,13 @@ jQuery(document).ready(function($){
 require([ 'jquery'], function($){
 $(document).ready(function(){
 	//news page filter category js
-    $(".filter-category span.fliter-name").on("click", function(){
+    $(".filter-category span.fliter-name").on("click", function(e){
+		e.stopPropagation();
         $("ul.filter-cat-list").slideToggle();
     })	
-	
+	$(document).on('click', function(){
+		$("ul.filter-cat-list").slideUp();
+	})
 	 //var obj = $("categoriesitem-1").val();
 	 var obj = $("#categoriesitem-1").val(); 
 	 //alert(obj);
