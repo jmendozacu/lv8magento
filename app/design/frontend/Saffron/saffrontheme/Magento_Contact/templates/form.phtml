@@ -11,6 +11,12 @@ $om = \Magento\Framework\App\ObjectManager::getInstance();
 $storeManager = $om->get('\Magento\Store\Model\StoreManagerInterface');
 $madia_url = $storeManager->getStore()->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA);
 ?>
+<div class="breadcrumbs">
+<ul class="items">
+<li class="item home"><a href="<?php echo $this->getUrl();?>">LV8</a></li>
+<li class="item">Contact</li>
+</ul>
+</div>
 
  <div class="section-notfront">
 
