@@ -3859,3 +3859,15 @@ a#playVideo { display: none; }
 .news-detail-container p:first-letter {
     text-transform: capitalize;
 }
+.newsletter-modal.success {
+    color: green;
+}
+.modal-popup .modal-title {
+    border: none;
+}
+.modal-header {
+    border-bottom: none;
+}
+.modal-popup .modal-footer {
+    border-top: none;
+}
